@@ -26,7 +26,7 @@ In this lab you will:
 
 3. Make sure you are in the **SOAMPCompartment** and select a name for your database system.
 
-  ![](/images/provision-db-12.png)
+  ![](./images/provision-db-12.png)
 
 4. Select an availability domain or keep the default. Use **Virtual Machine** and select a **Shape** that is available.
 

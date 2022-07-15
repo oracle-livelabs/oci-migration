@@ -7,7 +7,7 @@ For a technical overview of the workshop, watch the following video below.
 [](youtube:KuT6DksQpKc)
 
 Attached below is a sample architecture of the final solution:
-![](/images/Architecture.png)
+![](./images/Architecture.png)
 
 Estimated Workshop Time:  8 hours
 
