@@ -32,6 +32,7 @@ Go to the Marketplace.
    ![Instance Name](./images/forms-instance-name.png)
 
 5. Then check that:
+    - Image and Shape: keep the default. If you change it, it needs a minimum of 8GB of memory. 
     - VCN: **forms-vcn**
     - Subnet: **Private subnet for forms-vcn**
     - Check the button **Upload the public key** and upload the public key that you got from the Bastion in  Lab1 (##1##)
