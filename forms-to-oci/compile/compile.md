@@ -269,7 +269,7 @@ You could improve this setup by:
 ## Learn More
 
 * [Forms Documentation](https://docs.oracle.com/en/middleware/developer-tools/forms/12.2.1.4/index.html)
-* [Oracle-Base notes] (https://oracle-base.com/articles/12c/oracle-forms-and-reports-12c-configuration-notes)
+* [Oracle-Base notes](https://oracle-base.com/articles/12c/oracle-forms-and-reports-12c-configuration-notes)
 
 ## Acknowledgements
 * Marc Gueury - Application Development EMEA

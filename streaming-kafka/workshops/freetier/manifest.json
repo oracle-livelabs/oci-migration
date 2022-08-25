@@ -1,0 +1,27 @@
+{
+    "workshoptitle": "Using Oracle Streaming as a Managed Kafka server",
+    "help": "livelabs-help-oci_us@oracle.com",
+	"tutorials": [
+        {
+            "title": "Introduction",
+            "filename": "./../../intro/intro.md"
+        },
+        {
+            "title": "Get Started",
+            "filename": "https://oracle-livelabs.github.io/common/labs/cloud-login/cloud-login.md"
+        },
+        {
+            "title": "Lab 1: Create a Stream Pool",
+            "filename": "./../../stream/stream.md"
+        },
+        {
+            "title": "Lab 2: Kafka Client",
+            "filename": "./../../kafka-client/kafka-client.md"
+        },
+        {
+            "title": "Need Help?",
+            "description": "Solutions to Common Problems and Directions for Receiving Live Help",
+            "filename": "https://raw.githubusercontent.com/oracle/learning-library/master/oci-library/need-help/need-help-livelabs.md"
+        }
+    ]
+}
