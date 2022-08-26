@@ -199,6 +199,7 @@ public class Consumer {
      ./consumer.sh
      </copy>
      ```
+  - During the first run, the topic (stream) will be created.   
   - You will see that some messages are produced and consumed by the Kafka client.
      ```
 $ ./build.sh 
