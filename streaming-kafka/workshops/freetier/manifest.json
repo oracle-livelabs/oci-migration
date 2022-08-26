@@ -1,5 +1,5 @@
 {
-    "workshoptitle": "Using Oracle Streaming as a Managed Kafka server",
+    "workshoptitle": "Use OCI Streaming as Managed Kafka server",
     "help": "livelabs-help-oci_us@oracle.com",
 	"tutorials": [
         {

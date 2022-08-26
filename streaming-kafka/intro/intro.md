@@ -3,7 +3,7 @@
 
 Estimated time: 20 minutes
 
-## Using Oracle Cloud Infrastructure Streaming as a Managed Kafka Server
+## Use Oracle Cloud Infrastructure (OCI) Streaming as Managed Kafka Server
 
 Oracle Cloud Infrastructure Streaming can replace an Apache Kafka installation. 
 This is a managed service. No installation, patching, upgrade or hosting. All is done for you.
@@ -24,10 +24,10 @@ You can use Streaming for replacing your own Kafka cluster and use this Managed 
 
 ### Additional Recommended Resources
 
-1. [Kakfa compatibility](https://docs.oracle.com/en-us/iaas/Content/Streaming/Tasks/kafkacompatibility.htm)
+1. [Kafka compatibility](https://docs.oracle.com/en-us/iaas/Content/Streaming/Tasks/kafkacompatibility.htm)
 2. [OCI Training](https://www.oracle.com/cloud/)
 
-## Acknowledgments
+## Acknowledgements 
 
 - **Author** - Marc Gueury
 - **History** - Creation - 25 Aug 2022

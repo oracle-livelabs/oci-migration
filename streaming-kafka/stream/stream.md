@@ -22,11 +22,11 @@ Estimated time: 10 min
      - Then click **Create Stream Pool**
 4. Let fill the wizard:
      - Type a name for the stream pool: **pool**
-     - Clik **Show Advanced Options**
+     - Click **Show Advanced Options**
      - Enable **Auto create topics**
      - Click **Create**
 
-     We could create the topics manually. But this makes this tutorial shorter.
+     We could create the topics manually. But this makes this tutorial shorter...
       
      ![streampool-create](images/streampool-create.png)
 
@@ -52,21 +52,23 @@ When the pool is created. Take note of
 - Take note of the token generated. It will appear only once (**5**)
     ![streaming-security2](images/streaming-security2.png)
 
-You have now the 5 settings needed in the next lab.
+You have now the 5 settings needed in the [next lab](#next).
 
 ## Remark: Policies
 
-Depending of the type of user that you are using, you will maybe need to add policies to acccess the Stream.
+Depending of the type of user that you are using, you will maybe need to add policies to access the Stream.
 If you need policies, they look like this:
 
 ```
+<copy>
 allow any-user to use stream-family in compartment marc.gueury	
 allow any-user to {STREAM_READ, STREAM_CONSUME} in compartment marc.gueury
+</copy>
 ```
 
-More info here: [OCI Common Policies](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/commonpolicies.htm#)
+More info here (look for Stream): [OCI Common Policies](https://docs.oracle.com/en-us/iaas/Content/Identity/Concepts/commonpolicies.htm#)
 
-## Acknowledgments
+## Acknowledgements
 
 - **Author** - Marc Gueury
 - **History** - Creation - 25 Aug 2022

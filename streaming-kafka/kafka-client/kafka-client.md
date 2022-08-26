@@ -5,7 +5,7 @@
 
 Estimated time: 10 min
 
-We will use a small Java program to produce and consume messages via Kafka APIs.
+We will use a small Java program to produce and consume messages with Kafka APIs.
 
 ### Objectives
 
@@ -192,10 +192,12 @@ public class Consumer {
 3. Back in the console. 
    - Compile the code
      ```
+     <copy>
      cd streaming-kafka
      ./build.sh
      ./producer.sh
      ./consumer.sh
+     </copy>
      ```
   - You will see that some messages are produced and consumed by the Kafka client.
      ```
@@ -220,7 +222,7 @@ Received message: (message3, { i=3 }) at offset 23
 ...
 ```
 
-## Acknowledgments
+## Acknowledgements
 
 - **Author** - Marc Gueury
 - **History** - Creation - 25 Aug 2022
