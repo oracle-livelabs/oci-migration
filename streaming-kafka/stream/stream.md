@@ -43,7 +43,9 @@ When the pool is created. Take note of
    ![streaming-security1](images/streaming-security1.png)
 - Take note the **tenancy name** (**3**)
 - Click on your **username** 
-- Take note of your **username** (**4**). If you use IDCS, it will be in the form of **oracleidentitycloudservice/xxxxxxx**
+- Take note of your **username** (**4**). 
+    - If you use IDCS, it will be in the form of **oracleidentitycloudservice/xxxxxxx**
+    - If you use the new Identity Domain, it will be in the form of **xxxxxxx** (And not Default/xxxxxxx)
 - Scroll down
 - Click **Auth Tokens**
 - Then **Generate Token**
