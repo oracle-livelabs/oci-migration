@@ -18,157 +18,54 @@ In this tutorial, you will provision:
 For this tutorial, you need:
 
 * An Oracle Free Tier, Always Free, Paid or LiveLabs Cloud Account
-* Git installed
-* Terraform installed (If you need guidance to set up Terraform, please visit the [prerequistes](https://github.com/oracle-quickstart/oci-prerequisites) document)
 
-## Task 1: Gather Required Information
+## Task 1: Deploy Tomcat with 1-click
 
-1. Get your `tenancy OCID`:
+1. Go to [https://github.com/oracle-quickstart/oci-arch-tomcat-autonomous](https://github.com/oracle-quickstart/oci-arch-tomcat-autonomous)
 
-    1. In the Oracle Cloud Console, **click** your **User** icon (top right corner), then **Tenancy**.
+2. Scroll down to find the **Deploy To Oracle Cloud** button, and click the button.
 
-        ![](./images/setup-tf-tenancy.png " ")
+    ![./images/deploy-button.png](./images/deploy-button.png)
 
-    2. **Copy** the OCID of the tenancy and paste it in your environment file.
+3. Agree to the terms of use.
 
-        ![](./images/setup-tf-tenancy-ocid.png " ")
+    ![./images/agree.png](./images/agree.png)
 
-2. Get your `compartment OCID`:
+4. Clear the tag if it auto-completed with your email.
 
-    1. From the navigation menu, select **Identity** and then select **Compartments**.
+5. Click the **Next** button.
 
-        ![](./images/setup-tf-compartment.png " ")
+6. Enter a password for the Autonomous Database ADMIN user (must start with a letter, contain 12-30 characters, at least 1 uppercase, 1 lowercase, 1 number, and special character _ or #)
 
-    2. Navigate to the compartment where you want to deploy the infrastructure.
+7. Click **ATP Database Private Endpoint** to provision the Autonomous Database with a private endpoint.
 
-    3. Copy the OCID of the compartment.
+    ![./images/private-endpoint.png](./images/private-endpoint.png " ")
 
-        ![](./images/setup-tf-compartment-ocid.png " ")
+8. If you already used the Free Tier Autonomous DB in your tenancy, uncheck the **ATP Database Free Tier** checkbox or the stack will failed on quota exceeded.
 
-3. Get your `user OCID`:
+9. Select Tomcat v9.x for this lab.
 
-    1. In the Oracle Cloud Console, click your **User** icon (top right corner), then click your user name.
+10. Click **View Advanced Options** and scroll to the **SSH Key** section.
 
-        ![](./images/setup-tf-user.png " ")
-
-   2. Copy the OCID of your user and paste it in your environment file.
-
-        ![](./images/setup-tf-user-ocid.png " ")
-
-4. Get the OCI public key `fingerprint`. In your user settings, under API Keys, you will find the `fingerprint` value.
-
-    > **Note:** Make sure this is the one matching the OCI public key you created for Terraform.
-
-    ![](./images/setup-tf-fingerprint.png " ")
-               
-## Task 2: Get the Terraform Code
-
-For this step, you may want to open up a separate shell terminal.
-
-1. You'll find the code on Github.com at [https://github.com/oracle-quickstart/oci-arch-tomcat-autonomous](https://github.com/oracle-quickstart/oci-arch-tomcat-autonomous).
-
-2. Click **Code** and download as a zip file or using git command line, in a local folder of your choice, clone the repository with:
-
-    ```bash
-    <copy>
-    git clone https://github.com/oracle-quickstart/oci-arch-tomcat-autonomous.git
-    </copy>
-    ```
-
-4. Get into the code folder:
-
-    ```bash
-    <copy>
-    cd oci-arch-tomcat-autonomous
-    </copy>
-    ```
-
-## Task 3: Create a `terraform.tfvars` Configuration File
-
-To run the deployment, you need to define a few settings in a file named `terraform.tfvars`.
-
-1. Create a file called `terraform.tfvars` and open it with your prefered editor.
-
-2. Enter the following information in the `terraform.tfvars` file:
-
-    ```
-    <copy>
-    # Authentication
-    tenancy_ocid         = "<tenancy_ocid>"
-    user_ocid            = "<user_ocid>"
-    fingerprint          = "<finger_print>"
-    private_key_path     = "<pem_private_key_path>"
-
-    # Region
-    region = "<oci_region>"
-
-    # Compartment
-    compartment_ocid = "<compartment_ocid>"
-
-    # ATP instance Password
-    atp_db_name = "ATPDB"
-    atp_name = "TomcatATP"
-    atp_password = "<password 12-30 chars including Upper + Number>"
-
-    # Number of Tomcat nodes (optional)
-    numberOfNodes = 2
-
-    # Customer SSH Public Key (optional)
-    ssh_public_key = "<ssh_public_key>"
-    </copy>
-    ```
-
-    For the SSH Public key, make sure to provide the SSH key generated in the on-premises environment and copied earlier.
+    ![./images/advanced-options.png](./images/advanced-options.png " ")
 
 
+11. Click **Paste SSH Key** and paste the SSH key created earlier in the Tomcat docker environment. 
 
-3. Save the `terraform.tfvars` file.
+    *NOTE*: The SSH key created in the docker environment is available to the local machine, in the `ssh` folder.
 
-## Task 4: Run the Deployment
+    ![./images/ssh-key.png](./images/ssh-key.png " ")
 
-1. Initialize the project:
+12. Keep the rest as defaults and click **Next**
 
-    ```
-    <copy>
-    terraform init
-    </copy>
-    ```
+13. Click **Create**.
 
-2. Check the plan (optional):
+## Task 2: Take note of the Outputs
 
-    To determine what will happen, run the `plan` operation:
+1. Wait for the stack creation to complete, and take note of the **Output** values.
 
-    ```
-    <copy>
-    terraform plan
-    </copy>
-    ```
-
-3. Apply the plan:
-
-   ```bash
-    <copy>
-    terraform apply
-    </copy>
-    ```
-
-    You will be prompted to enter `yes` to apply the plan.
-
-    ```
-    Do you want to perform these actions?
-    Terraform will perform the actions described above.
-    Only 'yes' will be accepted to approve.
-
-    Enter a value: yes
-    ```
-
-    It will take a few minutes to provision the resources.
-
-    You may proceed to the next tutorial while it is provisioning; however, you will not be able to migrate the data to the database until the infrastructure completed provisioning.
-
-4. Note the outputs of the Terraform for future use.    
-
+    ![./images/outputs.png](./images/outputs.png " ")
 
 ## Acknowledgements
  - **Author** - Subash Singh, Emmanuel Leroy, October 2020
- - **Last Updated By/Date** - Emmanuel Leroy, October 2020
+ - **Last Updated By/Date** - Emmanuel Leroy, February 2023

@@ -32,12 +32,7 @@
             "filename": "../../migrate-app/migrate-app.md"
         },
         {
-            "title": "Lab 5: Scaling the Tomcat Cluster",
-            "publisheddate": "10/06/2020",
-            "filename": "../../scale/scale.md"
-        },
-        {
-            "title": "Lab 6: Tear Down the Workshop",
+            "title": "Lab 5: Tear Down the Workshop",
             "publisheddate": "10/06/2020",
             "filename": "../../tear-down/tear-down.md"
         },
