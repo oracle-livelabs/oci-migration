@@ -17,25 +17,32 @@ In this lab you will:
 - Check that the environment is running properly.
 - Create an SSH key pair to communicate with the OCI services.
 
-
 ### Prerequisites
 
-To run this lab, you will need:
+To run this tutorial, you will need:
 
-- Docker installed locally to run the on-premises environment.
+- docker engine installed locally to run the on-premises environment.
 
-  Get Docker here: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/).
+  Get the docker engine with Docker Desktop at [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/).
 
-  ***Note: You need at least 3 CPUs and 6Gb of memory assigned to Docker to run this template.***
+  You can also use alternative Docker distribution if you are not able to use Docker Desktop. Alternatives include:     
+    - [colima](https://github.com/abiosoft/colima) for Max OS 
+        ```bash
+        brew install colima
+        ```
+    - Rancher Desktop for Max OS or Windows at [https://rancherdesktop.io/](https://rancherdesktop.io/)
 
-- Docker-compose installed (on Linux it needs to be installed separately, but it is installed automatically on Mac OS and Windows).
+  > **Note:** You need at least three CPUs and 6 GB of memory assigned to Docker to run this template.
+
+- Docker-compose installed (on Linux, or using 3rd party docker, it needs to be installed separately, but it is installed automatically on Mac OS and Windows with Docker Desktop).
 
   [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
-- Docker Hub Account, to download necessary Docker images.
+- Oracle Container Registry Account, to download necessary Docker images.
 
-  [https://hub.docker.com/signup](https://hub.docker.com/signup)
+  [https://container-registry.oracle.com/ords/f?p=113:10::::::](https://container-registry.oracle.com/ords/f?p=113:10::::::)
 
+    Click Sign-in and Sign up for an account if you do not have one.
 
 ## Task 1: Get the Code
 
@@ -125,29 +132,23 @@ You can also download the code [https://objectstorage.us-ashburn-1.oraclecloud.c
 
 ## Task 2: Agree to the Terms of the Private Docker Images
 
-This repository makes use of Oracle Docker images which are licensed and need to be pulled from DockerHub after acknowledging the terms of the license.
+This repository makes use of Oracle docker images which are licensed and need to be pulled from Oracle Container Registry after acknowledging the terms of the license.
 
-1. Sign in to Docker Hub and go to the **Oracle Database** page and accept the license terms at:</br>
-  <a href="https://hub.docker.com/_/oracle-database-enterprise-edition" target="_blank">https://hub.docker.com/_/oracle-database-enterprise-edition</a>
+1. Sign in to Oracle Container Registry and go to the **Oracle Database** page by searching for **Database Enterprise Edition** and accept the license terms at: <a href="https://container-registry.oracle.com" target="_blank">https://container-registry.oracle.com</a>.
 
-    - Click **Proceed to Checkout**.
-    - Fill in your information.
-    - Accept the terms of license.
-    - click **Get Content**.
+    - Select a Language.
+    - Scroll down to Accept the terms of license.
 
-2. Go to the **Instant Client** page and accept the license terms for the SQL Plus client at:</br>
-  <a href="https://hub.docker.com/_/oracle-instant-client" target="_blank">https://hub.docker.com/_/oracle-instant-client</a>
+2. Search for the **Instant Client** page and accept the license terms for the SQL Plus client at: <a href="https://container-registry.oracle.com" target="_blank">https://container-registry.oracle.com</a>.
 
-    - Click **Proceed to Checkout**.
-    - Fill in your information.
-    - Accept the terms of license.
-    - click **Get Content**.
+    - Select a Language.
+    - Scroll down to Accept the terms of license.
 
-3. Login to docker, providing your docker-hub username and password:
+4. Login to docker, providing your oracle container registry username and password:
 
     ```bash
     <copy>
-    docker login 
+    docker login container-registry.oracle.com
     </copy>
     ```
 
@@ -173,7 +174,7 @@ This repository makes use of Oracle Docker images which are licensed and need to
 
     ```bash
     <copy>
-    docker exec -it --user=root wildfly-to-oci_oracledb_1 /bin/chown 54321:54321 ~/.ssh
+    docker exec -it --user=root wildfly-to-oci-oracledb-1 /bin/chown 54321:54321 ~/.ssh
     </copy>
     ```
 
@@ -203,8 +204,8 @@ For the JBoss/WildFly container to run the application, the database needs to be
     The following output shows the init container has terminated and the system should be ready:
     ```
     CONTAINER ID        IMAGE                        COMMAND                  CREATED             STATUS                             PORTS                                                          NAMES
-    c99433b680ce        wildfly-to-oci_JBoss/WildFly         "catalina.sh run"        26 seconds ago      Up 25 seconds                      0.0.0.0:8080->8080/tcp                                      wildfly-to-oci_wildfly_1
-    0b8f99e2deb8        wildfly-to-oci_oracledb       "/bin/sh -c '/bin/ba…"   26 seconds ago      Up 25 seconds (health: starting)   127.0.0.1:1521->1521/tcp, 127.0.0.1:5000->5000/tcp, 5500/tcp   wildfly-to-oci_oracledb_1
+    c99433b680ce        wildfly-to-oci_JBoss/WildFly         "catalina.sh run"        26 seconds ago      Up 25 seconds                      0.0.0.0:8080->8080/tcp                                      wildfly-to-oci-wildfly-1
+    0b8f99e2deb8        wildfly-to-oci_oracledb       "/bin/sh -c '/bin/ba…"   26 seconds ago      Up 25 seconds (health: starting)   127.0.0.1:1521->1521/tcp, 127.0.0.1:5000->5000/tcp, 5500/tcp   wildfly-to-oci-oracledb-1
     ```
 
     If you see a container called `wildfly-to-oci_oracledbinit`, like below, this means the initialization is still ongoing.
@@ -217,7 +218,7 @@ For the JBoss/WildFly container to run the application, the database needs to be
 
     ```bash
     <copy>
-    docker logs -t wildfly-to-oci_oracledb_1
+    docker logs -t wildfly-to-oci-oracledb-1
     </copy>
     ```
 
@@ -241,7 +242,7 @@ We'll create an SSH key pair in this folder.
 
     ```bash
     <copy>
-    docker exec -it wildfly-to-oci_oracledb_1 /bin/bash
+    docker exec -it wildfly-to-oci-oracledb-1 /bin/bash
     </copy>
     ```
 
@@ -280,4 +281,4 @@ You may proceed to the next lab.
 ## Acknowledgements
 
  - **Author** - Emmanuel Leroy
- - **Last Updated By/Date** - Emmanuel Leroy, May 2021
+ - **Last Updated By/Date** - Emmanuel Leroy, February 2023
