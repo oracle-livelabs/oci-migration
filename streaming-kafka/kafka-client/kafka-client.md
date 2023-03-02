@@ -223,6 +223,22 @@ Received message: (message3, { i=3 }) at offset 23
 ...
 ```
 
+## Troubleshooting: Identity Domains
+
+If you have are using the wrong user to connect to Kafka, you will hit an error like this:
+
+```
+...
+exception occurred in producer for review :{ i=1 },
+exception is org.apache.kafka.common.errors.SaslAuthenticationException: Authentication failed
+org.apache.kafka.common.errors.SaslAuthenticationException: Authentication failed (edited) 
+...
+```
+
+Recheck the steps to get your username in the previous chapter:
+- If you use IDCS, it will be in the form of **oracleidentitycloudservice/xxxxxxx**
+- If you use the new Identity Domain, it will be in the form of **xxxxxxx** (and not Default/xxxxxxx)
+
 ## Acknowledgements
 
 - **Author** - Marc Gueury

@@ -11,17 +11,13 @@ Estimated Lab Time: 5 minutes
 In this lab, you will tear down and clean up resources.
 
 
-## Task 1: Tear Down Terraform Resources
+## Task 1: Tear Down Resources
 
-1. Simply run the terraform destroy command:
+1. To tear down resources, go to the Stack Details, then click **Destroy**
 
-    ```
-    <copy>
-    terraform destroy
-    </copy>
-    ```
+2. This may take a couple minutes. If the job fails, go back to the Stack Details and try **Destroy** again.
 
-    You will be prompted to type `yes` to confirm.
+3. When the job completes successfully, you can delete the stackwith **Other Actions** -> **Delete Stack**.
 
 ## Task 2: Tear Down the Local Docker Environment
 
@@ -66,4 +62,4 @@ In this lab, you will tear down and clean up resources.
 
 ## Acknowledgements
  - **Author** - Subash Singh, Emmanuel Leroy
- - **Last Updated By/Date** - Emmanuel Leroy, May 2021
+ - **Last Updated By/Date** - Emmanuel Leroy, February 2023
