@@ -119,7 +119,7 @@ If you are using a Windows machine OR do not have administrator access, please c
 
 You may now **proceed to the next lab** if you are using a Linux Machine with Admin access.
 
-## Acknowledgments
+## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
 * **Contributors** - Edward Lawson, Master Principal Cloud Architect 
 * **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
