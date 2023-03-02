@@ -180,7 +180,7 @@ In order to refresh an environment you will need an environment created from a t
 
     You have now successfully refreshed an environment from a backup!
 
-## Acknowledgments
+## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
 * **Contributors** - Edward Lawson, Master Principal Cloud Architect 
 * **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
