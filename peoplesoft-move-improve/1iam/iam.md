@@ -207,7 +207,7 @@ Currently, we are signed in as an Administrator. Since we don't want Admins crea
     
     This will expand fields for non-federated accounts. Enter the username **User01** and the password that you copied to a note in step 4.
 
-    ![Login to the OCI console using the direct sign-in option](./images/newSignin.png "")
+    ![Login to the OCI console using the direct sign-in option](./images/newSignIn.png "")
 
 
     *Note*: Since this is the first-time sign-in, the user will be prompted to change the temporary password, as shown in the screen capture below.
