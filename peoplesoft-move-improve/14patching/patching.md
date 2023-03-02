@@ -45,7 +45,7 @@ In this lab you will:
 1. Navigate to **Cloud Manger Dashboard** > **Environments**
     ![Navigate to Cloud Manger Dashboard and then Environments](./images/env.png "")
 2. Find the environment you would like to patch, click **V** and **Details**
-    ![](./images/details.png "")
+    ![Find the environment you would like to patch, click the arrow and then details](./images/details.png "")
 3. Navigate to **Apply PeopleTools Patch**. In the drop down, select the **8.58.11**, and then click **Update**
     ![Find the environment you would like to patch, click arrow and details](./images/patch58.png "")
     - Click **Yes**
@@ -60,7 +60,7 @@ You may now **proceed to the next lab.**
 
 
 
-## Acknowledgments
+## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
 * **Contributors** - Edward Lawson, Master Principal Cloud Architect 
 * **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
