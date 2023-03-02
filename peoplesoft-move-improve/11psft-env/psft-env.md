@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This lab walks you through the steps to provision and deploy an HCM PeopleSoft Environment from the previously created environment topolgy and template.
+This lab walks you through the steps to provision and deploy an HCM PeopleSoft Environment from the previously created environment topology and template.
 
-Estimated Lab Time: 15 minutes + 90 minutes waiting for environment to delpoy
+Estimated Lab Time: 15 minutes + 90 minutes waiting for environment to deploy
 
 ### Objectives
 
@@ -20,15 +20,15 @@ In this lab, you will:
 ## Task 1: Creating a New PeopleSoft Environment
 
 1. Navigate to Cloud Manager Dashboard > **Environments**  
-    ![](./images/1dashenv.png "")
+    ![Navigate to Cloud Manager Dashboard and then Environments](./images/dashenv.png "")
 
   Click **Create Environment** button.
 
-    ![](./images/e1.png "")
+    ![Click Create Environment button](./images/clickenv.png "")
 
 2. Provide a unique Environment Name - **HCMFT**. Select the Template that was created in previous section – **PUMFT**. Click **yes** for **Pause after infra creation**.  
 
-    ![](./images/3newenvinfo.png "")
+    ![Provide a unique Environment Name and select the Template that was created in previous section](./images/newenvinfo.png "")
 
 3. Expand **Environment Attributes -> Full Tier -> Credentials**
 
@@ -46,58 +46,58 @@ In this lab, you will:
 
 
 
-  (All are the same except Database Adminitistrator Password)
+  (All are the same except Database Administrator Password)
 
-    ![](./images/credentials.png "")
+    ![Enter the credentials as follow](./images/credentials.png "")
 
 4. Expand PeopleSoft Client -> **Credentials**
 
   Enter the password: Psft12345678#
-    ![](./images/winenvpass.png "")
+    ![Enter the password for the windows environment](./images/winenvpass.png "")
 
 5. Scroll up and click **Done** on the top right to begin the environment creation process. 
 
-    ![](./images/e4.png "")
+    ![Hit done to begin with environment creation](./images/envbuild.png "")
 
 ## Task 2: Monitoring Infrastructure Creation
 
 1. Refresh the page, and you'll see the status is **Initiating**.
-    ![](./images/6initiating.png "")
+    ![Refresh the page to see the environment status](./images/initiating.png "")
 
 2. Refresh again after a minute, and you'll see the status change to **Infra Creation In Progress**. Now, Click the arrow, and then **Details**
-    ![](./images/7inprogress.png "")
+    ![Click on arrow to see the details page](./images/inprogress.png "")
 
 3. On the left, click **Logs**. Then, adjust the Number of Lines to Display and click **Fetch Logs**. You can take a monitor the infrastructure creation here. 
-    ![](./images/8fetchlogs.png "")
+    ![Click on logs to get the status of logs for the environment](./images/fetchlogs.png "")
 
 It takes about 10 minutes to see the status change to **Infrastructure Creation Complete**:
-    ![](./images/9infracomplete.png "")
+    ![Infrastructure status changes to complete](./images/infracomplete.png "")
 
 
 
 ## Task 3: Monitoring Deployment of PeopleSoft Environment
 
 1. Now that the infrastructure has been created, we can deploy our environment. Click the arrow and **Deploy**
-    ![](./images/10deploynew.png "")
+    ![Click the arrow and start the deployment process](./images/deploynew.png "")
 
   Then click **Yes** to confirm the provisioning.
-    ![](./images/11yesdeploynew.png "")
+    ![Click the arrow for the details](./images/yesdeploy.png "")
 
 2. Again, click the arrow for the **Details**
-    ![](./images/12provisioning.png "")
+    ![Click the arrow for the details again](./images/12provisioning.png "")
 
   On the left, click **Provisioning Task Status** to see detailed progress status for every step. Click on **Deployment Tasks**. If any step fails, you can change the attribute as per the error and start the process from where it failed.
-    ![](./images/13tasks.png "")
+    ![Click Provisioning Task Status to see detailed progress status for every step](./images/tasks.png "")
 
 Provisioning takes about 90 minutes. You can monitor throughout this time.
 
 3. Once your environment is in the **Running** status, go to **Details** again.
-    ![](./images/14details.png "")
+    ![Once your environment is in the Running status, go to details again](./images/details.png "")
 
 ## Task 4: Signing in to PeopleSoft Environment
 
 1. Set up a port forwarding session like we did in Lab 3 (Linux) & Lab 5 (Windows VM), making sure to select **hcm-fulltierlinux-1** in the dropdown of "Compute instance in Demo"
-    ![](./images/sshhcm.png "")
+    ![Set up a port forwarding session for the environment](./images/sshhcm.png "")
 
     Next, add to your hosts file like we did previously
     ```
@@ -106,9 +106,9 @@ Provisioning takes about 90 minutes. You can monitor throughout this time.
     </copy>
     ```
     Run the SSH port forward command in  Terminal or Git Bash, selecting a new port. (This time, I used 5000)
-    ![](./images/portfwcommand.png "")
+    ![Run the SSH port forward command in Terminal or Git Bash, selecting a new port](./images/portfwcommand.png "")
 2. Enter the url in a browser
-    ![](./images/hcmpia.png "")
+    ![Enter the url in a browser](./images/hcmpia.png "")
 
 3. Sign in using the following credentials
 
@@ -116,17 +116,17 @@ Provisioning takes about 90 minutes. You can monitor throughout this time.
   Username : PS    
   Password: Psft1234
   ```
-  ![](./images/hcmlogin.png "")
+  ![Sign in using the following credentials](./images/hcmlogin.png "")
 4. And voila- your HCM PeopleSoft Environment:
-    ![](./images/hcmhome.png "")
+    ![You have successfully logged into the environment](./images/hcmhome.png "")
 
 
 
 ## Task 5: Cloud Manager Actions for PeopleSoft Environment
 
-We will cover Cloud Manager 13 features in depth in the following labs. Here is an **Overview** of the actions you can perform.
+We will cover the latest Cloud Manager features in depth in the following labs. Here is an **Overview** of the actions you can perform.
 
-  ![](./images/actions.png "")
+  ![Here is an Overview of the actions you can perform](./images/actions.png "")
   The actions are:
 
   • **Details**: Select this option to view environment details and to perform additional actions on the environment such as performing a health check, applying a PeopleTools patch, viewing logs, and managing PUM connections.
@@ -153,17 +153,13 @@ You may follow the rest of the labs for even more features:
 
   • **Selective Adoption** (Lab 17): Create a PUM connection between a source and target environment. 
 
-  • **Refresh** (Lab 18): Select this option to refresh the database or the database, ps app home and ps cust home.  
+  • **Refresh** (Lab 18): Select this option to refresh the database or the database, PS APP HOME and PS CUST HOME.  
   This option is only available for DBaaS environments.
 
 
 You may now **proceed to the next lab.**
 
 ## Acknowledgments
-* **Authors** - Megha Gajbhiye, Cloud Solutions Engineer; Sara Lipowsky, Cloud Engineer; Hayley Allmand, Cloud Engineer
-* **Last Updated By/Date** - Sara Lipowsky, Cloud Engineer, January 2022
-
-## Need Help?
-Please submit feedback or ask for help using our [LiveLabs Support Forum](https://community.oracle.com/tech/developers/categories/Migrate%20SaaS%20to%20OCI). Please click the **Log In** button and login using your Oracle Account. Click the **Ask A Question** button to the left to start a *New Discussion* or *Ask a Question*.  Please include your workshop name and lab name.  You can also include screenshots and attach files.  Engage directly with the author of the workshop.
-
-If you do not have an Oracle Account, click [here](https://profile.oracle.com/myprofile/account/create-account.jspx) to create one.
+* **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect 
+* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023

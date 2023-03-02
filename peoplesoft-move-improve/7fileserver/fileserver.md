@@ -34,54 +34,78 @@ Sign back into the OCI Console if not already logged in.
 
 1. Navigate to the three-line menu on the top -> **Storage** -> **Mount Targets**.
 
-    ![](./images/1navmt.png " ")
+    ![Navigate to the three-line menu on the top, click Storage and then Mount Targets](./images/navmt.png " ")
 
 2. Ensure that you're in the **Demo** compartment by using the dropdown on the left. Then, click **Create Mount Target**
-    ![](./images/2createmt.png " ")
+    
+    ![Select the demo compartment from the left and click on create mount targets](./images/createmt.png " ")
+
 3. Now fill out the required **Mount Target Information**
     * New Mount Target Name: **psft-mount-target**
     * Availability Domain: **____AD-1**
     * Virtual Cloud Network: **psftvcn**
     * Subnet: **cm(Regional)**
-    ![](./images/3mtinfo.png " ")
+    
+    ![Provide all information required for creating the mount target](./images/mtinfo.png " ")
     Click **Create**
 4. You should see a dialog box pop up saying that it has successfully been created. Go ahead and click **View Details**
-    ![](./images/4viewdetails.png " ")
-    ![](./images/5mtcreated.png " ")
+    
+    ![click on view details to check the mount target created](./images/viewdetails.png " ")
+    ![view mount target information on the console ](./images/mtcreated.png " ")
 
 ## Task 2: Refreshing OCI Metadata in Cloud Manager
 
 1. In Cloud Manager, go to **Cloud Manger Settings**
-    ![](./images/6cmsettings.png " ")
+
+    ![In Cloud Manager, go to Cloud Manger Settings](./images/cmsettings.png " ")
+
 2. On the left, click **Infrastructure Settings**
-    ![](./images/7refresh.png " ")
+   
+    ![On the left, click Infrastructure Settings](./images/refresh.png " ")
+
 3. The messages should change to **OCI metadata refresh is in progress. Check status through process monitor page.**
-    ![](./images/8inprogress.png " ")
+
+    ![The messages should change to OCI metadata refresh is in progress. Check status through process monitor page](./images/inprogress.png " ")
+
 4. You may need to refresh the page. You may move onto Task 3 once you see that the refresh has been successful with a recent timestamp.
-    ![](./images/9successful.png " ")
+    
+    ![You may need to refresh the page to have it successful](./images/successful.png " ")
 
 ## Task 3: Configuring File Server
 1. On the left side, navigate down to File Server
-    ![](./images/10fileserver.png "")
+
+    ![On the left side, navigate down to File Server](./images/fileserver.png "")
+
 2. Enter Mount Taget Information
     * Switch the radio button to **Yes** for **Use existing Mount Target**
     * Using the dropdown, select the Mount Taget we created: **psft-mount-target**
-    ![](./images/11mtsetup.png " ")
+    
+    ![Enter the Mount target inforamtion and click create](./images/mtsetup.png " ")
+
     Click **Create**.
     
 3. Refresh the page and watch the Fss Status change to: **Initiating File Storage Service**
-    ![](./images/12initiating.png " ")
+    
+    ![Refresh the page and watch the Fss Status change to: Initiating File Storage Service](./images/initiating.png " ")
 
 ## Task 4: Monitoring File Server Configuration
+
 The following are screenshots of monitoring the progress of the File Server creation.
 1. Example of **More Info** in progress
-    ![](./images/13moreinfo.png " ")
+
+    ![Click on More info to check the progress](./images/moreinfo.png " ")
+
 2. Navigate to **Logs** on the left, then use the dropdown to change the **Log Directory**, choose the **Log File** you wish to see, and put a higher value in **No of lines** to view more and then click **Fetch Logs** like so:
-    ![](./images/14logs.png " ")
+
+    ![click on logs to check the status of the FSS](./images/logs.png " ")
+
 3. On the Mount Target Details page on the OCI Console, you'll see the Export Path has been created. (Use the 3-line menu on the top, **Storage** --> **Mount Targets**. Select the mount target we created: **psft-mount-target** to view the details)
-    ![](./images/15exportpath.png " ")
+
+    ![OCI console shows the MT targets created](./images/exportpath.png " ")
+
 4. The file server should be created within 10 minutes. ‘**FSS Configured**' will appear when the File Server has completed configuring
-    ![](./images/16configured.png " ")
+
+    ![The FSS is configured](./images/configured.png " ")
 
 
 
@@ -92,10 +116,6 @@ You may now **proceed to the next lab.**
 
 
 ## Acknowledgments
-* **Authors** - Megha Gajbhiye, Cloud Solutions Engineer; Sara Lipowsky, Cloud Engineer
-* **Last Updated By/Date** - Sara Lipowsky, Cloud Engineer, January 2022
-
-## Need Help?
-Please submit feedback or ask for help using our [LiveLabs Support Forum](https://community.oracle.com/tech/developers/categories/Migrate%20SaaS%20to%20OCI). Please click the **Log In** button and login using your Oracle Account. Click the **Ask A Question** button to the left to start a *New Discussion* or *Ask a Question*.  Please include your workshop name and lab name.  You can also include screenshots and attach files.  Engage directly with the author of the workshop.
-
-If you do not have an Oracle Account, click [here](https://profile.oracle.com/myprofile/account/create-account.jspx) to create one.
+* **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect 
+* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023

@@ -19,7 +19,7 @@ We have already provisioned Cloud Manager in a private subnet (cm) and the Basti
 * PeopleSoft Client in private subnet (win)
 
 
-![](./images/architecture13.png "")
+![PeopleSoft CM deployed Architecture](./images/architecture.png "")
 
 ### Prerequisites
 - A PeopleSoft Cloud Manager Instance
@@ -28,51 +28,57 @@ We have already provisioned Cloud Manager in a private subnet (cm) and the Basti
 ## Task 1: Creating a New Environment Template and General Details
 
 Navigate to Cloud Manager Dashboard -> **Environment Template**
-    ![](./images/1dashtemp.png "")
-
+    ![Navigate to Cloud Manager Dashboard  and then Environment Template](./images/dashtemp.png "")
+ 
 Click **Add New Template** button.
-    ![](./images/2addtemp.png "")
+    ![click on add new template button](./images/addtemp.png "")
 
 1. Fill out the General Settings as follows:
     - Name: **PUMFT**
     - Description **HCM 9.2 FT: Linux and Windows node**
-    ![](./images/tempnamedescription.png "")
+    ![Provide template name and description](./images/tempnamedescription.png "")
 
 2. For Select PeopleSoft Image, click the **search icon**. Do NOT type anything. If your DPK was downloaded properly, it should appear in the Search Results. If you can't see it yet, please wait and refresh the page after awhile. Since we subscribed to the HCM channel in Lab 7, we see **PEOPLESOFT HCM UPDATE IMAGE 9.2.40 - NATIVE OS** 
-    ![](./images/imagesearch.png "")
-    ![](./images/hcmsearch.png "")
+    ![Search the PeopleSoft image from the search icon](./images/imagesearch.png "")
+    ![The PSFT image results appear on screen](./images/hcmsearch.png "")
 
   Click **Next** when you have this:
-    ![](./images/3tempname.png "")
+    ![Enter all information and click next ](./images/tempname.png "")
 
 ## Task 2: Select Topology
+
 1. Click the **search icon** and select **PUM Fulltier** for the topology
 2. Expand **Custom Attributes** and select **PUM Fulltier** again from the drop down.
 3. Click on **Edit Custom Attributes**
-    ![](./images/5selecttopv2.png "")
+    ![Select the PUM Fulltier and click on edit custom attributes](./images/selecttopv2.png "")
 4. Fill in the Region and Availability Domains as follows:
     * Region: **us-ashburn-1**
     * Primary Availability Domain: **________-AD-1** (Depends on the AD you selected. In this case, we are using Ashburn)
     * Default Compartment: **Demo**
     * Default Virtual Cloud Network: **PSFTVCN(Demo)** 
-    ![](./images/regioninfo.png "")
+    
+    ![Provide all the information for Region and AD](./images/regioninfo.png "")
+
 5. Now, expand **Full Tier** > **General Settings**
     * Line 6- Database Name: **MYPUMDB**
     * Line 9- Database Operator Id: **PS**
-    ![](./images/gensettings.png "")
+    ![Enter the Database name and operator id](./images/gensettings.png "")
+
 6. Now, expand **Full Tier** > **Network Settings**
     * Compartment: **Demo**
     * Subnet For Primary Instance: **ft**
-    ![](./images/ftnetwork.png "")
+    ![Under the demo compartment select the subnet ft](./images/ftnetwork.png "")
+
 7. Now, expand **PeopleSoft Client** > **Network Settings**
     * Compartment: **Demo**
     * Subnet For Primary Instance: **win**
-    ![](./images/winnetwork.png "")
+    ![Under the demo compartment select the subnet win](./images/winnetwork.png "")
+
 8. Scroll back up and click on **Validate Network**
-    ![](./images/10validatenetwork.png "")
+    ![Click on validate button](./images/validatenetwork.png "")
 
   You should see something like this:
-    ![](./images/11validationok.png "")
+    ![The network validation is successful](./images/validationok.png "")
 
 Click **Next**
 
@@ -81,41 +87,37 @@ Click **Next**
 Now, we'll select the Zone and Role Names
 
 1. Click the **search icon** for **Zone Name**
-    ![](./images/12searchzone.png "")
+    ![Search for the zone by clicking the search icon](./images/searchzone.png "")
 
   Select **Test**
-    ![](./images/13searchtest.png "")
+    ![Select the test zone from the list](./images/searchtest.png "")
 
 2. Click the **search icon** for **Role Name**
-    ![](./images/14searchrole.png "")
+    ![Click the search icon for Role name](./images/searchrole.png "")
 
   Expand the **Search Criteria** at the top, type in **PACL\_CAD**, and click **Search**
-    ![](./images/15searchrole.png "")
+    ![Type PACL_CAD on the search criteria](./images/searchrole1.png "")
   Select **PACL\_CAD**
-    ![](./images/16searchrole.png "")
+    ![Select PACL_CAD from the search criteria](./images/searchrole2.png "")
 
 When you see this, click **Next**
-  ![](./images/17next.png "")
+  ![Click on next after verifying the values](./images/17next.png "")
 
 
 ## Task 4: Summary
 
 Review the Environment Template and click **Submit**
-    ![](./images/submit.png "")
+    ![Click on submit after verifying the values](./images/submit.png "")
 
 You should now see your Environment Template here:
-    ![](./images/finishedtemp.png "")
+    ![The environment template is now created](./images/finishedtemp.png "")
 
 
 You may now **proceed to the next lab.**
 
+
 ## Acknowledgments
+* **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect 
+* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
 
-**Authors** 
-* **Authors** - Megha Gajbhiye, Cloud Solutions Engineer; Sara Lipowsky, Cloud Engineer
-* **Last Updated By/Date** - Sara Lipowsky, Cloud Engineer, January 2022
-
-## Need Help?
-Please submit feedback or ask for help using our [LiveLabs Support Forum](https://community.oracle.com/tech/developers/categories/Migrate%20SaaS%20to%20OCI). Please click the **Log In** button and login using your Oracle Account. Click the **Ask A Question** button to the left to start a *New Discussion* or *Ask a Question*.  Please include your workshop name and lab name.  You can also include screenshots and attach files.  Engage directly with the author of the workshop.
-
-If you do not have an Oracle Account, click [here](https://profile.oracle.com/myprofile/account/create-account.jspx) to create one.
