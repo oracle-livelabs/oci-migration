@@ -21,7 +21,7 @@ The OCI Command Line Interface (CLI) tool will be needed to get the wallet from 
 
     ```
     <copy>
-    docker exec -it wildfly-to-oci_oracledb_1 /bin/bash
+    docker exec -it wildfly-to-oci-oracledb-1 /bin/bash
     </copy>
     ```
 
@@ -50,16 +50,28 @@ The OCI Command Line Interface (CLI) tool will be needed to get the wallet from 
     </copy>
     ```
 
-    You will be prompted for:
-    - Location of the config. Press **Enter**.
-    - `user_ocid`: enter your user OCID.
-    - `tenancy_ocid`: enter your tenancy OCID.
-    - `region`: enter your region from the list provided.
-    - Generate a RSA key pair: press **Enter** for Yes (default).
-    - Directory for keys: press **Enter** for the default.
-    - name for the key: press **Enter** for the default.
-    - Passphrase: press **Enter** for no passphrase.
+    Enter the following information:
+    
+    1. Location of the configuration: press **Enter**.
+    2. `user_ocid`: enter your user OCID.
+        1. In the Oracle Cloud Console, click your **User** icon (top right corner), then click your user name.
+            ![](images/setup-tf-user.png " ")
 
+       2. Copy the OCID of your user.
+            ![](images/setup-tf-user-ocid.png " ")
+
+    3. `tenancy_ocid`: enter your tenancy OCID.
+        1. In the Oracle Cloud Console, **click** your **User** icon (top right corner), then **Tenancy**.
+            ![](images/setup-tf-tenancy.png " ")
+
+        2. **Copy** the OCID of the tenancy.
+            ![](images/setup-tf-tenancy-ocid.png " ")
+
+    4. `region`: enter your region from the list provided.
+    5. Generate a RSA key pair: press **Enter** for Yes (default).
+    6. Directory for keys: press **Enter** for the default.
+    7. Name for the key: press **Enter** for the default.
+    8. Passphrase: press **Enter** for no passphrase.
 
     You should see an output like:
 
@@ -68,7 +80,6 @@ The OCI Command Line Interface (CLI) tool will be needed to get the wallet from 
     Fingerprint: 21:d4:f1:a0:55:a5:c2:ce:e2:...
     Config written to /home/oracle/.oci/config
     ```
-
 
 4. Upload the public key to your OCI account.
 
@@ -388,7 +399,7 @@ The OCI Command Line Interface (CLI) tool will be needed to get the wallet from 
 
     ```
     <copy>
-    sqlplus admin@atpdb_high
+    sqlplus admin@db_high
     </copy>
     ```
 
@@ -452,7 +463,7 @@ Use datapump to import the data dump.
     export NAMESPACE=<your namespace>
     export BUCKET=atp-upload
     export FILENAME=expdat.dmp
-    export ATP_DB_NAME=atpdb <or your ATP DB name>
+    export ATP_DB_NAME=db <or your ATP DB name>
     export ATP_PASSWORD="<atp_admin_password>"
     </copy>
     ```
@@ -503,4 +514,4 @@ You may proceed to the next lab.
 
 ## Acknowledgements
  - **Author** - Subash Singh, Emmanuel Leroy
- - **Last Updated By/Date** - Emmanuel Leroy, May 2021
+ - **Last Updated By/Date** - Emmanuel Leroy, February 2023

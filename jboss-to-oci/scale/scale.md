@@ -16,44 +16,24 @@ For this lab, you need to have provisioned the JBoss/WildFly cluster on OCI.
 
 ## Task 1: Scale the Number of Nodes
 
-On your local machine where you ran the terraform.
+1. Edit the variables in stack deployed earlier by going to the **Stack Details**, open **Variables** and then click **Edit Variables**
 
-1. Edit the `terraform.tfvars` file to have:
-
-    ```yaml
-    jboss_node_count=3
-    ```
-
-2. Run terraform plan:
-
-    ```bash
-    <copy>
-    terraform plan
-    </copy>
-    ```
-
-    Check the output to make sure this is what you expected. It should add a compute instance and re-register a backend to the load balancer.
+2. Adjust the number of nodes in the UI to 2 nodes 
 
 
-3. Run terraform apply.
+3. Click **Next**
 
-    ```bash
-    <copy>
-    terraform apply
-    </copy>
-    ```
+4. Click **Run Apply** at the bottom and then **Save**.
 
     Once this is complete, you will get the private IPs of the 3 JBoss/WildFly servers, as well as the load balancer IP.
 
-4. The WildFly Domain controller will automatically deploy the application on the additional server.
+5. The WildFly Domain controller will automatically deploy the application on the additional server.
 
     If you didn't use Domain Mode, then you'll need to re-deploy the application on each additional WildFly node.
 
-5. You can check the new node was added to the domain in the WildFly console, under **Runtime** -> **Hosts**.
+6. You can check the new node was added to the domain in the WildFly console, under **Runtime** -> **Hosts**.
 
-    ![](./images/3hosts.png)
-
-6. You can also check the new node in the proxied browser on port 8080/SimpleDB to see the app deployed successfully.
+    ![](./images/2hosts.png)
 
 
 You're done!
@@ -61,4 +41,4 @@ You're done!
 
 ## Acknowledgements
  - **Author** - Subash Singh, Emmanuel Leroy
- - **Last Updated By/Date** - Emmanuel Leroy, October 2020
+ - **Last Updated By/Date** - Emmanuel Leroy, February 2023
