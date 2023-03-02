@@ -113,8 +113,10 @@ Provisioning takes about 90 minutes. You can monitor throughout this time.
 3. Sign in using the following credentials
 
   ```
+  <copy>
   Username : PS    
   Password: Psft1234
+  </copy>
   ```
   ![Sign in using the following credentials](./images/hcmlogin.png "")
 4. And voila- your HCM PeopleSoft Environment:
@@ -159,7 +161,7 @@ You may follow the rest of the labs for even more features:
 
 You may now **proceed to the next lab.**
 
-## Acknowledgments
+## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
 * **Contributors** - Edward Lawson, Master Principal Cloud Architect 
 * **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023

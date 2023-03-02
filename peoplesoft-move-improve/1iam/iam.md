@@ -217,7 +217,7 @@ Currently, we are signed in as an Administrator. Since we don't want Admins crea
     ```
     <copy>Psft@1234</copy>
     ```
-    ![](./images/changePassword.png "")
+    ![Set the password of your choice](./images/changePassword.png "")
 
 
     You are now logged in as local user: **User01**
@@ -254,7 +254,7 @@ Generate them yourself:
 You may now **proceed to the next lab.**
 
 
-## Acknowledgments
+## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
 * **Contributors** - Edward Lawson, Master Principal Cloud Architect 
 * **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023

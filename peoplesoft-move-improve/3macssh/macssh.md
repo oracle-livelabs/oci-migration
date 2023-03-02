@@ -99,11 +99,15 @@ Remain off VPN.
     As you can see, Cloud Manager is being set up and it is still progress.
     
 5. Keep checking the status until you see **CM installed successfully** with the PIA URLs. After Cloud Manager bootstrap is complete, the CloudManagerStatus.log will show the following messages. 
-
+    ```
+    <copy>
 		The PeopleSoft Environment Setup Process Ended.
 		CM installed successfully
 		Cloud Manager PIA URL: http://psftcm.cm.psftvcn.oraclevcn.com:8000 
 		Cloud Manager PIA SSL URL: https://psftcm.cm.psftvcn.oraclevcn.com:8443
+    </copy>
+    
+    ```
 This screenshot shows that the connection closed and the ssh command had to be re-entered. The tail command had to be entered as well to see the expected output:
     ![PeopleSoft Cloud Manager is successfully provisioned](./images/tailsuccess.png "")
     

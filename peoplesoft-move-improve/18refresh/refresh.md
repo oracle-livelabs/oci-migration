@@ -40,7 +40,7 @@ In order to refresh an environment you will need a topology with DBaaS. If you a
     Click **Done**.
 
     Your topology should look like the following:
-    ![](./images/topologyfinal.png "")
+    ![Your topology should look like the following](./images/topologyfinal.png "")
     
     Click **Save**.
 
