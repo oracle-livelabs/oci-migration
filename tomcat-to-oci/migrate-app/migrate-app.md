@@ -18,7 +18,7 @@ For this tutorial, you need to have provisioned the Tomcat cluster on OCI.
 
 ## Task 1: Move the Application WAR File to the Tomcat Cluster on Oracle Cloud Infrastructure
 
-1. Gather the Tomcat servers IP addresses from the output of the Terraform.
+1. Gather the Tomcat servers IP addresses from the output of the stack deployment.
 
 2. Get into the Tomcat Docker container:
 
@@ -34,16 +34,23 @@ For this tutorial, you need to have provisioned the Tomcat cluster on OCI.
 
     ```
     <copy>
-    docker exec -it tomcat-to-oci_tomcat_1 /bin/bash
+    docker exec -it tomcat-to-oci-tomcat-1 /bin/bash
     </copy>
     ```
 
 2. Copy the application WAR file over to each Tomcat server:
 
     ```bash
-    # Set the PUBLIC IP of the Tomcat server
-    export BASTION_IP=<Bastion_p[ublic_IP>
+    <copy>
+    # Set the PUBLIC IP of the bastion
+    export BASTION_IP=<Bastion_public_IP>
+    </copy>
+    ```
+
+    ```
+    <copy>
     export TOMCAT_IP=<Tomcat Private IP>
+    </copy>
     ```
 
     Then run:
@@ -65,9 +72,13 @@ For this tutorial, you need to have provisioned the Tomcat cluster on OCI.
 
 4. Copy the file to the deployment folder:
 
+    The folder will depend on the version of Tomcat deployed.
+
+
     ```bash
     <copy>
-    sudo cp SimpleDB.war /var/lib/tomcat/webapps/
+    sudo cp SimpleDB.war /u01/apache-tomcat-9.0.45/webapps
+    sudo chown tomcat:tomcat /u01/apache-tomcat-9.0.45/webapps/SimpleDB.war
     </copy>
     ```
 
@@ -75,7 +86,7 @@ For this tutorial, you need to have provisioned the Tomcat cluster on OCI.
 
     ```bash
     <copy>
-    cd /var/lib/tomcat/webapps/
+    cd /u01/apache-tomcat-9.0.45/webapps
     ls -lh
     </copy>
     ```
@@ -86,15 +97,15 @@ For this tutorial, you need to have provisioned the Tomcat cluster on OCI.
 
 ## Task 2: Configure the Data Source
 
-1. Open the `server.xml` file in /etc/tomcat/ for editing:
+1. Open the `context.xml` file in the tomcat home folder for editing:
 
     ```bash
     <copy>
-    sudo nano /etc/tomcat/server.xml
+    sudo nano /u01/apache-tomcat-9.0.45/conf/context.xml
     </copy>
     ```
 
-2. Add the following section within the existing `<GlobalNamingResources>` section:
+2. Add the following section within the existing `<Context>` section:
 
     ```xml
     <copy>
@@ -106,85 +117,35 @@ For this tutorial, you need to have provisioned the Tomcat cluster on OCI.
           password="Nge29v2rv#1YtSIS#"
           driverClassName="oracle.jdbc.OracleDriver"
           description="RIDERS's database"
-          url="jdbc:oracle:thin:@atpdb_high?TNS_ADMIN=/etc/tomcat/wallet"
+          url="jdbc:oracle:thin:@tomcatatp_high?TNS_ADMIN=/usr/lib/oracle/19.10/client64/lib/network/admin/"
           maxActive="15"
           maxIdle="3"/>
     </copy>
     ```
 
-    Make sure to replace the `atpdb` name with your information if you didn't use the name `atp_db`.
-
-    You should end up with something like:
-
-    ```xml
-    <GlobalNamingResources>
-    <!-- Editable user database that can also be used by
-         UserDatabaseRealm to authenticate users
-    -->
-        <Resource name="UserDatabase" auth="Container"
-              type="org.apache.catalina.UserDatabase"
-              description="User database that can be updated and saved"
-              factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
-              pathname="conf/tomcat-users.xml" />
-        <Resource name="jdbc/JDBCConnectionDS"
-            global="jdbc/JDBCConnectionDS"
-            auth="Container"
-            type="javax.sql.DataSource"
-            username="riders"
-            password="Nge29v2rv#1YtSIS#"
-            driverClassName="oracle.jdbc.OracleDriver"
-            description="RIDERS's database"
-            url="jdbc:oracle:thin:@atpdb_high?TNS_ADMIN=/etc/tomcat/wallet"
-            maxActive="15"
-            maxIdle="3"/>
-    </GlobalNamingResources>
-    ```
+    Make sure to replace the `tomcatatp` name with your information if you didn't use the name `tomcatatp`.
 
 3. Type `CTRL+x`, then `y` to save the file.
 
-4. Open the `context.xml` file for editing:
+## Task 3: Install the Oracle JDBC driver
 
-    ```bash
+1. As the tomcat user:
+
+    ```
     <copy>
-    sudo nano /etc/tomcat/context.xml
+    sudo su - tomcat
     </copy>
     ```
 
-5. Add the following section inside the `<Context />` tag:
+2. Download and extract the driver:
 
-    ```xml
+    ```
     <copy>
-      <ResourceLink name="jdbc/JDBCConnectionDS"
-        global="jdbc/JDBCConnectionDS"
-        type="javax.sql.DataSource"/>
+    wget -c https://download.oracle.com/otn-pub/otn_software/jdbc/1918/ojdbc8-full.tar.gz -O - | tar -x -C /u01/apache-tomcat-9.0.45/webapps/SimpleDB/WEB-INF/lib/
     </copy>
     ```
 
-    You should end up with something like:
-
-    ```xml
-    <Context>
-    <ResourceLink name="jdbc/JDBCConnectionDS"
-        global="jdbc/JDBCConnectionDS"
-        type="javax.sql.DataSource"/>
-        <!-- Default set of monitored resources -->
-        <WatchedResource>WEB-INF/web.xml</WatchedResource>
-        <!-- Uncomment this to disable session persistence across Tomcat restarts -->
-        <!--
-        <Manager pathname="" />
-        -->
-        <!-- Uncomment this to enable Comet connection tacking (provides events
-            on session expiration as well as webapp lifecycle) -->
-        <!--
-        <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
-        -->
-
-    </Context>
-    ```
-
-6. Type `CTRL+x`, then `y` to save the file.
-
-7. Restart Tomcat:
+3. Restart Tomcat:
 
     ```bash
     <copy>
@@ -192,18 +153,17 @@ For this tutorial, you need to have provisioned the Tomcat cluster on OCI.
     </copy>
     ```
 
-8. Check that the application is correctly deployed and served by the individual server by tunneling through the bastion with:
+5. Test the servlet is working using curl:
 
-    ```bash
+    ```
     <copy>
-    export PORT=8080
-    ssh -M -S socket -fnNT -L ${PORT}:${TOMCAT_IP}:${PORT} opc@${BASTION_IP} cat -
+    curl http://localhost:8080/SimpleDB/dbservlet
     </copy>
     ```
 
-9. You can check the deployment at `http://localhost:8080/SimpleDB`
+    You should see the JSON payload returned by the servlet
 
-    > **Note:** The first time the application runs, the query may take up to 30 seconds.
+6. Exit the Tomcat VM
 
 
 ## Task 3: Repeat for Each Tomcat Server
@@ -212,7 +172,7 @@ For this tutorial, you need to have provisioned the Tomcat cluster on OCI.
 
 ## Task 4: Check the Application Served Via the Load Balancer
 
-1. Get the load balancer public IP from the Terraform output.
+1. Get the load balancer public IP from the Stack deployment output.
 
 2. In your browser, go to http://*LOAD_BALANCER_IP*/SimpleDB/.
 
@@ -223,4 +183,4 @@ For this tutorial, you need to have provisioned the Tomcat cluster on OCI.
 
 ## Acknowledgements
  - **Author** - Subash Singh, Emmanuel Leroy, October 2020
- - **Last Updated By/Date** - Emmanuel Leroy, October 2020
+ - **Last Updated By/Date** - Emmanuel Leroy, February 2023
