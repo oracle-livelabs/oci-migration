@@ -14,7 +14,7 @@ The purpose of this lab is to show you how to create a PeopleSoft Cloud Manager 
 In this lab, you will:
 * Configure a stack for the Cloud Manager 
 
-### Prerequisties
+### Pre-requisites
 * Oracle Cloud Infrastructure account credentials
 * SSH and API Keys
 * My Oracle Support credentials
@@ -26,24 +26,24 @@ To obtain the PeopleSoft Cloud Manager stack:
 
 1. On the Oracle Cloud Infrastructure console home page, click the top left three-line menu icon and select **Marketplace** > **All Applications**.
 
-    ![](./images/marketplacemenu.png "")
+    ![On the Oracle Cloud Infrastructure console home page, click the top left three-line menu icon and select Marketplace](./images/marketplacemenu.png "")
 
-2. Under Filters on the left, select **Stack** from the Type drop-down list. Search for **Peoplesoft** on the search bar. Select **PeopleSoft Cloud Manager for OCI**.
+2. Under Filters on the left, select **Stack** from the Type drop-down list. Search for **PeopleSoft** on the search bar. Select **PeopleSoft Cloud Manager for OCI**.
 
-    ![](./images/searchpsft.png "")
+    ![Select PeopleSoft Cloud Manager for OCI from the marketplace](./images/searchpsft.png "")
 
 3. On the Overview page for the PeopleSoft Cloud Manager stack:
     * select the **Demo** compartment to install the instance inside of. (Click the dropdown and then the **+** to navigate to your **Demo** sub-compartment)  
     * review the **Oracle terms**, and then select the option indicating that you have reviewed and understand the conditions.
     * Click **Launch Stack**. 
 
-    ![](./images/launch.png "")
+    ![Select the compartment and then click launch](./images/launch.png "")
 
 4. On the Create Stack, Stack Information page, enter a stack name and description if desired.
 
     Click **Next** 
 
-    ![](./images/psftname.png "")
+    ![Enter the name of the stack and click next](./images/psftname.png "")
 
 ## Task 2: Configure Cloud Manager Instance Variables
 
@@ -57,7 +57,7 @@ The Create Stack, Configure Variables page includes a list of the parameters nee
 6. Leave API Private passphrase as blank (Enter if you have created one).
 7. For **Tenancy Home Region**, select the home region for your tenancy from the drop-down list. This can again be found on the top bar of the OCI console.
 
-    ![](./images/vars1v3.png "")
+    ![Enter the CM environment details for configuration](./images/vars1v3.png "")
 
 ## Task 3: Enter Cloud Manager Passwords
 
@@ -78,13 +78,13 @@ Each password has a requirement that can be found below each of the fields. For 
     WEB PROFILE USER PASSWORD | Psft1234
     DOMAIN CONNECT PASSWORD | Psft1234
 
-    ![](./images/varscm2.png "")
+    ![Provide the credentials for each attribute](./images/varscm2.png "")
 
 ## Task 4: Enter My Oracle Support Credentials
 
 1. My Oracle Support (MOS) credentials are the same as the username and password you enter when you access [http://support.oracle.com](http://support.oracle.com). Please sign in now to ensure that you have an account and the accurate credentials for My Oracle Support. This is required to download DPKs and PRPs automatically. 
 
-    ![](./images/varscmmos.png "")
+    ![Enter the MOS user and password](./images/varscmmos.png "")
 
 ## Task 5: Enter Networking Information
 
@@ -98,11 +98,11 @@ We will be provisioning our Cloud Manager instance in Private Cloud. Click [here
 6. Select the option for **Create a Bastion**
 7. For **Bastion Name**, enter **cmbastion** (Cloud Manager Bastion)
 
-    ![](./images/varsbastion.png "")
+    ![Provide required information to create the CM instance](./images/varsbastion.png "")
 
 8. Click **Next**. 
 9. Review the configuration variables, ensure that **Run Apply** is selected, and then click **Create**. 
-    ![](./images/review1v3.png "")
+    ![Click on create button once the configuration is verified](./images/review1v3.png "")
 
 ## Task 6: Monitor Stack Creation
 
@@ -110,26 +110,21 @@ This page shows the terraform job status and details. Under the yellow box that 
 
 Refresh the page, and you should see the status has now changed to **"In Progress"**. All the information we provided in the Marketplace is now being used to create our Cloud Manager Stack.
 Spinning up resources, such as our Virtual Cloud Network, Bastion and Cloud Manager will take a few minutes. 
-    ![](./images/rmj1v2.png "")
+    ![Resource Manager job in progress](./images/rmj1v2.png "")
 
 Over these few minutes, you can refresh the page until you see the **RMJ** has succeeded as indicated with a green box and **Succeeded** status. 
-    ![](./images/rmjsucceeded1v3.png "")
+    ![Resource Manager job completed](./images/rmjsucceeded1v3.png "")
 
 If you are using a Windows machine OR do not have administrator access, please complete the **Windows VM Compute Lab** and skip Lab 3.
 
 You may now **proceed to the next lab** if you are using a Linux Machine with Admin access.
 
 ## Acknowledgments
+* **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect 
+* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
 
-**Created By/Date**   
-* **Authors** - Megha Gajbhiye, Cloud Solutions Engineer; Sara Lipowsky, Cloud Engineer
-* **Last Updated By/Date** - Sara Lipowsky, Cloud Engineer, January 2022
 
-
-## Need Help?
-Please submit feedback or ask for help using our [LiveLabs Support Forum](https://community.oracle.com/tech/developers/categories/Migrate%20SaaS%20to%20OCI). Please click the **Log In** button and login using your Oracle Account. Click the **Ask A Question** button to the left to start a *New Discussion* or *Ask a Question*.  Please include your workshop name and lab name.  You can also include screenshots and attach files.  Engage directly with the author of the workshop.
-
-If you do not have an Oracle Account, click [here](https://profile.oracle.com/myprofile/account/create-account.jspx) to create one.
 
 
 

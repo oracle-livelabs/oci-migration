@@ -32,15 +32,15 @@ In this lab, you will:
 We need to enable the Bastion plugin on our PSFT CM compute instance. 
 
 1.	Navigate to the three-line menu on the top -> **Compute** -> **Instances**.
-    ![](./images/1navcompute.png " ")
+    ![Navigate to the three-line menu on the top, click compute and then instances](./images/navcompute.png " ")
 
 2.	On the left column, select **Demo** from the drop down. This should list the compute instances in our Demo Compartment. Then click **psftcm**
 
-    ![](./images/2demoinstances.png " ")
+    ![select demo compartment and view the compute VM created](./images/demoinstances.png " ")
 
 3.	This is the Cloud Manager instance we spun up. Click the **Oracle Cloud Agent** tab and ensure that the **Bastion plugin** is enabled.
 
-    ![](./images/3enableplugin.png " ")
+    ![Click the Oracle Cloud Agent tab and ensure that the Bastion plugin is enabled](./images/enableplugin.png " ")
 
 
 ## Task 2: Creating Managed SSH Session
@@ -48,10 +48,10 @@ We need to enable the Bastion plugin on our PSFT CM compute instance.
 *NOTE*: Ensure you are NOT on VPN
 1.	Navigate to the three-line menu on the top -> **Identity & Security** -> **Bastion**.
 
-    ![](./images/4navbastion.png " ")
+    ![Navigate to the three-line menu on the top, click Identity & Security and then Bastion](./images/navbastion.png " ")
 
 2. Again, using the dropdowns on the left, select the **Demo** compartment. Then click on **cmbastion**
-    ![](./images/5cmbastion.png " ")
+    ![select demo compartment and then click on cmbastion ](./images/cmbastion.png " ")
 
 3. This is Bastion Instance we created in the last lab. Click the blue button to **Create Session**.
 
@@ -62,18 +62,18 @@ We need to enable the Bastion plugin on our PSFT CM compute instance.
     * Add SSH key: select the **id_rsa.pub** file downloaded earlier.
 
     Click **Create session** here as well.
-    ![](./images/6createsession.png " ")
+    ![Enter the values and click create session](./images/createsession.png " ")
 
 
 4. Verify that the session is in the **Active** state, and the row looks something like this: 
-    ![](./images/7activesession.png " ")
+    ![Verify session is active](./images/activesession.png " ")
 
 5. Click on the 3 dots on the right of the row, then **Copy SSH Command**
 
-    ![](./images/8copycommand.png " ")
+    ![Click on the 3 dots on the right of the row, then Copy SSH Command](./images/copycommand.png " ")
 
 6. Paste your command in a text editor, and replace <**privateKey**> with the name of your private key file, id_rsa.
-    ![](./images/9editcommand.png " ")
+    ![Paste your command in a text editor, and replace privatekey](./images/editcommand.png " ")
 
 The session will remain active for 3 hours. After then, you will need to create a new one the same way and generate a new command.
 
@@ -87,7 +87,7 @@ Remain off VPN.
 3. Type in **"yes"** to authenticate the host.
 
     All together, it should look like this:
-    ![](./images/10sshcommands.png "")
+    ![Make sure to provide all required input for ssh](./images/sshcommands.png "")
 
 4. Now that you've SSH'ed into your Cloud Manager instance, let's check the status of the deployment. Monitor Cloud Manager bootstrap installation using the below command.
 
@@ -97,15 +97,15 @@ Remain off VPN.
     </copy>
     ```
     As you can see, Cloud Manager is being set up and it is still progress.
-    ![](./images/11tail.png "")
-5. Keep checking the status untill you see **CM installed successfully** with the PIA URLs. After Cloud Manager bootstrap is complete, the CloudManagerStatus.log will show the following messages. 
+    
+5. Keep checking the status until you see **CM installed successfully** with the PIA URLs. After Cloud Manager bootstrap is complete, the CloudManagerStatus.log will show the following messages. 
 
 		The PeopleSoft Environment Setup Process Ended.
 		CM installed successfully
 		Cloud Manager PIA URL: http://psftcm.cm.psftvcn.oraclevcn.com:8000 
 		Cloud Manager PIA SSL URL: https://psftcm.cm.psftvcn.oraclevcn.com:8443
 This screenshot shows that the connection closed and the ssh command had to be re-entered. The tail command had to be entered as well to see the expected output:
-    ![](./images/12tailsuccess.png "")
+    ![PeopleSoft Cloud Manager is successfully provisioned](./images/tailsuccess.png "")
     
     *NOTE*: Usually, it takes an hour for Cloud Manager to finish the bootstrap script. Until the script is successfully executed and you get the above message, you won't be able to access cloud manager URL. This is a long process. 
 
@@ -113,10 +113,10 @@ This screenshot shows that the connection closed and the ssh command had to be r
 
 1.	Navigate to the three-line menu on the top -> **Identity & Security** -> **Bastion**.
 
-    ![](./images/4navbastion.png " ")
+    ![Navigate to the three-line menu on the top, click Identity & Security and then Bastion](./images/navbastion.png " ")
 
 2. Again, using the dropdowns on the left, select the **Demo** compartment. Then click on **cmbastion**
-    ![](./images/5cmbastion.png " ")
+    ![select demo compartment and then click on cmbastion ](./images/cmbastion.png " ")
 
 3. This is Bastion Instance we created in the last lab. Click the blue button to **Create Session**.
 
@@ -128,18 +128,18 @@ This screenshot shows that the connection closed and the ssh command had to be r
     * Add SSH key: select the **id_rsa.pub** file downloaded earlier.
 
     Click **Create session** here as well.
-    ![](./images/13createsession.png " ")
+    ![Enter the values and click create session](./images/createsession-ssh-forward.png " ")
 
 
 4. When the session is in the **Active** state, and the row looks something like this, click on the 3 dots on the right of the row, then **Copy SSH Command**
-    ![](./images/14activesession.png " ")
+    ![check active session and get the ssh command](./images/activesession-ssh-forward.png " ")
 
 
 5. Paste your command in a text editor, and replace the following variables:
     * <**privateKey**> : with the name of your private key file, id_rsa 
     * <**localPort**> : with a port to access CM PIA URL through the bastion, which should be a value greater than 1024. I'm choosing 3000.
 
-    ![](./images/editssh.png " ")
+    ![Make sure to enter the complete SSH command as shown](./images/editssh.png " ")
 
 The session will remain active for 3 hours. After then, you will need to create a new one the same way and generate a new command.
 
@@ -154,14 +154,14 @@ You need **Administrator Access** to your machine for this
     ```
     You will then be prompted to enter in your password for your machine
 
-    ![](./images/hostscommand.png "")
+    ![Enter the password for your machine](./images/hostscommand.png "")
 2. Bring your cursor to the bottom and press **i** to insert an entry. This should include the localhost IP address, tab, and then the fully-qualified domain name (FQDN) for the Cloud Manager instance such as:
     ```
     <copy>
     127.0.0.1  psftcm.cm.psftvcn.oraclevcn.com
     </copy>
     ```
-    ![](./images/localhostentry.png "")
+    ![Update the hosts file on your system](./images/localhostentry.png "")
 
 3. To write and save to the file, press **esc**, then type **:wq**
 
@@ -169,7 +169,7 @@ You need **Administrator Access** to your machine for this
 
 1. Open up **Terminal** and change directory to your psftKeys folder. 
 2. Paste in edited SSH command from the Task #4 and run it.
-    ![](./images/portforwardcommand.png "")
+    ![Connect to the terminal with the ssh command](./images/portforwardcommand.png "")
 
 
 ## Task 7: Access Cloud Manager in Browser
@@ -184,7 +184,7 @@ You need **Administrator Access** to your machine for this
 
 
 2. Click on **Please click here to PeopleSoft logon page** to sign in to Cloud Manager.
-    ![](./images/url.png " ")
+    ![PeopleSoft CM Login page](./images/url.png " ")
 
 3. To login, use the username **CLADM** and password as **Psft1234** if you didn't choose your own password
     ```
@@ -194,14 +194,14 @@ You need **Administrator Access** to your machine for this
     <copy>Psft1234</copy>
 
     ```
-     ![](./images/login.png "")
+     ![Enter the user name and password](./images/login.png "")
     
-You have now signed into Cloud Manager 13.
-
-You may now proceed to the Lab 6: Configuring Cloud Manager Settings.
+You have now signed into Cloud Manager 15.
 
 
 ## Acknowledgments
-* **Authors** - Megha Gajbhiye, Cloud Solutions Engineer; Sara Lipowsky, Cloud Engineer
-* **Last Updated By/Date** - Sara Lipowsky, Cloud Engineer, January 2022
+* **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect 
+* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
+
 
