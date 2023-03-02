@@ -2,15 +2,13 @@
 
 ## Introduction
 
-In this tutorial, we will migrate the on-premises database to the Oracle Autonomous Database on Oracle Cloud Infrastructure (OCI).
+In this lab, we will migrate the on-premises database to the Oracle Autonomous Database on Oracle Cloud Infrastructure (OCI).
 
-Estimated Completion Time: 10 minutes.
 Estimated Completion Time: 10 minutes.
 
 ### Objectives
 
 In this tutorial, you will move the application database schema over to the Oracle Autonomous Database on OCI using datapump and the OCI Object Storage service as intermediate storage location.
-
 
 ## Task 1: Install the Oracle Cloud Infrastructure CLI on the Source Database
 
@@ -22,7 +20,7 @@ This task is required to get the wallet from the database and put the dump file 
 
     ```
     <copy>
-    docker exec -it tomcat-to-oci_oracledb_1 /bin/bash
+    docker exec -it tomcat-to-oci-oracledb-1 /bin/bash
     </copy>
     ```
 
@@ -55,7 +53,19 @@ This task is required to get the wallet from the database and put the dump file 
     
     1. Location of the configuration: press **Enter**.
     2. `user_ocid`: enter your user OCID.
+        1. In the Oracle Cloud Console, click your **User** icon (top right corner), then click your user name.
+            ![](images/setup-tf-user.png " ")
+
+       2. Copy the OCID of your user.
+            ![](images/setup-tf-user-ocid.png " ")
+
     3. `tenancy_ocid`: enter your tenancy OCID.
+        1. In the Oracle Cloud Console, **click** your **User** icon (top right corner), then **Tenancy**.
+            ![](images/setup-tf-tenancy.png " ")
+
+        2. **Copy** the OCID of the tenancy.
+            ![](images/setup-tf-tenancy-ocid.png " ")
+
     4. `region`: enter your region from the list provided.
     5. Generate a RSA key pair: press **Enter** for Yes (default).
     6. Directory for keys: press **Enter** for the default.
@@ -87,14 +97,13 @@ This task is required to get the wallet from the database and put the dump file 
 
     In the Oracle Cloud Console:
 
-    1. Under **User**, select **User Settings**.
+    1. Under your **User** (top right icon), select **User Settings**.
     2. Click **API Keys**.
     3. Click **Add Public Key**.
     4. Click **Paste Public Key**.
     5. Paste the key copied above.
     6. Click **Add**.
     
-
     You can verify that the fingerprint generated matches the fingerprint output of the configuration.
 
 5. Test your OCI CLI:
@@ -113,11 +122,13 @@ This task is required to get the wallet from the database and put the dump file 
     }
     ```
 
+    *Note*: It sometimes takes a minute or so for the key to be validated. If you get a 401 error at first, retry after a minute.
+
 ## Task 2: Create an Oracle Cloud Infrastructure Object Storage Bucket
 
 1. Go to **Core Infrastructure** and select **Object Storage**.
 
-    ![](./images/migrate-db-oss-1.png)
+    ![](https://github.com/oracle-livelabs/common/blob/main/images/console/storage-buckets.png?raw=true)
 
 2. Make sure you are in the compartment where you deployed the resources.
 
@@ -235,7 +246,7 @@ This task is required to get the wallet from the database and put the dump file 
 
 ## Task 5: Get the OCID of the Database
 
-1. Go to **Oracle Database** and select **Autonomous Transaction Processing**.
+1. Go to **Oracle Database** and select **Autonomous Database**.
 
 2. Make sure you are in the right compartment and select the database you provisioned earlier to get to the details.
 
@@ -280,9 +291,11 @@ This task is required to get the wallet from the database and put the dump file 
     ```
     <copy>
     WALLET_LOCATION = (SOURCE = (METHOD = file) (METHOD_DATA = (DIRECTORY="/home/oracle/datapump")))
-    SSL_SERVER_DN_MATCH=yes
+    SSL_SERVER_DN_MATCH=no
     </copy>
     ```
+
+    Enter CTRL+X to exit, type Y to save the changes.
 
 4. Set the `TNS_ADMIN` environment variable:
 
@@ -294,7 +307,7 @@ This task is required to get the wallet from the database and put the dump file 
 
 ## Task 7: Create a Local SSH Tunnel to the Database
 
-1. Get the public IP of the bastion host from the Terraform output:
+1. Get the public IP of the bastion host from the stack deployment output:
 
     If the Tomcat server was deployed in a public subnet, you can use the public IP of the Tomcat server.
 
@@ -307,12 +320,16 @@ This task is required to get the wallet from the database and put the dump file 
     </copy>
     ```
 
-    Then run:
-
     ```bash
     <copy>
     # This DB_HOST is the Private Endpoint IP gathered earlier
-    export DB_HOST=10.0.2.2
+    export DB_HOST=<Private Endpoint IP>
+    </copy>
+    ```
+
+    Then run:
+    ```
+    <copy>
     ssh -4 -M -S socket -fnNT -L 1522:${DB_HOST}:1522 opc@${BASTION_IP} cat -
     </copy>
     ```
@@ -324,7 +341,7 @@ This task is required to get the wallet from the database and put the dump file 
     ```
     <copy>
     # This looks up the Private Endpoint Host in the tnsnames.ora file
-    ATP_HOSTNAME=$(sed 's|.*(host=\([a-z0-9.-]*\)).*|\1|;' tnsnames.ora | head -n1)
+    ATP_HOSTNAME=$(sed 's|.*(host=\([A-Za-z0-9.-]*\)).*|\1|;' tnsnames.ora | head -n1)
     sudo su -c "printf \"127.0.0.1  ${ATP_HOSTNAME}\n\"  >> /etc/hosts"
     </copy>
     ```
@@ -347,7 +364,7 @@ This task is required to get the wallet from the database and put the dump file 
     ff02::1	ip6-allnodes
     ff02::2	ip6-allrouters
     172.19.0.3	58aa534ef636
-    127.0.0.1  jrhdeexg.adb.us-ashburn-1.oraclecloud.com
+    127.0.0.1  ATPPrivateEndpoint.adb.us-sanjose-1.oraclecloud.com
     ```
 
 ## Task 8: Get an Oracle Cloud Infrastructure Auth Token
@@ -355,8 +372,6 @@ This task is required to get the wallet from the database and put the dump file 
 1. Go to **User** and select **User Settings**.
 
 2. Take note of your full user name.
-
-    ![](./images/username.png)
 
 3. Go to **Auth Tokens**.
 
@@ -375,18 +390,20 @@ This task is required to get the wallet from the database and put the dump file 
 1. Using SQL*Plus Instant Client, connect to the remote database through the tunnel created earlier:
 
     ```
+    <copy>
     sqlplus admin@<you_atp_db_name>_high
+    </copy>
     ```
 
     If you followed the naming conventions used in this workshop, this should be:
 
     ```
     <copy>
-    sqlplus admin@atpdb_high
+    sqlplus admin@tomcatatp_high
     </copy>
     ```
 
-    You'll be prompted for the admin password for the database `atp_admin_password`, which was configured in the `terraform.tfvars` file.
+    You'll be prompted for the admin password for the database `atp_admin_password`, which was configured when deploying the stack.
 
     Confirm that you are logged into a SQL prompt like:
 
@@ -443,7 +460,7 @@ Use datapump to import the data dump.
     export NAMESPACE=<your namespace>
     export BUCKET=atp-upload
     export FILENAME=expdat.dmp
-    export ATP_DB_NAME=atpdb <or your ATP DB name>
+    export ATP_DB_NAME=tomcatatp <or your ATP DB name>
     export ATP_PASSWORD=<atp_admin_password>
     </copy>
     ```
@@ -493,4 +510,4 @@ The database has been migrated.
 
 ## Acknowledgements
  - **Author** - Subash Singh, Emmanuel Leroy, October 2020
- - **Last Updated By/Date** - Emmanuel Leroy, October 2020
+ - **Last Updated By/Date** - Emmanuel Leroy, February 2023

@@ -18,7 +18,7 @@ For this tutorial, you need to have provisioned the Tomcat cluster on OCI.
 
 On your local machine where you ran the Terraform:
 
-1. Edit the `terraform.tfvars` file to have:
+1. Edit the stack:
 
     ```yaml
     numberOfNodes=2
