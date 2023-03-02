@@ -207,7 +207,7 @@ Currently, we are signed in as an Administrator. Since we don't want Admins crea
     
     This will expand fields for non-federated accounts. Enter the username **User01** and the password that you copied to a note in step 4.
 
-    ![Login to the OCI console using the direct sign-in option](./images/newSignin.png "")
+    ![Login to the OCI console using the direct sign-in option](./images/newSignIn.png "")
 
 
     *Note*: Since this is the first-time sign-in, the user will be prompted to change the temporary password, as shown in the screen capture below.
@@ -217,7 +217,7 @@ Currently, we are signed in as an Administrator. Since we don't want Admins crea
     ```
     <copy>Psft@1234</copy>
     ```
-    ![](./images/changePassword.png "")
+    ![Set the password of your choice](./images/changePassword.png "")
 
 
     You are now logged in as local user: **User01**
@@ -254,7 +254,7 @@ Generate them yourself:
 You may now **proceed to the next lab.**
 
 
-## Acknowledgments
+## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
 * **Contributors** - Edward Lawson, Master Principal Cloud Architect 
 * **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023

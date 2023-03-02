@@ -155,11 +155,14 @@ The session will remain active for 3 hours. After then, you will need to create 
     ![The PSFT CM build is successful](./images/tail.png "")
     Keep checking the status untill you see **CM installed successfully** with the PIA URLs. After Cloud Manager bootstrap is complete, the CloudManagerStatus.log will show the following messages. 
 
+    ```
+    <copy>
 		The PeopleSoft Environment Setup Process Ended.
 		CM installed successfully
 		Cloud Manager PIA URL: http://psftcm.cm.psftvcn.oraclevcn.com:8000 
 		Cloud Manager PIA SSL URL: https://psftcm.cm.psftvcn.oraclevcn.com:8443
-
+    </copy>
+    ```
     The screenshot above shows the command run once Cloud Manager had already finished provisioning, but your will show progress if run immediately after completing Lab 2.
     
     *NOTE*: Usually, it takes an hour for Cloud Manager to finish the bootstrap script. Until the script is successfully executed and you get the above message, you won't be able to access Cloud Manager URL. This is a long process. 
@@ -192,7 +195,7 @@ The session will remain active for 3 hours. After then, you will need to create 
 
 5. Paste your command in a text editor, and replace the following variables:
     * <**privateKey**> : with the name of your private key file, id_rsa 
-    * <**localPort**> : with a port to access CM PIA URL through the bastion, which should be a value greater than 1024. I'm choosing 3300.
+    * <**localPort**> : with a port to access CM PIA URL through the bastion, which should be a value greater than 1024. I'm choosing 3000.
 
     ![Make sure to enter the complete SSH command as shown](./images/editssh.png " ")
 
@@ -254,7 +257,7 @@ You have now signed into Cloud Manager 15.
 You may now **proceed to the next lab.**
 
 
-## Acknowledgments
+## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
 * **Contributors** - Edward Lawson, Master Principal Cloud Architect 
 * **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
