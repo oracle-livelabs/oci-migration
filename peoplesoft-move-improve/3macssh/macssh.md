@@ -199,7 +199,7 @@ You need **Administrator Access** to your machine for this
 You have now signed into Cloud Manager 15.
 
 
-## Acknowledgments
+## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
 * **Contributors** - Edward Lawson, Master Principal Cloud Architect 
 * **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
