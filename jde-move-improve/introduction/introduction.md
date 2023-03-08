@@ -4,9 +4,9 @@
 
 This tutorial will serve as a foundation for the rest of the workshop and provide you with the tools necessary to complete the steps required to install JDE EnterpriseOne Release 23 Trial Edition on Oracle Cloud Infrastructure (OCI).
 
-The workshop will also demonstrate how to deploy JD Edwards EnterpriseOne Release 9.2 Trial Edition to OCI.
+The workshop will also demonstrate how to deploy JD Edwards EnterpriseOne Release 23 Trial Edition to OCI.
 
-Upon completion of this tutorial, you will have a working deployment of JD Edwards EnterpriseOne Trial Edition with Tools Release 9.2 and Applications Release 9.2 on a fully functional suite of interconnected virtual machines. You can use it to verify functionality and to investigate proofs of concept (POC).
+Upon completion of this tutorial, you will have a working deployment of JD Edwards EnterpriseOne Trial Edition with Tools Release 9.2.7.0 and Applications Release 9.2 on a fully functional suite. You can use it to verify functionality and to investigate proofs of concept (POC).
 
 Estimated Time: 2 hours (additional time may be needed for first-time users)
 
@@ -49,7 +49,7 @@ In this lab, you will:
 
 ### JDE Trial Edition on Oracle Cloud Infrastructure Overview
 
-JD Edwards EnterpriseOne is a comprehensive suite of integrated global business applications. The machine image provided by Oracle allows organizations to create a trial instance of JD Edwards EnterpriseOne Release 9.2 in the Oracle Compute Cloud. This 'All-in-One' Demo/Sandbox image enables customers to explore new functionality in JD Edwards EnterpriseOne 9.2 Applications Release 23, and Tools Release 9.2.7.0 without installing JD Edwards EnterpriseOne in their data centers. New functionality may include:
+JD Edwards EnterpriseOne is a comprehensive suite of integrated global business applications. The machine image provided by Oracle allows organizations to create a trial instance of JD Edwards EnterpriseOne Release 23 in the Oracle Compute Cloud. This 'All-in-One' Demo/Sandbox image enables customers to explore new functionality in JD Edwards EnterpriseOne Release 23, and Tools Release 9.2.7.0 without installing JD Edwards EnterpriseOne in their data centers. New functionality may include:
 
 * New industry modules.
 * One view financial statements.
@@ -75,4 +75,5 @@ At this point, you are ready to start creating instances in OCI.
 * **Contributors:**
     * Jeff Kalowes, Principal JDE Specialist
     * Tarani Meher, Principal JDE Specialist
+    * Mani Julakanti, Principal JDE Specialist
 * **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 03/2023
