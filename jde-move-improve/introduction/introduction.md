@@ -2,7 +2,7 @@
 
 ## About This Workshop
 
-This tutorial will serve as a foundation for the rest of the workshop and provide you with the tools necessary to complete the steps required to migrate JD Edwards (JDE) to Oracle Cloud Infrastructure (OCI).
+This tutorial will serve as a foundation for the rest of the workshop and provide you with the tools necessary to complete the steps required to install JDE EnterpriseOne Release 23 Trial Edition on Oracle Cloud Infrastructure (OCI).
 
 The workshop will also demonstrate how to deploy JD Edwards EnterpriseOne Release 9.2 Trial Edition to OCI.
 
@@ -16,13 +16,15 @@ Trial Edition is for training and demonstration purposes only. It can be used to
 
 This single image is built using an Oracle Linux VM instance containing these JD Edwards EnterpriseOne servers:
 
-* Enterprise ServerDatabase Server
+* Enterprise Server
 
-* HTML Web ServerBI Publisher (BIP) Server
+* Database Server
 
-* Application Interface Services (AIS) Server
+* HTML Web Server
 
-* Application Development Framework (ADF) Server
+* BI Publisher (BIP) Server
+
+* Application Interface Service (AIS) Server
 
 
 ### Objectives
@@ -41,13 +43,13 @@ In this lab, you will:
 * Valid email address.
 * Credit card: *You will not be charged*
 * Phone (Oracle will send you an SMS based text message for verification purposes).
-* *For Windows users only:* A Windows SSH utility is required to generate SSH key pairs on the client machine and to connect to the Linux based server using Secure Shell (SSH). We suggest either you either download and install the PuTTY tool (http://www.putty.org), or Git BASH (https://gitforwindows.org/). Installation instructions are included in this tutorial.
+* *For Windows users only:* A Windows SSH utility is required to generate SSH key pairs on the client machine and to connect to the Linux based server using Secure Shell (SSH). We suggest either you either download and install the [PuTTY tool](http://www.putty.org/), or [Git BASH](https://gitforwindows.org/). Installation instructions are included in this tutorial.
 
 ## Summary
 
 ### JDE Trial Edition on Oracle Cloud Infrastructure Overview
 
-JD Edwards EnterpriseOne is a comprehensive suite of integrated global business applications. The machine image provided by Oracle allows organizations to create a trial instance of JD Edwards EnterpriseOne Release 9.2 in the Oracle Compute Cloud. This 'All-in-One' Demo/Sandbox image enables customers to explore new functionality in JD Edwards EnterpriseOne 9.2 Applications Release 22, and Tools Release 9.2.6.0 without installing JD Edwards EnterpriseOne in their data centers. New functionality may include:
+JD Edwards EnterpriseOne is a comprehensive suite of integrated global business applications. The machine image provided by Oracle allows organizations to create a trial instance of JD Edwards EnterpriseOne Release 9.2 in the Oracle Compute Cloud. This 'All-in-One' Demo/Sandbox image enables customers to explore new functionality in JD Edwards EnterpriseOne 9.2 Applications Release 23, and Tools Release 9.2.7.0 without installing JD Edwards EnterpriseOne in their data centers. New functionality may include:
 
 * New industry modules.
 * One view financial statements.
@@ -69,11 +71,8 @@ JD Edwards EnterpriseOne is a comprehensive suite of integrated global business 
 At this point, you are ready to start creating instances in OCI.
 
 ## Acknowledgements
-
-* **Author:** AJ Kurzman, Cloud Engineering
+* **Author:** Tarani Meher, Principal JDE Specialist
 * **Contributors:**
     * Jeff Kalowes, Principal JDE Specialist
-    * Mani Julakanti, Principal JDE Specialist
-    * William Masdon, Cloud Engineering
-    * Chris Wegenek, Cloud Engineering
-* **Last Updated By/Date:** Chris Wegenek, Cloud Engineering, 11/2021
+    * Tarani Meher, Principal JDE Specialist
+* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 03/2023
