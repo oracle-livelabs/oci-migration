@@ -40,9 +40,9 @@ On the Oracle Cloud Console home page, click the **Navigation** Menu Button in t
 
     ![](./images/jde-trial-edition-image.png " ")
 
-3.  On the information page for the JD Edwards EnterpriseOne Trial Edition image, select the version **(9.2.6.0 – default)** to deploy and the compartment (you created a compartment in Set Up Oracle Cloud Infrastructure for JDE Trial Edition Deployment, Step 2) to deploy to. Select the check box to accept the Oracle Standard Terms and Restrictions and then click **Launch Instance**.
+3.  On the information page for the JD Edwards EnterpriseOne Trial Edition image, select the version **(9.2.7.0 – default)** to deploy and the compartment (you created a compartment in Set Up Oracle Cloud Infrastructure for JDE Trial Edition Deployment, Step 2) to deploy to. Select the check box to accept the Oracle Standard Terms and Restrictions and then click **Launch Instance**.
 
-    ![](./images/launch-instance.png " ")
+    ![](./images/launch-instance_1.png " ")
 
 4.  Next, define the instance with the following options:
 
@@ -54,32 +54,34 @@ On the Oracle Cloud Console home page, click the **Navigation** Menu Button in t
         </copy>
         ```
 
-       ![](./images/instance-details.png " ")
+       ![](./images/instance-details_1.png " ")
 
     2. Depending on the region selected, there might be one or more availability domains. Select Availability Domain: **AD1** (if single AD available) or **AD3** (if multiple ADs available).
+
+    3. Security section provides option to either harden the firmware security or encrypt the data in-use, for this trial we are leaving it as disabled. 
     
-    3. Operating System or Image Source: Leave **JD Edwards EnterpriseOne Trial Edition** selected.
+    4. Operating System or Image Source: Leave **JD Edwards EnterpriseOne Trial Edition** selected.
 
-    4. Instance Shape: Click on **Change Shape**.
+    5. Instance Shape: Click on **Change Shape**.
 
-    5. Select **Virtual Machine**, then select a shape. For the purposes of this tutorial, select either an **Intel Skylake VM.Standard2.2** shape, or under the **Specialty and Legacy** series, select the cheaper **VM.Standard.E2.2** shape.
+    6. Select **Virtual Machine**, then select a shape. For the purposes of this tutorial, select the **Intel Flexible VM.Standard3.Flex** shape, or under the **Specialty and Legacy** series, select any compatible shape like **VM.Standard2.2**. We are keeping the default selections for Network bandwidth and Burstable options.
 
-       ![](./images/vm-shape.png " ")
+       ![](./images/vm-shape_1.png " ")
 
-    6. Review and confirm the Virtual Cloud Network and Subnets you created earlier are selected. Ensure that the **Assign a public IP address** radio button is selected.
+    7. Review and confirm the Virtual Cloud Network and Subnets you created earlier are selected. Ensure that the **Assign a public IP address** radio button is selected.
 
        ![](./images/instance-details2.png " ")
 
-    7. In the Add SSH keys section, select the **Upload public key file (.pub)** radio button. Browse to select the public SSH key file you created earlier (Set Up OCI for JDE Trial Edition Deployment, STEP 1) by navigating to the location where the SSH files are stored. Alternatively, drag and drop the .pub file to the window.
+    8. In the Add SSH keys section, select the **Upload public key file (.pub)** radio button. Browse to select the public SSH key file you created earlier (Set Up OCI for JDE Trial Edition Deployment, STEP 1) by navigating to the location where the SSH files are stored. Alternatively, drag and drop the .pub file to the window.
 
        ![](./images/ssh-upload.png " ")
 
-    8. Leave the Boot Volume section as is.
+    9. Leave the Boot Volume section as is.
 
        ![](./images/boot-size.png " ")
 
 
-    9. Click **Create**.
+    10. Click **Create**.
 
        ![](./images/create-button.png " ")
 
@@ -241,10 +243,9 @@ Configuration will take between 25 to 30 minutes. The configuration will go thro
 At this point, the JD Edwards EnterpriseOne Trial Edition is ready for use.
 
 ## Acknowledgements
-* **Author:** AJ Kurzman, Cloud Engineering
+* **Author:** Tarani Meher, Principal JDE Specialist
 * **Contributors:**
     * Jeff Kalowes, Principal JDE Specialist
+    * Tarani Meher, Principal JDE Specialist
     * Mani Julakanti, Principal JDE Specialist
-    * William Masdon, Cloud Engineering
-    * Chris Wegenek, Cloud Engineering
-* **Last Updated By/Date:** Chris Wegenek, Cloud Engineering, 11/21
+* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 03/2023
