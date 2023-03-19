@@ -25,11 +25,11 @@ For this tutorial, you need:
 
 2. Scroll down to find the **Deploy To Oracle Cloud** button, and click the button.
 
-    ![./images/deploy-button.png](./images/deploy-button.png)
+    ![./images/deploy-button.png](./images/deploy-button.png "deploy")
 
 3. Agree to the terms of use.
 
-    ![./images/agree.png](./images/agree.png)
+    ![./images/agree.png](./images/agree.png "agree")
 
 4. Clear the tag if it auto-completed with your email.
 
@@ -39,7 +39,7 @@ For this tutorial, you need:
 
 7. Click **ATP Database Private Endpoint** to provision the Autonomous Database with a private endpoint.
 
-    ![./images/private-endpoint.png](./images/private-endpoint.png " ")
+    ![./images/private-endpoint.png](./images/private-endpoint.png "private endpoint")
 
 8. If you already used the Free Tier Autonomous DB in your tenancy, uncheck the **ATP Database Free Tier** checkbox or the stack will failed on quota exceeded.
 
@@ -47,14 +47,14 @@ For this tutorial, you need:
 
 10. Click **View Advanced Options** and scroll to the **SSH Key** section.
 
-    ![./images/advanced-options.png](./images/advanced-options.png " ")
+    ![./images/advanced-options.png](./images/advanced-options.png "View advanced options")
 
 
 11. Click **Paste SSH Key** and paste the SSH key created earlier in the Tomcat docker environment. 
 
     *NOTE*: The SSH key created in the docker environment is available to the local machine, in the `ssh` folder.
 
-    ![./images/ssh-key.png](./images/ssh-key.png " ")
+    ![./images/ssh-key.png](./images/ssh-key.png "paste ssh key")
 
 12. Keep the rest as defaults and click **Next**
 
@@ -64,7 +64,7 @@ For this tutorial, you need:
 
 1. Wait for the stack creation to complete, and take note of the **Output** values.
 
-    ![./images/outputs.png](./images/outputs.png " ")
+    ![./images/outputs.png](./images/outputs.png "outputs")
 
 ## Acknowledgements
  - **Author** - Subash Singh, Emmanuel Leroy, October 2020

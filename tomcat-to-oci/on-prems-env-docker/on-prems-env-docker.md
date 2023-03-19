@@ -135,12 +135,12 @@ You can also [download the code](https://objectstorage.us-ashburn-1.oraclecloud.
 
 This repository makes use of Oracle docker images which are licensed and need to be pulled from Oracle Container Registry after acknowledging the terms of the license.
 
-1. Sign in to Oracle Container Registry and go to the **Oracle Database** page by searching for **Database Enterprise Edition** and accept the license terms at: <a href="https://container-registry.oracle.com" target="_blank">https://container-registry.oracle.com</a>.
+1. Sign in to Oracle Container Registry and go to the **Oracle Database** page by searching for **Database Enterprise Edition** and accept the license terms at:[https://container-registry.oracle.com"](https://container-registry.oracle.com).
 
     - Select a Language.
     - Scroll down to Accept the terms of license.
 
-2. Search for the **Instant Client** page and accept the license terms for the SQL Plus client at: <a href="https://container-registry.oracle.com" target="_blank">https://container-registry.oracle.com</a>.
+2. Search for the **Instant Client** page and accept the license terms for the SQL Plus client at: [https://container-registry.oracle.com](https://container-registry.oracle.com).
 
     - Select a Language.
     - Scroll down to Accept the terms of license.
