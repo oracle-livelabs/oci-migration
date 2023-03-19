@@ -15,7 +15,7 @@ Estimated Lab Time: 80 minutes
 
 The reference architecture looks like the following:
 
-![](./images/architecture-wildfly-oci.png)
+!["architecture"](./images/architecture-wildfly-oci.png)
 
 ### Objectives
 
