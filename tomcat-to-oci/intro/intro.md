@@ -13,7 +13,7 @@ Estimated Completion Time: 80 minutes.
 
 The reference architecture looks like the following:
 
-![](./images/architecture-deploy-tomcat.png "architecture")
+!["architecture"](./images/architecture-deploy-tomcat.png "architecture")
 
 ### Objectives
 

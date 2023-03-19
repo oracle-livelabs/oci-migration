@@ -54,17 +54,17 @@ This task is required to get the wallet from the database and put the dump file 
     1. Location of the configuration: press **Enter**.
     2. `user_ocid`: enter your user OCID.
         1. In the Oracle Cloud Console, click your **User** icon (top right corner), then click your user name.
-            ![](images/setup-tf-user.png " ")
+            !["setup user ocid](images/setup-tf-user.png " ")
 
        2. Copy the OCID of your user.
             ![](images/setup-tf-user-ocid.png " ")
 
     3. `tenancy_ocid`: enter your tenancy OCID.
         1. In the Oracle Cloud Console, **click** your **User** icon (top right corner), then **Tenancy**.
-            ![](images/setup-tf-tenancy.png " ")
+            !["tenancy"](images/setup-tf-tenancy.png " ")
 
         2. **Copy** the OCID of the tenancy.
-            ![](images/setup-tf-tenancy-ocid.png " ")
+            !["tenancy ocid"](images/setup-tf-tenancy-ocid.png " ")
 
     4. `region`: enter your region from the list provided.
     5. Generate a RSA key pair: press **Enter** for Yes (default).
@@ -128,7 +128,7 @@ This task is required to get the wallet from the database and put the dump file 
 
 1. Go to **Core Infrastructure** and select **Object Storage**.
 
-    ![](https://github.com/oracle-livelabs/common/blob/main/images/console/storage-buckets.png?raw=true)
+    !["object storage"](https://github.com/oracle-livelabs/common/blob/main/images/console/storage-buckets.png?raw=true)
 
 2. Make sure you are in the compartment where you deployed the resources.
 
@@ -254,7 +254,7 @@ This task is required to get the wallet from the database and put the dump file 
 
 4. Gather the **Private Endpoint IP** and the **Private Endpoint URL** (for example, hostname).
 
-    ![](./images/db-info.png)
+    !["database info"](./images/db-info.png)
 
 ## Task 6: Get the Database Wallet
 
@@ -375,7 +375,7 @@ This task is required to get the wallet from the database and put the dump file 
 
 3. Go to **Auth Tokens**.
 
-    ![](././images/auth-token.png)
+    !["auth token"](././images/auth-token.png)
 
 4. Click **Generate Token**.
 

@@ -231,7 +231,7 @@ For the Tomcat container to run the application, the database needs to be ready,
 
     It shows statistics of riders of the Tour de France stored in the database, and looks like this:
 
-    ![./images/localhost-simpledb-app.png](./images/localhost-simpledb-app.png)
+    !["application output"](./images/localhost-simpledb-app.png)
 
 ## Task 6: Create an SSH Key
 
