@@ -2,7 +2,7 @@
 
 ## About this Workshop
 
-This hands-on lab provides users with step-by-step instructions for preparing their **Oracle Cloud Infrastructure (OCI) Tenancy**, including setting up a user group, adding a user and policies, as well as a compartment to house **Cloud Manager 13 using Marketplace** and associated resources. After provisioning and configuring Cloud Manager 13, users will **subscribe to the HCM deployment kit** to then create a **topology**, **environment template**, and **provision a PeopleSoft Environment**. 
+This hands-on lab provides users with step-by-step instructions for preparing their **Oracle Cloud Infrastructure (OCI) Tenancy**, including setting up a user group, adding a user and policies, as well as a compartment to house **Cloud Manager 15 using Marketplace** and associated resources. After provisioning and configuring Cloud Manager 15, users will **subscribe to the HCM deployment kit** to then create a **topology**, **environment template**, and **provision a PeopleSoft Environment**. 
 
 In addition to getting a PeopleSoft Environment up and running on Cloud Manager, users can then move on to the simple and interactive Labs (12-18). 
 These optional labs help familiarize users with the features of Cloud Manager and can be completed in any order.
@@ -13,7 +13,7 @@ To ensure success:
 - The workshop is quite detailed and technical. PLEASE take your time and DO NOT skip any steps.
 - Follow all naming conventions (compartment, group, etc..) and passwords as directed.   
 - IP addresses and URLs in the screenshots in this workshop may differ from what you use in the labs as these are dynamically generated.
-- The user interface for the Oracle Cloud Infrastructure is constantly evolving. As a result the screens depicted in this tutorial may not exactly coincide with the current release. This tutorial is routinely updated for functional changes of Peoplesoft Cloud Manager and Oracle Cloud Infrastructure, at which time any differences in the user interface will be reconciled.
+- The user interface for the Oracle Cloud Infrastructure is constantly evolving. As a result the screens depicted in this tutorial may not exactly coincide with the current release. This tutorial is routinely updated for functional changes of PeopleSoft Cloud Manager and Oracle Cloud Infrastructure, at which time any differences in the user interface will be reconciled.
 
 ### Architecture Diagram
 Oracle recommends deploying all instances in private subnets for production environments where there are no internet-facing endpoints. This type of deployment is useful when you want to have a hybrid deployment with the cloud as an extension to your existing data centers.
@@ -22,14 +22,14 @@ In this deployment, all the instances including application and database servers
 
 Create a bastion host in this configuration, and then access all the servers in private subnet from the bastion host.
 
-  ![](./images/architecture13.png "")
+  ![PeopleSoft Architecture deployment using Cloud Manager](./images/architecture.png "")
 
 ### Objectives
 
 In Labs 1-11, you will:
 * Set up an Oracle Cloud Infrastructure Account (Prerequisites) 
 * Create Identity and Access Management (IAM) Resources (Lab 1) 
-* Provision the Peoplesoft Cloud Manager using Marketplace (Lab 2)
+* Provision the PeopleSoft Cloud Manager using Marketplace (Lab 2)
 * FOR MAC USERS ONLY: Access Private Cloud Manager Instance via SSH and Log in via Browser (Lab 3)
 * Provisioning a Windows VM Compute in OCI (Lab 4)
 * FOR WINDOWS VM ONLY: Access Private Cloud Manager Instance via SSH and Log in via Browser (Lab 5)
@@ -71,7 +71,7 @@ Once users have spun up a PeopleSoft environment, they can:
 
 *Terminology*
 
-The following terms are commonly employed in Peoplesoft cloud operations and used throughout our documentation:
+The following terms are commonly employed in PeopleSoft cloud operations and used throughout our documentation:
 
 **Availability Domain** – One or more data centers located within a region.
 
@@ -81,11 +81,11 @@ The following terms are commonly employed in Peoplesoft cloud operations and use
 
 **Compartments** – Allows you to organize and control access to your cloud resources. A compartment is a collection of related resources (such as instances, virtual cloud networks, block volumes) that can be accessed only by certain groups.
 
-**Peoplesoft Cloud Manager (PSFT)** - Oracle Peoplesoft Cloud Manager is a Peoplesoft lifecycle management application used for creating, managing, and configuring Peoplesoft environments on Oracle Cloud Infrastructure.
+**PeopleSoft Cloud Manager (PSFT)** - Oracle PeopleSoft Cloud Manager is a PeopleSoft lifecycle management application used for creating, managing, and configuring PeopleSoft environments on Oracle Cloud Infrastructure.
 
 **PSFT Cloud Manager infrastructure** – Virtual network resources, compute resources, and policies required to run PSFT Cloud Manager on Oracle Cloud Infrastructure.
 
-**Virtual Cloud Network (VCN)** – Networking and compute resources required to run PSFT on Oracle Cloud Infrastructure. The PSFT VCN includes the recommended networking resources (VCN, subnets routing tables, internet gateway, security lists, and security rules) to run Oracle Peoplesoft on OCI.
+**Virtual Cloud Network (VCN)** – Networking and compute resources required to run PSFT on Oracle Cloud Infrastructure. The PSFT VCN includes the recommended networking resources (VCN, subnets routing tables, internet gateway, security lists, and security rules) to run Oracle PeopleSoft on OCI.
 
 **Oracle Cloud Infrastructure (OCI)** – Combines the elasticity and utility of public cloud with the granular control, security, and predictability of on-premises infrastructure to deliver high-performance, high availability, and cost-effective infrastructure services.
 
@@ -99,8 +99,8 @@ The following terms are commonly employed in Peoplesoft cloud operations and use
 
 
 
-## Acknowledgments
-* **Authors** - Megha Gajbhiye, Cloud Solutions Engineer; Sara Lipowsky, Cloud Engineer
-* **Contributors** - Joowon Cho, Cloud Technologist
-* **Last Updated By/Date** - Sara Lipowsky, Cloud Engineer, January 2022
+## Acknowledgements
+* **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect 
+* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
 

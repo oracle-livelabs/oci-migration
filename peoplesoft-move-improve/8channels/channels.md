@@ -15,26 +15,31 @@ In this lab you will:
 ## Task 1: Subscribing to a Channel
 
 1.	Navigate to **Cloud Manager Dashboard** > **Repository** 
-    ![](./images/repo.png "")
+    
+    ![Navigate to Cloud Manager Dashboard and then repository](./images/repo.png "")
 
 2.	Click on **Download Subscriptions** on the left and switch over to the **Unsubscribed** tab.
 
 3.	We will be creating an HCM environment, so scroll down **HCM\_92\_Linux**, click the arrow and then **Subscribe**
 
-    ![](./images/1.png "")
+    ![click on the arrow and subscribe to the channel](./images/channel.png "")
+
 4. Repeat the same steps for **HCM\_92\_Windows** as our environment will have both a Linux node and a Windows node.
+
 5. Go to the subscribed tab to view progress status for both channels.
-    ![](./images/patchlist.png "")
+    ![current status of the image download in porgress](./images/patchlist.png "")
 
     *This takes ~2 hours to complete.* 
     Make sure you refresh the page to check the current progress. Proceed to next lab only when you see green check marks as the status for both **HCM\_92\_Linux** and **HCM\_92\_Windows** as shown in the picture:
 
-    ![](./images/2channels.png "")
+    ![The channel download for the subscribed images is completed](./images/updated-channels.png "")
 
 You may now **proceed to the next lab.**
 
-## Acknowledgments
-* **Authors** - Megha Gajbhiye, Cloud Solutions Engineer; Sara Lipowsky, Cloud Engineer
-* **Last Updated By/Date** - Sara Lipowsky, Cloud Engineer, May 2021
+
+## Acknowledgements
+* **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect 
+* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
 
 

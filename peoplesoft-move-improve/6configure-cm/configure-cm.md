@@ -22,22 +22,22 @@ In this lab, you will:
 
 1. Navigate to **Cloud Manager Dashboard** > **My Settings**.
 
-    ![](./images/4.png "")
+    ![Navigate to Cloud Manager Dashboard and then My Settings](./images/cm-setting.png "")
 
 2. Navigate to the folder where you generated the keys (psftKeys) and open the file **id_rsa.pub**.
 
-    ![](./images/5.png "")
+    ![Navigate to the folder where you generated the keys and open the file](./images/ssh-key.png "")
 
 3. Copy the contents of the file in **My SSH Public Key** and click on **Save**
 
-    ![](./images/6.png "")
+    ![Copy the contents of the file in My SSH Public Key and click on save](./images/6.png "")
 
 ## Task 2: Updating Infrastructure Settings
 
 Go back to the **Cloud Manager Dashboard** > **Cloud Manager Settings**. 
-    ![](./images/cmhome.png "")
+    ![GO to CM dashboard and click on settings](./images/cmhome.png "")
 1.  Navigate to **Infrastructure Settings** on the left and scroll down to **Operating System Images**. We will specify these images now.
-    ![](./images/infrasettings.png "")
+    ![Navigate to Infrastructure Settings on the left and scroll down to Operating System Images](./images/infrasettings.png "")
 
     * For Linux, enable **Marketplace Image** radio button to **YES** and choose the latest version from the displayed list. The OCID should populate automatically.
 
@@ -46,19 +46,20 @@ Go back to the **Cloud Manager Dashboard** > **Cloud Manager Settings**.
     For example, in this lab, we selected our Availability Domain to be us-ashburn-1 so our OCID is:    
     **ocid1.image.oc1.iad.aaaaaaaa74rl4tzxblzk2sqm43k62srh6bv4hbxkkewlbyar6ximerilowyq**
  
-    ![](./images/systemimages1.png "")
+    ![Update the image OCID value](./images/systemimages.png "")
 
 2.	Scroll back to the top and click **Save** to save the configuration. 
-    ![](./images/5infrasave.png "")
+    ![Save the CM configuration](./images/infrasave.png "")
 
-3.	Now, click **Refresh OCI Metadata** button on top of the page and click **Okay** on the dialog box. Check that the images have these green checkmarks.
-    ![](./images/systemimagesafter.png "")
+3.	Now, click **Refresh OCI Metadata** button on top of the page and click **Okay** on the dialog box. Check that the images have these green check marks.
+    ![The images have a green check mark](./images/systemimagesafter.png "")
  
 
 
 You may now **proceed to the next lab.**
 
-## Acknowledgments
-* **Authors** - Megha Gajbhiye, Cloud Solutions Engineer; Sara Lipowsky, Cloud Engineer
-* **Last Updated By/Date** - Sara Lipowsky, Cloud Engineer, January 2022
+## Acknowledgements
+* **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect 
+* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
 

@@ -57,7 +57,7 @@ This task is required to get the wallet from the database and put the dump file 
             !["setup user ocid](images/setup-tf-user.png " ")
 
        2. Copy the OCID of your user.
-            ![](images/setup-tf-user-ocid.png " ")
+            ![user ocid](images/setup-tf-user-ocid.png " ")
 
     3. `tenancy_ocid`: enter your tenancy OCID.
         1. In the Oracle Cloud Console, **click** your **User** icon (top right corner), then **Tenancy**.
@@ -495,7 +495,7 @@ Use datapump to import the data dump.
     </copy>
     ```
 
-3. Re-run the import now that the user `RIDERS` has valid quota:
+4. Re-run the import now that the user `RIDERS` has valid quota:
 
     ```
     <copy>

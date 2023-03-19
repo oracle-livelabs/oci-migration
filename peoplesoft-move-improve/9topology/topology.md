@@ -27,34 +27,36 @@ In this lab you will:
 ## Task 1: Defining a Topology
 
 1.	Navigate to **Cloud Manager Dashboard** > **Topology**
-    ![](./images/dashtopology.png "")
+    
+    ![Navigate to Cloud Manager Dashboard  and then Topology](./images/dashtopology.png "")
 
 
 2. Click **PUM Fulltier**
-    ![](./images/2selectPUMFT.png "")
+    
+    ![click on the PUM full tier](./images/selectPUMFT.png "")
 
     Here we have 2 nodes: Full Tier (Linux) and PeopleSoft Client (Windows), but they are missing shapes. 
-    ![](./images/fttopbefore.png "")
+    
+    ![Topology information for the environment](./images/fttopbefore.png "")
 
 3. Let's edit the **Full Tier** node first. Using the drop down, select **VM.StandardE2.2** 
-    ![](./images/1editshape.png "")
+    
+    ![Update the Full Tier with VM shape](./images/editshape.png "")
 
     Click **Done**
 
 4. Do the same for the **PeopleSoft Client** node. Using the dropdown, select **VM.StandardE2.2** 
-    ![](./images/2editshape.png "")
+    ![Update the Full Tier with VM shape](./images/editshape1.png "")
     
     Click **Done**.
 
 5. When you have this, click **Save**
-    ![](./images/save.png "")
+    ![Save the topology](./images/save.png "")
 
 
 You may now **proceed to the next lab.**
 
-## Acknowledgments
-
-**Created By/Date**   
-* **Authors** - Megha Gajbhiye, Cloud Solutions Engineer; Sara Lipowsky, Cloud Engineer
-* **Last Updated By/Date** - Sara Lipowsky, Cloud Engineer, January 2022
-
+## Acknowledgements
+* **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect 
+* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
