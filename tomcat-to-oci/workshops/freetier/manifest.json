@@ -3,16 +3,17 @@
     "help": "livelabs-help-weblogic_us@oracle.com",
     "tutorials": [
         {
-            "title": "Getting Started",
-            "description": "Login to Oracle Cloud",
-            "filename": "https://oracle-livelabs.github.io/common/labs/cloud-login/pre-register-free-tier-account.md"
-        },{
             "title": "Introduction",
             "publisheddate": "10/06/2020",
             "filename": "../../intro/intro.md"
         },
         {
-            "title": "Lab 1: Setup the Demo On-Premises Environment Using Docker",
+            "title": "Getting Started",
+            "description": "Login to Oracle Cloud",
+            "filename": "https://oracle-livelabs.github.io/common/labs/cloud-login/pre-register-free-tier-account.md"
+        },
+        {
+            "title": "Lab 1: Set Up the Demo On-Premises Environment Using Docker",
             "publisheddate": "10/06/2020",
             "filename": "../../on-prems-env-docker/on-prems-env-docker.md"
         },
