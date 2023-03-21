@@ -2,6 +2,8 @@
 
 ## Introduction
 
+For this migration workshop, we need an environment to migrate *from*.
+
 This lab walks you through setting up an environment to simulate an established SOA 12.2.1.3 on-premises environment, using a Compute instance on Oracle Cloud Infrastructure OCI deployed through the marketplace.
 
 At the end of this lab, you will have a simulated 'on-premises' environment running with an Oracle SOA Suite 12.2.1.3 VM containing an Oracle Database 12c, WebLogic Server 12c, and Jdeveloper 12.2.1.4, along with a demo application to be migrated.
@@ -23,6 +25,8 @@ For this lab you need:
 
 - A bare metal compute instance with at least 4 OCPUs (8 preferred) available to run the image.
 - Microsoft Remote Desktop Client (or similar RDP client) installed to connect to the demo environment.
+    
+    >Note: The workshop will run on a VM instance but will be very very slow, so it is not recommended.  
 
 ## Task 1: Launch the Workshop Marketplace Stack
 
@@ -30,23 +34,23 @@ For this lab you need:
 
 2. Click **Get App**.
 
-    ![](./images/1-get-app.png)
+    get app(./images/1-get-app.png)
 
 3. Select OCI Region and sign in to your Oracle Cloud Infrastructure (OCI) account.
 
-    ![](./images/2-sign-in.png)
+    ![select region](./images/2-sign-in.png)
 
 4. Select the compartment you prepared to run this workshop.
 
-    ![](./images/3-soa-workshop-mp1.png)
+    ![select compartment](./images/3-soa-workshop-mp1.png)
 
 5. Accept the Terms and Conditions and click **Launch**.
 
-    ![](./images/4-soa-workshop-mp1.png)
+    ![launch](./images/4-soa-workshop-mp1.png)
 
 6. Provide an optional name and description, and click **Next**.
 
-    ![](./images/5-next.png)
+    ![next](./images/5-next.png)
 
 7. Choose a shape.
 
@@ -54,25 +58,25 @@ For this lab you need:
 
   Make sure the shape you chose is available in your tenancy.
 
-    ![](./images/5-instance-shape.png)
+    ![shape](./images/5-instance-shape.png)
 
 7. Browse to your **SSH Public Key**.
 
    To connect to the SOA servers via SSH, you need to provide a public key the server will use to identify your computer.
 
-    ![](./images/6-ssh-key.png)
+    ![ssh key](./images/6-ssh-key.png)
 
 8. Click **Next** and then **Create**.
 
-    ![](./images/7-next.png)
+    ![next](./images/7-next.png)
 
-    ![](./images/8-job-running.png)
+    ![running job](./images/8-job-running.png)
 
   It will take about 1 to 2 minutes to create the stack. 
 
 8. When the job finishes, you can find the public IP address of the instance at the bottom of the logs, or in the **Output** area. Make a note of this information.
 
-  ![](./images/outputs-mp-demo.png)
+  ![outputs](./images/outputs-mp-demo.png)
 
 ## Task 2: Connect to the Demo Environment
 
@@ -82,7 +86,7 @@ Connect to the instance using your RDP Client (the follwoing steps show the proc
 
 1. Add a new host, providing the public IP gathered from the stack output.
 
-    ![](./images/rdp-add-host.png)
+    ![rdp add a host](./images/rdp-add-host.png)
 
 2. Connect using username `oracle` and password `oracle`.
 
@@ -92,23 +96,23 @@ Connect to the instance using your RDP Client (the follwoing steps show the proc
 
 1. Click `SOA and Compact Domain` on the VM desktop.
 
-    ![](./images/soa-desktop.png)
+    ![soa desktop](./images/soa-desktop.png)
 
 2. Double-click on the `Start soa_domain Admin Server` script to start the domain Admin Server.
 
-    ![](./images/soa-admin.png)
+    ![run soa admin server](./images/soa-admin.png)
 
 3. Wait for the admin server to be running. This will take 2 to 3 minutes.
 
     You will see state changed to `RUNNING` in the logs.
 
-    ![](./images/soa-admin-running.png)
+    ![soa running](./images/soa-admin-running.png)
 
 4. Double click on the `Start soa_domain SOA Server` script to start the SOA server.
 
-    ![](./images/soa-soa.png)
+    ![start soa server](./images/soa-soa.png)
 
-    ![](./images/soa-soa-console.png)
+    ![soa server logs](./images/soa-soa-console.png)
 
 
 ## Task 4: Check the Local Environment
@@ -118,11 +122,11 @@ Connect to the instance using your RDP Client (the follwoing steps show the proc
 
 2. Log in using usename `weblogic`, and password `welcome1`.
 
-    ![](./images/em-login.png)
+    ![login](./images/em-login.png)
 
 3. Check that the admin server and SOA domain are running (other domains will not be running and that is normal).
 
-    ![](./images/soa-desktop-em-status.png)
+    ![status](./images/soa-desktop-em-status.png)
 
 You may proceed to the next lab.
 

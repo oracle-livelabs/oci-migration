@@ -52,29 +52,28 @@ To run this lab, you need to:
 
 ## Task 1: Discover the Source SOA Suite Environment
 
-1. Open the EM console in the Firefox browser at [http://localhost:7001/em](http://localhost:7001/em)
-in the on-premises environment.
+1. Open the EM console of the source environment in the Firefox browser at [http://localhost:7001/em](http://localhost:7001/em) in the on-premises environment.
 
     - Username: `weblogic`
     - Password: `welcome1`
 
-    ![](./images/3-open-console.png)
+    ![open console](./images/3-open-console.png)
 
 2. Click the menu **icon**.
 
-    ![](./images/menu.png)
+    ![icon menu](./images/menu.png)
 
 3. Now click on top right button and go to **SOA_Domain -> SOA -> SOA-Infra**.
 
-    ![](./images/4-open-project.png)
+    ![soa infra](./images/4-open-project.png)
 
 4. Then click the **Deployed Composites** tab.
 
-    ![](./images/deployed-composites.png)
+    ![deployed composites](./images/deployed-composites.png)
 
 5. Search for the composite **IWSProj3[1.0]** used for migration in this lab.
 
-    ![](./images/5-deployed-composite.png)
+    ![IWSProj3 composite](./images/5-deployed-composite.png)
 
     This application is a simple file transfer composite which moves a test XML file from the `/tmp/soa/out` folder to the `/tmp/soa/out1` folder.
 
@@ -100,7 +99,7 @@ For testing, we'll place a test XML file in the `/tmp/soa/out` folder, wait 5 to
     ```
     <copy>
     cd /tmp/soa/out
-    cp /u01/training/OrderSampleOSB.xml ./
+    cp /u02/training/OrderSampleOSB.xml ./
     </copy>
     ```
 
@@ -149,100 +148,92 @@ In order to achieve this, you will need to:
 * Let the import wizard migrate the code to 12.2.1.4.
 * Deploy the application with Oracle JDeveloper 12.2.1.4 as a SAR file.
 
-*If you used the local VirtualBox VM, you downloaded JDeveloper 12.2.1.4 as part of the SOA Suite Quickstart 12.2.1.4.*
+*In the Markletplace demo image, both 12.2.1.3 and 1.2.2.14 JDeveloper version are available on the desktop*
 
-*If you used the Markletplace demo image, both 12.2.1.3 and 1.2.2.14 JDeveloper version are available on the desktop*
-
-    ![](./images/soa-local-rdp.png)
+![desktop](./images/soa-local-rdp.png)
 
 1. Open Oracle Jdeveloper 12.2.1.3 on the on-premises desktop.
 
-    ![](./images/jdev12213.png)
+    ![jdeveloper](./images/jdev12213.png)
 
 2. In the **Application** tab, select **IWSApplication**.
 
-    ![](./images/open-iwsapplication.png)
+    ![open application](./images/open-iwsapplication.png)
 
 3. Right-click on the Project **IWSProj3**.
 
-    ![](./images/iwsproj3.png)
+    ![iwsproj3](./images/iwsproj3.png)
 
 4. Select **Deploy -> Deploy IWSProj3...**.
 
-    ![](./images/deploy-iwsproj3a.png)
+    ![deploy application](./images/deploy-iwsproj3a.png)
 
 5. Select **Generate SAR File** and click **Next**.
 
-    ![](./images/deploy-iwsproj3b.png)
+    ![generate sar](./images/deploy-iwsproj3b.png)
 
 6. Review and click **Next**.
 
-    ![](./images/deploy-iwsproj3c.png)
+    ![deploy next](./images/deploy-iwsproj3c.png)
 
 7. Review and click **Finish**.
 
-    ![](./images/deploy-iwsproj3d.png)
+    ![finish deploy](./images/deploy-iwsproj3d.png)
 
 8. Let the code build successfully.
 
-    ![](./images/compilecode12213.png)
+    ![success window](./images/compilecode12213.png)
 
 9. Open Oracle Jdeveloper 12.2.1.4.
 
-    If you used the marketplace environment, Oracle JDeveloper 12.2.1.4 is on the desktop, click the icon and click **Run** and **OK** to use the full dev suite.
-
-    Otherwise, open Oracle JDeveloper 12.2.1.4 you installed locally as part of the SOA Quickstart 12.2.1.4.
+    Oracle JDeveloper 12.2.1.4 is on the desktop, click the icon and click **Run** and **OK** to use the full dev suite.
 
 10. Create a new SOA Application.
 
-    ![](./images/j12214a.png)
+    ![jedveloper](./images/j12214a.png)
 
 11. Select **SOA Application** in the template list.
 
-    ![](./images/j12214b.png)
+    ![sao application template](./images/j12214b.png)
 
 12. Set **IWSApplication** for **Application Name**, and click **Next**.
 
-    ![](./images/j12214c.png)
+    ![application name](./images/j12214c.png)
 
 13. Keep the default project name, and click **Next**.
 
-    ![](./images/j12214d.png)
+    ![project name](./images/j12214d.png)
 
 14. Select **Empty Composite**, and click **Finish**.
 
-    ![](./images/j12214e.png)
+    ![empty composite](./images/j12214e.png)
 
 15. Select **File -> Import**.
 
-    ![](./images/j12214f.png)
+    ![file import](./images/j12214f.png)
 
 16. Select **SOA Archive Into SOA Project** and click **OK**.
 
-    ![](./images/j12214g.png)
+    ![soa archive project](./images/j12214g.png)
 
 17. Name the project **IWSProj3** (the same as in the source environment) and click **Next**.
 
-    ![](./images/j12214h.png)
+    ![project name](./images/j12214h.png)
 
 18. Click **Browse**.
 
-    ![](./images/j12214i.png)
+    ![browse for jar](./images/j12214i.png)
 
-19. Go to the location where you have deployed your Oracle Jdeveloper 12.2.1.3 project.
-
-    - On the marketplace environment, it will be under `/u02/training/SOAJdevProjects/IWSApplication/IWSProj3/deploy`.
-
-    - On your local machine it usually would be under `JDEVELOPER_FOLDER/mywork/IWSApplication/IWSProj3/deploy`.
+19. Go to the location where you have deployed your Oracle Jdeveloper 12.2.1.3 project under `/u02/training/SOAJdevProjects/IWSApplication/IWSProj3/deploy`.
 
 
 20. Select the **sca_IWSProj3.jar** file and click **Open**.
 
-    ![](./images/j12214j.png)
+    ![open file](./images/j12214j.png)
 
 21. Review and click **Finish**.
 
-    ![](./images/j12214k.png)
+    ![finish](./images/j12214k.png)
 
 22. Let the 12.2.1.3 code migrate to version 12.2.1.4.
 
@@ -250,19 +241,19 @@ We can now deploy the upgraded project as a SAR file.
 
 23. Right click the **IWSProj3** project.
 
-    ![](./images/iwsproj3.png)
+    ![open project iwsproj3](./images/iwsproj3.png)
 
 24. Select **Deploy -> Deploy IWSProj3...**.
 
-    ![](./images/j12214l.png)
+    ![deploy project](./images/j12214l.png)
 
 25. Select **Generate SAR file** and click **Finish**.
 
-    ![](./images/j12214m.png)
+    ![generate sar file](./images/j12214m.png)
 
 26. Wait until the code compiles successfully.
 
-    ![](./images/compilecode12214.png)
+    ![success window](./images/compilecode12214.png)
 
 ## Task 3: Prepare Your Target Environment
 
@@ -274,7 +265,7 @@ Prepare your target environment by importing or recreating all the configuration
 
     ```
     <copy>
-    ssh -o ProxyCommand="ssh -W %h:%p opc${BASTION_IP}" opc@${REMOTEHOST}
+    ssh -o ProxyCommand="ssh -W %h:%p opc@${BASTION_IP}" opc@${REMOTEHOST}
     </copy>
     ```
 
@@ -296,11 +287,11 @@ The tunnel opened earlier creates the connection to the target SOA server, the S
 
 2. You might see a browser warning because the SSL security is using a self-signed certificate. Go through the steps to confirm the exception:
 
-    ![](./images/firefox-ssl1.png)
+    ![firefox ssl exception](./images/firefox-ssl1.png)
 
-    ![](./images/firefox-ssl2.png)
+    ![advanced](./images/firefox-ssl2.png)
 
-    ![](./images/soamp-deployment-1.png)
+    ![create exception](./images/soamp-deployment-1.png)
 
 3. Log in with the credentials from provisioning:
 
@@ -309,55 +300,50 @@ The tunnel opened earlier creates the connection to the target SOA server, the S
 
 2. Click the menu icon.
 
-    ![](./images/menu.png)
+    ![icon menu](./images/menu.png)
 
 3. Now click on the top right button and go to **SOA_Domain -> SOA -> SOA-Infra**.
 
-    ![](./images/nav-composite.png)
+    ![soa infra ](./images/nav-composite.png)
 
 4. Then click the **Deployed Composites** tab.
 
-    ![](./images/deployed-composites.png)
+    ![deployed composites](./images/deployed-composites.png)
 
 5. Click **Deploy**.
 
-    ![](./images/deploy.png)
+    ![deploy](./images/deploy.png)
 
 6. Select the **Archive is on the machine...** option.
 
-    ![](./images/deploy2.png)
+    ![select archive](./images/deploy2.png)
 
-7. Click **Browse** and navigate to the folder location of the upgraded 12.2.14 application.
+7. Click **Browse** and navigate to the folder location of the upgraded 12.2.14 application under `/u02/oracle/developer/mywork/IWSApplication/IWSProj3/deploy`.
 
-    - If you used the local VirtualBox VM, it would be in:
-        `JDEVELOPER_FOLDER\mywork\IWSApplication\IWSProj3\deploy`.
-        
-    - If you used the marketplace environment, it is under `/u02/oracle/developer/mywork/IWSApplication/IWSProj3/deploy`.
-
-    ![](./images/filepath.png)
+    ![browse](./images/filepath.png)
 
 8. Select the `sca_IWSProj3.jar` file then click on **Open**.
 
 9. Click **Next**.
 
-    ![](./images/deploy2.png)
+    ![next](./images/deploy3.png)
 
 
 10. Select **SOA Folder** as **default** and click **Next**.
 
-    ![](./images/deploy4.png)
+    ![select default folder](./images/deploy4.png)
 
 12. Review all the information and then click **Deploy**.
 
-    ![](./images/deploy5.png)
+    ![deploy](./images/deploy5.png)
 
 8. You will see a **Deployment in progress** message. Wait until the message switches to **Deployment Succeeded** and click **Close**.
 
-    ![](./images/deploy6.png)
+    ![success window](./images/deploy6.png)
 
 9. Check the deployed project in **Dashboard**.
 
-    ![](./images/soamp-deployment-9.png)
+    ![dashboard](./images/soamp-deployment-9.png)
 
 
 ## Task 5: Check the Application on the Target SOA Domain
@@ -397,15 +383,15 @@ The tunnel opened earlier creates the connection to the target SOA server, the S
     </copy>
     ```
 
-    ![](./images/success.png)
+    ![file moved success](./images/success.png)
 
 6. You can check the **Flow Instances** of the project has one new **FlowID**.
 
-    ![](./images/soamp-testing-5.png)
+    ![flow id](./images/soamp-testing-5.png)
 
 5. Click on **FlowID** and see the **Audit Trail** and the relevant logs.
 
-    ![](./images/soamp-testing-6.png)
+    ![audit window](./images/soamp-testing-6.png)
 
 You may proceed to the next lab.
 
