@@ -343,8 +343,6 @@ The tunnel opened earlier creates the connection to the target SOA server, the S
 
 9. Check the deployed project in **Dashboard**.
 
-    ![dashboard](./images/soamp-deployment-9.png)
-
 
 ## Task 5: Check the Application on the Target SOA Domain
 
