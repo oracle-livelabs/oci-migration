@@ -1,5 +1,11 @@
 # Improve Performance
 
+
+### Introduction
+
+This lab walks you through the general steps to improve performance in Oracle Enterprise Command Center framework
+
+
 Estimated Time: 10 minutes
 
 

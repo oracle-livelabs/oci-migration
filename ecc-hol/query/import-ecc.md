@@ -1,5 +1,8 @@
 # Import ECC applications
 
+### Introduction
+
+
 This lab walks you through the steps to import ECC applications so that you can set up Oracle Enterprise Command Center Framework
 
 
@@ -20,7 +23,7 @@ This lab assumes you have:
 
 ## Task 1: Import ECC Applications
 
-*  Source EBSapps running edition
+*  Open EBS terminal, source EBSapps running edition
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"><div style="color:grey"> 
 source /u01/install/APPS/EBSapps.env run 
 
@@ -90,6 +93,7 @@ Password: welcome1
 ![Image alt text](images/5apps.png)
 
 
+You may now  **proceed to the next lab**
 
 
 ## Learn More

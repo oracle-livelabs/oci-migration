@@ -1,4 +1,7 @@
-#  Create ECC schema and Install Weblogic Server
+#  Create ECC schema 
+
+
+### Introduction
 
 
 This lab walks you through the steps to create ECC schema and to install weblogic server so that you can set up Oracle Enterprise Command Center Framework
@@ -22,7 +25,7 @@ This lab assumes you have:
 
 ## Task 1: Extract quickInstall 
 
-* Open terminal and navigate to /u01 directory by using below command
+* Keep the previous EBS terminal open and now open a new terminal for ECC. Within that, navigate to /u01 directory by using below command
 
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">cd /u01
 
@@ -122,11 +125,7 @@ Password for ECC DB User: <b>welcome1</b>
 
 </span></code></pre></li>
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">
-source /u01/install/APPS/19.0.0/ebscdb_apps.env
 
-
-</span></code></pre></li>
 
 * Execute the following command with the credentials mentioned:
 
@@ -162,6 +161,7 @@ Password: <b>welcome1</b>
 ![Image alt text](images/weblogic0.png)
 ![Image alt text](images/weblogic.png)
 
+You may now  **proceed to the next lab**
 
 ## Learn More
 * [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)

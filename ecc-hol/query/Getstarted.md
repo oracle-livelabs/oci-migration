@@ -1,5 +1,7 @@
 # Get started
 
+### Introduction
+
 
 This lab helps you get started with the workshop and gives a brief introduction to Oracle Enterprise Command Center Framework
 
@@ -46,7 +48,7 @@ This lab assumes you have:
 2. Copy some text from your local computer as illustrated below and paste it into the clipboard widget, then finally open up the desired application (e.g. Terminal) and paste accordingly using mouse controls
 ![Image alt text](images/clip2.png)
 
-<b>Note</b>: Please make sure you initialize your clipboard with Step 1 shown in the screenshot above before opening the target application in which you intend to paste the text. Otherwise will find the paste function in the context menu grayed out when attempting to paste for the first time.
+<b>Note</b>: Please make sure you initialize your clipboard with Step 1 shown in the screenshot above before opening the target application in which you intend to paste the text. Otherwise, you will find the paste function in the context menu grayed out when attempting to paste for the first time.
 
 ## Task 3: Validate if EBS responsibility tree is up
 
@@ -101,6 +103,7 @@ Oracle E-Business Suite users navigate transactional information using interacti
 
 
 
+You may now  **proceed to the next lab**
 
   
 ## Learn More

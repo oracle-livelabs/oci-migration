@@ -1,4 +1,9 @@
-# Diagnose and Monitor 
+# Diagnose and monitor 
+
+
+### Introduction
+
+This lab walks you through the steps to general steps performed in diagnosing and monitoring Oracle Enterprise Command Center framework
 
 Estimated Time: 10 minutes
 
@@ -231,6 +236,7 @@ Html page contains all the information about the ECC environment being analysed.
 
   ![Image alt text](images/ECCdown.png)
 
+You may now  **proceed to the next lab**
 
 ## Learn More
 * [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)

@@ -1,5 +1,8 @@
 # Run Dataload
 
+
+### Introduction
+
 This lab walks you through the steps to run dataload so that you can set up Oracle Enterprise Command Center Framework
 
 
@@ -132,9 +135,7 @@ Password: welcome1
    ![Image alt text](images/eccuser4.png)
 
 
-* You can also bookmark this "Schedule request" page so that you can return here when you need to run additional data loads
 
-   ![Image alt text](images/bookmark.png)
 
 * Choose "Payables Command Center Data Load" in the Program name by copying it from below and pasting in the Program Name
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">Payables Command Center Data Load
@@ -203,6 +204,7 @@ and then to "Payables Manager" responsibility and then to "Payabales Command Cen
 
 ![Image alt text](images/payables100.png) 
 
+You may now  **proceed to the next lab**
 
 ## Learn More
 * [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)

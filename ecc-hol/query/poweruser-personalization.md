@@ -1,5 +1,9 @@
 # Power User Personalization
 
+
+### Introduction
+
+
 In ECC, Power users can modify a dashboard to tailor it based on their business requirements. This lab walks you through the steps to Personalize an existing dashboard to suit it to your business requirement with an example. 
 
 Estimated Time: 20 minutes
@@ -109,7 +113,7 @@ This lab assumes you have:
     1. Data set: Installaments 
     2. Chart type: Pie (Default is Pie, keep it as is)
     3. Dimension: Validation status
-    4. Metric: Invoice with Aggregation as (count distinct) 
+    4. Metric: Atrribute (Invoice) and Aggregation (count distinct) 
 * Click preview and then Save
 
   ![Image alt text](images/jda5.png)
@@ -127,15 +131,15 @@ This lab assumes you have:
 
     1. Data set: Payments 
     2. Chart type: Bar
-    3. Dimension: Bank Account
-    4. Metric: Paid amount with Aggregation as (Sum) 
+    3. Dimension: Bank Account (series dimension)
+    4. Metric: Attribute (Paid amount) and Aggregation (Sum) 
 
 * Click preview 
 
   ![Image alt text](images/jda9.png)
 * This gives cash outflow across all currencies, now add additional dimension to split the chart per currency.
 
-* Add "Currency" as Trellis dimension
+* Add "Currency" as Trellis column dimension
 * Click preview and then Save
 
   ![Image alt text](images/jda10.png)
@@ -146,12 +150,12 @@ This lab assumes you have:
 
 * Add New Component- Aggregate Table (Pivot view is an alternate visualization of the Aggregate Table component)
     * Data set: Payments
-    * Dimensions:
+    * Attributes:
          * Supplier name
          * Supplier site
-         * Currency name (This will become the Column when Pivot visualization is selected)
+         * Currency name (This will become a column when Pivot visualization is enabled)
     * Metric:
-         * Paid amount with Aggregation as (Sum)
+         * Attribute (Paid amount) and Aggregation (Sum)
 * Click preview 
 
 * This gives Per supplier, per supplier site totals of invoice paid amount.
@@ -249,6 +253,8 @@ Password: welcome1
 * By default the dashboard is populated with the oldest period, Jan-07. Replace this period Jan-07 with Apr-23 in selected refinements to view latest data 
   ![Image alt text](images/home1.png)
 
+  <b> Note: </b> If instead you see period Adj-07 then replace it with Apr-23.
+
 
 * Add another refinement Account type : "Expense", by clicking on expense from the charts
 
@@ -275,7 +281,7 @@ Password: welcome1
     3. Group dimension: Cost Center
     4. Series dimension: Parent account 1
     5. Trellis column: Period Name
-    6. Metric: Period Activity (no aggregation)
+    6. Metric: Attribute (Period Activity) and no Aggregation, since this is a calculated attribute.
 
 * Click preview 
 
@@ -287,6 +293,7 @@ Password: welcome1
 
 
 
+You may now  **proceed to the next lab**
 
 
 ## Learn More

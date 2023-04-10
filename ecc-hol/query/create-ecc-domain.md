@@ -1,4 +1,7 @@
-# Create and Validate ECC Domain
+# Create ECC Domain
+
+### Introduction
+
 
 This lab walks you through the steps to create and validate ECC domain so that you can set up Oracle Enterprise Command Center Framework
 
@@ -92,6 +95,7 @@ http://localhost:7776/ecc
 
 
 
+You may now  **proceed to the next lab**
 
 
 ## Learn More

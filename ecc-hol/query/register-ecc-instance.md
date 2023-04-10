@@ -1,5 +1,8 @@
 # Register ECC Instance as FND Node and Create EBS JNDI
 
+### Introduction
+
+
 This lab walks you through the steps to Register ECC Instance as FND Node and Create EBS JNDI so that you can set up Oracle Enterprise Command Center Framework
 
 
@@ -21,14 +24,9 @@ This lab assumes you have:
 
 ##  
 
-## Task 1: Update Oracle EBS user name 
+## Task 1: Register ECC Instance as FND Node
 
-<b>EBS\_ECC\_USER</b> is the Oracle E-Business Suite user name (FND user) with which Oracle Enterprise Command Center Framework connects to Oracle E-Business Suite using the JNDI configuration. Make sure to update EBS\_ECC\_USER value in /u01/Oracle/quickInstall/EccConfig.properties  to ECC\_DISCOVERY\_HOL\_{yourname}
-
-
-## Task 2: Register ECC Instance as FND Node
-
-* Enter <b>Option 6</b> to exit the Options screen and Source EBSapps running edition
+* On the ECC terminal Enter <b>Option 6</b> to exit the Options screen and Source EBSapps running edition
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"><div style="color:grey"> 
 source /u01/install/APPS/EBSapps.env run 
 
@@ -47,7 +45,7 @@ java oracle.apps.fnd.security.AdminDesktop apps/apps CREATE NODE_NAME=apps.examp
 </div>
 </span></code></pre></li>
 
-
+<b>Note: </b> Copy here works because you are on the same machine
 
 * Copy the "ebsdb_APPS.EXAMPLE.COM.dbc" file to the ECC instance
 
@@ -64,9 +62,24 @@ cp ebsdb_APPS.EXAMPLE.COM.dbc /u01/Oracle/quickInstall/connection.dbc
 
 ![Image alt text](images/fndnode.png)
 
+## Task 2: Update Oracle EBS user name 
+
+<b>EBS\_ECC\_USER</b> is the Oracle E-Business Suite user name (FND user) with which Oracle Enterprise Command Center Framework connects to Oracle E-Business Suite using the JNDI configuration. 
+
+*  Make sure that from ECC terminal you update EBS\_ECC\_USER value in /u01/Oracle/quickInstall/EccConfig.properties  to ECC\_DISCOVERY\_HOL\_{yourname}, to do that follow the below steps:
+
+     1. In ECC terminal type vi /u01/Oracle/quickInstall/EccConfig.properties to open the file
+     2. To insert or update please enter "i" on the keyboard
+     3. Update EBS\_ECC\_USER property
+     4. Enter "Esc" on the keyboard and enter ":wq" and then press "Enter" to save the file
+
+![Image alt text](images/namechange.png)
+
+
+
 ## Task 3: Create EBS JNDI
 
-* Execute the ./envSetup.sh script and when prompted choose <b>Option 4</b> to Create EBS JNDI.
+* From the ECC terminal, execute the ./envSetup.sh script and when prompted choose <b>Option 4</b> to Create EBS JNDI.
 
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">./envSetup.sh
 </span></code></pre></li>
@@ -79,6 +92,7 @@ cp ebsdb_APPS.EXAMPLE.COM.dbc /u01/Oracle/quickInstall/connection.dbc
 ![Image alt text](images/jndi1.png)
 ![Image alt text](images/jndi22.png)
 
+   * When prompted provide a password to create new FND user as <b>welcome1</b>
    * Password for ECC Domain weblogic was previously set by you as <b>welcome1</b>
    * Password for EBS Schema apps is always <b>apps</b>
 
@@ -128,7 +142,7 @@ Password: <b>welcome1</b>
 ## Task 5: Integrate ECC with EBS Instance
 
 
-* Execute the ./envSetup.sh script and choose <b>Option 5</b> to integrate ECC with EBS instance 
+* From the ECC terminal, execute the ./envSetup.sh script and choose <b>Option 5</b> to integrate ECC with EBS instance 
 
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"> ./envSetup.sh
 </span></code></pre></li>
@@ -162,11 +176,11 @@ Password= welcome1
  * Select the application tier context file, and choose "Edit Parameters".
   ![Image alt text](images/autoconfig2.png)
 
- * Search for the s\_ecc\_conf\_comment variable by selecting OA_VAR in the search list of values and entering s\_ecc\_conf\_comment in the search text box. Then choose the Go button.
+ * Search for the s\_ecc\_conf\_comment variable by selecting OA_VAR in the search list of values and entering s\_ecc\_conf\_comment in the search text box. Then, click the "Go" button.
 
    ![Image alt text](images/autoconfig3.png)
 
- * If  number sign (#) is present in Value field then remove it from the Value field for the s\_ecc\_conf\_comment variable to ensure that this variable is not commented. Then choose the Save button.
+ * If  number sign (#) is present in Value field then remove it from the Value field for the s\_ecc\_conf\_comment variable to ensure that this variable is not commented. Then, click the "Save" button.
  * Enter a reason for the update, such as Enabling Oracle Enterprise Command Center Framework. Then choose the OK button.
  * Similarly, search for the following variables and set their values as appropriate for your installation:
   1. <b>s\_ecc\_protocol</b> - The protocol for accessing the Oracle Enterprise Command Center Framework administration UI.
@@ -175,7 +189,7 @@ Password= welcome1
   4. <b>s\_ecc\_conf\_update</b> - A flag to update the ecc.conf file. If Oracle Enterprise Command Center Framework is enabled, use this variable to specify whether the ecc.conf file should be updated. The default value is true, which means ecc.conf will be updated during every AutoConfig run. To retain the contents of ecc.conf, such as when you are enabling TLS for the Oracle Enterprise Command Center Framework installation, set this variable to false.
  ![Image alt text](images/autoconfig.png)
 
- * Open terminal and then run AutoConfig. For running Autoconfig you need to first source the EBS running edition using below command
+ * Open EBS terminal and then run AutoConfig. For running Autoconfig you need to first source the EBS running edition using below command
  <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">source /u01/install/APPS/EBSapps.env run
 </span></code></pre></li>
 
@@ -192,7 +206,7 @@ Password= welcome1
 
 </span></code></pre></li>
 
-* It will prompt you for apps password which is by default <b>apps</b> and weblogic password is by default  <b>welcome1</b>
+* It will prompt you for apps password which is by default <b>apps</b> 
 
    ![Image alt text](images/autoconfig4.png)
    ![Image alt text](images/autoconfig101.png)
@@ -216,6 +230,13 @@ Password= welcome1
 </span></code></pre></li>
    ![Image alt text](images/adh22.png)
 
+* And then, run the following script to stop OHS:
+
+ <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"> ./adapcctl.sh stop
+
+</span></code></pre></li>
+   ![Image alt text](images/adh77.png)   
+
 * And then, run the following script to start OHS:
 
  <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"> ./adapcctl.sh start
@@ -231,6 +252,7 @@ Password= welcome1
 
    ![Image alt text](images/adh55.png)
 
+You may now  **proceed to the next lab**
 
 ## Learn More
 * [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)

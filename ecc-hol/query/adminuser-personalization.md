@@ -1,4 +1,7 @@
-# Admin User Personalisation
+# Admin user personalization
+
+### Introduction
+
 
 Because Oracle E-Business Suite is used across many industries and environments, users may have special requirements. In that case, administrative users can extend existing dashboards or create new dashboards based on new data sets.
 
@@ -27,45 +30,32 @@ This lab assumes you have:
 
 ## Task 1 : Run dataload for Assets Command center
 
+* From ECC terminal copy paste the following commands 
 
+<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">curl "localhost:7776/core_ecc/admin/collections?action=RESTORE&name=fa-asset&location=/u01/dataset_backup&collection=fa-asset"
 
-
-* You have already run dataload for Payments command center and General Ledger Command Center. The steps are similar here.
-
-* Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
-
- <pre><span class="hljs-attribute">
- Username: eccuser
- Password: welcome1
 </span></code></pre></li>
+  ![Image alt text](images/assetdataload.png)
 
 
-* You have to go to <b>Assets Command center</b> and when the dashboard appears change the function id in the dashboard to <b>1011696</b>. 
-* Choose the program <b>Assets Command Center Data Load</b>, in the Program name by copying it from below and pasting in the Program Name
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">Assets Command Center Data Load
+<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">curl "localhost:7776/core_ecc/admin/collections?action=RESTORE&name=fa-rec&location=/u01/dataset_backup&collection=fa-rec";
+
 
 </span></code></pre></li>
 
-* You will see the below screen
-  ![Image alt text](images/assets100.png)
-
-* From "Parameters" tab choose Load type as  <b>FULL_LOAD</b> and Log level as <b>ERROR</b>. Click on "Continue"
-
-  ![Image alt text](images/assets200.png)
-* Click on "Submit" in below screen
-
-  ![Image alt text](images/assets300.png)
-  ![Image alt text](images/assets400.png)
-* You can track the dataload from the below screen
-
-  ![Image alt text](images/assets500.png)
+<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">curl "localhost:7776/core_ecc/admin/collections?action=RESTORE&name=fa-clr&location=/u01/dataset_backup&collection=fa-clr";
 
 
-* You can also track the dataload in ECC Dataload Tracking from eccadmin by navigating to ECC developer responsibility and then to ECC Data Load Tracking page
-<pre><span class="hljs-attribute">
-Username: eccadmin
-Password: welcome1
+
 </span></code></pre></li>
+
+<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">curl "localhost:7776/core_ecc/admin/collections?action=RESTORE&name=fa-masstrans&location=/u01/dataset_backup&collection=fa-masstrans"
+
+
+
+
+</span></code></pre></li>
+
 
 ## Task 2 : Build a new dashboard on an existing data set
 
@@ -148,8 +138,16 @@ As we are targeting to extend the asset cost dashboard, we first need to copy th
 
 * Click on the Page name (XX Asset Cost), open the page, and start the extension.
 
+![Image alt text](images/assetload.png)
 
-![Image alt text](images/1lab9.png)
+* Click on "Books" from the Summarization bar and then select "OPS CORP" to refine the dashboard for OPS CORP book.
+
+![Image alt text](images/assetload1.png)
+
+You should see the below screen
+![Image alt text](images/assetload2.png)
+
+
 
 <b>Extend a Page</b>
 
@@ -159,7 +157,6 @@ Based on the functional requirements to enrich the Asset Cost dashboard, the ext
 
 * Open Add Component List. Drag and drop the Aggregate table component below the charts.
 
-![Image alt text](images/2lab9.png)
 * Click the Configuration icon. Add below dimensions:
    1. Dataset: Fixed Assets
    2. Attributes: 
@@ -170,14 +167,14 @@ Based on the functional requirements to enrich the Asset Cost dashboard, the ext
 
 
 
-![Image alt text](images/7lab9.png)
+![Image alt text](images/assetload3.png)
    4. From visualization tab you should enable Pivot view and set it as default 
-   5. Also from the visualization tab you should add pivot summary for Based category, Minor category and Date placed in service (Year)
+   5. Also from the visualization tab you should add pivot summary for Based category and Minor category 
 
-![Image alt text](images/10lab9.png)
+![Image alt text](images/assetload4.png)
    6. Click preview and then save
 
-![Image alt text](images/11lab9.png)
+![Image alt text](images/assetload5.png)
 
 
 
@@ -278,7 +275,7 @@ After personalizing the Oracle Application Framework page, access the new extend
 
 * The newly extended dashboard is displayed instead of the shipped Asset Cost dashboard.
 
-![Image alt text](images/11lab9.png)
+![Image alt text](images/assetload5.png)
 
 
 * Validate the dashboard functionality.
@@ -432,6 +429,7 @@ Within Oracle E-Business Suite, create a new Oracle Application Framework page, 
 
 Create a concurrent program to be used to run the full load directly from Oracle E-Business Suite. See the Sample Concurrent Program section for more information. Also refer to Overview of Concurrent Programs and Requests, Oracle E-Business Suite Setup Guide and Overview of Concurrent Processing, Oracle E-Business Suite Developer's Guide for details on concurrent programs.
 
+You may now  **proceed to the next lab**
 
 
 ## Learn More

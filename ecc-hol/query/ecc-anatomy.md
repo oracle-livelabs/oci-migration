@@ -1,4 +1,7 @@
-# Show and Tell: ECC Anatomy
+# ECC anatomy
+
+
+### Introduction
 
 This lab walks you through two existing ECC dashboards, explaining what components are used in the dashboards, their significance, their usage guidelines and how end users can generate value using ECC. 
 
@@ -350,6 +353,7 @@ Pagination: Diagram pagination uses Film Strip Thumbnails to help you explore mu
 
 For more information, see Diagram, [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
 
+You may now  **proceed to the next lab**
 
 
 ## Learn More

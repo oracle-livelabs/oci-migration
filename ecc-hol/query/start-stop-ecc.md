@@ -1,6 +1,12 @@
 # Start and stop ECC
 
-Estimated Time: 10 minutes
+
+### Introduction
+
+This lab walks you through the steps to start and stop Oracle Enterprise Command Center Framework
+
+
+Estimated Time: 5 minutes
 
 
 ### Objectives
@@ -30,7 +36,7 @@ Start the Oracle Enterprise Command Center Framework servers by running the <b>.
 Stop the Oracle Enterprise Command Center Framework servers by running the <b>./stopAllEcc.sh</b> script located in the $ECC_BASE/Oracle/quickInstall/bin directory and choosing option 1 - All. This option stops the Oracle Enterprise Command Center Framework managed server and the admin server in the required sequence. When prompted, enter the Oracle Enterprise Command Center Framework domain admin server user name and password.
 
 
-
+You may now  **proceed to the next lab**
 
 ## Learn More
 * [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
