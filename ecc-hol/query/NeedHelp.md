@@ -22,7 +22,7 @@ Learn about LiveLabs helpful resources
 
 ## Option 2: Send an Email
 
-* If you want to get help, you can  email your questions to our shared emailbox: mobeidat\_org\_ww@oracle.com. We will try to get back to you within 1-2 business days.
+* If you want to get help, you can  email your questions to our shared emailbox: **mobeidat\_org\_ww@oracle.com**. We will try to get back to you within 1-2 business days.
 
 ## Option 3: Use Einstein Community
 Another route of getting quick help, please post your questions on https://einstein.oracle.com/r/ecc.
