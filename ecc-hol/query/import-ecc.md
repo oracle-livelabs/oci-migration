@@ -23,90 +23,87 @@ This lab assumes you have:
 
 ## Task 1: Import ECC Applications
 
-*  Open EBS terminal, source EBSapps running edition
+1.  Open EBS terminal, source EBSapps running edition
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"><div style="color:grey"> 
 source /u01/install/APPS/EBSapps.env run 
-
 </div>
 </span></code></pre></li>
 
 
-* Navigate to below location in terminal 
+2. Navigate to below location in terminal 
 
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"><div style="color:grey"> 
 cd /u01/install/APPS/fs2/EBSapps/appl/fnd/12.0.0/bin
-
 </div>
 </span></code></pre></li>
 
-* Execute patchEccFiles.pl command
+3. Execute patchEccFiles.pl command
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"><div style="color:grey"> 
 sh patchEccFiles.pl
 </div>
 </span></code></pre></li>
 
 
-* When you run patchEccFiles.pl it will prompt you to enter a temporary directory, so enter <b>/tmp/ecc1</b>
-* When prompted enter EBS DB apps user password as <b>apps</b>
-* When prompted you need to pass the languages that you need to import. Use "en" 
+4. When you run patchEccFiles.pl it will prompt you to enter a temporary directory, so enter**/tmp/ecc1**
+5. When prompted enter EBS DB apps user password as **apps**
+6. When prompted you need to pass the languages that you need to import. Use "en" 
 
 ![Image alt text](images/import101.png)
 
 
-* When prompted you need to mention what products you need to import. 
+7. When prompted you need to mention what products you need to import. 
      * "Y" is for all products
      * "N" is to specify a smaller subset of products. 
 
-* Enter <b>"N"</b> 
+8. Enter **"N"** 
 
-* You will be presented with the list of products from which you need to mention which ones to import. 
+9. You will be presented with the list of products from which you need to mention which ones to import. 
 
-* For this demo please enter the following products: "<b>AP,GL,ONT,FA,WIP</b> "
+10. For this demo please enter the following products: "**AP,GL,ONT,FA,WIP** "
 
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"><div style="color:grey"> 
 AP,GL,ONT,FA,WIP
-
 </div>
 </span></code></pre></li>
 
-![Image alt text](images/importecc1.png)
+![Image alt text](images/Importecc1.png)
 ![Image alt text](images/import1000.png)
 
-* You should see the following  screen when you run it successfully
+11. You should see the following  screen when you run it successfully
 
 ![Image alt text](images/payables12.png)
 
 
 ## Task 2: Validate Import of ECC applications
 
-* Navigate to http://apps.example.com:8000 in the browser with below credentials 
+1. Navigate to http://apps.example.com:8000 in the browser with below credentials 
 
  <pre><span class="hljs-attribute">
 Username: SYSADMIN
 Password: welcome1
-
-
 </span></code></pre></li>
 
     
-* Navigate to ECC Developer, you should see new applications as below
+2. Navigate to ECC Developer, you should see new applications as below
 ![Image alt text](images/5apps.png)
 
 
-You may now  **proceed to the next lab**
+You may now **proceed to the next lab**
 
 
 ## Learn More
-* [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
-* [Enterprise Command Centres- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
-* [Enterprise Command Centres- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
-* [Enterprise Command Centres- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
-* [Enterprise Command Centres- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)
-* [Enterprise Command Centres for E-Business Suite- Technical details and Implementation](https://mylearn.oracle.com/ou/component/-/117416)
+* [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
+* [Enterprise Command Center- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
+* [Enterprise Command Center- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
+* [Enterprise Command Center- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
+* [Enterprise Command Center- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)
+* [Enterprise Command Center for E-Business Suite- Technical details and Implementation](https://mylearn.oracle.com/ou/component/-/117416)
 
 ## Acknowledgements
 
-* **Author** - Muhannad Obeidat, VP
-* **Contributors** -  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
-* **Last Updated By/Date** - Mohammed Khan, March 2023
+**Author**- Muhannad Obeidat, VP
+
+**Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
+
+**Last Updated By/Date**- Mohammed Khan, March 2023
 

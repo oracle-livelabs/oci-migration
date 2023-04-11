@@ -29,26 +29,26 @@ This lab assumes you have:
 ##  
 
 ## Task 1: Diagnose and Monitor 
- <b> Location of Server Logs </b>
+**Location of Server Logs**
  
  Note the location of Server logs:
 
 ![Image alt text](images/serverlogs.png)
- <b> Location of Application Logs </b>
+**Location of Application Logs**
 
  Note the location of Application logs:
 
 ![Image alt text](images/applicationlogs.png)
 
- <b> Location of ohs Logs </b>
+**Location of OHS Logs**
 
 /u01/install/APPS/fs2/FMW\_Home/webtier/instances/EBS\_web\_OHS1/diagnostics/logs/OHS/EBS\_web
 
- <b> Location of opmn Logs </b>
+**Location of opmn Logs**
 
 /u01/install/APPS/fs2/FMW_Home/webtier/instances/EBS\_web\_OHS1/diagnostics/logs/OPMN/opmn
 
- <b> Log monitor </b>
+**Log monitor**
 
 Login to EBS as Admin user with eccadmin responsibility access
 
@@ -62,10 +62,7 @@ Login to EBS as Admin user with eccadmin responsibility access
 
 
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"><div style="color:grey"> 
-
-
-(http://&lt;EBS_MIDDLETIER_HOST_FQDN&gt;:&lt;EBS_MIDDLETIER_PORT&gt;/ecc/monitor/logs)
-
+http://&lt;EBS_MIDDLETIER_HOST_FQDN&gt;:&lt;EBS_MIDDLETIER_PORT&gt;/ecc/monitor/logs
 </div>
 </span></code></pre></li>
 
@@ -74,23 +71,25 @@ Login to EBS as Admin user with eccadmin responsibility access
 
 ![Image alt text](images/logmonitor.png)
 
-<b>Capture Loading Time for ECC Page</b>
+**Capture Loading Time for ECC Page**
 
-* Open the Oracle E-Business Suite Enterprise Command Center application in the Google Chrome browser. 
-* Log in and navigate to the page you want. Then open the Chrome tools by pressing the F12 button on the keyboard, or by pressing Ctrl+Shift+I. 
-* The Development Tools window occupies the lower part of the page. Select the Network tab
+1. Open the Oracle E-Business Suite Enterprise Command Center application in the Google Chrome browser. 
+2. Log in and navigate to the page you want. Then open the Chrome tools by pressing the F12 button on the keyboard, or by pressing Ctrl+Shift+I. 
+3. The Development Tools window occupies the lower part of the page. Select the Network tab
 
-![Image alt text](images/eccinspectelement.png)
 
-<b>Download HAR file</b>
+
+  ![Image alt text](images/eccinspectelement.png)
+
+**Download HAR file**
 
 
 To analyze performance deeply download HAR file:
 
-* Open browser developer tools via inspect element (in chrome)
-* Navigate to "Network" tab
-* Click on the download icon highlighted below
-![Image alt text](images/harfile.png)
+1. Open browser developer tools via inspect element (in chrome)
+2. Navigate to "Network" tab
+3. Click on the download icon highlighted below
+  ![Image alt text](images/harfile.png)
 
 
 ## Task 2: Learn about Activity Audit 
@@ -149,7 +148,7 @@ The following properties in the EccConfig.properties file control activity audit
 
 * Set the property ecc.activity.audit.ingest.limit to define the limit on the number of user actions beyond which a Data Load is triggered to refresh the dashboard data. The default limit is 100. This can be updated to adjust the frequency of data loads based on the number of dashboards, users and the average activity.
 
-<b>Capturing User Activity </b>
+**Capturing User Activity**
 
 User activity is captured if Activity Audit application is available.
 
@@ -157,7 +156,7 @@ On Oracle Enterprise Command Center Framework server startup, the Activity Audit
 
 Users need not submit a data load separately. If a data load is submitted, it resets the data set and once the scheduled query load is triggered, the updated data is ingested into the Activity Audit data set.
 
-<b>Application and Data Set Details </b>
+**Application and Data Set Details**
 
 * Dataset Name: Activity Audit
 
@@ -175,37 +174,36 @@ The Activity Audit dashboard is designed to support two use cases: tracking user
 ![Image alt text](images/lab10_activityaudit2.png)
 
 
-For more information on Activity audit please refer to [Enterprise Command Centres- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/T676250T676672.htm#8723752)
+For more information on Activity audit please refer to [Enterprise Command Center- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/T676250T676672.htm#8723752)
 
 ## Task 3: Learn about ECC Analyzer 
 * The EBS Enterprise Command Center (ECC) Analyzer is a self-service health-check script that reviews Oracle Enterprise Command Center related data, analyses current configurations and settings for the environment and provides feedback and recommendations on best practices. 
 * The Analyzer collects data using all the tables necessary to diagnose issues and provides solutions and recommended actions. 
 ![Image alt text](images/eccanalyzer1.png)
 
-<b>NOTE</b>:  Analyzer does not perform any INSERTs, UPDATEs or DELETEs to your data; it just reports on it.
+**NOTE**:  Analyzer does not perform any INSERTs, UPDATEs or DELETEs to your data; it just reports on it.
 
 
-<b>ECC Analyzer: Technical Requirement</b>
+**ECC Analyzer: Technical Requirement**
 
 * Requires Java 1.7+
 * Available on Linux platforms only
 
-<b>Verify java version</b>
+**Verify java version**
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">$ java –version
+<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"> java –version
 </span></code></pre></li>
 
-<b>Running Analyzer</b>
+**Running Analyzer**
 To run Analyzer as a java program follow below instruction. The java program will prompt for the WebLogic and APPS usernames and passwords.
 
 ![Image alt text](images/eccanalyzer2.png)
 
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">  $ java -	Danalyzer="ecc_analyzer.xml" -jar HA.jar
-
+<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">   java -	Danalyzer="ecc_analyzer.xml" -jar HA.jar
 </span></code></pre></li>
 
-<b>ECC Analyzer: Sample Output</b>
+**ECC Analyzer: Sample Output**
 
 * Analyzer generates a zip file containing all the script outputs and the analyser html report(ATGECCHA_<date>.html). 
 
@@ -222,33 +220,35 @@ Html page contains all the information about the ECC environment being analysed.
 
 
 ## Task 4: Identify common issues 
-* You will see the below screen if you are authenticated but not authorized to view the dashboard. You need to use the right responsibility to access the dashboard 
+1. You will see the below screen if you are authenticated but not authorized to view the dashboard. You need to use the right responsibility to access the dashboard 
 
-  ![Image alt text](images/auth.png)
+  ![Image alt text](images/Auth.png)
 
-* You will see the below screen if you are not authenticated/ or not logged in to EBS
+2. You will see the below screen if you are not authenticated/ or not logged in to EBS
 
   ![Image alt text](images/auth2.png)
 
-* You will see the below screen if ECC isn’t integrated with EBS (ecc.conf is missing).
-  ![Image alt text](images/ECCmissing.png)
-* You will see the below screen if ECC is integrated with EBS but ECC is down.
+3. You will see the below screen if ECC isn’t integrated with EBS (ecc.conf is missing).
+  ![Image alt text](images/eccmissing1.png)
+4. You will see the below screen if ECC is integrated with EBS but ECC is down.
 
-  ![Image alt text](images/ECCdown.png)
+  ![Image alt text](images/eccdown.png)
 
-You may now  **proceed to the next lab**
+You may now **proceed to the next lab**
 
 ## Learn More
-* [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
-* [Enterprise Command Centres- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
-* [Enterprise Command Centres- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
-* [Enterprise Command Centres- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
-* [Enterprise Command Centres- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)
-* [Enterprise Command Centres for E-Business Suite- Technical details and Implementation](https://mylearn.oracle.com/ou/component/-/117416)
+* [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
+* [Enterprise Command Center- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
+* [Enterprise Command Center- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
+* [Enterprise Command Center- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
+* [Enterprise Command Center- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)
+* [Enterprise Command Center for E-Business Suite- Technical details and Implementation](https://mylearn.oracle.com/ou/component/-/117416)
 
 ## Acknowledgements
 
-* **Author** - Muhannad Obeidat, VP
-* **Contributors** -  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
-* **Last Updated By/Date** - Mohammed Khan, March 2023
+**Author**- Muhannad Obeidat, VP
+
+**Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
+
+**Last Updated By/Date**- Mohammed Khan, March 2023
 

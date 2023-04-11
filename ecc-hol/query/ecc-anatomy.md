@@ -30,14 +30,14 @@ This lab assumes you have:
 
 A Command Center is made up of several dashboards exposing different aspects of a functional area. 
 
-<b>Dashboard/ Page</b>: A dashboard is home for all the visualization components that are designed to perform a specific type of function: Filtering the data displayed on the page, displaying visual representations of data, displaying lists of records or record attributes, or highlighting specific values. The following is an example of an ECC dashboard "Account Analysis":
+**Dashboard/ Page**: A dashboard is home for all the visualization components that are designed to perform a specific type of function: Filtering the data displayed on the page, displaying visual representations of data, displaying lists of records or record attributes, or highlighting specific values. The following is an example of an ECC dashboard "Account Analysis":
 
-  ![Image alt text](images/home45.png)
+  ![Image alt text](images/igh.png)
 A dashboard or a page can be defined only within the context of an application. 
 
-<b>Application</b>: An application encapsulates all elements needed to power the dashboard. It references data sets which in turn control how data is populated through load rules and behavior of every attributes on the UI through metadata. An application can reference data sets owned by other applications. 
+**Application**: An application encapsulates all elements needed to power the dashboard. It references data sets which in turn control how data is populated through load rules and behavior of every attributes on the UI through metadata. An application can reference data sets owned by other applications. 
  
-<b>Data set</b>: A data set is both a logical and a physical grouping of attributes to support business dashboard operations and use cases. From a logical perspective, it is designed to support several use cases that are accessed through one or more Oracle Enterprise Command Center Framework dashboards. The design typically caters to open‐ended interaction with the underlying data.
+**Data set**: A data set is both a logical and a physical grouping of attributes to support business dashboard operations and use cases. From a logical perspective, it is designed to support several use cases that are accessed through one or more Oracle Enterprise Command Center Framework dashboards. The design typically caters to open‐ended interaction with the underlying data.
 
 At the physical level, the data set stores one or more records with a uniquely identifying key that represents a particular level of detail of the entity stored in the enterprise system.
 
@@ -61,7 +61,7 @@ Contents of a data set can be exported with attribute keys and attribute display
 Note: A data set cannot be deleted if it is used to configure one or more components.
 
 
-<b>Metadata:</b> Each attribute stored in the data set is controlled by metadata properties that specify its behavior on the user interface. Additional value-add features such as calculations, bucketing, and precedence rules can also be specified.
+**Metadata:** Each attribute stored in the data set is controlled by metadata properties that specify its behavior on the user interface. Additional value-add features such as calculations, bucketing, and precedence rules can also be specified.
 
 ![Image alt text](images/d4.png)
 
@@ -121,25 +121,25 @@ The Supplier dashboard presents supplier and invoice payment details. Using the 
 
 The following are the key components in the Supplier dashboard:
 
-<b>Search Box</b>
+**Search Box**
 
 Oracle Enterprise Command Center Framework comes with search capabilities that allow users to search for a term within a particular data set.
 
 To perform a basic search, type your search term into the search box and Oracle Enterprise Command Center Framework will then list available matches in attribute values. If you select a value from the suggestion list then Oracle Enterprise Command Center Framework will execute a specific search on that attribute match. Alternatively, you can click on the magnifying glass (search icon) to retrieve all records containing this value regardless of which attribute matches your search criteria.
 
-<b>Example of a Search Box Placed on a Page</b>
+**Example of a Search Box Placed on a Page**
 
-![Image alt text](images/supplier4.png)
+![Image alt text](images/supplier400.png)
 
-<b>Selected Refinements</b>
+**Selected Refinements**
 
 Selected Refinements display all values that the user has selected to filter the dashboard, organized by attribute name and data set. The captured filtered can come from user interaction with any of the Oracle Enterprise Command Center components that allow refinements such as search box, tag clouds, charts, and so on.
 
 The Selected Refinements component can additionally control associative filtering behavior and make the dashboard sensitive to refinement state coming from directly or indirectly associated data sets. This is done by specifying the associated data sets in the configuration.
 
-![Image alt text](images/supplier5.png)
+![Image alt text](images/supplier500.png)
 
-<b>Breadcrumbs</b>
+**Breadcrumbs**
 
 The Breadcrumbs feature is an intuitive representation of the selected refinements as a trail of filters on the dashboard page. This feature is configured along with the search box on page. It emphasizes the sequence of the steps in the path the user has chosen to arrive at the current state of the dashboard. The Breadcrumbs component can be added in two ways:
 
@@ -148,7 +148,7 @@ The Breadcrumbs feature is an intuitive representation of the selected refinemen
 * Adding a new component: 'Selected Refinements' from the components list
 
 
-![Image alt text](images/supplier6.png)
+![Image alt text](images/supplier600.png)
 
 Breadcrumbs component allows the user to replace or apply additional filters from the selected refinement, inheriting all the refinement behavior as in available refinements.
 
@@ -156,18 +156,18 @@ If you click on the attribute name, then you can select another value and apply 
 
 If you click on the attribute value, then you can select another value and replace it with the existing one from the same attribute.
 
-<b> Saved Search</b>
+**Saved Search**
 
 Oracle Enterprise Command Center Framework provides an option to save the frequently applied filters or preferred filters as saved searches for allowing users to reuse them. All saved searches are context-sensitive to the page and are part of the search suggestions. The list of saved searches can be obtained when focused on the search component. Saved searches are searchable by their title, filter attributes and filter values.
 
 Three types of saved searches are available for the users: Seeded, Public, and Private. Seeded saved searches are published along with the product, Public saved searches are created by admin users and all the saved searches created by users are called Private saved searches. Private saved searches are accessible only by the users who created them, whereas public saved searches are accessible by all the dashboard users.
 
-For more information, see Saved Search, [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
+For more information, see Saved Search, [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
 
-![Image alt text](images/supplier7.png)
+![Image alt text](images/supplier700.png)
 
 
-<b>Available Refinements</b>
+**Available Refinements**
 
 The Available Refinements feature enables interactive navigation through the data without having prior knowledge of its distribution nor characteristics.
 
@@ -177,16 +177,16 @@ Available Refinements supports displaying attributes in a grouped list to reduce
 
 Available Refinements also supports switching between data sets to apply relevant filters from the data sets. The name of the selected data set will appear in the header of the available refinements section.
 
-![Image alt text](images/supplier8.png)
+![Image alt text](images/supplier800.png)
 
 
-<b>Visualisation Components</b>
+**Visualisation Components**
 
 Oracle Enterprise Command Center Framework has a set of graphs and charts that provide a powerful way of summarizing and presenting data that are critical in decision making. The user can find insights, detect outliers, filter the data directly from the charts, and drill down to a deeper level of detail.
 
 
 
-<b>Summarization Bar </b>
+**Summarization Bar**
 
 The Summarization Bar allows users to get their footing into a particular business area by viewing metric or dimension values that summarize important aspects about the business area covered by the dashboard.
 
@@ -231,7 +231,7 @@ Users can choose to enable/disable or re order summarization bar via runtime opt
 
 ![Image alt text](images/supplier3.png)
 
-<b>Tag Cloud</b>
+**Tag Cloud**
 
 The Tag Cloud component allows users to compare a set of displayed terms based on the value of an associated metric. The component can optionally display the metric value associated with each term.
 
@@ -242,7 +242,7 @@ From Runtime options Users can change dimensions and metrics as well as choose t
 
 ![Image alt text](images/supplier10.png)
 
-<b>Chart</b>
+**Chart**
 
 The Chart component displays a graphical chart based on the application data. It supports several sub-types and includes options for selecting the specific data to display.
 
@@ -265,11 +265,11 @@ From Runtime users can choose to do the following:
 
 Color Pinning: Chart colors can be pinned with context specific colors. These colors remain intact irrespective of user session.
 
-For more information, see Color Pinning, [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
+For more information, see Color Pinning, [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
 
-![Image alt text](images/supplier12.png)
+![Image alt text](images/supplier1200.png)
 
-<b>Multi data set support</b>
+**Multi data set support**
 
 Bar and Bar/Line charts support display of metrics from multiple data sets over the common dimensions. The common dimensions should have the same attribute display name and an association should be defined on these data sets.
 
@@ -281,13 +281,13 @@ Once Multi Data Set Support is enabled, a designer can configure the conditions 
 
 Multi Data Set Support also allows users to configure metrics from the same data set but with different conditions or record identifiers.
 
-<b>Tab Layout</b>
+**Tab Layout**
 
 The tabbed component container allows you to group components on a dashboard. Containers cannot be nested within each other and you cannot move components inside or outside a tabbed component.
 ![Image alt text](images/supplier13.png)
 
 
-<b>Results Table </b>
+**Results Table**
 
 The Results Table component displays a set of data in a table format. A results table displays ten records in each page and when expanded at runtime, the results table displays up to 50 records per page.
 
@@ -319,11 +319,11 @@ From the Manufacturing and Distribution Manager Standard responsibility, navigat
 
 (N) Manufacturing and Distribution Manager Standard > WIP > Discrete > Discrete Manufacturing Command Center > Genealogy and Trace [Tab]
 
-![Image alt text](images/geneology1.png)
+![Image alt text](images/geneology100.png)
 
 The following are the key components in the Geneology and Trace dashboard:
 
-<b>Diagram</b>
+**Diagram**
 
 A diagram provides a visualization of a business process. You can track and trace an entire business activity while getting your required insights in one page. For example, you can trace a damaged lot number to track the customer recipient of this lot while also understanding the manufacturing process and suppliers responsible for the damage. You can zoom in to focus on an intermediate process or zoom out to get a perspective of the entire process.
 
@@ -351,22 +351,24 @@ The "Multi-Select Node" feature allows you to select more than one node from the
 
 Pagination: Diagram pagination uses Film Strip Thumbnails to help you explore multiple distinct business processes in a single view per process with an overview of each business process. This feature displays an active image of the current business process flow, page number, and business entity (node) identifiers.
 
-For more information, see Diagram, [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
+For more information, see Diagram, [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
 
-You may now  **proceed to the next lab**
+You may now **proceed to the next lab**
 
 
 ## Learn More
-* [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
-* [Enterprise Command Centres- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
-* [Enterprise Command Centres- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
-* [Enterprise Command Centres- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
-* [Enterprise Command Centres- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)
-* [Enterprise Command Centres for E-Business Suite- Technical details and Implementation](https://mylearn.oracle.com/ou/component/-/117416)
+* [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
+* [Enterprise Command Center- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
+* [Enterprise Command Center- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
+* [Enterprise Command Center- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
+* [Enterprise Command Center- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)
+* [Enterprise Command Center for E-Business Suite- Technical details and Implementation](https://mylearn.oracle.com/ou/component/-/117416)
 
 ## Acknowledgements
 
-* **Author** - Muhannad Obeidat, VP
-* **Contributors** -  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
-* **Last Updated By/Date** - Mohammed Khan, March 2023
+**Author**- Muhannad Obeidat, VP
+
+**Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
+
+**Last Updated By/Date**- Mohammed Khan, March 2023
 

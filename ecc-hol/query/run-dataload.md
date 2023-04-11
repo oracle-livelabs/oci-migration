@@ -25,32 +25,29 @@ This lab assumes you have:
 
 ## Task 1: Set up RBAC
 
-* To perform RBAC setup with the UMX\_ECC\_RBACAuto.sh script, you should type the following command (case is important):
+1. To perform RBAC setup with the UMX\_ECC\_RBACAuto.sh script, you should type the following command (case is important):
 
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">source /u01/install/APPS/EBSapps.env run
-
 </span></code></pre></li>
 
 
-* Move to the $FND_TOP/bin directory for your Oracle E-Business Suite instance using the following command: 
+2. Move to the $FND_TOP/bin directory for your Oracle E-Business Suite instance using the following command: 
 
 
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">cd $FND_TOP/bin
-
 </span></code></pre></li>
 
 
-* Run the script using the following command:
+3. Run the script using the following command:
 
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">./UMX_ECC_RBACAuto.sh
-
 </span></code></pre></li>
 
-* When prompted, enter the user name and password of the APPS (username and password is <b>apps</b>) user for the Oracle E-Business Suite instance.
+4. When prompted, enter the user name and password of the APPS (username and password is **apps**) user for the Oracle E-Business Suite instance.
 
-* When prompted, enter the full path and file name for your .csv input file. If your file is named UMX\_ECC\_RBAC.csv and is present in the same directory as the UMX\_ECC\_RBACAuto.sh file, then the script uses that file by default and does not prompt you for the file name and path.
+5. When prompted, enter the full path and file name for your .csv input file. If your file is named UMX\_ECC\_RBAC.csv and is present in the same directory as the UMX\_ECC\_RBACAuto.sh file, then the script uses that file by default and does not prompt you for the file name and path.
 
-* The following example shows sample output from the script:
+6. The following example shows sample output from the script:
 
 <pre><span class="hljs-attribute">
 -bash-3.00$ ./UMX_ECC_RBACAuto.sh
@@ -77,24 +74,22 @@ PL/SQL procedure successfully completed.
 
 After you run the script, ensure that the responsibilities you set up are assigned to the users who should have access to the Enterprise Command Centers.
 
-Please refer to Section 8.2 from [Enterprise Command Centres- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
+Please refer to Section 8.2 from [Enterprise Command Center- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
 
 
 ## Task 3: Validate Import of ECC applications
 
-* Navigate to http://apps.example.com:8000 in the browser with below credentials 
+1. Navigate to http://apps.example.com:8000 in the browser with below credentials 
 
  <pre><span class="hljs-attribute">
 Username: eccuser
 Password: welcome1
-
-
 </span></code></pre></li>
 
     
-* Navigate to "Payables Manager" and then to "Payables Command Center"
+2. Navigate to "Payables Manager" and then to "Payables Command Center"
    ![Image alt text](images/validateeccuser.png)
-* Because you are yet to run the dataload you will not see any data just yet but the page should load like below
+3. Because you are yet to run the dataload you will not see any data just yet but the page should load like below
 
    ![Image alt text](images/eccuser2.png)
 
@@ -112,59 +107,54 @@ You should also schedule the data load programs periodically to perform incremen
 Jobs should be submitted from EBS concurrent program and hence the tracking should be exposed to the concurrent program job.
 Concurrent program keeps polling the status of the job from ECC and display the current status of the job
 
-* Login in EBS (From the browser navigate to http://apps.example.com:8000) using below credentials:
+1. Login in EBS (From the browser navigate to http://apps.example.com:8000) using below credentials:
 
  <pre><span class="hljs-attribute">
 Username: eccuser
 Password: welcome1
-
-
 </span></code></pre></li>
 
-* Once you login, navigate to "Payables Manager" and then to "Payables Command Center"
+2. Once you login, navigate to "Payables Manager" and then to "Payables Command Center"
 
 
    ![Image alt text](images/validateeccuser.png)
 
-* Change the function id to <b>1011696</b> in the url as indicated in the image below and hit enter
+3. Change the function id to **1011696** in the url as indicated in the image below and hit enter
 
    ![Image alt text](images/eccuser3.png)
 
-* You will see the below "Schedule request" page 
+4. You will see the below "Schedule request" page 
 
    ![Image alt text](images/eccuser4.png)
 
 
 
 
-* Choose "Payables Command Center Data Load" in the Program name by copying it from below and pasting in the Program Name
+5. Choose "Payables Command Center Data Load" in the Program name by copying it from below and pasting in the Program Name
 <pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">Payables Command Center Data Load
-
 </span></code></pre></li>
 
-* You should see the below screen
+6. You should see the below screen
 
    ![Image alt text](images/ipl1.png)
-* Go to "Parameters" tab and then select <b>FULL_LOAD</b> as Load Type and Click "Continue"
+7. Go to "Parameters" tab and then select **FULL_LOAD** as Load Type and Click "Continue"
 
    ![Image alt text](images/ipl2.png)
-* Click "Submit"
+8. Click "Submit"
    ![Image alt text](images/ipl3.png)
-* You should see the below screen once the data load is successful
+9. You should see the below screen once the data load is successful
 
    ![Image alt text](images/ipl4.png)
-* You can track the dataload 
+10. You can track the dataload 
    ![Image alt text](images/ipl5.png)
-* Or You can also track the dataload by copying the Concurrent Program ID then navigating to ECC Developer i.e., (Navigating to http://apps.example.com:8000/ecc) and then to Data Load Tracking Page using admin credentials provided below:
+11. Or You can also track the dataload by copying the Concurrent Program ID then navigating to ECC Developer i.e., (Navigating to http://apps.example.com:8000/ecc) and then to Data Load Tracking Page using admin credentials provided below:
 
  <pre><span class="hljs-attribute">
 Username: eccadmin
 Password: welcome1
-
-
 </span></code></pre></li>
 
-* You can check the respective job using the Concurrent Program ID, as shown in below image
+12. You can check the respective job using the Concurrent Program ID, as shown in below image
 
 ![Image alt text](images/ipl6.png)
 
@@ -179,46 +169,45 @@ SQL Trace can be enabled by passing “TRUE” value while starting the data loa
 The trace log file will be generated with the ECC Data Load sub-request “Job ID” as the identifier. The “Job ID” is noted in the log file of sub-request.
 
 * Data Load job structure request:
-  One “Audit Request” per job
-  One “Dataset Key” per dataset included at the job
-  One “Audit Load Rule” per load rule for each “Audit Dataset”
-  One “Audit Load Detail” for each query retrieved from the load rule for each “Audit Load Rule”
+     * One “Audit Request” per job
+     * One “Dataset Key” per dataset included at the job
+     * One “Audit Load Rule” per load rule for each “Audit Dataset”
+     * One “Audit Load Detail” for each query retrieved from the load rule for each “Audit Load Rule”
 
 
 ### Self Job Concurrency Matrix
 ![Image alt text](images/matrix.png) 
 
-For details on Data load tuning, ETL Job parameters, SQL Plan statistics and common issues please refer to the [Enterprise Command Centres- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
+For details on Data load tuning, ETL Job parameters, SQL Plan statistics and common issues please refer to the [Enterprise Command Center- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
 
 ## Task 5: Validate successful Job submission
 
-Open the browser and navigate to http://apps.example.com:8000 from eccuser
- <pre><span class="hljs-attribute">
-Username: eccuser
+1. Open the browser and navigate to http://apps.example.com:8000 from eccuser
+ <pre><span class="hljs-attribute">Username: eccuser
 Password: welcome1
-
-
 </span></code></pre></li>
 
-and then to "Payables Manager" responsibility and then to "Payabales Command Center" and see if the page loads as below. This proves that the data load was successful
+2. And then to "Payables Manager" responsibility and then to "Payabales Command Center" and see if the page loads as below. This proves that the data load was successful
 
-![Image alt text](images/payables100.png) 
+![Image alt text](images/payables1000.png) 
 
-You may now  **proceed to the next lab**
+You may now **proceed to the next lab**
 
 ## Learn More
-* [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
-* [Enterprise Command Centres- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
-* [Enterprise Command Centres- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
-* [Enterprise Command Centres- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
-* [Enterprise Command Centres- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)
-* [Enterprise Command Centres for E-Business Suite- Technical details and Implementation](https://mylearn.oracle.com/ou/component/-/117416)
+* [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
+* [Enterprise Command Center- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
+* [Enterprise Command Center- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
+* [Enterprise Command Center- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
+* [Enterprise Command Center- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)
+* [Enterprise Command Center for E-Business Suite- Technical details and Implementation](https://mylearn.oracle.com/ou/component/-/117416)
 
 ## Acknowledgements
 
-* **Author** - Muhannad Obeidat, VP
-* **Contributors** -  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
-* **Last Updated By/Date** - Mohammed Khan, March 2023
+**Author**- Muhannad Obeidat, VP
+
+**Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
+
+**Last Updated By/Date**- Mohammed Khan, March 2023
 
 
 
