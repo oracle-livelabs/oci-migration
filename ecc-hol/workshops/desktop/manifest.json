@@ -7,61 +7,61 @@
     {
       "title": "Get started",
       "description": "The Introduction is always second for LiveLabs. The title and contents menu title match for the Introduction.",
-      "filename": "../../query/getstarted.md"
+      "filename": "../../query/getstarted/getstarted.md"
     }, 
   
     
     {
       "title": "Lab 1: Create ECC schema",
-      "filename": "../../query/create-ecc-schema.md"
+      "filename": "../../query/create-ecc-schema/create-ecc-schema.md"
     },
     {
       "title": "Lab 2: Create ECC domain",
-      "filename": "../../query/create-ecc-domain.md"
+      "filename": "../../query/create-ecc-domain/create-ecc-domain.md"
     },
     {
       "title": "Lab 3: Register ECC instance",
-      "filename": "../../query/register-ecc-instance.md"
+      "filename": "../../query/register-ecc-instance/register-ecc-instance.md"
     },
     {
       "title": "Lab 4: Import ECC applications",
-      "filename": "../../query/import-ecc.md"
+      "filename": "../../query/import-ecc/import-ecc.md"
     },
     {
             "title": "Lab 5: Run dataload",
-            "filename": "../../query/run-dataload.md"
+            "filename": "../../query/run-dataload/run-dataload.md"
     },
     {
       "title": "Lab 6: ECC anatomy",
-      "filename": "../../query/ecc-anatomy.md"
+      "filename": "../../query/ecc-anatomy/ecc-anatomy.md"
     },
 
 
 {
   "title": "Lab 7: Power user personalization",
-  "filename": "../../query/poweruser-personalization.md"
+  "filename": "../../query/poweruser-personalization/poweruser-personalization.md"
 },
 {
   "title": "Lab 8: Admin user personalization",
-  "filename": "../../query/adminuser-personalization.md"
+  "filename": "../../query/adminuser-personalization/adminuser-personalization.md"
 },
 
 {
   "title": "Lab 9: Diagnose and monitor",
-  "filename": "../../query/diagnose-and-monitor.md"
+  "filename": "../../query/diagnose-and-monitor/diagnose-and-monitor.md"
 },
 {
   "title": "Additional optional labs: Start and stop ECC",
-  "filename": "../../query/start-stop-ecc.md"
+  "filename": "../../query/start-stop-ecc/start-stop-ecc.md"
 },
 {
   "title": "Additional optional labs: Improve performance",
-  "filename": "../../query/improve-performance.md"
+  "filename": "../../query/improve-performance/improve-performance.md"
 },
     {
       "title": "Need help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",
-      "filename": "../../query/needhelp.md"
+      "filename": "../../query/needhelp/needhelp.md"
     }
   ]
 }
