@@ -29,41 +29,41 @@ This lab assumes you have:
 ##  
 
 ## Task 1: Diagnose and Monitor 
-**Location of Server Logs**
  
- Note the location of Server logs:
+ 1. Note the location of Server logs:
 
-![Location of Server logs](../images/serverlogs.png "Location of Server logs")
-**Location of Application Logs**
+    ![Location of Server logs](../images/serverlogs.png "Location of Server logs")
 
- Note the location of Application logs:
 
-![Location of Application logs](../images/applicationlogs.png "Location of Application logs")
+ 2. Note the location of Application logs:
 
-**Location of OHS Logs**
+    ![Location of Application logs](../images/applicationlogs.png "Location of Application logs")
 
-/u01/install/APPS/fs2/FMW\_Home/webtier/instances/EBS\_web\_OHS1/diagnostics/logs/OHS/EBS\_web
+3. Note the location of OHS logs
 
-**Location of opmn Logs**
+    /u01/install/APPS/fs2/FMW\_Home/webtier/instances/EBS\_web\_OHS1/diagnostics/logs/OHS/EBS\_web
 
-/u01/install/APPS/fs2/FMW_Home/webtier/instances/EBS\_web\_OHS1/diagnostics/logs/OPMN/opmn
+4. Location of opmn logs
+
+    /u01/install/APPS/fs2/FMW_Home/webtier/instances/EBS\_web\_OHS1/diagnostics/logs/OPMN/opmn
 
 **Log monitor**
 
-Login to EBS as Admin user with eccadmin responsibility access
+1. Login to EBS as Admin user with eccadmin responsibility access
 
-<pre><span class="hljs-attribute">Username: eccadmin
+
+    ```
+  	 Username: eccadmin
 Password: welcome1
-</span></code></pre></li>
+    ```
 
 
+    ```
+  	 <copy>http://&lt;EBS_MIDDLETIER_HOST_FQDN&gt;:&lt;EBS_MIDDLETIER_PORT&gt;/ecc/monitor/logs</copy>
+    ```
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"><div style="color:grey">http://&lt;EBS_MIDDLETIER_HOST_FQDN&gt;:&lt;EBS_MIDDLETIER_PORT&gt;/ecc/monitor/logs</div></span></code></pre></li>
 
-
-
-
-![Log Monitor](../images/logmonitor.png "Log Monitor")
+   ![Log Monitor](../images/logmonitor.png "Log Monitor")
 
 **Capture Loading Time for ECC Page**
 
@@ -108,9 +108,9 @@ Activity Audit provides the following benefits:
 
  * Resolve issues as they arise
 
-To access the dashboard, navigate to the Activity Audit section in the Administration UI.
+1. To access the dashboard, navigate to the Activity Audit section in the Administration UI.
 
-![Activity Audit](../images/lab10activityaudit.png "Activity Audit")
+    ![Activity Audit](../images/lab10activityaudit.png "Activity Audit")
 
 **Tracking User Activity**
 
@@ -166,19 +166,19 @@ Users need not submit a data load separately. If a data load is submitted, it re
 
 * Page Short Name: activity-tracker
 
-The Activity Audit dashboard is designed to support two use cases: tracking user activity and tracking search activity.
-![Activity Audit dashboard](../images/lab10activityaudit2.png "Activity Audit dashboard")
+2. The Activity Audit dashboard is designed to support two use cases: tracking user activity and tracking search activity.
+    ![Activity Audit dashboard](../images/lab10activityaudit2.png "Activity Audit dashboard")
 
 
 For more information on Activity audit please refer to [Enterprise Command Center- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/T676250T676672.htm#8723752)
 
 ## Task 3: Learn about ECC Analyzer 
-* The EBS Enterprise Command Center (ECC) Analyzer is a self-service health-check script that reviews Oracle Enterprise Command Center related data, analyses current configurations and settings for the environment and provides feedback and recommendations on best practices. 
-* The Analyzer collects data using all the tables necessary to diagnose issues and provides solutions and recommended actions. 
-![ECC Analyzer](../images/eccanalyzer1.png "ECC Analyzer")
+1. The EBS Enterprise Command Center (ECC) Analyzer is a self-service health-check script that reviews Oracle Enterprise Command Center related data, analyses current configurations and settings for the environment and provides feedback and recommendations on best practices. 
+2. The Analyzer collects data using all the tables necessary to diagnose issues and provides solutions and recommended actions. 
+    ![ECC Analyzer](../images/eccanalyzer1.png "ECC Analyzer")
 
 
-* You can download the latest ECC analyzer from [Download ECC Analyzer](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264836944547192&id=2587090.1&_afrWindowMode=0&_adf.ctrl-state=bqndlfq90_4#aref_section12)
+3. You can download the latest ECC analyzer from [Download ECC Analyzer](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264836944547192&id=2587090.1&_afrWindowMode=0&_adf.ctrl-state=bqndlfq90_4#aref_section12)
 
 **NOTE**:  Analyzer does not perform any INSERTs, UPDATEs or DELETEs to your data; it just reports on it.
 
@@ -187,49 +187,53 @@ For more information on Activity audit please refer to [Enterprise Command Cente
 * Requires Java 1.7+
 * Available on Linux platforms only
 
-**Verify java version**
+4. Verify java version
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"> java –version</span></code></pre></li>
-
-**Running Analyzer**
-To run Analyzer as a java program follow below instruction. The java program will prompt for the WebLogic and APPS usernames and passwords.
-
-![Running Analyzer](../images/eccanalyzer2.png "Running Analyzer")
+    ```
+  	 <copy>java –version</copy>
+    ```
 
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">   java -	Danalyzer="ecc_analyzer.xml" -jar HA.jar
-</span></code></pre></li>
 
-**ECC Analyzer: Sample Output**
+2. Running Analyzer
+   To run Analyzer as a java program follow below instruction. The java program will prompt for the WebLogic and APPS usernames and passwords.
 
-* Analyzer generates a zip file containing all the script outputs and the analyser html report(ATGECCHA_<date>.html). 
+    ![Running Analyzer](../images/eccanalyzer2.png "Running Analyzer")
 
-* When running the analyzer as a java program
-  EBS Enterprise Command Center (ECC) Analyzer output zip file is located in the same directory where it was run.  This location is also displayed in the window after execution. 
+    ```
+  	 <copy>java -	Danalyzer="ecc_analyzer.xml" -jar HA.jar</copy>
+    ```
 
-![ECC Analyzer: Sample Output](../images/eccanalyzer3.png "ECC Analyzer: Sample Output")
+3. ECC Analyzer: Sample Output
 
-Html page contains all the information about the ECC environment being analysed. Below are some of the sample outputs:
+   * Analyzer generates a zip file containing all the script outputs and the analyser html report(ATGECCHA_<date>.html). 
 
-![ECC Analyzer: Sample Output](../images/eccanalyzer4.png "ECC Analyzer: Sample Output")
-![ECC Analyzer: Sample Output](../images/eccanalyzer5.png "ECC Analyzer: Sample Output")
-![ECC Analyzer: Sample Output](../images/eccanalyzer6.png "ECC Analyzer: Sample Output")
+   * When running the analyzer as a java program
+     EBS Enterprise Command Center (ECC) Analyzer output zip file is located in the same directory where it was run.  This location is also displayed in the window after execution. 
+
+    ![ECC Analyzer: Sample Output](../images/eccanalyzer3.png "ECC Analyzer: Sample Output")
+
+    Html page contains all the information about the ECC environment being analysed. Below are some of the sample outputs:
+
+    ![ECC Analyzer: Sample Output](../images/eccanalyzer4.png "ECC Analyzer: Sample Output")
+    ![ECC Analyzer: Sample Output](../images/eccanalyzer5.png "ECC Analyzer: Sample Output")
+    ![ECC Analyzer: Sample Output](../images/eccanalyzer6.png "ECC Analyzer: Sample Output")
 
 
 ## Task 4: Identify common issues 
 1. You will see the below screen if you are authenticated but not authorized to view the dashboard. You need to use the right responsibility to access the dashboard 
 
-  ![Authorization Issue](../images/auth.png "Authorization Issue")
+    ![Authorization Issue](../images/auth.png "Authorization Issue")
 
 2. You will see the below screen if you are not authenticated/ or not logged in to EBS
 
-  ![User did not login to EBS](../images/auth2.png "User did not login to EBS")
+    ![User did not login to EBS](../images/auth2.png "User did not login to EBS")
 
 3. You will see the below screen if ECC isn’t integrated with EBS (ecc.conf is missing).
-  ![Ecc.conf is missing](../images/eccmissing1.png "Ecc.conf is missing")
+    ![Ecc.conf is missing](../images/eccmissing1.png "Ecc.conf is missing")
 4. You will see the below screen if ECC is integrated with EBS but ECC is down.
 
-  ![ECC is down](../images/eccdown.png "ECC is down")
+    ![ECC is down](../images/eccdown.png "ECC is down")
 
 You may now **proceed to the next lab**
 
@@ -243,9 +247,9 @@ You may now **proceed to the next lab**
 
 ## Acknowledgements
 
-**Author**- Muhannad Obeidat, VP
+* **Author**- Muhannad Obeidat, VP
 
-**Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
+* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
 
-**Last Updated By/Date**- Mohammed Khan, March 2023
+* **Last Updated By/Date**- Mohammed Khan, March 2023
 

@@ -33,20 +33,24 @@ This lab assumes you have:
 
 1. From ECC terminal copy paste the following commands 
 
+    ```
+  	 <copy>curl "localhost:7776/core_ecc/admin/collections?action=RESTORE&name=fa-asset&location=/u01/dataset_backup&collection=fa-asset"</copy>
+    ```
 
-<pre><button class="copy-button" title="Copy text to clipboard" >Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">curl "localhost:7776/core_ecc/admin/collections?action=RESTORE&name=fa-asset&location=/u01/dataset_backup&collection=fa-asset"
-</span></code></pre></li>
-  ![Restore Assets Command Center data](../images/assetdataload.png "Restore Assets Command Center data")
+   ![Restore Assets Command Center data](../images/assetdataload.png "Restore Assets Command Center data")
 
+    ```
+  	 <copy>curl "localhost:7776/core_ecc/admin/collections?action=RESTORE&name=fa-rec&location=/u01/dataset_backup&collection=fa-rec"</copy>
+    ```
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">curl "localhost:7776/core_ecc/admin/collections?action=RESTORE&name=fa-rec&location=/u01/dataset_backup&collection=fa-rec"
-</span></code></pre></li>
+    ```
+  	 <copy>curl "localhost:7776/core_ecc/admin/collections?action=RESTORE&name=fa-clr&location=/u01/dataset_backup&collection=fa-clr"</copy>
+    ```
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">curl "localhost:7776/core_ecc/admin/collections?action=RESTORE&name=fa-clr&location=/u01/dataset_backup&collection=fa-clr"
-</span></code></pre></li>
+    ```
+  	 <copy>curl "localhost:7776/core_ecc/admin/collections?action=RESTORE&name=fa-masstrans&location=/u01/dataset_backup&collection=fa-masstrans"</copy>
+    ```
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">curl "localhost:7776/core_ecc/admin/collections?action=RESTORE&name=fa-masstrans&location=/u01/dataset_backup&collection=fa-masstrans"
-</span></code></pre></li>
 
 
 ## Task 2 : Build a new dashboard on an existing data set
@@ -55,16 +59,14 @@ This lab assumes you have:
 
 1. Login to EBS apps (Go to http://apps.example.com:8000) with below credentials
 
-
- <pre><span class="hljs-attribute">Username: eccadmin
+    ```
+  	 Username: eccadmin
 Password: welcome1
-</span></code></pre>
+    ```
 
+   ![EBS homepage](../images/fas0.png "EBS homepage")
 
-  
-![EBS homepage](../images/fas0.png "EBS homepage")
-
-2. Click on Fixed Assets Manager and then on Assets Command center
+2. Click on **Fixed Assets Manager** and then on **Assets Command center**
 
 
 **Extending an Existing Dashboard**
@@ -79,7 +81,7 @@ Before you start extending an application, take a backup from the existing appli
 
 3. Using the eccadmin credentials, navigate to ECC Developer responsibility then go to the Export/Import page.
 
-![Go to ECC Developer](../images/eccdev.png "Go to ECC Developer")
+    ![Go to ECC Developer](../images/eccdev.png "Go to ECC Developer")
 
 
 4. Click the Export tab.
@@ -90,9 +92,8 @@ Before you start extending an application, take a backup from the existing appli
 
 7. Click the Export button.
 
-**Export Application**
 
-![Export Application](../images/assetsexport10.png "Export Application")
+    ![Export Application](../images/assetsexport10.png "Export Application")
 
 
 **Copy an Existing Page**
@@ -104,38 +105,32 @@ As we are targeting to extend the asset cost dashboard, we first need to copy th
 9. Click Assets to explore application pages.
 
 
-**Application Pages**
-
-![Explore application pages](../images/assets1.png "Explore application pages")
+ 
+    ![Explore application pages](../images/assets1.png "Explore application pages")
 10. Click Copy Page icon in the Asset Cost page.
 
 11. The copied page is added to the application list of pages and named as Asset Cost (1). Open Assets again to view Asset Cost (1) page.
 
-**New Copied Page**
 
-![New Copied Page](../images/assets2.png "New Copied Page")
+    ![New Copied Page](../images/assets2.png "New Copied Page")
 
 12. Edit the page definition by clicking on the pencil icon on the copied page.
 
-13. In the page definition, change the page key and display name.
+13. In the page definition, change the page key and display name. It is recommended to prefix page key and display name with 'xx'.
 
-**Note**: It is recommended to prefix page key and display name with 'xx'.
-
-**Edit Page Definition**
-![Edit Page Definition](../images/editassetpage.png "Edit Page Definition")
+     ![Edit Page Definition](../images/editassetpage.png "Edit Page Definition")
 
 14. Save the changes.
 
 15. Click on the Page name (XX Asset Cost), open the page, and start the extension.
 
-![Asset Cost Dashboard](../images/assetload.png "Asset Cost Dashboard")
+    ![Asset Cost Dashboard](../images/assetload.png "Asset Cost Dashboard")
 
 16. Click on "Books" from the Summarization bar and then select "OPS CORP" to refine the dashboard for OPS CORP book.
 
-![Refine Book Type Code](../images/assetload1.png "Refine Book Type Code")
+    ![Refine Book Type Code](../images/assetload1.png "Refine Book Type Code")
 
-You should see the below screen
-![Asset Dashboard](../images/assetload2.png "Asset Dashboard")
+    ![Asset Dashboard](../images/assetload2.png "Asset Dashboard")
 
 
 
@@ -147,81 +142,86 @@ You should see the below screen
 
 18. Open Assets Results table configuration by clicking on the "Configuration" icon.
 
-   ![Edit Results table configuration](../images/openassetconf.png "Edit Results table configuration")
+    ![Edit Results table configuration](../images/openassetconf.png "Edit Results table configuration")
 
 
 19. Expand "Timeline view" accordion:
 
-   ![Expand Timeline view](../images/timelineaccordion.png "Expand Timeline view")
+    ![Expand Timeline view](../images/timelineaccordion.png "Expand Timeline view")
 
 20. Enable the following checkboxes:
-       * Enable timeline view
-       * Default view
-       * Timeline overview
+    - Enable timeline view
+    - Default view
+    - Timeline overview
 21. Set component height as "550" pixels 
 
 22. Click "Add event"
 
-   ![Add event](../images/addevent.png "Add event")
+    ![Add event](../images/addevent.png "Add event")
 
 23. Set the following configuration for the event
 
-       * Event Name:     "Asset Addition"
-       * Title:          "Asset Number" 
-       * Description 1:  "Asset Description"
-       * Description 2:  "Asset Cost"
-       * Start Date:      Date Placed in Service
-       * Enable Show label 
-       * Enable Display image 
-       
-       * Additional Tooltip: 
-            
+    - Event Name:     "Asset Addition"
+       - Title:          "Asset Number" 
+       - Description 1:  "Asset Description"
+       - Description 2:  "Asset Cost"
+       - Start Date:      Date Placed in Service
+       - Enable Show label 
+       - Enable Display image 
+       - Image URL: Use the following URL
+
+         ```
+  	      <copy>/OA_MEDIA/gl_tl_add.png</copy>
+         ```
+       - Additional Tooltip:  
          * Depreciation Amount
          * Accumulated Depreciation 
          * Net Book Value 
-       * Image URL: Use the following URL
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">/OA_MEDIA/gl_tl_add.png
-</span></code></pre></li>
+       
+     
+
 
 
 
 24. Click on "Preview"  
-
-   ![Preview Dashboard](../images/previewtimeline.png "Preview Dashboard")
+    ![Preview Dashboard](../images/previewtimeline.png "Preview Dashboard")
 
 25. Now, add an indicator icon by expanding "Attribute" accordion.
 
-   ![Add an indicator icon](../images/expandattributes.png "Add an indicator icon")
+    ![Add an indicator icon](../images/expandattributes.png "Add an indicator icon")
 
 26. Click "Add Indicator"
-   ![Click Add Indicator](../images/addindicators.png "Click Add Indicator")
+    ![Click Add Indicator](../images/addindicators.png "Click Add Indicator")
 
 27. Add the following configuration
 
-      * Display Name:  "Asset Addition"
-      * Image URL: Use the following URL
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">/OA_MEDIA/flagcircle_status.png
-</span></code></pre></li>
+    - Display Name:  "Asset Addition"
+    - Image URL: Use the following URL
+      ```
+  	   <copy>/OA_MEDIA/flagcircle_status.png</copy>
+      ```
+
   
 28. Also add URL parameters in the above configuration as shown in the image below
 
-       * Click "Add URL Parameters"
-           * Select "In-Use Flag"
-           * Tooltip: In Use: {IN\_USE\_FLAG}
+    - Click "Add URL Parameters"
+         - Select "In-Use Flag"
+         -  Tooltip: In Use: {IN\_USE\_FLAG}
+29. You should see the below screen
     ![Add URL parameters](../images/conftimeline.png "Add URL parameters")
 
-29. Expand the "Timeline View" accordion
+30. Expand the "Timeline View" accordion
 
     ![Expand Timeline View](../images/expandaccordion10.png "Expand Timeline View")
   
 
-30. Expand "Asset Additions" event
+31. Expand "Asset Additions" event
 
-31. Add Indicator(s): Select "In Use"
+32. Add Indicator(s): Select "In Use"
 
     ![Expand Asset Additions](../images/indicatorinuse10.png "Expand Asset Additions")
 
-32. Save the configuration
+33. Save the configuration
 
     ![Save configuration](../images/imageinuse100.png "Save configuration")
 
@@ -234,105 +234,116 @@ After applying all the required extensions in the copied Asset Cost dashboard, y
 
 1. Login to EBS apps (Go to http://apps.example.com:8000) with below credentials and navigate to "Functional Administrator" responsibility
 
-
- <pre><span class="hljs-attribute">Username: eccadmin
+    ```
+  	 Username: eccadmin
 Password: welcome1
-</span></code></pre>
+    ```
+
+
 
 2. You should see the below image:
-   ![EBS homepage](../images/fas1.png "EBS homepage")
+    ![EBS homepage](../images/fas1.png "EBS homepage")
 
 
 3. In the "Core Services" tab, select the "Functions" subtab.
 
-   ![Core Services/Functions tab](../images/fas22.png "Core Services/Functions tab")
+    ![Core Services/Functions tab](../images/fas22.png "Core Services/Functions tab")
 
 
 4. Enter the following text in the "Code" input box 
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">FA_ECC_ASSET_COST
-</span></code></pre></li>
+    ```
+  	 <copy>FA_ECC_ASSET_COST</copy>
+    ```
+
+
 
 5. Click on "Go"
 
-   ![Search Function](../images/fas3.png "Search Function")
+    ![Search Function](../images/fas3.png "Search Function")
 
 6. You will see the below screen, click on "Duplicate":
 
-   ![Duplicate Function](../images/fas44.png "Duplicate Function")
+    ![Duplicate Function](../images/fas44.png "Duplicate Function")
 
-7. Update the "Name" and "code" as below
+7. Update the "Name" and "Code" as below
 
-* Name:
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">Fixed Assets Command Center XX Cost
-</span></code></pre></li>
 
-* Code:
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">FA_ECC_XX_ASSET_COST
-</span></code></pre></li>
+   Name:
+    ```
+    <copy>Fixed Assets Command Center XX Cost</copy>
+    ```
+
+   Code:
+    ```
+    <copy>FA_ECC_XX_ASSET_COST</copy>
+    ```
+   ![Edit Function](../images/fas55.png "Edit Function")
 
 8. Click on "Continue":
 
-
-   ![Edit Function](../images/fas55.png "Edit Function")
-
 9. You will see the below screen
 
-   ![Edit HTML call](../images/fas6.png "Edit HTML call")
+    ![Edit HTML call](../images/fas6.png "Edit HTML call")
 
 
 10. You should edit the "HTML Call" input box with below text:
+      ```
+  	   <copy>GWY.jsp?targetAppType=ECC&targetPage=/web/eccapp/fa/xx-asset-cost</copy>
+      ```
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">GWY.jsp?targetAppType=ECC&targetPage=/web/eccapp/fa/xx-asset-cost
-</span></code></pre></li>
+
 
 11. Click on "Submit"
 
-   ![Submit Function edit](../images/fas77.png "Submit Function edit")
+    ![Submit Function edit](../images/fas77.png "Submit Function edit")
 
 
 12. You will see the below confirmation message:
 
-   ![Function creation confirmation message](../images/fas8.png "Function creation confirmation message")
+    ![Function creation confirmation message](../images/fas8.png "Function creation confirmation message")
 
 13. Navigate to "Security" and then to "Permission Sets" tab
 
-   ![Security tab](../images/fas9.png "Security tab")
+    ![Security tab](../images/fas9.png "Security tab")
 
 14. Search for permission set "Fixed Assets Command Center Access Permission Set"
-   ![Search permission set](../images/fas10.png "Search permission set")
+    ![Search permission set](../images/fas10.png "Search permission set")
 
 15. Click on "Update"
-   ![Update permission set](../images/fas111.png "Update permission set")
+    ![Update permission set](../images/fas111.png "Update permission set")
 
 16. Click on the "+" icon
 
-   ![Add Permission](../images/fas20.png "Add Permission")
+    ![Add Permission](../images/fas20.png "Add Permission")
 
 17. Copy the below text
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">Fixed Assets Command Center Home
-</span></code></pre></li>
+
+      ```
+  	   <copy>Fixed Assets Command Center Home</copy>
+      ```
+
 
 18. Pasted the copied text in the new entry field, highlighted below:
 
-   ![Update Permission Set](../images/fas21.png "Update Permission Set")
+    ![Update Permission Set](../images/fas21.png "Update Permission Set")
 
 18. Click on the magnifying glass beside the text
 
-   ![Find Permissions](../images/fas23.png "Find Permissions")
+    ![Find Permissions](../images/fas23.png "Find Permissions")
 
 
 19. Click on the  highlighted "quick select" option 
 
-   ![Quick select Permission](../images/fas24.png "Quick select Permission")
+    ![Quick select Permission](../images/fas24.png "Quick select Permission")
 
    
 20. From the below screen, click on "Apply"
 
-   ![Apply Permission](../images/fas25.png "Apply Permission")
+    ![Apply Permission](../images/fas25.png "Apply Permission")
 21. You should see the below confirmation message
 
-   ![Confirmation message](../images/fas26.png "Confirmation message")
+    ![Confirmation message](../images/fas26.png "Confirmation message")
 
 
 **Personalize the Oracle Application Framework Page**
@@ -342,20 +353,20 @@ Now, you need to personalize the Oracle Application Framework page to replace th
 1. In Oracle E-Business Suite, navigate to the Assets Command Center, then to the Asset Cost page (shipped page).
 
 2. At Oracle Application Framework page level, choose Settings, then Personalize Page.
-   ![Personalize Page](../images/fas500.png "Personalize Page")
+    ![Personalize Page](../images/fas500.png "Personalize Page")
 
 
 
 3. Click "Edit" to personalize the Asset Cost page rich container.
 
    **Personalizing the Asset Cost Page Rich Container**
-   ![Personalize rich container](../images/fnd133.png "Personalize rich container")
+    ![Personalize rich container](../images/fnd133.png "Personalize rich container")
 4. At the responsibility level, personalize the rich container by adding the newly created function FA\_ECC\_XX\_ASSET\_COST in the Destination Function, it is highlighted in the screen below.
 
-   ![Add created function](../images/fas51.png "Add created function")
+    ![Add created function](../images/fas51.png "Add created function")
 
 5. Click on "Apply"   
-   ![Apply changes](../images/fas522.png "Apply changes")
+    ![Apply changes](../images/fas522.png "Apply changes")
 
 
 **Note:** You can personalize the page at the site or organization level as well.
@@ -372,7 +383,7 @@ After personalizing the Oracle Application Framework page, access the new extend
 
 3. The newly extended dashboard is displayed instead of the shipped Asset Cost dashboard.
 
-   ![Asset Cost Dashboard](../images/saveconf.png "Asset Cost Dashboard")
+    ![Asset Cost Dashboard](../images/saveconf.png "Asset Cost Dashboard")
 
 
 4. Validate the dashboard functionality.
@@ -410,7 +421,7 @@ Before starting extending an application, take a backup from the existing applic
    4. Specify the Language: en
 
    5. Click the Export button.
-   ![Export/Import page](../images/assetsexport.png "Export/Import page")
+    ![Export/Import page](../images/assetsexport.png "Export/Import page")
 
 
 Shipped data set can be extended by creating additional attributes from source data.
@@ -439,16 +450,12 @@ Perform the following steps to include new attributes. For examples on working w
 
 11. For validating the new load rules, run the metadata load followed by a full load.
 
-12. Once the loads are successful, update the data load concurrent program by extending the executable file of concurrent program.
+12. Once the loads are successful, update the data load concurrent program by extending the executable file of concurrent program.The following are examples of new attributes in metadata and updated data set load rules respectively:
 
-Example of New Attributes in Metadata
+    ![Metadata](../images/outstandingmetadata.png "Metadata")
+ 
 
-   ![Metadata](../images/outstandingmetadata.png "Metadata")
-Example of Updated Data Set Load Rules
-
-
-
-   ![Update Data Set Load Rules](../images/outstandingloadrules.png "Update Data Set Load Rules")
+    ![Update Data Set Load Rules](../images/outstandingloadrules.png "Update Data Set Load Rules")
 
 **Add a Custom Security Handler**
 
@@ -464,9 +471,8 @@ You can extend a shipped security handler by including a custom security package
 
 5. Navigate to the data sets section in the Administrator UI, open the data set, switch to the Security Rule tab and add the new security handler in the Custom Security Handler field.
 
-**Data Sets Page - Security Tab**
 
-   ![Data sets Page- Security Tab](../images/assetssecurityhandler.png "Data sets Page- Security Tab")
+    ![Data sets Page- Security Tab](../images/assetssecurityhandler.png "Data sets Page- Security Tab")
 
 
 **Copy an Oracle Enterprise Command Center Framework Page**
@@ -539,9 +545,9 @@ You may now **proceed to the next lab**
 
 ## Acknowledgements
 
-**Author**- Muhannad Obeidat, VP
+* **Author**- Muhannad Obeidat, VP
 
-**Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
+* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
 
-**Last Updated By/Date**- Mohammed Khan, March 2023
+* **Last Updated By/Date**- Mohammed Khan, March 2023
 

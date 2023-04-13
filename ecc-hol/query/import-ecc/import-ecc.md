@@ -24,31 +24,33 @@ This lab assumes you have:
 ## Task 1: Import ECC Applications
 
 1.  Open EBS terminal, source EBSapps running edition
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"><div style="color:grey"> 
-source /u01/install/APPS/EBSapps.env run 
-</div>
-</span></code></pre></li>
+
+    ```
+  	 <copy>source /u01/install/APPS/EBSapps.env run </copy>
+    ```
+
 
 
 2. Navigate to below location in terminal 
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"><div style="color:grey"> 
-cd /u01/install/APPS/fs2/EBSapps/appl/fnd/12.0.0/bin
-</div>
-</span></code></pre></li>
+    ```
+  	 <copy>cd /u01/install/APPS/fs2/EBSapps/appl/fnd/12.0.0/bin </copy>
+    ```
+
 
 3. Execute patchEccFiles.pl command
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"><div style="color:grey"> 
-sh patchEccFiles.pl
-</div>
-</span></code></pre></li>
+
+    ```
+  	 <copy>sh patchEccFiles.pl</copy>
+    ```
+
 
 
 4. When you run patchEccFiles.pl it will prompt you to enter a temporary directory, so enter**/tmp/ecc1**
 5. When prompted enter EBS DB apps user password as **apps**
 6. When prompted you need to pass the languages that you need to import. Use "en" 
 
-![Import applications](../images/import101.png "Import applications")
+    ![Import applications](../images/import101.png "Import applications")
 
 
 7. When prompted you need to mention what products you need to import. 
@@ -61,31 +63,32 @@ sh patchEccFiles.pl
 
 10. For this demo please enter the following products: "**AP,GL,ONT,FA,WIP** "
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"><div style="color:grey"> 
-AP,GL,ONT,FA,WIP
-</div>
-</span></code></pre></li>
+    ```
+  	 <copy>AP,GL,ONT,FA,WIP</copy>
+    ```
 
-![Enter products to import](../images/importecc1.png "Enter products to import")
-![Import Applications from EBS](../images/import1000.png "Import Applications from EBS")
+
+    ![Enter products to import](../images/importecc1.png "Enter products to import")
+    ![Import Applications from EBS](../images/import1000.png "Import Applications from EBS")
 
 11. You should see the following  screen when you run it successfully
 
-![Successful import of applications from EBS to ECC](../images/payables12.png "Successful import")
+    ![Successful import of applications from EBS to ECC](../images/payables12.png "Successful import")
 
 
 ## Task 2: Validate Import of ECC applications
 
 1. Navigate to http://apps.example.com:8000 in the browser with below credentials 
 
- <pre><span class="hljs-attribute">
-Username: SYSADMIN
+
+    ```
+  	 Username: SYSADMIN
 Password: welcome1
-</span></code></pre></li>
+    ```
 
     
 2. Navigate to ECC Developer, you should see new applications as below
-![Validate import of ECC applications](../images/5apps.png "Validate import of ECC applications")
+    ![Validate import of ECC applications](../images/5apps.png "Validate import of ECC applications")
 
 
 You may now **proceed to the next lab**
@@ -101,9 +104,9 @@ You may now **proceed to the next lab**
 
 ## Acknowledgements
 
-**Author**- Muhannad Obeidat, VP
+* **Author**- Muhannad Obeidat, VP
 
-**Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
+* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
 
-**Last Updated By/Date**- Mohammed Khan, March 2023
+* **Last Updated By/Date**- Mohammed Khan, March 2023
 

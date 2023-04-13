@@ -4,46 +4,93 @@
 ### Introduction
 
 
-This lab walks you through the steps to create ECC schema and to install weblogic server so that you can set up Oracle Enterprise Command Center Framework
-
-
+This lab walks you through the steps to create ECC schema and install weblogic server so that you can set up Oracle Enterprise Command Center Framework
 
 Estimated Time: 30 minutes
 
 ### Objectives
 In this lab, you will:
+
+* Validate if EBS responsibility tree is up
+* Validate if EBS run edition can be sourced
+* Extract quickInstall
 * Create ECC schema and install Weblogic Server
 
 
 ### Prerequisites
 
 This lab assumes you have:
-* Completed the previous section successfully 
+* Completed the previous lab successfully 
 
 ##  
 
+## Task 1: Validate if EBS responsibility tree is up
 
-## Task 1: Extract quickInstall 
+1. From the browser, open chrome and from the address bar navigate to http://apps.example.com:8000 
 
-1. Keep the previous EBS terminal open and now open a new terminal for ECC. Within that, navigate to /u01 directory by using below command
+    ```
+  	 <copy>http://apps.example.com:8000 </copy>
+    ```
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">cd /u01
-</span></code></pre></li>
+
+
+
+2. Login with following credentials:
+
+
+    ```
+  	 Username= eccadmin
+Password= welcome1
+    ```
+
+
+3. Verify if EBS homepage is displayed, like in below image:
+    ![Login to EBS](../images/verify1.png "EBS login")
+4. Ensure if the responsibility tree is up, like shown in below image:
+
+    ![View EBS responsibility tree](../images/verify2.png "EBS responsibility tree")
+
+**Note:** If you are not able to type in the remote desktop, then please hit the command key
+
+
+## Task 2: Validate if EBS run edition can be sourced 
+
+1. Open a terminal window for EBS to,<n> Source EBS edition</n>. Type the following command (case is important) in the terminal :
+
+    ```
+  	 <copy>source /u01/install/APPS/EBSapps.env run</copy>
+    ```
+
+
+2. In the image below, you can see how you should source the running EBS edition on the terminal.
+    ![Source Run edition in EBS](../images/validateterminal1.png "Source run edition" )
+
+## Task 3: Extract quickInstall 
+
+1. Now open a new terminal for ECC, leave the previous EBS terminal open. Within the ECC terminal, navigate to /u01 directory by using below command
+
+    ```
+  	 <copy>cd /u01</copy>
+    ```
+
+
 
 2. .bsx files are downloaded in /u01 directory. Extract the .bsx files by running the below command from /u01 directory 
 
 
+    ```
+  	 <copy>for f in *.bsx; do sh $f; done</copy>
+    ```
 
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">for f in *.bsx; do sh $f; done
-</span></code></pre></li>
-
-![Extract quickInstall](../images/quickinstall.png "Extract quickInstall")
+    ![Extract quickInstall](../images/quickinstall.png "Extract quickInstall")
 
 3. This process will take a few minutes. After extraction is completed, navigate to cd /u01/Oracle/quickInstall
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">cd /u01/Oracle/quickInstall
-</span></code></pre></li>
+    ```
+  	 <copy>cd /u01/Oracle/quickInstall</copy>
+    ```
+
 
 
 **Note:** In this directory (Oracle/quickInstall) there is a file called "EccConfig.properties", which has all the parameters predefined for this Hands-on-lab. You don't have to change any parameters but described below are some important parameters you should keep in mind. 
@@ -68,88 +115,77 @@ For further information please refer to section 4.3.1 of the following document
 
 
 
-## Task 2: Create ECC Schema
+## Task 4: Create ECC Schema
 
-1. From the terminal navigate to /u01/Oracle/quickInstall using below command
+1. From the ECC terminal make sure that you are in  /u01/Oracle/quickInstall directory and then execute the below script. When prompted choose **Option 1** to create ECC schema. 
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">cd /u01/Oracle/quickInstall
-</span></code></pre></li>
+    ```
+  	 <copy>./envSetup.sh</copy>
+    ```
+    ![Select Option 1](../images/selectoption.png "Select Option 1")
 
-2. Execute the below script and when prompted choose **Option 1** to create ECC schema. 
-
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"> ./envSetup.sh
-</span></code></pre></li>
-
-
-![Select Option 1](../images/selectoption.png "Select Option 1")
+2. This step creates the ECC schema and provides an option to use the existing ECC user created in the ECC database:
 
 
-
-
-3. This step creates the ECC schema and provides an option to use the existing ECC user created in the ECC database:
-
-<pre style="">Selected ECC DB is jdbc:oracle:thin:@ebs.org:1521:ebsdb
+    ```
+  	 Selected ECC DB is jdbc:oracle:thin:@ebs.org:1521:ebsdb
 Is the user <ECC_DB_USERNAME> existing in ECC database [y/n]?<password>
+    ```
 
-</pre>
 
+3. If you choose option “y”, you are prompted for ECC user credentials to create the ECC schema. If you choose the option “n”, you are prompted to enter ECC database system user credentials to create the ECC user and later create the ECC schema. For this demo type **"n"**
 
-4. If you choose option “y”, you are prompted for ECC user credentials to create the ECC schema. If you choose the option “n”, you are prompted to enter ECC database system user credentials to create the ECC user and later create the ECC schema.
+4. When prompted provide the database system user details, mentioned below:
 
-   * For this demo type **"n"**
-
-5. When prompted provide the database system user details, mentioned below:
- <pre><span class="hljs-attribute">
-Database system username: system
+    ```
+  	 Database system username: system
 Database system password: manager
-Password for ECC DB User: welcome1
-</span></code></pre></li>
+Password for ECC DB user: welcome1
+Confirm Password for ECC DB user: welcome1
+    ```
+5. You will see the below screen
+
+    ![Enter database credentials](../images/eccschema0.png "Enter database credentials")
 
 
-![Enter database credentials](../images/eccschema0.png "Enter database credentials")
-
-
-6.**Option 1** should be completed successfully. You can verify the logs in $ECC_BASE/Oracle/quickInstall/logs/setup.log
+6. **Option 1** should be completed successfully. You can verify the logs in $ECC_BASE/Oracle/quickInstall/logs/setup.log
 
 7. Enter **Option 6** to exit and then execute following commands to validate  successful ECC schema creation:
 
-
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">source env/ecc.env
-</span></code></pre></li>
-
-
+    ```
+  	 <copy> source env/ecc.env </copy>
+    ```
 
 8. Execute the following command with the credentials mentioned:
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute">
-sqlplus $ECC_DB_USER@"(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=$ECC_HOST_NAME)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=$EBS_DS_NAME)))"</span></code></pre></li>
 
- <pre><span class="hljs-attribute">
-Password:welcome1
-</span></code></pre></li>
+    ```
+  	 <copy>sqlplus $ECC_DB_USER@"(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=$ECC_HOST_NAME)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=$EBS_DS_NAME)))"</copy>
+    ```
+    ```
+  	 <copy>Password:welcome1</copy>
+    ```
 
 
-![Validate ECC dB Connection](../images/systemmanager1.png "Validate ECC dB Connection")
+
+    ![Validate ECC dB Connection](../images/systemmanager1.png "Validate ECC dB Connection")
 
 9. If you are able to log in to SQL and receive a SQL> prompt, then the ECC DB connection is available to use. 
 
 10. Exit from the SQL prompt by typing **exit;**
 
-## Task 3: Install Weblogic Server
+## Task 5: Install Weblogic Server
 
 1. Make sure you are in the  /u01/Oracle/quickInstall directory 
 
 2. Run the ./envSetup.sh script again and when prompted choose **Option 2** to Install Weblogic Server 
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"> ./envSetup.sh
-</span></code></pre></li>
-
-
-
-   ![Select Option 2](../images/selectoption.png "Select Option 2")
-
-   ![Install weblogic server](../images/weblogic0.png "Install weblogic server")
-   ![Install weblogic server](../images/weblogic.png "Install weblogic server")
+    ```
+  	 <copy>./envSetup.sh</copy>
+    ```
+    ![Select Option 2](../images/selectoption.png "Select Option 2")
+    ![Install weblogic server](../images/weblogic0.png "Install weblogic server")
+    ![Install weblogic server](../images/weblogic.png "Install weblogic server")
 
 You may now **proceed to the next lab**
 
@@ -163,9 +199,9 @@ You may now **proceed to the next lab**
 
 ## Acknowledgements
 
-**Author**- Muhannad Obeidat, VP
+* **Author**- Muhannad Obeidat, VP
 
-**Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
+* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
 
-**Last Updated By/Date**- Mohammed Khan, March 2023
+* **Last Updated By/Date**- Mohammed Khan, March 2023
 

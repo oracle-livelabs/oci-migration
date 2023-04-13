@@ -29,44 +29,42 @@ This lab assumes you have:
 **Data Load Tuning**
  
 Some system level parameters for ETL for tuning ETL performance:
- * ir.fullload.threads 
+ 1. ir.fullload.threads 
 
-The number of threads to handle ETL jobs of type "pull" that are allowed to run concurrently. 
-The default value for this parameter is the number of available cores in the Oracle Enterprise Command Center Framework server
+     - The number of threads to handle ETL jobs of type "pull" that are allowed to run concurrently. 
+     - The default value for this parameter is the number of available cores in the Oracle Enterprise Command Center     Framework server
 
- * ir.job.threads
+ 2. ir.job.threads
  
-The number of ingest threads to serve one ETL job.
-The default value for this parameter is the number of available cores in the server divided by two
+     - The number of ingest threads to serve one ETL job.
+     - The default value for this parameter is the number of available cores in the server divided by two
 
 
- * ir.push.threads 
+ 3. ir.push.threads 
  
 
-The number of threads to handle ETL jobs of type "push" that are allowed to run concurrently. 
-The default value for this parameter is the number of available cores in the Oracle Enterprise Command Center Framework server
-
+     - The number of threads to handle ETL jobs of type "push" that are allowed to run concurrently. 
+     - The default value for this parameter is the number of available cores in the Oracle Enterprise Command Center Framework server
 
 ## Task 2: Learn about Framework Tuning 
 
-**Disk**
+1. Disk
 
-ECC gives flexibility to mount data storage folder on any disk. 
-SSD provides high transfer rates and pretty much eliminate the latency problems associated with randomly accessing data
-
-
-**Memory**
-
-![Framework Tuning- Memory](../images/memory.png "Framework Tuning- Memory")
-
-**Core**
+     - ECC gives flexibility to mount data storage folder on any disk. 
+     - SSD provides high transfer rates and pretty much eliminate the latency problems associated with randomly accessing data
 
 
-Adding more cores to the machine will impact both ETL and Query time
+2. Memory
+
+    ![Framework Tuning- Memory](../images/memory.png "Framework Tuning- Memory")
+
+3. Core
+
+      - Adding more cores to the machine will impact both ETL and Query time
 
 
 
-![Framework Tuning- Core](../images/core.png "Framework Tuning- Core")
+    ![Framework Tuning- Core](../images/core.png "Framework Tuning- Core")
 
 
 
@@ -82,9 +80,9 @@ Adding more cores to the machine will impact both ETL and Query time
 
 ## Acknowledgements
 
-**Author**- Muhannad Obeidat, VP
+* **Author**- Muhannad Obeidat, VP
 
-**Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
+* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
 
-**Last Updated By/Date**- Mohammed Khan, March 2023
+* **Last Updated By/Date**- Mohammed Khan, March 2023
 

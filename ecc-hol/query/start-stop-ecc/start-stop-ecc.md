@@ -24,16 +24,16 @@ This lab assumes you have:
 
 ## Task 1: Learn how to start and stop ECC
 
-* Start ECC
+1. Start ECC
 
-Start the Oracle Enterprise Command Center Framework servers by running the **./startAllEcc.sh** script located in the $ECC_BASE/Oracle/quickInstall/bin directory and choosing option 1 - All. This option starts the Oracle Enterprise Command Center Framework managed server and the admin server in the required sequence. When prompted, enter the Oracle Enterprise Command Center Framework domain admin server user name and password.
+   Start the Oracle Enterprise Command Center Framework servers by running the **./startAllEcc.sh** script located in the $ECC_BASE/Oracle/quickInstall/bin directory and choosing option 1 - All. This option starts the Oracle Enterprise Command Center Framework managed server and the admin server in the required sequence. When prompted, enter the Oracle Enterprise Command Center Framework domain admin server user name and password.
 
-![Start ECC](../images/startecc1.png "Start ECC")
+   ![Start ECC](../images/startecc1.png "Start ECC")
 
 
-* Stop ECC
+2. Stop ECC
 
-Stop the Oracle Enterprise Command Center Framework servers by running the **./stopAllEcc.sh** script located in the $ECC_BASE/Oracle/quickInstall/bin directory and choosing option 1 - All. This option stops the Oracle Enterprise Command Center Framework managed server and the admin server in the required sequence. When prompted, enter the Oracle Enterprise Command Center Framework domain admin server user name and password.
+   Stop the Oracle Enterprise Command Center Framework servers by running the **./stopAllEcc.sh** script located in the $ECC_BASE/Oracle/quickInstall/bin directory and choosing option 1 - All. This option stops the Oracle Enterprise Command Center Framework managed server and the admin server in the required sequence. When prompted, enter the Oracle Enterprise Command Center Framework domain admin server user name and password.
 
 
 You may now  **proceed to the next lab**
@@ -48,9 +48,9 @@ You may now  **proceed to the next lab**
 
 ## Acknowledgements
 
-**Author**- Muhannad Obeidat, VP
+* **Author**- Muhannad Obeidat, VP
 
-**Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
+* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
 
-**Last Updated By/Date**- Mohammed Khan, March 2023
+* **Last Updated By/Date**- Mohammed Khan, March 2023
 

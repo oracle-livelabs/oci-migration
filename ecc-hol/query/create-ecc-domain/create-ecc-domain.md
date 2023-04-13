@@ -5,8 +5,6 @@
 
 This lab walks you through the steps to create and validate ECC domain so that you can set up Oracle Enterprise Command Center Framework
 
-
-
 Estimated Time: 30 minutes
 
 ### Objectives
@@ -24,39 +22,36 @@ This lab assumes you have:
 
 ## Task 1: Create ECC Domain
 
-1. After weblogic is installed you would be prompted to submit the next option in the installation steps in which case you should  select **Option 3** otherwise Execute the ./envSetup.sh script again and then choose **Option 3** to Create ECC domain. 
-
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"> ./envSetup.sh
-</span></code></pre></li>
+1. After weblogic is installed you would be prompted to submit the next option in the installation steps in which case you should  select **Option 3** otherwise execute the ./envSetup.sh script again and then choose **Option 3** to Create ECC domain. 
 
 
-
-![Select option 3](../images/selectoption.png "Select option 3")
+    ```
+  	 <copy>./envSetup.sh</copy>
+    ```
+    ![Select option 3](../images/selectoption.png "Select option 3")
 
 
 2. As part of creation of ECC domain, following are the key tasks performed (no action required in this lab):
-![These are the key tasks performed](../images/eccdomain.png "Key tasks performed")
-
-   * Enter the password for ECC DB user as **welcome1** 
-   * Set the password for ECC user weblogic as **welcome1**
-
+    ![These are the key tasks performed](../images/eccdomain.png "Key tasks performed")
+    - Enter the password for ECC DB user as **welcome1** 
+    - Set the password for ECC user weblogic as **welcome1**
 
 
-![Create ECC domain by entering ECC dB user and weblogic passwords](../images/weblogic1000.png "Create ECC domain")
+
+    ![Create ECC domain by entering ECC dB user and weblogic passwords](../images/weblogic1000.png "Create ECC domain")
 
 3. After completing successfully you will see the below screen
 
-![Create ECC domain](../images/eccdomainsuccess.png "Create ECC domain")
+    ![Create ECC domain](../images/eccdomainsuccess.png "Create ECC domain")
 
 
 ## Task 2: Validate ECC Domain
 
 1. From the browser navigate to the below URL 
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"><div style="color:grey"> 
-http://localhost:7776/ecc
-</div>
-</span></code></pre></li>
+    ```
+  	 <copy>http://localhost:7776/ecc</copy>
+    ```
 
 **Note:** If you are not able to type in the remote desktop browser then please hit the command key
 
@@ -65,7 +60,7 @@ http://localhost:7776/ecc
    * Activity audit application should be imported i.e., you should see Activity audit application in home screen as highlighted below
 
 
-   ![Validate ECC domain](../images/validateeccdomain6.png "Validate ECC domain")
+    ![Validate ECC domain](../images/validateeccdomain6.png "Validate ECC domain")
 
 
 
@@ -75,9 +70,11 @@ http://localhost:7776/ecc
 
 1. From the browser navigate to the below URL
 
-<pre><button class="copy-button" title="Copy text to clipboard">Copy</button><code class="hljs apache"><span class="copy-code"><span class="hljs-attribute"><div style="color:grey"> http://localhost:7776/ecc
-</div>
-</span></code></pre></li>
+
+    ```
+  	 <copy>http://localhost:7776/ecc</copy>
+    ```
+
 2. ECC Administrator UI should be accessible.
 
    * In **About** page “Enterprise Command Centers:” should be shown as ‘V10’.
@@ -86,7 +83,7 @@ http://localhost:7776/ecc
 
    * “SOLR” should be shown as 8.8.2
 
-   ![Validate ECC release](../images/validateabout5.png "Validate ECC release")
+    ![Validate ECC release](../images/validateabout5.png "Validate ECC release")
 
 
 
@@ -103,9 +100,9 @@ You may now **proceed to the next lab**
 
 ## Acknowledgements
 
-**Author**- Muhannad Obeidat, VP
+* **Author**- Muhannad Obeidat, VP
 
-**Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
+* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
 
-**Last Updated By/Date**- Mohammed Khan, March 2023
+* **Last Updated By/Date**- Mohammed Khan, March 2023
 
