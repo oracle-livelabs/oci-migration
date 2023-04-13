@@ -9,6 +9,17 @@ This lab gives a brief introduction to Oracle Enterprise Command Center Framewor
 
 Estimated Time: 10 minutes
 
+### **Introduction to Oracle Enterprise Command Center**
+
+Enterprise Command Centers (ECC) provide information discovery along with visualization and exploration capabilities embedded within Oracle E-Business Suite user interfaces. Oracle Enterprise Command Center Framework enables the creation of business dashboards in different functional areas.
+
+Oracle E-Business Suite users navigate transactional information using interactive visual components and guided discovery capabilities allowing exploratory data analysis. Mobility and responsive design are built into the Oracle Enterprise Command Center Framework, and all dashboards automatically adjust the layout to better fit a desktop or mobile device form factor. Oracle Enterprise Command Center Framework automatically adheres to existing Oracle E-Business Suite security. The dashboard content a user sees is completely consistent with the Oracle E-Business Suite context and security. 
+
+**Example of an Enterprise Command Center Dashboard**
+
+![Example ECC Dashboard](../images/ebspage.png "ECC Dashboard")
+
+
 ### Objectives
 In this lab, you will:
 * Learn about Oracle Enterprise Command Center Framework
@@ -20,17 +31,8 @@ This lab assumes you have:
 * An Oracle Cloud account
 * Requested a workshop reservation on LiveLabs
 
-## Task 1: Introduction to Oracle Enterprise Command Center
 
-Enterprise Command Centers (ECC) provide information discovery along with visualization and exploration capabilities embedded within Oracle E-Business Suite user interfaces. Oracle Enterprise Command Center Framework enables the creation of business dashboards in different functional areas.
-
-Oracle E-Business Suite users navigate transactional information using interactive visual components and guided discovery capabilities allowing exploratory data analysis. Mobility and responsive design are built into the Oracle Enterprise Command Center Framework, and all dashboards automatically adjust the layout to better fit a desktop or mobile device form factor. Oracle Enterprise Command Center Framework automatically adheres to existing Oracle E-Business Suite security. The dashboard content a user sees is completely consistent with the Oracle E-Business Suite context and security. 
-
-**Example of an Enterprise Command Center Dashboard**
-
-![Example ECC Dashboard](../images/ebspage.png "ECC Dashboard")
-
-## Task 2: Launch remote desktop
+## Task 1: Launch remote desktop
 
 1. Click on  "View login info" on the top left, as shown in below image
     ![Click on View login info](../images/viewlogininfo.png "View login info")

@@ -178,13 +178,13 @@ Password: welcome1
 
 
 13. From ECC:
-   - User can check details for each query in real time.
-   - It reflects the current load status: Number of successful rows and number of failed rows.
-   - It shows when the query started, how much time spent at the DB, the sql text and the operation.
-   - User can cancel the running job
+    - User can check details for each query in real time.
+    - It reflects the current load status: Number of successful rows and number of failed rows.
+    - It shows when the query started, how much time spent at the DB, the sql text and the operation.
+    - User can cancel the running job
 
-SQL Trace can be enabled by passing “TRUE” value while starting the data load Concurrent Program.
-The trace log file will be generated with the ECC Data Load sub-request “Job ID” as the identifier. The “Job ID” is noted in the log file of sub-request.
+    SQL Trace can be enabled by passing “TRUE” value while starting the data load Concurrent Program.
+    The trace log file will be generated with the ECC Data Load sub-request “Job ID” as the identifier. The “Job ID” is noted in the log file of sub-request.
 
 14. Data Load job structure request:
     - One “Audit Request” per job

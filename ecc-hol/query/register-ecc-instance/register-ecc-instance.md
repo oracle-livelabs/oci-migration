@@ -120,7 +120,7 @@ Password:welcome1
 
 5. Click on "JNDI" with the name “ebsdb” as indicated below
 
-    ![Click on "JNDI" with the name “ebsdb”](../images/ebsdb1.png "Click on "JNDI" with the name ebsdb")
+    ![Click on JNDI with the name “ebsdb”](../images/ebsdb1.png "Click on JNDI with the name ebsdb")
 
 6. Go to "Monitoring" -> "Testing" tab
     ![Navigate to testing tab](../images/monitoring10.png "Navigate to testing tab")
