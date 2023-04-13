@@ -9,7 +9,7 @@ This lab gives a brief introduction to Oracle Enterprise Command Center Framewor
 
 Estimated Time: 10 minutes
 
-### **Introduction to Oracle Enterprise Command Center**
+### Introduction to Oracle Enterprise Command Center
 
 Enterprise Command Centers (ECC) provide information discovery along with visualization and exploration capabilities embedded within Oracle E-Business Suite user interfaces. Oracle Enterprise Command Center Framework enables the creation of business dashboards in different functional areas.
 
