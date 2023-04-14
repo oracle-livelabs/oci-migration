@@ -223,7 +223,7 @@ For more information on Activity audit please refer to [Enterprise Command Cente
 ## Task 4: Identify common issues 
 1. You will see the below screen if you are authenticated but not authorized to view the dashboard. You need to use the right responsibility to access the dashboard 
 
-    ![Authorization Issue](../images/auth.png "Authorization Issue")
+    ![Authorization Issue](../images/auth1.png "Authorization Issue")
 
 2. You will see the below screen if you are not authenticated/ or not logged in to EBS
 
