@@ -17,7 +17,7 @@ Oracle E-Business Suite users navigate transactional information using interacti
 
 **Example of an Enterprise Command Center Dashboard**
 
-![Example ECC Dashboard](../images/ebspage.png "ECC Dashboard")
+![Example ECC Dashboard](../images/ebspage1.png "ECC Dashboard")
 
 
 ### Objectives

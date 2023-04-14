@@ -153,9 +153,9 @@ Password:welcome1
 
 3.  Here, please enter password as **welcome1** for both ECC DB user and ECC admin user weblogic  
 
-    ![Enter password for both ECC DB user and ECC admin user weblogic](../images/m1.png "Enter password")
+    ![Enter password for both ECC DB user and ECC admin user weblogic](../images/m11.png "Enter password")
 
-    ![Integrate ECC with EBS Instance](../images/m2.png "Integrate ECC with EBS Instance")
+    ![Integrate ECC with EBS Instance](../images/m22.png "Integrate ECC with EBS Instance")
 
 ## Task 6: Integrate EBS with ECC 
 
