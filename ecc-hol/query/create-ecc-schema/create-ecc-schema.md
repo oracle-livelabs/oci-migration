@@ -26,7 +26,7 @@ This lab assumes you have:
 
 ## Task 1: Validate if EBS responsibility tree is up
 
-1. From the browser, open chrome and from the address bar navigate to http://apps.example.com:8000 
+1. Open Chrome browser, and from the address bar navigate to http://apps.example.com:8000 
 
     ```
   	 <copy>http://apps.example.com:8000 </copy>
@@ -55,7 +55,7 @@ Password= welcome1
 
 ## Task 2: Validate if EBS run edition can be sourced 
 
-1. Open a terminal window for EBS to,<n> Source EBS edition</n>. Type the following command (case is important) in the terminal :
+1. Open a terminal window for EBS to,<n> Source EBS edition</n>. Copy/Paste the following command (case is important) in the terminal :
 
     ```
   	 <copy>source /u01/install/APPS/EBSapps.env run</copy>
@@ -133,7 +133,7 @@ Is the user <ECC_DB_USERNAME> existing in ECC database [y/n]?<password>
     ```
 
 
-3. If you choose option “y”, you are prompted for ECC user credentials to create the ECC schema. If you choose the option “n”, you are prompted to enter ECC database system user credentials to create the ECC user and later create the ECC schema. For this demo type **"n"**
+3. If you choose option “y”, you are prompted for ECC user credentials to create the ECC schema. If you choose the option “n”, you are prompted to enter ECC database system user credentials to create the ECC user and later create the ECC schema. For this demo enter **"n"**
 
 4. When prompted provide the database system user details, mentioned below:
 
@@ -148,7 +148,7 @@ Confirm Password for ECC DB user: welcome1
     ![Enter database credentials](../images/eccschema0.png "Enter database credentials")
 
 
-6. **Option 1** should be completed successfully. You can verify the logs in $ECC_BASE/Oracle/quickInstall/logs/setup.log
+6. Database set up  should be completed successfully. You can verify the logs in $ECC_BASE/Oracle/quickInstall/logs/setup.log
 
 7. Enter **Option 6** to exit and then execute following commands to validate  successful ECC schema creation:
 

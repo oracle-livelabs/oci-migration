@@ -3,7 +3,7 @@
 
 ### Introduction
 
-This lab walks you through the steps to general steps performed in diagnosing and monitoring Oracle Enterprise Command Center framework
+This lab walks you through the general steps performed in diagnosing and monitoring Oracle Enterprise Command Center framework
 
 Estimated Time: 10 minutes
 

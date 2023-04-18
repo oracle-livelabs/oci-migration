@@ -36,7 +36,7 @@ A Command Center is made up of several dashboards exposing different aspects of 
     ![ECC dashboard](../images/igh.png "ECC dashboard")
 
 2. **Application**: 
-  An application encapsulates all elements needed to power the dashboard. It references data sets which in turn control how data is populated through load rules and behavior of every attributes on the UI through metadata. An application can reference data sets owned by other applications. 
+  An application encapsulates all elements needed to power the dashboard. It references data sets which in turn control how data is populated through load rules and behaviour of all attributes on the UI through metadata. An application can reference data sets owned by other applications. 
  
 3. **Data set**: 
   A data set is both a logical and a physical grouping of attributes to support business dashboard operations and use cases. From a logical perspective, it is designed to support several use cases that are accessed through one or more Oracle Enterprise Command Center Framework dashboards. The design typically caters to open‐ended interaction with the underlying data. At the physical level, the data set stores one or more records with a uniquely identifying key that represents a particular level of detail of the entity stored in the enterprise system. A data set declares the data load rules that it supports and how they are used to populate data into the data set. Each data set should be assigned to an application as an owned data set but can be referenced by other applications. The owning application is responsible for populating data into the data set.A data set's contents can be downloaded into a CSV file by clicking the Download icon.

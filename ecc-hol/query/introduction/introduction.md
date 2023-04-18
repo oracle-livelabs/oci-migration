@@ -2,8 +2,8 @@
 
 ## About this Workshop
 
-The intent of this workshop is to give you practical hands on experience on Oracle Enterprise Command Center. This workshop has demonstrated use cases and step by step instructions that are easy to follow. It will walk you through all of the steps and processes starting from installing Oracle Enterprise Command Center all the way till personalizing dashboards to suit your needs. 
-There is also an instructer led lab where you will learn about several features of Oracle Enterprise Command Center with examples.
+The intent of this workshop is to give you practical hands on experience on Oracle Enterprise Command Center. This workshop has demonstrated use cases and step by step instructions that are easy to follow. It will walk you through the steps required for installing Oracle Enterprise Command Center,  showcase various dashboards and ECC components and also detail the steps required for personalizing dashboards.
+There is also an Instructor led lab where you will learn about several features of Oracle Enterprise Command Center with examples.
 
 This lab gives a brief introduction to Oracle Enterprise Command Center Framework and guides you on how you can launch remote desktop to start your workshop.
 
