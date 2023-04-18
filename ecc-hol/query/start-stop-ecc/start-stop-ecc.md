@@ -3,7 +3,7 @@
 
 ### Introduction
 
-This lab walks you through the steps to start and stop Oracle Enterprise Command Center Framework
+This lab walks you through the steps needed to start and stop Oracle Enterprise Command Center Framework.
 
 
 Estimated Time: 5 minutes

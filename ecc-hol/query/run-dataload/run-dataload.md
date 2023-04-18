@@ -12,7 +12,6 @@ Estimated Time: 15 minutes
 ### Objectives
 In this lab, you will:
 * Run dataload
-* Identify Common dataload and set up issues
 
 
 ### Prerequisites
@@ -25,7 +24,7 @@ This lab assumes you have:
 
 ## Task 1: Set up RBAC
 
-1. To perform RBAC setup with the UMX\_ECC\_RBACAuto.sh script, you should type the following command (case is important):
+1. To perform RBAC setup with the UMX\_ECC\_RBACAuto.sh script, you should copy/paste the following command (case is important):
 
     ```
   	 <copy>source /u01/install/APPS/EBSapps.env run</copy>
@@ -106,7 +105,7 @@ Password: welcome1
 ## Task 4: Submit a Job
 Each product with an Enterprise Command Center provides a concurrent program to load its product-specific data into the Oracle Enterprise Command Center Framework installation. 
 
-Here we will take the example of Oracle Payables with the respective Data Load Concurrent Program "Payables Command Center Data Load".Run this program now to perform an initial full load. 
+Here we will take the example of Oracle Payables with the respective Data Load Concurrent Program "Payables Command Center Data Load". Run this program to perform an initial full load.
 
 You should also schedule the data load programs periodically to perform incremental loads to update the data available in the Enterprise Command Center dashboards. For details, see your product documentation.
  
@@ -117,7 +116,7 @@ You should also schedule the data load programs periodically to perform incremen
 
 
 Jobs should be submitted from EBS concurrent program and hence the tracking should be exposed to the concurrent program job.
-Concurrent program keeps polling the status of the job from ECC and display the current status of the job
+Concurrent program keeps polling the status of the job from ECC and displays the current status of the job
 
 1. Login in EBS (From the browser navigate to http://apps.example.com:8000) using below credentials:
 
