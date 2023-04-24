@@ -195,7 +195,7 @@ In the prior steps, we elected to trigger the *terraform apply action* on stack 
 
 1.  Review the job output.
 
-  ![Job output](../images/apply-job-success.png " ")
+  ![Job output](../images/apply-job-success1.png " ")
 
 2.  Congratulations, your environment has been created!  Click the **Application Information** tab to get additional information about what you have just done.
 
