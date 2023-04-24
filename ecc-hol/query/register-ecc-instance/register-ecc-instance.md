@@ -188,13 +188,12 @@ Password= welcome1
 
  4. Search for the the following variable in the search text box
 
- ```
-  	 <copy> s\_ecc\_conf\_comment </copy>
-```
-
+    ```
+  	 <copy>s\_ecc\_conf\_comment</copy>
+    ```
  
  and select OA_VAR in the search list of values. Then, click the "Go" button.
-
+5.  Like in the below image
     ![Find variables](../images/autoconfig3.png "Find variables")
 
  **Note:** 
@@ -211,14 +210,14 @@ Password= welcome1
 
  ![Set variables](../images/autoconfig.png "Set variables")
 
- 5. Open EBS terminal and then run AutoConfig. For running Autoconfig you need to first source the EBS running edition using below command
+6. Open EBS terminal and then run AutoConfig. For running Autoconfig you need to first source the EBS running edition using below command
 
     ```
   	 <copy>source /u01/install/APPS/EBSapps.env run</copy>
     ```
 
 
-6. Then, navigate to below location
+7. Then, navigate to below location
 
     ```
   	 <copy>cd $ADMIN_SCRIPTS_HOME</copy>
@@ -226,19 +225,19 @@ Password= welcome1
 
 
 
-7. Run the below script
+8. Run the below script
 
     ```
   	 <copy>./adautocfg.sh</copy>
     ```
 
 
-8. It will prompt you for apps password which is by default **apps** 
+9. It will prompt you for apps password which is by default **apps** 
 
     ![Run autoconfig](../images/autoconfig4.png "Run autoconfig")
     ![Run autoconfig](../images/autoconfig101.png "Run autoconfig")
 
-9. Once Autoconfig runs successfully then navigate to below location:
+10. Once Autoconfig runs successfully then navigate to below location:
 
     ```
   	 <copy>cd $ADMIN_SCRIPTS_HOME</copy>
@@ -251,7 +250,7 @@ Password= welcome1
 
 
 
-10. And then, run the following script to check OHS status:
+11. And then, run the following script to check OHS status:
 
 
     ```
@@ -260,7 +259,7 @@ Password= welcome1
 
     ![Check OHS status](../images/adh22.png "Check OHS status")
 
-11. And then, run the following script to stop OHS:
+12. And then, run the following script to stop OHS:
 
 
     ```
@@ -270,7 +269,7 @@ Password= welcome1
 
     ![Stop OHS](../images/adh77.png "Stop OHS")   
 
-12. And then, run the following script to start OHS:
+13. And then, run the following script to start OHS:
 
     ```
   	 <copy>./adapcctl.sh start</copy>
@@ -279,7 +278,7 @@ Password= welcome1
 
     ![Start OHS](../images/adh44.png "Start OHS ")
 
-13. And then, run the following script again to check the OHS status if it has successfully started:
+14. And then, run the following script again to check the OHS status if it has successfully started:
 
     ```
   	 <copy> ./adapcctl.sh status</copy>
