@@ -16,6 +16,11 @@
       "description": "The Introduction is always second for LiveLabs. The title and contents menu title match for the Introduction.",
       "filename": "https://oracle-livelabs.github.io/common//labs/remote-desktop/using-novnc-remote-desktop.md"
     }, 
+    {
+      "title": "Prepare and Set up the enivronment (Run in your own tenancy)",
+      "description": "This lab is to be done if you want to run the workshop in your own tenanct.",
+      "filename": "../../query/prepare-and-setup/prepare-and-setup.md"
+    }, 
   
     
     {

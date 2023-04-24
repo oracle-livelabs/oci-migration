@@ -58,9 +58,8 @@ This lab assumes you have:
 
     ![Copy the "ebsdb_APPS.EXAMPLE.COM.dbc" file to the ECC instance](../images/fndnode.png "Copy file to the ECC instance")
 
-## Task 2: Update Oracle EBS user name 
-
-**EBS\_ECC\_USER** is the Oracle E-Business Suite user name (FND user) with which Oracle Enterprise Command Center Framework connects to Oracle E-Business Suite using the JNDI configuration. 
+## Task 2: Update Oracle EBS user name (Optional)
+This task is optional. **EBS\_ECC\_USER** is the Oracle E-Business Suite user name (FND user) with which Oracle Enterprise Command Center Framework connects to Oracle E-Business Suite using the JNDI configuration. 
 
 1.  Make sure that from ECC terminal you update EBS\_ECC\_USER value in /u01/Oracle/quickInstall/EccConfig.properties  to ECC\_DISCOVERY\_HOL\_{yourname}, to do that follow the below steps:
 
@@ -157,7 +156,19 @@ Password:welcome1
 
     ![Integrate ECC with EBS Instance](../images/m22.png "Integrate ECC with EBS Instance")
 
-## Task 6: Integrate EBS with ECC 
+## Task 6: Validate integration of ECC with EBS 
+
+Open chrome browser and enter the following URL
+
+```
+  	 <copy> http://localhost:7776/ecc</copy>
+```
+1. You will see the below screen when ECC is integrated with EBS successfully:
+
+    ![User Not Authenticated to Access ECC](../images/auth2.png "User Not Authenticated to Access ECC")
+
+
+## Task 7: Integrate EBS with ECC 
 
  1. Log in to Oracle E-Business Suite as a system administrator i.e., Open the browser and navigate to http://apps.example.com:8000 
 
@@ -169,13 +180,20 @@ Password= welcome1
 
  2. Navigate to System Administrator: Oracle Applications Manager > AutoConfig.
 
-    ![Click on Autofig](../images/autoconfig10.png "Click on Autofig")
+    ![Click on AutoConfig](../images/autoconfig10.png "Click on AutoConfig")
 
  3. Select the application tier context file, and choose "Edit Parameters"
 
     ![choose Edit Parameters](../images/autoconfig2.png "choose Edit Parameters")
 
- 4. Search for the s\_ecc\_conf\_comment variable by selecting OA_VAR in the search list of values and entering s\_ecc\_conf\_comment in the search text box. Then, click the "Go" button.
+ 4. Search for the the following variable in the search text box
+
+ ```
+  	 <copy> s\_ecc\_conf\_comment </copy>
+```
+
+ 
+ and select OA_VAR in the search list of values. Then, click the "Go" button.
 
     ![Find variables](../images/autoconfig3.png "Find variables")
 
@@ -271,7 +289,7 @@ Password= welcome1
 
     ![Check OHS status](../images/adh55.png "Check OHS status")
 
-## Task 7: Validate integration of EBS and ECC 
+## Task 8: Validate integration of EBS and ECC 
 
 1. Navigate to http://apps.example.com:8000 in the browser with below credentials 
 

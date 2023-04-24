@@ -227,7 +227,7 @@ For more information on Activity audit please refer to [Enterprise Command Cente
 
 2. You will see the below screen if you are not authenticated/ or not logged in to EBS
 
-    ![User did not login to EBS](../images/auth2.png "User did not login to EBS")
+    ![User Not Authenticated to Access ECC](../images/auth2.png "User Not Authenticated to Access ECC")
 
 3. You will see the below screen if ECC isn’t integrated with EBS (ecc.conf is missing).
     ![Ecc.conf is missing](../images/eccmissing1.png "Ecc.conf is missing")

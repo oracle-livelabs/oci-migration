@@ -32,7 +32,9 @@ This lab assumes you have:
 * Requested a workshop reservation on LiveLabs
 
 
-## Task 1: Launch remote desktop
+## Task 1: Launch remote desktop (Run on LiveLabs sandbox)
+
+This task is to be performed if you want to run this workshop on the LiveLabs sandbox.
 
 1. Click on  "View login info" on the top left, as shown in below image
     ![Click on View login info](../images/viewlogininfo.png "View login info")
