@@ -34,7 +34,8 @@ This lab assumes you have:
 ## Task 1: Add public key in reservation of workshop
 
 Whether running on own tenancy or livelabs sandbox, you nee to go through this step. Before reserving the lab instance, download the SSH keys from this location: [ecc-hol-keys.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/jyHA4nclWcTaekNIdpKPq3u2gsLb00v_1mmRKDIuOEsp--D6GJWS_tMrqGmb85R2/n/c4u04/b/livelabsfiles/o/labfiles/ecc-hol-keys.zip) 
-Unzip the downloaded zip file. Go to the extract directory and open public key ecchol.pub. Copy the file content (key value) and paste it in as per the screenshot below.
+Unzip the downloaded zip file.
+Go to the extract directory and open public key ecchol.pub. Copy the file content (key value) and paste it in as per the screenshot below.
      ![Paste Public SSH key](../images/publicssh.png " ")
      ![Paste SSH keys](../images/paste-rssh.png " ")
 
