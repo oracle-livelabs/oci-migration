@@ -20,7 +20,7 @@ This lab assumes you have:
 - An Oracle Free Tier or Paid Cloud account
 - SSH Keys
 ## Task 1: Download Oracle Resource Manager (ORM) stack zip file
-1.  Click on the link below to download the Resource Manager zip file you need to build your environment: [ebs-eccv10-mkplc.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/Vo75y6-hxT4jgMS5yzQdZs28frxcpv8Fg9BjCg3kJSJEsMRCtzWml25zJGwXcsfK/n/natdsecurity/b/stack/o/ggvd-mkplc-freetier.zip)
+1.  Click on the link below to download the Resource Manager zip file you need to build your environment: [ebs-eccv10-mkplc.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/jyHA4nclWcTaekNIdpKPq3u2gsLb00v_1mmRKDIuOEsp--D6GJWS_tMrqGmb85R2/n/c4u04/b/livelabsfiles/o/labfiles/ebs-eccv10-mkplc.zip)
 
 2.  Save in your downloads folder.
 
@@ -67,16 +67,13 @@ Your options are:
         - **Option (A)** - Keep Unchecked for Remote Desktop only Access - The Default
         - **Option (B)** - Check *Need Remote Access via SSH?* and keep *Auto Generate SSH Key Pair* unchecked to enable remote access via SSH protocol, then provide the SSH public key(s).
 
-            - **SSH Public Key**: Select from the following two options
-                - *Paste SSH Keys*: Paste the plaintext key strings or
-                - *Choose SSH Key Files*: Drag-n-drop or browse and select valid public keys of *openssh* format from your computer
-
-        ![Paste SSH keys](../images/paste-ssh.png " ")
+            - **SSH Public Key**: Select *Choose SSH Key Files*
+                - *Choose Public Key Files*: Drag-n-drop or browse and select  public key *ecchol.pub* from this directory ecc-hol-keys which can be extratced from after downloading this  [ecc-hol-keys.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/jyHA4nclWcTaekNIdpKPq3u2gsLb00v_1mmRKDIuOEsp--D6GJWS_tMrqGmb85R2/n/c4u04/b/livelabsfiles/o/labfiles/ecc-hol-keys.zip) on your computer
 
         ![Choose SSH keys](../images/choose-ssh.png " ")
 
         >**Notes:**
-        1. This assumes that you already have an RSA-type SSH key pair available on the local system where you will be connecting from. If you don't and for more info on creating and using SSH keys for your specific platform and client, please refer to the guide [Generate SSH Keys](https://oracle-livelabs.github.io/common/labs/generate-ssh-key)
+        1. This assumes that you already have an SSH key pair available on the local system where you will be connecting from. If you don't and for more info on creating and using SSH keys for your specific platform and client, please refer to the guide [Generate SSH Keys](https://oracle-livelabs.github.io/common/labs/generate-ssh-key)
         2. If you used the Oracle Cloud Shell to create your key, make sure you paste the pub file in a notepad, and remove any hard returns. The file should be one line or you will not be able to login to your compute instance
 
         - **Option (C)** - Check *Need Remote Access via SSH?* and *Auto Generate SSH Key Pair* to have the keys auto-generated for you during provisioning. If you select this option you will be provided with the private key post provisioning.
@@ -146,16 +143,12 @@ If you just completed Task 1A, please proceed to Task 2.  If you have an existin
         - **Option (A)** - Keep Unchecked for Remote Desktop only Access - The Default
         - **Option (B)** - Check *Need Remote Access via SSH?* and keep *Auto Generate SSH Key Pair* unchecked to enable remote access via SSH protocol, then provide the SSH public key(s).
 
-            - **SSH Public Key**: Select from the following two options
-                - *Paste SSH Keys*: Paste the plaintext key strings or
-                - *Choose SSH Key Files*: Drag-n-drop or browse and select valid public keys of *openssh* format from your computer
-
-        ![Paste SSH keys](../images/paste-ssh.png " ")
+            - **SSH Public Key**: Select *Choose SSH Key Files*
+                - *Choose SSH Key Files*: Drag-n-drop or browse and select  public key *ecchol.pub* from this directory ecc-hol-keys which can be extratced from after downloading this  [ecc-hol-keys.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/jyHA4nclWcTaekNIdpKPq3u2gsLb00v_1mmRKDIuOEsp--D6GJWS_tMrqGmb85R2/n/c4u04/b/livelabsfiles/o/labfiles/ecc-hol-keys.zip) on your computer
 
         ![select SSH keys](../images/choose-ssh.png " ")
-
         >**Notes:**
-        1. This assumes that you already have an RSA-type SSH key pair available on the local system where you will be connecting from. If you don't and for more info on creating and using SSH keys for your specific platform and client, please refer to the guide [Generate SSH Keys](https://oracle-livelabs.github.io/common/labs/generate-ssh-key)
+        1. This assumes that you already have an  SSH key pair available on the local system where you will be connecting from. If you don't and for more info on creating and using SSH keys for your specific platform and client, please refer to the guide [Generate SSH Keys](https://oracle-livelabs.github.io/common/labs/generate-ssh-key)
         2. If you used the Oracle Cloud Shell to create your key, make sure you paste the pub file in a notepad, and remove any hard returns. The file should be one line or you will not be able to login to your compute instance
 
         - **Option (C)** - Check *Need Remote Access via SSH?* and *Auto Generate SSH Key Pair* to have the keys auto-generated for you during provisioning. If you select this option you will be provided with the private key post provisioning.
