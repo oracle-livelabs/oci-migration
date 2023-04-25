@@ -203,7 +203,7 @@ Responsibility: General Ledger Super User
 6. You will see the below screen
     ![General Ledger Command Center Data Load](../images/jda102.png "General Ledger Command Center Data Load")
 
-7. From "Parameters" tab choose the Load type as **FULL_LOAD**, Set Ledger ID as**1** and Set/Reset Data as**TRUE**, this will wipe out all the records in the dataset.
+7. From "Parameters" tab choose the Load type as **FULL_LOAD**, Set Ledger ID as **1** and Set/Reset Data as **TRUE**, this will wipe out all the records in the dataset.
     ![Enter parameters](../images/jda103.png "Enter parameters")
 
 8. Click on "Submit"

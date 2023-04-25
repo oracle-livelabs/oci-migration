@@ -24,7 +24,7 @@ This lab assumes you have:
 
 ## Task 1: Set up RBAC
 
-1. To perform RBAC setup with the UMX\_ECC\_RBACAuto.sh script, you should copy/paste the following command (case is important):
+1. Go to EBS terminal. To perform RBAC setup with the UMX\_ECC\_RBACAuto.sh script, you should copy/paste the following command (case is important):
 
     ```
   	 <copy>source /u01/install/APPS/EBSapps.env run</copy>
@@ -139,30 +139,30 @@ Password: welcome1
 
     ![Schedule request](../images/eccuser4.png "Schedule request")
 
+5. You can also optionally choose to bookmark the "Schedule request" page now, so that you can use it in the future when you have to run data loads for other command centers. Below is an example.
+    ![Bookmark schedule request page](../images/bookmark10.png "Bookmark schedule request page")
 
-
-
-5. Choose "Payables Command Center Data Load" in the Program name by copying it from below and pasting in the Program Name
+6. Choose "Payables Command Center Data Load" in the Program name by copying it from below and pasting in the Program Name
 
     ```
   	 <copy>Payables Command Center Data Load</copy>
     ```
 
 
-6. You should see the below screen
+7. You should see the below screen
 
     ![Payables Command Center Data Load](../images/ipl1.png "Payables Command Center Data Load")
-7. Go to "Parameters" tab and then select **FULL_LOAD** as Load Type and Click "Continue"
+8. Go to "Parameters" tab and then select **FULL_LOAD** as Load Type and Click "Continue"
 
     ![Enter parameters](../images/ipl2.png "Enter parameters")
-8. Click "Submit"
+9. Click "Submit"
     ![Click submit](../images/ipl3.png "Click submit")
-9. You should see the below screen once the data load is successful
+10. You should see the below screen once the data load is successful
 
     ![Successful data load message](../images/ipl4.png "Successful data load message")
-10. You can track the dataload 
+11. You can track the dataload 
     ![Track dataload in EBS](../images/ipl5.png "Track dataload in EBS")
-11. Or You can also track the dataload by copying the Concurrent Program ID then navigating to ECC Developer i.e., (Navigating to http://apps.example.com:8000/ecc) and then to Data Load Tracking Page using admin credentials provided below:
+12. Or You can also track the dataload by copying the Concurrent Program ID then navigating to ECC Developer i.e., (Navigating to http://apps.example.com:8000/ecc) and then to Data Load Tracking Page using admin credentials provided below:
 
 
     ```
@@ -171,12 +171,12 @@ Password: welcome1
     ```
 
 
-12. You can check the respective job using the Concurrent Program ID, as shown in below image
+13. You can check the respective job using the Concurrent Program ID, as shown in below image
 
     ![Track dataload in ECC](../images/ipl6.png "Track dataload in ECC")
 
 
-13. From ECC:
+14. From ECC:
     - User can check details for each query in real time.
     - It reflects the current load status: Number of successful rows and number of failed rows.
     - It shows when the query started, how much time spent at the DB, the sql text and the operation.
@@ -185,14 +185,14 @@ Password: welcome1
     SQL Trace can be enabled by passing “TRUE” value while starting the data load Concurrent Program.
     The trace log file will be generated with the ECC Data Load sub-request “Job ID” as the identifier. The “Job ID” is noted in the log file of sub-request.
 
-14. Data Load job structure request:
+15. Data Load job structure request:
     - One “Audit Request” per job
     - One “Dataset Key” per dataset included at the job
     - One “Audit Load Rule” per load rule for each “Audit Dataset”
     - One “Audit Load Detail” for each query retrieved from the load rule for each “Audit Load Rule”
 
 
-15. The following image describes Self Job Concurrency Matrix
+16. The following image describes Self Job Concurrency Matrix
 
     ![Self Job Concurrency Matrix](../images/matrix.png "Self Job Concurrency Matrix") 
 
