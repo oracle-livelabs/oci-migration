@@ -63,7 +63,12 @@ This task is optional. **EBS\_ECC\_USER** is the Oracle E-Business Suite user na
 
 1.  Make sure that from ECC terminal you update EBS\_ECC\_USER value in /u01/Oracle/quickInstall/EccConfig.properties  to ECC\_DISCOVERY\_HOL\_{yourname}, to do that follow the below steps:
 
-   - In ECC terminal type vi /u01/Oracle/quickInstall/EccConfig.properties to open the file
+   - In ECC terminal copy/paste the below command to open the file
+   
+    ```
+  	 <copy>vi /u01/Oracle/quickInstall/EccConfig.properties</copy>
+    ```
+
    - To insert or update please enter "i" on the keyboard
    - Update EBS\_ECC\_USER property
    - Enter "Esc" on the keyboard and enter ":wq" and then press "Enter" to save the file
@@ -186,13 +191,13 @@ Password= welcome1
 
     ![choose Edit Parameters](../images/autoconfig2.png "choose Edit Parameters")
 
- 4. Search for the the following variable in the search text box
+ 4. Select OA_VAR in the search list of values and then search for the the following variable in the search text box
 
     ```
   	 <copy>s\_ecc\_conf\_comment</copy>
     ```
  
- and select OA_VAR in the search list of values. Then, click the "Go" button.
+    Then, click the "Go" button.
 5.  Like in the below image
     ![Find variables](../images/autoconfig3.png "Find variables")
 
@@ -208,14 +213,14 @@ Password= welcome1
     3. **s\_ecc\_managed\_server\_port** - The port for the Oracle Enterprise Command Center Framework managed server.
     4. **s\_ecc\_conf\_update** - A flag to update the ecc.conf file. If Oracle Enterprise Command Center Framework is enabled, use this variable to specify whether the ecc.conf file should be updated. The default value is true, which means ecc.conf will be updated during every AutoConfig run. To retain the contents of ecc.conf, such as when you are enabling TLS for the Oracle Enterprise Command Center Framework installation, set this variable to false.
 
- ![Set variables](../images/autoconfig.png "Set variables")
+![Set variables](../images/autoconfig.png "Set variables")
 
 6. Open EBS terminal and then run AutoConfig. For running Autoconfig you need to first source the EBS running edition using below command
 
     ```
   	 <copy>source /u01/install/APPS/EBSapps.env run</copy>
     ```
-
+    ![Source EBS](../images/autoconfig1k.png "Source EBS")
 
 7. Then, navigate to below location
 
@@ -223,7 +228,7 @@ Password= welcome1
   	 <copy>cd $ADMIN_SCRIPTS_HOME</copy>
     ```
 
-
+    ![Navigate to ADMIN SCRIPTS HOME](../images/autoconfig2k.png "Navigate to ADMIN SCRIPTS HOME")
 
 8. Run the below script
 
@@ -234,7 +239,7 @@ Password= welcome1
 
 9. It will prompt you for apps password which is by default **apps** 
 
-    ![Run autoconfig](../images/autoconfig4.png "Run autoconfig")
+    ![Run autoconfig](../images/autoconfig3k.png "Run autoconfig")
     ![Run autoconfig](../images/autoconfig101.png "Run autoconfig")
 
 10. Once Autoconfig runs successfully then navigate to below location:
