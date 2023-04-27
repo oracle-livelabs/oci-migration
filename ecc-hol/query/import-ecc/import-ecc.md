@@ -46,7 +46,12 @@ This lab assumes you have:
 
 
 
-4. When you run patchEccFiles.pl it will prompt you to enter a temporary directory, so enter**/tmp/ecc1**
+4. When you run patchEccFiles.pl it will prompt you to enter a temporary directory. Copy/paste the below directory
+
+    ```
+  	 <copy>/tmp/ecc1</copy>
+    ```
+
 5. When prompted enter EBS DB apps user password as **apps**
 6. When prompted you need to pass the languages that you need to import. Use "en" 
 
