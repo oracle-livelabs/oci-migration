@@ -9,8 +9,8 @@ Estimated Workshop Time: 1.5 hours
 Notes:
 
 * The workshop is quite detailed and technical. PLEASE take your time and DO NOT skip any steps.
-* IP addresses and URLs in the screenshots in this workbook may differ from what you use in the labs as these are dynamically generated.
-* For security purposes, some sensitive text (such as IP addresses) may be redacted in the screenshots in this workbook.
+* IP addresses and URLs in the screenshots in this procedure may differ from what you use in the labs as these are dynamically generated.
+* For security purposes, some sensitive text (such as IP addresses) may be redacted in the screenshots in this procedure.
 
 UNIX commands (usually executed in an SSH session using PuTTY) are displayed in a monospace font within a box, as follows:
 
@@ -53,10 +53,10 @@ Figure W-2: Storyboard
 ### Objectives
 
 In this lab, you will:
-* Prepare your Oracle E-Business Suite environment
-* Deploy the Oracle E-Business Suite Cloud Manager Compute instance using an Oracle Cloud Infrastructure Marketplace image and configure Oracle E-Business Suite Cloud Manager
-* Use One-Click Provisioning feature of Oracle E-Business Suite Cloud Manager to provision an Oracle E-Business Suite environment
-* Use Cloning feature of Oracle E-Business Suite Cloud Manager to clone your Oracle E-Business Suite environment
+* Prepare your Oracle E-Business Suite environment.
+* Deploy the Oracle E-Business Suite Cloud Manager Compute instance using an Oracle Cloud Infrastructure Marketplace image and configure Oracle E-Business Suite Cloud Manager.
+* Use One-Click Provisioning feature of Oracle E-Business Suite Cloud Manager to provision an Oracle E-Business Suite environment.
+* Use Cloning feature of Oracle E-Business Suite Cloud Manager to clone your Oracle E-Business Suite environment.
 
 ### Prerequisites
 
@@ -65,17 +65,17 @@ You will need the following in order to complete this workshop:
 * A modern browser
 * A secure remote login (Secure Shell, or SSH) utility
         - Such as PuTTY - downloaded from [here](https://www.ssh.com/ssh/putty/download)
-* A secure copy program
+* A secure copy program (If using Windows)
         - Such as WinSCP - downloaded from [here](https://winscp.net/eng/index.php)
 * Knowledge of basic UNIX commands
 
 ## Setup
 
-In this section, you will prepare your workstation. In addition the following zip file provides a key-data.txt to store all information that you will need to refer back to. We recommend you use this file to store your variables while going through the lab.
+In this section, you will prepare your workstation. In addition the following zip file provides a ``key-data.txt`` to store all information that you will need to refer back to. We recommend you use this file to store your variables while going through the lab.
 
-Use [this](https://objectstorage.us-ashburn-1.oraclecloud.com/p/vrY7zeM7llOTsL5UyR9u5jQzp8JZzDiir7YdPDyc81zdG8psYU3bWM4LuwAemOUJ/n/orasenatdpltoci03/b/EBS-HOL-Files/o/ebs-hol.zip) link to download the files.
+Use [this](https://objectstorage.us-ashburn-1.oraclecloud.com/p/vrY7zeM7llOTsL5UyR9u5jQzp8JZzDiir7YdPDyc81zdG[…]orasenatdpltoci03/b/EBS-HOL-Files/o/ebs-hol.zip) link to download the files.
 
-Additionally there is a terraform configuration included if you would do this lab using resource manager. This lab uses marketplace stack, but if you decide to use resource manager the terraform file is available.
+Additionally, there is a terraform configuration included if you would like do this lab using resource manager. This lab uses marketplace stack, but if you decide to use resource manager the terraform file is available.
 
 Proceed to the appropriate section, depending on your workstation operating system:
 
@@ -83,11 +83,11 @@ Proceed to the appropriate section, depending on your workstation operating syst
 
 From the download link:
 
-  1. Download the hol zip file.
+  1. Download the ebs-hol.zip file.
 
   2. Open Windows Explorer and navigate to the downloaded zip file.
 
-  3. Move the zip file to your folder Desktop
+  3. Move the zip file to your folder Desktop.
 
   4. Unzip the files.
 
@@ -95,11 +95,11 @@ From the download link:
 
 From the download link:
 
-  1. Download the hol zip file.
+  1. Download the ebs-hol.zip file.
 
   2. Open Finder and navigate to the downloaded zip file.
 
-  3. Move the zip file to your Desktop
+  3. Move the zip file to your Desktop.
 
   4. Unzip the files.
 
@@ -139,8 +139,13 @@ The following terms are commonly employed in Oracle E-Business Suite cloud opera
 
 ## Acknowledgements
 
-* **Author:** Quintin Hill, Cloud Engineering
-* **Contributors:** Santiago Bastidas, Product Management Director
-* **Last Updated By/Date:** Quintin Hill, Cloud Engineering, May 2021
+* **Authors:** 
+  * Quintin Hill, Cloud Engineering
+  * Vijay Kumar Vudari Satyanarayana, Principal Cloud Architect
+  * Danish Ansari, Principal Cloud Architect
+* **Contributors:** 
+  * Santiago Bastidas, Product Management Director
+  * Chris Wegenek, Cloud Engineering
+* **Last Updated By/Date:** Tiffany Romero, EBS Documentation, May 2023
 
 
