@@ -21,7 +21,7 @@ Estimated Lab Time: 15 minutes
 
 2. For ebsholenv1, click the stacked lines to the right of the environment and select **Delete**. Confirm deletion by selecting **Yes** on the popup. 
 
-    ![](./images/delete-env.png " ")
+    ![This screenshot shows ebsholenv1 on the Cloud Manager Environments page.](./images/delete-env.png " ")
 
     The environment will begin the deletion process. This will teardown all resources created by the environment. You can check the progress of the deletion by clicking the link next to Latest Activity. 
 
@@ -34,11 +34,11 @@ Estimated Lab Time: 15 minutes
 
 1. Navigate to the OCI console and login as the tenancy admin user. Go to **Developer Services** > **Resource Manager** > **Stacks** and select the stack you used to create the Cloud Manager environment (ensure that you are in the correct compartment if no items display).
 
-    ![](./images/stacks.png " ")
+    ![This screenshot shows the navigation to Stacks within the Oracle Cloud console navigation menu.](./images/stacks.png " ")
 
-2. In the Stack Details Page, select **Destroy**. Name your destroy job whatever you like and then click **Destroy**.
+2. In the Stack Details page, select **Destroy**. Name your destroy job whatever you like and then click **Destroy**.
 
-    ![](./images/destroy.png " ")
+    ![This screenshot shows the Stacks Details page and highlights the Destroy button within the user interface.](./images/destroy.png " ")
 
     The job will run and teardown all resources created by the stack, including the Cloud Manager instance and the Networking components. 
 
@@ -46,13 +46,13 @@ Estimated Lab Time: 15 minutes
 
     Note: There may be resources still listed in the compartment, but they should have a status of **Terminated**. If there are still active resources in the compartment, you will need to destroy them before deleting the compartment. 
 
-    ![](./images/explorer.png " ")
+    ![This screenshot shows the navigation to Tenancy Explorer within the Oracle Cloud console navigation menu.](./images/explorer.png " ")
 
-    ![](./images/empty-compartment.png " ")
+    ![This screenshot shows the Compartment Explorer page.](./images/empty-compartment.png " ")
 
     In the Tenancy Explorer when viewing the **ebshol\_compartment** parent compartment (in this case the root compartment), you can click on the three dots to the right of **ebshol\_compartment** and then delete the compartment.
 
-    ![](./images/delete-compartment.png " ")
+    ![This screenshot shows a snippet of the Compartment Explorer page.](./images/delete-compartment.png " ")
 
     You have now torn down all the resources you created for the EBS Cloud Manager Instance and its EBS Environments. 
 
@@ -70,6 +70,6 @@ If you're interested in the full capabilities of EBS Cloud manager and would lik
   - Quintin Hill, Cloud Engineering
   - Mitsu Mehta, Cloud Engineering
   - Chris Wegenek, Cloud Engineering
-* **Last Updated By/Date:** Chris Wegenek, Cloud Engineering, September 2021
+* **Last Updated By/Date:** Tiffany Romero, EBS Documentation, May 2023
 
 

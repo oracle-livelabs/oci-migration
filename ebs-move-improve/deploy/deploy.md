@@ -55,7 +55,7 @@ Then, the stack will configure Oracle E-Business Suite Cloud Manager to work wit
 
 1. In the Oracle Cloud Infrastructure console navigation menu, under **Marketplace** select **All Applications**.
 
-  ![](./images/1.png " ")
+  ![This screenshot depicts the navigation to All Applications within the Oracle Cloud Infrastructure console navigation menu.](./images/1.png " ")
 
 2. From the Marketplace applications page:
 
@@ -65,7 +65,7 @@ Then, the stack will configure Oracle E-Business Suite Cloud Manager to work wit
 
     c. Click the application **Oracle E-Business Suite Cloud Manager Stack for Demos**
 
-    ![](./images/2.png " ")
+    ![This screenshot shows the Marketplace applications page and the Oracle E-Business Suite Cloud Manager Stack for Demos which must be selected.](./images/2.png " ")
 
 3. In the version drop-down list, ensure that the default is selected.
 
@@ -75,7 +75,7 @@ Then, the stack will configure Oracle E-Business Suite Cloud Manager to work wit
 
 6. Click **Launch Stack**.
 
-  ![](./images/3.png " ")
+  ![This screenshot shows the Oracle E-Business Suite Cloud Manager Stack for Demos in the Marketplace and highlights the Version drop-down list and the check box which must be selected to accept the Terms of Use.](./images/3.png " ")
 
 7. On the Stack Information screen, enter the following values:
 
@@ -89,9 +89,9 @@ Then, the stack will configure Oracle E-Business Suite Cloud Manager to work wit
 
       2. **Terraform Version**: 0.12.x
 
-    d. Click Next
+    d. Click **Next**.
 
-    ![](./images/4.png " ")
+    ![This screenshot shows the Create Stack page and within the Stack Information section, highlighted are the Name field, Description field, and the Next button.](./images/4.png " ")
 
 8. On the Configure Variables screen, enter the following values:
 
@@ -109,14 +109,14 @@ Then, the stack will configure Oracle E-Business Suite Cloud Manager to work wit
 
     f. **Create New REST API key**: Make sure it is checked.
 
-    ![](./images/5.png " ")
+    ![This screenshot shows the Create Stack page and within the Configure variables section, shows the Setup Details and the EBS Cloud Manager Administrator Details which must be completed.](./images/5.png " ")
 
     g. **Server Host for EBS Cloud Manager Login URL**: ``myebscm.ebshol.org``
 
     h. **EBS Cloud Manager Shape**: ``VM.Standard.E2.2``
 
     i. **EBS Cloud Manager Admin Password**:
-      - Note: This password is what will allow you to login to the cloud manager instance that is created and **CAN** be different than the user password for logging into the IDCS Admin Console.
+      - Note: This password is what will allow you to login to the cloud manager instance that is created and **CAN** be different than the user password for logging into the OCI Console.
       - Add this password to your ``key-data.txt`` file.
 
     j. **Public Key**:
@@ -127,7 +127,7 @@ Then, the stack will configure Oracle E-Business Suite Cloud Manager to work wit
 
     k. **EBS Cloud Manager Availability Domain**: Choose the availability domain that ends in **-1** from the list.
 
-      ![](./images/6.png " ")
+      ![This screenshot shows the Create Stack page and within the Configure variables section, shows the EBS Cloud Manager Instance Details which must be completed.](./images/6.png " ")
 
     l. **Custom CIDR Ranges**: Leave unchecked.
 
@@ -143,15 +143,15 @@ Then, the stack will configure Oracle E-Business Suite Cloud Manager to work wit
 
     o. Click **Next**.
 
-    ![](./images/7.png " ")
+    ![This screenshot shows the Create Stack page and within the Configure variables section, shows the EBS Cloud Manager Network Details and the IDCS Details which must be completed.](./images/7.png " ")
 
-9. On the Review screen, verify the information and click **Create**.
+9. On the Review screen, verify the information, and click **Create**.
 
-  ![](./images/8.png " ")
+  ![This screenshot shows the Review section withing the Create Stack page. This screen is where you must verify the information entered to create the stack.](./images/8.png " ")
 
 10. This takes you to the Stack Details page for your newly created stack. You will notice that the job status will cycle through **Accepted**, **In Progress**, and **Succeeded**. This will take some time to complete.
 
-  ![](./images/9.png " ")
+  ![This screenshot is of the Stack Details page of the newly created stack.](./images/9.png " ")
 
   After the job succeeds, you will have all the network resources (VCN, load balancer, subnets, and so on) required to deploy the Oracle E-Business Suite Cloud Manager Compute instance.
 
@@ -159,7 +159,7 @@ Then, the stack will configure Oracle E-Business Suite Cloud Manager to work wit
 
   Copy and paste **Private IP**, **Public IP**, **Login URL**, and **LB Public IP** to the equivalent fields in your ``key-data.txt`` file. These variables are needed for the remainder of the procedures in this lab.
 
-  ![](./images/11.png " ")
+  ![This screenshot is of the stack log output, highlighting the private IP, public IP, login URL, and load balacer public IP information that you must note in your key-data.txt file.](./images/11.png " ")
 
 ## Task 3: Log in to Oracle E-Business Suite Cloud Manager
 
@@ -179,9 +179,9 @@ Edit the local ``hosts`` file on your laptop and add an entry.
 
   4. Browse to ``C:\\Windows\System32\drivers\etc``.
 
-  5. Find the **file hosts**
+  5. Find the file "hosts".
 
-      ![](./images/12.png " ")
+      ![This screenshot depicts the navigation to the hosts file within Windows Explorer. ](./images/12.png " ")
 
   6. In the hosts file, scroll down to the end of the content.
 
@@ -209,7 +209,7 @@ Edit the local ``hosts`` file on your laptop and add an entry.
 
   5. Once you have finished editing the file, hit 'esc' and type ':wq' to save and exit.
 
-  ![](./images/13.png " ")
+  ![This screenshot shows how to edit the hosts file on a Mac.](./images/13.png " ")
 
 Type the Login URL generated and documented to your ``key-data.txt`` previously into your browser.
 
@@ -221,11 +221,11 @@ Log into the Oracle E-Business Suite Cloud Manager using your IDCS credentials f
 
   Note: Your browser may give you an error when attempting to access the EBS Cloud Manager. If you run into an error using the EBS login URL try using a different browser or an incognito session. If this does not solve the problem, try adding ``:443`` after the url (i.e. ``https://myebscm.ebshol.org:443``).
 
-  ![](./images/14.png " ")
+  ![This screenshot is of the Oracle Cloud Account Sign In page.](./images/14.png " ")
 
 Once logged in, you are on the **Environments page**.
 
-  ![](./images/15.png " ")
+  ![This screenshot is of the Environments page within the Oracle E-Business Suite Cloud Manager user interface.](./images/15.png " ")
 
 You may now proceed to the next lab.
 

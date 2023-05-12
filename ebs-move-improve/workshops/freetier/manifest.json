@@ -1,6 +1,6 @@
 {
-    "workshoptitle": "Lift and Shift On-premises EBS to OCI",
-    "help": "livelabs-help-oci_us@oracle.com",
+    "workshoptitle": "Lift and Shift On-Premises EBS to OCI",
+    "help": "livelabs-help-ebs_tech_us_grp@oracle.com",
     "tutorials": [
         {
             "title": "Introduction",
@@ -10,7 +10,7 @@
         {
             "title": "Getting Started",
             "description": "This is the prerequisites for customers using Free Trial and Paid tenancies, and Always Free accounts (if applicable).",
-            "filename": "https://raw.githubusercontent.com/oracle/learning-library/master/common/labs/cloud-login/pre-register-free-tier-account.md"
+            "filename": "https://oracle-livelabs.github.io/common/labs/cloud-login/cloud-login.md"
         },
         {
             "title": "Lab 1: Preparing Your Tenancy for Oracle E-Business Suite",
@@ -56,7 +56,7 @@
         {
             "title": "Need Help?",
             "description": "Solutions to Common Problems and Directions for Receiving Live Help",
-            "filename": "https://raw.githubusercontent.com/oracle/learning-library/master/oci-library/need-help/need-help-livelabs.md"
+            "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"
         }
      ]
 }

@@ -2,7 +2,7 @@
 
 ## About this Workshop
 
-This workshop showcases the use of the Oracle E-Business Suite Cloud Manager graphical user interface to provision and clone environments on Oracle Cloud Infrastructure. In addition, a demonstration of the lift and shift of an on-premises Oracle E-Business Suite environment to Oracle Cloud Infrastructure will be conducted.
+This workshop showcases the use of the Oracle E-Business Suite (EBS) Cloud Manager graphical user interface to provision and clone environments on Oracle Cloud Infrastructure (OCI). In addition, a demonstration of the lift and shift of an on-premises Oracle E-Business Suite environment to Oracle Cloud Infrastructure will be conducted.
 
 Estimated Workshop Time: 1.5 hours
 
@@ -14,16 +14,16 @@ Notes:
 
 UNIX commands (usually executed in an SSH session using PuTTY) are displayed in a monospace font within a box, as follows:
 
-```
+<copy>
 $ sudo yum install wget -y $ wget -O bitnami-mean-linux-installer.run https://bitnami.com/stack/mean/download_latest/linux-x64
-```
+</copy>
 
 ### Workshop Overview
 
 The following figure (W-1) outlines the workshop architecture.
 Figure W-1: Workshop Architecture
 
-![](./images/1.png " ")
+![Workshop Architecture diagram](./images/1.png " ")
 
 This workshop uses the following components:
 
@@ -48,7 +48,7 @@ This workshop uses the following components:
 The following figure (W-2) describes the exercises that you will perform in this workshop.
 Figure W-2: Storyboard
 
-![](./images/2.png " ")
+![Storyboard](./images/2.png " ")
 
 ### Objectives
 
@@ -69,11 +69,11 @@ You will need the following in order to complete this workshop:
         - Such as WinSCP - downloaded from [here](https://winscp.net/eng/index.php)
 * Knowledge of basic UNIX commands
 
-## Setup
+## Task 1: Setup
 
 In this section, you will prepare your workstation. In addition the following zip file provides a ``key-data.txt`` to store all information that you will need to refer back to. We recommend you use this file to store your variables while going through the lab.
 
-Use [this](https://objectstorage.us-ashburn-1.oraclecloud.com/p/vrY7zeM7llOTsL5UyR9u5jQzp8JZzDiir7YdPDyc81zdG[…]orasenatdpltoci03/b/EBS-HOL-Files/o/ebs-hol.zip) link to download the files.
+Use [this](https://objectstorage.us-ashburn-1.oraclecloud.com/p/vrY7zeM7llOTsL5UyR9u5jQzp8JZzDiir7YdPDyc81zdG8psYU3bWM4LuwAemOUJ/n/orasenatdpltoci03/b/EBS-HOL-Files/o/ebs-hol.zip) link to download the files.
 
 Additionally, there is a terraform configuration included if you would like do this lab using resource manager. This lab uses marketplace stack, but if you decide to use resource manager the terraform file is available.
 

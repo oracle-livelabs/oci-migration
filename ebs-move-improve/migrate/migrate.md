@@ -4,8 +4,8 @@
 
 This workshop showcases the use of the migration of an existing Oracle E-Business Suite to Oracle Cloud Infrastructure using the Object Storage service to our Cloud Manager instance. 
 
-### **Access this workshop**:
-[**Migrate EBS to OCI EBS Cloud Manager**](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/workshop-attendee-2?p210_workshop_id=753&p210_type=1&session=12356884103673)
+## Task 1: Access this workshop
+You can find the workshop at [Migrate EBS to OCI EBS Cloud Manager](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/run-workshop?p210_wid=753).
 
 Estimated Workshop Time: 1.5 hours
     Note: This does not include downtime for creating the backup, which lasts about 2.5 hours. 
@@ -26,7 +26,6 @@ Notes:
 
 ### Workshop Overview
 
-
 This workshop uses the following components:
 
 * Trial accounts (one per attendee).
@@ -42,8 +41,6 @@ This workshop uses the following components:
 * Oracle E-Business Suite environment 1 Compute instance.
     - User-provisioned environment from OCI Marketplace.
     - Application and database tiers on this compute instance.
-
-
 
 ### Objectives
 
@@ -73,7 +70,7 @@ In this lab, you will:
 * `Oracle_Cloud_Compartment_OCID`
 * `Cloud_Manager_Instance_public_IP`
 
-**From your source EBS Instance**
+**From your source EBS Instance:**
 
 * `Source_EBS_Instance_public_IP`
 * `Source_EBS_Instance_private_IP`
@@ -81,14 +78,10 @@ In this lab, you will:
 * `apps_password` (In this Lab: apps)
 * `weblogic_password` (In this Lab: welcome1)
 
-**Access this workshop**
-
-[**Migrate EBS to OCI EBS Cloud Manager**](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/workshop-attendee-2?p210_workshop_id=753&p210_type=1&session=12356884103673)
-
 ## Acknowledgements
 
 * **Author:** William Masdon, Cloud Engineering
 * **Contributors:** Santiago Bastidas, Product Management Director
 * **Contributors:** Quintin Hill, Cloud Engineering
-* **Last Updated By/Date:** William Masdon, Cloud Engineering, May 2021
+* **Last Updated By/Date:** Tiffany Romero, EBS Documentation, May 2023
 
