@@ -21,8 +21,6 @@
           "description": "This lab is to be done if you want to run the workshop in your own tenanct.",
           "filename": "../../query/prepare-and-setup/prepare-and-setup.md"
         }, 
-      
-        
         {
           "title": "Lab 1: Kick off the installation process",
           "filename": "../../query/create-ecc-schema/create-ecc-schema.md"
@@ -36,40 +34,42 @@
           "filename": "../../query/register-ecc-instance/register-ecc-instance.md"
         },
         {
-          "title": "Lab 4: Import ECC applications",
+          "title": "Lab 4: Integrate EBS to ECC  instance", 
+          "filename": "../../query/integrate-ebsecc-instance/integrate-ebsecc-instance.md"
+        },
+        {
+          "title": "Lab 5: Import ECC applications",
           "filename": "../../query/import-ecc/import-ecc.md"
         },
         {
-                "title": "Lab 5: Run dataload",
-                "filename": "../../query/run-dataload/run-dataload.md"
+          "title": "Lab 6: Run dataload",
+          "filename": "../../query/run-dataload/run-dataload.md"
         },
         {
-          "title": "Lab 6: ECC anatomy",
+          "title": "Lab 7: ECC anatomy",
           "filename": "../../query/ecc-anatomy/ecc-anatomy.md"
         },
-    
-    
-    {
-      "title": "Lab 7: Power user personalization",
-      "filename": "../../query/poweruser-personalization/poweruser-personalization.md"
-    },
-    {
-      "title": "Lab 8: Admin user personalization",
-      "filename": "../../query/adminuser-personalization/adminuser-personalization.md"
-    },
-    
-    {
-      "title": "Lab 9: Diagnose and monitor",
-      "filename": "../../query/diagnose-and-monitor/diagnose-and-monitor.md"
-    },
-    {
-      "title": "Additional optional labs: Start and stop ECC",
-      "filename": "../../query/start-stop-ecc/start-stop-ecc.md"
-    },
-    {
-      "title": "Additional optional labs: Improve performance",
-      "filename": "../../query/improve-performance/improve-performance.md"
-    },
+       {
+         "title": "Lab 8: Power user personalization",
+         "filename": "../../query/poweruser-personalization/poweruser-personalization.md"
+       },
+       {
+         "title": "Lab 9: Admin user personalization",
+         "filename": "../../query/adminuser-personalization/adminuser-personalization.md"
+       },
+       
+       {
+         "title": "Lab 10: Diagnose and monitor",
+         "filename": "../../query/diagnose-and-monitor/diagnose-and-monitor.md"
+       },
+       {
+         "title": "Additional optional labs: Start and stop ECC",
+         "filename": "../../query/start-stop-ecc/start-stop-ecc.md"
+       },
+       {
+         "title": "Additional optional labs: Improve performance",
+         "filename": "../../query/improve-performance/improve-performance.md"
+       },
         {
           "title": "Need help?",
           "description": "Solutions to Common Problems and Directions for Receiving Live Help",

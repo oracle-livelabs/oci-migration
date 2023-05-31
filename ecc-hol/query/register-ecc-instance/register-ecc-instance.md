@@ -95,9 +95,17 @@ This task is optional. **EBS\_ECC\_USER** is the Oracle E-Business Suite user na
     ![Create EBS JNDI](../images/jndi1.png "Create EBS JNDI")
     ![Provide a password to create new FND user](../images/jndi22.png "Provide a password to create new FND user")
 
-   * When prompted provide a password to create new FND user as **welcome1**
-   * Password for ECC Domain weblogic was previously set by you as **welcome1**
-   * Password for EBS Schema apps is always **apps**
+
+    ```
+* When prompted provide a password to create new FND user as **welcome1**
+* Password for ECC Domain weblogic was previously set by you as **welcome1**
+* Password for EBS Schema apps is always **apps**
+    ```
+
+
+
+
+   
 
 ## Task 4: Validate EBS JNDI
 
@@ -171,142 +179,6 @@ Open chrome browser and enter the following URL
 1. You will see the below screen when ECC is integrated with EBS successfully:
 
     ![User Not Authenticated to Access ECC](../images/auth2.png "User Not Authenticated to Access ECC")
-
-
-## Task 7: Integrate EBS with ECC 
-
- 1. Log in to Oracle E-Business Suite as a system administrator i.e., Open the browser and navigate to http://apps.example.com:8000 
-
-    ```
-  	 Username= SYSADMIN
-Password= welcome1
-    ```
-
-
- 2. Navigate to System Administrator: Oracle Applications Manager > AutoConfig.
-
-    ![Click on AutoConfig](../images/autoconfig10.png "Click on AutoConfig")
-
- 3. Select the application tier context file, and choose "Edit Parameters"
-
-    ![choose Edit Parameters](../images/autoconfig2.png "choose Edit Parameters")
-
- 4. Select OA_VAR in the search list of values and then search for the the following variable in the search text box
-
-    ```
-  	 <copy>s\_ecc\_conf\_comment</copy>
-    ```
- 
-    Then, click the "Go" button.
-5.  Like in the below image
-    ![Find variables](../images/autoconfig3.png "Find variables")
-
- **Note:** 
- If  number sign (#) is present in Value field then remove it from the Value field for the s\_ecc\_conf\_comment variable to ensure that this variable is not commented. Then, click the "Save" button.
- 
- Enter a reason for the update, such as Enabling Oracle Enterprise Command Center Framework. Then choose the OK button.
- 
- Similarly, search for the following variables and set their values as appropriate for your installation:
-
-    1. **s\_ecc\_protocol** - The protocol for accessing the Oracle Enterprise Command Center Framework administration UI.
-    2. **s\_ecc\_web_host** - The Oracle Enterprise Command Center Framework host name.
-    3. **s\_ecc\_managed\_server\_port** - The port for the Oracle Enterprise Command Center Framework managed server.
-    4. **s\_ecc\_conf\_update** - A flag to update the ecc.conf file. If Oracle Enterprise Command Center Framework is enabled, use this variable to specify whether the ecc.conf file should be updated. The default value is true, which means ecc.conf will be updated during every AutoConfig run. To retain the contents of ecc.conf, such as when you are enabling TLS for the Oracle Enterprise Command Center Framework installation, set this variable to false.
-
-![Set variables](../images/autoconfig.png "Set variables")
-
-6. Open EBS terminal and then run AutoConfig. For running Autoconfig you need to first source the EBS running edition using below command
-
-    ```
-  	 <copy>source /u01/install/APPS/EBSapps.env run</copy>
-    ```
-    ![Source EBS](../images/autoconfig1k.png "Source EBS")
-
-7. Then, navigate to below location
-
-    ```
-  	 <copy>cd $ADMIN_SCRIPTS_HOME</copy>
-    ```
-
-    ![Navigate to ADMIN SCRIPTS HOME](../images/autoconfig2k.png "Navigate to ADMIN SCRIPTS HOME")
-
-8. Run the below script
-
-    ```
-  	 <copy>./adautocfg.sh</copy>
-    ```
-
-
-9. It will prompt you for apps password which is by default **apps** 
-
-    ![Run autoconfig](../images/autoconfig3k.png "Run autoconfig")
-    ![Run autoconfig](../images/autoconfig101.png "Run autoconfig")
-
-10. Once Autoconfig runs successfully then navigate to below location:
-
-    ```
-  	 <copy>cd $ADMIN_SCRIPTS_HOME</copy>
-    ```
-
-
-
-    ![Navigate to $ADMIN_SCRIPTS_HOME ](../images/adh12.png "Navigate to $ADMIN_SCRIPTS_HOME")
-
-
-
-
-11. And then, run the following script to check OHS status:
-
-
-    ```
-  	 <copy>./adapcctl.sh status</copy>
-    ```
-
-    ![Check OHS status](../images/adh22.png "Check OHS status")
-
-12. And then, run the following script to stop OHS:
-
-
-    ```
-  	 <copy>./adapcctl.sh stop</copy>
-    ```
-
-
-    ![Stop OHS](../images/adh77.png "Stop OHS")   
-
-13. And then, run the following script to start OHS:
-
-    ```
-  	 <copy>./adapcctl.sh start</copy>
-    ```
-
-
-    ![Start OHS](../images/adh44.png "Start OHS ")
-
-14. And then, run the following script again to check the OHS status if it has successfully started:
-
-    ```
-  	 <copy> ./adapcctl.sh status</copy>
-    ```
-
-
-
-    ![Check OHS status](../images/adh55.png "Check OHS status")
-
-## Task 8: Validate integration of EBS and ECC 
-
-1. Navigate to http://apps.example.com:8000 in the browser with below credentials 
-
-
-    ```
-  	 Username: SYSADMIN
-Password: welcome1
-    ```
-
-
-    
-2. Navigate to ECC Developer, you should see "Activity audit" application as below if the integration is successful
-    ![Validate integration of EBS and ECC](../images/activityaudit300.png "Validate integration")
 
 
 You may now **proceed to the next lab**
