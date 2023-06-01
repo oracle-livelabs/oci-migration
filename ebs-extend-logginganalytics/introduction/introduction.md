@@ -4,9 +4,11 @@
 
 This workshop is an extension of previous workshop. It showcases the use of enabling OCI Logging Analytics to extend your EBS environment.
 
-In order to complete this lab you will need the resources created in the [Lift and Shift On-Premises EBS to OCI](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668)
+In order to complete this lab you will need the resources created in the [Lift and Shift On-Premises EBS to OCI](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668).
 
-Estimated Workshop Time: 1.5 hours
+**Note:** You do not need to complete the Lift and Shift On-Premises EBS to OCI workshop in order to begin this lab, all you need to do is download an EBS instance from OCI Marketplace. 
+
+Estimated Workshop Time: 2 hours
 
 ### **Background**
 
@@ -24,37 +26,37 @@ Notes:
 
 This workshop uses the following components: 
 
-* Logging Analytics Service from OCI
+* Logging Analytics Service from OCI.
 
 * Virtual Cloud Network and related resources.
     - User-generated using Resource Manager and provided Terraform script.
 
-* Oracle E-Business Suite Cloud Manager and created EBS instances
+* Oracle E-Business Suite Cloud Manager and created EBS instances.
 
 ### Workshop Architecture
 
-* We will build on top of the architecture created in the EBS Lift and Shift On-Premises EBS to OCI as seen in Figure W-1 below
+* We will build on top of the architecture created in the EBS Lift and Shift On-Premises EBS to OCI as seen in Figure W-1 below:
 
 ![](./images/architecturela.png " ")
 
 ### Objectives
 
 In this lab, you will:
-* Set up and use OCI Logging Analytics
+* Set up and use OCI Logging Analytics.
 
 ### **Prerequisites**
 
 * Complete Workshop: [Lift and Shift On-Premises EBS to OCI](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668)
-* Logging analytics requires ssh accessable instances, logging service, service connector, and logging analytics service
+* Logging analytics requires ssh accessable instances, logging service, service connector, and logging analytics service.
 
 **From the previous labs:**
 
-* The IP addresses and SSH path of the instances in your environment
+* The IP addresses and SSH path of the instances in your environment.
 
 You may now proceed to the next lab.
 
 ### Acknowledgements
 
 * **Author:** Quintin Hill, Cloud Engineering
-* **Contributors:** Kumar Varun, Product Management Logging Analytics
-* **Last Updated By/Date:** Quintin Hill, Cloud Engineering, Mar 2021
+* **Contributors:** Kumar Varun, Logging Analytics Product Management. Nicholas Cusato, Taylor Rees, Stephen Stuart, Solution Engineers.
+* **Last Updated By/Date:** Taylor Rees, Stephen Stuart, Soultion Engineering, June 2023

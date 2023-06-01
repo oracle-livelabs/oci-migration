@@ -9,8 +9,8 @@ Estimated Lab Time: 30 minutes
 ### Objectives
 
 In this lab, you will:
-* Onboard Logging Analytics (including policies, users, groups, and dynamic groups for using Logging Analytics Service)
-* At the end of this lab you will have Logging Analytics onboarded in your OCI tenancy
+* Onboard Logging Analytics (including policies, users, groups, and dynamic groups for using Logging Analytics Service).
+* At the end of this lab you will have Logging Analytics onboarded in your OCI tenancy.
 
 ### Prerequisites
 
@@ -19,13 +19,13 @@ In this lab, you will:
 
 ## Task 1: Onboard Logging Analytics Service
 
-1. Enable Logging Analytics
+1. Enable Logging Analytics.
     
     a. Navigate to Logging Analytics - Administration
 
     ![](./images/AdministrationPortal.png " ")
 
-    b.Click the **Start Using Logging Analytics** (if this is not an option, it is already done)
+    b.Click the **Start Using Logging Analytics.** (if this is not an option, it is already done)
 
     ![](./images/StartLogging.png " ")
 
@@ -39,11 +39,11 @@ Create Logging Analytics Group Logging Analytics Super Admins
 
 1. Navigate to Identity - Federation - OracleIdentityCloudService
 
-2. Click on the Url following **Oracle Identity Cloud Service Console**
+2. Click on the URL following **Oracle Identity Cloud Service Console**
 
   ![](./images/IDCSConsole.png " ")
 
-  a. From the IDCS console go to Groups
+  a. From the IDCS console go to Groups.
 
   b. Like in the first step of the EBS Lift and Shift Lab Click **+ Add**
 
@@ -53,7 +53,7 @@ Create Logging Analytics Group Logging Analytics Super Admins
 
   d. Click **Next**
 
-  e. Add your OCI Admin User that you are using to navigate OCI not your EBS Cloud Manager
+  e. Add your OCI Admin User that you are using to navigate OCI not your EBS Cloud Manager.
 
   ![](./images/adduser.png " ")
 
@@ -107,7 +107,7 @@ Create Logging Analytics Group Logging Analytics Super Admins
 
   b. In the policy builder click **Customize(Advanced)** 
 
-  c. Paste the following Policies into the Policy Builder as shown below
+  c. Paste the following Policies into the Policy Builder as shown below:
 
 **Note: If you did note do the optional Step 2 and are using OCI Administrator Group use these policies**
 
@@ -180,7 +180,7 @@ You may now proceed to the next lab.
 
 ## Acknowledgements
 * **Author** - Quintin Hill, Cloud Engineering, Packaged Applications
-* **Contributors** -  Kumar Varun, Logging Analytics Product Management
-* **Last Updated By/Date** - Quintin Hill, Cloud Engineering, Mar 8 2021
+* **Contributors** -  Kumar Varun, Logging Analytics Product Management. Nicholas Cusato, Taylor Rees, Stephen Stuart, Solution Engineers.
+* **Last Updated By/Date** - Taylor Rees, Stephen Stuart, Soultion Engineering, June 2023
 
 

@@ -9,8 +9,8 @@ Estimated Lab Time: 15-30 minutes
 ### Objectives
 
 In this lab, you will:
-* Visualize and Absorb this Data in the Logging Analytics User Interface
-* At the end of this lab you should be ready to begin creating your own dashboards and visualizations
+* Visualize and Absorb this Data in the Logging Analytics User Interface.
+* At the end of this lab you should be ready to begin creating your own dashboards and visualizations.
 
 ### Prerequisites
 * Completed Labs 1-3 
@@ -21,7 +21,7 @@ In this lab, you will:
 
 1. Navigate to Logging Analytics - Log Explorer
 
-  **Note: The corresponding query will be shown captioned below each image**
+  **Note: The corresponding query will be shown captioned below each image.**
 
   Your screen will look similar to this, with a pie chart showing an overview of the different logs that you have ingested. Likely your VCN Flow Logs will dominate your pie chart.
 
@@ -153,7 +153,7 @@ You may now proceed to the next lab.
 
 ## Acknowledgements
 * **Author** - Quintin Hill, Cloud Engineering, Packaged Applications
-* **Contributors** -  Kumar Varun, Logging Analytics Product Management
-* **Last Updated By/Date** - Quintin Hill, Cloud Engineering, Mar 8 2021
+* **Contributors** -  Kumar Varun, Logging Analytics Product Management. Nicholas Cusato, Taylor Rees, Stephen Stuart, Solution Engineers.
+* **Last Updated By/Date** - Taylor Rees, Stephen Stuart, Soultion Engineering, June 2023
 
 

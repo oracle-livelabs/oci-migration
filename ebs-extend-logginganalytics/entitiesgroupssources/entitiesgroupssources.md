@@ -2,17 +2,17 @@
 
 ## Introduction
 
-This lab will setup OCI Logging Analytics Service in the OCI Console creating Entities, Log Groups and Associating Log Sources. Now that we have our agents installed and our flow logs going to logging analytics we will now create entities and associate these entities with log sources
+This lab will setup OCI Logging Analytics Service in the OCI Console creating Entities, Log Groups and Associating Log Sources. Now that we have our agents installed and our flow logs going to logging analytics we will now create entities and associate these entities with log sources.
 
-**Here you can create Entities and Log Sources for the entities that you want to monitor. We recommend you start with one Entity to understand the flow and then repeat the rest**
+**Here you can create Entities and Log Sources for the entities that you want to monitor. We recommend you start with one Entity to understand the flow and then repeat the rest.**
 
 Estimated Lab Time: 30 minutes
 
 ### Objectives
 
 In this lab, you will:
-* Become familiar with creating Entities associating Log Sources and using Log Groups
-* At the end of this lab you will be able to visualize all your ingested data in the Log Explorer
+* Become familiar with creating Entities associating Log Sources and using Log Groups.
+* At the end of this lab you will be able to visualize all your ingested data in the Log Explorer.
 
 ### Prerequisites
 Complete Lab 1 and 2 of this workshop
@@ -119,7 +119,7 @@ You may now proceed to the next lab.
 
 ## Acknowledgements
 * **Author** - Quintin Hill, Cloud Engineering, Packaged Applications
-* **Contributors** -  Kumar Varun, Logging Analytics Product Management
-* **Last Updated By/Date** - Quintin Hill, Cloud Engineering, Mar 8 2021
+* **Contributors** -  Kumar Varun, Logging Analytics Product Management. Nicholas Cusato, Taylor Rees, Stephen Stuart, Solution Engineers.
+* **Last Updated By/Date** - Taylor Rees, Stephen Stuart, Soultion Engineering, June 2023
 
 
