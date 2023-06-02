@@ -37,7 +37,7 @@ This workshop uses the following components:
 
 * We will build on top of the architecture created in the EBS Lift and Shift On-Premises EBS to OCI as seen in Figure W-1 below:
 
-![](./images/architecturela.png " ")
+![Workshop Architecture Diagram](./images/architecturela.png " ")
 
 ### Objectives
 
@@ -55,7 +55,7 @@ In this lab, you will:
 
 You may now proceed to the next lab.
 
-### Acknowledgements
+## Acknowledgements
 
 * **Author:** Quintin Hill, Cloud Engineering
 * **Contributors:** Kumar Varun, Logging Analytics Product Management 
