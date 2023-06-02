@@ -6,13 +6,13 @@ This workshop is an extension of previous workshop. It showcases the use of enab
 
 In order to complete this lab you will need the resources created in the [Lift and Shift On-Premises EBS to OCI](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668).
 
-**Note:** You do not need to complete the Lift and Shift On-Premises EBS to OCI workshop in order to begin this lab, all you need to do is download an EBS instance from OCI Marketplace. 
+**Note:** As an option, you do not need to complete the Lift and Shift On-Premises EBS to OCI workshop in order to begin this lab. Download an EBS instance from OCI Marketplace to begin this lab. 
 
 Estimated Workshop Time: 2 hours
 
 ### **Background**
 
-This lab will leverage the EBS Cloud Manager and affiliated EBS Instances created in the main section of the EBS Lift and Shift Lab. We will now work to incorporate further use of OCI services to enhance our environment
+This lab will leverage the EBS Cloud Manager and affiliated EBS Instances created in the main section of the EBS Lift and Shift Lab. We will now work to incorporate further use of OCI services to enhance our environment.
 
 Notes:
 
@@ -22,7 +22,7 @@ Notes:
 
 ### Workshop Overview
 
-* We will enable Logging Analytics to monitor and manage our technological footprint
+* We will enable Logging Analytics to monitor and manage our technological footprint.
 
 This workshop uses the following components: 
 
@@ -58,5 +58,5 @@ You may now proceed to the next lab.
 ### Acknowledgements
 
 * **Author:** Quintin Hill, Cloud Engineering
-* **Contributors:** Kumar Varun, Logging Analytics Product Management. Nicholas Cusato, Taylor Rees, Stephen Stuart, Solution Engineers.
-* **Last Updated By/Date:** Taylor Rees, Stephen Stuart, Soultion Engineering, June 2023
+* **Contributors:** Kumar Varun, Logging Analytics Product Management 
+* **Last Updated By/Date:** Nicholas Cusato, Taylor Rees, Stephen Stuart, June 2023

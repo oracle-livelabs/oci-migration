@@ -240,7 +240,7 @@ You may now proceed to the next lab.
 
 ## Acknowledgements
 * **Author** - Quintin Hill, Cloud Engineering, Packaged Applications
-* **Contributors** -  Kumar Varun, Logging Analytics Product Management. Nicholas Cusato, Taylor Rees, Stephen Stuart, Solution Engineers.
-* **Last Updated By/Date** - Taylor Rees, Stephen Stuart, Soultion Engineering, June 2023
+* **Contributors** -  Kumar Varun, Logging Analytics Product Management 
+* **Last Updated By/Date** - Nicholas Cusato, Taylor Rees, Stephen Stuart, June 2023
 
 
