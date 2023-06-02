@@ -21,7 +21,7 @@ In this lab, you will:
 
 1. 'Log Source' = 'OCI Audit Logs' and Status not in ('null') | link Status, 'User Name', Event, Method | stats unique('User Name'), unique(Status), unique(Method), unique(Event), unique(Method) | classify topcount = 300 'Group Duration', Status
 
-  ![](./images/ocianomalus.png " ")
+  ![Anomalus status log explorer](./images/ocianomalus.png " ")
 
   - Name: OCI Audit Anomalus Status Calls
 

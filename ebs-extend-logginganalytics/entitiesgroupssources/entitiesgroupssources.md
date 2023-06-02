@@ -25,13 +25,13 @@ Complete Lab 1 and 2 of this workshop
 
 1. We will create an entity for host logs and ebs logs for each of the agent installations. As you did in the previous step repeat the following steps for each of the servers you installed a management agent.
 
-  ![](./images/adminscreen.png " ")
+  ![OCI Administration for logging analytics](./images/adminscreen.png " ")
 
 2. Navigate to Logging Analytics - Administration and click on **Entities**
 
 3. From here you can see the Entities that already have been created. Click **Create Entity**
 
-  ![](./images/entities.png " ")
+  ![Creating entities for logging analytics](./images/entities.png " ")
 
   (example is for our first EBS Cloud Manager agent)
 
@@ -42,7 +42,7 @@ Complete Lab 1 and 2 of this workshop
     - Management Agent: ebscmagent
   b. Click **Create**
 
-  ![](./images/createcmhost.png " ")
+  ![Create host](./images/createcmhost.png " ")
 
   c. For ebs concurrent processing logs:
 
@@ -53,7 +53,7 @@ Complete Lab 1 and 2 of this workshop
         - ```omc_ebs_applcsf: /u01/install/APPS/fs_ne/inst/<instance_name>/```
         - ```omc_ebs_appllog: /logs/appl/conc/log```
 
-  ![](./images/createcpn.png " ")
+  ![Create entity](./images/createcpn.png " ")
 
 ## Task 2: Create Host Log Group and EBS CPN Log Group
 
@@ -65,7 +65,7 @@ Name it `Host Log Group` and click **Create**
 
 Repeat and name the other group `EBS CPN Log Group`
 
-  ![](./images/loggroups.png " ")
+  ![Create log group](./images/loggroups.png " ")
 
 ## Task 3: Associate Log sources
   
@@ -75,7 +75,7 @@ Now that you have your entities go to Logging Analytics - Administration - Sourc
 
   a. Type in `linux` in the search bar on the right
     
-  ![](./images/linuxsearch.png " ")
+  ![Source list for logging analytics](./images/linuxsearch.png " ")
 
   b. Click on `Linux Secure Logs`
 
@@ -85,7 +85,7 @@ Now that you have your entities go to Logging Analytics - Administration - Sourc
 
   e. Select `Host Log Group` Click Save and Deploy
 
-  ![](./images/associatesources.png " ")
+  ![List of hosts](./images/associatesources.png " ")
 
   f. Repeat for the following Log Sources: Linux Syslog Logs, Linux YUM Logs, Linux Audit logs, Linux Cron Logs, Ksplice Logs
 
@@ -93,7 +93,7 @@ Now that you have your entities go to Logging Analytics - Administration - Sourc
 
   a. Type in `ebs` in the search bar
 
-  ![](./images/ebssearch.png " ")
+  ![EBS search list](./images/ebssearch.png " ")
 
   b. Click on `EBS Concurrent Manager Logs`
 
@@ -103,7 +103,7 @@ Now that you have your entities go to Logging Analytics - Administration - Sourc
 
   e. Select `CPN Log Group` Click Save and Deploy
 
-  ![](./images/associatecpnsource.png " ")
+  ![List of CPN log groups](./images/associatecpnsource.png " ")
 
   f. Repeat for the following Log Sources: EBS Concurrent Request Logs, EBS Conflict Resolution Manager Log, EBS Internal Concurrent Manager log, EBS Transaction Manager Logs, Output Post Processor Logs
 
