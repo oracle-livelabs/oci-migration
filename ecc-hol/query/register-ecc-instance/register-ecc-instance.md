@@ -96,11 +96,9 @@ This task is optional. **EBS\_ECC\_USER** is the Oracle E-Business Suite user na
     ![Provide a password to create new FND user](../images/jndi22.png "Provide a password to create new FND user")
 
 
-    ```
-* When prompted provide a password to create new FND user as **welcome1**
-* Password for ECC Domain weblogic was previously set by you as **welcome1**
-* Password for EBS Schema apps is always **apps**
-    ```
+2. Password for ECC Domain weblogic was previously set by you as **welcome1**
+3. Password for EBS Schema apps is always **apps** 
+4. When prompted provide a password to create new FND user as **welcome1**
 
 
 
