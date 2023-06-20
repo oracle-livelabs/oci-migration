@@ -24,11 +24,11 @@ Watch this short video to preview how to clone Oracle E-Business Suite using clo
 
 2. From the ebsholenv1 environment page, click **Clone** in the top right. 
 
-  ![](./images/selectclone.png " ")
+  ![This screenshot shows the Oracle E-Business Suite Cloud Manager Environments page. Highlighted is the Clone button in the user interface.](./images/selectclone.png " ")
 
   Enter Details (see screenshot and points below)
 
-3. Enter the following values for the clone details (Note these variables in your key-data.txt):
+3. Enter the following values for the clone details (Note these variables in your ``key-data.txt``):
 
     a. **Environment Name**: ebsholenv2
 
@@ -36,18 +36,18 @@ Watch this short video to preview how to clone Oracle E-Business Suite using clo
 
     c. **Source WebLogic Server Password**: welcome1
 
-    d. Then Click **Next**
+    d. Then, click **Next**.
 
-    ![](./images/clone.png " ")
+    ![This screenshot shows Clone Details page when going through the steps of cloning an environment.](./images/clone.png " ")
 
-4. Database Tier: We can leave these values as they are and click **Next**
+4. Database Tier: We can leave these values as they are and click **Next**.
 
-    ![](./images/database_tier.png " ")
+    ![This screenshot shows the Database Tier page when going through the steps of cloning an environment.](./images/database_tier.png " ")
 
-5. Application Tier: Make sure **Start Application Tier** is switched on
+5. Application Tier: Make sure **Start Application Tier** is switched on.
 
-    ![](./images/web-entry.png " ")
-    Now Zones/Actions Click **Edit** And Enter and verify the following values
+    ![This screenshot shows the Application Tier page when going through the steps of cloning an environment.](./images/web-entry.png " ")
+    Now under the Zones section, find the Actions icon, and click **Edit**. Enter and verify the following values:
     
     a. **Web Entry Type**: New Load Balancer
 
@@ -61,39 +61,39 @@ Watch this short video to preview how to clone Oracle E-Business Suite using clo
 
     g. **Port**: 443
 
-    h. Click **Save Zone** and **Next**
+    h. Click **Save Zone** and **Next**.
 
-  ![](./images/app_tier.png " ")
+  ![This screenshot shows the Application Tier page when going through the steps of cloning an environment and the required fields to complete.](./images/app_tier.png " ")
 
 6. Extensibility Options:
     
-    a. Click **Next**
+    a. Click **Next**.
 
-    ![](./images/extensibilityoptions.png " ")
+    ![This screenshot shows the Extensibility Options page when going through the steps of cloning an environment and highlights the Next button in the user interface.](./images/extensibilityoptions.png " ")
   
 7. SSH Keys:
 
-    a. Upload your SSH Key on the SSH Page
+    a. Upload your SSH Key on the SSH Page.
 
-    ![](./images/add-ssh.png " ")
+    ![This screenshot shows the SSH Keys page when going through the steps of cloning an environment and highlights the Add Key button in the user interface.](./images/add-ssh.png " ")
 
 8. Review: 
 
-    a. Review the information and click Submit
+    a. Review the information and click **Submit**.
 
-     ![](./images/submit.png " ")
+     ![This screenshot shows the Review page when going through the steps of cloning an environment.](./images/submit.png " ")
 
 9. You can check the status of the activity to clone the environment in the Activities page. The new environment is listed on the Environments page.
 
 ## Task 2: Configure Local Host Files for the Cloned Environment and Log in to Oracle E-Business Suite
 
-1. Now click the Cloud Manager Environment: "ebsholenv2"
+1. Now click the Cloud Manager environment "ebsholenv2".
 
-2. Then click the arrow next to **Zone: oneclickdemo**
+2. Then click the arrow next to **Zone: oneclickdemo**.
 
-  1. Note the IP address listed at **Web Entry IP:**
+  1. Note the IP address listed at **Web Entry IP**.
 
-![](./images/envpage.png " ")
+![This screenshot highlights the Web Entry IP location within the user interface on the Environment Details page.](./images/envpage.png " ")
 
 3. Edit the local hosts file on your laptop and add an entry.
 
@@ -103,13 +103,13 @@ Watch this short video to preview how to clone Oracle E-Business Suite using clo
 
     2. Hover over Notepad, right-click, and select the option **Run as Administrator**.
 
-    3. In Notepad, navigate to ``File > Open``.
+    3. In Notepad, navigate to **File** > **Open**.
 
-    4. Browse to ``C:\\Windows\System32\drivers\etc``
+    4. Browse to ``C:\\Windows\System32\drivers\etc``.
 
-    5. Find the **file hosts**
+    5. Find the ``hosts`` file.
 
-        ![](./images/2.png " ")
+        ![This screenshot shows the navigation to the file "hosts" within Windows Explorer.](./images/2.png " ")
 
     6. In the hosts file, scroll down to the end of the content.
 
@@ -139,19 +139,19 @@ Watch this short video to preview how to clone Oracle E-Business Suite using clo
 
     5. Once you have finished editing the file hit 'esc' and type ':wq' to save and exit.
 
-        ![](./images/3.png " ")
+        ![This screenshot shows how to edit the hosts file on a Mac.](./images/3.png " ")
 
 4. Log in to Oracle E-Business Suite:
 
   a. From the Cloud Manager environment page. Click the link following **Login Page:**
 
-    ![](./images/envpage-2.png " ")
+    ![This screenshot shows the ensholenv2 Environment Details page. Highlighted is the link for the Login Page.](./images/envpage-2.png " ")
 
   b. When prompted, accept the warning concerning the certificate coming from an unauthorized certificate authority as we are using a self-signed certificate. (You will change the certificate with your own when executing this procedure outside of this hands-on lab.)
 
   c. On this page, you will log in to Oracle E-Business Suite with the credentials you generated in Lab 3, part 3.
 
-  ![](./images/4.png " ")
+  ![This screenshot shows the Oracle E-Business Suite log in page.](./images/4.png " ")
 
 ## Acknowledgements
 
@@ -161,6 +161,6 @@ Watch this short video to preview how to clone Oracle E-Business Suite using clo
   - William Masdon, Cloud Engineering
   - Mitsu Mehta, Cloud Engineering
   - Chris Wegenek, Cloud Engineering
-* **Last Updated By/Date:** Chris Wegenek, Cloud Engineering, September 2021
+* **Last Updated By/Date:** Tiffany Romero, EBS Documentation, May 2023
 
 

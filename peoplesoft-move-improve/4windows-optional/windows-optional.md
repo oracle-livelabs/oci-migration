@@ -160,6 +160,6 @@ Now, click **Add Ingress Rules**
 
 ## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
-* **Contributors** - Edward Lawson, Master Principal Cloud Architect 
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect; Megha Gajbhiye, Principal Cloud Architect
 * **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
 

@@ -2,15 +2,15 @@
 
 ## Introduction
 
-This lab will ingest network, audit, server and application logs into OCI Logging Analytics Service
+This lab will ingest network, audit, server and application logs into OCI Logging Analytics Service.
 
 Estimated Lab Time: 1 hour
 
 ### Objectives
 
 In this lab, you will:
-* Pull data from Logging Entities: Servers, EBS Application and Database, Network and Audit Flow logs
-* At the end of this lab you will have your log data in Logging Analytics
+* Pull data from Logging Entities: Servers, EBS Application and Database, Network and Audit Flow logs.
+* At the end of this lab you will have your log data in Logging Analytics.
 
 ### Prerequisites
 
@@ -26,7 +26,7 @@ In this lab, you will:
 
   b. Name it `EBS_VCN_Logs` and add a description
 
-  ![](./images/loggroup.png " ")
+  ![Create Log Group](./images/loggroup.png " ")
 
   c. Click **Create**
 
@@ -46,15 +46,15 @@ In this lab, you will:
 
   g. You can change your log retention as well. For now leave as Default
 
-  ![](./images/enable1.png " ")
+  ![Enable Resource Log on OCI](./images/enable1.png " ")
     
-  ![](./images/enable2.png " ")
+  ![Enable Log Location on OCI](./images/enable2.png " ")
 
 3. Repeat Step B for the rest of your subnets
 
 4. Once complete your Logs should look like this:
 
-  ![](./images/subnetlogs.png " ")
+  ![List of service logs](./images/subnetlogs.png " ")
 
 ## Task 2: Create Service Connectors for Audit and Network Logs
     
@@ -76,7 +76,7 @@ In this lab, you will:
 
   h. An ask to `Create default policy allowing this service connector to write to Logging Analytics in compartment ebshol_compartment.` will show, click **Create** and then **Create** again.
 
-  ![](./images/createpolicyservice.png " ")
+  ![Create policy button](./images/createpolicyservice.png " ")
     
 2. Click **Create Connector** again
 
@@ -90,7 +90,7 @@ In this lab, you will:
 
   e. An ask to `Create default policy allowing this service connector to write to Logging Analytics in compartment ebshol_compartment.` will show, click **Create** and then **Create** again.
 
-  ![](./images/createpolicyservice.png " ")
+  ![Create policy button](./images/createpolicyservice.png " ")
 
 3. You can now go to Logging Analytics - Administration
 
@@ -98,11 +98,11 @@ In this lab, you will:
 
   **You can also go to Logging Analytics - Log Explorer and should see a pie with data similar to what is shown below**
       
-  ![](./images/firstlogexview.png " ")
+  ![Logging display](./images/firstlogexview.png " ")
 
 ## Task 3: Install Management Agents on your Hosts
 
-Now we will walk through installing management agents on our hosts. Because we are using linux servers in this lab we will stick to steps for those servers. For further documentation on installing agents and specifically on Windows servers refer to [Install Management Agents Documentation](https://docs.oracle.com/en-us/iaas/management-agents/doc/install-management-agent-chapter.html#GUID-5F2A1CEF-1185-469C-AF2E-8A94BC95DC35)
+Now we will walk through installing management agents on our hosts. Because we are using linux servers in this lab we will stick to steps for those servers. For further documentation on installing agents and specifically on Windows servers refer to [Install Management Agents Documentation](https://docs.oracle.com/en-us/iaas/management-agents/doc/install-management-agent-chapter.html#GUID-5F2A1CEF-1185-469C-AF2E-8A94BC95DC35).
 
 1. In the OCI Console navigate to Management Agents - Downloads and Keys
 
@@ -116,11 +116,11 @@ Now we will walk through installing management agents on our hosts. Because we a
 
   c. Click **Create**
 
-  d. on the right click the three dots in the row of our agent key we just created.
+  d. On the right click the three dots in the row of our agent key we just created.
 
   e. Click `Download Key to File`
 
-  ![](./images/keydownload.png " ")
+  ![Download agent keys](./images/keydownload.png " ")
 
   f. Once you have Downloaded the key file, we need to edit it
 
@@ -152,7 +152,7 @@ Now we will walk through installing management agents on our hosts. Because we a
 
   c. After verifying you can connect via ssh exit
 
-  ![](./images/sshverify.png " ")
+  ![SSH connect terminal view](./images/sshverify.png " ")
 
 6. Secure Copy your management agent and .txt file to cloud manager
 
@@ -192,7 +192,7 @@ Now we will walk through installing management agents on our hosts. Because we a
 
   Note: If successful your terminal should see this response ending with Agent install successful
 
-  ![](./images/installsuccess.png " ")
+  ![Agent install success message](./images/installsuccess.png " ")
 
 9. Setup and the management agent with info from Install Key
 
@@ -202,7 +202,7 @@ Now we will walk through installing management agents on our hosts. Because we a
     </copy>
     ```
 
-  ![](./images/startagent.png " ")
+  ![Agent setup complete](./images/startagent.png " ")
 
 10. Now to install our agent on the other instances built with our cloud manager we will move the `ebs_agent_key.txt` and oracle mgmt agent to our Oracle Home Directory
 
@@ -240,7 +240,7 @@ You may now proceed to the next lab.
 
 ## Acknowledgements
 * **Author** - Quintin Hill, Cloud Engineering, Packaged Applications
-* **Contributors** -  Kumar Varun, Logging Analytics Product Management
-* **Last Updated By/Date** - Quintin Hill, Cloud Engineering, Mar 8 2021
+* **Contributors** -  Kumar Varun, Logging Analytics Product Management 
+* **Last Updated By/Date** - Nicholas Cusato, Taylor Rees, Stephen Stuart, June 2023
 
 
