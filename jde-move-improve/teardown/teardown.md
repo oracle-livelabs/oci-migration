@@ -28,7 +28,7 @@ Estimated Time: 5 minutes
 
 4. Select the instance and click **Terminate** to terminate the instance.
 
-   ![](./images/terminate-button_1.png " ")
+   ![](./images/finished-instance_2.png " ") 
 
 5. Wait for the instance to terminate. Once terminated, your instance should be gone from the instance list.
 
