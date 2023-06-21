@@ -18,10 +18,8 @@ Notes:
 * IP addresses and URLs in the screenshots in this workbook may differ from what you use in the labs as these are dynamically generated.
 * For security purposes, some sensitive text (such as IP addresses) may be redacted in the screenshots in this workbook.
 
-## Logging Analytics
-
-### **Access this workshop**:
-[**Extend EBS with Logging Analytics**](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/workshop-attendee-2?p210_workshop_id=803&p210_type=1&session=14069977178339)
+## Task 1: Access this workshop
+Access the workshop at [Extend EBS with Logging Analytics](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/run-workshop?p210_wid=803).
 
 Estimated Workshop Time: 2.5 hours
 
@@ -43,7 +41,7 @@ This workshop uses the following components:
 ### The following figure (W-1) describes the architecture you will create in this workshop.
 Figure W-1: 
 
-![](./images/architecturela.png " ")
+![This screenshot shows the workshop architecture diagram.](./images/architecturela.png " ")
 
 ### Objectives
 
@@ -60,6 +58,6 @@ In this lab, you will:
 
 * **Author:** Quintin Hill, William Masdon, Cloud Engineering
 * **Contributors:** Santiago Bastidas, Product Management Director
-* **Last Updated By/Date:** Quintin Hill, Cloud Engineering, May 2021
+* **Last Updated By/Date:** Tiffany Romero, EBS Documentation, May 2023
 
 #

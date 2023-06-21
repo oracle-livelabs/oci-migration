@@ -1,254 +1,138 @@
 # Preparing Your Tenancy for Oracle E-Business Suite
 
 ## Introduction
-In this exercise, you will prepare your Oracle E-Business Suite environment by setting up EBS Cloud Manager authentication with Identity Cloud Service (IDCS).
+In this exercise, you will prepare your Oracle E-Business Suite environment by setting up Oracle E-Business Suite Cloud Manager authentication.
 
 Estimated Lab Time: 30 minutes
-
+<!--
 Watch this short video to preview how to prepare your tenancy for Oracle E-Business Suite.
 
 [](youtube:kWBDCZ-r0zQ)
 
+-->
 ### **Objectives**
-* Setup EBS Cloud Manager Authentication with Identity Cloud Service (IDCS)
-* Create the EBS Cloud Manager Administrators group and user in IDCS
-* Register Oracle E-Business Suite Cloud Manager as a Confidential Application in IDCS
+* Register Oracle E-Business Suite Cloud Manager as a confidential application.
 
 ### **Prerequisites**
-* Tenancy Admin User
-* Tenancy Admin Password
+* This step is to be performed by the tenancy administrator.
 
-## Task 1: Create the EBS Cloud Manager Administrators group and user in IDCS
+## Task 1: Sign in to the Oracle Cloud Infrastructure Console
 
-1. As the Tenancy Administrator, log in to the Oracle Cloud Infrastructure console.
-    ![](./images/login-oci.png " ")
+Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastructure console.
 
-2. In the Oracle Cloud Infrastructure console menu, under Governance and Administration, navigate to **Identify & Security > Federation**.
-    ![](./images/federation-menu.png " ")
+1. Reference your ``key-data.txt`` file and locate the tenancy administrator credentials.
 
-3. Click on OracleIdentityCloudService
+2. Sign in to the Oracle Cloud Infrastructure console using the following:
 
-4. Click on the link next to **Oracle Identity Cloud Service Console**.
+    * **User name**: ``Tenancy Admin User``
+    * **Password**: ``Tenancy Admin Password``
 
-    ![](./images/idcs-link.png " ")
+## Task 2: Register Cloud Manager as a Confidential Application in Tenancies Using IAM with Identity Domains
 
-5. Login to IDCS with the Tenancy Admin User.
+1. Open the navigation menu and click **Identity & Security**. Under **Identity**, click **Domains**.
 
-6. From the IDCS console, create your Oracle E-Business Suite Cloud Manager group:
+    ![This screenshot shows the console navigation menu and depicts the navigation to the Domains page.](./images/domains-navigation.png " ")
 
-    a. Click the navigation menu and select **Groups**.
+2. Select the root compartment in the **Compartment** drop-down list.
 
-    b. Click the **Add** button.
+3. Within the list of domains, click the link for the "Default" domain.
 
-    ![](./images/add-group.png " ")
+    ![This screenshot shows the Domains page.](./images/domains-listing.png " ")
 
-    c. In the Add Group dialog box (Step 1: Group Details), supply the following information:
+4. Click **Applications** in the menu on the left.
 
-      1. **Name**: Enter the name idcs-ebscm-grp
+    ![This screenshot shows the Applications page and highlights the Add application button within the user interface.](./images/applications-menu.png " ")
 
-      2. **Description**: Enter a description of your choice.
+5. Click **Add application**.
 
-        ![](./images/add-group-2.png " ")
+6. Select **Confidential Application**. 
 
-    d. Click **Finish**.
+    ![This screenshot shows the Add application window and highlights the Confidential Application option.](./images/confidential-application.png " ")
 
-7. While still in the IDCS console, create your Oracle E-Business Suite Cloud Manager Administrator user:
+7. Click **Launch Workflow**. This takes you to the Add Confidential Application page.
 
-    a. Click the navigation menu and select **Users**.
+8. Under Add application details, enter the following:
+    - **Name**: ``Oracle E-Business Suite Cloud Manager``
+    - **Description**: Enter a description.
 
-    b. Click **Add**.
+9. Click **Next**.
 
-    ![](./images/add-user.png " ")
+10. Under Configure OAuth:
 
-    c. In the Add User dialog box (Step 1: Add User Details), supply the following information:
-
-      1. **First Name**: EBS Cloud Manager
-
-      2. **Last Name**: Administrator
-
-      3. **User Name**: ebscm.admin@example.com
-
-      4. **Use the email address as the user name**: Deselect the check box
-
-      5. **Email**: Use the same email addressed you used when registering.
-
-        ![](./images/user-details.png " ")
-
-    d. Click **Next**.
-
-    e. On the Step 2: Assign User to Groups dialog window, select the check box for the group you just created (``idcs-ebscm-grp``).
-
-    ![](./images/3.png " ")
-
-    f. Click **Finish**.
-
-8. From the IDCS console navigation menu, click **Security** to expand the menu. Then click **Administrators**.
-
-9. On the Administrators page:
+    a. Click **Configure this application as a client now**.
     
-    a. Expand the **Application Administrators** section.
+    b. Under Allowed Grant Types, select the following options:
+    - Client Credentials
+    - Refresh Token
+    - Authorization Code
+
+    c. Now, we are going to set our Cloud Manager URL. For this lab, use the following example URL: ``https://myebscm.ebshol.org:443``
+
+    Save your Cloud Manager URL in your ``key-data.txt`` file as ``Cloud_Manager_URL``.
+
+    Using the Cloud Manager URL you have just saved, append that URL with the following values as shown to enter your Redirect URL.
+
+    d. **Redirect URL**: ``<Cloud Manager URL>/cm/auth/callback``
     
-    b. Click **Add**.
-    ![](./images/add-admins.png "")
+    For example: ``https://myebscm.ebshol.org:443/cm/auth/callback``
 
-10. In the Add Users to the Administrator Role dialog box, select the check box for the EBS Cloud Manager Administrator (``ebscm.admin@example.com``).
+    e. **Post-Logout Redirect URL**: ``<Cloud Manager Balancer URL>/cm/ui/index.html?root=login``
+    
+    For example: ``https://myebscm.ebshol.org:443/cm/ui/index.html?root=login``
 
-    ![](./images/5.png " ")
+    f. **Logout URL**: Leave this field empty.
 
-11. Click **OK**.
+    ![This screenshot shows the Configure OAuth section when adding an application. It shows the Configure this application as a client now radio button which must be selected. It highlights the Client credentials, Refresh token, and Authorization code options which must be selected. It also highlights the Redirect URL and Post-logout redirect URL which must be entered. Note that it is required that the Logout URL field is left empty.](./images/client-configuration-1.png " ")
 
-    ```
-    Note: The Cloud Manager administrator will register the app as a confidential application in the next section.
-    ```
+    g. Under Client Type, ensure that the **Confidential** radio button is selected.
 
-12. Log out of the IDCS console by clicking on your user avatar icon at the top right of your screen. Then, click **Sign Out**.
+    h. Select the **Introspect** option for Allowed Operations.
 
-    ![](./images/logout.png " ")
+    ![This screenshot shows the Configure OAuth section when adding an application. It highlights the Confidential radio button that must be selected as well as the Introspect check box which must be checked.](./images/client-configuration-2.png " ")
 
-## Task 2: Register Oracle E-Business Suite Cloud Manager as a Confidential Application in IDCS
+    i. Under Token Issuance Policy, select the **Add app roles** check box.
 
-```
-Note: The ebscm.admin@example.com performs the tasks in this section.
-```
+     1. Click **Add roles**.
+        ![This screenshot shows the Configure OAuth section when adding an application and highlights the Add app roles check box which must be selected and the Add roles button in the user interface.](./images/client-configuration-3.png " ")
+     2. Select **Authenticator Client** and **Me**. Then click **Add**.
+        ![This screenshot shows the Add app roles section and highlights the Me and Authenticator Client check boxes to be selected. It also points out the Add button on the user interface.](./images/add-app-roles.png " ")
+    
+    3. Click **Next**.
+    
+11. Under Configure policy, click **Finish**.
 
-In this section, you will register the Oracle E-Business Suite Cloud Manager as a Confidential Application.
+    ![This screenshot shows the Finish button within the user interface in the Configure policy section.](./images/configure-policy.png " ")
 
-1. Open the Welcome email that was received in the previous section.
+12. Make a note of the following values under General Information in your ``key-data.txt`` (under ``Client_ID`` and ``Client_Secret``, respectively):
 
-2. Click the yellow **Activate Your Account** button in the email.
+    • Client ID
 
-    ![](./images/activate-account.png " ")
+    • Client secret (In order to view, click Show secret.)
 
-3. Enter a new password, confirm, and click Submit. Document this password in your ``key-data.txt``, field ``Cloud_Manager_Admin_Password``.
+    ![This screenshot shows the confidential application information page.](./images/client-id-and-secret.png " ")
 
-4. Click **OK** to continue, which will take you to the IDCS Login screen. Otherwise, log into IDCS using the steps outlined previously (OCI Console > Identity > Federation).
+13. Click **Activate** and confirm to activate the confidential application.
 
-5. Enter the EBS Cloud Manager user name (``ebscm.admin@example.com``) and password you just entered in the previous screen to log in.
+    ![This screenshot highlights the Activate button within the user interface and displays the Activate application pop-up window to activate your application.](./images/activate-application.png " ")
 
-6. Click on your user avatar menu in the top right corner. This will display a drop-down menu.
+14. Record your Oracle Identity Cloud Service Client Tenant value as ``Client_Tenant`` in the ``key-data.txt``. This is found in the Overview of the default domain under the Domain Information section. It is seen as part of the URL found in Domain URL, after the "//" and before ".identity.oraclecloud.com". It begins with the characters "idcs-", followed by a string of numbers and letters in the format ``idcs-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx``
 
-    ![](./images/admin-console.png " ")
-
-7. Select **Admin Console**. This will display the IDCS Administration Console.
-
-    If there is no **Admin Console** option to select, you may already be on the Admin Console. Below is an example of the Admin Console after you login. 
-
-    ![](./images/admin-console-2.png " ")
-
-8. In the top right of the Applications tile, click the icon to Add an Application.
-
-    ![](./images/select-add-application.png " ")
-
-9. Select **Confidential Application**. This takes you to the Add Confidential Application page.
-
-    ![](./images/make-confidential-app.png " ")
-
-10. On the Details screen, enter the following:
-
-    a. **Name**: ``Oracle E-Business Suite Cloud Manager``
-
-    b. **Description**: Write a description.
-
-    c. Click **Next**.
-
-    ![](./images/name-and-description.png " ")
-
-11. On the Client screen:
-
-    a. Select **Configure this application as a client now**.
-
-    b. Under **Allowed Grant Types**, select the following check boxes:
-
-      1. Client Credentials
-
-      2. Refresh Token
-
-      3. Authorization Code
-
-    c. Here we are going to set our cloud manager url. For this lab we will use the following example URL.
-
-        Example Cloud Manager URL: https://myebscm.ebshol.org:443
-
-    Save your cloud manager url in your ``key-data.txt`` file as ``Cloud_Manager_URL``
-
-    Using the Cloud Manager url you have just saved, append that url with the following values as shown below to enter your Redirect URL.
-
-    d. **Redirect URL**: ``<Cloud_Manager_URL>/cm/auth/callback``
-
-        Example: https://myebscm.ebshol.org:443/cm/auth/callback
-
-    e. **Logout URL**: Leave this field empty.
-
-    f. **Post-Logout Redirect URL**: ``<Cloud_Manager_URL>/cm/ui/index.html?root=login``
-
-        Example: https://myebscm.ebshol.org:443/cm/ui/index.html?root=login
-
-    g. Select the **Introspect** option for **Allowed Operations**.
-
-    ![](./images/configure-app.png " ")
-
-    h. Under **Grant the client access to Identity Cloud Service Admin APIs**:
-
-      1. Click Add.
-
-        ![](./images/configure-app-2.png " ")
-
-      2. Select **Authenticator Client** and **Me** in the pop-up window.
-
-      3. Click Add again.
-
-          ![](./images/add-roles.png " ")
-
-    i. Click **Next** at the top of the screen.
-
-12. On the Resources screen, click **Next**.
-
-    ![](./images/resources-screen.png " ")
-
-13. On the Web Tier screen, click **Next**.
-    ![](./images/web-tier-screen.png " ")
-
-14. On the Authorization screen, click **Finish**.
-    ![](./images/auth-screen.png " ")
-
-15. Make note of the following values in your ``key-data.txt`` file (under ``Client_ID`` and ``Client_Secret``, respectively) when they are displayed in a pop-up window:
-
-    a. **Client ID**
-
-    b. **Client Secret**
-
-    ![](./images/client-id.png " ")
-
-    If you need to view these values again, select the **Configuration** tab in the app's page. The values are listed under **General Information**.
-
-    ![](./images/client-id-again.png " ")
-
-16. Click **Close**.
-
-17. Click **Activate** to activate the Confidential Application.
-
-    ![](./images/activate-app.png " ")
-
-18. Click on the avatar icon on the top right hand side of the screen.
-
-19. Select the **About** option.
-
-    ![](./images/avatar-about.png " ")
-
-20. Copy the value displayed for Instance GUID. Record this as ``Client_Tenant`` in the ``key-data.txt``. Your IDCS Client Tenant begins with the characters ``idcs-`` and then is followed by a string of numbers and letters, for example, ``idcs-6572bfeb183b4becad9e649bfa14a488``.
-
-    ![](./images/about.png " ")
+    For Example: ``idcs-6572bfeb183b4becad9e649bfa14a488``.
+    
+    ![This screenshot shows the Domain information tab and highlights the Oracle Identity Cloud Service Client Tenant information you must record in your key-data.txt file.](./images/client-tenant.png " ")
 
 You may now proceed to the next lab.
 
 ## Acknowledgements
 
-* **Author:** Quintin Hill, Cloud Engineering
+* **Authors:** 
+  * Santiago Bastidas, Product Management Director
+  * Vijay Kumar Vudari Satyanarayana, Principal Cloud Architect
+  * Danish Ansari, Principal Cloud Architect
 * **Contributors:** 
-  - Santiago Bastidas, Product Management Director
   - William Masdon, Cloud Engineering
   - Mitsu Mehta, Cloud Engineering
   - Chris Wegenek, Cloud Engineering
-* **Last Updated By/Date:** Chris Wegenek, Cloud Engineering, September 2021
+* **Last Updated By/Date:** Tiffany Romero, EBS Documentation, May 2023
 
 
