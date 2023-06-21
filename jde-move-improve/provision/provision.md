@@ -206,7 +206,7 @@ During the first connection to a Trial Edition instance (after completing Connec
     *	Must contain at least 1 letter and 1 number.
     *	May not contain any shell metadata characters such as $, |, @, and so on.
 
- ##   ![](./images/db-system-password.png " ")
+
 
 3.  Enter a JDE user password (and confirmation):
 
@@ -218,7 +218,7 @@ During the first connection to a Trial Edition instance (after completing Connec
 
     Please follow the same password guidelines if you create your own.
 
- ##   ![](./images/jde-user-password.png " ")
+
 
 4.	Enter a Weblogic admin password (and confirmation):
     
@@ -230,7 +230,7 @@ During the first connection to a Trial Edition instance (after completing Connec
     
     Please follow the same password guidelines if you create your own.
 
- ##   ![](./images/weblogic-admin-password.png " ")
+
 
 5.	Enter the Final Confirmation: Y – Yes to commit the configuration settings and run the script to set up.
 
@@ -248,4 +248,4 @@ At this point, the JD Edwards EnterpriseOne Trial Edition is ready for use.
     * Jeff Kalowes, Principal JDE Specialist
     * Tarani Meher, Principal JDE Specialist
     * Mani Julakanti, Principal JDE Specialist
-* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 03/2023
+* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 06/2023
