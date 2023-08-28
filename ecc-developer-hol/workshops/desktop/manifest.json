@@ -1,0 +1,60 @@
+{
+  "workshoptitle": "Oracle E-Business Suite Enterprise Command Center - From Installation to Personalization",
+  "help": "livelabs-help-oci_us@oracle.com",
+  "variables": ["../../variables/variables.json",
+    "../../variables/variables-in-another-file.json"],
+  "tutorials": [
+   
+    {
+      "title": "Introduction",
+      "description": "The Introduction is always second for LiveLabs. The title and contents menu title match for the Introduction.",
+      "filename": "../../query/introduction/introduction.md"
+    }, 
+    {
+      "title": "Get started",
+      "description": "The Introduction is always second for LiveLabs. The title and contents menu title match for the Introduction.",
+      "filename": "https://oracle-livelabs.github.io/common//labs/remote-desktop/using-novnc-remote-desktop.md"
+    }, 
+    {
+      "title": "Optional Lab: Installation",
+      "filename": "../../query/installation/installation.md"
+    },
+    {
+      "title": "Lab 1: Use ECC Dashboards",
+      "filename": "../../query/useeccdashboards/useeccdashboards.md"
+    },
+    {
+      "title": "Lab 2: End User Personalization",
+      "filename": "../../query/enduserpersonalization/enduserpersonalization.md"
+    },
+    {
+      "title": "Lab 3: Power User Personalization",
+      "filename": "../../query/poweruserpersonalization/poweruserpersonalization.md"
+    },
+    {
+      "title": "Lab 4: Extensibility: Basic Flow",
+      "filename": "../../query/basicextensibility/basicextensibility.md"
+    },
+    {
+      "title": "Lab 5: Extensibility: Advanced Flow",
+      "filename": "../../query/advancedextensibility/advancedextensibility.md"
+    },
+    {
+      "title": "Lab 6: ECC Scratchpad",
+      "filename": "../../query/eccscratchpad/eccscratchpad.md"
+    },
+    {
+            "title": "Lab 7: Managing Extensibility Life Cycle",
+            "filename": "../../query/manageextensibility/manageextensibility.md"
+    },
+    {
+      "title": "Lab 8: Diagnose and Monitor ECC",
+      "filename": "../../query/diagnoseandmonitor/diagnoseandmonitor.md"
+    },
+    {
+      "title": "Need help?",
+      "description": "Solutions to Common Problems and Directions for Receiving Live Help",
+      "filename": "https://oracle-livelabs.github.io/common//labs/need-help/need-help-livelabs.md"
+    }
+  ]
+}
