@@ -1,4 +1,4 @@
-# Managing Extensibility Life Cycle
+# Manage Extensibility
 
 ### Introduction
 

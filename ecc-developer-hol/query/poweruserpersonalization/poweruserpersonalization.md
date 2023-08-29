@@ -181,6 +181,7 @@ Password: welcome1
     ![Pivot view](../images/switch1.png "Pivot view")
 24. Switch to Pivot view from Aggregate Table view by clicking on the Pivot view icon [The Pivot View allows users to perform comparisons and identify trends across several cross-sections of data. The values in the header rows and columns represent every possible grouping of the selected attributes. Each body cell contains a metric value corresponding to the values in the heading rows and columns.].
     ![Pivot view](../images/switch.png "Pivot view")
+    ![Pivot view](../images/switch77.png "Pivot view")
 
 
 25. Click on the "i" icon and then the "Personalize" button to disable Personalization mode.
@@ -189,7 +190,7 @@ Password: welcome1
 
 ## Task 3: Personalize Account Analysis dashboard
 
-**Goal**:: Investigate and act to maintain the accuracy of financial records
+**Goal**: Investigate and act to maintain the accuracy of financial records
 
 
 1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
@@ -208,7 +209,7 @@ Password: welcome1
 3. You will see the Account Analysis dashboard. In that dashboard, enable personalization from "i" icon 
    ![Personalize dashboard](../images/genz2000.png "Personalize dashboard")
 
-4. Click on the search bar to find the previously saved search
+4. Click on the search bar to find the previously saved search [in Lab 2 - Task 2]
    ![Personalize dashboard](../images/genz3000.png "Personalize dashboard")
 
 5. Click on the saved search to start our investigation from there

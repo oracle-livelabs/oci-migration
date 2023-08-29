@@ -1,16 +1,10 @@
 {
-    "workshoptitle": "Oracle E-Business Suite Enterprise Command Center - From Installation to Personalization",
+    "workshoptitle": "Oracle E-Business Suite Enterprise Command Center- from Personalization to Extensibility",
     "help": "livelabs-help-oci_us@oracle.com",
     "variables": ["../../variables/variables.json",
       "../../variables/variables-in-another-file.json"],
       "tutorials": [
-        {
-          "title": "Pre Intro",
-          "description": "The Introduction is always second for LiveLabs. The title and contents menu title match for the Introduction.",
-          "filename": "../../query/Labs1.md"
-        }, 
-
-
+   
         {
           "title": "Introduction",
           "description": "The Introduction is always second for LiveLabs. The title and contents menu title match for the Introduction.",
@@ -19,61 +13,52 @@
         {
           "title": "Get started",
           "description": "The Introduction is always second for LiveLabs. The title and contents menu title match for the Introduction.",
-          "filename": "https://oracle-livelabs.github.io/common//labs/cloud-login/cloud-login.md "
+          "filename": "https://oracle-livelabs.github.io/common//labs/remote-desktop/using-novnc-remote-desktop.md"
         }, 
-      
-        
         {
-          "title": "Lab 1: Create ECC schema",
-          "filename": "../../query/create-ecc-schema/create-ecc-schema.md"
+          "title": "Prepare and Set up",
+          "filename": "../../query/prepare-and-setup/prepare-and-setup.md"
         },
         {
-          "title": "Lab 2: Create ECC domain",
-          "filename": "../../query/create-ecc-domain/create-ecc-domain.md"
+          "title": "Optional Lab: Installation",
+          "filename": "../../query/installation/installation.md"
         },
         {
-          "title": "Lab 3: Register ECC instance",
-          "filename": "../../query/register-ecc-instance/register-ecc-instance.md"
+          "title": "Lab 1: Use ECC Dashboards",
+          "filename": "../../query/useeccdashboards/useeccdashboards.md"
         },
         {
-          "title": "Lab 4: Import ECC applications",
-          "filename": "../../query/import-ecc/import-ecc.md"
+          "title": "Lab 2: End User Personalization",
+          "filename": "../../query/enduserpersonalization/enduserpersonalization.md"
         },
         {
-                "title": "Lab 5: Run dataload",
-                "filename": "../../query/run-dataload/run-dataload.md"
+          "title": "Lab 3: Power User Personalization",
+          "filename": "../../query/poweruserpersonalization/poweruserpersonalization.md"
         },
         {
-          "title": "Lab 6: ECC anatomy",
-          "filename": "../../query/ecc-anatomy/ecc-anatomy.md"
+          "title": "Lab 4: Extensibility: Basic Flow",
+          "filename": "../../query/basicextensibility/basicextensibility.md"
         },
-    
-    
-    {
-      "title": "Lab 7: Power user personalization",
-      "filename": "../../query/poweruser-personalization/poweruser-personalization.md"
-    },
-    {
-      "title": "Lab 8: Admin user personalization",
-      "filename": "../../query/adminuser-personalization/adminuser-personalization.md"
-    },
-    
-    {
-      "title": "Lab 9: Diagnose and monitor",
-      "filename": "../../query/diagnose-and-monitor/diagnose-and-monitor.md"
-    },
-    {
-      "title": "Additional optional labs: Start and stop ECC",
-      "filename": "../../query/start-stop-ecc/start-stop-ecc.md"
-    },
-    {
-      "title": "Additional optional labs: Improve performance",
-      "filename": "../../query/improve-performance/improve-performance.md"
-    },
+        {
+          "title": "Lab 5: Extensibility: Advanced Flow",
+          "filename": "../../query/advancedextensibility/advancedextensibility.md"
+        },
+        {
+          "title": "Lab 6: ECC Scratchpad",
+          "filename": "../../query/eccscratchpad/eccscratchpad.md"
+        },
+        {
+                "title": "Lab 7: Manage Extensibility",
+                "filename": "../../query/manageextensibility/manageextensibility.md"
+        },
+        {
+          "title": "Lab 8: Diagnose and Monitor ECC",
+          "filename": "../../query/diagnoseandmonitor/diagnoseandmonitor.md"
+        },
         {
           "title": "Need help?",
           "description": "Solutions to Common Problems and Directions for Receiving Live Help",
-          "filename": "https://oracle-livelabs.github.io/common//labs/need-help/need-help-freetier.md"
+          "filename": "https://oracle-livelabs.github.io/common//labs/need-help/need-help-livelabs.md"
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "workshoptitle": "Oracle E-Business Suite Enterprise Command Center - From Installation to Personalization",
+  "workshoptitle": "Oracle E-Business Suite Enterprise Command Center- from Personalization to Extensibility",
   "help": "livelabs-help-oci_us@oracle.com",
   "variables": ["../../variables/variables.json",
     "../../variables/variables-in-another-file.json"],
@@ -15,6 +15,10 @@
       "description": "The Introduction is always second for LiveLabs. The title and contents menu title match for the Introduction.",
       "filename": "https://oracle-livelabs.github.io/common//labs/remote-desktop/using-novnc-remote-desktop.md"
     }, 
+    {
+      "title": "Prepare and Set up",
+      "filename": "../../query/prepare-and-setup/prepare-and-setup.md"
+    },
     {
       "title": "Optional Lab: Installation",
       "filename": "../../query/installation/installation.md"
@@ -44,7 +48,7 @@
       "filename": "../../query/eccscratchpad/eccscratchpad.md"
     },
     {
-            "title": "Lab 7: Managing Extensibility Life Cycle",
+            "title": "Lab 7: Manage Extensibility",
             "filename": "../../query/manageextensibility/manageextensibility.md"
     },
     {

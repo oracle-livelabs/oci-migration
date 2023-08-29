@@ -98,7 +98,7 @@ Password: welcome1
         
 
 9.	Click on "Save" button. The new dataset has been created successfully.
-        ![Create Dataset](../images/advancedExtensibility1.png "Create Dataset") 
+        ![Create Dataset](../images/advancedextensibility1.png "Create Dataset") 
 ## Task 2:	Create metadata attributes
 
 **Attribute Metadata**
@@ -130,7 +130,7 @@ Attribute metadata section helps you define an attribute's characteristics, incl
 
 
 3.	Click on the “Import” button to create metadata attributes
-        ![Create Metadata](../images/advancedExtensibility2.png "Create Metadata") 
+        ![Create Metadata](../images/advancedextensibility2.png "Create Metadata") 
 
 
 4. Perform the below changes in the metadata attributes section
@@ -140,7 +140,7 @@ Attribute metadata section helps you define an attribute's characteristics, incl
         * ORDER_NUM to “strings”
 
 
-        ![Update profile](../images/advancedExtensibility3.png "Update profile") 
+        ![Update profile](../images/advancedextensibility3.png "Update profile") 
 
 
     * Enable “Show in Guided Discovery?” checkbox for below attributes:
@@ -178,7 +178,7 @@ Attribute Groups are defined at the data set level, where each data set can have
         * PO\_SHIP\_TO\_LOCATION
         * PO\_SHIP\_ORDERED\_QUANTITY
 
-        ![Add Group](../images/advancedExtensibility33.png "Add Group")
+        ![Add Group](../images/advancedextensibility33.png "Add Group")
 
     * Similarly, add the below groups as well:
         * “Release Quantity” Group
@@ -203,7 +203,7 @@ Attribute Groups are defined at the data set level, where each data set can have
                 * PO\_SHIP\_REJECTED\_AMOUNT
                 * PO\_SHIP\_INVOICED\_AMOUNT
 
-            ![Attribute Groups](../images/advancedExtensibility32.png "Attribute Groups")
+            ![Attribute Groups](../images/advancedextensibility32.png "Attribute Groups")
 
     * Click on “Save” button
 
@@ -222,7 +222,7 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
         * Target Attribute: SOURCE\_HEADER\_ID
         * Click on the “Save” button
 
-            ![Associations](../images/advancedExtensibility31.png "Associations")
+            ![Associations](../images/advancedextensibility31.png "Associations")
 
 
 
@@ -239,7 +239,7 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
   	    <copy>XX PCC Local Agreements</copy>
             ```
 5. Click on the “Save” button
-        ![Assign Dataset reference](../images/advancedExtensibility4.png "Assign Dataset reference") 
+        ![Assign Dataset reference](../images/advancedextensibility4.png "Assign Dataset reference") 
 
 6. Execute data loads for this new dataset
     * Navigate to “Data Load Submission” menu under “Administration” section
@@ -253,7 +253,7 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
         </br>
         **Note:** Data set reset would wipe away any prior data set with the same name and start fresh whereas an extend existing data set option would use the same existing data set and ingest data on top of it
         * Click on the “Submit” button
-        ![Execute Dataloads](../images/advancedExtensibility5.png "Execute Dataloads") 
+        ![Execute Dataloads](../images/advancedextensibility5.png "Execute Dataloads") 
     * Once the data load has been submitted, a "Run ID" will be generated
         ![Request ID](../images/request_id_data_load.png "Request ID")
 
@@ -261,10 +261,10 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
 6.	You can also manually navigate to the data load tracking page from menu under “Administration” section
     * Refine using the request ID which is generated when data load is submitted
     * Click on the “Filter” button
-        ![Data Load Tracking](../images/advancedExtensibility14.png "Data Load Tracking")
+        ![Data Load Tracking](../images/advancedextensibility14.png "Data Load Tracking")
 
 7. Once the data load request is completed, the status of the data load will change from “RUNNING” to “SUCCESS”
-        ![Data Load Tracking](../images/advancedExtensibility15.png "Data Load Tracking")
+        ![Data Load Tracking](../images/advancedextensibility15.png "Data Load Tracking")
 
 8. Click on the “Query Details” link to view more details:
     * **SQL Time:** This refers to the time spent for SQL per dataset
@@ -273,7 +273,7 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
     * **Successful Rows:** Number of rows/records which are successfully ingested into ECC
     * **Failed Rows:** Number of rows/records which are failed to ingest into ECC
 
-        ![SQL Query Details](../images/advancedExtensibility17.png "SQL Query Details")
+        ![SQL Query Details](../images/advancedextensibility17.png "SQL Query Details")
 
 
 
@@ -287,7 +287,7 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
 1. Navigate to ECC Developer home page
 2. Search for “Procurement” application
 3. Click on “Copy” option for “Agreements” dashboard
-        ![Copy Page](../images/advancedExtensibility6.png "Copy Page") 
+        ![Copy Page](../images/advancedextensibility6.png "Copy Page") 
 
 4.	A new copied page is created as “Agreements(1)”
 5.	For the copied page, change the details as mentioned below:
@@ -300,7 +300,7 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
   	    <copy>XX Local Agreements</copy>
             ```
     * Click on the “Save” button
-        ![Edit Page](../images/advancedExtensibility7.png "Edit Page") 
+        ![Edit Page](../images/advancedextensibility7.png "Edit Page") 
 6. Search for "Procurement" application and open "XX Local Agreements dashboard"
 6.	In “XX Local Agreements” dashboard, replace the dataset from “PCC Agreements” to “XX PCC Local Agreements” in the configuration for
     * Search
@@ -308,15 +308,15 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
     * Selected Refinements
     * Summarization Bar (All Items)
     * Charts
-        ![Edit Configuration](../images/advancedExtensibility8.png "Edit Configuration") 
+        ![Edit Configuration](../images/advancedextensibility8.png "Edit Configuration") 
 
 8.	In “XX Local Agreements” dashboard, remove the entire tab layout component which contains the result tables
-        ![Remove Tab Layout](../images/advancedExtensibility9.png "Remove Tab Layout") 
+        ![Remove Tab Layout](../images/advancedextensibility9.png "Remove Tab Layout") 
 
 9.	Create a new tab layout with an empty title and configure 2 tabs:
     * Agreements
     * Releases
-        ![Create Tab Layout](../images/advancedExtensibility10.png "Create Tab Layout") 
+        ![Create Tab Layout](../images/advancedextensibility10.png "Create Tab Layout") 
 
 10.	Under “Agreement” tab, add a “Result Table” component and configure as mentioned below:
     * Title: <Empty>
@@ -340,7 +340,7 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
         * Agr Supplier Contact
 
 11.	Click on the “Save” button to save the configuration
-        ![Add Agreement Table](../images/advancedExtensibility11.png "Add Agreement Table") 
+        ![Add Agreement Table](../images/advancedextensibility11.png "Add Agreement Table") 
 
 11.	Under “Releases” tab, add a “Result Table” component and configure as mentioned below:
     * Title: <Empty>
@@ -362,10 +362,10 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
             * Po Shipment Num
 
 12. You will see the below image:
-        ![Add Releases Table](../images/advancedExtensibility12.png "Add Releases Table")
+        ![Add Releases Table](../images/advancedextensibility12.png "Add Releases Table")
 
 13.	We have successfully created the dashboard for local agreements.
-        ![Local Agreements Dashboard](../images/advancedExtensibility13.png "Local Agreements Dashboard")
+        ![Local Agreements Dashboard](../images/advancedextensibility13.png "Local Agreements Dashboard")
 
 ## Task 5:	Create data load package
 
@@ -378,10 +378,10 @@ As mentioned earlier, ECC uses PL/SQL packages to run the data load process. Her
     * The user need to create a PL/SQL package (specification and its respective body) with a procedure, which is required to execute FULL LOAD for xx-po-pcc-local-agreements dataset
     * Sample PL/SQL package files are provided in the Lab Files section
         * Specification: XX\_PO\_PCC\_LOC\_AGR\_UTIL\_PVT.pls
-                ![Package Specification](../images/advancedExtensibility18.png "Package Specification")
+                ![Package Specification](../images/advancedextensibility18.png "Package Specification")
 
         * Body: XX\_PO\_PCC\_LOC\_AGR\_UTIL\_PVT.plb
-                ![Package Body](../images/advancedExtensibility20.png "Package Body")
+                ![Package Body](../images/advancedextensibility20.png "Package Body")
 
 
 2.	The procedure used for the data load must have below IN and OUT parameters:
@@ -492,7 +492,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
                                                          ```
   	    <copy>@/u01/live_labs/11470/lab_files/lab5/task5/XX_PO_PCC_LOC_AGR_UTIL_PVT.plb</copy>
             ```
-    ![Compile Package](../images/advancedExtensibility30.png "Compile Package")
+    ![Compile Package](../images/advancedextensibility30.png "Compile Package")
 
 4.	Once the package specification and the body are compiled successfully, then the user need to configure the data load rules for the respective dataset
     * Navigate to ECC Developer page
@@ -513,7 +513,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
   	    <copy>get_ecc_data_load_info</copy>
             ```
         * Connection Name: ebsdb
-            ![Configure Load Rules](../images/advancedExtensibility22.png "Configure Load Rules")
+            ![Configure Load Rules](../images/advancedextensibility22.png "Configure Load Rules")
     * Click on the “Save” button
     * Navigate to “Data Load Submission” menu
     * Provide the below details to submit a full load for the local agreements dataset
@@ -525,16 +525,16 @@ style="white-space:pre-wrap; word-wrap:break-word"
         *	Load Type: Full Load
         *	Click on the “Submit” button
 
-            ![Data Load Submission](../images/advancedExtensibility23.png "Data Load Submission")
+            ![Data Load Submission](../images/advancedextensibility23.png "Data Load Submission")
 
     * This will submit a “Full Load” for the custom dataset and inturn uses the created PL/SQL package
     * Click on the Request ID to track the submitted data load job
-            ![Data Load Tracking](../images/advancedExtensibility24.png "Data Load Tracking")
+            ![Data Load Tracking](../images/advancedextensibility24.png "Data Load Tracking")
     * Once the data load is successful, click on the “Query Details” link to view more details
-            ![Data Load Tracking](../images/advancedExtensibility27.png "Data Load Tracking")
+            ![Data Load Tracking](../images/advancedextensibility27.png "Data Load Tracking")
     * The number of successful rows will match the successful row count of Query Upload
     * Navigate to the Local Agreements dashboard (ECC Developer -> Procurement -> XX Local Agreements)
-            ![Local Agreements Dashboard](../images/advancedExtensibility13.png "Local Agreements Dashboard")
+            ![Local Agreements Dashboard](../images/advancedextensibility13.png "Local Agreements Dashboard")
 
 
 ## Task 6:	Create security handler 
@@ -550,10 +550,10 @@ style="white-space:pre-wrap; word-wrap:break-word"
     * Create a PL/SQL package with a procedure, which is required to add security filters based on the logged in user and organization.
     * Sample PL/SQL package files are provided in the Lab Files section
         * Specification: XX\_PO\_PCC\_DATASECURITY\_PKG\_PUB.pls
-            ![Package Specification](../images/advancedExtensibility26.png "Package Specification")
+            ![Package Specification](../images/advancedextensibility26.png "Package Specification")
 
     * Body: XX\_PO\_PCC\_DATASECURITY\_PKG\_PUB.plb
-            ![Package Body](../images/advancedExtensibility25.png "Package Body")
+            ![Package Body](../images/advancedextensibility25.png "Package Body")
 
     * This security handler procedure contains below security rules:
         * ORG\_ID in (ORG\_ID1, ORG\_ID2, ORG\_ID3…) for that specific user
@@ -679,7 +679,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
   	    <copy>@/u01/live_labs/11470/lab_files/lab5/task6/XX_PO_PCC_DATASECURITY_PKG_PUB.plb</copy>
             ```
 
-        ![Compile Package](../images/advancedExtensibility29.png "Compile Package")
+        ![Compile Package](../images/advancedextensibility29.png "Compile Package")
 
 * Once the package specification and the body are compiled successfully, then the user need to configure the data load rules for the respective dataset
     * Navigate to ECC Developer page
@@ -693,16 +693,16 @@ style="white-space:pre-wrap; word-wrap:break-word"
     * Provide the security handler name as “XX\_PO\_PCC\_DATASECURITY\_PKG\_PUB.GetFilterAttributeValuesPO”
     * Enable the “Enabled” checkbox. This will ensure that the security rules are applied before accessing the data.
 
-        ![Configure Load Rules](../images/advancedExtensibility28.png "Configure Load Rules")
+        ![Configure Load Rules](../images/advancedextensibility28.png "Configure Load Rules")
     * Click on the “Save” button
     * Navigate to the XX Local Agreements dashboard
         * The dashboard will error out stating that the user is not authorized to access the dataset using the logged in responsibility
         * This is because, we have added Privilege to the dataset that only the users accessing the dashboard using XX\_PO\_PCC\_ECC\_LOCAL\_AGREEMENTS page, can access the dataset
 
-        ![Not Authorized](../images/advancedExtensibility35.png "Not Authorized")
+        ![Not Authorized](../images/advancedextensibility35.png "Not Authorized")
 
 * If any user accesses the local agreements dashboard using the allowed responsibility/page, then the user will be able to view only the designated subset of data. Hence ensuring data security.
-        ![Operations User](../images/advancedExtensibility36.png "Operations User")
+        ![Operations User](../images/advancedextensibility36.png "Operations User")
 
 
 

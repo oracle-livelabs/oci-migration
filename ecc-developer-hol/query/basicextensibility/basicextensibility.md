@@ -61,7 +61,7 @@ Password: welcome1
      ![Procurement Command Center](../images/ext700.png "Procurement Command Center")
 15. Click Save
      ![Procurement Command Center](../images/ext800.png "Procurement Command Center")
-This concludes this task, we successfully extended Indirect Procurement dashboard with a new components (Chart) to suit our requirements but we also need to display this extended Indirect procurement dashboard to all users by replacing the shipped dashboard.
+This concludes this task, we successfully extended Indirect Procurement dashboard with a new component (Chart) to suit our requirements but we also need to display this extended Indirect procurement dashboard to all users by replacing the shipped dashboard.
 
 
 ## Task 2: New dashboard RBAC Setup 
@@ -80,7 +80,7 @@ Password: welcome1
   	    <copy>PO_PCC_ECC_IND_PROC</copy>
             ```
      * Click on the “Duplicate” icon displayed for PO\_PCC\_ECC\_IND\_PROC
-          ![Duplicate Function](../images/basicExtensibilitySetup1.png "Duplicate Function")
+          ![Duplicate Function](../images/basicextensibilitysetup1.png "Duplicate Function")
 
      * Change the details in the duplicate function page as mentioned below:
           * Name: 
@@ -95,7 +95,7 @@ Password: welcome1
                              ```
   	    <copy>PO PCC ECC Custom Indirect Procurement Page</copy>
             ```
-     ![Duplicate Function](../images/basicExtensibilitySetup2.png "Duplicate Function")
+     ![Duplicate Function](../images/basicextensibilitysetup2.png "Duplicate Function")
 
      * Click on the “Continue” button
      * Change the value for HTML Call to 
@@ -104,7 +104,7 @@ Password: welcome1
             ```
      * Click on the “Submit” button
 
-          ![Create Function](../images/basicExtensibilitySetup3.png "Create Function") 
+          ![Create Function](../images/basicextensibilitysetup3.png "Create Function") 
 
 2.	Add the new FND Function to PO\_PCC\_HOME\_PAGE menu
      * Navigate to Functional Administrator Responsibility -> Core Services -> Menus
@@ -114,7 +114,7 @@ Password: welcome1
             ```
      * Click on “Update” button for “PO PCC Home Page” menu
 
-          ![Update](../images/basicExtensibilitySetup4.png "Update")
+          ![Update](../images/basicextensibilitysetup4.png "Update")
 
      * In the menu manager section, click on “+” icon to add below details:
           * Function: 
@@ -122,11 +122,11 @@ Password: welcome1
   	    <copy>PO PCC ECC Custom Indirect Procurement Page</copy>
             ```
      * Click on “Apply” button to save the menu
-          ![Add Function to Menu](../images/basicExtensibilitySetup5.png "Add Function to Menu")
+          ![Add Function to Menu](../images/basicextensibilitysetup5.png "Add Function to Menu")
      * Clear Application Cache:
         * Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
         * Click on “Clear All Cache” button
-          ![Clear Cache](../images/scratchpadSetup10.png "Clear Cache")
+          ![Clear Cache](../images/scratchpadsetup10.png "Clear Cache")
  
 
 ## Task 3: EBS OA Personalization 
@@ -137,27 +137,27 @@ Password: welcome1
 Password: welcome1
     ```
 1.	Navigate to Purchasing, Vision Operations (USA) -> Procurement Command Center -> Indirect Procurement
-          ![Indirect Procurement](../images/basicExtensibilitySetup6.png "Indirect Procurement")
+          ![Indirect Procurement](../images/basicextensibilitysetup6.png "Indirect Procurement")
 2.	Click on EBS Settings icon
 3.	Click on “Personalize Page” option
-          ![Personalize Page](../images/basicExtensibilitySetup7.png "Personalize Page")
+          ![Personalize Page](../images/basicextensibilitysetup7.png "Personalize Page")
 
 4. Personalize the Rich Container:
 
     * A rich content container is an OA component which is designed to embed/enclose an external content within an OA Framework page. The rich content container component accepts the URL of the rich content, in this case an ECC dashboard.
     This rich content is then enclosed within an iFrame within an OA Framework page. 
     In this case, through Oracle EBS and ECC integration, users are allowed to drill down from Oracle EBS to ECC. The rich container requires an FND function of the ECC dashboard page, which will allow the user to access the respective ECC dashboard inside EBS.
-          ![Personalize Rich Container](../images/basicExtensibilitySetup8.png "Personalize Rich Container")
+          ![Personalize Rich Container](../images/basicextensibilitysetup8.png "Personalize Rich Container")
 
 5.	Update the below details and click on the “Apply” button
      * Destination Function: 
                                                       ```
   	    <copy>XX_PO_PCC_ECC_IND_PROC</copy>
             ```
-          ![Update Rich Container Details](../images/basicExtensibilitySetup9.png "Update Rich Container Details")
+          ![Update Rich Container Details](../images/basicextensibilitysetup9.png "Update Rich Container Details")
 
 6. Click on “Return to Application” to access the dashboard
-          ![Indirect Procurement Dashboard](../images/basicExtensibilitySetup10.png " Indirect Procurement Dashboard")
+          ![Indirect Procurement Dashboard](../images/basicextensibilitysetup10.png " Indirect Procurement Dashboard")
 
 
 

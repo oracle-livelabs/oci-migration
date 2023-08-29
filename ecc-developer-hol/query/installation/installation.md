@@ -532,7 +532,7 @@ Password: welcome1
 
     
 13. Navigate to ECC Developer, you should see new applications as below
-    ![Validate import of ECC applications](../images/5apps.png "Validate import of ECC applications")
+    ![Validate import of ECC applications](../images/apps1234.png "Validate import of ECC applications")
 
 14. To perform RBAC setup with the UMX\_ECC\_RBACAuto.sh script, you should type the following command (case is important):
 

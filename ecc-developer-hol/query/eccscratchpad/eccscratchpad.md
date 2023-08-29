@@ -46,9 +46,9 @@ With this feature users can:
 4. Add new dashboards to existing dashboards
 
 **Goal:** In this task our goal is to provide Local Agreements dashboard access to the users who have access to Purchasing, Vision Operations responsibility
-        ![Expected result](../images/advancedExtensibilitySetupGoal.png "Expected result")
+        ![Expected result](../images/advancedextensibilitysetupgoal.png "Expected result")
 **Personalization Steps:**
-        ![Personalization Steps](../images/advancedExtensibilitySetupSteps.png "Personalization Steps")
+        ![Personalization Steps](../images/advancedextensibilitysetupsteps.png "Personalization Steps")
 
 1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
     ```
@@ -62,7 +62,7 @@ Password: welcome1
   	    <copy>PO_PCC_ECC_AGREEMENTS</copy>
             ```
     * Click on the “Duplicate” icon displayed for PO\_PCC\_ECC\_AGREEMENTS
-        ![Duplicate Function](../images/advancedExtensibilitySetup1.png "Duplicate Function")
+        ![Duplicate Function](../images/advancedextensibilitysetup1.png "Duplicate Function")
 
     * Change the details in the duplicate function page as mentioned below:
         * Name: 
@@ -73,7 +73,7 @@ Password: welcome1
                                 ```
   	    <copy>XX_PO_PCC_ECC_LOCAL_AGREEMENTS</copy>
             ```
-        ![Duplicate Function](../images/advancedExtensibilitySetup2.png "Duplicate Function")
+        ![Duplicate Function](../images/advancedextensibilitysetup2.png "Duplicate Function")
 
     * Click on the “Continue” button
     * Change the value for HTML Call to 
@@ -81,7 +81,7 @@ Password: welcome1
   	    <copy>GWY.jsp?targetAppType=ECC&targetPage=web/eccapp/po_pcc/xx-pcc-local-agreements</copy>
             ```
     * Click on the “Submit” button
-        ![Create Function](../images/advancedExtensibilitySetup3.png "Create Function") 
+        ![Create Function](../images/advancedextensibilitysetup3.png "Create Function") 
 
 3.	Add ECC Scratchpad to Procurement Command Center Menu:
     * Navigate to Functional Administrator Responsibility -> Core Services -> Menus
@@ -100,7 +100,7 @@ Password: welcome1
   	    <copy>ECC Scratchpad</copy>
             ```
         * Click on “Apply” button to save the menu
-        ![Add Function to Menu](../images/advancedExtensibilitySetup4.png "Add Function to Menu")
+        ![Add Function to Menu](../images/advancedextensibilitysetup4.png "Add Function to Menu")
 3.	Create Permission Set for Local Agreements:
     * Navigate to Functional Administrator Responsibility -> Security -> Permission Sets
     * Click on the “Create Permission Set” button
@@ -119,7 +119,7 @@ Password: welcome1
   	    <copy>PO PCC ECC Local Agreements page</copy>
             ```
     * Click on “Apply” button to create the permission set
-        ![Create Permission Set](../images/advancedExtensibilitySetup5.png "Create Permission Set")
+        ![Create Permission Set](../images/advancedextensibilitysetup5.png "Create Permission Set")
 4.	Create Grant for Local Agreements:
     * Navigate to Functional Administrator Responsibility -> Security -> Grants
     * Click on “Create Grant” button
@@ -140,12 +140,12 @@ Password: welcome1
     * Click on the “Next” button
     * Provide the “Set” as “PO PCC Local Agreements Permission Set”
     * Click on the “Next” button and then “Finish” button
-        ![Create Grant](../images/advancedExtensibilitySetup6.png "Create Grant")
+        ![Create Grant](../images/advancedextensibilitysetup6.png "Create Grant")
 
     * Clear Application Cache:
         * Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
         * Click on “Clear All Cache” button
-        ![Clear Cache](../images/scratchpadSetup10.png "Clear Cache")
+        ![Clear Cache](../images/scratchpadsetup10.png "Clear Cache")
 
 **Personalize ECC Scratchpad to add Local Agreements dashboard**
 
@@ -155,19 +155,19 @@ Password: welcome1
 Password: welcome1
     ```
 2.	Navigate to Purchasing, Vision Operations (USA) -> Procurement Command Center -> Local Agreements
-        ![Local Agreements](../images/advancedExtensibilitySetup7.png "Local Agreements")
+        ![Local Agreements](../images/advancedextensibilitysetup7.png "Local Agreements")
 3. Click on EBS Settings icon
 4. Click on “Personalize Page” option
-        ![Personalize Page](../images/advancedExtensibilitySetup8.png "Personalize Page")
+        ![Personalize Page](../images/advancedextensibilitysetup8.png "Personalize Page")
 
 4.	In the Personalization structure table, click on “Personalize” icon for Page Layout section to update the window title
-        ![Update Window Title](../images/advancedExtensibilitySetup9.png "Update Window Title")
+        ![Update Window Title](../images/advancedextensibilitysetup9.png "Update Window Title")
 
 5.	Set the window title to “Local Agreements” and click on “Apply” button
-        ![Update Window Title](../images/advancedExtensibilitySetup10.png "Update Window Title")
+        ![Update Window Title](../images/advancedextensibilitysetup10.png "Update Window Title")
 
 6.	Personalize the Rich Container (dashboardRN1)
-        ![Personalize Rich Container](../images/advancedExtensibilitySetup11.png "Personalize Rich Container")
+        ![Personalize Rich Container](../images/advancedextensibilitysetup11.png "Personalize Rich Container")
 
 7. Update the below details and click on the “Apply” button
     * Title: 
@@ -182,29 +182,29 @@ Password: welcome1
                                                            ```
   	    <copy>XX_PO_PCC_ECC_LOCAL_AGREEMENTS</copy>
             ```
-        ![Update Rich Container Details](../images/advancedExtensibilitySetup12.png "Update Rich Container Details")
+        ![Update Rich Container Details](../images/advancedextensibilitysetup12.png "Update Rich Container Details")
 
 8. Set the subtab title by clicking on Personalize icon for first “Sub tab link”
-        ![Update Tab Title](../images/advancedExtensibilitySetup13.png "Update Tab Title")
+        ![Update Tab Title](../images/advancedextensibilitysetup13.png "Update Tab Title")
 
 9. Update the “Text” property to “Local Agreements”
-        ![Update Tab Title](../images/advancedExtensibilitySetup14.png "Update Tab Title")
+        ![Update Tab Title](../images/advancedextensibilitysetup14.png "Update Tab Title")
 
 10. Click on “Return to Application” to access the dashboard
-        ![Local Agreements Dashboard](../images/advancedExtensibilitySetup15.png "Local Agreements Dashboard")
+        ![Local Agreements Dashboard](../images/advancedextensibilitysetup15.png "Local Agreements Dashboard")
 
 11.	To add other shipped dashboards, like Agreements dashboard or Requisitions dashboard in the same page, the user needs to follow the same personalization process for other sub tabs available in the ECC Scratchpad personalization.
 
 12.	Click on “Personalize” option under EBS Settings
 
 13.	Personalize the Header (dashboardHdrRN2)
-        ![Personalize Header](../images/advancedExtensibilitySetup16.png "Personalize Header")
+        ![Personalize Header](../images/advancedextensibilitysetup16.png "Personalize Header")
 
 14.	Set the “Rendered” property to “true”
-        ![Personalize Header](../images/advancedExtensibilitySetup17.png "Personalize Header")
+        ![Personalize Header](../images/advancedextensibilitysetup17.png "Personalize Header")
 
 15.	Personalize the Rich Container (dashboardRN2)
-        ![Personalize Rich Container](../images/advancedExtensibilitySetup18.png "Personalize Rich Container")
+        ![Personalize Rich Container](../images/advancedextensibilitysetup18.png "Personalize Rich Container")
 
 16.	Update the below details and click on the “Apply” button
     * Title: 
@@ -219,15 +219,15 @@ Password: welcome1
                                                                    ```
   	    <copy>PO_PCC_ECC_REQUISITIONS</copy>
             ```
-        ![Update Rich Container Details](../images/advancedExtensibilitySetup19.png "Update Rich Container Details")
+        ![Update Rich Container Details](../images/advancedextensibilitysetup19.png "Update Rich Container Details")
 
 17.	Set the subtab title by clicking on Personalize icon for second “Sub tab link”
 
 18.	Update the “Text” property to “Requisitions”
-        ![Update Tab Title](../images/advancedExtensibilitySetup20.png "Update Tab Title")
+        ![Update Tab Title](../images/advancedextensibilitysetup20.png "Update Tab Title")
 
 19.	Click on “Return to Application” to access the dashboards
-        ![Requisitions Dashboard](../images/advancedExtensibilitySetup21.png "Requisitions Dashboard")
+        ![Requisitions Dashboard](../images/advancedextensibilitysetup21.png "Requisitions Dashboard")
 
 
 
@@ -235,7 +235,7 @@ Password: welcome1
 ## Task 2: ECC Scratchpad for Cross-departmental access
 
 **Goal:** As an Operations Manager, I want to monitor and measure the performance and efficiency of the entire procure-to-pay process so that I can identify opportunities for improvement, cost savings, compliance, and risk mitigation.
-    ![P2P Operations](../images/scratchpadUpdated15.png "P2P Operations")
+    ![P2P Operations](../images/scratchpadupdated15.png "P2P Operations")
 
 The OA Scratchpad set up consists of two major steps: 
 
@@ -329,7 +329,7 @@ Password: welcome1
         *	Payables Command Center Access Permission Set (AP\_ECC\_ACCESS\_PS)
 4.	Click on “Apply” button to create the permission set
 
-    ![Permission Set](../images/scratchpadSetup4.png "Permission Set")
+    ![Permission Set](../images/scratchpadsetup4.png "Permission Set")
 
 **Create a new Menu:**
 
@@ -343,7 +343,7 @@ Password: welcome1
         *	Function: ECC Scratchpad
 4.	Click on “Apply” button to create the menu
 
-    ![Menu](../images/scratchpadSetup5.png "Menu")
+    ![Menu](../images/scratchpadsetup5.png "Menu")
 
 
 **Create a new Responsibility:**
@@ -360,7 +360,7 @@ Password: welcome1
         *	Application: Purchasing
 4.	Click on “Create” button to create the responsibility
 
-    ![Responsibility](../images/scratchpadSetup6.png "Responsibility")
+    ![Responsibility](../images/scratchpadsetup6.png "Responsibility")
 
 
 **Create a new Access role and Grant:**
@@ -384,8 +384,8 @@ Password: welcome1
 8.	Now, upon clicking “Ok” in the confirmation dialog, the user is navigated to the “Update Access Role” page
 9.	Click on “Apply” button
 
-    ![Access Role](../images/scratchpadSetup7.png "Access Role")
-    ![Grant](../images/scratchpadSetup8.png "Grant")
+    ![Access Role](../images/scratchpadsetup7.png "Access Role")
+    ![Grant](../images/scratchpadsetup8.png "Grant")
 
 **Run Workflow Background Process:**
 
@@ -397,14 +397,14 @@ Password: welcome1
 4.	Click on “Continue” button and then on “Submit” button
 5.  Once the “Workflow Background Process” request is completed successfully, proceed to the next step to clear the application cache
 
-    ![Workflow Background Process](../images/scratchpadSetup9.png "Workflow Background Process")
+    ![Workflow Background Process](../images/scratchpadsetup9.png "Workflow Background Process")
 
 **Clear Application Cache:**
 
 1.	Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
 2.	Click on “Clear All Cache” button
 
-    ![Clear Cache](../images/scratchpadSetup10.png "Clear Cache")
+    ![Clear Cache](../images/scratchpadsetup10.png "Clear Cache")
 
 
 **Assign Access Role to Responsibility:**
@@ -413,13 +413,13 @@ Password: welcome1
 2.	Search for “Procure to Pay Operations Manager” responsibility
 3.	Select the icon under “View In Hierarchy”
 
-    ![Assign Role to Responsibility](../images/scratchpadSetup11.png "Assign Role to Responsibility")
+    ![Assign Role to Responsibility](../images/scratchpadsetup11.png "Assign Role to Responsibility")
 
 4.  Click on + icon under “Add node”	
 5.  Then search for “P2P Access Role” and click on “Go” button
 6.	Add the access role to the responsibility
 
-    ![Assign Role to Responsibility](../images/scratchpadSetup12.png "Assign Role to Responsibility")
+    ![Assign Role to Responsibility](../images/scratchpadsetup12.png "Assign Role to Responsibility")
 
 **Assign the Responsibility to User:**
 
@@ -430,7 +430,7 @@ Password: welcome1
 5.	Provide the Justification like “New Responsibility for ECC HOL”
 6.  Click on “Apply” button
 
-    ![Assign Responsibility to User](../images/scratchpadSetup13.png "Assign Responsibility to User")
+    ![Assign Responsibility to User](../images/scratchpadsetup13.png "Assign Responsibility to User")
 
 7.  Run the “Workflow Background Process” request and “Clear the application cache” as done earlier
 
@@ -444,14 +444,14 @@ Password: welcome1
 4.	Click on “Continue” button and then on “Submit” button
 5.	Once the “Workflow Background Process” request is completed successfully, proceed to the next step to clear the application cache
 
-    ![Workflow Background Process](../images/scratchpadSetup9.png "Workflow Background Process")
+    ![Workflow Background Process](../images/scratchpadsetup9.png "Workflow Background Process")
 
 **Clear Application Cache:**
 
 1.	Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
 2.	Click on “Clear All Cache” button
 
-    ![Clear Cache](../images/scratchpadSetup10.png "Clear Cache")
+    ![Clear Cache](../images/scratchpadsetup10.png "Clear Cache")
 
 
 **Personalize ECC Scratchpad to add ECC Procure to Pay dashboards**
