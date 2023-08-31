@@ -515,7 +515,7 @@ Password: welcome1
     ```
 
 
-    ![Enter products to import](../images/importecc1.png "Enter products to import")
+    ![Enter products to import](../images/i1.png "Enter products to import")
     ![Import Applications from EBS](../images/import1000.png "Import Applications from EBS")
 
 11. You should see the following  screen when you run it successfully
