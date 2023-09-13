@@ -117,19 +117,19 @@ For ease of execution of this workshop, your VM instance has been pre-configured
 
   ![Remote desktop displayed](../images/novnc-launch-get-started.png " ")
 
-  If you see the below error ,  we recommend to bounce EBS services , follow below steps:
+  If you see the below error, we recommend to bounce EBS services, follow below steps:
   ![Click Remote Desktop URL](../images/servicedown.png " ")
-  a. Open the terminal and source EBS apps running instance , by using below command  
+  a. Open the terminal and source EBS apps running instance, by using below command  
       ```text
     <copy>
     source /u01/install/APPS/EBSapps.env run
     </copy>
     ```
 
-  b. Navigate to cd $ADMIN\_SCRIPTS\_HOME and run ./adstpall.sh  (apps username = apps , apps password = apps , weblogic server password: welcome1 )
+  b. Navigate to cd $ADMIN\_SCRIPTS\_HOME and run ./adstpall.sh  (apps username = apps, apps password = apps, weblogic server password: welcome1 )
   ![Click Remote Desktop URL](../images/stopall.png " ")
 
-  c. Navigate to cd $ADMIN\_SCRIPTS\_HOME and run ./adstpall.sh  (apps username = apps , apps password = apps , weblogic server password: welcome1 )
+  c. Navigate to cd $ADMIN\_SCRIPTS\_HOME and run ./adstpall.sh  (apps username = apps, apps password = apps, weblogic server password: welcome1 )
   ![Click Remote Desktop URL](../images/startall.png " ")
 
 
