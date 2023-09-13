@@ -30,7 +30,7 @@ We strongly recommend using this stack to create a self-contained/dedicated VCN 
 Open [OCI console](https://www.oracle.com/cloud/sign-in.html?redirect_uri=https%3A%2F%2Fcloud.oracle.com%2F)  and login with your account credentials.
   ![OCI Console](../images/hq4.png " ")
 
-Using the details from the two steps above, proceed to the lab *Environment Setup* to setup your workshop environment using Oracle Resource Manager (ORM) and one of the following options:
+Using the details from the two steps above, proceed to the *Task 3* to setup your workshop environment using Oracle Resource Manager (ORM) and one of the following options:
 -  Create Stack:  *Compute + Networking*
 
 
@@ -44,7 +44,7 @@ For more information about Terraform and Resource Manager, please see the append
 Proceed to deploy your workshop environment using Oracle Resource Manager (ORM) stack
 
 ## Task 4: Create Stack:  Compute + Networking
-1. Identify the ORM stack zip file downloaded in *Lab: Prepare Setup*
+1. Identify the ORM stack zip file downloaded in *Task 1*
 2. Log in to Oracle Cloud
 3.  Open up the hamburger menu in the top left corner.  Click **Developer Services**, and choose **Resource Manager > Stacks**. Choose the compartment in which you would like to install the stack. Click **Create Stack**.
 
