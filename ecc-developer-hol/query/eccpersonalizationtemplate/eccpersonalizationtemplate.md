@@ -1,9 +1,9 @@
-# ECC Scratchpad
+# ECC Personalization Template
 
 
 ### Introduction
 
-This lab walks you through the ECC Scratchpad feature, what the feature is, the benefits of this feature and hands on demos.
+This lab walks you through the ECC Personalization Template feature, what the feature is, the benefits of this feature and hands on demos.
 
 Estimated Time: 30 minutes
 
@@ -15,10 +15,10 @@ Estimated Time: 30 minutes
 ### Objectives
 
 In this lab, you will:
-* Learn about ECC Scratchpad
+* Learn about ECC Personalization Template
 * Create a new FND function for the dashboard
 * Create RBAC setup for the new dashboard
-* Add the new FND function to ECC Scratchpad to view the dashboard
+* Add the new FND function to ECC Personalization Template to view the dashboard
 
 
 
@@ -30,12 +30,12 @@ This lab assumes you have:
 
 ##  
 
-## Task 1: ECC Scratchpad for ECC Procurement
+## Task 1: ECC Personalization Template for ECC Procurement
 
-In the previous task we extended the existing Agreements dashboard to include Local agreements, but this new dashboard is not accessible for end users, its only accessible to the admin who created the dashboard. To make this dashboard accessible we would ideally create an OA page which requires a lot of development effort. The other way to make the dashboard accessible to users is to leverage the ECC Scratchpad feature.
+In the previous task we extended the existing Agreements dashboard to include Local agreements, but this new dashboard is not accessible for end users, its only accessible to the admin who created the dashboard. To make this dashboard accessible we would ideally create an OA page which requires a lot of development effort. The other way to make the dashboard accessible to users is to leverage the ECC Personalization Template feature.
 
-ECC Scratchpad is a seeded OA page shipped as part of ECC Developer responsibility i.e., seeded FND function FND\_ECC\_SCRATCHPAD where customers can easily add and remove tabs within this seeded OA page. This allows user to access and manage multiple dashboards from a single responsibility so that they can have a full view of all business operations. This is different from using menus i.e., creating a menu hierarchy to personalize existing dashboards, which needs additional development in terms of creating OA pages, rather the ECC Scratchpad approach is a much easier approach in personalizing and extending not just a single dashboard but across multiple dashboards. No developer is needed in developing an OA page
-    ![ECC Scratchpad](../images/eccz100.jpg "ECC Scratchpad")
+ECC Personalization Template is a seeded OA page shipped as part of ECC Developer responsibility i.e., seeded FND function FND\_ECC\_SCRATCHPAD where customers can easily add and remove tabs within this seeded OA page. This allows user to access and manage multiple dashboards from a single responsibility so that they can have a full view of all business operations. This is different from using menus i.e., creating a menu hierarchy to personalize existing dashboards, which needs additional development in terms of creating OA pages, rather the ECC Personalization Template approach is a much easier approach in personalizing and extending not just a single dashboard but across multiple dashboards. No developer is needed in developing an OA page
+    ![ECC Personalization Template](../images/eccz100.jpg "ECC Personalization Template")
 
 
 With this feature users can:
@@ -366,7 +366,7 @@ Password: welcome1
             ```
         *	Function: 
                                                                    ```
-  	    <copy>Fixed Assets Command Center Home</copy>
+  	    <copy>ECC Scratchpad</copy>
             ```
 4.	Click on “Apply” button to create the menu
 
@@ -544,7 +544,7 @@ Password: welcome1
 
 
 5.	In the Personalization structure table, click on “Personalize” icon for Page Layout section to update the window title
-    ![Update Window Title](../images/scratchpadupdated6.png "Update Window Title")
+    ![Update Window Title](../images/sd1.png "Update Window Title")
 
 6.	Set the window title to “P2P Operations” and click on “Apply” button
     ![Update Window Title](../images/scratchpadupdated7.png "Update Window Title")
