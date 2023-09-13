@@ -117,6 +117,23 @@ For ease of execution of this workshop, your VM instance has been pre-configured
 
   ![Remote desktop displayed](../images/novnc-launch-get-started.png " ")
 
+  If you see the below error ,  we recommend to bounce EBS services:
+  ![Click Remote Desktop URL](../images/servicedown.png " ")
+  a. source EBS apps running instance 
+      ```text
+    <copy>
+    source /u01/install/APPS/EBSapps.env run
+    </copy>
+    ```
+
+  b. Navigate to cd $ADMIN_SCRIPTS_HOME and run ./adstpall.sh  (apps username = apps , apps password = apps , weblogic server password: welcome1 )
+  ![Click Remote Desktop URL](../images/stopall.png " ")
+
+  c. Navigate to cd $ADMIN_SCRIPTS_HOME and run ./adstpall.sh  (apps username = apps , apps password = apps , weblogic server password: welcome1 )
+  ![Click Remote Desktop URL](../images/startall.png " ")
+
+
+
     >**Note:** While rare, you may see an error on the browser - “*Deceptive Site Ahead*” or similar depending on your browser type as shown below.
 
     Public IP addresses used for LiveLabs provisioning come from a pool of reusable addresses and this error is because the address was previously used by a compute instance long terminated, but that wasn't properly secured, got bridged, and was flagged. You can safely ignore and proceed by clicking on *Details*, and finally, on *Visit this unsafe site*.
