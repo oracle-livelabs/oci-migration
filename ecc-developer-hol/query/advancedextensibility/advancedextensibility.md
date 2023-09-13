@@ -37,7 +37,7 @@ A data set is both a logical and a physical grouping of attributes to support bu
 
 
 At the physical level, the data set stores one or more records with a uniquely identifying key that represents a particular level of detail of the entity stored in the enterprise system. Unique key is used to identify records and data sets.
-* ECC\_SPEC\_ID column is unique and single-assigned. Also, ECC_SPEC_ID must be of "spec" profile type.
+* ECC\_SPEC\_ID column is unique and single-assigned. Also, ECC\_SPEC\_ID must be of "spec" profile type.
 
 
 
