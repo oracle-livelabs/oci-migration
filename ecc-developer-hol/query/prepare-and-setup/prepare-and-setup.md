@@ -43,11 +43,7 @@ Watch the video below for a walk-through of the Environment Setup lab.
 For more information about Terraform and Resource Manager, please see the appendix below.
 Proceed to deploy your workshop environment using Oracle Resource Manager (ORM) stack
 
-Your options are:
-1. Task 3A: Create Stack:  **Compute + Networking** *(recommended)*
-2. Task 3B: Create Stack:  **Compute Only**
-
-## Task 3A: Create Stack:  Compute + Networking
+## Task 4: Create Stack:  Compute + Networking
 1. Identify the ORM stack zip file downloaded in *Lab: Prepare Setup*
 2. Log in to Oracle Cloud
 3.  Open up the hamburger menu in the top left corner.  Click **Developer Services**, and choose **Resource Manager > Stacks**. Choose the compartment in which you would like to install the stack. Click **Create Stack**.
@@ -64,7 +60,7 @@ Your options are:
 
 6. Enter or select the following:
 
-  ![Enter main configurations](../images/main-config-compute-vnc.png " ")
+  ![Enter main configurations](../images/hq6.png " ")
 
     - **Instance Count:** Accept the default, **1**, unless you intend to create more than one (e.g. for a team)
     - **Select Availability Domain:** Select an availability domain from the dropdown list.
@@ -94,7 +90,7 @@ Your options are:
 
   ![Use fixed shapes](../images/fixed-shape.png " ")
 
-7. For this section we will provision a new VCN with all the appropriate ingress and egress rules needed to run this workshop.  If you already have a VCN, make sure it has all of the correct ingress and egress rules and skip to the next section.
+7. For this section we will provision a new VCN with all the appropriate ingress and egress rules needed to run this workshop.  
     - **Use Existing VCN?:** Accept the default by leaving this unchecked. This will create a **new VCN**.
 
 8. Click **Next**.
@@ -104,11 +100,11 @@ Your options are:
 
 10. Your stack has now been created and the *Apply* action triggered is running to deploy your environment!
 
-  ![Apply is successful](../images/apply-job-success.png " ")
+  ![Apply is successful](../images/hq7.png " ")
 
 
 
-## Task 4: Access the Graphical Remote Desktop
+## Task 5: Access the Graphical Remote Desktop
 For ease of execution of this workshop, your VM instance has been pre-configured with a remote graphical desktop accessible using any modern browser on your laptop or workstation. Proceed as detailed below to log in.
 
 1. Navigate to **Stack Details** -> **Application Information** tab, and click the **Remote Desktop** URL.
