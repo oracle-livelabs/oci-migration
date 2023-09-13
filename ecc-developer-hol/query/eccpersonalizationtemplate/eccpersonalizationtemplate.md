@@ -83,7 +83,7 @@ Password: welcome1
     * Click on the “Submit” button
         ![Create Function](../images/a11s3.png "Create Function") 
 
-3.	Add ECC Scratchpad to Procurement Command Center Menu:
+3.	Add ECC Personalization Template to Procurement Command Center Menu:
     * Navigate to Functional Administrator Responsibility -> Core Services -> Menus
     * Search with code as 
                                         ```
@@ -150,7 +150,7 @@ Password: welcome1
     * Click on “Clear All Cache” button and then click on "Yes"
         ![Clear Cache](../images/ss110.png "Clear Cache")
 
-**Personalize ECC Scratchpad to add Local Agreements dashboard**
+**Personalize ECC Personalization Template to add Local Agreements dashboard**
 
 1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
     ```
@@ -196,7 +196,7 @@ Password: welcome1
 10. Click on “Return to Application” to access the dashboard
         ![Local Agreements Dashboard](../images/a11s15.png "Local Agreements Dashboard")
 
-11.	To add other shipped dashboards, like Agreements dashboard or Requisitions dashboard in the same page, the user needs to follow the same personalization process for other sub tabs available in the ECC Scratchpad personalization.
+11.	To add other shipped dashboards, like Agreements dashboard or Requisitions dashboard in the same page, the user needs to follow the same personalization process for other sub tabs available in the ECC Personalization Template personalization.
 
 12.	Click on “Personalize” option under EBS Settings
 
@@ -235,21 +235,21 @@ Password: welcome1
 
 
 
-## Task 2: ECC Scratchpad for Cross-departmental access
+## Task 2: ECC Personalization Template for Cross-departmental access
 
 **Goal:** As an Operations Manager, I want to monitor and measure the performance and efficiency of the entire procure-to-pay process so that I can identify opportunities for improvement, cost savings, compliance, and risk mitigation.
     ![P2P Operations](../images/scratchpadupdated15.png "P2P Operations")
 
-The ECC Scratchpad set up consists of two major steps: 
+The ECC Personalization Template set up consists of two major steps: 
 
 1. RBAC Set up
 2. OA Personalization
-    ![ECC Scratchpad](../images/oa31.png "ECC Scratchpad")
+    ![ECC Personalization Template](../images/oa31.png "ECC Personalization Template")
 
 
 **Pre-requisites:**
 
-1.	EBS Form functions for the required ECC Dashboards which are to be displayed in the ECC Scratchpad
+1.	EBS Form functions for the required ECC Dashboards which are to be displayed in the ECC Personalization Template
 
 **Dashboard FND Functions:**
 
@@ -518,13 +518,13 @@ Password: welcome1
     ![Clear Cache](../images/ss110.png "Clear Cache")
 
 
-**Personalize ECC Scratchpad to add ECC Procure to Pay dashboards**
+**Personalize ECC Personalization Template to add ECC Procure to Pay dashboards**
 
 
 
 **Tasks:**
 
-1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) to access ECC Scratchpad under “Procure to Pay Operations Manager” responsibility
+1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) to access ECC Personalization Template under “Procure to Pay Operations Manager” responsibility
 
     ```
   	 Username: operations
@@ -533,7 +533,7 @@ Password: welcome1
     
 
 1.	Navigate to Procure to Pay Operations Manager -> P2P Operations
-    ![ECC Scratchpad](../images/scratchpadupdated1.png "ECC Scratchpad")
+    ![ECC Personalization Template](../images/scratchpadupdated1.png "ECC Personalization Template")
 
 2.	Click on the EBS Settings icon
     ![EBS Settings](../images/scratchpadupdated2.png "EBS Settings")
