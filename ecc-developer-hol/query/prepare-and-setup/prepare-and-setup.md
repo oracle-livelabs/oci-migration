@@ -117,7 +117,7 @@ For ease of execution of this workshop, your VM instance has been pre-configured
 
   ![Remote desktop displayed](../images/novnc-launch-get-started.png " ")
 
-  If you see the below error ,  we recommend to bounce EBS services:
+  If you see the below error ,  we recommend to bounce EBS services , follow below steps:
   ![Click Remote Desktop URL](../images/servicedown.png " ")
   a. source EBS apps running instance 
       ```text
