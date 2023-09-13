@@ -126,10 +126,10 @@ For ease of execution of this workshop, your VM instance has been pre-configured
     </copy>
     ```
 
-  b. Navigate to cd $ADMIN_SCRIPTS_HOME and run ./adstpall.sh  (apps username = apps , apps password = apps , weblogic server password: welcome1 )
+  b. Navigate to cd $ADMIN\_SCRIPTS\_HOME and run ./adstpall.sh  (apps username = apps , apps password = apps , weblogic server password: welcome1 )
   ![Click Remote Desktop URL](../images/stopall.png " ")
 
-  c. Navigate to cd $ADMIN_SCRIPTS_HOME and run ./adstpall.sh  (apps username = apps , apps password = apps , weblogic server password: welcome1 )
+  c. Navigate to cd $ADMIN\_SCRIPTS\_HOME and run ./adstpall.sh  (apps username = apps , apps password = apps , weblogic server password: welcome1 )
   ![Click Remote Desktop URL](../images/startall.png " ")
 
 
