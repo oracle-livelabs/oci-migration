@@ -119,7 +119,7 @@ For ease of execution of this workshop, your VM instance has been pre-configured
 
   If you see the below error ,  we recommend to bounce EBS services , follow below steps:
   ![Click Remote Desktop URL](../images/servicedown.png " ")
-  a. source EBS apps running instance 
+  a. Open the terminal and source EBS apps running instance , by using below command  
       ```text
     <copy>
     source /u01/install/APPS/EBSapps.env run
