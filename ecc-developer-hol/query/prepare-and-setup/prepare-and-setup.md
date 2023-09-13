@@ -24,11 +24,16 @@ This lab assumes you have:
 
 2.  Save in your downloads folder.
 
-We strongly recommend using this stack to create a self-contained/dedicated VCN with your instance(s). Skip to *Step 3* to follow our recommendations. If you would rather use an exiting VCN then proceed to the next step as indicated below to update your existing VCN with the required Egress rules.
+We strongly recommend using this stack to create a self-contained/dedicated VCN with your instance(s). Skip to *Task 3* to follow our recommendations. If you would rather use an exiting VCN then proceed to the next step as indicated below to update your existing VCN with the required Egress rules.
 
 ## Task 2: Setup Compute   
+Open [OCI console](https://www.oracle.com/cloud/sign-in.html?redirect_uri=https%3A%2F%2Fcloud.oracle.com%2F)  and login with your account credentials.
+  ![OCI Console](../images/hq4.png " ")
+
 Using the details from the two steps above, proceed to the lab *Environment Setup* to setup your workshop environment using Oracle Resource Manager (ORM) and one of the following options:
 -  Create Stack:  *Compute + Networking*
+
+
 
 ## Task 3: Create Stack: Choose a Path 
 Watch the video below for a walk-through of the Environment Setup lab.
@@ -53,7 +58,7 @@ Your options are:
 
 4.  Select **My Configuration**, choose the **.Zip file** button, click the **Browse** link, and select the zip file that you downloaded or drag-n-drop for the file explorer.
 
-  ![Select zip file](../images/select-zip.png " ")
+  ![Select zip file](../images/hq1.png " ")
 
 5.  Click **Next**.
 
@@ -70,7 +75,7 @@ Your options are:
             - **SSH Public Key**: Select *Choose SSH Key Files*
                 - *Choose Public Key Files*: Drag-n-drop or browse and select  public key *ecchol.pub* from this directory ecc-hol-keys which can be extratced from after downloading this  [ecc-hol-keys.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/jyHA4nclWcTaekNIdpKPq3u2gsLb00v_1mmRKDIuOEsp--D6GJWS_tMrqGmb85R2/n/c4u04/b/livelabsfiles/o/labfiles/ecc-hol-keys.zip) on your computer
 
-        ![Choose SSH keys](../images/choose-ssh.png " ")
+        ![Choose SSH keys](../images/hq2.png " ")
 
         >**Notes:**
         1. This assumes that you already have an SSH key pair available on the local system where you will be connecting from. If you don't and for more info on creating and using SSH keys for your specific platform and client, please refer to the guide [Generate SSH Keys](https://oracle-livelabs.github.io/common/labs/generate-ssh-key)
@@ -78,15 +83,11 @@ Your options are:
 
         - **Option (C)** - Check *Need Remote Access via SSH?* and *Auto Generate SSH Key Pair* to have the keys auto-generated for you during provisioning. If you select this option you will be provided with the private key post provisioning.
 
-        ![Auto-generate SSH keys](../images/auto-ssh.png " ")
+        ![Auto-generate SSH keys](../images/hq3.png " ")
 
     Depending on the quota you have in your tenancy you can choose from standard Compute shapes or Flex shapes. Please visit the Appendix: Troubleshooting Tips for instructions on checking your quota
 
-    - **Use Flexible Instance Shape with Adjustable OCPU Count?:** Keep the default as checked (unless you plan on using a fixed shape)
-    - **Instance Shape:** Keep the default or select from the list of Flex shapes in the dropdown menu (e.g *VM.Standard.E4.Flex*).
-    - **Instance OCPUS:** Accept the default shown. e.g. (**4**) will provision 4 OCPUs and 64GB of memory. You may also elect to reduce or increase the count by selecting from the dropdown. e.g. `[2-24]`. Please ensure you have the capacity available before increasing.
-
-    If don't have the required quota for Flex Shapes or you prefer to use fixed shapes, follow the instructions below.  Otherwise, skip to the next step.
+    
 
     - **Use Flexible Instance Shape with Adjustable OCPU Count?:** Unchecked
     - **Instance Shape:** Accept the default shown or select from the dropdown. e.g. VM.Standard2.2
@@ -105,96 +106,9 @@ Your options are:
 
   ![Apply is successful](../images/apply-job-success.png " ")
 
-You may now proceed to Task 2 (skip Task 1B).
 
-## Task 3B: Create Stack:  Compute Only
-If you just completed Task 1A, please proceed to Task 2.  If you have an existing VCN and are comfortable updating VCN configurations, please ensure your VCN meets the minimum requirements. Refer to *Lab: Prepare Setup*.
 
-  >**Note:** We recommend letting our stack create the VCN to reduce the potential for errors.
-
-1.  Identify the ORM stack zip file downloaded in *Lab: Prepare Setup*
-2.  Log in to Oracle Cloud
-3.  Open up the hamburger menu in the top left corner.  Click **Developer Services**, and choose **Resource Manager > Stacks**. Choose the compartment in which you would like to install the stack. Click **Create Stack**.
-
-  ![Select Stacks](https://oracle-livelabs.github.io/common/images/console/developer-resmgr-stacks.png " ")
-
-  ![Create Stack](../images/create-stack.png " ")
-
-4. Select **My Configuration**, choose the **.Zip file** button, click the **Browse** link, and select the zip file that you downloaded or drag-n-drop for the file explorer.
-
-  ![Choose zip](../images/select-zip.png " ")
-
-  Enter the following information:
-    - **Name**:  Enter a name  or keep the prefilled default (*DO NOT ENTER ANY SPECIAL CHARACTERS HERE*, including periods, underscores, exclamation, etc, it will mess up the configuration and you will get an error during the apply process)
-    - **Description**:  Same as above
-    - **Create in compartment**:  Select the correct compartment if not already selected
-
-  >**Note:** If this is a newly provisioned tenant such as freetier with no user-created compartment, stop here and first create it before proceeding.
-
-5. Click **Next**.
-
-6. Enter or select the following:
-
-  ![Enter main configurations](../images/main-config-compute.png " ")
-
-    - **Instance Count:** Accept the default, **1**, unless you intend to create more than one (e.g. for a team)
-    - **Select Availability Domain:** Select an availability domain from the dropdown list.
-    - **Need Remote Access via SSH?** In this step you have 3 options to select from:
-        - **Option (A)** - Keep Unchecked for Remote Desktop only Access - The Default
-        - **Option (B)** - Check *Need Remote Access via SSH?* and keep *Auto Generate SSH Key Pair* unchecked to enable remote access via SSH protocol, then provide the SSH public key(s).
-
-            - **SSH Public Key**: Select *Choose SSH Key Files*
-                - *Choose SSH Key Files*: Drag-n-drop or browse and select  public key *ecchol.pub* from this directory ecc-hol-keys which can be extratced from after downloading this  [ecc-hol-keys.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/jyHA4nclWcTaekNIdpKPq3u2gsLb00v_1mmRKDIuOEsp--D6GJWS_tMrqGmb85R2/n/c4u04/b/livelabsfiles/o/labfiles/ecc-hol-keys.zip) on your computer
-
-        ![select SSH keys](../images/choose-ssh.png " ")
-        >**Notes:**
-        1. This assumes that you already have an  SSH key pair available on the local system where you will be connecting from. If you don't and for more info on creating and using SSH keys for your specific platform and client, please refer to the guide [Generate SSH Keys](https://oracle-livelabs.github.io/common/labs/generate-ssh-key)
-        2. If you used the Oracle Cloud Shell to create your key, make sure you paste the pub file in a notepad, and remove any hard returns. The file should be one line or you will not be able to login to your compute instance
-
-        - **Option (C)** - Check *Need Remote Access via SSH?* and *Auto Generate SSH Key Pair* to have the keys auto-generated for you during provisioning. If you select this option you will be provided with the private key post provisioning.
-
-        ![Auto-generate SSH keys](../images/auto-ssh.png " ")
-
-    Depending on the quota you have in your tenancy you can choose from standard Compute shapes or Flex shapes. Please visit the Appendix: Troubleshooting Tips for instructions on checking your quota
-
-    - **Use Flexible Instance Shape with Adjustable OCPU Count?:** Keep the default as checked (unless you plan on using a fixed shape)
-    - **Instance Shape:** Keep the default or select from the list of Flex shapes in the dropdown menu (e.g *VM.Standard.E4.Flex*).
-    - **Instance OCPUS:** Accept the default shown. e.g. (**4**) will provision 4 OCPUs and 64GB of memory. You may also elect to reduce or increase the count by selecting from the dropdown. e.g. `[2-24]`. Please ensure you have the capacity available before increasing.
-
-    If don't have the required quota for Flex Shapes or you prefer to use fixed shapes, follow the instructions below.  Otherwise, skip to the next step.
-
-    - **Use Flexible Instance Shape with Adjustable OCPU Count?:** Unchecked
-    - **Instance Shape:** Accept the default shown or select from the dropdown. e.g. VM.StandardE2.2
-
-  ![Use fixed shapes](../images/fixed-shape.png " ")
-
-7. For this section we will an existing VNC.  Please make sure it has all of the correct ingress and egress rules otherwise go back to *Task 1A* and deploy with a self-contained VCN.
-    - **Use Existing VCN?:** Check to select.
-    - **Select Existing VCN:** Select existing VCN with the regional public subnet and required security list.
-
-  >**Note:** For an existing VCN Option to be used successfully, read *Appendix 3* at the bottom of this lab.
-
-  ![Use existing VCN](../images/use-exisiting-vcn.png " ")
-
-9. Select **Run Apply** and click **Create**.
-  ![Click Create](../images/click-create.png " ")
-
-9. Your stack is now created and the *Apply* action triggered is running to deploy your environment!
-
-  ![Apply job in progress](../images/apply-in-progress.png " ")
-
-## Task 4: Terraform Apply
-In the prior steps, we elected to trigger the *terraform apply action* on stack creation.
-
-1.  Review the job output.
-
-  ![Job output](../images/apply-job-success1.png " ")
-
-2.  Congratulations, your environment has been created!  Click the **Application Information** tab to get additional information about what you have just done.
-
-3.  Your public IP address(es), instance name(s), and remote desktop URL are displayed.
-
-## Task 5: Access the Graphical Remote Desktop
+## Task 4: Access the Graphical Remote Desktop
 For ease of execution of this workshop, your VM instance has been pre-configured with a remote graphical desktop accessible using any modern browser on your laptop or workstation. Proceed as detailed below to log in.
 
 1. Navigate to **Stack Details** -> **Application Information** tab, and click the **Remote Desktop** URL.

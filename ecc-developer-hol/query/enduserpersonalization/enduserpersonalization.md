@@ -114,7 +114,7 @@ Password: welcome1
 9. Scroll down to the Transactions List Results Table and click on the "Hide/Show Columns" icon to only focus on attributes we are interested in i.e., Transaction number, Transaction Type, Transaction Date, Due Date, Transaction Currency, Amount Due and Bill-To Customer.
     ![Receivables](../images/r09.png "Receivables")
 
-
+10. You made runtime changes in Summarization bar and Results Table, these changes will remain even if you were to log out and login again.
 10. In the Transactions List Results Table, click on the "Preview" row action for transaction number "524952" to review customer claim by opening the customer invoice. This row action leads to source transaction, i.e., row action to invoice overview for seamless integration with ebs. Click on the hamburger icon within the preview, to view the customer claim clearly.
 
     ![Receivables](../images/r099.png "Receivables")
@@ -140,14 +140,13 @@ Password: welcome1
 2. You will see the below screen,  From **General Ledger Super User** responsibility navigate to **General Ledger Command Center**  
         ![EBS home screen](../images/genz100.png "EBS home screen")
 
-3. You will see the "Account Analysis" dashboard and within the "Account Analysis" dashboard you can see the "Period activities by Period name" Trellis chart.
+3. You will see the "Account Analysis" dashboard and within the "Account Analysis" dashboard you can see the "Period activities by Period name" Trellis chart. We will explore "Expenses" by clicking on "expenses" from the legend in the chart.
         ![Personalize dashboard](../images/fg1.png "Personalize dashboard")
-
-4. We will explore "Expenses" by drilling down on expenses 
-        ![Personalize dashboard](../images/fg2.png "Personalize dashboard")
+        
 
 
 5. Let's explore "Employee expenses" category
+        ![Personalize dashboard](../images/fg2.png "Personalize dashboard")
         ![Personalize dashboard](../images/fg30.png "Personalize dashboard")
 6. The highest employee expense account, is "Meals", which is rather odd. Let's explore it further.
         ![Personalize dashboard](../images/fg4.png "Personalize dashboard")
@@ -179,25 +178,43 @@ Password: welcome1
 
 10. Click on the "Period Activities by Account Hierarchy" tab to analyze employee expenses by account hierarchy
         ![Personalize dashboard](../images/fg11.png "Personalize dashboard")
-11. Click on the runtime options for the Pivot view and select only Period activity as the metric
+11. Click on the runtime options for the Pivot view and select only Period activity as the metric, and then click on "Update"
         ![Personalize dashboard](../images/fg12.png "Personalize dashboard")       
         ![Personalize dashboard](../images/fg13.png "Personalize dashboard")
 
-12. We can see that in Jun-23 we have an usually high amount entered under "Meals" account because of it being accounted under personal expenses, which seems wrong. To investigate this further lets view the source transaction and review the respective invoice lines. 
-12. Click on the respective journal. This will open up another Results Table inline within the current Results Table component. 
-13. The inline Results Table here has details of individual journals and you can view the journal line by clicking on the "Subledger Line" [Results Table and Diagram component both support linking information through Inline view. Inline view acts an overlay on top of parent component. It helps the user to access related information without leaving the original context, leading to shorter turnaround time and better user experience. Through an easy and intuitive Breadcrumb inline, view provides seamless navigation between the parent and target component].
-        ![Journal Lines](../images/journal1.png "Journal Lines")
-        ![Journal Lines](../images/journal2.png "Journal Lines")
-13. The Journal line will be opened in a drawer
-        ![Journal Lines](../images/journal3.png "Journal Lines")
+12. We can see that in Jun-23 we have an usually high amount entered under "Meals" account because of it being accounted under personal expenses, which seems wrong. To investigate this further, click on the "Account Code" for 7690. Click on the diagram icon to navigate to the diagram view
+        ![Personalize dashboard](../images/y6c.png "Personalize dashboard")
+        ![Personalize dashboard](../images/f12.png "Personalize dashboard")
 
-14. Close the drawer and navigate back to selected refinements and save this search so that we can review it again.
+
+14. From this diagram, you can get to know the journal line details. Now, close the drawer and navigate back to selected refinements and save this search so that we can review it again.
 * Users can save frequently-applied filters or preferred filters as saved searches, allowing other users to reuse them. All saved searches are context-sensitive to the page and are part of the search suggestions. 
 * The list of saved searches appears when the focus is on the search component. Saved searches are searchable by their titles, filter attributes, and filter values. Three types of saved searches are available for users: seeded, public, and private. 
 * Seeded saved searches are published along with the product. Administrators can create public saved searches. Users can create their own private saved searches. 
 * Private saved searches are accessible only by the users who created them whereas public saved searches are accessible by all the dashboard users. 
         ![Personalize dashboard](../images/fg15.png "Personalize dashboard")
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
     
 
 

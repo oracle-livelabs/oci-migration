@@ -210,7 +210,7 @@ Password: welcome1
 2. Navigate to Logistics Manager -> Command Center and then to "Track and Trace" dashboard
     ![Move Orders](../images/log1.png "Move Orders")
 
-3. In the Track and Trace dashboard, in Available refinements, by default "Inventory Trace Supplier" is the selected dataset. Change the data set to "Inventory Trace Sales Orders", within "Inventory Trace Sales Orders" data set, search for three order numbers we know we have received complaints for with respect to packaging. Order numbers: 74699, 74708 and 74700 [In Available refinements within a multi select list, you can search and select multiple values, and then click on filter to apply them in one go or you can choose to click on any one value and refine for that value immediately. Here we will do the former].
+3. In the Track and Trace dashboard, in Available refinements, by default "Inventory Trace Supplier" is the selected dataset. Change the data set to "Inventory Trace Sales Orders", within "Inventory Trace Sales Orders" data set, by clicking on the three vertical dots beside the name of the data set (highlighted in the image below), search for three order numbers we know we have received complaints for with respect to packaging. Order numbers: 74699, 74708 and 74700 [In Available refinements within a multi select list, you can search and select multiple values, and then click on filter to apply them in one go or you can choose to click on any one value and refine for that value immediately. Here we will do the former].
 
     ![Track and trace](../images/t01.png "Track and trace")
 

@@ -1,9 +1,9 @@
-# ECC Personalization Template
+# ECC Scratchpad
 
 
 ### Introduction
 
-This lab walks you through the ECC Personalization Template feature, what the feature is, the benefits of this feature and hands on demos.
+This lab walks you through the ECC Scratchpad feature, what the feature is, the benefits of this feature and hands on demos.
 
 Estimated Time: 30 minutes
 
@@ -15,10 +15,10 @@ Estimated Time: 30 minutes
 ### Objectives
 
 In this lab, you will:
-* Learn about ECC Personalization Template
+* Learn about ECC Scratchpad
 * Create a new FND function for the dashboard
 * Create RBAC setup for the new dashboard
-* Add the new FND function to ECC Personalization Template to view the dashboard
+* Add the new FND function to ECC Scratchpad to view the dashboard
 
 
 
@@ -30,12 +30,12 @@ This lab assumes you have:
 
 ##  
 
-## Task 1: ECC Personalization Template for ECC Procurement
+## Task 1: ECC Scratchpad for ECC Procurement
 
-In the previous task we extended the existing Agreements dashboard to include Local agreements, but this new dashboard is not accessible for end users, its only accessible to the admin who created the dashboard. To make this dashboard accessible we would ideally create an OA page which requires a lot of development effort. The other way to make the dashboard accessible to users is to leverage the ECC Personalization Template feature.
+In the previous task we extended the existing Agreements dashboard to include Local agreements, but this new dashboard is not accessible for end users, its only accessible to the admin who created the dashboard. To make this dashboard accessible we would ideally create an OA page which requires a lot of development effort. The other way to make the dashboard accessible to users is to leverage the ECC Scratchpad feature.
 
-ECC Personalization Template is a seeded OA page shipped as part of ECC Developer responsibility i.e., seeded FND function FND\_ECC\_SCRATCHPAD where customers can easily add and remove tabs within this seeded OA page. This allows user to access and manage multiple dashboards from a single responsibility so that they can have a full view of all business operations. This is different from using menus i.e., creating a menu hierarchy to personalize existing dashboards, which needs additional development in terms of creating OA pages, rather the ECC Personalization Template approach is a much easier approach in personalizing and extending not just a single dashboard but across multiple dashboards. No developer is needed in developing an OA page
-    ![ECC Personalization Template](../images/eccz100.jpg "ECC Personalization Template")
+ECC Scratchpad is a seeded OA page shipped as part of ECC Developer responsibility i.e., seeded FND function FND\_ECC\_SCRATCHPAD where customers can easily add and remove tabs within this seeded OA page. This allows user to access and manage multiple dashboards from a single responsibility so that they can have a full view of all business operations. This is different from using menus i.e., creating a menu hierarchy to personalize existing dashboards, which needs additional development in terms of creating OA pages, rather the ECC Scratchpad approach is a much easier approach in personalizing and extending not just a single dashboard but across multiple dashboards. No developer is needed in developing an OA page
+    ![ECC Scratchpad](../images/eccz100.jpg "ECC Scratchpad")
 
 
 With this feature users can:
@@ -83,7 +83,7 @@ Password: welcome1
     * Click on the “Submit” button
         ![Create Function](../images/a11s3.png "Create Function") 
 
-3.	Add ECC Personalization Template to Procurement Command Center Menu:
+3.	Add ECC Scratchpad to Procurement Command Center Menu:
     * Navigate to Functional Administrator Responsibility -> Core Services -> Menus
     * Search with code as 
                                         ```
@@ -97,7 +97,7 @@ Password: welcome1
             ```
         * Function: 
                                                         ```
-  	    <copy>ECC Personalization Template</copy>
+  	    <copy>ECC Scratchpad</copy>
             ```
         * Click on “Apply” button to save the menu
         ![Add Function to Menu](../images/a11s4.png "Add Function to Menu")
@@ -136,18 +136,21 @@ Password: welcome1
                                                ```
   	    <copy>PO PCC ECC Role</copy>
             ```
-        * Responsibility: Purchasing, Vision Operations (USA)
+        * Responsibility: 
+                                        ```
+  	    <copy>Purchasing, Vision Operations (USA)</copy>
+            ```
     * Click on the “Next” button
     * Provide the “Set” as “PO PCC Local Agreements Permission Set”
     * Click on the “Next” button and then “Finish” button
         ![Create Grant](../images/a11s6.png "Create Grant")
 
-    * Clear Application Cache:
-        * Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
-        * Click on “Clear All Cache” button
+5. Clear Application Cache:
+    * Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
+    * Click on “Clear All Cache” button and then click on "Yes"
         ![Clear Cache](../images/ss110.png "Clear Cache")
 
-**Personalize ECC Personalization Template to add Local Agreements dashboard**
+**Personalize ECC Scratchpad to add Local Agreements dashboard**
 
 1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
     ```
@@ -193,7 +196,7 @@ Password: welcome1
 10. Click on “Return to Application” to access the dashboard
         ![Local Agreements Dashboard](../images/a11s15.png "Local Agreements Dashboard")
 
-11.	To add other shipped dashboards, like Agreements dashboard or Requisitions dashboard in the same page, the user needs to follow the same personalization process for other sub tabs available in the ECC Personalization Template personalization.
+11.	To add other shipped dashboards, like Agreements dashboard or Requisitions dashboard in the same page, the user needs to follow the same personalization process for other sub tabs available in the ECC Scratchpad personalization.
 
 12.	Click on “Personalize” option under EBS Settings
 
@@ -232,21 +235,21 @@ Password: welcome1
 
 
 
-## Task 2: ECC Personalization Template for Cross-departmental access
+## Task 2: ECC Scratchpad for Cross-departmental access
 
 **Goal:** As an Operations Manager, I want to monitor and measure the performance and efficiency of the entire procure-to-pay process so that I can identify opportunities for improvement, cost savings, compliance, and risk mitigation.
     ![P2P Operations](../images/scratchpadupdated15.png "P2P Operations")
 
-The ECC Personalization Template set up consists of two major steps: 
+The ECC Scratchpad set up consists of two major steps: 
 
 1. RBAC Set up
 2. OA Personalization
-    ![ECC Personalization Template](../images/oa31.png "ECC Personalization Template")
+    ![ECC Scratchpad](../images/oa31.png "ECC Scratchpad")
 
 
 **Pre-requisites:**
 
-1.	EBS Form functions for the required ECC Dashboards which are to be displayed in the ECC Personalization Template
+1.	EBS Form functions for the required ECC Dashboards which are to be displayed in the ECC Scratchpad
 
 **Dashboard FND Functions:**
 
@@ -321,12 +324,24 @@ Password: welcome1
 1.	Navigate to Functional Administrator Responsibility -> Security -> Permission Sets
 2.	Click on “Create Permission Set”
 3.	Provide the below details in “Create Permission Set” page
-    *	Name: P2P Permission Set
-    *	Code: P2P\_PS
-    *	Under Permission Builder section, click on “+” icon to add the below permission sets:
-        *	PO PCC Permission Set (PO\_PCC\_ECC\_PS)
-        *	Receiving ECC Dashboard Access Permission Set (INV\_ECC\_RCV\_ACCESS\_PS)
-        *	Payables Command Center Access Permission Set (AP\_ECC\_ACCESS\_PS)
+    *	Name: 
+                                                       ```
+  	    <copy>P2P Permission Set</copy>
+            ```
+    *	Code: 
+                                                           ```
+  	    <copy>P2P_PS</copy>
+            ```
+    *	Under Permission Builder section, click on “+” icon to add the below permission sets:	
+                                                                   ```
+  	    <copy>PO PCC Permission Set</copy>
+            ```
+                                                                   ```
+  	    <copy>Receiving ECC Dashboard Access Permission Set</copy>
+            ```
+                                                                   ```
+  	    <copy>Payables Command Center Access Permission Set</copy>
+            ```
 4.	Click on “Apply” button to create the permission set
 
     ![Permission Set](../images/ss14.png "Permission Set")
@@ -336,11 +351,23 @@ Password: welcome1
 1.	Navigate to Functional Administrator Responsibility -> Core Services -> Menus
 2.	Click on “Create Navigation Menu”
 3.	Provide the below details in “Create Navigation Menu” page
-    *	Name: P2P Menu
-    *	Code: P2P_MENU
+    *	Name: 
+                                                       ```
+  	    <copy>P2P Menu</copy>
+            ```
+    *	Code: 
+                                                           ```
+  	    <copy>P2P_MENU</copy>
+            ```
     *	Under Menu Builder section, click on “+” icon to add below menu entry details:
-        *	Prompt: P2P Operations
-        *	Function: ECC Personalization Template
+        *	Prompt: 
+                                                                   ```
+  	    <copy>P2P Operations</copy>
+            ```
+        *	Function: 
+                                                                   ```
+  	    <copy>Fixed Assets Command Center Home</copy>
+            ```
 4.	Click on “Apply” button to create the menu
 
     ![Menu](../images/ss15.png "Menu")
@@ -351,13 +378,31 @@ Password: welcome1
 1.	Navigate to User Management Responsibility -> Responsibility
 2.	Click on “Create Responsibility”
 3.	Provide the below details in “Create Responsibility” page
-    *	Responsibility Name: Procure to Pay Operations Manager
-    *	Menu: P2P Menu
-    *	Responsibility Key: P2P\_ECC\_OP\_MGR
-    *	Application: Purchasing
+    *	Responsibility Name: 
+                                                               ```
+  	    <copy>Procure to Pay Operations Manager</copy>
+            ```
+    *	Menu: 
+                                                               ```
+  	    <copy>P2P Menu</copy>
+            ```
+    *	Responsibility Key: 
+                                                               ```
+  	    <copy>P2P_ECC_OP_MGR</copy>
+            ```
+    *	Application: 
+                                                                   ```
+  	    <copy>Purchasing</copy>
+            ```
     *	Under Groups section, provide below details:
-        *	Data Group Name: Standard
-        *	Application: Purchasing
+        *	Data Group Name: 
+                                                                   ```
+  	    <copy>Standard</copy>
+            ```
+        *	Application: 
+                                                                   ```
+  	    <copy>Purchasing</copy>
+            ```
 4.	Click on “Create” button to create the responsibility
 
     ![Responsibility](../images/ss16.png "Responsibility")
@@ -368,15 +413,30 @@ Password: welcome1
 1.	Navigate to User Management Responsibility -> Roles & Role Inheritance
 2.	Click on “Create Role”
 3.	Provide the below details in “Create Role” page
-    *	Application: Purchasing
-    *	Role Code: UMX|P2P\_ECC\_ACCESS\_ROLE
-    *	Display Name: P2P Access Role
-    *	Description: P2P Access Role
+    *	Application: 
+                                                               ```
+  	    <copy>Purchasing</copy>
+            ```
+    *	Role Code: 
+                                                               ```
+  	    <copy>UMX|P2P_ECC_ACCESS_ROLE</copy>
+            ```
+    *	Display Name: 
+                                                               ```
+  	    <copy>P2P Access Role</copy>
+            ```
+    *	Description: 
+                                                               ```
+  	    <copy>P2P Access Role</copy>
+            ```
 4.	Click on “Create Grant” button
 5.	Click on “Save and Proceed” button in the confirmation dialog to create the grant
 6.	Now, the user is navigated to “Create Grant” page
 7.	Provide the below details:
-    *	Name: P2P Grant
+    *	Name: 
+                                                               ```
+  	    <copy>P2P Grant</copy>
+            ```
     *	Under security context section, Responsibility: Procure to Pay Operations Manager
     *	Click on “Next” button
     *	Provide the permission set as “P2P Permission Set”
@@ -402,7 +462,7 @@ Password: welcome1
 **Clear Application Cache:**
 
 1.	Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
-2.	Click on “Clear All Cache” button
+2.	Click on “Clear All Cache” button and then click on "Yes"
 
     ![Clear Cache](../images/ss110.png "Clear Cache")
 
@@ -416,10 +476,14 @@ Password: welcome1
     ![Assign Role to Responsibility](../images/ss111.png "Assign Role to Responsibility")
 
 4.  Click on + icon under “Add node”	
+    ![Add Node](../images/addnode.png "Add Node")
 5.  Then search for “P2P Access Role” and click on “Go” button
-6.	Add the access role to the responsibility
-
+    ![Add Node](../images/accessrole1.png "Add Node")
+6.	Add the access role to the responsibility by clicking on the icon under quick select column
+    ![Add Node](../images/accessrole2.png "Add Node")
+7.  We have successfully assigned the access role to the responsibility
     ![Assign Role to Responsibility](../images/ss112.png "Assign Role to Responsibility")
+
 
 **Assign the Responsibility to User:**
 
@@ -449,18 +513,18 @@ Password: welcome1
 **Clear Application Cache:**
 
 1.	Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
-2.	Click on “Clear All Cache” button
+2.	Click on “Clear All Cache” button and then click on "Yes"
 
     ![Clear Cache](../images/ss110.png "Clear Cache")
 
 
-**Personalize ECC Personalization Template to add ECC Procure to Pay dashboards**
+**Personalize ECC Scratchpad to add ECC Procure to Pay dashboards**
 
 
 
 **Tasks:**
 
-1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) to access ECC Personalization Template under “Procure to Pay Operations Manager” responsibility
+1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) to access ECC Scratchpad under “Procure to Pay Operations Manager” responsibility
 
     ```
   	 Username: operations
@@ -469,7 +533,7 @@ Password: welcome1
     
 
 1.	Navigate to Procure to Pay Operations Manager -> P2P Operations
-    ![ECC Personalization Template](../images/scratchpadupdated1.png "ECC Personalization Template")
+    ![ECC Scratchpad](../images/scratchpadupdated1.png "ECC Scratchpad")
 
 2.	Click on the EBS Settings icon
     ![EBS Settings](../images/scratchpadupdated2.png "EBS Settings")
@@ -490,18 +554,27 @@ Password: welcome1
     ![Render Page](../images/scratchpadupdated9.png "Render Page")
 
 8.	Add the ECC Page FND function to respective Rich Container sections
-    *	Destination Function: PO\_PCC\_ECC\_REQUISITIONS
-    *	Title: Requisitions
+    *	Destination Function: 
+                                                               ```
+  	    <copy>PO_PCC_ECC_REQUISITIONS</copy>
+            ```
+    *	Title: 
+                                                               ```
+  	    <copy>Requisitions</copy>
+            ```
     *   Rendered: true
+
 
 
     ![FND Function](../images/scratchpadupdated10.png "FND Function")
     ![FND Function](../images/scratchpadupdated11.png "FND Function")
 
 9.	Set the subtab title by clicking on Personalize icon for respective “Sub tab link”
-    * Text: Requisitions
+    * Text: 
+                                                               ```
+  	    <copy>Requisitions</copy>
+            ```
     * Rendered: TRUE
-
 
     ![Subtab Title](../images/scratchpadupdated12.png "Subtab Title")
     ![Subtab Title](../images/scratchpadupdated13.png "Subtab Title")

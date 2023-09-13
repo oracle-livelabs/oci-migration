@@ -11,18 +11,14 @@
       "filename": "../../query/introduction/introduction.md"
     }, 
     {
-      "title": "Get started",
-      "description": "The Introduction is always second for LiveLabs. The title and contents menu title match for the Introduction.",
-      "filename": "https://oracle-livelabs.github.io/common//labs/remote-desktop/using-novnc-remote-desktop.md"
-    }, 
-    {
       "title": "Prepare and Set up",
       "filename": "../../query/prepare-and-setup/prepare-and-setup.md"
     },
     {
-      "title": "Optional Lab: Installation",
-      "filename": "../../query/installation/installation.md"
-    },
+      "title": "Get started",
+      "description": "The Introduction is always second for LiveLabs. The title and contents menu title match for the Introduction.",
+      "filename": "https://oracle-livelabs.github.io/common//labs/remote-desktop/using-novnc-remote-desktop.md"
+    }, 
     {
       "title": "Lab 1: Use ECC Dashboards",
       "filename": "../../query/useeccdashboards/useeccdashboards.md"
@@ -44,7 +40,7 @@
       "filename": "../../query/advancedextensibility/advancedextensibility.md"
     },
     {
-      "title": "Lab 6: ECC Personalization Template",
+      "title": "Lab 6: ECC Scratchpad",
       "filename": "../../query/eccpersonalizationtemplate/eccpersonalizationtemplate.md"
     },
     {

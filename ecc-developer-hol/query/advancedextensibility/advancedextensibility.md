@@ -37,7 +37,8 @@ A data set is both a logical and a physical grouping of attributes to support bu
 
 
 At the physical level, the data set stores one or more records with a uniquely identifying key that represents a particular level of detail of the entity stored in the enterprise system. Unique key is used to identify records and data sets.
-* ECC\_SPEC\_ID column identifies each data set, it must have an assignment from exactly one attribute and must be named “ECC\_SPEC\_ID", this attribute must be unique and single assigned. Also, ECC\_SPEC\_ID must be of "spec" profile type.
+* ECC\_SPEC\_ID column is unique and single-assigned. Also, ECC_SPEC_ID must be of "spec" profile type.
+
 
 
 Contents of a data set can be exported with attribute keys and attribute display names as headers. Each attribute stored in the data set is controlled by metadata properties that specify its behavior on the user interface. Additional value-add features such as calculations, bucketing, and precedence rules can also be specified.
@@ -319,7 +320,7 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
         ![Create Tab Layout](../images/a1110.png "Create Tab Layout") 
 
 10.	Under “Agreement” tab, add a “Result Table” component and configure as mentioned below:
-    * Title: <Empty>
+    * Title: (leave this empty)
     * Dataset: 
                          ```
   	    <copy>XX PCC Local Agreements</copy>
@@ -343,7 +344,7 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
         ![Add Agreement Table](../images/a1111.png "Add Agreement Table") 
 
 11.	Under “Releases” tab, add a “Result Table” component and configure as mentioned below:
-    * Title: <Empty>
+    * Title: (leave this empty)
     * Dataset: 
                              ```
   	    <copy>XX PCC Local Agreements</copy>
@@ -690,7 +691,6 @@ style="white-space:pre-wrap; word-wrap:break-word"
             ```
     * Click on the Edit icon
     * Click on the “Security Rule” tab
-    * Provide the security handler name as “XX\_PO\_PCC\_DATASECURITY\_PKG\_PUB.GetFilterAttributeValuesPO”
     * Enable the “Enabled” checkbox. This will ensure that the security rules are applied before accessing the data.
 
         ![Configure Load Rules](../images/a1128.png "Configure Load Rules")
