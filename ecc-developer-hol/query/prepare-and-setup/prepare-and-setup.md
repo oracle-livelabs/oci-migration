@@ -1,4 +1,4 @@
-# Prepare and Set up compute instance (Optional)
+# Prepare and Set up compute instance
 
 
 ## Introduction
