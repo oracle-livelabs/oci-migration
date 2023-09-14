@@ -173,31 +173,6 @@ Attribute Groups are defined at the data set level, where each data set can have
 
         ![Add Group](../images/a1133.png "Add Group")
 
-    * Similarly, add the below groups as well:
-        * “Release Quantity” Group
-            * Sequence #: 2
-            * Group Key: PO\_RELEASE\_QTY
-            * Group Name: Release Quantity
-            * Attributes:
-                * Po Ship Ordered Quantity
-                * Po Ship Received Quantity
-                * Po Ship Rejected Quantity
-                * Po Ship Invoiced Quantity
-                * Po Ship Cancelled Quantity
-
-        * “Release Amount” Group
-            * Sequence #: 3
-            * Group Key: PO\_RELEASE\_AMT
-            * Group Name: Release Amount
-            * Attributes:
-                * Po Ship Ordered Amount
-                * Po Ship Shipped Amount
-                * Po Ship Received Amount
-                * Po Ship Rejected Amount
-                * Po Ship Invoiced Amount
-
-            ![Attribute Groups](../images/a1132.png "Attribute Groups")
-
     * Click on “Save” button
 
 **Associations** </br>
@@ -216,10 +191,6 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
         * Click on the “Save” button
 
             ![Associations](../images/a1131.png "Associations")
-
-
-
-
 
 
 ## Task 3:	Assign data set to an application and execute data load
@@ -347,15 +318,15 @@ FROM ecc_proc_local_agreements</copy>
 
     * Attributes:
         * Enable “Display Attribute Groups” checkbox
-        * Add below groups (under Interchangeable Attributes section):
-            * Release Quantity
-            * Releases
-            * Release Amount
+
         * Add below attributes (under Persistent Attributes section):
             * Agreement Number
             * Agreement Line
             * Release Number
             * Po Shipment Num
+
+        * Add below group (under Interchangeable Attributes section):
+            * Releases
 
 12. You will see the below image:
         ![Add Releases Table](../images/a1112.png "Add Releases Table")
