@@ -627,15 +627,14 @@ style="white-space:pre-wrap; word-wrap:break-word"
 
 * Once the changes are completed, compile the package using following steps:
     * Go back to the Terminal window
-        * Connect to the environment using SSH (Details are mentioned in “Get Started -> Appendix: Connect Remotely Using SSH section”) 
         * Source the EBS edition using below command:
                                                                                      ```
   	    <copy>source /u01/install/APPS/EBSapps.env run</copy>
             ```
         * Connect to EBS Database using below command:
-
+        ```
   	    <copy>sqlplus apps/apps</copy>
-
+        ```
         * The package specification and body files are present under “/u01/live\_labs/11470/lab\_files/lab5/task6”  directory
 
     * Compile the package using below commands:
