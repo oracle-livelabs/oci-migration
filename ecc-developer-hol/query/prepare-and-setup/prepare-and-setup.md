@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This lab is optional and is only required if you want to run this workshop on your own tenancy. If you are running this workshop on LiveLabs sandbox then please skip this lab. 
+This lab is optional and is only required if you want to run this workshop on your own tenancy.
 
 This Lab will show you how to download the Oracle Resource Manager (ORM) stack zip file needed to setup the resource needed to run this workshop and will show you how to set up a Resource Manager stack that will generate the Oracle Cloud objects needed to run your workshop. 
 
@@ -24,7 +24,7 @@ This lab assumes you have:
 
 2.  Save in your downloads folder.
 
-We strongly recommend using this stack to create a self-contained/dedicated VCN with your instance(s). Skip to *Task 3* to follow our recommendations. If you would rather use an exiting VCN then proceed to the next step as indicated below to update your existing VCN with the required Egress rules.
+We strongly recommend using this stack to create a self-contained/dedicated VCN with your instance(s).
 
 ## Task 2: Setup Compute   
 Open [OCI console](https://www.oracle.com/cloud/sign-in.html?redirect_uri=https%3A%2F%2Fcloud.oracle.com%2F)  and login with your account credentials.
