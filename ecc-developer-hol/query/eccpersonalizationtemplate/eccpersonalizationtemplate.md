@@ -1,4 +1,4 @@
-# ECC Personalization Template
+# ECC Personalization Template (Optional)
 
 
 ### Introduction
