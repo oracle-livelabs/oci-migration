@@ -342,8 +342,8 @@ As mentioned earlier, ECC uses PL/SQL packages to run the data load process. Her
 
 1. Create data load package to run Full Load for Local Agreements custom dataset:
 
-    * The user need to create a PL/SQL package (specification and its respective body) with a procedure, which is required to execute FULL LOAD for xx-po-pcc-local-agreements dataset
-    * Sample PL/SQL package files are provided in the Lab Files section
+    * The user needs to create a PL/SQL package (specification and its respective body) with a procedure, which is required to execute FULL LOAD for xx-po-pcc-local-agreements dataset
+    * Sample PL/SQL package files are provided under **/u01/live\_labs/11470/lab\_files/lab5/task5**
         * Specification: XX\_PO\_PCC\_LOC\_AGR\_UTIL\_PVT.pls
                 ![Package Specification](../images/a1118.png "Package Specification")
 
@@ -450,7 +450,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
   	    <copy>sqlplus apps/apps</copy>
             ```
 
-    * The package specification and body files are present under “/u01/live_labs/11470/lab_files/lab5/task5”  directory
+    * The package specification and body files are present under “/u01/live\_labs/11470/lab\_files/lab5/task5”  directory
 
     * Compile the package using below commands:
                                                  ```
@@ -461,7 +461,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
             ```
     ![Compile Package](../images/a1130.png "Compile Package")
 
-4.	Once the package specification and the body are compiled successfully, then the user need to configure the data load rules for the respective dataset
+4.	Once the package specification and the body are compiled successfully, then the user needs to configure the data load rules for the respective dataset
     * Navigate to ECC Developer page
     * Go to “Datasets” menu under “Data Designer” section
     * Search for the local agreements dataset 
@@ -515,7 +515,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
 * Here, the process to create the security rules for xx-po-pcc-local-agreements dataset is explained below:
 
     * Create a PL/SQL package with a procedure, which is required to add security filters based on the logged in user and organization.
-    * Sample PL/SQL package files are provided in the Lab Files section
+    * Sample PL/SQL package files are provided under **/u01/live\_labs/11470/lab\_files/lab5/task6**
         * Specification: XX\_PO\_PCC\_DATASECURITY\_PKG\_PUB.pls
             ![Package Specification](../images/a1126.png "Package Specification")
 
@@ -648,7 +648,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
 
         ![Compile Package](../images/a1129.png "Compile Package")
 
-* Once the package specification and the body are compiled successfully, then the user need to configure the data load rules for the respective dataset
+* Once the package specification and the body are compiled successfully, then the user needs to configure the data load rules for the respective dataset
     * Navigate to ECC Developer page
     * Go to “Datasets” menu under “Data Designer” section
     * Search for the local agreements dataset 
