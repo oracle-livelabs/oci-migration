@@ -187,7 +187,7 @@ Password: welcome1
 
     ![Pivot view](../images/switch2.png "Pivot view")
 
-25. Finally, click on the "i" icon and then the "Personalize dashboard" button to disable Personalization mode.
+25. Finally, click on the "i" icon and then the "Personalize Dashboard" button to disable Personalization mode.
 
 ## Task 3: Personalize Account Analysis dashboard
 
