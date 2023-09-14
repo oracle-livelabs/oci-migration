@@ -105,7 +105,7 @@ Password: welcome1
     ![Receivables](../images/r2.png "Receivables")
 
 
-6. We want to focus on only Past-due invoices, so from the Summarization bar lets only display metrics/dimensions/flags which are relevant to us. Click on the runtime options (three vertical dots) for Summarization Bar and then only enable Ledger, Currency and Past-due invoices. Click outside the runtime options of Summarization Bar for changes to reflect.
+6. We want to focus on only Past-due invoices, so from the Summarization bar lets only display metrics/dimensions/flags which are relevant to us. Click on the runtime options (three vertical dots) for Summarization Bar and then only enable Ledger, Currency and Past-Due Balance. Click outside the runtime options of Summarization Bar for changes to reflect.
     ![Receivables](../images/r01.png "Receivables")
 
     ![Receivables](../images/r0190.png "Receivables")
