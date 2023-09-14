@@ -105,25 +105,32 @@ Password: welcome1
     ![Receivables](../images/r2.png "Receivables")
 
 
-6. We want to focus on only Past-due invoices, so from the Summarization bar lets only display metrics/dimensions/flags which are relevant to us. Click on the runtime options (three vertical dots) for Summarization Bar and then only enable Ledger, Currency and Past-Due Balance. Click outside the runtime options of Summarization Bar for changes to reflect.
+4. We want to focus on only Past-due invoices, so from the Summarization bar lets only display metrics/dimensions/flags which are relevant to us. Click on the runtime options (three vertical dots) for Summarization Bar, enable the below mentioned items, and then click outside the runtime options of Summarization Bar for changes to reflect.
+      * Ledger
+      * Currency
+      * Past-Due Balance
+
     ![Receivables](../images/r01.png "Receivables")
 
     ![Receivables](../images/r0190.png "Receivables")
 
 
-9. Scroll down to the Transactions List Results Table and click on the "Hide/Show Columns" icon to only focus on attributes we are interested in i.e., Transaction number, Transaction Type, Transaction Date, Due Date, Transaction Currency, Amount Due and Bill-To Customer. Then, click outside the Hide/Show columns of Results Table for changes to reflect.
+5. Scroll down to the Transactions List Results Table and click on the "Hide/Show Columns" icon to only focus on attributes as mentioned below. Then, click outside the Hide/Show columns of Results Table for changes to reflect.
+     * Transaction number
+     * Transaction Type
+     * Transaction Date
+     * Due Date
+     * Transaction Currency
+     * Amount Due
+     * Bill-To Customer
     ![Receivables](../images/r09.png "Receivables")
 
-10. You made runtime changes in Summarization bar and Results Table, these changes will remain even if you were to log out and login again.
-10. In the "Transactions List" Results Table, click on the "Preview" row action for transaction number "524952" to review customer claim by opening the customer invoice. This row action leads to source transaction, i.e., row action to invoice overview for seamless integration with EBS. Click on the hamburger icon within the preview, to view the customer claim clearly.
+6. You made runtime changes in Summarization bar and Results Table, these changes will remain even if you were to log out and login again.
+7. In the "Transactions List" Results Table, click on the "Preview" row action for transaction number "524952" to review customer claim by opening the customer invoice. This row action leads to source transaction, i.e., row action to invoice overview for seamless integration with EBS. Click on the hamburger icon within the preview, to view the customer claim clearly.
 
     ![Receivables](../images/r099.png "Receivables")
     
-
     ![Receivables](../images/r012.png "Receivables")
-
-
-
 
 
 ## Task 2: Hands on demo of ECC General Ledger

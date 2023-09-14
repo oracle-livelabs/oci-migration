@@ -4,6 +4,7 @@
 ### Introduction
 
 This lab walks you through the ECC Personalization Template feature, what the feature is, the benefits of this feature and hands on demos.
+ECC Personalization Template is a ECC V11 feature.
 
 Estimated Time: 30 minutes
 

@@ -77,7 +77,7 @@ Password: welcome1
         * Identify and analyze user intents
 
         * Resolve issues as they arise
-* Application and Data set details*
+* Application and Data set details
 
     * Dataset Name: Activity Audit
 
