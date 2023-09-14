@@ -30,9 +30,8 @@ We strongly recommend using this stack to create a self-contained/dedicated VCN 
 Open [OCI console](https://www.oracle.com/cloud/sign-in.html?redirect_uri=https%3A%2F%2Fcloud.oracle.com%2F)  and login with your account credentials.
   ![OCI Console](../images/hq4.png " ")
 
-Using the details from the two steps above, proceed to the *Task 3* to setup your workshop environment using Oracle Resource Manager (ORM) and one of the following options:
+Using the details from the two steps above, proceed to the *Task 3* to setup your workshop environment using Oracle Resource Manager (ORM) and follow the below option:
 -  Create Stack:  *Compute + Networking*
-
 
 
 ## Task 3: Create Stack: Choose a Path 
@@ -45,20 +44,19 @@ Proceed to deploy your workshop environment using Oracle Resource Manager (ORM) 
 
 ## Task 4: Create Stack:  Compute + Networking
 1. Identify the ORM stack zip file downloaded in *Task 1*
-2. Log in to Oracle Cloud
-3.  Open up the hamburger menu in the top left corner.  Click **Developer Services**, and choose **Resource Manager > Stacks**. Choose the compartment in which you would like to install the stack. Click **Create Stack**.
+2.  Open up the hamburger menu in the top left corner.  Click **Developer Services**, and choose **Resource Manager > Stacks**. Choose the compartment in which you would like to install the stack. Click **Create Stack**.
 
   ![Select Stacks](https://oracle-livelabs.github.io/common/images/console/developer-resmgr-stacks.png " ")
 
   ![Create Stack](../images/create-stack.png " ")
 
-4.  Select **My Configuration**, choose the **.Zip file** button, click the **Browse** link, and select the zip file that you downloaded or drag-n-drop for the file explorer.
+3.  Select **My Configuration** as the origin of the Terraform configuration. Then, select the **.Zip file** radio button under the Terraform configuration source. Click the **Browse** link, and select the zip file (downloaded in *Task 1*) or drag-n-drop from the file explorer.
 
   ![Select zip file](../images/hq1.png " ")
 
-5.  Click **Next**.
+4.  Click **Next**.
 
-6. Enter or select the following:
+5. Enter or select the following:
 
   ![Enter main configurations](../images/hq6.png " ")
 
@@ -90,15 +88,15 @@ Proceed to deploy your workshop environment using Oracle Resource Manager (ORM) 
 
   ![Use fixed shapes](../images/fixed-shape.png " ")
 
-7. For this section we will provision a new VCN with all the appropriate ingress and egress rules needed to run this workshop.  
+6. For this section we will provision a new VCN with all the appropriate ingress and egress rules needed to run this workshop.  
     - **Use Existing VCN?:** Accept the default by leaving this unchecked. This will create a **new VCN**.
 
-8. Click **Next**.
-9. Select **Run Apply** and click **Create**.
+7. Click **Next**.
+8. Select **Run Apply** and click **Create**.
 
   ![Run Apply](../images/run-apply.png " ")
 
-10. Your stack has now been created and the *Apply* action triggered is running to deploy your environment!
+9. Your stack has now been created and the *Apply* action triggered is running to deploy your environment!
 
   ![Apply is successful](../images/hq7.png " ")
 
