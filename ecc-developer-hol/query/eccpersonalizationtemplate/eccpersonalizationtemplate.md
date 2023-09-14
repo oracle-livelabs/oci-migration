@@ -32,7 +32,7 @@ This lab assumes you have:
 
 ## Task 1: ECC Personalization Template for ECC Procurement
 
-In the previous task we extended the existing Agreements dashboard to include Local agreements, but this new dashboard is not accessible for end users, its only accessible to the admin who created the dashboard. To make this dashboard accessible we would ideally create an OA page which requires a lot of development effort. The other way to make the dashboard accessible to users is to leverage the ECC Personalization Template feature.
+In Lab 5 we extended the existing Agreements dashboard to include Local agreements. To make this dashboard accessible we would ideally create an OA page which requires a lot of development effort. The other way to make the dashboard accessible to users is to leverage the ECC Personalization Template feature.
 
 ECC Personalization Template is a seeded OA page shipped as part of ECC Developer responsibility i.e., seeded FND function FND\_ECC\_SCRATCHPAD where customers can easily add and remove tabs within this seeded OA page. This allows user to access and manage multiple dashboards from a single responsibility so that they can have a full view of all business operations. This is different from using menus i.e., creating a menu hierarchy to personalize existing dashboards, which needs additional development in terms of creating OA pages, rather the ECC Personalization Template approach is a much easier approach in personalizing and extending not just a single dashboard but across multiple dashboards. No developer is needed in developing an OA page
     ![ECC Personalization Template](../images/eccz100.jpg "ECC Personalization Template")
@@ -55,33 +55,7 @@ With this feature users can:
   	 Username: sysadmin
 Password: welcome1
     ```
-2.	Create a new FND Function for Local Agreements Dashboard:
-    * Navigate to Functional Administrator -> Core Services -> Function
-    * Search with Code as: 
-                ```
-  	    <copy>PO_PCC_ECC_AGREEMENTS</copy>
-            ```
-    * Click on the “Duplicate” icon displayed for PO\_PCC\_ECC\_AGREEMENTS
-        ![Duplicate Function](../images/a11s1.png "Duplicate Function")
-
-    * Change the details in the duplicate function page as mentioned below:
-        * Name: 
-                        ```
-  	    <copy>PO PCC ECC Local Agreements Page</copy>
-            ```
-        * Code: 
-                                ```
-  	    <copy>XX_PO_PCC_ECC_LOCAL_AGREEMENTS</copy>
-            ```
-        ![Duplicate Function](../images/a11s2.png "Duplicate Function")
-
-    * Click on the “Continue” button
-    * Change the value for HTML Call to 
-                                    ```
-  	    <copy>GWY.jsp?targetAppType=ECC&targetPage=web/eccapp/po_pcc/xx-pcc-local-agreements</copy>
-            ```
-    * Click on the “Submit” button
-        ![Create Function](../images/a11s3.png "Create Function") 
+2.	The FND Function for Local Agreements Dashboard has been created in Lab 5 - Task 7
 
 3.	Add ECC Personalization Template to Procurement Command Center Menu:
     * Navigate to Functional Administrator Responsibility -> Core Services -> Menus

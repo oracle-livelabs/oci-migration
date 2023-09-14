@@ -708,8 +708,101 @@ style="white-space:pre-wrap; word-wrap:break-word"
 * If any user accesses the local agreements dashboard using the allowed responsibility/page, then the user will be able to view only the designated subset of data. Hence ensuring data security.
         ![Operations User](../images/a1136.png "Operations User")
 
+## Task 7:	New Dashboard RBAC Setup
+In the previous task we extended the existing Agreements dashboard to include Local agreements, but this new dashboard is not accessible for end users.
+There are two ways to provide access of Local Agreements dashboard to the users:
+ 
+1. Replace the shipped "Agreements" dashboard with the custom "Local Agreements" dashboard using EBS OA Personalization
+2. Create a new menu under Procurement Command Center to navigate to an OA Page where Local Agreements dashboard is displayed
 
+In this task, we will replace the shipped "Agreements" dashboard with the custom "Local Agreements" dashboard.
 
+1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
+    ```
+  	 Username: sysadmin
+Password: welcome1
+    ```
+2.	Create a new FND Function for Local Agreements Dashboard:
+    * Navigate to Functional Administrator -> Core Services -> Function
+    * Search with Code as: 
+                ```
+  	    <copy>PO_PCC_ECC_AGREEMENTS</copy>
+            ```
+    * Click on the “Duplicate” icon displayed for PO\_PCC\_ECC\_AGREEMENTS
+        ![Duplicate Function](../images/a11s1.png "Duplicate Function")
+
+    * Change the details in the duplicate function page as mentioned below:
+        * Name: 
+                        ```
+  	    <copy>PO PCC ECC Local Agreements Page</copy>
+            ```
+        * Code: 
+                                ```
+  	    <copy>XX_PO_PCC_ECC_LOCAL_AGREEMENTS</copy>
+            ```
+        ![Duplicate Function](../images/a11s2.png "Duplicate Function")
+
+    * Click on the “Continue” button
+    * Change the value for HTML Call to 
+                                    ```
+  	    <copy>GWY.jsp?targetAppType=ECC&targetPage=web/eccapp/po_pcc/xx-pcc-local-agreements</copy>
+            ```
+    * Click on the “Submit” button
+        ![Create Function](../images/a11s3.png "Create Function") 
+
+3.	Add the new FND Function to Procurement Command Center Menu:
+    * Navigate to Functional Administrator Responsibility -> Core Services -> Menus
+    * Search with code as 
+                                        ```
+  	    <copy>PO_PCC_MAIN</copy>
+            ```
+    * Click on “Update” button for “Procurement Command Center” menu
+    * In the menu manager section, click on “+” icon to add below menu entry details
+        * Function: 
+                                                        ```
+  	    <copy>PO PCC ECC Local Agreements Page</copy>
+            ```
+        * Click on “Apply” button to save the menu
+        ![Add Function to Menu](../images/arbac1.png "Add Function to Menu")
+
+4. Clear Application Cache:
+    * Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
+    * Click on “Clear All Cache” button and then click on "Yes"
+        ![Clear Cache](../images/ss110.png "Clear Cache")
+
+## Task 8:	EBS OA Personalization
+
+1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
+
+    ```
+  	 Username: operations
+Password: welcome1
+    ```
+2.	Navigate to Purchasing, Vision Operations (USA) -> Procurement Command Center -> Procurement Operations
+          ![Procurement Operations](../images/arbac2.png "Procurement Operations")
+
+3.	Within "Procurement Operations", navigate to "Agreements" dashboard
+          ![Agreements](../images/arbac3.png "Agreements")
+
+4.  Click on EBS Settings icon
+          ![EBS Settings](../images/arbac5.png "EBS Settings")
+
+5.	Click on “Personalize Page” option
+          ![Personalize Page](../images/arbac4.png "Personalize Page")
+
+5. Personalize the Rich Container:
+          ![Personalize Rich Container](../images/arbac6.png "Personalize Rich Container")
+
+5.	Update the below details and click on the “Apply” button
+     * Destination Function: 
+                                                      ```
+  	    <copy>XX_PO_PCC_ECC_LOCAL_AGREEMENTS</copy>
+            ```
+          ![Update Rich Container Details](../images/arbac7.png "Update Rich Container Details")
+
+6. Click on “Return to Application” to access the dashboard
+          ![Return to Application](../images/arbac8.png "Return to Application")
+          ![Local Agreements Dashboard](../images/arbac9.png "Local Agreements Dashboard")
 
 You may now **proceed to the next lab**
 
