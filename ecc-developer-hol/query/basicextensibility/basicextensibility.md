@@ -43,7 +43,15 @@ Password: welcome1
 
 5. The new page will be copied within the same application. Click on the edit icon to edit this new page
     ![Procurement Command Center](../images/ext4.png "Procurement Command Center")
-6. Prefix the page name and page short name with xx and XX respectively, remove the trailing "(1)" as shown in below image and click on "Save"
+6. Change the page name and page short name as mentioned below and click on "Save"
+    - Page Short Name:
+    ```
+  	 <copy>xx-po-pcc-ind-procurement</copy>
+    ```
+    - Page Name:
+    ```
+    <copy>XX Indirect Procurement</copy>
+    ```
      ![Procurement Command Center](../images/ext5.png "Procurement Command Center")
 
 7. Search for "Indirect procurement" on the home page again and click on the page we just copied and renamed to open the page
