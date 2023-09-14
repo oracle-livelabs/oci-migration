@@ -17,7 +17,7 @@ In this lab, you will:
 * Assign dataset to the application
 * Execute data load for the new dataset
 * Extend the existing dashboard with required components
-
+* EBS OA personalization
 
 
 ### Prerequisites
@@ -153,7 +153,7 @@ FROM ecc_proc_local_agreements</copy>
     * Click on "Save" 
 
 **Attribute Groups** </br>
-Attribute Groups are logical groupings of attributes for display purposes based on functional/business meaning. They reduce clutter on Available Refinements and Results Table components.
+Attribute Groups are logical grouping of attributes for display purposes based on functional/business meaning. They reduce clutter on Available Refinements and Results Table components.
 
 Attribute Groups are defined at the data set level, where each data set can have zero or more attribute groups, and each group can have zero or more attributes. Groups can be designed at design time in the Administration UI or during runtime in metadata load phase.
 
