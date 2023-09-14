@@ -124,13 +124,45 @@ For ease of execution of this workshop, your VM instance has been pre-configured
     </copy>
     ```
 
-  b. Navigate to cd $ADMIN\_SCRIPTS\_HOME and run ./adstpall.sh  (apps username = apps, apps password = apps, weblogic server password: welcome1 )
+  b. Stop the EBS services: 
+    - Navigate to $ADMIN\_SCRIPTS\_HOME
+      ```text
+      <copy>
+      cd $ADMIN_SCRIPTS_HOME
+      </copy>
+      ```
+    - Stop all EBS services using below command
+      ```text
+      <copy>
+      ./adstpall.sh
+      </copy>
+      ```
+    - Use below passwords when prompted:
+        - APPS Username: **apps**
+        - APPS Password: **apps**
+        - Weblogic Server Password: **welcome1**
+
   ![Click Remote Desktop URL](../images/stopall.png " ")
 
-  c. Navigate to cd $ADMIN\_SCRIPTS\_HOME and run ./adstpall.sh  (apps username = apps, apps password = apps, weblogic server password: welcome1 )
+  c. Now, start the EBS services:
+    - Navigate to $ADMIN\_SCRIPTS\_HOME
+      ```text
+      <copy>
+      cd $ADMIN_SCRIPTS_HOME
+      </copy>
+      ```
+    - Start all EBS services using below command
+      ```text
+      <copy>
+      ./adstrtal.sh
+      </copy>
+      ```
+    - Use below passwords when prompted:
+        - APPS Username: **apps**
+        - APPS Password: **apps**
+        - Weblogic Server Password: **welcome1**
+
   ![Click Remote Desktop URL](../images/startall.png " ")
-
-
 
     >**Note:** While rare, you may see an error on the browser - “*Deceptive Site Ahead*” or similar depending on your browser type as shown below.
 
