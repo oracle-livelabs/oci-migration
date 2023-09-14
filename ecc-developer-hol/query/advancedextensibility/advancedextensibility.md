@@ -138,27 +138,18 @@ FROM ecc_proc_local_agreements</copy>
 4. Perform the below changes in the metadata attributes section
     *   Review the profile for all the attributes
     *	Change the profile of the below attributes:
-        * DOC\_AUTHORIZED\_USER\_IDS to “strings”
-        * ORDER_NUM to “strings”
-
+        * Doc Authorized User Ids to “strings”
+        * Order Num to “strings”
 
         ![Update profile](../images/a113.png "Update profile") 
 
 
     * Enable “Show in Guided Discovery?” checkbox for below attributes:
-        * AGREEMENT
-        * STATUS
-        * SUPPLIER
-        * SUPPLIER_SITE
-        * BUYER_NAME
-        * EFFECTIVE_FROM
-        * EFFECTIVE_TO
-        * LINE_STATUS
-        * ORDER_NUM
-        * SUB_STATUS
-        * GROUP_STATUS
-        * DOCUMENT_TYPE
-        * RELEASE_NUMBER
+        * Agreement
+        * Status
+        * Buyer Name
+        * Effective From
+        * Effective To
     * Click on "Save" 
 
 **Attribute Groups** </br>
@@ -174,11 +165,11 @@ Attribute Groups are defined at the data set level, where each data set can have
         * Group Key: PO_RELEASE
         * Group Name: Releases
     * Attributes:
-        * PO\_UNIT\_PRICE
-        * PO\_NEED\_BY\_DATE
-        * PO\_PROMISED\_DATE
-        * PO\_SHIP\_TO\_LOCATION
-        * PO\_SHIP\_ORDERED\_QUANTITY
+        * Po Unit Price
+        * Po Need By Date
+        * Po Promised Date
+        * Po Ship To Location
+        * Po Ship Ordered Quantity
 
         ![Add Group](../images/a1133.png "Add Group")
 
@@ -188,22 +179,22 @@ Attribute Groups are defined at the data set level, where each data set can have
             * Group Key: PO\_RELEASE\_QTY
             * Group Name: Release Quantity
             * Attributes:
-                * PO_SHIP\_ORDERED\_QUANTITY
-                * PO_SHIP\_RECEIVED\_QUANTITY
-                * PO_SHIP\_REJECTED\_QUANTITY
-                * PO_SHIP\_INVOICED\_QUANTITY
-                * PO_SHIP\_CANCELLED\_QUANTITY
+                * Po Ship Ordered Quantity
+                * Po Ship Received Quantity
+                * Po Ship Rejected Quantity
+                * Po Ship Invoiced Quantity
+                * Po Ship Cancelled Quantity
 
         * “Release Amount” Group
             * Sequence #: 3
             * Group Key: PO\_RELEASE\_AMT
             * Group Name: Release Amount
             * Attributes:
-                * PO\_SHIP\_ORDERED\_AMOUNT
-                * PO\_SHIP\_SHIPPED\_AMOUNT
-                * PO\_SHIP\_RECEIVED\_AMOUNT
-                * PO\_SHIP\_REJECTED\_AMOUNT
-                * PO\_SHIP\_INVOICED\_AMOUNT
+                * Po Ship Ordered Amount
+                * Po Ship Shipped Amount
+                * Po Ship Received Amount
+                * Po Ship Rejected Amount
+                * Po Ship Invoiced Amount
 
             ![Attribute Groups](../images/a1132.png "Attribute Groups")
 
