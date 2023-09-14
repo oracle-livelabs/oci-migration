@@ -500,7 +500,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
     * Once the data load is successful, click on the “Query Details” link to view more details
             ![Data Load Tracking](../images/a1127.png "Data Load Tracking")
     * The number of successful rows will match the successful row count of Query Upload
-    * Navigate to the Local Agreements dashboard (ECC Developer -> Procurement -> XX Local Agreements)
+    * Navigate to the Local Agreements dashboard (ECC Developer Home Page -> Procurement -> XX Local Agreements)
             ![Local Agreements Dashboard](../images/a1113.png "Local Agreements Dashboard")
 
 
