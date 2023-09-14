@@ -154,7 +154,7 @@ Password: welcome1
 9. From the "Units assigned by City" chart[The chart title has changed after cascading as it is dynamic], click on "San Francisco" city to track assets by location flexfield segments
     ![Assets Location](../images/fix7.png "Assets Location")
 
-10. In the search bar type "Laptop" and hit enter, without waiting and clicking on the suggestions list, to search for "Laptop" assets. [This is a record search which allow user to perform a keyword search against specific attribute values assigned to records. The resulting records that have matching attribute values are returned, along with any valid refinement values]
+10. In the search bar type "Laptop" and hit enter, without waiting and clicking on the suggestions list, to search for "Laptop" assets. [This is a search feature in ECC called Record Search]
 
     ![Assets Location](../images/fix8.png "Assets Location")
 

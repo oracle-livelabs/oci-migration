@@ -1,9 +1,9 @@
-# ECC Personalization Template
+# ECC Scratchpad
 
 
 ### Introduction
 
-This lab walks you through the ECC Personalization Template feature, what the feature is, the benefits of this feature and hands on demos.
+This lab walks you through the ECC Scratchpad feature, what the feature is, the benefits of this feature and hands on demos.
 
 Estimated Time: 30 minutes
 
@@ -15,10 +15,10 @@ Estimated Time: 30 minutes
 ### Objectives
 
 In this lab, you will:
-* Learn about ECC Personalization Template
+* Learn about ECC Scratchpad
 * Create a new FND function for the dashboard
 * Create RBAC setup for the new dashboard
-* Add the new FND function to ECC Personalization Template to view the dashboard
+* Add the new FND function to ECC Scratchpad to view the dashboard
 
 
 
@@ -30,12 +30,12 @@ This lab assumes you have:
 
 ##  
 
-## Task 1: ECC Personalization Template for ECC Procurement
+## Task 1: ECC Scratchpad for ECC Procurement
 
-In the previous task we extended the existing Agreements dashboard to include Local agreements, but this new dashboard is not accessible for end users, its only accessible to the admin who created the dashboard. To make this dashboard accessible we would ideally create an OA page which requires a lot of development effort. The other way to make the dashboard accessible to users is to leverage the ECC Personalization Template feature.
+In the previous task we extended the existing Agreements dashboard to include Local agreements, but this new dashboard is not accessible for end users, its only accessible to the admin who created the dashboard. To make this dashboard accessible we would ideally create an OA page which requires a lot of development effort. The other way to make the dashboard accessible to users is to leverage the ECC Scratchpad feature.
 
-ECC Personalization Template is a seeded OA page shipped as part of ECC Developer responsibility i.e., seeded FND function FND\_ECC\_SCRATCHPAD where customers can easily add and remove tabs within this seeded OA page. This allows user to access and manage multiple dashboards from a single responsibility so that they can have a full view of all business operations. This is different from using menus i.e., creating a menu hierarchy to personalize existing dashboards, which needs additional development in terms of creating OA pages, rather the ECC Personalization Template approach is a much easier approach in personalizing and extending not just a single dashboard but across multiple dashboards. No developer is needed in developing an OA page
-    ![ECC Personalization Template](../images/eccz100.jpg "ECC Personalization Template")
+ECC Scratchpad is a seeded OA page shipped as part of ECC Developer responsibility i.e., seeded FND function FND\_ECC\_SCRATCHPAD where customers can easily add and remove tabs within this seeded OA page. This allows user to access and manage multiple dashboards from a single responsibility so that they can have a full view of all business operations. This is different from using menus i.e., creating a menu hierarchy to personalize existing dashboards, which needs additional development in terms of creating OA pages, rather the ECC Scratchpad approach is a much easier approach in personalizing and extending not just a single dashboard but across multiple dashboards. No developer is needed in developing an OA page
+    ![ECC Scratchpad](../images/eccz100.jpg "ECC Scratchpad")
 
 
 With this feature users can:
@@ -83,7 +83,7 @@ Password: welcome1
     * Click on the “Submit” button
         ![Create Function](../images/a11s3.png "Create Function") 
 
-3.	Add ECC Personalization Template to Procurement Command Center Menu:
+3.	Add ECC Scratchpad to Procurement Command Center Menu:
     * Navigate to Functional Administrator Responsibility -> Core Services -> Menus
     * Search with code as 
                                         ```
@@ -150,7 +150,7 @@ Password: welcome1
     * Click on “Clear All Cache” button and then click on "Yes"
         ![Clear Cache](../images/ss110.png "Clear Cache")
 
-**Personalize ECC Personalization Template to add Local Agreements dashboard**
+**Personalize ECC Scratchpad to add Local Agreements dashboard**
 
 1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
     ```
@@ -196,7 +196,7 @@ Password: welcome1
 10. Click on “Return to Application” to access the dashboard
         ![Local Agreements Dashboard](../images/a11s15.png "Local Agreements Dashboard")
 
-11.	To add other shipped dashboards, like Agreements dashboard or Requisitions dashboard in the same page, the user needs to follow the same personalization process for other sub tabs available in the ECC Personalization Template personalization.
+11.	To add other shipped dashboards, like Agreements dashboard or Requisitions dashboard in the same page, the user needs to follow the same personalization process for other sub tabs available in the ECC Scratchpad personalization.
 
 12.	Click on “Personalize” option under EBS Settings
 
@@ -235,21 +235,21 @@ Password: welcome1
 
 
 
-## Task 2: ECC Personalization Template for Cross-departmental access
+## Task 2: ECC Scratchpad for Cross-departmental access
 
 **Goal:** As an Operations Manager, I want to monitor and measure the performance and efficiency of the entire procure-to-pay process so that I can identify opportunities for improvement, cost savings, compliance, and risk mitigation.
     ![P2P Operations](../images/scratchpadupdated15.png "P2P Operations")
 
-The ECC Personalization Template set up consists of two major steps: 
+The ECC Scratchpad set up consists of two major steps: 
 
 1. RBAC Set up
 2. OA Personalization
-    ![ECC Personalization Template](../images/oa31.png "ECC Personalization Template")
+    ![ECC Scratchpad](../images/oa31.png "ECC Scratchpad")
 
 
 **Pre-requisites:**
 
-1.	EBS Form functions for the required ECC Dashboards which are to be displayed in the ECC Personalization Template
+1.	EBS Form functions for the required ECC Dashboards which are to be displayed in the ECC Scratchpad
 
 **Dashboard FND Functions:**
 
@@ -366,7 +366,7 @@ Password: welcome1
             ```
         *	Function: 
                                                                    ```
-  	    <copy>ECC Scratchpad</copy>
+  	    <copy>Fixed Assets Command Center Home</copy>
             ```
 4.	Click on “Apply” button to create the menu
 
@@ -518,13 +518,13 @@ Password: welcome1
     ![Clear Cache](../images/ss110.png "Clear Cache")
 
 
-**Personalize ECC Personalization Template to add ECC Procure to Pay dashboards**
+**Personalize ECC Scratchpad to add ECC Procure to Pay dashboards**
 
 
 
 **Tasks:**
 
-1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) to access ECC Personalization Template under “Procure to Pay Operations Manager” responsibility
+1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) to access ECC Scratchpad under “Procure to Pay Operations Manager” responsibility
 
     ```
   	 Username: operations
@@ -533,7 +533,7 @@ Password: welcome1
     
 
 1.	Navigate to Procure to Pay Operations Manager -> P2P Operations
-    ![ECC Personalization Template](../images/scratchpadupdated1.png "ECC Personalization Template")
+    ![ECC Scratchpad](../images/scratchpadupdated1.png "ECC Scratchpad")
 
 2.	Click on the EBS Settings icon
     ![EBS Settings](../images/scratchpadupdated2.png "EBS Settings")
@@ -544,7 +544,7 @@ Password: welcome1
 
 
 5.	In the Personalization structure table, click on “Personalize” icon for Page Layout section to update the window title
-    ![Update Window Title](../images/sd1.png "Update Window Title")
+    ![Update Window Title](../images/scratchpadupdated6.png "Update Window Title")
 
 6.	Set the window title to “P2P Operations” and click on “Apply” button
     ![Update Window Title](../images/scratchpadupdated7.png "Update Window Title")
