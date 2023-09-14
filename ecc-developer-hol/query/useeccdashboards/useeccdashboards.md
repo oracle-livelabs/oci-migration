@@ -125,6 +125,7 @@ Password: welcome1
 4. Click on the "Activity Tracker" page
     ![Activity audit](../images/activityaudit2.png "Activity audit")
 
+5. The Activity Tracker dashboard is displayed. This validates the integration of EBS and ECC
     ![Activity audit](../images/activityaudit3.png "Activity audit")
 
 ## Task 2: Hands on demo of ECC Fixed Assets
