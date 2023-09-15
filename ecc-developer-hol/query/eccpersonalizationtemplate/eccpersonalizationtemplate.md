@@ -3,14 +3,11 @@
 
 ### Introduction
 
-This lab walks you through the ECC Personalization Template feature, what the feature is, the benefits of this feature and hands on demos.
-ECC Personalization Template is a ECC V11 feature.
+* ECC Personalization Template is an ECC V11 feature
+* ECC Personalization Template was previously referred to as ECC Scratchpad, which is why, in some of the screenshots, you may see ECC Scratchpad instead of ECC Personalization Template
+* This lab walks you through the ECC Personalization Template feature, what the feature is, the benefits of this feature and hands on demos
 
 Estimated Time: 30 minutes
-
-
-
-
 
 
 ### Objectives
