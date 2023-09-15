@@ -423,27 +423,35 @@ Password: welcome1
                                                                ```
   	    <copy>P2P Grant</copy>
             ```
-    *	Under security context section, Responsibility: Procure to Pay Operations Manager
+    *	Under security context section, select the Responsibility as: 
+            ```
+  	    <copy>Procure to Pay Operations Manager</copy>
+        ```
+        ![Create Grant](../images/creategrantforp2p.png "Create Grant")
     *	Click on “Next” button
-    *	Provide the permission set as “P2P Permission Set”
+    *	Provide the set as
+            ```
+  	    <copy>P2P Permission Set</copy>
+        ```
+        ![Create Grant](../images/creategrantforp2p1.png "Create Grant")
     *	Click on the “Next” button and then the “Finish” button to create the grant
 8.	Now, upon clicking “Ok” in the confirmation dialog, the user is navigated to the “Update Access Role” page
 9.	Click on “Apply” button
 
     ![Access Role](../images/ss17.png "Access Role")
-    ![Grant](../images/ss18.png "Grant")
 
 **Run Workflow Background Process:**
 
 1.	Navigate to EBS Home Page -> System Administration responsibility -> Schedule Requests
+    ![Schedule Requests](../images/schedulerequests.png "Schedule Requests")
 2.	Provide the Program Name as “Workflow Background Process”
 3.	Under Parameters section, provide the below details:
     *	Process Deferred: Yes
     *	Process Timeout: No
+    ![Workflow Background Process](../images/ss19.png "Workflow Background Process")
 4.	Click on “Continue” button and then on “Submit” button
 5.  Once the “Workflow Background Process” request is completed successfully, proceed to the next step to clear the application cache
-
-    ![Workflow Background Process](../images/ss19.png "Workflow Background Process")
+    ![Workflow Background Process](../images/wfbgprocess.png "Workflow Background Process")
 
 **Clear Application Cache:**
 
@@ -479,6 +487,7 @@ Password: welcome1
     ![Users](../images/userspath.png "Users")
 2.	Provide the User Name as “OPERATIONS” and click on “Go” button
 3.	Click on update icon in the results for OPERATIONS user
+    ![Update User](../images/assignresptouser.png "Update User")
 4.	Click on “Assign Roles” button and add “Procure to Pay Operations Manager”
 5.	Provide the Justification like “New Responsibility for ECC HOL”
 6.  Click on “Apply” button
@@ -490,14 +499,15 @@ Password: welcome1
 **Run Workflow Background Process:**
 
 1.	Navigate to EBS Home Page -> System Administration responsibility -> Schedule Requests
+    ![Schedule Requests](../images/schedulerequests.png "Schedule Requests")
 2.	Provide the Program Name as “Workflow Background Process”
 3.	Under Parameters section, provide the below details:
-    * Process Deferred: Yes
-    * Process Timeout: No
-4.	Click on “Continue” button and then on “Submit” button
-5.	Once the “Workflow Background Process” request is completed successfully, proceed to the next step to clear the application cache
-
+    *	Process Deferred: Yes
+    *	Process Timeout: No
     ![Workflow Background Process](../images/ss19.png "Workflow Background Process")
+4.	Click on “Continue” button and then on “Submit” button
+5.  Once the “Workflow Background Process” request is completed successfully, proceed to the next step to clear the application cache
+    ![Workflow Background Process](../images/wfbgprocess.png "Workflow Background Process")
 
 **Clear Application Cache:**
 
