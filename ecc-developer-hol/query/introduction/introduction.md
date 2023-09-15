@@ -2,9 +2,9 @@
 
 ## About this Workshop
 
-The intent of this workshop is to give you practical hands on experience on Oracle Enterprise Command Center. This workshop has demonstrated use cases and step by step instructions that are easy to follow. It will walk you through all of the steps and processes that a typical ECC Developer would do, it has a show and tell of the ECC installion process, hands on labs for creating applications, data sets, pages, components etc.
+The intent of this workshop is to give you practical hands on experience on Oracle Enterprise Command Center. This workshop has demonstrated use cases and step by step instructions that are easy to follow. It will walk you through all of the steps and processes that a typical ECC Developer would do, it has a show and tell of the ECC installation process, hands on labs for creating applications, data sets, pages, components etc.
 
-There is also an instructer led lab where you will learn about several advanced features of Oracle Enterprise Command Center with examples.
+There is also an instructor led lab where you will learn about several advanced features of Oracle Enterprise Command Center with examples.
 
 This lab gives a brief introduction to Oracle Enterprise Command Center Framework
 
