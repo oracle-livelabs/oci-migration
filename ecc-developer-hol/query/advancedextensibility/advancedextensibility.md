@@ -684,7 +684,9 @@ In this task, we will replace the shipped "Agreements" dashboard with the custom
 Password: welcome1
     ```
 2.	Create a new FND Function for Local Agreements Dashboard:
-    * Navigate to Functional Administrator -> Core Services -> Function
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Functions
+        ![Functional Administrator](../images/functionaladministratorpath.png "Functional Administrator")
+        ![Functions Menu](../images/functions.png "Functions Menu")
     * Search with Code as: 
                 ```
   	    <copy>PO_PCC_ECC_AGREEMENTS</copy>
@@ -712,7 +714,8 @@ Password: welcome1
         ![Create Function](../images/a11s3.png "Create Function") 
 
 3.	Add the new FND Function to Procurement Command Center Menu:
-    * Navigate to Functional Administrator Responsibility -> Core Services -> Menus
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Menus
+        ![Menus](../images/menus.png "Menus")Menus
     * Search with code as 
                                         ```
   	    <copy>PO_PCC_MAIN</copy>
@@ -727,7 +730,8 @@ Password: welcome1
         ![Add Function to Menu](../images/arbac1.png "Add Function to Menu")
 
 4. Clear Application Cache:
-    * Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Caching Framework -> Global Configuration
+        ![Clear Cache](../images/clearcachesteps.png "Clear Cache")
     * Click on “Clear All Cache” button and then click on "Yes"
         ![Clear Cache](../images/ss110.png "Clear Cache")
 

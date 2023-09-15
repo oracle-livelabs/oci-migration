@@ -82,7 +82,10 @@ This concludes this task, we successfully extended Indirect Procurement dashboar
 Password: welcome1
     ```
 2.	Create a new FND Function for custom Indirect Procurement Dashboard:
-     * Navigate to Functional Administrator -> Core Services -> Functions
+     * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Functions
+        ![Functional Administrator](../images/functionaladministratorpath.png "Functional Administrator")
+        ![Functions Menu](../images/functions.png "Functions Menu")
+
      * Search with Code as 
                                                             ```
   	    <copy>PO_PCC_ECC_IND_PROC</copy>
@@ -115,7 +118,8 @@ Password: welcome1
           ![Create Function](../images/b113.png "Create Function") 
 
 3.	Add the new FND Function to PO\_PCC\_HOME\_PAGE menu
-     * Navigate to Functional Administrator Responsibility -> Core Services -> Menus
+     * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Menus
+        ![Menus](../images/menus.png "Menus")
      * Search with code as
                                        ```
   	    <copy>PO_PCC_HOME_PAGE</copy>
@@ -132,9 +136,10 @@ Password: welcome1
      * Click on “Apply” button to save the menu
           ![Add Function to Menu](../images/b115.png "Add Function to Menu")
 4.  Clear Application Cache:
-    * Navigate to Functional Administrator -> Core Services -> Caching Framework -> Global Configuration
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Caching Framework -> Global Configuration
+        ![Clear Cache](../images/clearcachesteps.png "Clear Cache")
     * Click on “Clear All Cache” button and then click on "Yes"
-    ![Clear Cache](../images/ss110.png "Clear Cache")
+        ![Clear Cache](../images/ss110.png "Clear Cache")
 
 ## Task 3: EBS OA Personalization 
 1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
