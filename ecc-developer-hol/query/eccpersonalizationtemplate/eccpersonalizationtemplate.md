@@ -489,7 +489,7 @@ Password: welcome1
 
 **Run Workflow Background Process:**
 
-1.	Navigate to System Administration -> Schedule Requests
+1.	Navigate to EBS Home Page -> System Administration responsibility -> Schedule Requests
 2.	Provide the Program Name as “Workflow Background Process”
 3.	Under Parameters section, provide the below details:
     * Process Deferred: Yes
