@@ -116,7 +116,10 @@ Password: welcome1
   	    <copy>Purchasing, Vision Operations (USA)</copy>
             ```
     * Click on the “Next” button
-    * Provide the “Set” as “PO PCC Local Agreements Permission Set”
+    * Provide the “Set”:
+                                                   ```
+  	    <copy>PO PCC Local Agreements Permission Set</copy>
+            ```
     * Click on the “Next” button and then “Finish” button
         ![Create Grant](../images/a11s6.png "Create Grant")
 
@@ -582,17 +585,54 @@ Password: welcome1
 11.	Now, the user can view the Requisitions dashboard
     ![Requisitions Dashboard](../images/scratchpadupdated14.png "Requisitions Dashboard")
 
-12.	Similarly, the user can add the below-mentioned remaining dashboards by following the same steps as mentioned above (Steps 7, 8, and 9)
-    *	Subtab 2:
-        *	Title: Orders
-        *	Destination Function: PO\_PCC\_ECC\_ORDERS
-    *	Subtab 3:
-        *	Title: Receiving
-        *	Destination Function: INV\_ECC\_RCV
-    *	Subtab 4:
-        *	Title: Supplier Balance
-        *	Destination Function: AP\_ECC\_SUPP\_BALANCE
+12.	Similarly, you can add the other remaining dashboards by using the below FND functions 
 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+style="white-space:pre-wrap; word-wrap:break-word"
+</style>
+</head>
+<body>
+
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>FND Function</th>
+    
+  </tr>
+
+  <tr>
+    <td>Orders</td>
+    <td>PO_PCC_ECC_ORDERS</td>
+  </tr>
+  <tr>
+    <td>Receiving</td>
+    <td>INV_ECC_RCV</td>
+  </tr>
+    <tr>
+    <td>Supplier Balance</td>
+    <td>AP_ECC_SUPP_BALANCE</td>
+</table>
+</body>
+</html>
 13.	Click on “Return to Application” to access the dashboards
 
     ![P2P Operations](../images/scratchpadupdated15.png "P2P Operations")
