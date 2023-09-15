@@ -7,7 +7,7 @@ This lab is optional and is only required if you want to run this workshop on yo
 
 This Lab will show you how to download the Oracle Resource Manager (ORM) stack zip file needed to setup the resource needed to run this workshop and will show you how to set up a Resource Manager stack that will generate the Oracle Cloud objects needed to run your workshop. 
 
-*Estimated Lab Time:* 25 minutes
+Estimated Time: 25 minutes
 
 ### Objectives
 -   Download ORM stack
