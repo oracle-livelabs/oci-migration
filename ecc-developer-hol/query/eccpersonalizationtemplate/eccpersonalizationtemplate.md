@@ -133,6 +133,7 @@ Password: welcome1
 Password: welcome1
     ```
 2.	Navigate to Purchasing, Vision Operations (USA) -> Procurement Command Center -> Local Agreements
+        ![Local Agreements Menu](../images/localagreementsmenu.png "Local Agreements Menu")
         ![Local Agreements](../images/a11s7.png "Local Agreements")
 3. Click on EBS Settings icon
 4. Click on “Personalize Page” option
