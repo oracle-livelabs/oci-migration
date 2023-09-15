@@ -62,7 +62,7 @@ Proceed to deploy your workshop environment using Oracle Resource Manager (ORM) 
 
     - **Instance Count:** Accept the default, **1**, unless you intend to create more than one (e.g. for a team)
     - **Select Availability Domain:** Select an availability domain from the dropdown list.
-    - **Need Remote Access via SSH?** In this step you have 3 options to select from:
+    - **Need Remote Access via SSH?** In this step you have 3 options. We recommend you to proceed with **Option (B)**.
         - **Option (A)** - Keep Unchecked for Remote Desktop only Access - The Default
         - **Option (B)** - Check *Need Remote Access via SSH?* and keep *Auto Generate SSH Key Pair* unchecked to enable remote access via SSH protocol, then provide the SSH public key(s).
 
