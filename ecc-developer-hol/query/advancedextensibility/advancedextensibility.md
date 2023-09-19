@@ -713,21 +713,22 @@ Password: welcome1
     * Click on the “Submit” button
         ![Create Function](../images/a11s3.png "Create Function") 
 
-3.	Add the new FND Function to Procurement Command Center Menu:
-    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Menus
-        ![Menus](../images/menus.png "Menus")Menus
-    * Search with code as 
+3.	Add the new FND Function to Procurement Command Center Permission Set:
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Security -> Permission Sets
+        ![Permission Set](../images/permissionset.png "Permission Set")
+    * Search with permission set name as 
                                         ```
-  	    <copy>PO_PCC_MAIN</copy>
+  	    <copy>PO PCC Permission Set</copy>
             ```
-    * Click on “Update” button for “Procurement Command Center” menu
-    * In the menu manager section, click on “+” icon to add below menu entry details
-        * Function: 
+    * Click on “Update” button for “PO PCC Permission Set"
+        ![Update Permission Set](../images/updatepermissionset.png "Update Permission Set")
+    * In the permission set manager section, click on “+” icon to add below permission details
+        * Permission: 
                                                         ```
   	    <copy>PO PCC ECC Local Agreements Page</copy>
             ```
-        * Click on “Apply” button to save the menu
-        ![Add Function to Menu](../images/arbac1.png "Add Function to Menu")
+        * Click on “Apply” button to save the permission set
+        ![Add Function to Permission Set](../images/addpagetopermissionset.png "Add Function to Permission Set")
 
 4. Clear Application Cache:
     * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Caching Framework -> Global Configuration
