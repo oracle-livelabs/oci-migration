@@ -252,4 +252,4 @@ At this point, the JD Edwards EnterpriseOne Trial Edition is ready for use.
     * Jeff Kalowes, Principal JDE Specialist
     * Tarani Meher, Principal JDE Specialist
     * Mani Julakanti, Principal JDE Specialist
-* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 06/2023
+* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 09/2023

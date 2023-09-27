@@ -220,4 +220,4 @@ Your environment is now fully functional and ready to go. Enjoy JDE on OCI!
     * Jeff Kalowes, Principal JDE Specialist
     * Tarani Meher, Principal JDE Specialist
     * Mani Julakanti, Principal JDE Specialist
-* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 06/2023
+* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 09/2023
