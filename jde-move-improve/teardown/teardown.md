@@ -70,4 +70,4 @@ Thank you for your time, I hope you enjoyed using Oracle Cloud and JDE.
     * Jeff Kalowes, Principal JDE Specialist
     * Tarani Meher, Principal JDE Specialist
     * Mani Julakanti, Principal JDE Specialist
-* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 06/2023
+* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 09/2023

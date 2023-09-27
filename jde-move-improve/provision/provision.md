@@ -133,7 +133,11 @@ Once connected, you can continue and skip  ``Option 2``  below.
 
     For example:
 
-        ssh -i ./keys/id_rsa opc@ip_address
+    ```
+    <copy>
+    ssh -i ./keys/id_rsa opc@ip_address
+    </copy>
+    ```
 
 **Note:** Do not copy and paste the line above straight into Git Bash. Unpredictable results may occur.
 
