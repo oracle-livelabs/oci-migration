@@ -147,22 +147,24 @@ Password: welcome1
     ```
   	 <copy>Payables Command Center Data Load</copy>
     ```
+7. From  below screen click on "Quickselect"
 
+    ![Payables Command Center Data Load Quick Select](../images/quickselect.png "Payables Command Center Data Load Quick Select")
 
-7. You should see the below screen
+8. You should see the below screen
 
     ![Payables Command Center Data Load](../images/ipl1.png "Payables Command Center Data Load")
-8. Go to "Parameters" tab and then select **FULL_LOAD** as Load Type and Click "Continue"
+9. Go to "Parameters" tab and then select **FULL_LOAD** as Load Type and Click "Continue"
 
     ![Enter parameters](../images/ipl2.png "Enter parameters")
-9. Click "Submit"
+10. Click "Submit"
     ![Click submit](../images/ipl3.png "Click submit")
-10. You should see the below screen once the data load is successful
+12. You should see the below screen once the data load is successful
 
     ![Successful data load message](../images/ipl4.png "Successful data load message")
-11. You can track the dataload 
+12. You can track the dataload 
     ![Track dataload in EBS](../images/ipl5.png "Track dataload in EBS")
-12. Or You can also track the dataload by copying the Concurrent Program ID then navigating to ECC Developer i.e., (Navigating to http://apps.example.com:8000/ecc) and then to Data Load Tracking Page using admin credentials provided below:
+13. Or You can also track the dataload by copying the Concurrent Program ID then navigating to ECC Developer i.e., (Navigating to http://apps.example.com:8000/ecc) and then to Data Load Tracking Page using admin credentials provided below:
 
 
     ```
@@ -171,12 +173,12 @@ Password: welcome1
     ```
 
 
-13. You can check the respective job using the Concurrent Program ID, as shown in below image
+14. You can check the respective job using the Concurrent Program ID, as shown in below image
 
     ![Track dataload in ECC](../images/ipl6.png "Track dataload in ECC")
 
 
-14. From ECC:
+15. From ECC:
     - User can check details for each query in real time.
     - It reflects the current load status: Number of successful rows and number of failed rows.
     - It shows when the query started, how much time spent at the DB, the sql text and the operation.
@@ -185,14 +187,14 @@ Password: welcome1
     SQL Trace can be enabled by passing “TRUE” value while starting the data load Concurrent Program.
     The trace log file will be generated with the ECC Data Load sub-request “Job ID” as the identifier. The “Job ID” is noted in the log file of sub-request.
 
-15. Data Load job structure request:
+16. Data Load job structure request:
     - One “Audit Request” per job
     - One “Dataset Key” per dataset included at the job
     - One “Audit Load Rule” per load rule for each “Audit Dataset”
     - One “Audit Load Detail” for each query retrieved from the load rule for each “Audit Load Rule”
 
 
-16. The following image describes Self Job Concurrency Matrix
+17. The following image describes Self Job Concurrency Matrix
 
     ![Self Job Concurrency Matrix](../images/matrix.png "Self Job Concurrency Matrix") 
 

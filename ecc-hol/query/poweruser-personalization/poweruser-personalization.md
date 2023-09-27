@@ -206,7 +206,7 @@ Responsibility: General Ledger Super User
 7. From "Parameters" tab choose the Load type as **FULL_LOAD**, Set Ledger ID as **1** and Set/Reset Data as **TRUE**, this will wipe out all the records in the dataset.
     ![Enter parameters](../images/jda103.png "Enter parameters")
 
-8. Click on "Submit"
+8. Click on "Continue" and then click on "Submit"
 
     ![Click Submit](../images/jda104.png "Click Submit")
     ![Request scheduled](../images/b10.png "Request scheduled")

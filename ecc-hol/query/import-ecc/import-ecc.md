@@ -7,7 +7,7 @@ This lab walks you through the steps to import ECC applications so that you can 
 
 
 
-Estimated Time: 15 minutes
+Estimated Time: 10 minutes
 
 ### Objectives
 In this lab, you will:

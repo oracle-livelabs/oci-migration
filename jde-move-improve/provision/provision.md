@@ -40,9 +40,9 @@ On the Oracle Cloud Console home page, click the **Navigation** Menu Button in t
 
     ![](./images/jde-trial-edition-image.png " ")
 
-3.  On the information page for the JD Edwards EnterpriseOne Trial Edition image, select the version **(9.2.7.0 – default)** to deploy and the compartment (you created a compartment in Set Up Oracle Cloud Infrastructure for JDE Trial Edition Deployment, Step 2) to deploy to. Select the check box to accept the Oracle Standard Terms and Restrictions and then click **Launch Instance**.
+3.  On the information page for the JD Edwards EnterpriseOne Trial Edition image, select the version **(9.2.7.3 – default)** to deploy and the compartment (you created a compartment in Set Up Oracle Cloud Infrastructure for JDE Trial Edition Deployment, Step 2) to deploy to. Select the check box to accept the Oracle Standard Terms and Restrictions and then click **Launch Instance**.
 
-    ![](./images/launch-instance_1.png " ")
+    ![](./images/launch-instance_2.png " ")
 
 4.  Next, define the instance with the following options:
 
@@ -54,7 +54,7 @@ On the Oracle Cloud Console home page, click the **Navigation** Menu Button in t
         </copy>
         ```
 
-       ![](./images/instance-details_1.png " ")
+       ![](./images/instance-details_2.png " ")
 
     2. Depending on the region selected, there might be one or more availability domains. Select Availability Domain: **AD1** (if single AD available) or **AD3** (if multiple ADs available).
 
@@ -70,7 +70,7 @@ On the Oracle Cloud Console home page, click the **Navigation** Menu Button in t
 
     7. Review and confirm the Virtual Cloud Network and Subnets you created earlier are selected. Ensure that the **Assign a public IP address** radio button is selected.
 
-       ![](./images/instance-details2.png " ")
+       ![](./images/Networking_Details_2.png " ")
 
     8. In the Add SSH keys section, select the **Upload public key file (.pub)** radio button. Browse to select the public SSH key file you created earlier (Set Up OCI for JDE Trial Edition Deployment, STEP 1) by navigating to the location where the SSH files are stored. Alternatively, drag and drop the .pub file to the window.
 
@@ -87,13 +87,13 @@ On the Oracle Cloud Console home page, click the **Navigation** Menu Button in t
 
     You've now finished the provisioning step and should now see the screen below. The orange box indicates that the instance is in the process of being provisioned.
 
-    ![](./images/orange-instance.png " ")
+    ![](./images/orange-instance_2.png " ")
 
     **Note:** After a few minutes, the instance will be running and ready.  
 
 5.  Copy and take note of the **Public IP address** under the **Instance Access** section, which is required to connect to the instance.
 
-    ![](./images/finished-instance.png " ")
+    ![](./images/finished-instance_2.png " ")
 
 ## Task 2:  Access the Oracle Cloud Infrastructure Instance
 
@@ -133,7 +133,11 @@ Once connected, you can continue and skip  ``Option 2``  below.
 
     For example:
 
-        ssh -i ./keys/id_rsa opc@ip_address
+    ```
+    <copy>
+    ssh -i ./keys/id_rsa opc@ip_address
+    </copy>
+    ```
 
 **Note:** Do not copy and paste the line above straight into Git Bash. Unpredictable results may occur.
 
@@ -181,7 +185,7 @@ During the first connection to a Trial Edition instance (after completing Connec
 
  Once complete, you will need to establish a new SSH session with the server. If your subsequent connections are refused or if the connection displays this same screen (shown below) then the updates are still running.
 
-   ![](./images/image-update.png " ")
+   ![](./images/image-update_2.png " ")
 
  On the first connection to the instance after the yum update has completed, the initial configuration script will be triggered and needs to be run prior to anything working.
 
@@ -189,7 +193,7 @@ During the first connection to a Trial Edition instance (after completing Connec
 
 1.	HTML Port [8080]: Set this as **8080**.
 
-    ![](./images/html-port.png " ")
+    ![](./images/html-port_2.png " ")
 
     **Note:** This must match the port number added to the ingress rules for the security list.
 
@@ -206,7 +210,7 @@ During the first connection to a Trial Edition instance (after completing Connec
     *	Must contain at least 1 letter and 1 number.
     *	May not contain any shell metadata characters such as $, |, @, and so on.
 
-    ![](./images/db-system-password.png " ")
+
 
 3.  Enter a JDE user password (and confirmation):
 
@@ -218,7 +222,7 @@ During the first connection to a Trial Edition instance (after completing Connec
 
     Please follow the same password guidelines if you create your own.
 
-    ![](./images/jde-user-password.png " ")
+
 
 4.	Enter a Weblogic admin password (and confirmation):
     
@@ -230,14 +234,14 @@ During the first connection to a Trial Edition instance (after completing Connec
     
     Please follow the same password guidelines if you create your own.
 
-    ![](./images/weblogic-admin-password.png " ")
+
 
 5.	Enter the Final Confirmation: Y – Yes to commit the configuration settings and run the script to set up.
 
 
 Configuration will take between 25 to 30 minutes. The configuration will go through and change all necessary database records and files on the system for the system information and options entered, as well as start all necessary services. Once complete, the JD Edwards EnterpriseOne Trial Edition is ready for use. Watch for the status “Successfully completed u01/vmScripts/EOne_Sync.sh”.
 
-   ![](./images/configuration-screen.png " ")
+   ![](./images/configuration-screen_2.png " ")
 
 ## Summary
 At this point, the JD Edwards EnterpriseOne Trial Edition is ready for use.
@@ -248,4 +252,4 @@ At this point, the JD Edwards EnterpriseOne Trial Edition is ready for use.
     * Jeff Kalowes, Principal JDE Specialist
     * Tarani Meher, Principal JDE Specialist
     * Mani Julakanti, Principal JDE Specialist
-* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 03/2023
+* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 09/2023

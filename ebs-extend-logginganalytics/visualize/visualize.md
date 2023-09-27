@@ -9,8 +9,8 @@ Estimated Lab Time: 15-30 minutes
 ### Objectives
 
 In this lab, you will:
-* Visualize and Absorb this Data in the Logging Analytics User Interface
-* At the end of this lab you should be ready to begin creating your own dashboards and visualizations
+* Visualize and Absorb this Data in the Logging Analytics User Interface.
+* At the end of this lab you should be ready to begin creating your own dashboards and visualizations.
 
 ### Prerequisites
 * Completed Labs 1-3 
@@ -21,21 +21,21 @@ In this lab, you will:
 
 1. Navigate to Logging Analytics - Log Explorer
 
-  **Note: The corresponding query will be shown captioned below each image**
+  **Note: The corresponding query will be shown captioned below each image.**
 
   Your screen will look similar to this, with a pie chart showing an overview of the different logs that you have ingested. Likely your VCN Flow Logs will dominate your pie chart.
 
-  ![](./images/piechart.png " ")
+  ![Log explorer analytics](./images/piechart.png " ")
 
 2. The first being the Query Search. You can filter through and analyze your logs based off of regex that define your search. As you change your fields and visualizations you will see these changes in the graph and the query search bar. If you ever want to return to the initial dashboard go to **Actions** and click **Create New**
 
-  ![](./images/piechart1.png " ")
+  ![Log explorer with a filter](./images/piechart1.png " ")
 
   ```* | stats count as logrecords by 'Log Source' | sort -logrecords```
 
 3. The second being the Fields panel on the left. Here you can choose what fields you want to use for grouping, filtering, and exploring your log data. You can drag your fields into the visualization panel or click on the three dots to the right of the field name to filter or pin the field.
 
-  ![](./images/fields.png " ")
+  ![List of fields for log explorer](./images/fields.png " ")
 
   ```* | stats count as logrecords by 'Log Source' | sort -logrecords```
 
@@ -43,7 +43,7 @@ In this lab, you will:
 
   **Click the cluster visualization to see how this will change your widget**
 
-  ![](./images/visualizations.png " ")
+  ![List of visulaizations for log explorer](./images/visualizations.png " ")
 
   ```* | cluster```
 
@@ -63,7 +63,7 @@ In this lab, you will:
 
 6. Give the Dashboard a name: `EBS Dashboard` and Description
 
-  ![](./images/savesearch.png " ")
+  ![Save a dashboard](./images/savesearch.png " ")
 
 7. Click **Save**
 
@@ -75,7 +75,7 @@ In this lab, you will:
 
   c. From the edit you can add additional widgets as well as change the size of your widget.
 
-  ![](./images/editdash.png " ")
+  ![Create dashboard](./images/editdash.png " ")
 
   d. As you create more widgets based off of queries or built using the fields and visualization panels you can add them from the right side by dragging the widget into the dashboard and placing as you see fit. Allowing you to customize your dashboard to your preference.
 
@@ -91,7 +91,7 @@ We will now walk through a flow to understand our logs and create some common wi
 
 4. You now have a widget showing your logs by Entity 
 
-  ![](./images/logsbyentity.png " ")
+  ![Visualize widgets](./images/logsbyentity.png " ")
 
   ```* | stats count as logrecords by Entity | sort -logrecords```
 
@@ -99,23 +99,23 @@ We will now walk through a flow to understand our logs and create some common wi
 
 6. click the down arrow next to `Pie` and select the `Histogram` or `TreeMap` to see breakdowns of this data in different graphs.
 
-  ![](./images/histogram.png " ")
+  ![Histogram for log explorer](./images/histogram.png " ")
 
   ```* | timestats count as logrecords by Entity | sort -logrecords```
 
-  ![](./images/treemap.png " ")
+  ![Tree map for log expolrer](./images/treemap.png " ")
 
   ```* | stats count as logrecords by Entity | sort -logrecords```
 
 7. Lets look at the histogram: ```* | timestats count as logrecords by Entity | sort -logrecords```
 
-  ![](./images/histogram.png " ")
+  ![Histogram with filter](./images/histogram.png " ")
 
 8. Let's drill deeper.
 
   a. Select Entity Type in the fields panel and select `OCI VCN Virtual Network Interface Card`
 
-  ![](./images/vcnhistogram.png " ")
+  ![Histogram for VCN](./images/vcnhistogram.png " ")
 
     ```'Entity Type' = 'OCI VCN Virtual Network Interface Card' | timestats count as logrecords by Entity | sort -logrecords```
 
@@ -125,7 +125,7 @@ We will now walk through a flow to understand our logs and create some common wi
 
   d. Now we see the logs strictly for ebsadvancedapp01 subnet.
 
-  ![](./images/ebsadvancedapp01.png " ")
+  ![Histogram for subnet](./images/ebsadvancedapp01.png " ")
 
   ```Entity = ebsadvancedapp01 | timestats count as logrecords by Entity | sort -logrecords```
 
@@ -133,13 +133,13 @@ We will now walk through a flow to understand our logs and create some common wi
 
   f. You can expand this at the bottom right of this entry.
 
-  ![](./images/expandlogcontent.png " ")
+  ![Log source content](./images/expandlogcontent.png " ")
 
   g. Now if you click on the value shown by Source IP you will now filter your logs that have this source IP.
 
 9. Now go to the top clear your query and just type `reject` to find all the logs with a rejection on your network.
 
-  ![](./images/reject.png " ")
+  ![Reject logs histogram](./images/reject.png " ")
 
   ```reject | timestats count```
     
@@ -154,6 +154,6 @@ You may now proceed to the next lab.
 ## Acknowledgements
 * **Author** - Quintin Hill, Cloud Engineering, Packaged Applications
 * **Contributors** -  Kumar Varun, Logging Analytics Product Management
-* **Last Updated By/Date** - Quintin Hill, Cloud Engineering, Mar 8 2021
+* **Last Updated By/Date** - Nicholas Cusato, Taylor Rees, Stephen Stuart, June 2023
 
 

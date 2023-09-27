@@ -2,14 +2,14 @@
 
 ## Introduction
 
-This lab will provide various example queries for you to create your own dashboards and widgets
+This lab will provide various example queries for you to create your own dashboards and widgets.
 
 Estimated Lab Time: 15 minutes
 
 ### Objectives
 
 In this lab, you will:
-* Be able to use some sample queries to help familiarize yourself further with valuable query searches
+* Be able to use some sample queries to help familiarize yourself further with valuable query searches.
 
 ### Prerequisites
 
@@ -21,7 +21,7 @@ In this lab, you will:
 
 1. 'Log Source' = 'OCI Audit Logs' and Status not in ('null') | link Status, 'User Name', Event, Method | stats unique('User Name'), unique(Status), unique(Method), unique(Event), unique(Method) | classify topcount = 300 'Group Duration', Status
 
-  ![](./images/ocianomalus.png " ")
+  ![Anomalus status log explorer](./images/ocianomalus.png " ")
 
   - Name: OCI Audit Anomalus Status Calls
 
@@ -67,7 +67,7 @@ In this lab, you will:
 
 7. ‘Entity Type’ = ‘Host (Linux)’ and not (‘invalid user’ or ‘user unknown’) | stats count
 
-  You can now go to your dashboard and add these widgets to your EBS Dashboard
+  You can now go to your dashboard and add these widgets to your EBS Dashboard.
 
   Another option is to create a Networking/Security Dashboard with your networking queries in addition to your ebs dashboard where you can filter your EBS/host log metrics in the EBS Dashboard and Network and Audit information in the Networking/Security Dashboard. You can add this dashboard by clicking Create Dashboard, naming it and saving.
 
@@ -78,6 +78,6 @@ For more information on how to create widgets to understand your data refer to [
 ## Acknowledgements
 * **Author** - Quintin Hill, Cloud Engineering, Packaged Applications
 * **Contributors** -  Kumar Varun, Logging Analytics Product Management
-* **Last Updated By/Date** - Quintin Hill, Cloud Engineering, Mar 8 2021
+* **Last Updated By/Date** - Nicholas Cusato, Taylor Rees, Stephen Stuart, June 2023
 
 
