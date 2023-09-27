@@ -133,7 +133,11 @@ Once connected, you can continue and skip  ``Option 2``  below.
 
     For example:
 
-        ssh -i ./keys/id_rsa opc@ip_address
+    ```
+    <copy>
+    ssh -i ./keys/id_rsa opc@ip_address
+    </copy>
+    ```
 
 **Note:** Do not copy and paste the line above straight into Git Bash. Unpredictable results may occur.
 
@@ -248,4 +252,4 @@ At this point, the JD Edwards EnterpriseOne Trial Edition is ready for use.
     * Jeff Kalowes, Principal JDE Specialist
     * Tarani Meher, Principal JDE Specialist
     * Mani Julakanti, Principal JDE Specialist
-* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 06/2023
+* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 09/2023

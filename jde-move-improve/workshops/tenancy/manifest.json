@@ -18,12 +18,12 @@
             "filename": "../../setup/setup.md"
         },
         {
-            "title": "Lab 2: Creating a Trial Edition Instance in OCI",
+            "title": "Lab 2: Create a Trial Edition Instance in OCI",
             "description": "Creating a Trial Edition Instance in OCI",
             "filename": "../../provision/provision.md"
         },
         {
-            "title": "Lab 3: Connecting to JDE Trial Edition",
+            "title": "Lab 3: Connect to JDE Trial Edition",
             "description": "Connecting to JDE Trial Edition",
             "filename": "../../analyze/analyze.md"
         },
