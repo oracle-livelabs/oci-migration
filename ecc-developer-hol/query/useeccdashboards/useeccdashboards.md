@@ -3,7 +3,7 @@
 
 ### Introduction
 
-This lab walks you through the a few demo flow scenarios that will help you learn the basics of Oracle Enterprise Command Center framework
+This lab walks you through the a few demo flow scenarios that will help you learn the basics of Oracle Enterprise Command Center framework..
 
 Estimated Time: 45 minutes
 
