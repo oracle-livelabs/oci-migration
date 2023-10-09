@@ -231,4 +231,4 @@ In this tutorial, OCI has been set up for the networking required to be able to 
     * Jeff Kalowes, Principal JDE Specialist
     * Tarani Meher, Principal JDE Specialist
     * Mani Julakanti, Principal JDE Specialist
-* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 06/2023
+* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 09/2023

@@ -36,11 +36,13 @@ The HTML Server is the primary interface to the EnterpriseOne system.
 
         https://"ip address:port"/jde/owhtml/index.html
 
-    For example,
+    For example, 
 
-        https://129.146.104.179:8080/jde/owhtml/index.html
-
-
+    ```
+    <copy>
+    https://129.146.104.179:8080/jde/owhtml/index.html
+    </copy>
+    ```
 
 3.  Click **Advanced** and then **Accept the Risk and Continue** to confirm that the connection is trusted.
 
@@ -73,9 +75,12 @@ The EnterpriseOne Orchestrator Studio is an interface to help create orchestrati
         https://<ip_address>:7077/studio/studio.html
 
     For example,
-
-        https://129.213.43.190:7077/studio/studio.html
-
+        
+    ```
+    <copy>
+    https://129.213.43.190:7077/studio/studio.html
+    </copy>
+    ```
     **Note:** If this is the first connection to this URL from the workstation or browser type, it will prompt you to confirm secure connection. This is due to JDE Trial Edition using a temporary SSL Certificate for security.
 
 3.	Click **Advanced** and then **Accept the Risk and Continue** to confirm that the connection is trusted.
@@ -168,8 +173,11 @@ The Oracle BI Publisher Server for One View Reporting (OVR) is a reporting tool.
 
     For example,
 
-        https://132.145.187.16:9705/xmlpserver
-
+    ```
+    <copy>
+    https://132.145.187.16:9705/xmlpserver
+    </copy>
+    ```
     **Note:** If this is the first connection to this URL from the workstation or browser type, it will prompt you to confirm secure connection. This is due to JDE Trial Edition using a temporary SSL Certificate for security.
 
 3.	Click **Advanced** and then **Accept the Risk and Continue** to confirm that the connection is trusted.
@@ -212,4 +220,4 @@ Your environment is now fully functional and ready to go. Enjoy JDE on OCI!
     * Jeff Kalowes, Principal JDE Specialist
     * Tarani Meher, Principal JDE Specialist
     * Mani Julakanti, Principal JDE Specialist
-* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 06/2023
+* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 09/2023
