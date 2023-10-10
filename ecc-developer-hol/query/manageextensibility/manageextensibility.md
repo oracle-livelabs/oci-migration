@@ -93,10 +93,9 @@ Password: welcome1
 * To access the dashboard, navigate to the Activity Audit section in the Administration UI or you can click on the "Activity audit" application from Home.
 
      ![ECC developer](../images/admin6.png "ECC developer")
-     ![ECC developer](../images/admin7.png "ECC developer")
+     ![ECC developer](../images/activityaudit3.png "ECC developer")
 
-* You can view individual application/page details as well. Click on the Page name filter from the Available refinements section and filter for "XX Local Agreements" page
-     ![ECC developer](../images/admin8.png "ECC developer")
+* You can also choose to view individual application/page details as well. Click on the Page name filter from the Available refinements section and filter for "XX Local Agreements" page
 
 
 You may now **proceed to the next lab**
