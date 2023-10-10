@@ -45,7 +45,7 @@ In Labs 1-11, you will:
 * Deploy a PeopleSoft Environment (Lab 10)
 
 As aforementioned, Labs 1-10 cover the core purpose. 
-Labs 11-17 guide users through executing additional Cloud Manager features:
+Labs 11-16 guide users through executing additional Cloud Manager features:
 Once users have spun up a PeopleSoft environment, they can:
 * Clone an Existing PeopleSoft Environment (Lab 11) 
 * Backup an Existing PeopleSoft Environment (Lab 12) 
