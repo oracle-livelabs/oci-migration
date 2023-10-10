@@ -211,23 +211,42 @@ Password: welcome1
 2. Navigate to Logistics Manager -> Command Center and then to "Track and Trace" dashboard
     ![Move Orders](../images/log1.png "Move Orders")
 
-3. In the Track and Trace dashboard, in Available refinements, by default "Inventory Trace Supplier" is the selected dataset. Change the data set to "Inventory Trace Sales Orders", within "Inventory Trace Sales Orders" data set, by clicking on the three vertical dots beside the name of the data set (highlighted in the image below), search for three order numbers we know we have received complaints for with respect to packaging. Order numbers: 74699, 74700, and 74708 [In Available refinements within a multi select list, you can search and select multiple values, and then click on filter to apply them in one go or you can choose to click on any one value and refine for that value immediately. Here we will do the former].
+3. In the Track and Trace dashboard, click on the side navigation panel to open Available refinements, the selected data set is "Inventory Trace Sales Orders", within this data set, under "Ship-To Location" attribute search for "Atlanta" as we are aware of issues originating from Atlanta [In Available refinements within a multi select list, you can search and select multiple values, and then click on filter to apply them in one go or you can choose to click on any one value and refine for that value immediately. Here we will do the latter].
+    ![Track and trace](../images/ju2.png "Track and trace")
 
-    ![Track and trace](../images/t01.png "Track and trace")
+    ![Track and trace](../images/ju1.png "Track and trace")
 
-    ![Track and trace](../images/t02.png "Track and trace")
-4. From the selected refinements breadcrumb, you can see the applied sales orders, here you can choose to add more sales orders or remove existing ones [You can see at the bottom of the diagram there is a small but concise overview of the diagram, in this example we only have one diagram but the feature allows for multiple diagrams to be shown in a paginated manner if the refinement were to result in completely distinct diagrams]. Hold "control" key and click on all three sales orders from the diagram, then right click to view the pop up options.
-    ![Track and trace](../images/t03.png "Track and trace")
-5.  Click on "Compare" option ["Compare" feature allows a user to compare multiple nodes in one go].
-    ![Track and trace](../images/t04.png "Track and trace")
-6. We can see that the orders relate to different customers, they are shipped on the same date and from the same organisation but we know of other orders shipped on the same date and from the same organisation that didn't report any problems. We can also see that there is a common user that is related to these defective sales orders. 
-    ![Track and trace](../images/t05.png "Track and trace")
-7. Click on this user "OMALL" and then click on "Find similar" ["Find similar" feature allows you to investigate further using a particular attribute, in this case all sales orders handled by user "OMALL" will be refined].
-    ![Track and trace](../images/t06.png "Track and trace")
-8. You can see that there are multiple other orders handled by user "OMALL". 
-    ![Track and trace](../images/t7.png "Track and trace")
-9.  You can find their status and prevent shipping by changing their inventory status from the material workbench. To do that right click on the "Pick staging 1" node as below:
-    ![Track and trace](../images/t77.png "Track and trace")
+4. The diagram of orders from Atlanta will be displayed. Within this diagram we want to focus on three known problematic sales orders "66007", "66008" and "66014". Hold control key and select all three sales orders, now select "Highlight Path" from the pop up to highlight their paths [You can see at the bottom of the diagram there is a small but concise overview of the diagram, in this example we only have one diagram but the feature allows for multiple diagrams to be shown in a paginated manner if the refinement were to result in completely distinct diagrams].
+
+    ![Track and trace](../images/ju3.png "Track and trace")
+    ![Track and trace](../images/ju4.png "Track and trace")
+
+5.  Expand Staging Location to see individual tasks, by clicking on the arrow icon highlighted in the below image [This feature consolidates all related items in one node]
+
+    ![Track and trace](../images/ju5.png "Track and trace")
+
+6. Investigate relevant tasks, hold control key and select the relevant picks and then click on "Compare"
+["Compare" feature allows a user to compare multiple nodes in one go].
+    ![Track and trace](../images/ju6.png "Track and trace")
+6. We find they have different lot numbers. Let's investigate Pack transactions now
+    ![Track and trace](../images/ju7.png "Track and trace")
+
+8. Select and compare the relevant pack transactions by holding control key, selecting all the three relevant pack transactions and then clicking on "Compare"
+
+    ![Track and trace](../images/ju9.png "Track and trace")
+
+
+9. User "New Hire" packed all 3 ‘problem’ different items
+    ![Track and trace](../images/ju10.png "Track and trace")
+
+10. Use "Find Similar" to find other pack transactions by New Hire ["Find similar" feature allows you to investigate further using a particular attribute, in this case all sales orders handled by user "New Hire" will be refined].
+    ![Track and trace](../images/ju11.png "Track and trace")
+11. Page 1 has the 3 problem orders we already know about and a new, unrelated order is found on page 2 
+    ![Track and trace](../images/ju12.png "Track and trace")
+12. Click on the page 2 diagram to view it
+    ![Track and trace](../images/ju13.png "Track and trace")
+9.  You can find their status and prevent shipping by changing their inventory status from the material workbench. To do that right click on the "Pick Freezer B " node as below:
+    ![Track and trace](../images/ju14.png "Track and trace")
 10. Click on the action "Update on hand quantity" to navigate to the material workbench [Actions in diagram are configured at node level to enable a user to perform any action at any node level, this action can navigate a user to a different dashboard or open a new dashboard inline within the existing view. In this case the former has been configured].
     ![Track and trace](../images/t78.png "Track and trace")
 
