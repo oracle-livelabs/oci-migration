@@ -4,7 +4,7 @@
 
 This hands-on lab provides users with step-by-step instructions for preparing their **Oracle Cloud Infrastructure (OCI) Tenancy**, including setting up a user group, adding a user and policies, as well as a compartment to house **Cloud Manager 16 using Marketplace** and associated resources. After provisioning and configuring Cloud Manager 16, users will **subscribe to the HCM deployment kit** to then create a **topology**, **environment template**, and **provision a PeopleSoft Environment**. 
 
-In addition to getting a PeopleSoft Environment up and running on Cloud Manager, users can then move on to the simple and interactive Labs (12-17). 
+In addition to getting a PeopleSoft Environment up and running on Cloud Manager, users can then move on to the simple and interactive Labs (12-16). 
 These optional labs help familiarize users with the features of Cloud Manager and can be completed in any order.
 
 Estimated Lab Time: 7.5 hours, including provisioning time (Labs 1-11) 
@@ -53,7 +53,7 @@ Once users have spun up a PeopleSoft environment, they can:
 * Upgrade an Existing PeopleSoft Environment (Lab 14)
 * Create Governance Policies to Schedule Starting and Stopping a PeopleSoft Environment (Lab 15)
 * Create a PUM Connection from a Source PeopleSoft Environment to a Target Environment (Lab 16)
-* Refresh a PeopleSoft Environment from a Backup (Lab 17)
+
 
 ### Prerequisites
 * An OCI tenancy with administrator user access. 
