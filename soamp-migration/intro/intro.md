@@ -5,7 +5,7 @@
 This lab will walk you through the process of migrating an existing 'on-premises' SOA Suite to SOA Suite on Marketplace for Oracle Cloud Infrastructure (OCI). SOA Suite on Marketplace, SOA Cloud Service, and Managed File Transfer (MFT) Cloud Service can be migrated manually following these steps. Side-by-side upgrade from one version to another follows the same process. 
 
 Attached below is a sample architecture of the final solution:
-![](./images/architecture.png)
+![architecture](./images/architecture.png)
 
 Estimated Lab Time: 90 minutes.
 

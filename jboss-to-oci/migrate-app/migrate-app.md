@@ -23,7 +23,9 @@ For this lab, you need to have provisioned the WildFly cluster on OCI.
     It should look something like:
 
     ```bash
+    <copy>
     ssh -C -D 1088 opc@<BASTION_IP>
+    </copy>
     ```
 
 2. Run the command in your local computer terminal (not the docker container), adding the path to the SSH key file:
@@ -38,15 +40,15 @@ For this lab, you need to have provisioned the WildFly cluster on OCI.
 
 3. Go to Preferences.
 
-    ![](./images/firefox-prefs.png)
+    !["firefox preferences"](./images/firefox-prefs.png)
 
 4. In the search bar, type **proxy**, then click **Settings**.
 
-    ![](./images/firefox-proxy.png)
+    !["proxy"](./images/firefox-proxy.png)
 
 5. In the Settings page, Click **Manual proxy configuration**, then **SOCKS v5**, and enter **localhost** for the host and **1088** for the  port as below:
 
-    ![](./images/firefox-proxy-settings.png)
+    !["proxy settings"](./images/firefox-proxy-settings.png)
 
 6. Then navigate to the WildFly admin console URL, using the **Private IP** of the wildfly server.
 
@@ -54,7 +56,7 @@ For this lab, you need to have provisioned the WildFly cluster on OCI.
 
     If you get the message below, you are looking at the wrong node, try the other node's IP.
 
-    ![](./images/wrong-node.png)
+    !["error wrong node"](./images/wrong-node.png)
     
 7. Log in with the WildFly admin credentials (from terraform.tfvars)
 
@@ -72,25 +74,25 @@ For this lab, you need to have provisioned the WildFly cluster on OCI.
 
 1. In the WildFly console, click **Start** under **Deployments**.
 
-    ![](./images/wildfly-main.png)
+    !["deployments"](./images/wildfly-main.png)
 
 2. Then click **By Server Group** -> **main-server-group** and then the **(+)** icon to **Upload New Deployment**.
 
-    ![](./images/new-deployment.png)
+    !["new deployment"](./images/new-deployment.png)
 
 3. On the modal prompt, navigate to the location of the WAR file, and select it.
 
-    ![](./images/deployment-step1.png)
+    !["deployment step 1"](./images/deployment-step1.png)
 
 4. Click **Next**.
 
-    ![](./images/deployment-step2.png)
+    !["deployment step 2"](./images/deployment-step2.png)
 
 5. Do not change the values in the next screen and click **Finish**.
 
 6. The domain controller will deploy the application on all servers in the server group.
 
-    ![](./images/deployment-step4.png)
+    !["deployment step 3"](./images/deployment-step4.png)
 
 
 ## Task 4: Check the Application is Served via the Load Balancer
@@ -101,7 +103,7 @@ For this lab, you need to have provisioned the WildFly cluster on OCI.
 
 3. Check that you see the application being served.
 
-    ![](./images/lb-simpledb-app.png)
+    !["application output"](./images/lb-simpledb-app.png)
 
 You may proceed to the next lab.
 

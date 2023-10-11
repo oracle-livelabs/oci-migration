@@ -226,10 +226,9 @@ With the VCN in place, define the open inbound and outbound ports that will be a
 In this tutorial, OCI has been set up for the networking required to be able to access a JDE Trial Edition that will be created in Create a Trial Edition Instance in Oracle Cloud Infrastructure.
 
 ## Acknowledgements
-* **Author:** AJ Kurzman, Cloud Engineering
+* **Author:** Tarani Meher, Principal JDE Specialist
 * **Contributors:**
     * Jeff Kalowes, Principal JDE Specialist
+    * Tarani Meher, Principal JDE Specialist
     * Mani Julakanti, Principal JDE Specialist
-    * William Masdon, Cloud Engineering
-    * Chris Wegenek, Cloud Engineering
-* **Last Updated By/Date:** * Chris Wegenek, Cloud Engineering 11/2021
+* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 09/2023

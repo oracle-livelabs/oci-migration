@@ -46,8 +46,13 @@ In this lab you will:
     ![Navigate to Cloud Manger Dashboard and then Environments](./images/env.png "")
 2. Find the environment you would like to patch, click **V** and **Details**
     ![Find the environment you would like to patch, click the arrow and then details](./images/details.png "")
+<<<<<<< HEAD:peoplesoft-move-improve/peoplesoft-move-improve/13patching/patching.md
 3. Navigate to **Apply PeopleTools Patch**. In the drop down, select the **8.60.08**, and then click **Update**
     ![Find the environment you would like to patch, click arrow and details](./images/patch60.png.png "")
+=======
+3. Navigate to **Apply PeopleTools Patch**. In the drop down, select the **8.58.11**, and then click **Update**
+    ![Find the environment you would like to patch, click arrow and details](./images/patch58.png "")
+>>>>>>> upstream/main:peoplesoft-move-improve/14patching/patching.md
     - Click **Yes**
     ![Navigate to Apply PeopleTools Patch. In the drop down, select the 8.58.11, and then click Update](./images/yes60.png "")
 4. You can track the status below 
@@ -64,4 +69,8 @@ You may now **proceed to the next lab.**
 ## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
 * **Contributors** - Edward Lawson, Master Principal Cloud Architect; Megha Gajbhiye, Principal Cloud Architect
+<<<<<<< HEAD:peoplesoft-move-improve/peoplesoft-move-improve/13patching/patching.md
 * **Last Updated By/Date** - Ziyad Choudhury, Principal Cloud Architect, August 2023
+=======
+* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
+>>>>>>> upstream/main:peoplesoft-move-improve/14patching/patching.md

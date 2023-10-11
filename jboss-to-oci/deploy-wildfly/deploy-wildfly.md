@@ -28,7 +28,7 @@ For this lab, you need:
 
 3. Agree to the terms.
 
-    ![./images/terms.png](./images/terms.png)
+    !["agree to terms"](./images/terms.png)
 
 4. Make sure you are in the compartment you want to use to deploy this stack.
 
@@ -36,19 +36,19 @@ For this lab, you need:
 
 6. Create a password for the WildFly admin user.
 
-    ![./images/admin-password.png](./images/admin-password.png)
+    !["set a password"](./images/admin-password.png)
 
 7. For the **SSH Key**, click **Paste** and paste the SSH key created ealier.
 
-    ![./images/ssh-key-wf.png](./images/ssh-key-wf.png)
+    !["paste ssh key"](./images/ssh-key-wf.png)
 
 7. Click **Show Advanced Options**
 
-    ![./images/advanced-options2.png](./images/advanced-options2.png)
+    !["show advanced options"](./images/advanced-options2.png)
 
 8. Scroll to the bottom and click **Create JDBC Source**
 
-    ![./images/jdbc-source.png](./images/jdbc-source.png)
+    !["JDBC source"](./images/jdbc-source.png)
 
 9. Enter the JDBC source name as `JDBCDatasourceDS`.
 
@@ -66,7 +66,7 @@ The job will take a few minutes.
 
 When the job completes, make sure to notice the **Outputs** thart provides useful information about the resources deployed.
 
-![./images/outputs.png](./images/outputs.png " ")
+!["Outputs"](./images/outputs.png " ")
 
 You may proceed to the next lab.
 

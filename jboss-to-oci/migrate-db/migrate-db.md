@@ -55,17 +55,17 @@ The OCI Command Line Interface (CLI) tool will be needed to get the wallet from 
     1. Location of the configuration: press **Enter**.
     2. `user_ocid`: enter your user OCID.
         1. In the Oracle Cloud Console, click your **User** icon (top right corner), then click your user name.
-            ![](images/setup-tf-user.png " ")
+            !["user"](images/setup-tf-user.png " ")
 
        2. Copy the OCID of your user.
-            ![](images/setup-tf-user-ocid.png " ")
+            !["user ocid"](images/setup-tf-user-ocid.png " ")
 
     3. `tenancy_ocid`: enter your tenancy OCID.
         1. In the Oracle Cloud Console, **click** your **User** icon (top right corner), then **Tenancy**.
-            ![](images/setup-tf-tenancy.png " ")
+            !["tenancy"](images/setup-tf-tenancy.png " ")
 
         2. **Copy** the OCID of the tenancy.
-            ![](images/setup-tf-tenancy-ocid.png " ")
+            !["tenancy ocid"](images/setup-tf-tenancy-ocid.png " ")
 
     4. `region`: enter your region from the list provided.
     5. Generate a RSA key pair: press **Enter** for Yes (default).
@@ -126,7 +126,7 @@ The OCI Command Line Interface (CLI) tool will be needed to get the wallet from 
 
 1. Go to **Storage -> Object Storage**.
 
-    ![](./images/migrate-db-oss-1.png)
+    !["object storage"](./images/migrate-db-oss-1.png)
 
 2. Make sure you are in the compartment where you deployed the resources.
 
@@ -246,7 +246,7 @@ The OCI Command Line Interface (CLI) tool will be needed to get the wallet from 
 
 1. Go to **Oracle Database -> Autonomous Transaction Processing**.
 
-    ![](./images/atp.png)
+    !["autonomous database"](https://raw.githubusercontent.com/oracle-livelabs/common/main/images/console/database-atp.png)
 
 2. Make sure you are in the right compartment and **click** the database you provisioned earlier to get to the details.
 
@@ -256,7 +256,7 @@ The OCI Command Line Interface (CLI) tool will be needed to get the wallet from 
 
 5. And the **Private Endpoint URL** (i.e. hostname).
 
-    ![](./images/db-info.png)
+    !["database info"](./images/db-info.png)
 
 ## Task 6: Get the Database Wallet
 
@@ -373,11 +373,9 @@ The OCI Command Line Interface (CLI) tool will be needed to get the wallet from 
 
 2. Take note of your full username.
 
-    ![](./images/username.png)
-
 3. Go to **Auth Tokens**.
 
-    ![](././images/auth-token.png)
+    !["auth token"](././images/auth-token.png)
 
 4. Click **Generate Token**.
 

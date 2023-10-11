@@ -178,7 +178,7 @@ For this tutorial, you need to have provisioned the Tomcat cluster on OCI.
 
 3. Check that you see the application being served.
 
-    ![](./images/lb-simpledb-app.png)
+    !["application output"](./images/lb-simpledb-app.png "application")
 
 
 ## Acknowledgements

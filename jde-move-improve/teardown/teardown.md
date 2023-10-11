@@ -24,11 +24,11 @@ Estimated Time: 5 minutes
 
    Note: If you cannot see your instance, make sure you have selected the correct compartment on the lefthand side.
 
-   ![](./images/jde-trial-select.png " ")
+   ![](./images/jde-trial-select_1.png " ")
 
-4. Click **More Actions** and select **Terminate** to terminate the instance.
+4. Select the instance and click **Terminate** to terminate the instance.
 
-   ![](./images/terminate-button.png " ")
+   ![](./images/finished-instance_2.png " ") 
 
 5. Wait for the instance to terminate. Once terminated, your instance should be gone from the instance list.
 
@@ -36,13 +36,13 @@ Estimated Time: 5 minutes
 
 1. To delete your virtual cloud network (VCN) you must click on the drop down menu in the upper left corner of your screen, click on **Networking**, and then select **Virtual Cloud Networks**.
 
-   ![](./images/vcn-select.png " ")
+   ![](./images/vcn-select_1.png " ")
 
-2. Under the list of VCN, click **Action** on the right-side and select **Terminate**.
+2. Under the list of VCN, click **Action** on the right-side and select **Delete**.
 
-    ![](./images/vcn-terminate.png " ")
+    ![](./images/vcn-terminate_1.png " ")
 
-3. Wait for the VCN to finish terminating and reload the page. The item should be removed from the list.
+3. Wait for the VCN to finish deleting and reload the page. The item should be removed from the list.
 
 ## Task 3: Delete the Compartment
 
@@ -60,16 +60,14 @@ Estimated Time: 5 minutes
 
 
 
-## Acknowledgements
-
-Congratulations! You have completed the workshop!
+*Congratulations*! You have completed the workshop!
 
 Thank you for your time, I hope you enjoyed using Oracle Cloud and JDE.
 
-* **Author:** Chris Wegenek, Cloud Engineering
+## Acknowledgements
+* **Author:** Tarani Meher, Principal JDE Specialist
 * **Contributors:**
     * Jeff Kalowes, Principal JDE Specialist
+    * Tarani Meher, Principal JDE Specialist
     * Mani Julakanti, Principal JDE Specialist
-    * William Masdon, Cloud Engineering
-    * Chris Wegenek, Cloud Engineering
-* **Last Updated By/Date:** Chris Wegenek, Cloud Engineering, 11/2021
+* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 09/2023

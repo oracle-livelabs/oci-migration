@@ -25,17 +25,17 @@ Estimated Lab Time: 15 minutes.
 
 3. Click the stack name for the **Workshop on-premises environment**.
 
-  ![](./images/stack.png)
+  ![stack](./images/stack.png)
 
 4. Click **Terraform Actions** then click **Destroy**.
 
-  ![](./images/tf-destroy-local.png)
+  ![destroy](./images/tf-destroy-local.png)
 
 5. Once the job completed, click **Stack Details** in the bread-crumbs menu to get back to the stack details.
 
 6. Click **Delete Stack**.
 
-  ![](./images/delete-stack-local.png)
+  ![delete stack](./images/delete-stack-local.png)
 
 ## Task 2: Tear Down the Application Database
 
@@ -59,13 +59,13 @@ Estimated Lab Time: 15 minutes.
 
 3. Click **Terraform Actions** and select **Destroy**.
 
-  ![](./images/tf-destroy-soamp.png)
+  ![destroy job](./images/tf-destroy-soamp.png)
 
 4. Once the job completed, click **stack details** in the bread-crumbs menu to get back to the stack details.
 
 5. Click **Delete Stack**.
 
-  ![](./images/delete-stack-soamp.png)
+  ![delete stack](./images/delete-stack-soamp.png)
 
 ## Task 4: Tear Down the VCN
 
@@ -82,4 +82,4 @@ You're done.
 ## Acknowledgements
 
  - **Author** - Akshay Saxena, September 2020
- - **Last Updated By/Date** - Akshay Saxena, September 2020
+ - **Last Updated By/Date** - Emmanuel Leroy March 2023

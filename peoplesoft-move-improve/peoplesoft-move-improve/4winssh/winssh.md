@@ -260,6 +260,10 @@ You may now **proceed to the next lab.**
 ## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
 * **Contributors** - Edward Lawson, Master Principal Cloud Architect; Megha Gajbhiye, Principal Cloud Architect
+<<<<<<< HEAD:peoplesoft-move-improve/peoplesoft-move-improve/4winssh/winssh.md
 * **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, September 2023
+=======
+* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
+>>>>>>> upstream/main:peoplesoft-move-improve/5winssh/winssh.md
 
 

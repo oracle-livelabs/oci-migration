@@ -102,8 +102,13 @@ Remain off VPN.
     <copy>
 		The PeopleSoft Environment Setup Process Ended.
 		CM installed successfully
+<<<<<<< HEAD:peoplesoft-move-improve/peoplesoft-move-improve/3macssh/macssh.md
 		Cloud Manager PIA URL: http://psftcm.cm.psftcm.oraclevcn.com:8000 
 		Cloud Manager PIA SSL URL: https://psftcm.cm.psftcm.oraclevcn.com:8443
+=======
+		Cloud Manager PIA URL: http://psftcm.cm.psftvcn.oraclevcn.com:8000 
+		Cloud Manager PIA SSL URL: https://psftcm.cm.psftvcn.oraclevcn.com:8443
+>>>>>>> upstream/main:peoplesoft-move-improve/3macssh/macssh.md
     </copy>
     
     ```
@@ -205,6 +210,10 @@ You have now signed into Cloud Manager 15.
 ## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
 * **Contributors** - Edward Lawson, Master Principal Cloud Architect; Megha Gajbhiye, Principal Cloud Architect
+<<<<<<< HEAD:peoplesoft-move-improve/peoplesoft-move-improve/3macssh/macssh.md
 * **Last Updated By/Date** - Ziyad Choudhury, Principal Cloud Architect, August 2023
+=======
+* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
+>>>>>>> upstream/main:peoplesoft-move-improve/3macssh/macssh.md
 
 
