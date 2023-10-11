@@ -174,8 +174,8 @@ Password: welcome1
 10. Let's add the Trellis column "Fiscal Year" back again from the same runtime options. 
 11. Let's explore further and analyze employee expenses by department. Click on the runtime options for "Period Activities by Chart of Accounts" Pivot view and select only the following and click on "update" within runtime options
     * Dimensions:
-        * Company
-        * Department
+        * Balancing Segment
+        * Cost Center
         * Account
         * Posting status
         * Period name
@@ -186,7 +186,7 @@ Password: welcome1
 
 12. Click on the "Period Activities by Account Hierarchy" tab to analyze employee expenses by account hierarchy
         ![Personalize dashboard](../images/fg11.png "Personalize dashboard")
-13. Click on the runtime options for the Pivot view and select only Period activity as the metric, and then click on "Update"
+13. Click on the runtime options for the Pivot view and select only Period activity as the metric, whilst keeping the selected dimension attributes as is, then click on "Update"
         ![Personalize dashboard](../images/fg12.png "Personalize dashboard")       
         ![Personalize dashboard](../images/fg13.png "Personalize dashboard")
 

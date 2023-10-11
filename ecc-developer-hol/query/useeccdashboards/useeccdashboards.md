@@ -211,7 +211,7 @@ Password: welcome1
 2. Navigate to Logistics Manager -> Command Center and then to "Track and Trace" dashboard
     ![Move Orders](../images/log1.png "Move Orders")
 
-3. In the Track and Trace dashboard, click on the side navigation panel to open Available refinements, the selected data set is "Inventory Trace Sales Orders", within this data set, under "Ship-To Location" attribute search for "Atlanta" as we are aware of issues originating from Atlanta [In Available refinements within a multi select list, you can search and select multiple values, and then click on filter to apply them in one go or you can choose to click on any one value and refine for that value immediately. Here we will do the latter].
+3. In the Track and Trace dashboard, click on the side navigation panel to open Available refinements, by default "Inventory Trace Supplier" is the selected dataset. Change the data set to "Inventory Trace Sales Orders", by clicking on the three vertical dots beside the name of the data set. Within this data set, under "Ship-To Location" attribute search for "Atlanta" as we are aware of issues originating from Atlanta [In Available refinements within a multi select list, you can search and select multiple values, and then click on filter to apply them in one go or you can choose to click on any one value and refine for that value immediately. Here we will do the latter].
     ![Track and trace](../images/ju2.png "Track and trace")
 
     ![Track and trace](../images/ju1.png "Track and trace")
