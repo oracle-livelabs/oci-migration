@@ -147,7 +147,7 @@ Password: welcome1
 2. You will see the below screen,  from **General Ledger Super User** responsibility navigate to **General Ledger Command Center**  
         ![EBS home screen](../images/genz100.png "EBS home screen")
 
-3. You will see the "Account Analysis" dashboard. And, within the "Account Analysis" dashboard you can see the "Period activities by Period name" Trellis chart. We will explore "Expenses" by clicking on "expenses" from the legend in the chart.
+3. You will see the "Account Analysis" dashboard. If you see any existing filters in the Selected refinements, please remove them and refine the dashboard for "Period Name" attribute = Jun-23 from Available refinements (Click on the side navigation panel to open Available refinements). Also, within the "Account Analysis" dashboard you can see the "Period activities by Period name" Trellis chart. We will explore "Expenses" by clicking on "expenses" from the legend in the chart.
         ![Personalize dashboard](../images/fg1.png "Personalize dashboard")
         
 

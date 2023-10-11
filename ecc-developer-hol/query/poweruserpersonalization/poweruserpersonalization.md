@@ -207,7 +207,7 @@ Password: welcome1
    ![EBS home screen](../images/genz100.png "EBS home screen")
 
 
-3. You will see the Account Analysis dashboard. In that dashboard, enable personalization from "i" icon 
+3. You will see the Account Analysis dashboard. If you see any existing filters in the Selected refinements, please remove them and then enable personalization from "i" icon 
    ![Personalize dashboard](../images/genz2000.png "Personalize dashboard")
 
 4. Click on the search bar to find the previously saved search [in Lab 2 - Task 2]
