@@ -7,7 +7,7 @@ This hands-on lab provides users with step-by-step instructions for preparing th
 In addition to getting a PeopleSoft Environment up and running on Cloud Manager, users can then move on to the simple and interactive Labs (12-16). 
 These optional labs help familiarize users with the features of Cloud Manager and can be completed in any order.
 
-Estimated Lab Time: 7.5 hours, including provisioning time (Labs 1-11) 
+Estimated Lab Time: 9 hours, including provisioning time (Labs 1-11) 
 
 To ensure success:
 - The workshop is quite detailed and technical. PLEASE take your time and DO NOT skip any steps.
