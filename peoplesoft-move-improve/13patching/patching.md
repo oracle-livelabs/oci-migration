@@ -47,7 +47,7 @@ In this lab you will:
 2. Find the environment you would like to patch, click **V** and **Details**
     ![Find the environment you would like to patch, click the arrow and then details](./images/details.png "")
 3. Navigate to **Apply PeopleTools Patch**. In the drop down, select the **8.60.08**, and then click **Update**
-    ![Find the environment you would like to patch, click arrow and details](./images/patch60.png.png "")
+    ![Find the environment you would like to patch, click arrow and details](./images/patch60.png "")
     - Click **Yes**
     ![Navigate to Apply PeopleTools Patch. In the drop down, select the 8.58.11, and then click Update](./images/yes60.png "")
 4. You can track the status below 
