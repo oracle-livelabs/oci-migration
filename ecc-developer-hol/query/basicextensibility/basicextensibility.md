@@ -35,7 +35,7 @@ Password: welcome1
     ```
 
 2. Navigate to ECC Developer -> ECC Developer
-    ![Procurement Command Center](../images/ext1.png "Procurement Command Center")
+    ![Procurement Command Center](../images/val1.png "Procurement Command Center")
 3. Search for "Indirect procurement" on the home page, this should filter Procurement application. You will see the below image
     ![Procurement Command Center](../images/ext2.png "Procurement Command Center")
 4. Click on the copy page icon for "Indirect procurement"  dashboard, highlighted below

@@ -52,7 +52,7 @@ To create a data set within ECC, follow the below steps:
 Password: welcome1
     ```
 2.	Navigate to ECC Developer page -> ECC Developer
-        ![Procurement Command Center](../images/ext1.png "Procurement Command Center")
+        ![Procurement Command Center](../images/val1.png "Procurement Command Center")
 3.	Go to “Datasets” menu under “Data Designer” section
         ![Procurement Command Center](../images/data1.png "Procurement Command Center")
 4.	Click on “New Dataset” button
@@ -66,7 +66,10 @@ Password: welcome1
                                                                     ```
   	    <copy>XX PCC Local Agreements</copy>
             ```
-    *	Icon: Procurement
+    *	Icon: 
+    ```
+  	    <copy>Procurement</copy>
+            ```
 
 
 6. Now, provide the security handler details using “Security Rules”. There are 2 different security types under security rules, which will provide security to the dataset:
