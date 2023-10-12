@@ -249,10 +249,7 @@ Password: welcome1
     ![Track and trace](../images/ju12.png "Track and trace")
 14. Click on the page 2 diagram to view it
     ![Track and trace](../images/ju13.png "Track and trace")
-15.  You can find their status and prevent shipping by changing their inventory status from the material workbench. To do that right click on the "Pick Freezer B " node as below:
-    ![Track and trace](../images/ju14.png "Track and trace")
-16. Click on the action "Update on hand quantity" to navigate to the material workbench [Actions in diagram are configured at node level to enable a user to perform any action at any node level, this action can navigate a user to a different dashboard or open a new dashboard inline within the existing view. In this case the former has been configured].
-    ![Track and trace](../images/t78.png "Track and trace")
+15.  You can find their status and prevent shipping by changing their inventory status from the material workbench.
 
 
 We have reached the end of this lab, we covered 3 different demo flows and 17 different ECC framework features.
