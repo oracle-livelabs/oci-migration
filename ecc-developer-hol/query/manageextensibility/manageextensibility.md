@@ -36,7 +36,7 @@ Password: welcome1
     ```
 
 2. Navigate to ECC Developer -> ECC Developer
-    ![ECC developer](../images/ext1.png "ECC developer")
+    ![ECC developer](../images/val1.png "ECC developer")
 
 3. Navigate to "Export/Import" tab under "Administration" section.
     ![ECC developer](../images/image1.png "ECC developer")
