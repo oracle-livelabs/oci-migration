@@ -155,7 +155,7 @@ Password: welcome1
 9. From the "Units assigned by City" chart[The chart title has changed after cascading as it is dynamic], click on "San Francisco" city to track assets by location flexfield segments
     ![Assets Location](../images/fix7.png "Assets Location")
 
-10. In the search bar type "Laptop" and hit enter, without waiting and clicking on the suggestions list, to search for "Laptop" assets. [This is a record search which allow user to perform a keyword search against specific attribute values assigned to records. The resulting records that have matching attribute values are returned, along with any valid refinement values]
+10. In the search bar type "laptop" and hit enter, without waiting and clicking on the suggestions list, to search for "laptop" assets. [This is a record search which allow user to perform a keyword search against specific attribute values assigned to records. The resulting records that have matching attribute values are returned, along with any valid refinement values]
 
     ![Assets Location](../images/fix8.png "Assets Location")
 
@@ -186,11 +186,11 @@ Password: welcome1
 7. Scroll to the bottom of the page to view the Results table, here click on the three horizontal dots (used to denote actions) and view the actions configured in this Results Table
     ![Procurement Command Center](../images/pro5.png "Procurement Command Center")
     * You can see two row actions: View and Order details.
-    * Click on "Order details", which is a hyperlink to a different ECC dashboard, we are now navigating from Orders page, which has details of all orders to a page which has details on only this particular order i.e., the order specified in this row.
+    * Click on "Order details" (for the Order 9346), which is a hyperlink to a different ECC dashboard, we are now navigating from Orders page, which has details of all orders to a page which has details on only this particular order i.e., the order specified in this row.
 11. As you can see we are navigated to the Order details page, with "Order" and "Operating Unit" already applied in Selected refinements. ECC allows you to configure what attributes you want to refine for, when you are navigating to the row action dashboard, in this case it is "Order" and "Operating Unit".
     ![Procurement Command Center](../images/pro6.png "Procurement Command Center")
 12. From the selected refinements, you can click on the 
-"Order" value refinement to either replace the "Order" or click on the attribute name "Order" to replace/add more orders to refine the page. 
+"Order" value refinement to either replace the "Order" or click on the attribute name "Order" to replace/add more orders to refine the page.
     ![Procurement Command Center](../images/pro7.png "Procurement Command Center")
 
 13. Click on the side navigation panel on the top left to open the "Available refinements" section and from "Schedules Summary" Attribute group click on "Ship-To location" attribute [Attribute group is a grouped list of attributes with each group representing a functional or logical grouping for a set of attributes] and select "M-1 Seattle Mfg" value.
