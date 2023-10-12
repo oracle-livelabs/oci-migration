@@ -232,7 +232,7 @@ Password: welcome1
 8. Investigate relevant tasks, hold control key and select the relevant picks and then click on "Compare"
 ["Compare" feature allows a user to compare multiple nodes in one go].
     ![Track and trace](../images/ju6.png "Track and trace")
-9. We find they have different lot numbers. Let's investigate Pack transactions now
+9. We find they have different lot numbers, different sub inventory, different locator and different item. Let's investigate Pack transactions now
     ![Track and trace](../images/ju7.png "Track and trace")
 
 10. Select and compare the relevant pack transactions by holding control key, selecting all the three relevant pack transactions and then clicking on "Compare"
