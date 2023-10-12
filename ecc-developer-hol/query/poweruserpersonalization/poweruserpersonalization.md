@@ -122,11 +122,11 @@ Password: welcome1
 
 
 
-5. Enable Personalization Mode by clicking on the "i" icon (on the top left of the page, beside the share icon) and then click on "Personalize Dashboard" button.
+5. Enable Personalization Mode by clicking on the "i" icon (on the top left of the page, beside the share icon) and then click on "Personalize" button.
 
    ![Enable Personalization Mode](../images/sup3.png "Enable Personalization Mode")  
    ![Enable Personalization Mode](../images/sup4.png "Enable Personalization Mode")
-5. The personalization icon changes to blue when the dashboard is in edit mode. All components in the dashboard will now have the configuration and delete icon
+5. The "Personalize" button is now disabled and the personalization icon changes to blue when the dashboard is in edit mode. All components in the dashboard will now have the configuration and delete icon
 
 
 
@@ -187,7 +187,7 @@ Password: welcome1
 
     ![Pivot view](../images/switch2.png "Pivot view")
 
-25. Finally, click on the "i" icon and then the "Personalize Dashboard" button to disable Personalization mode.
+25. Finally, click on the "i" icon and then the "Exit" button to disable Personalization mode.
 
 ## Task 3: Personalize Account Analysis dashboard
 
