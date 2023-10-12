@@ -48,7 +48,7 @@ With this feature users can:
 **Personalization Steps:**
         ![Personalization Steps](../images/a11ss.png "Personalization Steps")
 
-1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
     ```
   	 Username: sysadmin
 Password: welcome1
@@ -131,7 +131,7 @@ Password: welcome1
 
 **Personalize ECC Personalization Template to add Local Agreements dashboard**
 
-1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
     ```
   	 Username: operations
 Password: welcome1

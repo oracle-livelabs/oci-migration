@@ -46,7 +46,7 @@ Contents of a data set can be exported with attribute keys and attribute display
 
 To create a data set within ECC, follow the below steps:
 
-1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
      ```
   	 Username: sysadmin
 Password: welcome1
@@ -685,7 +685,7 @@ There are two ways to provide access of Local Agreements dashboard to the users:
 
 In this task, we will replace the shipped "Agreements" dashboard with the custom "Local Agreements" dashboard.
 
-1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
     ```
   	 Username: sysadmin
 Password: welcome1
@@ -745,7 +745,7 @@ Password: welcome1
 
 ## Task 8:	EBS OA Personalization
 
-1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (From the browser URL navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
 
     ```
   	 Username: operations

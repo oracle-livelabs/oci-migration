@@ -107,7 +107,7 @@ This lab assumes you have:
 
 ## Task 1: Validate integration of EBS and ECC 
 
-1. Navigate to http://apps.example.com:8000 in the browser with below credentials 
+1. Navigate to http://<VNC\_Public\_IP\>:8000 in the browser with below credentials 
 
 
     ```
@@ -132,7 +132,7 @@ Password: welcome1
 
 **Goal:** Tune Business Operations and Improve Data Quality. 
 
-1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (From the browser URL navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
 
     ```
   	 Username: aperkins
@@ -169,7 +169,7 @@ Password: welcome1
 ## Task 3: Hands on demo of ECC Procurement
 
 
-1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (From the browser URL navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
 
     ```
   	 Username: operations
@@ -202,7 +202,7 @@ Password: welcome1
 **Goal:** Investigate picks to find a common cause. 
 
 
-1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (From the browser URL navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
 
     ```
   	 Username: mfg

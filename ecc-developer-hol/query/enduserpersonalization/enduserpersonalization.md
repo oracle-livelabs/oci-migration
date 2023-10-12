@@ -91,7 +91,7 @@ This lab assumes you have:
 
 ## Task 1: Hands on demo of ECC Receivables
 
-1. Navigate to http://apps.example.com:8000 in the browser with below credentials 
+1. Navigate to http://<VNC\_Public\_IP\>:8000 in the browser with below credentials 
 
 
     ```
@@ -137,7 +137,7 @@ Password: welcome1
 
 
 **Goal:** Analyze Account Activity and Drilldown to Source Transactions
-1. Navigate to http://apps.example.com:8000 in the browser with below credentials 
+1. Navigate to http://<VNC\_Public\_IP\>:8000 in the browser with below credentials 
 
 
     ```

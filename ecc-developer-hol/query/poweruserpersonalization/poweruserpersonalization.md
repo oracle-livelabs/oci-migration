@@ -98,7 +98,7 @@ Oracle Enterprise Command Center Framework UI components are grouped into four m
 **Goal**: As a Payables Accountant, I want to track  cash outflow for invoice payments per bank account so that I can analyze payment trends 
 
 
-1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
     ```
   	 Username: eccuser
 Password: welcome1
@@ -194,7 +194,7 @@ Password: welcome1
 **Goal**: Investigate and act to maintain the accuracy of financial records
 
 
-1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
 
     ```
   	 Username: eccuser

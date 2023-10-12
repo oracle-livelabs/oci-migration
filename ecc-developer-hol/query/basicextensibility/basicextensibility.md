@@ -27,7 +27,7 @@ This lab assumes you have:
 
 **Goal:** As a buyer I want to see the bigger picture of procurement function by means of high level metrics and charts that should help me improve the overall procure to pay process.
 
-1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (From the browser URL navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
 
     ```
   	 Username: sysadmin
@@ -75,7 +75,7 @@ This concludes this task, we successfully extended Indirect Procurement dashboar
 ## Task 2: New dashboard RBAC Setup 
 
 
-1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (From the browser URL navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
 
     ```
   	 Username: sysadmin
@@ -140,7 +140,7 @@ Password: welcome1
         ![Clear Cache](../images/ss110.png "Clear Cache")
 
 ## Task 3: EBS OA Personalization 
-1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (From the browser URL navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
 
     ```
   	 Username: operations
