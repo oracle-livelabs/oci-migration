@@ -107,6 +107,6 @@ The following terms are commonly employed in PeopleSoft cloud operations and use
 
 ## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
-* **Contributors** - Edward Lawson, Master Principal Cloud Architect; Megha Gajbhiye, Principal Cloud Architect
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect
 * **Last Updated By/Date** - Ziyad Choudhury, Principal Cloud Architect, August 2023
 

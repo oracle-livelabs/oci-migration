@@ -28,7 +28,7 @@ In this lab you will:
     ![Click the down arrow and then click details](./images/initiating.png "")
 
     Note on the **Environment Details** page, under **Status** you will see a orange exclamation point. This will remain until the entire environment has successfully provisioned. Once provisioned, the status will change to a green check mark.
-    ![ote on the Environment Details page, under Status you will see a red exclamation point](./images/Cloneprogress.png "")
+    ![ote on the Environment Details page, under Status you will see a red exclamation point](./images/cloneprogress.png "")
     
     On the side menu click **Logs**. From here you can monitor the status of your clone environment.
     ![On the side menu click Logs. From here you can monitor the status of your clone environment.](./images/clonestat.png "")
@@ -43,5 +43,5 @@ You may now **proceed to the next lab.**
 
 ## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
-* **Contributors** - Edward Lawson, Master Principal Cloud Architect; Megha Gajbhiye, Principal Cloud Architect
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect
 * **Last Updated By/Date** - Ziyad Choudhury, Principal Cloud Architect, August 2023

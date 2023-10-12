@@ -142,7 +142,7 @@ Now, let’s create a security policy that gives users in your group (oci-group)
     Allow group oci-group to use tag-namespaces in tenancy</copy>
     ```  
 
-    ![Follow the OCI console for policy builder screen](./images/finalPolicy2.png "")    
+    ![Follow the OCI console for policy builder screen](./images/finalpolicy2.png "")    
 
     b) Click **Create**.
 
@@ -171,7 +171,7 @@ Currently, we are signed in as an Administrator. Since we don't want Admins crea
     <copy>User 02</copy>
     ``` 
 
-    ![Confirm the screen to create the IAM user](./images/IAMuser.png "")
+    ![Confirm the screen to create the IAM user](./images/iam-user.png "")
 
 5. Click **Create**.
 
@@ -207,7 +207,7 @@ Currently, we are signed in as an Administrator. Since we don't want Admins crea
     
     This will expand fields for non-federated accounts. Enter the username **User02** and the password that you copied to a note in step 4.
 
-    ![Login to the OCI console using the direct sign-in option](./images/newSignIn.png "")
+    ![Login to the OCI console using the direct sign-in option](./images/newsignin.png "")
 
 
     *Note*: Since this is the first-time sign-in, the user will be prompted to change the temporary password, as shown in the screen capture below.
@@ -217,12 +217,12 @@ Currently, we are signed in as an Administrator. Since we don't want Admins crea
     ```
     <copy>Psft@1234</copy>
     ```
-    ![Set the password of your choice](./images/changePassword.png "")
+    ![Set the password of your choice](./images/changepassword.png "")
 
 
     You are now logged in as local user: **User02**
 
-## Task 6: Setting API Keys for User02
+## Task 6: Setup API Keys for User02
 
 You will need a pair of SSH Keys, as well as a pair of API keys. 
 
@@ -250,7 +250,7 @@ Generate them yourself:
     ![Paste the api public key created earlier](./images/sampleadd.png "")
 
 
-## Task 7: Setting  up OCI Vault, Encryptions and Secrets
+## Task 7: Set up OCI Vault, Encryptions and Secrets
 
 You will need to create a vault.
 In this workshop we will create the vault in the Demo compartment.
@@ -271,7 +271,7 @@ We will create Master Encryption key and vault secrets
 4. Create the Encryption Key 
 
 5. Select **Identity and Security --> Vault**
-![Select vault PSVault](./images/VaultEncrypt.png "")
+![Select vault PSVault](./images/vaultencrypt.png "")
  
 6. Select  **Master Encryption Keys**
 
@@ -288,252 +288,252 @@ We will create Master Encryption key and vault secrets
 
  Key Shape Length **256 bits**
 9. Select **Create Key**
-![Create encryption key PSKey](./images/PSKey.png "")
+![Create encryption key PSKey](./images/pskey.png "")
 
 
 10. Create Secrets. We need to create 11 Secrets
 
  Select **Create Secret** 
-![Create Secret](./images/CreateSecret.png "")
+![Create Secret](./images/createsecret.png "")
 
 
 11. Create Secret
 
-**Create PeopleSoft Domain Secret**
+## Task 8: Setup PeopleSoft Domain password secret
 
-12. Create in Compartment **Demo**
+1. Create in Compartment **Demo**
 
-13. Name the Secret **DomainPW2**
+2. Name the Secret **DomainPW2**
 
-14. Use the Encryption Key **PSKey** . This Encryption key was created at an earlier step.
+3. Use the Encryption Key **PSKey** . This Encryption key was created at an earlier step.
 
-15. Secret Type Template **Plain-Text**
+4. Secret Type Template **Plain-Text**
 
-16. Secret Content **PSoft1234**
+5. Secret Content **PSoft1234**
 
-17. Select **Create Secret** button.
+6. Select **Create Secret** button.
 
-![Create Domain Password](./images/DomainPW2.png "")
+![Create Domain Password](./images/domainpw2.png "")
 
 
-**Create PeopleSoft Web Profile user password**
+## Task 9: Setup PeopleSoft Web Profile user password secret
 
-18. Create Secret
+1. Create Secret
 
-19. Select **Create Secret** 
-![Create Secret](./images/CreateSecret.png "")
+2. Select **Create Secret** 
+![Create Secret](./images/createsecret.png "")
 
+3. Create Secret in Compartment **Demo**
 
-20. Create Secret in Compartment **Demo**
+4. Name of the Secret  **WebprofilePW1**
 
-21. Name of the Secret  **WebprofilePW1**
+5. Description **Web Profile user password**
 
-22. Description **Web Profile user password**
+6. Encryption Key **PSKey**
 
-23. Encryption Key **PSKey**
+7. Secret Type Template **Plain-Text**
 
-24. Secret Type Template **Plain-Text**
+8. Secret Contents **PSoft1234**
 
-25. Secret Contents **PSoft1234**
+9. Select **Create Secret** button
 
-26. Select **Create Secret** button
+![Create Web Profile Secret](./images/webprofilepw1.png "")
 
-![Create Web Profile Secret](./images/WebprofilePW1.png "")
+## Task 10: Setup PeopleSoft Integration password secret
 
- **Create the Integration password** 
+1. Select **Create Secret** 
+![Create Secret](./images/createsecret.png "")
 
-27. Select **Create Secret** 
-![Create Secret](./images/CreateSecret.png "")
+2. Create Secret in **Demo** Compartment
 
-28. Create Secret in **Demo** Compartment
+3. Name  **IntegrationPW1**
 
-29. Name  **IntegrationPW1**
+4. Description **Integration Gateway User password**
 
-30. Description **Integration Gateway User password**
+5. Encryption Key in Demo Compartment **PSKey**
 
-31. Encryption Key in Demo Compartment **PSKey**
+6. Secret Type Template **Plain-Text**
 
-32. Secret Type Template **Plain-Text**
+7. Secret Contents **PSoft1234**
 
-33. Secret Contents **PSoft1234**
+8. Select **Create Secret Button**
+![Create Integration Gateway User Password](./images/integrationpw1.png "")
 
-34. Select **Create Secret Button**
-![Create Integration Gateway User Password](./images/IntegrationPW1.png "")
+## Task 11: Setup Cloud Manager Admin password secret
 
-**Create Cloud Manager Admin Password**
-35. Select **Create Secret** 
-![Create Secret](./images/CreateSecret.png "")
+1. Select **Create Secret** 
+![Create Secret](./images/createsecret.png "")
 
-36. Create in **Demo** Compartment
+2. Create in **Demo** Compartment
 
-37. Enter **CMAdminPW1** as the name of the secret.
+3. Enter **CMAdminPW1** as the name of the secret.
 
-38. Select **PSKey** as the encryption key.
+4. Select **PSKey** as the encryption key.
 
-39. Select **Plain-Text** as the Secret type template.
+5. Select **Plain-Text** as the Secret type template.
 
-40. Enter **PSoft123** as the password
+6. Enter **PSoft123** as the password
 
-41. Select **Create Secret**
-![Create CMAdminPW1](./images/CMAdminPW1.png)
+7. Select **Create Secret**
+![Create CMAdminPW1](./images/cmadminpw1.png)
 
-**Create the Windows Password** 
+## Task 12: Setup Windows password secret
 
-42. Select **Create Secret** 
-![Create Secret](./images/CreateSecret.png "")
+1. Select **Create Secret** 
+![Create Secret](./images/createsecret.png "")
 
-43. Create in Compartment **Demo** 
+2. Create in Compartment **Demo** 
 
-44. Name of the secret **WinPW**
+3. Name of the secret **WinPW**
 
-45. Description **Windows Password**
+4. Description **Windows Password**
 
-46. Encryption Key **PSKey**
+5. Encryption Key **PSKey**
 
-47. Secret Type  Template **Plain-Text**
+6. Secret Type  Template **Plain-Text**
 
-48. Select **Create Secret** Button
-![Create Windows Password](./images/WinPW1.png)
+7. Select **Create Secret** Button
+![Create Windows Password](./images/winpw1.png)
 
-**Create the WebLogic Password**
+## Task 13: Setup WebLogic password secret
 
-47. Create in Compartment **Demo**
+1. Create in Compartment **Demo**
 
-48. Provide a Name **WeblogicPW**
+2. Provide a Name **WeblogicPW**
 
-49. Select **Create Secret** 
-![Create Secret](./images/CreateSecret.png "")
+3. Select **Create Secret** 
+![Create Secret](./images/createsecret.png "")
 
-50. Provide this description **WebLogic Admin Password**
+4. Provide this description **WebLogic Admin Password**
 
-51. Encryption Key **PSKey**
+5. Encryption Key **PSKey**
 
-52. Secret Type template **Plain-text**
+6. Secret Type template **Plain-text**
 
-53. Secret Contents type in **PSoft#1234**
+7. Secret Contents type in **PSoft#1234**
 
-54. Select **Create Secret** Button
-![Create WebLogic Password](./images/WebLogicPW.png)
+8. Select **Create Secret** Button
+![Create WebLogic Password](./images/weblogicpw.png)
 
 
-**Create the DB Admin Secret**
+## Task 14: Setup DB Admin password secret
 
-55. Select **Create Secret** 
-![Create Secret](./images/CreateSecret.png "")
+1. Select **Create Secret** 
+![Create Secret](./images/createsecret.png "")
 
-56. Create in **Demo** Compartment
+2. Create in **Demo** Compartment
 
-57. Name **DBAdminPW**
+3. Name **DBAdminPW**
 
-58. Description **DB Admin Password**
+4. Description **DB Admin Password**
 
-59. Encryption Key **PSKey**
+5. Encryption Key **PSKey**
 
-60. Secret Type Template **Plain-Text**
+6. Secret Type Template **Plain-Text**
 
-61. Secret Contents **PSoft#1234**
+7. Secret Contents **PSoft#1234**
 
-62. Select **Create Secret** Button.
-![Create Database Administrator Password](./images/DBAdminPW1.png)
+8. Select **Create Secret** Button.
+![Create Database Administrator Password](./images/dbadminpw1.png)
 
-**DB Access Password**
+## Task 15: Setup DB Access Password secret
 
-63. Select **Create Secret** 
-![Create Secret](./images/CreateSecret.png "")
+1. Select **Create Secret** 
+![Create Secret](./images/createsecret.png "")
 
-64. Create in Compartment **Demo**
+2. Create in Compartment **Demo**
 
-65. Name **DBAccessPW**
+3. Name **DBAccessPW**
 
-66. Description **DB Access Password**
+4. Description **DB Access Password**
 
-67. Encryption Key **PSKey**
+5. Encryption Key **PSKey**
 
-68. Secret Type Template  **Plain-Text**
+6. Secret Type Template  **Plain-Text**
 
-69. Secret Contents **Psoft123**
+7. Secret Contents **Psoft123**
 
-70. Select **Create Secret** Button
-![Create Database Access Password](./images/DBAccessPW1.png)
+8. Select **Create Secret** Button
+![Create Database Access Password](./images/dbaccesspw1.png)
 
-**DB Connect Password**
+## Task 16: Setup DB Connect password secret
 
-71. Select **Create Secret** 
-![Create Secret](./images/CreateSecret.png "")
+1. Select **Create Secret** 
+![Create Secret](./images/createsecret.png "")
 
-72. Create in **Demo** Compartment.
+2. Create in **Demo** Compartment.
 
-73. Name **DBConnectPW**
+3. Name **DBConnectPW**
 
-74. Description **Database Connection Password** 
+4. Description **Database Connection Password** 
 
-75. Encryption Key **PSKey**
+5. Encryption Key **PSKey**
 
-76. Secret Type Template **Plain-Text**
+6. Secret Type Template **Plain-Text**
 
-77. Secret Contents **Psoft123**
+7. Secret Contents **Psoft123**
 
-78. Select **Create Secret** Button.
-![Create Secret](./images/DBConnectPW1.png "")
+8. Select **Create Secret** Button.
+![Create Secret](./images/dbconnectpw1.png "")
 
-**Create the PeopleSoft Password**
+## Task 17: Setup PeopleSoft User password secret
 
-79. Select **Create Secret** 
-![Create Secret](./images/CreateSecret.png "")
+1. Select **Create Secret** 
+![Create Secret](./images/createsecret.png "")
 
-80. Create in Compartment **Demo**
+2. Create in Compartment **Demo**
 
-81. Name **PS**
+3. Name **PS**
 
-82. Description **PeopleSoft Additional Secret**
+4. Description **PeopleSoft Additional Secret**
 
-83. Encryption Key **PSKey**
+5. Encryption Key **PSKey**
 
-84. Secret Type Template **Plain-Text**
+6. Secret Type Template **Plain-Text**
 
-85. Secret Contents **PS**
+7. Secret Contents **PS**
 
-86. Select **Create Secret** Button.
-![Create PeopleSoft Access Password](./images/PS1.png)
+8. Select **Create Secret** Button.
+![Create PeopleSoft Access Password](./images/ps1.png)
 
-**Create SearchProxy Password**
+## Task 18: Setup SearchProxy password secret
 
-87. Select **Create Secret** 
-![Create Secret](./images/CreateSecret.png "")
+1. Select **Create Secret** 
+![Create Secret](./images/createsecret.png "")
 
-88. Create in Compartment **Demo**
+2. Create in Compartment **Demo**
 
-89. Name **SearchProxy**
+3. Name **SearchProxy**
 
-90. Description **PeopleSoft Additional Secret**
+4. Description **PeopleSoft Additional Secret**
 
-91. Encryption Key **PSKey**
+5. Encryption Key **PSKey**
 
-92. Secret Type Template **Plain-Text**
+6. Secret Type Template **Plain-Text**
 
-93. Secret Contents **Proxy$$1234**
+7. Secret Contents **Proxy$$1234**
 
-94. Create SearchProxy Secret
+8. Create SearchProxy Secret
 ![Create SearchProxy](./images/searchproxy.png "")
 
-**Create SearchProxy Password**
+## Task 19: ElasticSearch password secret
 
-95. Select **Create Secret** 
-![Create Secret](./images/CreateSecret.png "")
+1. Select **Create Secret** 
+![Create Secret](./images/createsecret.png "")
 
-88. Create in Compartment **Demo**
+2. Create in Compartment **Demo**
 
-89. Name **ElasticSearch**
+3. Name **ElasticSearch**
 
-90. Description **PeopleSoft Additional Secret**
+4. Description **PeopleSoft Additional Secret**
 
-91. Encryption Key **PSKey**
+5. Encryption Key **PSKey**
 
-92. Secret Type Template **Plain-Text**
+6. Secret Type Template **Plain-Text**
 
-93. Secret Contents **Elastic1234##One**
+7. Secret Contents **Elastic1234##One**
 
-94. Create SearchProxy Secret
+8. Create SearchProxy Secret
 ![Create SearchProxy](./images/elasticsearch.png "")
 
 
@@ -567,5 +567,5 @@ You may now **proceed to the next lab.**
 
 ## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
-* **Contributors** - Edward Lawson, Master Principal Cloud Architect, Megha Gajbhiye, Principal Cloud Architect
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect
 * **Last Updated By/Date** - Ziyad Choudhury, Principal Cloud Architect, August 2023

@@ -27,12 +27,12 @@ We have already provisioned Cloud Manager in a private subnet (cm) and the Basti
 
 ## Task 1: Creating the HCMVault password group. 
 Navigate to Cloud Manager Dashboard ->  **My Settings**
-![Dashbaord My Settings](./images/Mysettings.png "")
+![Dashbaord My Settings](./images/mysettings.png "")
 
 Select **Password Group**
 
 Select **Add New Group**
-![Password Group](./images/Password_Group.png "")
+![Password Group](./images/password_group.png "")
 
 
 Create Group Name **HCMVault**
@@ -54,7 +54,7 @@ Database Operator Password **PS**
 Gateway Administrator Password **IntegrationPW1**
 
 
-![HCMVault Settings](./images/HCMVaultSettings.png "")
+![HCMVault Settings](./images/hmcvaultsettings.png "")
 
 Web Profile Password for user PTWEBSERVER  **WewbprofilePW1**
 
@@ -63,7 +63,7 @@ Weblogic Adminstration Password  **WeblogicPW**
 Windows Administrator Password **WinPW**
 
 Select **Save**
-![HCMVault additional Settings](./images/HCMVaultsettings2.png "")
+![HCMVault additional Settings](./images/hcmvaultsettings2.png "")
 ## Task 2: Creating a New Environment Template and General Details
 
 Navigate to Cloud Manager Dashboard -> **Environment Template**
@@ -160,6 +160,6 @@ You may now **proceed to the next lab.**
 
 ## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
-* **Contributors** - Edward Lawson, Master Principal Cloud Architect; Megha Gajbhiye, Principal Cloud Architect
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect
 * **Last Updated By/Date** - Ziyad Choudhury, Principal Cloud Architect, August 2023
 

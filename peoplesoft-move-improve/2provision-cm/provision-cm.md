@@ -84,9 +84,9 @@ Each password has a requirement that can be found below each of the fields. For 
     Web Profile User Secret | WebprofilePW1
     Domain Connect Secret | DomainPW2 
 
-    ![Provide the credentials for each attribute](./images/Secrets1.png "")
+    ![Provide the credentials for each attribute](./images/secrets1.png "")
 
-    ![Provide additional credentials for each attribute](./images/Secrets2.png "")
+    ![Provide additional credentials for each attribute](./images/secrets2.png "")
 
 ## Task 4: Enter My Oracle Support Credentials
 
@@ -127,7 +127,7 @@ You may now **proceed to the next lab** if you are using a Linux Machine with Ad
 
 ## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
-* **Contributors** - Edward Lawson, Master Principal Cloud Architect; Megha Gajbhiye, Principal Cloud Architect
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect
 * **Last Updated By/Date** - Ziyad Choudhury, Principal Cloud Architect, August 2023
 
 

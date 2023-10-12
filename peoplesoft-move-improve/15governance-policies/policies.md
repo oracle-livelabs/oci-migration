@@ -44,7 +44,7 @@ Before creating any policies we will create a policy group. Policy groups are op
     Next we will create a scale-up policy. Click **Add Policy** again and type the information as shown below:
     ![Next we will create a scale-up policy. Click Add Policy again and type the information as shown below](./images/scaleup.png "")
 
-    ![Policy Action Parameters. Policy actions ](./images/Policyactionup.png "")
+    ![Policy Action Parameters. Policy actions ](./images/policyactionup.png "")
 
     Set a schedule then click **Save** and then **Save** again.
 
@@ -102,5 +102,5 @@ You may now **proceed to the next lab.**
 
 ## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
-* **Contributors** - Edward Lawson, Master Principal Cloud Architect; Megha Gajbhiye, Principal Cloud Architect
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect
 * **Last Updated By/Date** - Ziyad Choudhury, Principal Cloud Architect, August 2023

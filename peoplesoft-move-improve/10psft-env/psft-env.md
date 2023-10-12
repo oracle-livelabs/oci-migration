@@ -107,11 +107,7 @@ Provisioning takes about 90 minutes. You can monitor throughout this time.
   ```
   <copy>
   Username : PS    
-<<<<<<< HEAD:peoplesoft-move-improve/peoplesoft-move-improve/10psft-env/psft-env.md
   Password: PS
-=======
-  Password: Psft1234
->>>>>>> upstream/main:peoplesoft-move-improve/11psft-env/psft-env.md
   </copy>
   ```
   ![Sign in using the following credentials](./images/hcmlogin.png "")
@@ -159,5 +155,5 @@ You may now **proceed to the next lab.**
 
 ## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
-* **Contributors** - Edward Lawson, Master Principal Cloud Architect; Megha Gajbhiye, Principal Cloud Architect
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect
 * **Last Updated By/Date** - Ziyad Choudhury, Principal Cloud Architect, August 2023
