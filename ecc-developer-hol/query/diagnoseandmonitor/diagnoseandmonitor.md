@@ -80,7 +80,8 @@ To analyze performance deeply download HAR file:
 
 1. Open browser developer tools via inspect element (in chrome)
 2. Navigate to "Network" tab
-3. Click on the download icon highlighted below
+3. Access the dashboard page and wait till it is loaded completely
+3. Then, click on the download icon highlighted below to download the HAR file
   ![Download HAR file](../images/harfile.png "Download HAR file")
 
 
@@ -113,19 +114,19 @@ To analyze performance deeply download HAR file:
     ![Running Analyzer](../images/eccanalyzer2.png "Running Analyzer")
 
     ```
-  	 <copy>java -	Danalyzer="ecc_analyzer.xml" -jar HA.jar</copy>
+  	 <copy>java -Danalyzer="ecc_analyzer.xml" -jar HA.jar</copy>
     ```
 
 3. ECC Analyzer: Sample Output
 
-   * Analyzer generates a zip file containing all the script outputs and the analyser html report(ATGECCHA_<date>.html). 
+   * Analyzer generates a zip file containing all the script outputs and the analyzer html report(ATGECCHA_<date>.html). 
 
    * When running the analyzer as a java program
      EBS Enterprise Command Center (ECC) Analyzer output zip file is located in the same directory where it was run.  This location is also displayed in the window after execution. 
 
     ![ECC Analyzer: Sample Output](../images/eccanalyzer3.png "ECC Analyzer: Sample Output")
 
-    Html page contains all the information about the ECC environment being analysed. Below are some of the sample outputs:
+    Html page contains all the information about the ECC environment being analyzed. Below are some of the sample outputs:
 
     ![ECC Analyzer: Sample Output](../images/eccanalyzer4.png "ECC Analyzer: Sample Output")
     ![ECC Analyzer: Sample Output](../images/eccanalyzer5.png "ECC Analyzer: Sample Output")

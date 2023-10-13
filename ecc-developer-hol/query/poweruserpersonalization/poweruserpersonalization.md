@@ -104,13 +104,8 @@ Oracle Enterprise Command Center Framework UI components are grouped into four m
 Password: welcome1
     ```
 
-2. You will see the below screen:
-   ![EBS home screen](../images/gl100.png "EBS home screen")
-
-3. From "Payables Manager", navigate to "Payables Command Center"
+2. Navigate to Payables Manager responsibility -> Payables Command Center -> Supplier Balance Dashboard
    ![Payables Manager responsibility](../images/pl1.png "Payables Manager responsibility")
-
-
 
 4. From Supplier Balance dashboard, click on the Ledgers flag and select "Vision Operations (USA)" Ledger from the pop up.
 

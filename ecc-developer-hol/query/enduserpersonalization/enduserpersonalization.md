@@ -156,7 +156,7 @@ Password: welcome1
 5. Let's explore "Employee Expenses" category
         ![Personalize dashboard](../images/fg2.png "Personalize dashboard")
         ![Personalize dashboard](../images/fg30.png "Personalize dashboard")
-6. The highest employee expense account, is "Meals", which is rather odd. Let's explore it further.
+6. The highest employee expense account, is "Meals", which is rather odd. Let's explore it further by clicking on "Meals" from the legend in the chart.
         ![Personalize dashboard](../images/fg4.png "Personalize dashboard")
 
 7. To investigate further why "Meals" seems unusally high, let's compare current period amount with previous period. Click on the "Period Name" breadcrumb to add previous period i.e., May-23
@@ -191,12 +191,16 @@ Password: welcome1
         ![Personalize dashboard](../images/fg12.png "Personalize dashboard")
         ![Personalize dashboard](../images/fg13.png "Personalize dashboard")
 
-14. We can see that in Jun-23 we have an usually high amount entered under "Meals" account because of it being accounted under personal expenses, which seems wrong. To investigate this further, click on the "Account Code" for 7690. Click on the diagram icon to navigate to the diagram view
+14. We can see that in Jun-23 we have an usually high amount entered under "Meals" account because of it being accounted under personal expenses, which seems wrong. To investigate this further, click on the "Account Code" for 7690.
+        ![Personalize dashboard](../images/fg13highlight.png "Personalize dashboard")
+
+15. Click on the diagram icon to navigate to the diagram view
         ![Personalize dashboard](../images/y6c.png "Personalize dashboard")
+
+16. From this diagram, you can get to know the journal line details.
         ![Personalize dashboard](../images/f12.png "Personalize dashboard")
 
-
-15. From this diagram, you can get to know the journal line details. Now, close the drawer and navigate back to selected refinements and save this search so that we can review it again.
+17. Now, close the drawer and navigate back to selected refinements and save this search with name as "Review Employee Expenses", so that we can review it again.
 * Users can save frequently-applied filters or preferred filters as saved searches, allowing other users to reuse them. All saved searches are context-sensitive to the page and are part of the search suggestions. 
 * The list of saved searches appears when the focus is on the search component. Saved searches are searchable by their titles, filter attributes, and filter values. Three types of saved searches are available for users: seeded, public, and private. 
 * Seeded saved searches are published along with the product. Administrators can create public saved searches. Users can create their own private saved searches. 
