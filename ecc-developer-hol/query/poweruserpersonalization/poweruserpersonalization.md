@@ -34,7 +34,8 @@ Oracle Enterprise Command Center Framework UI components are grouped into four m
    * Visualization: 
       * Summarization Bar
       * Chart
-      * Tag Cloud Aggregated Table
+      * Tag Cloud
+      * Aggregated Table
       * Diagram
       * Aggregated Grid
    * Detailed insights:    

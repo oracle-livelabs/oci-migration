@@ -150,7 +150,7 @@ Password: welcome1
 3. You will see the "Account Analysis" dashboard. If you see any existing filters in the Selected refinements, please remove them and refine the dashboard for "Period Name" attribute with value as "Jun-23" from Available refinements (Click on the side navigation panel to open Available refinements). 
         ![Personalize dashboard](../images/changefiltersinglusecase.png "Personalize dashboard")
 
-4. Within the "Account Analysis" dashboard you can see the "Period activities by Period name" Trellis chart. We will explore "Expenses" by clicking on "expenses" from the legend in the chart.
+4. Within the "Account Analysis" dashboard you can see the Trellis chart under the Period Activities tab. We will explore "Expenses" by clicking on "expenses" from the legend in the chart.
         ![Personalize dashboard](../images/fg1.png "Personalize dashboard")
 
 5. Let's explore "Employee Expenses" category

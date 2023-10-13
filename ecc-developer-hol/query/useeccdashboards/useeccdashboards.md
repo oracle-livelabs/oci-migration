@@ -144,7 +144,7 @@ Password: welcome1
 3. Click on "Books" flag to select a book [Flags display count of the configured dimension. Users can make a selection at runtime from the pop up as demonstrated here]
     ![Assets Location](../images/fix21.png "Assets Location")
 4. Click on "OPS CORP" Book Type Code from the "Books" flag pop up
-5. Click on "Unassigned Assets" to track Unassigned assets. [Metrics are used to display the value of a specific metric. Metrics can be configured to be either to navigate to a destination dashboard or tab and optionally invoke a refinement action or have no action at all].
+5. Click on "Unassigned Assets" metric in the summarization bar component to track the unassigned assets. [Metrics are used to display the value of a specific metric. Metrics can be configured to be either to navigate to a destination dashboard or tab and optionally invoke a refinement action or have no action at all].
     ![Assets Location](../images/fix3.png "Assets Location")
 6. From the "Unassigned Assets by Category" tag cloud, click on "Computer" to filter for "Computer" category [The tag cloud cascades to the next level defined by the designer. Any value clicked from a tag cloud would result in refinement and the entire page will be refined for that particular value].
     ![Assets Location](../images/fix4.png "Assets Location")
