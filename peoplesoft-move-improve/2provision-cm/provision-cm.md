@@ -59,26 +59,34 @@ The Create Stack, Configure Variables page includes a list of the parameters nee
 
     ![Enter the CM environment details for configuration](./images/vars1v3.png "")
 
-## Task 3: Enter Cloud Manager Passwords
+## Task 3: Enter Cloud Manager Password OCIDs
 
 Each password has a requirement that can be found below each of the fields. For your convenience, you may use the passwords below as they satisfy the requirements. If you should use your own, please note them down somewhere you can refer back to.
 
-1. Enter following password values:
+1. Enter following vault secrets:
 
     *Note*: They are all the same **except** DB Admin Password (in screenshot it is blue)
 
-    Attribute | Value
+    Attribute | Vault Secrets
     --------- | -----
-    DB CONNECT PASSWORD	| Psft1234
-    ACCESS PASSWORD | Psft1234
-    DB ADMIN PASSWORD | Psft1234#
-    CLOUD MANAGER ADMINISTRATOR PASSWORD | Psft1234
-    INTEGRATION GATEWAY USER PASSWORD | Psft1234
-    WEBLOGIC ADMINISTRATOR USER PASSWORD | Psft1234
-    WEB PROFILE USER PASSWORD | Psft1234
-    DOMAIN CONNECT PASSWORD | Psft1234
+    
+    Database Name| CMPSDB
+    Vault Compartment | Demo 
+    Vault | PSVault
+    Secrets Compartment | Demo 
+    DB Connect Secret | DBConnectPW 
+    Db Admin Secret | DBAdminPW
+    Access ID | SYSADM 
+    Db Access Secret |  DBAccessPW
+    Cloud Manager Administrator Secret | CMAdminPW1
+    Integration Gateway User Secret | IntegrationPW1
+    WebLogic Administrator User Secret | WeblogicPW 
+    Web Profile User Secret | WebprofilePW1
+    Domain Connect Secret | DomainPW2 
 
-    ![Provide the credentials for each attribute](./images/varscm2.png "")
+    ![Provide the credentials for each attribute](./images/secrets1.png "")
+
+    ![Provide additional credentials for each attribute](./images/secrets2.png "")
 
 ## Task 4: Enter My Oracle Support Credentials
 
@@ -103,7 +111,7 @@ We will be provisioning our Cloud Manager instance in Private Cloud. Click [here
 8. Click **Next**. 
 9. Review the configuration variables, ensure that **Run Apply** is selected, and then click **Create**. 
     ![Click on create button once the configuration is verified](./images/review1v3.png "")
-
+    ![Click Run Apply](./images/review2v3.png "")
 ## Task 6: Monitor Stack Creation
 
 This page shows the terraform job status and details. Under the yellow box that has **RMJ** (Resource Manager Job), you'll see the status is **"Accepted"** 
@@ -115,14 +123,12 @@ Spinning up resources, such as our Virtual Cloud Network, Bastion and Cloud Mana
 Over these few minutes, you can refresh the page until you see the **RMJ** has succeeded as indicated with a green box and **Succeeded** status. 
     ![Resource Manager job completed](./images/rmjsucceeded1v3.png "")
 
-If you are using a Windows machine OR do not have administrator access, please complete the **Windows VM Compute Lab** and skip Lab 3.
-
 You may now **proceed to the next lab** if you are using a Linux Machine with Admin access.
 
 ## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
-* **Contributors** - Edward Lawson, Master Principal Cloud Architect; Megha Gajbhiye, Principal Cloud Architect
-* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect
+* **Last Updated By/Date** - Ziyad Choudhury, Principal Cloud Architect, August 2023
 
 
 

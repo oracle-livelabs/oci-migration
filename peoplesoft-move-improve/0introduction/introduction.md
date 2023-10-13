@@ -2,12 +2,12 @@
 
 ## About this Workshop
 
-This hands-on lab provides users with step-by-step instructions for preparing their **Oracle Cloud Infrastructure (OCI) Tenancy**, including setting up a user group, adding a user and policies, as well as a compartment to house **Cloud Manager 15 using Marketplace** and associated resources. After provisioning and configuring Cloud Manager 15, users will **subscribe to the HCM deployment kit** to then create a **topology**, **environment template**, and **provision a PeopleSoft Environment**. 
+This hands-on lab provides users with step-by-step instructions for preparing their **Oracle Cloud Infrastructure (OCI) Tenancy**, including setting up a user group, adding a user and policies, as well as a compartment to house **Cloud Manager 16 using Marketplace** and associated resources. After provisioning and configuring Cloud Manager 16, users will **subscribe to the HCM deployment kit** to then create a **topology**, **environment template**, and **provision a PeopleSoft Environment**. 
 
-In addition to getting a PeopleSoft Environment up and running on Cloud Manager, users can then move on to the simple and interactive Labs (12-18). 
+In addition to getting a PeopleSoft Environment up and running on Cloud Manager, users can then move on to the simple and interactive Labs (12-16). 
 These optional labs help familiarize users with the features of Cloud Manager and can be completed in any order.
 
-Estimated Lab Time: 7.5 hours, including provisioning time (Labs 1-11) 
+Estimated Lab Time: 9 hours, including provisioning time (Labs 1-11) 
 
 To ensure success:
 - The workshop is quite detailed and technical. PLEASE take your time and DO NOT skip any steps.
@@ -24,6 +24,11 @@ Create a bastion host in this configuration, and then access all the servers in 
 
   ![PeopleSoft Architecture deployment using Cloud Manager](./images/architecture.png "")
 
+**Cloud Manager Evolution**
+
+  ![PeopleSoft Evolution](./images/evolution.png "")
+
+
 ### Objectives
 
 In Labs 1-11, you will:
@@ -31,25 +36,24 @@ In Labs 1-11, you will:
 * Create Identity and Access Management (IAM) Resources (Lab 1) 
 * Provision the PeopleSoft Cloud Manager using Marketplace (Lab 2)
 * FOR MAC USERS ONLY: Access Private Cloud Manager Instance via SSH and Log in via Browser (Lab 3)
-* Provisioning a Windows VM Compute in OCI (Lab 4)
-* FOR WINDOWS VM ONLY: Access Private Cloud Manager Instance via SSH and Log in via Browser (Lab 5)
-* Configure Cloud Manager Settings (Lab 6)
-* Set up the File System (Lab 7)
-* Subscribe to PeopleSoft Channels (Lab 8)
-* Review and Update a Topology (Lab 9)
-* Create a New Environment Template (Lab 10)
-* Deploy a PeopleSoft Environment (Lab 11)
+* FOR WINDOWS VM ONLY: Access Private Cloud Manager Instance via SSH and Log in via Browser (Lab 4)
+* Configure Cloud Manager Settings (Lab 5)
+* Set up the File System (Lab 6)
+* Subscribe to PeopleSoft Channels (Lab 7)
+* Review and Update a Topology (Lab 8)
+* Create a New Environment Template (Lab 9)
+* Deploy a PeopleSoft Environment (Lab 10)
 
-As aforementioned, Labs 1-11 cover the core purpose. 
-Labs 12-18 guide users through executing additional Cloud Manager features:
+As aforementioned, Labs 1-10 cover the core purpose. 
+Labs 11-16 guide users through executing additional Cloud Manager features:
 Once users have spun up a PeopleSoft environment, they can:
-* Clone an Existing PeopleSoft Environment (Lab 12) 
-* Backup an Existing PeopleSoft Environment (Lab 13) 
-* Patch an Existing PeopleSoft Environment (Lab 14)
-* Upgrade an Existing PeopleSoft Environment (Lab 15)
-* Create Governance Policies to Schedule Starting and Stopping a PeopleSoft Environment (Lab 16)
-* Create a PUM Connection from a Source PeopleSoft Environment to a Target Environment (Lab 17)
-* Refresh a PeopleSoft Environment from a Backup (Lab 18)
+* Clone an Existing PeopleSoft Environment (Lab 11) 
+* Backup an Existing PeopleSoft Environment (Lab 12) 
+* Patch an Existing PeopleSoft Environment (Lab 13)
+* Upgrade an Existing PeopleSoft Environment (Lab 14)
+* Create Governance Policies to Schedule Starting and Stopping a PeopleSoft Environment (Lab 15)
+* Create a PUM Connection from a Source PeopleSoft Environment to a Target Environment (Lab 16)
+
 
 ### Prerequisites
 * An OCI tenancy with administrator user access. 
@@ -63,6 +67,8 @@ Once users have spun up a PeopleSoft environment, they can:
     * Git Bash [https://git-scm.com/download/win](https://git-scm.com/download/win)
     * Putty [https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). In the Package Files section, click on an installer depending on 32/64 bits.
     * Remote Desktop for Mac [https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12](https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12)
+    * PeopleSoft Cloud Manager Get Started: [https://docs.oracle.com/en/applications/peoplesoft/cloud-manager/index.html](https://docs.oracle.com/en/applications/peoplesoft/cloud-manager/index.html)
+
 
 
 
@@ -101,6 +107,6 @@ The following terms are commonly employed in PeopleSoft cloud operations and use
 
 ## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
-* **Contributors** - Edward Lawson, Master Principal Cloud Architect; Megha Gajbhiye, Principal Cloud Architect
-* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect
+* **Last Updated By/Date** - Ziyad Choudhury, Principal Cloud Architect, August 2023
 

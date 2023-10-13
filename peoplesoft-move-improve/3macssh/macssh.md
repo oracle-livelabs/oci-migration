@@ -50,10 +50,10 @@ We need to enable the Bastion plugin on our PSFT CM compute instance.
 
     ![Navigate to the three-line menu on the top, click Identity & Security and then Bastion](./images/navbastion.png " ")
 
-2. Again, using the dropdowns on the left, select the **Demo** compartment. Then click on **cmbastion**
-    ![select demo compartment and then click on cmbastion ](./images/cmbastion.png " ")
+2. Again, using the dropdowns on the left, select the **Demo** compartment. Then click on **cmbastion16**
+    ![select demo compartment and then click on cmbastion16 ](./images/cmbastion16.png " ")
 
-3. This is Bastion Instance we created in the last lab. Click the blue button to **Create Session**.
+3. This is Bastion Instance we created in the last lab. Click the cmbastion16 server to  **Create Session**.
 
     * Session Type: **Managed SSH session** 
     * Session name:  can leave as is
@@ -82,9 +82,8 @@ The session will remain active for 3 hours. After then, you will need to create 
 
 Remain off VPN.
 
-1. Open up **Terminal** and change directory to your psftKeys folder. (For example: ```cd ~/Downloads/psftKeys ```)
+1. Open up **Terminal** and change directory to your psftKeys folder. (For example: ```cd /Users/zchoudhu/Documents/GitHub/keyshore ```)
 2. Paste in edited SSH command from the previous task and run it.
-3. Type in **"yes"** to authenticate the host.
 
     All together, it should look like this:
     ![Make sure to provide all required input for ssh](./images/sshcommands.png "")
@@ -103,8 +102,8 @@ Remain off VPN.
     <copy>
 		The PeopleSoft Environment Setup Process Ended.
 		CM installed successfully
-		Cloud Manager PIA URL: http://psftcm.cm.psftvcn.oraclevcn.com:8000 
-		Cloud Manager PIA SSL URL: https://psftcm.cm.psftvcn.oraclevcn.com:8443
+		Cloud Manager PIA URL: http://psftcm.cm.psftcm.oraclevcn.com:8000 
+		Cloud Manager PIA SSL URL: https://psftcm.cm.psftcm.oraclevcn.com:8443
     </copy>
     
     ```
@@ -143,7 +142,7 @@ This screenshot shows that the connection closed and the ssh command had to be r
     * <**privateKey**> : with the name of your private key file, id_rsa 
     * <**localPort**> : with a port to access CM PIA URL through the bastion, which should be a value greater than 1024. I'm choosing 3000.
 
-    ![Make sure to enter the complete SSH command as shown](./images/editssh.png " ")
+    ![Make sure to enter the complete SSH command as shown](./images/port_forwarding.png " ")
 
 The session will remain active for 3 hours. After then, you will need to create a new one the same way and generate a new command.
 
@@ -153,7 +152,7 @@ You need **Administrator Access** to your machine for this
 1. Open up **Terminal** and edit your hosts file
     ```
     <copy>
-    sudo vi /private/etc/hosts
+    sudo vi /etc/hosts
     </copy>
     ```
     You will then be prompted to enter in your password for your machine
@@ -173,7 +172,7 @@ You need **Administrator Access** to your machine for this
 
 1. Open up **Terminal** and change directory to your psftKeys folder. 
 2. Paste in edited SSH command from the Task #4 and run it.
-    ![Connect to the terminal with the ssh command](./images/portforwardcommand.png "")
+    ![Connect to the terminal with the ssh command](./images/port_forwarding.png "")
 
 
 ## Task 7: Access Cloud Manager in Browser
@@ -200,12 +199,12 @@ You need **Administrator Access** to your machine for this
     ```
      ![Enter the user name and password](./images/login.png "")
     
-You have now signed into Cloud Manager 15.
+You have now signed into Cloud Manager 16.
 
 
 ## Acknowledgements
 * **Authors** - Deepak Kumar M, Principal Cloud Architect; Sara Lipowsky, Cloud Engineer
-* **Contributors** - Edward Lawson, Master Principal Cloud Architect; Megha Gajbhiye, Principal Cloud Architect
-* **Last Updated By/Date** - Deepak Kumar M, Principal Cloud Architect, March 2023
+* **Contributors** - Edward Lawson, Master Principal Cloud Architect
+* **Last Updated By/Date** - Ziyad Choudhury, Principal Cloud Architect, August 2023
 
 
