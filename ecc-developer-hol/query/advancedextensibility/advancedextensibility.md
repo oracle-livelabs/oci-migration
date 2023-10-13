@@ -205,6 +205,7 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
 1. Go to ECC Developer home page
 2. Search for “Procurement” application
 3. Click on the edit icon for the application
+    ![Assign Dataset reference](../images/editapptoadddataset.png "Assign Dataset reference") 
 4. Assign the dataset “XX PCC Local Agreements” to the application
                                                                     ```
   	    <copy>XX PCC Local Agreements</copy>
@@ -214,7 +215,7 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
 
 6. Execute data loads for this new dataset
     * Navigate to “Data Load Submission” menu under “Administration” section
-    * Select the below details to submit “Query load”
+    * Select the below details to submit “Query Upload”
         * Application Name: Procurement
         * Dataset: XX PCC Local Agreements
         * Load Type: Query Upload
