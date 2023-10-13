@@ -118,50 +118,44 @@ Password: welcome1
    ![Supplier Balance dashboard](../images/sup20.png "Supplier Balance dashboard")
 
 
-
-
-
-
 5. Enable Personalization Mode by clicking on the "i" icon (on the top left of the page, beside the share icon) and then click on "Personalize" button.
 
    ![Enable Personalization Mode](../images/sup3.png "Enable Personalization Mode")  
    ![Enable Personalization Mode](../images/sup4.png "Enable Personalization Mode")
-5. The "Personalize" button is now disabled and the personalization icon changes to blue when the dashboard is in edit mode. All components in the dashboard will now have the configuration and delete icon
 
-
+6. The "Personalize" button is now disabled and the personalization icon changes to blue when the dashboard is in edit mode. All components in the dashboard will now have the configuration and delete icon
 
    ![Enable Personalization Mode](../images/sup5.png "Enable Personalization Mode")
 
 
-
-11. Add a new Tab in the existing Tab component. To do this you need to click on the configuration icon for the existing Tab component and then add a new Tab in it. Name this tab "Bank Balance"
+7. Add a new Tab in the existing Tab component. To do this you need to click on the configuration icon for the existing Tab component and then add a new Tab in it. Name this tab "Bank Balance"
 
    ![Configure Tab layout](../images/sup9.png "Configure Tab layout")
 
-12. Click "Preview" and then click "Save"
+8. Click "Preview" and then click "Save"
    ![Add Bank Balance Tab](../images/addbankbalancetab.png "Add Bank Balance Tab")
    ![Save Tab component](../images/sup10.png "Save Tab component")
 
-13. Add a chart component inside the new tab "Bank Balance", by dragging and dropping the chart component within the tab layout, to highlight paid amount per bank account
+9. Add a chart component inside the new tab "Bank Balance", by dragging and dropping the chart component within the tab layout, to highlight paid amount per bank account
 
     - Data set: Payments 
     - Chart type: Bar
     - Dimension: Bank Account (series dimension)
     - Metric: Attribute (Paid amount) and Aggregation (Sum) 
 
-14. Click preview 
-15. This gives cash outflow across all currencies, now add additional dimension to split the chart per currency.
+10. Click preview 
+11. This gives cash outflow across all currencies, now add additional dimension to split the chart per currency.
 
-16. Add "Currency" as Trellis column dimension
-17. Click "Preview" and then click "Save"
+12. Add "Currency" as Trellis column dimension
+13. Click "Preview" and then click "Save"
 
    ![Add Trellis column](../images/sup120.png "Add Trellis column")
    ![Save trellis chart](../images/sup13.png "Save trellis chart")
 
 
-18. In addition of viewing detailed payments add a Pivot view under "Bank Balances" tab.
+14. In addition of viewing detailed payments add a Pivot view under "Bank Balances" tab.
 
-19. Add New Component- Aggregate Table (Pivot view is an alternate visualization of the Aggregate Table component)
+15. Add New Component- Aggregate Table (Pivot view is an alternate visualization of the Aggregate Table component)
     - Data set: Payments
     - Attributes:
           - Supplier name
@@ -169,25 +163,25 @@ Password: welcome1
           - Currency name (This will become a column when Pivot visualization is enabled)
     - Metric:
           - Attribute (Paid amount) and Aggregation (Sum)
-20. Click preview. This gives Per supplier, per supplier site totals of invoice paid amount.
+16. Click preview. This gives Per supplier, per supplier site totals of invoice paid amount.
 
     ![Aggregate table configuration](../images/sup140.png "Aggregate table configuration")
 
-22. Save the configuration
-
+17. Save the configuration
 
     ![Save Aggregate table configuration](../images/sup160.png "Save Aggregate table configuration")
 
-23. Now, lets convert the Aggregate table to a Pivot view. Click on the configuration, click on "Enable Pivot view" from the "Visualization" accordion, click on "Preview" and then click on "Save".
+18. Now, lets convert the Aggregate table to a Pivot view. Click on the configuration, click on "Enable Pivot view" from the "Visualization" accordion, click on "Preview" and then click on "Save".
     ![Pivot view](../images/switch1.png "Pivot view")
-24. Switch to Pivot view from Aggregate Table view by clicking on the Pivot view icon [The Pivot View allows users to perform comparisons and identify trends across several cross-sections of data. The values in the header rows and columns represent every possible grouping of the selected attributes. Each body cell contains a metric value corresponding to the values in the heading rows and columns.].
+19. Switch to Pivot view from Aggregate Table view by clicking on the Pivot view icon [The Pivot View allows users to perform comparisons and identify trends across several cross-sections of data. The values in the header rows and columns represent every possible grouping of the selected attributes. Each body cell contains a metric value corresponding to the values in the heading rows and columns.].
     ![Pivot view](../images/switch.png "Pivot view")
     ![Pivot view](../images/switch77.png "Pivot view")
 
 
     ![Pivot view](../images/switch2.png "Pivot view")
 
-25. Finally, click on the "i" icon and then the "Exit" button to disable Personalization mode.
+20. Finally, click on the "i" icon and then the "Exit" button to disable Personalization mode.
+   ![Exit Personalization](../images/exitpersonalizationsuppbalance.png "Exit Personalization")
 
 ## Task 3: Personalize Account Analysis dashboard
 

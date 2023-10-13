@@ -147,10 +147,11 @@ Password: welcome1
 2. You will see the below screen,  from **General Ledger Super User** responsibility navigate to **General Ledger Command Center**  
         ![EBS home screen](../images/genz100.png "EBS home screen")
 
-3. You will see the "Account Analysis" dashboard. If you see any existing filters in the Selected refinements, please remove them and refine the dashboard for "Period Name" attribute = Jun-23 from Available refinements (Click on the side navigation panel to open Available refinements). Also, within the "Account Analysis" dashboard you can see the "Period activities by Period name" Trellis chart. We will explore "Expenses" by clicking on "expenses" from the legend in the chart.
-        ![Personalize dashboard](../images/fg1.png "Personalize dashboard")
-        
+3. You will see the "Account Analysis" dashboard. If you see any existing filters in the Selected refinements, please remove them and refine the dashboard for "Period Name" attribute with value as "Jun-23" from Available refinements (Click on the side navigation panel to open Available refinements). 
+        ![Personalize dashboard](../images/changefiltersinglusecase.png "Personalize dashboard")
 
+4. Within the "Account Analysis" dashboard you can see the "Period activities by Period name" Trellis chart. We will explore "Expenses" by clicking on "expenses" from the legend in the chart.
+        ![Personalize dashboard](../images/fg1.png "Personalize dashboard")
 
 5. Let's explore "Employee Expenses" category
         ![Personalize dashboard](../images/fg2.png "Personalize dashboard")
@@ -172,7 +173,7 @@ Password: welcome1
 
 
 10. Let's add the Trellis column "Fiscal Year" back again from the same runtime options. 
-11. Let's explore further and analyze employee expenses by department. Click on the runtime options for "Period Activities by Chart of Accounts" Pivot view and select only the following and click on "update" within runtime options
+11. Let's explore further and analyze employee expenses by department. Click on the runtime options for "Period Activities by Chart of Accounts" Pivot view and select only the following, and then click outside the runtime options of Pivot component for changes to reflect.
     * Dimensions:
         * Balancing Segment
         * Cost Center
@@ -186,8 +187,8 @@ Password: welcome1
 
 12. Click on the "Period Activities by Account Hierarchy" tab to analyze employee expenses by account hierarchy
         ![Personalize dashboard](../images/fg11.png "Personalize dashboard")
-13. Click on the runtime options for the Pivot view and select only Period activity as the metric, whilst keeping the selected dimension attributes as is, then click on "Update"
-        ![Personalize dashboard](../images/fg12.png "Personalize dashboard")       
+13. Click on the runtime options for the Pivot view and select only Period activity as the metric, whilst keeping the selected dimension attributes as is, and then click outside the runtime options of Pivot component for changes to reflect
+        ![Personalize dashboard](../images/fg12.png "Personalize dashboard")
         ![Personalize dashboard](../images/fg13.png "Personalize dashboard")
 
 14. We can see that in Jun-23 we have an usually high amount entered under "Meals" account because of it being accounted under personal expenses, which seems wrong. To investigate this further, click on the "Account Code" for 7690. Click on the diagram icon to navigate to the diagram view
