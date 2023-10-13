@@ -137,7 +137,7 @@ Password: welcome1
     - Data set: Payments 
     - Chart type: Bar
     - Dimension: Bank Account (series dimension)
-    - Metric: Attribute (Paid amount) and Aggregation (Sum) 
+    - Metric: Paid amount (Attribute) and Sum (Aggregation) 
 
 10. Click preview 
 11. This gives cash outflow across all currencies, now add additional dimension to split the chart per currency.
@@ -158,7 +158,7 @@ Password: welcome1
           - Supplier site
           - Currency name (This will become a column when Pivot visualization is enabled)
     - Metric:
-          - Attribute (Paid amount) and Aggregation (Sum)
+          - Paid amount (Attribute) and Sum (Aggregation)
 16. Click preview. This gives Per supplier, per supplier site totals of invoice paid amount.
 
     ![Aggregate table configuration](../images/sup140.png "Aggregate table configuration")
@@ -221,7 +221,7 @@ Password: welcome1
     - Group dimension: Cost Center
     - Series dimension: Parent account 1
     - Trellis column: Period Name
-    - Metric: Attribute (Period Activity) and no Aggregation, since this is a calculated attribute.
+    - Metric: Period Activity (Attribute) and no Aggregation, since this is a calculated attribute.
 
 10. Click "Preview" 
 
