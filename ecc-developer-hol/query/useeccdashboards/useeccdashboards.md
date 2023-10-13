@@ -141,21 +141,21 @@ Password: welcome1
 2. Navigate to Fixed Assets Manager -> Assets Command center and then to "Asset Location" dashboard
     ![Assets Location](../images/fix1.png "Assets Location")
 
-3. Click on "Books" flag to select a book [Flags display count of the configured dimension. Users can make a selection at runtime from the pop up as demonstrated here]
+3. Click on "Books" flag to select a book [The Flags feature, displays the count of the configured dimension. Users can make a selection at runtime from the pop up as demonstrated here]
     ![Assets Location](../images/fix21.png "Assets Location")
 4. Click on "OPS CORP" Book Type Code from the "Books" flag pop up
-5. Click on "Unassigned Assets" metric in the summarization bar component to track the unassigned assets. [Metrics are used to display the value of a specific metric. Metrics can be configured to be either to navigate to a destination dashboard or tab and optionally invoke a refinement action or have no action at all].
+5. Click on "Unassigned Assets" metric in the summarization bar component to track the unassigned assets. [Metrics display the value of a specific metric, they can be configured to be either to navigate to a destination dashboard or tab and optionally invoke a refinement action or have no action at all].
     ![Assets Location](../images/fix3.png "Assets Location")
-6. From the "Unassigned Assets by Category" tag cloud, click on "Computer" to filter for "Computer" category [The tag cloud cascades to the next level defined by the designer. Any value clicked from a tag cloud would result in refinement and the entire page will be refined for that particular value].
+6. From the Tag cloud named "Unassigned Assets by Category", click on "Computer" to filter for "Computer" category [The tag cloud cascades to the next level defined by the designer. Any value clicked from a tag cloud would result in refinement and the entire page will be refined for that particular value].
     ![Assets Location](../images/fix4.png "Assets Location")
 7. Drill down to sub-categories by clicking on "PC" from the "Unassigned Assets by Category" tag cloud
     ![Assets Location](../images/fix5.png "Assets Location")
-8. From the "Units assigned by State/County" chart, click on "California" location track assets by location flexfield segments [Key flexfield support for location segment. Locations are displayed with dynamic label].
+8. From the Chart named "Units assigned by State/County", click on "California" location track assets by location flexfield segments [Key flexfield support for location segment. Locations are displayed with dynamic label].
     ![Assets Location](../images/fix6.png "Assets Location")
-9. From the "Units assigned by City" chart[The chart title has changed after cascading as it is dynamic], click on "San Francisco" city to track assets by location flexfield segments
+9. From the Chart named "Units assigned by City" [The chart title has changed after cascading as it is dynamic], click on "San Francisco" city to track assets by location flexfield segments
     ![Assets Location](../images/fix7.png "Assets Location")
 
-10. In the search bar type "laptop" and hit enter, without waiting and clicking on the suggestions list, to search for "laptop" assets. [This is a record search which allow user to perform a keyword search against specific attribute values assigned to records. The resulting records that have matching attribute values are returned, along with any valid refinement values]
+10. In the search bar type "laptop", ignore the suggestion list and hit enter to search for Laptop Assets. [This is a record search which allow user to perform a keyword search against specific attribute values assigned to records. The resulting records that have matching attribute values are returned, along with any valid refinement values]
 
     ![Assets Location](../images/fix8.png "Assets Location")
 
@@ -168,6 +168,7 @@ Password: welcome1
 
 ## Task 3: Hands on demo of ECC Procurement
 
+**Goal:** Inspect individual order details. 
 
 1. Login to EBS apps (From the browser URL navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
 
@@ -186,16 +187,17 @@ Password: welcome1
 7. Scroll to the bottom of the page to view the Results table, here click on the three horizontal dots (used to denote actions) and view the actions configured in this Results Table
     ![Procurement Command Center](../images/pro5.png "Procurement Command Center")
     * You can see two row actions: View and Order details.
-    * Click on "Order details" (for the Order 9346), which is a hyperlink to a different ECC dashboard, we are now navigating from Orders page, which has details of all orders to a page which has details on only this particular order i.e., the order specified in this row.
+    * Click on "Order details" (for the Order 9346, as this is the order we are interested in investigating), which is a hyperlink to a different ECC dashboard, we are now navigating from Orders page, which has details of all orders to a page which has details on only this particular order i.e., the order specified in this row.
 11. As you can see we are navigated to the Order details page, with "Order" and "Operating Unit" already applied in Selected refinements. ECC allows you to configure what attributes you want to refine for, when you are navigating to the row action dashboard, in this case it is "Order" and "Operating Unit".
     ![Procurement Command Center](../images/pro6.png "Procurement Command Center")
 12. From the selected refinements, you can click on the 
 "Order" value refinement to either replace the "Order" or click on the attribute name "Order" to replace/add more orders to refine the page.
     ![Procurement Command Center](../images/pro7.png "Procurement Command Center")
 
-13. Click on the side navigation panel on the top left to open the "Available refinements" section and from "Schedules Summary" Attribute group click on "Ship-To location" attribute [Attribute group is a grouped list of attributes with each group representing a functional or logical grouping for a set of attributes] and select "M-1 Seattle Mfg" value.
+13. Click on the side navigation panel on the top left to open the "Available refinements" section and from "Schedules Summary" Attribute group click on "Ship-To location" attribute [Attribute group is a grouped list of attributes with each group representing a functional or logical grouping for a set of attributes] and select "M-1 Seattle Mfg" value as this is the specific order line we want to investigate.
     ![Procurement Command Center](../images/pro8.png "Procurement Command Center")
-
+14. We can view the individual order line and from the Tab "Requisitions" we can choose to click on "View" to navigate to the Requisitions tab for this particular order line and continue our analysis.
+    ![Procurement Command Center](../images/ki.png "Procurement Command Center")
 
 ## Task 4: Hands on demo of ECC Inventory Management 
 
