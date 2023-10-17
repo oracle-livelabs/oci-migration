@@ -65,8 +65,6 @@ Each password has a requirement that can be found below each of the fields. For 
 
 1. Enter following vault secrets:
 
-    *Note*: They are all the same **except** DB Admin Password (in screenshot it is blue)
-
     Attribute | Vault Secrets
     --------- | -----
     
@@ -83,10 +81,12 @@ Each password has a requirement that can be found below each of the fields. For 
     WebLogic Administrator User Secret | WeblogicPW 
     Web Profile User Secret | WebprofilePW1
     Domain Connect Secret | DomainPW2 
+    
+    *Note*: They are all the same **except** DB Admin Password (in screenshot)
 
-    ![Provide the credentials for each attribute](./images/secrets1.png "")
-
-    ![Provide additional credentials for each attribute](./images/secrets2.png "")
+    ![Provide the credentials for each attribute](./images/vaultsec1.png "")
+    
+    ![Provide additional credentials for each attribute](./images/vaultsec2.png "")
 
 ## Task 4: Enter My Oracle Support Credentials
 
