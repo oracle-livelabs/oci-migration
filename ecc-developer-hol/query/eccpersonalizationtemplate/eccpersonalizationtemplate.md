@@ -89,7 +89,7 @@ Password: welcome1
         * Under Permission Builder section, click on “+” icon to add the below permission:
             * Permission: 
                        ```
-  	    <copy>PO PCC ECC Local Agreements page</copy>
+  	    <copy>PO PCC ECC Local Agreements Page</copy>
             ```
     * Click on “Apply” button to create the permission set
         ![Create Permission Set](../images/a11s5.png "Create Permission Set")
