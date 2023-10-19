@@ -167,16 +167,11 @@ Password: welcome1
         ![Personalize dashboard](../images/fg7.png "Personalize dashboard")
         ![Personalize dashboard](../images/fg8.png "Personalize dashboard")
 
-9. The amount for "meals" seems high in the previous year as well. Let's see how the chart would look like if we were to disable the "Trellis" dimension, we can do that from runtime options. Click on the chart runtime options and then click on Trellis column and click outside the selected "Fiscal Year" to remove the Trellis column.
-        ![Trellis column disable](../images/trellis1.png "Trellis column disable")
-        ![Trellis column disable](../images/trellis2.png "Trellis column disable")
-
-
-10. Let's add the Trellis column "Fiscal Year" back again from the same runtime options. 
+9. The amount for "meals" is even higher in the previous year. 
 11. Let's explore further and analyze employee expenses by department. Click on the runtime options for "Period Activities by Chart of Accounts" Pivot view and select only the following, and then click outside the runtime options of Pivot component for changes to reflect.
     * Dimensions:
-        * Balancing Segment
-        * Cost Center
+        * Company
+        * Department
         * Account
         * Posting status
         * Period name
@@ -187,7 +182,7 @@ Password: welcome1
 
 12. Click on the "Period Activities by Account Hierarchy" tab to analyze employee expenses by account hierarchy
         ![Personalize dashboard](../images/fg11.png "Personalize dashboard")
-13. Click on the runtime options for the Pivot view and select only Period activity as the metric, whilst keeping the selected dimension attributes as is, and then click outside the runtime options of Pivot component for changes to reflect
+13. Click on the runtime options for the Pivot view and enable "Parent Account 2" and "Parent Account Code 2" attributes and metric "Period activity", whilst keeping the selected dimension attributes as is, and then click outside the runtime options of Pivot component for changes to reflect
         ![Personalize dashboard](../images/fg12.png "Personalize dashboard")
         ![Personalize dashboard](../images/fg13.png "Personalize dashboard")
 
