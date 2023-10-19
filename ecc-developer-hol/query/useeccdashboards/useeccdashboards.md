@@ -196,7 +196,7 @@ Password: welcome1
 
 13. Click on the side navigation panel on the top left to open the "Available refinements" section and from "Schedules Summary" Attribute group click on "Ship-To location" attribute [Attribute group is a grouped list of attributes with each group representing a functional or logical grouping for a set of attributes] and select "M-1 Seattle Mfg" value as this is the specific order line we want to investigate.
     ![Procurement Command Center](../images/pro8.png "Procurement Command Center")
-14. We can view the individual order line and from the Tab "Requisitions" we can choose to click on "View" to navigate to the Requisitions tab for this particular order line and continue our analysis.
+14. We can view the individual order line for this particular order and conclude our analysis.
     ![Procurement Command Center](../images/ki.png "Procurement Command Center")
 
 ## Task 4: Hands on demo of ECC Inventory Management 
