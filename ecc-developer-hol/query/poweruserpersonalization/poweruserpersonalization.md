@@ -159,7 +159,7 @@ Password: welcome1
           - Currency name (This will become a column when Pivot visualization is enabled)
     - Metric:
           - Paid amount (Attribute) and Sum (Aggregation)
-16. Click preview. This gives Per supplier, per supplier site totals of invoice paid amount.
+16. Click preview. This gives per supplier, per supplier site totals of invoice paid amount.
 
     ![Aggregate table configuration](../images/sup140.png "Aggregate table configuration")
 
