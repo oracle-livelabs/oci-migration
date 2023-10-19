@@ -62,8 +62,8 @@ Password: welcome1
     - Chart title: Spend Type
     - Data set: Indirect Procurement 
     - Chart type: Bar
-    - Dimension: Spend type (series dimension) and Spend Date (Year) (Group dimension)
-    - Metric: Attribute (Spend amount) and Aggregation (Sum) 
+    - Dimension: Spend Type (series dimension) and Spend Date (Year) (Group dimension)
+    - Metric: Spend Amount (Attribute) and Sum (Aggregation)
 
 14. Click preview 
      ![Procurement Command Center](../images/ext700.png "Procurement Command Center")
