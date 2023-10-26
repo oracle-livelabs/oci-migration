@@ -27,7 +27,7 @@ This lab assumes you have:
 
 **Goal:** As a buyer I want to see the bigger picture of procurement function by means of high level metrics and charts that should help me improve the overall procure to pay process.
 
-1. Login to EBS apps (From the browser URL navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
+1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
 
     ```
   	 Username: sysadmin
@@ -35,7 +35,7 @@ Password: welcome1
     ```
 
 2. Navigate to ECC Developer -> ECC Developer
-    ![Procurement Command Center](../images/val1.png "Procurement Command Center")
+    ![Procurement Command Center](../images/ext1.png "Procurement Command Center")
 3. Search for "Indirect procurement" on the home page, this should filter Procurement application. You will see the below image
     ![Procurement Command Center](../images/ext2.png "Procurement Command Center")
 4. Click on the copy page icon for "Indirect procurement"  dashboard, highlighted below
@@ -75,7 +75,7 @@ This concludes this task, we successfully extended Indirect Procurement dashboar
 ## Task 2: New dashboard RBAC Setup 
 
 
-1. Login to EBS apps (From the browser URL navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
+1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
 
     ```
   	 Username: sysadmin
@@ -140,7 +140,7 @@ Password: welcome1
         ![Clear Cache](../images/ss110.png "Clear Cache")
 
 ## Task 3: EBS OA Personalization 
-1. Login to EBS apps (From the browser URL navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
+1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
 
     ```
   	 Username: operations
@@ -154,9 +154,11 @@ Password: welcome1
 
 4. Personalize the Rich Container:
 
-    * A rich content container is an OA component which is designed to embed/enclose an external content within an OA Framework page. The rich content container component accepts the URL of the rich content, in this case an ECC dashboard.
-    This rich content is then enclosed within an iFrame within an OA Framework page. 
-    In this case, through Oracle EBS and ECC integration, users are allowed to drill down from Oracle EBS to ECC. The rich container requires an FND function of the ECC dashboard page, which will allow the user to access the respective ECC dashboard inside EBS.
+    * A rich content container is an OA component which is designed to embed/enclose an external content within an OA Framework page.
+    * The rich content container component accepts the URL of the rich content, in this case an ECC dashboard.
+    * This rich content is then enclosed within an iFrame within an OA Framework page.
+    * In this case, through Oracle EBS and ECC integration, users are allowed to drill down from Oracle EBS to ECC.
+    * The rich container requires an FND function of the ECC dashboard page, which will allow the user to access the respective ECC dashboard inside EBS.
           ![Personalize Rich Container](../images/b118.png "Personalize Rich Container")
 
 5.	Update the below details and click on the “Apply” button
