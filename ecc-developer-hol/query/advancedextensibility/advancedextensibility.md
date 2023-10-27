@@ -485,7 +485,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
     ![Compile Package](../images/a1130.png "Compile Package")
 
 4.	Once the package specification and the body are compiled successfully, then the user needs to configure the data load rules for the respective dataset
-    * Navigate to ECC Developer page
+    * Navigate to ECC Developer page via the following credentials (username: **sysadmin** and password: **welcome1**)
     * Go to “Datasets” menu under “Data Designer” section
     * Search for the local agreements dataset 
                                                              ```
@@ -683,13 +683,13 @@ style="white-space:pre-wrap; word-wrap:break-word"
 
         ![Configure Load Rules](../images/a1128.png "Configure Load Rules")
     * Click on the “Save” button
-    * Navigate to the XX Local Agreements dashboard
+    * Navigate to the XX Local Agreements dashboard (from within the current **sysadmin** user)
         * The dashboard will error out stating that the user is not authorized to access the dataset using the logged in responsibility
         * This is because, we have added Privilege to the dataset that only the users accessing the dashboard using XX\_PO\_PCC\_ECC\_LOCAL\_AGREEMENTS page, can access the dataset
 
         ![Not Authorized](../images/a1135.png "Not Authorized")
 
-* If any user accesses the local agreements dashboard using the allowed responsibility/page, then the user will be able to view only the designated subset of data. Hence ensuring data security.
+* If any user accesses the local agreements dashboard using the allowed responsibility/page, then the user will be able to view only the designated subset of data. Hence ensuring data security.This is demonstrated in the upcoming tasks.
         ![Operations User](../images/a1136.png "Operations User")
 
 ## Task 7:	New Dashboard RBAC Setup
