@@ -46,13 +46,13 @@ Contents of a data set can be exported with attribute keys and attribute display
 
 To create a data set within ECC, follow the below steps:
 
-1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
+1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
      ```
   	 Username: sysadmin
 Password: welcome1
     ```
-2.	Navigate to ECC Developer page -> ECC Developer
-        ![Procurement Command Center](../images/val1.png "Procurement Command Center")
+2.	Navigate to ECC Developer responsibility -> ECC Developer
+        ![Procurement Command Center](../images/ext1.png "Procurement Command Center")
 3.	Go to “Datasets” menu under “Data Designer” section
         ![Procurement Command Center](../images/data1.png "Procurement Command Center")
 4.	Click on “New Dataset” button
@@ -485,7 +485,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
     ![Compile Package](../images/a1130.png "Compile Package")
 
 4.	Once the package specification and the body are compiled successfully, then the user needs to configure the data load rules for the respective dataset
-    * Navigate to ECC Developer page
+    * Navigate to ECC Developer page via the following credentials (username: **sysadmin** and password: **welcome1**)
     * Go to “Datasets” menu under “Data Designer” section
     * Search for the local agreements dataset 
                                                              ```
@@ -683,13 +683,13 @@ style="white-space:pre-wrap; word-wrap:break-word"
 
         ![Configure Load Rules](../images/a1128.png "Configure Load Rules")
     * Click on the “Save” button
-    * Navigate to the XX Local Agreements dashboard
+    * Navigate to the XX Local Agreements dashboard (from within the current **sysadmin** user)
         * The dashboard will error out stating that the user is not authorized to access the dataset using the logged in responsibility
         * This is because, we have added Privilege to the dataset that only the users accessing the dashboard using XX\_PO\_PCC\_ECC\_LOCAL\_AGREEMENTS page, can access the dataset
 
         ![Not Authorized](../images/a1135.png "Not Authorized")
 
-* If any user accesses the local agreements dashboard using the allowed responsibility/page, then the user will be able to view only the designated subset of data. Hence ensuring data security.
+* If any user accesses the local agreements dashboard using the allowed responsibility/page, then the user will be able to view only the designated subset of data. Hence ensuring data security.This is demonstrated in the upcoming tasks.
         ![Operations User](../images/a1136.png "Operations User")
 
 ## Task 7:	New Dashboard RBAC Setup
@@ -701,7 +701,7 @@ There are two ways to provide access of Local Agreements dashboard to the users:
 
 In this task, we will replace the shipped "Agreements" dashboard with the custom "Local Agreements" dashboard.
 
-1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
+1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
     ```
   	 Username: sysadmin
 Password: welcome1
@@ -761,7 +761,7 @@ Password: welcome1
 
 ## Task 8:	EBS OA Personalization
 
-1. Login to EBS apps (From the browser URL navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
+1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
 
     ```
   	 Username: operations

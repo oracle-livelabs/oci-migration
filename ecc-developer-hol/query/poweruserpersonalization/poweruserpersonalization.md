@@ -99,7 +99,7 @@ Oracle Enterprise Command Center Framework UI components are grouped into four m
 **Goal**: As a Payables Accountant, I want to track  cash outflow for invoice payments per bank account so that I can analyze payment trends 
 
 
-1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
+1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
     ```
   	 Username: eccuser
 Password: welcome1
@@ -114,12 +114,12 @@ Password: welcome1
    ![Supplier Balance dashboard](../images/sup20.png "Supplier Balance dashboard")
 
 
-5. Enable Personalization Mode by clicking on the "i" icon (on the top left of the page, beside the share icon) and then click on "Personalize" button.
+
+5. Enable Personalization Mode by clicking on the "i" icon (on the top left of the page, beside the share icon) and then click on "Personalize Dashboard" button.
 
    ![Enable Personalization Mode](../images/sup3.png "Enable Personalization Mode")  
    ![Enable Personalization Mode](../images/sup4.png "Enable Personalization Mode")
-
-6. The "Personalize" button is now disabled and the personalization icon changes to blue when the dashboard is in edit mode. All components in the dashboard will now have the configuration and delete icon
+5. The personalization icon changes to blue when the dashboard is in edit mode. All components in the dashboard will now have the configuration and delete icon
 
    ![Enable Personalization Mode](../images/sup5.png "Enable Personalization Mode")
 
@@ -137,15 +137,13 @@ Password: welcome1
     - Data set: Payments 
     - Chart type: Bar
     - Dimension: Bank Account (series dimension)
-    - Metric: Paid amount (Attribute) and Sum (Aggregation) 
+    - Metric: Paid Amount (Attribute) and Sum (Aggregation) 
 
-10. Click preview 
+10. Click on "Preview" button
 11. This gives cash outflow across all currencies, now add additional dimension to split the chart per currency.
-
+    ![Before Trellis column](../images/beforeaddingcurrency.png "Before Trellis column")
 12. Add "Currency" as Trellis column dimension
 13. Click "Preview" and then click "Save"
-
-   ![Add Trellis column](../images/sup120.png "Add Trellis column")
    ![Save trellis chart](../images/sup13.png "Save trellis chart")
 
 
@@ -158,8 +156,9 @@ Password: welcome1
           - Supplier site
           - Currency name (This will become a column when Pivot visualization is enabled)
     - Metric:
-          - Paid amount (Attribute) and Sum (Aggregation)
-16. Click preview. This gives per supplier, per supplier site totals of invoice paid amount.
+          - Paid Amount (Attribute) and Sum (Aggregation)
+
+16. Click on the "Preview" button. This gives per supplier, per supplier site totals of invoice paid amount.
 
     ![Aggregate table configuration](../images/sup140.png "Aggregate table configuration")
 
@@ -176,15 +175,14 @@ Password: welcome1
 
     ![Pivot view](../images/switch2.png "Pivot view")
 
-20. Finally, click on the "i" icon and then the "Exit" button to disable Personalization mode.
-   ![Exit Personalization](../images/exitpersonalizationsuppbalance.png "Exit Personalization")
+25. Finally, click on the "i" icon and then the "Personalize Dashboard" button to disable Personalization mode.
 
 ## Task 3: Personalize Account Analysis dashboard
 
 **Goal**: Investigate and act to maintain the accuracy of financial records
 
 
-1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
+1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
 
     ```
   	 Username: eccuser
@@ -197,7 +195,7 @@ Password: welcome1
    ![EBS home screen](../images/genz100.png "EBS home screen")
 
 
-3. You will see the Account Analysis dashboard. If you see any existing filters in the Selected refinements, please remove them and then enable personalization from "i" icon 
+3. You will see the Account Analysis dashboard. In that dashboard, enable personalization from "i" icon 
    ![Personalize dashboard](../images/genz2000.png "Personalize dashboard")
 
 4. Click on the search bar to find the previously saved search [in Lab 2 - Task 2]
@@ -219,9 +217,9 @@ Password: welcome1
     - Dataset: GL Account Analysis
     - Chart type: Bar
     - Group dimension: Cost Center
-    - Series dimension: Parent account 1
+    - Series dimension: Parent Account 1
     - Trellis column: Period Name
-    - Metric: Period Activity (Attribute) and no Aggregation, since this is a calculated attribute.
+    - Metric: Period Activitiy (Attribute) and no Aggregation, since this is a calculated attribute.
 
 10. Click "Preview" 
 
@@ -229,7 +227,7 @@ Password: welcome1
 11. Save the configuration. You will be able to see a combined view of account segment and hierarchy
    ![combined view of account segment and hierarchy](../images/f2000.png "Combined view of account segment and hierarchy")
 
-
+12. Finally, click on the "i" icon and then the "Personalize Dashboard" button to disable Personalization mode.
 
 
 

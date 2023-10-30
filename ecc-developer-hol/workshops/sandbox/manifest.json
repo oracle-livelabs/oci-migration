@@ -16,10 +16,6 @@
           "filename": "https://oracle-livelabs.github.io/common//labs/remote-desktop/using-novnc-remote-desktop.md"
         }, 
         {
-          "title": "Prepare and Set up",
-          "filename": "../../query/prepare-and-setup/prepare-and-setup.md"
-        },
-        {
           "title": "Lab 1: Use ECC Dashboards",
           "filename": "../../query/useeccdashboards/useeccdashboards.md"
         },
