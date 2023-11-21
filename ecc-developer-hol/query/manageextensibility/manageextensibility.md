@@ -28,7 +28,7 @@ This lab assumes you have:
 * Users need to move their development across environments and sometimes multiple users working on the same application in different environments want to merge their development. For all of these use cases, ECC allows users to both export an application (along with the underlying pages and data sets) and import an application (along with the underlying pages and data sets) into a different environment. 
 * The Administrator UI allows you to export or import any application. This capability helps in sharing the application for a quick assessment, creating a backup before extending, moving an application to a different environment, or restoring the shipped state of a command center. An application can be exported for any specific language, and an application can be imported preserving any custom pages or custom load rules.
 
-1. Login to EBS apps (From the browser URL navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (From the browser URL navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
 
     ```
   	 Username: sysadmin
@@ -36,7 +36,7 @@ Password: welcome1
     ```
 
 2. Navigate to ECC Developer -> ECC Developer
-    ![ECC developer](../images/ext1.png "ECC developer")
+    ![ECC developer](../images/val1.png "ECC developer")
 
 3. Navigate to "Export/Import" tab under "Administration" section.
     ![ECC developer](../images/image1.png "ECC developer")
@@ -93,10 +93,9 @@ Password: welcome1
 * To access the dashboard, navigate to the Activity Audit section in the Administration UI or you can click on the "Activity audit" application from Home.
 
      ![ECC developer](../images/admin6.png "ECC developer")
-     ![ECC developer](../images/admin7.png "ECC developer")
+     ![ECC developer](../images/activityaudit3.png "ECC developer")
 
 * You can also choose to view individual application/page details as well. Click on the Page name filter from the Available refinements section and filter for "XX Local Agreements" page
-     ![ECC developer](../images/admin8.png "ECC developer")
 
 
 You may now **proceed to the next lab**

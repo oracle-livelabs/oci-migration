@@ -4,7 +4,6 @@
 ### Introduction
 
 * ECC Personalization Template is an ECC V11 feature
-* ECC Personalization Template was previously referred to as ECC Scratchpad, which is why, in some of the screenshots, you may see ECC Scratchpad instead of ECC Personalization Template
 * This lab walks you through the ECC Personalization Template feature, what the feature is, the benefits of this feature and hands on demos
 
 Estimated Time: 30 minutes
@@ -32,8 +31,8 @@ This lab assumes you have:
 
 In Lab 5 we extended the existing Agreements dashboard to include Local agreements. To make this dashboard accessible we would ideally create an OA page which requires a lot of development effort. The other way to make the dashboard accessible to users is to leverage the ECC Personalization Template feature.
 
-ECC Personalization Template is a seeded OA page shipped as part of ECC Developer responsibility i.e., seeded FND function FND\_ECC\_SCRATCHPAD where customers can easily add and remove tabs within this seeded OA page. This allows user to access and manage multiple dashboards from a single responsibility so that they can have a full view of all business operations. This is different from using menus i.e., creating a menu hierarchy to personalize existing dashboards, which needs additional development in terms of creating OA pages, rather the ECC Personalization Template approach is a much easier approach in personalizing and extending not just a single dashboard but across multiple dashboards. No developer is needed in developing an OA page
-    ![ECC Personalization Template](../images/eccz100.jpg "ECC Personalization Template")
+ECC Personalization Template is a seeded OA page shipped as part of ECC Developer responsibility i.e., seeded FND function FND\_ECC\_PERSONALIZE\_TEMPLATE where customers can easily add and remove tabs within this seeded OA page. This allows user to access and manage multiple dashboards from a single responsibility so that they can have a full view of all business operations. This is different from using menus i.e., creating a menu hierarchy to personalize existing dashboards, which needs additional development in terms of creating OA pages, rather the ECC Personalization Template approach is a much easier approach in personalizing and extending not just a single dashboard but across multiple dashboards. No developer is needed in developing an OA page
+    ![ECC Personalization Template](../images/eccz100.png "ECC Personalization Template")
 
 
 With this feature users can:
@@ -48,7 +47,7 @@ With this feature users can:
 **Personalization Steps:**
         ![Personalization Steps](../images/a11ss.png "Personalization Steps")
 
-1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
     ```
   	 Username: sysadmin
 Password: welcome1
@@ -70,7 +69,7 @@ Password: welcome1
             ```
         * Function: 
                                                         ```
-  	    <copy>ECC Scratchpad</copy>
+  	    <copy>ECC Personalization Template</copy>
             ```
         * Click on “Apply” button to save the menu
         ![Add Function to Menu](../images/a11s4.png "Add Function to Menu")
@@ -131,7 +130,7 @@ Password: welcome1
 
 **Personalize ECC Personalization Template to add Local Agreements dashboard**
 
-1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
     ```
   	 Username: operations
 Password: welcome1

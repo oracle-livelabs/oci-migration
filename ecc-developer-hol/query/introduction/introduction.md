@@ -31,20 +31,6 @@ Oracle E-Business Suite users navigate transactional information using interacti
         ![Example ECC Dashboard](../images/ebspage.png "ECC Dashboard")
 
 
-## Task 2: Launch remote desktop (Run on LiveLabs sandbox)
-
-This task is to be performed if you want to run this workshop on the LiveLabs sandbox.
-
-1. Click on  "View login info" on the top left, as shown in below image
-    ![Click on View login info](../images/viewlogininfo.png "View login info")
-
-2. Click on "Launch remote desktop" button to Launch your remote desktop, this is where you will install Oracle Enterprise Command Center Framework.
-    ![Launch remote desktop](../images/launchremote.png "Launch remote desktop")
-
-3. You should see the below screen when you access the remote desktop:
-    ![View home screen in remote desktop](../images/env.png "Home screen in remote desktop")
-
-
 
 You may now **proceed to the next lab**
 
