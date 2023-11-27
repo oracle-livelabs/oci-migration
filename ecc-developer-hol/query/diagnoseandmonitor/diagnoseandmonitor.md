@@ -110,11 +110,20 @@ To analyze performance deeply download HAR file:
 
 2. Running Analyzer
    To run Analyzer as a java program follow below instruction. The java program will prompt for the WebLogic and APPS usernames and passwords.
+   * Source ECC Environment:
+     ```
+<copy>. ./$ECC_BASE/Oracle/quickinstall/env/ecc.env</copy> ```
+
+   * Unzip ECC analyzer zip:
+        ```
+<copy>unzip ECC_Analyzer.zip</copy> ```
+
+3. Running analyzer
 
     ![Running Analyzer](../images/eccanalyzer2.png "Running Analyzer")
 
     ```
-  	 <copy>java -Danalyzer="ecc_analyzer.xml" -jar HA.jar</copy>
+  	 <copy>java -	Danalyzer="ecc_analyzer.xml" -jar HA.jar</copy>
     ```
 
 3. ECC Analyzer: Sample Output
