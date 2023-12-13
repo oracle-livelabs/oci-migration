@@ -42,7 +42,7 @@ Password= welcome1
  4. Select OA_VAR in the search list of values and then search for the the following variable in the search text box
 
     ```
-  	 <copy>s_ecc_conf_comment</copy>
+  	 <copy>s_ecc_conf</copy>
     ```
  
     Then, click the "Go" button.
