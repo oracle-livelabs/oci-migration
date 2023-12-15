@@ -91,7 +91,7 @@ This lab assumes you have:
 
 ## Task 1: Hands on demo of ECC Receivables
 
-1. Navigate to http://apps.example.com:8000 in the browser with below credentials 
+1. Navigate to http://<VNC\_Public\_IP\>:8000 in the browser with below credentials 
 
 
     ```
@@ -137,7 +137,7 @@ Password: welcome1
 
 
 **Goal:** Analyze Account Activity and Drilldown to Source Transactions
-1. Navigate to http://apps.example.com:8000 in the browser with below credentials 
+1. Navigate to http://<VNC\_Public\_IP\>:8000 in the browser with below credentials 
 
 
     ```
@@ -147,7 +147,10 @@ Password: welcome1
 2. You will see the below screen,  from **General Ledger Super User** responsibility navigate to **General Ledger Command Center**  
         ![EBS home screen](../images/genz100.png "EBS home screen")
 
-3. You will see the "Account Analysis" dashboard. And, within the "Account Analysis" dashboard you can see the Trellis chart under the Period Activities tab. We will explore "Expenses" by clicking on "Expense" from the legend in the chart.
+3. You will see the "Account Analysis" dashboard. If you see any existing filters in the Selected refinements, please remove them and refine the dashboard for "Period Name" attribute with value as "Jun-23" from Available refinements (Click on the side navigation panel to open Available refinements). 
+        ![Personalize dashboard](../images/changefiltersinglusecase.png "Personalize dashboard")
+
+4. Within the "Account Analysis" dashboard you can see the Trellis chart under the Period Activities tab. We will explore "Expenses" by clicking on "expenses" from the legend in the chart.
         ![Personalize dashboard](../images/fg1.png "Personalize dashboard")
 
 5. Let's explore "Employee Expenses" category
@@ -160,11 +163,12 @@ Password: welcome1
         ![Personalize dashboard](../images/fg5.png "Personalize dashboard")
         ![Personalize dashboard](../images/fg6.png "Personalize dashboard")
 
-8. Previous period seems very low compared to what we were investigating, let's compare current period amount with same period last year to check for seasonality i.e., compare Jun-23 with Jun-22. To do that, click on the "Period Name" breadcrumb to add Jun-22. The amount for "meals" seems high in the previous year as well. 
+8. Previous period seems very low compared to what we were investigating, let's compare current period amount with same period last year to check for seasonality i.e., compare Jun-23 with Jun-22. To do that, click on the "Period Name" breadcrumb to add Jun-22
         ![Personalize dashboard](../images/fg7.png "Personalize dashboard")
         ![Personalize dashboard](../images/fg8.png "Personalize dashboard")
 
-10. Let's explore further and analyze employee expenses by department. Click on the runtime options for "Period Activities by Chart of Accounts" Pivot view and select only the following and click on "Update" button within runtime options
+9. The amount for "meals" is even higher in the previous year. 
+11. Let's explore further and analyze employee expenses by department. Click on the runtime options for "Period Activities by Chart of Accounts" Pivot view and select only the following, and then click outside the runtime options of Pivot component for changes to reflect.
     * Dimensions:
         * Company
         * Department
@@ -178,8 +182,8 @@ Password: welcome1
 
 12. Click on the "Period Activities by Account Hierarchy" tab to analyze employee expenses by account hierarchy
         ![Personalize dashboard](../images/fg11.png "Personalize dashboard")
-13. Click on the runtime options for the Pivot view and select only Period activity as the metric, and then click on "Update"
-        ![Personalize dashboard](../images/fg12.png "Personalize dashboard")       
+13. Click on the runtime options for the Pivot view and enable "Parent Account 2" and "Parent Account Code 2" attributes and metric "Period activity", whilst keeping the selected dimension attributes as is, and then click outside the runtime options of Pivot component for changes to reflect
+        ![Personalize dashboard](../images/fg12.png "Personalize dashboard")
         ![Personalize dashboard](../images/fg13.png "Personalize dashboard")
 
 14. We can see that in Jun-23 we have an usually high amount entered under "Meals" account because of it being accounted under personal expenses, which seems wrong. To investigate this further, click on the "Account Code" for 7690.
@@ -197,6 +201,32 @@ Password: welcome1
 * Seeded saved searches are published along with the product. Administrators can create public saved searches. Users can create their own private saved searches. 
 * Private saved searches are accessible only by the users who created them whereas public saved searches are accessible by all the dashboard users. 
         ![Personalize dashboard](../images/fg15.png "Personalize dashboard")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+
+
+
 
 
 

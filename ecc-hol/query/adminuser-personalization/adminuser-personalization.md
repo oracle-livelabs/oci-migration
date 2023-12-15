@@ -217,7 +217,7 @@ As we are targeting to extend the asset cost dashboard, we first need to copy th
 
 31. Expand "Asset Additions" event
 
-32. Add Indicator(s): Select "In Use"
+32. Add Indicator(s): Select "Asset Addition"
 
     ![Expand Asset Additions](../images/indicatorinuse10.png "Expand Asset Additions")
 
