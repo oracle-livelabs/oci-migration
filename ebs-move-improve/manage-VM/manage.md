@@ -1,4 +1,4 @@
-# Managing the Oracle EBS Cloud Manager Virtual Machine
+# Manage the Oracle EBS Cloud Manager Virtual Machine
 
 ## Introduction
 Within the virtual machine that Oracle E-Business Suite (EBS) Cloud Manager runs on, you can also preform a number of management tasks that give you more control of the instance. Here we will go over a few of the main commands that are available.

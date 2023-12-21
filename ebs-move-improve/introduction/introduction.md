@@ -1,6 +1,6 @@
 # Introduction
 
-## About this Workshop
+## About This Workshop
 
 This workshop showcases the use of the Oracle E-Business Suite (EBS) Cloud Manager graphical user interface to provision and clone environments on Oracle Cloud Infrastructure (OCI). In addition, a demonstration of the lift and shift of an on-premises Oracle E-Business Suite environment to Oracle Cloud Infrastructure will be conducted.
 

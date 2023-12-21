@@ -1,4 +1,4 @@
-# Teardown Your Oracle E-Business Suite Environments
+# Tear Down Your Oracle E-Business Suite Environments
 
 ## Introduction
 In this lab, we will use Oracle E-Business Suite (EBS) Cloud Manager to delete your EBS environments. Then we will delete all the resources in Oracle Cloud Infrastructure (OCI) with the stack previously created in Lab 2. 
@@ -7,8 +7,8 @@ Estimated Lab Time: 15 minutes
 
 
 ### **Objectives**
-* Delete your EBS environments
-* Destroy OCI resources used for EBS Cloud Manager
+* Delete your EBS environments.
+* Destroy OCI resources used for EBS Cloud Manager.
 
 ### **Prerequisites**
 * Tenancy Admin User
@@ -30,7 +30,7 @@ Estimated Lab Time: 15 minutes
     You can repeat this step for all other EBS environments you wish to delete. 
 
 
-## Task 2: Teardown the Cloud Manager Instance
+## Task 2: Delete the Cloud Manager Instance
 
 1. Navigate to the OCI console and login as the tenancy admin user. Navigate to **Developer Services**, **Resource Manager**, then **Stacks**, and select the stack you used to create the Cloud Manager environment (ensure that you are in the correct compartment if no items display).
 
@@ -56,7 +56,7 @@ Estimated Lab Time: 15 minutes
 
     You have now torn down all the resources you created for the EBS Cloud Manager instance and its EBS environments. 
 
-## More documentation on Oracle E-Business Suite Cloud Manager
+## More Documentation on Oracle E-Business Suite Cloud Manager
 
 If you're interested in the full capabilities of Oracle E-Business Suite Cloud Manager and would like to learn more follow the link below!
 

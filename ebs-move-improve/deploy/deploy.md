@@ -14,8 +14,8 @@ Watch this short video to preview how to deploy your Oracle E-Business Suite Clo
 
 ### **Objectives**
 
-* Deploy and configure EBS Cloud Manager
-* Verify log in into EBS Cloud Manager
+* Deploy and configure EBS Cloud Manager.
+* Verify log in into EBS Cloud Manager.
 
 ### **Prerequisites**
 
