@@ -1,7 +1,7 @@
 # Oracle E-Business Suite Cloud Manager Deployment and Configuration
 
 ## Introduction
-In this lab, we will deploy the Oracle E-Business Suite Cloud Manager using the Marketplace Application:
+In this lab, we will deploy Oracle E-Business Suite (EBS) Cloud Manager using the Marketplace Application:
 Oracle E-Business Suite Cloud Manager Stack for Demos.
 
 Estimated Lab Time: 30 minutes
@@ -14,14 +14,14 @@ Watch this short video to preview how to deploy your Oracle E-Business Suite Clo
 
 ### **Objectives**
 
-* Deploy and Configure Oracle E-Business Suite Cloud Manager
-* Verifying login into Oracle E-Business Suite Cloud Manager
+* Deploy and configure EBS Cloud Manager
+* Verify log in into EBS Cloud Manager
 
 ### **Prerequisites**
 
 * Tenancy Admin User
 * Tenancy Admin Password
-* Lab 1 for preparing your tenancy completed with your IAM with Identity Domains information documented in your key-data.txt file.
+* Lab 1 for preparing your tenancy completed with your IAM with Identity Domains information documented in your `key-data.txt` file.
     * `Cloud_Manager_Admin_Username`
     * `Cloud_Manager_Admin_Password`
     * `Client_Tenant`
@@ -30,44 +30,44 @@ Watch this short video to preview how to deploy your Oracle E-Business Suite Clo
 
 ## Task 1: Sign in to the Oracle Cloud Infrastructure Console
 
-Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastructure console.
+Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastructure (OCI) console.
 
 1. Reference your ``key-data.txt`` file and locate the tenancy administrator credentials.
 
-2. Sign in to the Oracle Cloud Infrastructure console using the following:
+2. Sign in to the OCI console using the following:
 
     * **User name**: ``Tenancy Admin User``
     * **Password**: ``Tenancy Admin Password``
 
 ## Task 2: Deploy and Configure Oracle E-Business Suite Cloud Manager
 
-You will now deploy an E-Business Suite Cloud Manager using a Marketplace stack. The stack creates the following cloud resources:
+You will now deploy Oracle E-Business Suite Cloud Manager using a Marketplace stack. The stack creates the following cloud resources:
 
-  - A compartment to contain resources required by Oracle E-Business Suite Cloud Manager.
+  - A compartment to contain resources required by EBS Cloud Manager.
 
   - An EBS Cloud Manager Administrators IAM user and group, as well as the policies required to manage the compartment.
 
   - Network resources – including a VCN, an internet gateway, subnets, route tables, security lists, and security rules.
 
-  - A Compute instance for running the Oracle E-Business Suite Cloud Manager.
+  - A Compute instance for running EBS Cloud Manager.
 
-Then, the stack will configure Oracle E-Business Suite Cloud Manager to work with your OCI tenancy and the newly created OCI resources.
+Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy and the newly created OCI resources.
 
-1. In the Oracle Cloud Infrastructure console navigation menu, under **Marketplace** select **All Applications**.
+1. In the OCI console navigation menu, under **Marketplace**, select **All Applications**.
 
   ![This screenshot depicts the navigation to All Applications within the Oracle Cloud Infrastructure console navigation menu.](./images/1.png " ")
 
 2. From the Marketplace applications page:
 
-    a. Select **Stack** under Filter > Type
+    a. Navigate to **Filter**, then **Type**, and select **Stack**.
 
-    b. In the search bar type "E-Business Suite"
+    b. In the search bar, enter "E-Business Suite".
 
-    c. Click the application **Oracle E-Business Suite Cloud Manager Stack for Demos**
+    c. Click the application **Oracle E-Business Suite Cloud Manager Stack for Demos**.
 
     ![This screenshot shows the Marketplace applications page and the Oracle E-Business Suite Cloud Manager Stack for Demos which must be selected.](./images/2.png " ")
 
-3. In the version drop-down list, ensure that the default is selected.
+3. In the Version drop-down list, ensure the default is selected.
 
 4. In the Compartment drop-down list, select the parent compartment of the compartment where the Oracle E-Business Suite Cloud Manager Compute instance will be deployed. For example, mycompanytenancy(root).
 
@@ -79,15 +79,15 @@ Then, the stack will configure Oracle E-Business Suite Cloud Manager to work wit
 
 7. On the Stack Information screen, enter the following values:
 
-    a. **Name**: (default: Oracle E-Business Suite Cloud Manager Stack for Demos-<date&time>)
+    a. **Name**: Default is Oracle E-Business Suite Cloud Manager Stack for Demos-&lt;date&time&gt;.
 
-    b. **Description**: Add a description for the stack
+    b. **Description**: Add a description for the stack.
 
     c. The last two variables should be greyed out.
 
-      1. **Compartment**: (the one chosen previously)
+      1. **Compartment**: This is the one chosen previously.
 
-      2. **Terraform Version**: 0.12.x
+      2. **Terraform Version**: Select 0.12.x from the drop-down list.
 
     d. Click **Next**.
 
@@ -99,7 +99,7 @@ Then, the stack will configure Oracle E-Business Suite Cloud Manager to work wit
 
       - Note: This value must be a unique identifier to your tenancy.
 
-    b. **Single Compartment Setup**: Make sure it is checked.
+    b. **Single Compartment Setup**: Ensure this checkbox is selected.
 
     c. **Parent Compartment**: Select your compartment as the parent compartment for your resources.
 
@@ -107,7 +107,7 @@ Then, the stack will configure Oracle E-Business Suite Cloud Manager to work wit
 
     e. **EBS Cloud Manager Administrator Email**: This can be a personal email account.
 
-    f. **Create New REST API key**: Make sure it is checked.
+    f. **Create New REST API key**: Ensure this checkbox is selected.
 
     ![This screenshot shows the Create Stack page and within the Configure variables section, shows the Setup Details and the EBS Cloud Manager Administrator Details which must be completed.](./images/5.png " ")
 
@@ -129,11 +129,11 @@ Then, the stack will configure Oracle E-Business Suite Cloud Manager to work wit
 
       ![This screenshot shows the Create Stack page and within the Configure variables section, shows the EBS Cloud Manager Instance Details which must be completed.](./images/6.png " ")
 
-    l. **Custom CIDR Ranges**: Leave unchecked.
+    l. **Custom CIDR Ranges**: Leave this checkbox unselected.
 
     m. **EBS Cloud Manager Access CIDR**: ``0.0.0.0/0``
 
-    n. Enter the values from the ``key-data.txt`` file as shown below.
+    n. Enter the values from the ``key-data.txt`` file as follows:
 
       1. **IDCS Client ID**: `Client_ID`
 
@@ -155,7 +155,7 @@ Then, the stack will configure Oracle E-Business Suite Cloud Manager to work wit
 
   After the job succeeds, you will have all the network resources (VCN, load balancer, subnets, and so on) required to deploy the Oracle E-Business Suite Cloud Manager Compute instance.
 
-11. You will find the details related to the EBS Cloud Manager Instance and Load Balancer at the bottom of your log output as shown below:
+11. You will find the details related to the EBS Cloud Manager instance and load balancer at the bottom of your log output as shown in the following screenshot.
 
   Copy and paste **Private IP**, **Public IP**, **Login URL**, and **LB Public IP** to the equivalent fields in your ``key-data.txt`` file. These variables are needed for the remainder of the procedures in this lab.
 
@@ -163,7 +163,7 @@ Then, the stack will configure Oracle E-Business Suite Cloud Manager to work wit
 
 ## Task 3: Log in to Oracle E-Business Suite Cloud Manager
 
-Before logging into the Oracle E-Business Suite Cloud Manager web application, you need to add the **hostname** in the Login URL to your local computer hosts file.
+Before logging into the EBS Cloud Manager web application, you need to add the **hostname** in the login URL to your local computer hosts file.
 
 Follow the instructions below to perform this configuration:
 
@@ -191,7 +191,7 @@ Edit the local ``hosts`` file on your laptop and add an entry.
 
 **For Mac users**
 
-  1. Open a Terminal Window.
+  1. Open a Terminal window.
 
   2. Enter the following command:
 
@@ -205,9 +205,9 @@ Edit the local ``hosts`` file on your laptop and add an entry.
 
   3. Type 'i' to edit the file.
 
-  4. Go to the last line and add the following entry as show below: ``<lb_public_ip> myebscm.ebshol.org``
+  4. Go to the last line and add the following entry as follows: ``<lb_public_ip> myebscm.ebshol.org``
 
-  5. Once you have finished editing the file, hit 'esc' and type ':wq' to save and exit.
+  5. Once you have finished editing the file, hit 'esc' and enter ``:wq`` to save and exit.
 
   ![This screenshot shows how to edit the hosts file on a Mac.](./images/13.png " ")
 
@@ -241,6 +241,6 @@ You may now proceed to the next lab.
   - William Masdon, Cloud Engineering
   - Mitsu Mehta, Cloud Engineering
   - Chris Wegenek, Cloud Engineering
-* **Last Updated By/Date:** Tiffany Romero, EBS Documentation, May 2023
+* **Last Updated By/Date:** Tiffany Romero, EBS Documentation, December 2023
 
 
