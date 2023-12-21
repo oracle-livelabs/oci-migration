@@ -28,7 +28,7 @@ Estimated Time: 5 minutes
 
 4. Select the instance and click **Terminate** to terminate the instance.
 
-   ![](./images/terminate-button_1.png " ")
+   ![](./images/finished-instance_2.png " ") 
 
 5. Wait for the instance to terminate. Once terminated, your instance should be gone from the instance list.
 
@@ -70,4 +70,4 @@ Thank you for your time, I hope you enjoyed using Oracle Cloud and JDE.
     * Jeff Kalowes, Principal JDE Specialist
     * Tarani Meher, Principal JDE Specialist
     * Mani Julakanti, Principal JDE Specialist
-* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 03/2023
+* **Last Updated By/Date:** Tarani Meher, Principal JDE Specialist, 09/2023
