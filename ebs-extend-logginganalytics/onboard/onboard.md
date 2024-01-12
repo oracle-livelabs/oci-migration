@@ -23,11 +23,11 @@ In this lab, you will:
     
     a. Navigate to Logging Analytics - Administration
 
-    ![](./images/AdministrationPortal.png " ")
+    ![OCI console menu](./images/AdministrationPortal.png " ")
 
     b. Click the **Start Using Logging Analytics.** (if this is not an option, it is already done)
 
-    ![](./images/StartLogging.png " ")
+    ![Logging Analytics Console](./images/StartLogging.png " ")
 
     c. Click **Continue**
 
@@ -49,13 +49,13 @@ Create Logging Analytics Group Logging Analytics Super Admins
 
   c. Create a Group called `Logging-Analytics-SuperAdmins`
 
-  ![](./images/addGroup.png " ")
+  ![IDCS add group](./images/addGroup.png " ")
 
   d. Click **Next**
 
   e. Add your OCI Admin User that you are using to navigate OCI not your EBS Cloud Manager.
 
-  ![](./images/adduser.png " ")
+  ![IDCS add user](./images/adduser.png " ")
 
   f.  You can now close this page and go back to your OCI Console
 
@@ -69,7 +69,7 @@ Create Logging Analytics Group Logging Analytics Super Admins
 
   d. Associate the two `Logging-Analytics-SuperAdmins`
 
-  ![](./images/map.png " ")
+  ![IDCS mapping page](./images/map.png " ")
 
   e. Click **Add Mapping**
 
@@ -91,7 +91,7 @@ Create Logging Analytics Group Logging Analytics Super Admins
 
   Note: Fill in the Compartment OCID with the OCID of the ebshol compartment.
 
-  ![](./images/dynamicgroup.png " ")
+  ![OCI dynamic group page](./images/dynamicgroup.png " ")
 
   f. Click **Create**
     
@@ -155,7 +155,7 @@ allow service loganalytics to {VNIC_READ} in tenancy
 </copy>
 ```
 
-![](./images/policies.png " ")
+![OCI policy builder](./images/policies.png " ")
 
 ## Task 5: Create Log Groups
 
@@ -169,7 +169,7 @@ allow service loganalytics to {VNIC_READ} in tenancy
 
   d. Create another Log Group named `Audit_Logs`
 
-  ![](./images/laloggroup.png " ")
+  ![OCI Log groups page](./images/laloggroup.png " ")
 
   e. We will use these log groups when ingesting logs from a service connector in the next step.
     
@@ -181,5 +181,5 @@ You may now proceed to the next lab.
 ## Acknowledgements
 * **Author** - Quintin Hill, Cloud Engineering, Packaged Applications
 * **Contributors** -  Kumar Varun, Logging Analytics Product Management
-* **Last Updated By/Date** - Nicholas Cusato, Taylor Rees, Stephen Stuart, June 2023
+* **Last Updated By/Date** - Nicholas Cusato, Taylor Rees, Stephen Stuart, January 2024
 
