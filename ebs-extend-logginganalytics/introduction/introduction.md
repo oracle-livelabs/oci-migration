@@ -6,7 +6,6 @@ This workshop is an extension of previous workshop. It showcases the use of enab
 
 In order to complete this lab you will need the resources created in the [Lift and Shift On-Premises EBS to OCI](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668).
 
-**Note:** As an option, you do not need to complete the Lift and Shift On-Premises EBS to OCI workshop in order to begin this lab. Download an EBS instance from OCI Marketplace to begin this lab. 
 
 Estimated Workshop Time: 2 hours
 
@@ -59,4 +58,4 @@ You may now proceed to the next lab.
 
 * **Author:** Quintin Hill, Cloud Engineering
 * **Contributors:** Kumar Varun, Logging Analytics Product Management 
-* **Last Updated By/Date:** Nicholas Cusato, Taylor Rees, Stephen Stuart, June 2023
+* **Last Updated By/Date:** Nicholas Cusato, Taylor Rees, Stephen Stuart, January 2024
