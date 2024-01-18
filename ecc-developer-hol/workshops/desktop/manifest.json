@@ -53,6 +53,11 @@
       "filename": "../../query/diagnoseandmonitor/diagnoseandmonitor.md"
     },
     {
+      "title": "Troubleshooting",
+      "description": "Solution to EBS homepage not accessible",
+      "filename": "../../query/troubleshooting/start-stop-ecc.md"
+    },
+    {
       "title": "Need help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",
       "filename": "https://oracle-livelabs.github.io/common//labs/need-help/need-help-livelabs.md"

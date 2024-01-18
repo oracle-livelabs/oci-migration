@@ -21,7 +21,7 @@ This lab assumes you have:
 * Requested a workshop reservation on LiveLabs
 
 
-## Task 1: Learn about ECC and how you can take advantage of it?
+**Learn about ECC and how you can take advantage of it?**
 
 Enterprise Command Centers (ECC) provide information discovery along with visualization and exploration capabilities embedded within Oracle E-Business Suite user interfaces. Oracle Enterprise Command Center Framework enables the creation of business dashboards in different functional areas.
 
