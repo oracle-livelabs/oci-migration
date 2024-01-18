@@ -18,8 +18,7 @@ In this lab, you will:
 
 This lab assumes you have:
 * Completed all previous labs successfully 
-
-##  
+ 
 
 ##  Task 1: Learn how to run adautoconfig,start & stop EBS apps 
 1. Open EBS terminal and then run AutoConfig. For running Autoconfig you need to first source the EBS running edition using below command
