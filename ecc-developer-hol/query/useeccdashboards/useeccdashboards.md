@@ -108,12 +108,15 @@ This lab assumes you have:
 ## Task 1: Validate integration of EBS and ECC 
 
 1. Navigate to http://<VNC\_Public\_IP\>:8000 in the browser with below credentials 
-
+   
 
     ```
   	 Username: SYSADMIN
 Password: welcome1
     ```
+    ![Validate ECC](../images/ecc.png "EBS ECC ERROR")
+    if you encounter above error we recommend to wait for some time maximum 15 minutes .
+
     ![Validate ECC](../images/val1.png "Validate ECC")
 
 2. Navigate to ECC Developer, you should be able to see the applications as shown in the below image, if the integration is successful

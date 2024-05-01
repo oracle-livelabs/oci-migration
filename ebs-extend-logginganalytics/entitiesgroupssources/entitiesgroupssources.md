@@ -57,19 +57,22 @@ Complete Lab 1 and 2 of this workshop
 
 ## Task 2: Create Host Log Group and EBS CPN Log Group
 
-1. Navigate to Logging Analytics - Administration - Log Groups
+1. Navigate to Observability and Management - Logging - Log Groups
 
 2. Click **Create Log Group**
 
-Name it `Host Log Group` and click **Create**
+Name it `Host_LOG_GROUP` and click **Create**
 
-Repeat and name the other group `EBS CPN Log Group`
+Repeat and name the other group `EBS_CPN_Log_Group`
 
   ![Create log group](./images/loggroups.png " ")
 
 ## Task 3: Associate Log sources
   
-Now that you have your entities go to Logging Analytics - Administration - Sources
+Now that you have your entities go to Observability and Management - Logging Analytics - Administration - Sources
+
+  ![Source list for logging analytics](./images/sources.png " ")
+
 
 1. For Host Logs:
 
@@ -79,7 +82,7 @@ Now that you have your entities go to Logging Analytics - Administration - Sourc
 
   b. Click on `Linux Secure Logs`
 
-  c. Click Add
+  c. Click Add - under Resources - Unassociated Entities
 
   d. Click the box in the left to associate for all your Host Entities
 
@@ -120,6 +123,6 @@ You may now proceed to the next lab.
 ## Acknowledgements
 * **Author** - Quintin Hill, Cloud Engineering, Packaged Applications
 * **Contributors** -  Kumar Varun, Logging Analytics Product Management 
-* **Last Updated By/Date** - Nicholas Cusato, Taylor Rees, Stephen Stuart, June 2023
+* **Last Updated By/Date** - Nicholas Cusato, Taylor Rees, Stephen Stuart, January 2024
 
 
