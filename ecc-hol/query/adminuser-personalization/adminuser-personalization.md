@@ -421,7 +421,7 @@ Before starting extending an application, take a backup from the existing applic
    4. Specify the Language: en
 
    5. Click the Export button.
-    ![Export/Import page](../images/assetsexport.png "Export/Import page")
+    ![Export/Import page](../images/assetsexport10.png "Export/Import page")
 
 
 Shipped data set can be extended by creating additional attributes from source data.

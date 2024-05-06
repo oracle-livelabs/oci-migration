@@ -57,7 +57,7 @@ This lab assumes you have:
 
 
    * ECC Administrator UI should be accessible i.e., you should see the highlighted section in below  screen
-   * Activity audit application should be imported i.e., you should see Activity audit application in home screen as highlighted below
+   * Activity audit application should be imported i.e., you should see Activity audit application in home screen
 
 
     ![Validate ECC domain](../images/validateeccdomain6.png "Validate ECC domain")
