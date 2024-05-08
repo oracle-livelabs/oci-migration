@@ -1,5 +1,5 @@
 {
-  "workshoptitle": "Create an EBS-Ready CIS Landing Zone and Deploy EBS Cloud Manager in Your Tenancy",
+  "workshoptitle": "Prepare a Tenancy for EBS Migration Following CIS Benchmark Security Guidelines",
   "help": "livelabs-help-oci_us@oracle.com",
   "variables": ["../../variables/variables.json",
     "../../variables/variables-in-another-file.json"],
@@ -34,12 +34,25 @@
     },
     {
       "title": "Lab 4: Deploy and Configure Oracle E-Business Suite Cloud Manager",
-      "filename": "../../deploy/deploy.md"
+      "filename": "../../deploy/deploy.md",
+      "type": {
+        "Windows" : "Windows",
+        "Mac" : "Mac"
+      }
     },
     {
       "title": "Lab 5: Provision Your Oracle E-Business Suite Environment",
       "filename": "../../provision/provision.md"
     },
+    {
+      "title": "Optional: Manage the EBS Cloud Manager Virtual Machine",
+      "filename": "../../manage-VM/manage.md"
+  },
+  {
+      "title": "Tear Down Your EBS Environments",
+      "description": "Teardown Your Oracle E-Business Suite Environments",
+      "filename": "../../teardown/teardown.md"
+  },
     {
       "title": "Need Help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",

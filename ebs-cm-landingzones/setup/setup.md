@@ -1,7 +1,5 @@
 # Set Up the Landing Zone
 
-
-
 ## Introduction
 
 *Describe the lab in one or two sentences, for example:* This lab walks you through the steps to ...
@@ -29,64 +27,114 @@ This lab assumes you have:
 * All previous labs successfully completed
 
 
-*This is the "fold" - below items are collapsed by default*
+## Task 1: Sign in to the Oracle Cloud Infrastructure Console
 
-## Task 1: Concise Task Description
+Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastructure (OCI) Console.
 
-(optional) Task 1 opening paragraph.
+1. Reference your ``key-data.txt`` file and locate the tenancy administrator credentials.
 
-1. Step 1
+2. Sign in to the Oracle Cloud Infrastructure console using the following:
+
+    * **User name**: ``Tenancy Admin User``
+    * **Password**: ``Tenancy Admin Password``
+
+
+## Task 2: Create the Foundation
+
+*Description here*
+
+1. In the Oracle Cloud Infrastructre (OCI) Console navigation menu, under **Marketplace**, select **All Applications**.
 
 	![Image alt text](images/sample1.png)
 
-2. Step 2
+2. From the Marketplace applications page:
 
-  ![Image alt text](images/sample1.png)
+    a. Navigate to **Filter**, then **Type**, and select **Stack**.
 
-4. Example with inline navigation icon ![Image alt text](images/sample2.png) click **Navigation**.
+    b. In the search bar, enter "E-Business Suite".
 
-5. Example with bold **text**.
+    c. Click the application **Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones**.
 
-   If you add another paragraph, add 3 spaces before the line.
+    d. In the **Version** drop-down list, ensure the default is selected. 
+    
+    e. In the **Compartment** drop-down list, select the root compartment.
 
-## Task 2: Concise Task Description
+    f. Review and accept the Terms of Use.
 
-1. Step 1 - tables sample
+    g. Click **Launch Stack**.
 
-  Use tables sparingly:
+4. On the Stack Information screen, enter the following values:
 
-  | Column 1 | Column 2 | Column 3 |
-  | --- | --- | --- |
-  | 1 | Some text or a link | More text  |
-  | 2 |Some text or a link | More text |
-  | 3 | Some text or a link | More text |
+    a. **Name**: Default is Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones-<date&time>.
 
-2. You can also include bulleted lists - make sure to indent 4 spaces:
+    b. **Description**: Add a description for the stack.
 
-    - List item 1
-    - List item 2
+    c. Click **Next**.
 
-3. Code examples
+5. On the Configure Variables screen, enter the following values:
 
-    ```
-    Adding code examples
-  	Indentation is important for the code example to appear inside the step
-    Multiple lines of code
-  	<copy>Enclose the text you want to copy in <copy></copy>.</copy>
-    ```
+    a. **Landing Zone Prefix**: ``ebshol``
 
-4. Code examples that include variables
+    b. **Parent Compartment**: Select your compartment as the parent compartment for your resources.
 
-	```
-  <copy>ssh -i <ssh-key-file></copy>
-  ```
+    c. **EBS workload environment categories**: Using the drop-down list, add the following categories - **Production**, **QA**
+
+    d. Click **Next**.
+
+6. On the Review screen, verify the information, and click **Create**.
+
+## Task 3: Create the Network
+
+*Description here*
+
+1. In the Oracle Cloud Infrastructre (OCI) Console navigation menu, under **Marketplace**, select **All Applications**.
+
+	![Image alt text](images/sample1.png)
+
+2. From the Marketplace applications page:
+
+    a. Navigate to **Filter**, then **Type**, and select **Stack**.
+
+    b. In the search bar, enter "E-Business Suite".
+
+    c. Click the application **Oracle E-Business Suite: Network Admin Stack for Landing Zones**.
+
+    d. In the **Version** drop-down list, ensure the default is selected. 
+    
+    e. In the **Compartment** drop-down list, select the ebshold-Network.
+
+    f. Review and accept the Terms of Use.
+
+    g. Click **Launch Stack**.
+
+4. On the Stack Information screen, enter the following values:
+
+    a. **Name**: Default is Oracle E-Business Suite: Network Admin Stack for Landing Zones-<date&time>.
+
+    b. **Description**: Add a description for the stack.
+
+    c. Click **Next**.
+
+5. On the Configure Variables screen, enter the following values:
+
+    a. **Landing Zone Prefix**: ``ebshol``
+
+    b. **Parent Compartment**: Select your compartment as the parent compartment for your resources.
+
+    c. **EBS workload environment categories**: Using the drop-down list, add the following categories - **Production**, **QA**
+
+    d. Click **Next**.
+
+6. On the Review screen, verify the information, and click **Create**.
 
 ## Learn More
 
 * [Learn About Deploying Terraform Stacks for E-Business Suite and Cloud Manager](https://docs.oracle.com/en/solutions/deploy-landing-zone-e-business-suite-cm/learn-deploying-terraform-stacks-e-business-suite-and-cloud-manager1.html#GUID-CAA809AC-2A7F-40F9-96E9-493C2F388494)
-* [URL text 2](http://docs.oracle.com)
 
 ## Acknowledgements
-* **Author** - <Name, Title, Group>
-* **Contributors** -  <Name, Group> -- optional
-* **Last Updated By/Date** - <Name, Month Year>
+* **Author** 
+  - Santiago Bastidas, Product Management Director
+* **Contributors** 
+  -  Terri Noyes, Product Management Director
+* **Last Updated By/Date** 
+  - Tiffany Romero, May 2024
