@@ -16,7 +16,7 @@ In this lab, you will:
 * Set up a compartments structure,  administrative groups, and policies that make up the landing zone foundation.
 * Set up the network required to deploy EBS workloads and EBS Cloud Manager.
 
-### Prerequisites (Optional)
+### Prerequisites
 
 This lab assumes you have:
 * An Oracle Cloud account
@@ -36,7 +36,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
 ## Task 2: Create the Foundation
 
-The following diagram depicts the compartment distribution based on CIS OCI Foundations Benchmark as well as the application compartment for EBS with its own internal distribution per category of environments.
+The following diagram depicts the compartment distribution based on the CIS OCI Foundations Benchmark, which includes the application compartment for EBS workloads with subcompartments corresponding to environment categories (such as test or production).
 
 ![Diagram of the landing zone foundation.](images/tenancy-admin-diagram.png)
 
@@ -80,12 +80,11 @@ The following diagram depicts the compartment distribution based on CIS OCI Foun
 
 ## Task 3: Create the Network
 
-*Description here*
-<!--Add image to describe what is being deployed-->
+The following diagram depicts a virtual cloud network with all subnets required for running EBS workloads and EBS Cloud Manager. The network stack can be deployed multiple times, one for each environment category. 
+
+![Diagram of the landing zone network](images/network-diagram.png)
 
 1. In the Oracle Cloud Infrastructre (OCI) Console navigation menu, under **Marketplace**, select **All Applications**.
-
-	![Image alt text](images/sample1.png)
 
 2. From the Marketplace applications page:
 
