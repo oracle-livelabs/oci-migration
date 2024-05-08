@@ -36,7 +36,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
 ## Task 2: Create the Foundation
 
-*Description here*
+The following diagram depicts the compartment distribution based on CIS OCI Foundations Benchmark as well as the application compartment for EBS with its own internal distribution per category of environments.
 
 ![Diagram of the landing zone foundation.](images/tenancy-admin-diagram.png)
 
