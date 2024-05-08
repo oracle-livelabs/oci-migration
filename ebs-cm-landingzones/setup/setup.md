@@ -20,8 +20,6 @@ In this lab, you will:
 
 ### Prerequisites (Optional)
 
-*List the prerequisites for this lab using the format below. Fill in whatever knowledge, accounts, etc. is necessary to complete the lab. Do NOT list each previous lab as a prerequisite.*
-
 This lab assumes you have:
 * An Oracle Cloud account
 * All previous labs successfully completed
@@ -64,15 +62,15 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
     g. Click **Launch Stack**.
 
-4. On the Stack Information screen, enter the following values:
+3. On the Stack Information screen, enter the following values:
 
-    a. **Name**: Default is Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones-<date&time>.
+    a. **Name**: Default is Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones-&lt;date&time&gt;.
 
     b. **Description**: Add a description for the stack.
 
     c. Click **Next**.
 
-5. On the Configure Variables screen, enter the following values:
+4. On the Configure Variables screen, enter the following values:
 
     a. **Landing Zone Prefix**: ``ebshol``
 
@@ -82,7 +80,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
     d. Click **Next**.
 
-6. On the Review screen, verify the information, and click **Create**.
+5. On the Review screen, verify the information, and click **Create**.
 
 ## Task 3: Create the Network
 
