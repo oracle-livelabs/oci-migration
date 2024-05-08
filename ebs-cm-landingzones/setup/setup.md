@@ -41,7 +41,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
 1. In the Oracle Cloud Infrastructre (OCI) Console navigation menu, under **Marketplace**, select **All Applications**.
 
-	![Image alt text](images/sample1.png)
+	![Diagram of the landing zone foundation.](images/tenancy-admin-diagram.png)
 
 2. From the Marketplace applications page:
 
