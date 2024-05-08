@@ -2,29 +2,21 @@
 
 ## Introduction
 
-*Describe the lab in one or two sentences, for example:* This lab walks you through the steps to ...
+In this lab, you will prepare your Oracle E-Business Suite (EBS) environment by setting up Oracle E-Business Suite Cloud Manager authentication.
 
-Estimated Lab Time: -- minutes
+Estimated Lab Time: 20 minutes
 
 ### About <Product/Technology> (Optional)
-Enter background information here about the technology/feature or product used in this lab - no need to repeat what you covered in the introduction. Keep this section fairly concise. If you find yourself needing more than two sections/paragraphs, please utilize the "Learn More" section.
+In this lab, we will be showcasing how IAM identity domains can be used to manage single sign-on authentication. Oracle E-Business Suite Cloud Manager uses IAM identity domains to manage user authentication.
 
 ### Objectives
 
-*List objectives for this lab using the format below*
-
 In this lab, you will:
-* Objective 1
-* Objective 2
-* Objective 3
+* Register Oracle E-Business Suite Cloud Manager as a confidential application in your Default identity domain.
 
-### Prerequisites (Optional)
+### Prerequisites
 
-*List the prerequisites for this lab using the format below. Fill in whatever knowledge, accounts, etc. is necessary to complete the lab. Do NOT list each previous lab as a prerequisite.*
-
-This lab assumes you have:
-* An Oracle Cloud account
-* All previous labs successfully completed
+* This step is to be performed by the tenancy administrator.
 
 ## Task 1: Sign in to the Oracle Cloud Infrastructure Console
 

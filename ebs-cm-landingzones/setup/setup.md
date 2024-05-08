@@ -37,11 +37,10 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 ## Task 2: Create the Foundation
 
 *Description here*
-<!--Add image to describe what is being deployed-->
+
+![Diagram of the landing zone foundation.](images/tenancy-admin-diagram.png)
 
 1. In the Oracle Cloud Infrastructre (OCI) Console navigation menu, under **Marketplace**, select **All Applications**.
-
-	![Diagram of the landing zone foundation.](images/tenancy-admin-diagram.png)
 
 2. From the Marketplace applications page:
 
