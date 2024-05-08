@@ -66,9 +66,6 @@ The following figure describes the exercises you will perform in this workshop.
 * [Oracle E-Business Suite and Oracle Cloud Blog](https://blogs.oracle.com/ebsandoraclecloud/)
 
 ## Acknowledgements
-* **Author** 
-  - Santiago Bastidas, Product Management Director
-* **Contributors** 
-  -  Terri Noyes, Product Management Director
-* **Last Updated By/Date** 
-  - Tiffany Romero, May 2024
+* **Author** - Santiago Bastidas, Product Management Director
+* **Contributors** -  Terri Noyes, Product Management Director
+* **Last Updated By/Date** - Tiffany Romero, May 2024
