@@ -12,8 +12,6 @@ We will be using resource manager stacks available on the Oracle Cloud Infrastru
 
 ### Objectives
 
-*List objectives for this lab using the format below*
-
 In this lab, you will:
 * Set up a compartments structure,  administrative groups, and policies that make up the landing zone foundation.
 * Set up the network required to deploy EBS workloads and EBS Cloud Manager.
@@ -23,7 +21,6 @@ In this lab, you will:
 This lab assumes you have:
 * An Oracle Cloud account
 * All previous labs successfully completed
-
 
 ## Task 1: Sign in to the Oracle Cloud Infrastructure Console
 
@@ -80,7 +77,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
     d. Click **Next**.
 
-5. On the Review screen, verify the information, and click **Create**.
+5. On the Review screen, verify the information and click **Create**.
 
 ## Task 3: Create the Network
 
@@ -109,21 +106,35 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
 4. On the Stack Information screen, enter the following values:
 
-    a. **Name**: Default is Oracle E-Business Suite: Network Admin Stack for Landing Zones-<date&time>.
+    a. **Name**: Default is Oracle E-Business Suite: Network Admin Stack for Landing Zones-&lt;date&time&gt;.
 
     b. **Description**: Add a description for the stack.
 
     c. Click **Next**.
 
-5. On the Configure Variables screen, enter the following values:
+5. On the Configure variables screen, enter the following values:
 
-    a. **Landing Zone Prefix**: ``ebshol``
+    a. **Security compartment**: Select ``ebshol-Security`` from the drop-down list.
 
-    b. **Parent Compartment**: Select your compartment as the parent compartment for your resources.
+    b. **Workload identifier**: Select ``identity-ebshol-ebs`` from the drop-down list.
 
-    c. **EBS workload environment categories**: Using the drop-down list, add the following categories - **Production**, **QA**
+    c. Ensure **Create VCN** is selected (this is the default).
 
-    d. Click **Next**.
+    d. Ensure **Configure EBS Cloud manager subnets** is selected by default.
+
+    e. Select the **Public EBS Cloud Manager load balancer** checkbox. The EBS Cloud Manager instance subnet CIDR will auto-populate.
+
+    f. Ensure **Create subnets for an EBS environment** is selected (this is the default).
+
+    g. In the **Environment category identifier** drop-down list, select ``identity-ebshol-ebs-Production``. The application tier subnet and database tier subnet CIDRs will auto-populate.
+
+    h. Select the **Create default load balancer tier subnet** checkbox. The Loadbalancer subnet CIDR will auto-populate.
+
+    i. Select the **Create external load balancer and application tier subnets** checkbox. The external load balancer and external application tier subnet CIDRs will auto-populate. 
+
+    j. In the Bastion section, ensure the **Create bastion subnet** and **Use bastion service** checkboxes are selected (this is the default). The Bastion allow list and Bastion TTL Limit will be prepopulated.
+
+    k. Click **Next**.
 
 6. On the Review screen, verify the information, and click **Create**.
 
@@ -133,9 +144,6 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 * [Learn About Deploying Terraform Stacks for E-Business Suite and Cloud Manager](https://docs.oracle.com/en/solutions/deploy-landing-zone-e-business-suite-cm/learn-deploying-terraform-stacks-e-business-suite-and-cloud-manager1.html#GUID-CAA809AC-2A7F-40F9-96E9-493C2F388494)
 
 ## Acknowledgements
-* **Author** 
-  - Santiago Bastidas, Product Management Director
-* **Contributors** 
-  -  Terri Noyes, Product Management Director
-* **Last Updated By/Date** 
-  - Tiffany Romero, May 2024
+* **Author** - Santiago Bastidas, Product Management Director
+* **Contributors** -  Terri Noyes, Product Management Director; Tiffany Romero, EBS Documentation
+* **Last Updated By/Date** - Tiffany Romero, May 2024
