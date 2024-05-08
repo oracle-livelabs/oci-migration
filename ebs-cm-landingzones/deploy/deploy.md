@@ -48,6 +48,8 @@ You will now deploy Oracle E-Business Suite Cloud Manager using a Marketplace st
 
 Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy and the newly created OCI resources.
 
+![This is a diagram of the Oracle E-Business Suite Cloud Manager deployment.](./images/ebscm-diagram.png " ") 
+
 1. In the OCI console navigation menu, under **Marketplace**, select **All Applications**.
 
 <!--Add screenshot here-->
