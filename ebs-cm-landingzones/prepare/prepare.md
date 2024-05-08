@@ -13,19 +13,11 @@ In this lab, you will:
 * Objective 2
 * Objective 3
 
-### Prerequisites
 
-You will need the following in order to complete this workshop:
-* A modern browser
-* A secure remote login (SecureShell or SSH) utility - Such as PuTTY
-* A secure copy program
-* Knowledge of basic UNIX commands
-
-
-## Task 1: Concise Task Description
+## Task 1: Download and Unzip the Hands-On Lab Files
 <if type="Windows">
 
-1. Download the ebs-hol.zip file.
+1. Download the ``ebs-hol.zip`` file.
 <!-- Use new link -->
 2. Open Windows Explorer and navigate to the downloaded zip file.
 3. Move the zip file to your folder Desktop.

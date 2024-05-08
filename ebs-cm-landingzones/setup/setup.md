@@ -2,21 +2,21 @@
 
 ## Introduction
 
-*Describe the lab in one or two sentences, for example:* This lab walks you through the steps to ...
+In this lab, you will deploy a Terraform-based landing zone template to your tenancy. This template meets the security guidance prescribed in the CIS Oracle Cloud Infrastructure Foundations Benchmark and fulfills Oracle E-Business Suite (EBS)-specific workload requirements.
 
-Estimated Lab Time: -- minutes
+Estimated Lab Time: 25 minutes
 
-### About <Product/Technology> (Optional)
-Enter background information here about the technology/feature or product used in this lab - no need to repeat what you covered in the introduction. Keep this section fairly concise. If you find yourself needing more than two sections/paragraphs, please utilize the "Learn More" section.
+### About Oracle Cloud Infrastructure Marketplace Stacks
+
+We will be using resource manager stacks available on the Oracle Cloud Infrastructure (OCI) Marketplace to deliver the templates. 
 
 ### Objectives
 
 *List objectives for this lab using the format below*
 
 In this lab, you will:
-* Objective 1
-* Objective 2
-* Objective 3
+* Set up a compartments structure,  administrative groups, and policies that make up the landing zone foundation.
+* Set up the network required to deploy EBS workloads and EBS Cloud Manager.
 
 ### Prerequisites (Optional)
 
@@ -42,6 +42,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 ## Task 2: Create the Foundation
 
 *Description here*
+<!--Add image to describe what is being deployed-->
 
 1. In the Oracle Cloud Infrastructre (OCI) Console navigation menu, under **Marketplace**, select **All Applications**.
 
@@ -86,6 +87,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 ## Task 3: Create the Network
 
 *Description here*
+<!--Add image to describe what is being deployed-->
 
 1. In the Oracle Cloud Infrastructre (OCI) Console navigation menu, under **Marketplace**, select **All Applications**.
 
@@ -129,6 +131,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
 ## Learn More
 
+* [Deploy a secure landing zone that meets the CIS Foundations Benchmark for Oracle Cloud](https://docs.oracle.com/en/solutions/cis-oci-benchmark/index.html)
 * [Learn About Deploying Terraform Stacks for E-Business Suite and Cloud Manager](https://docs.oracle.com/en/solutions/deploy-landing-zone-e-business-suite-cm/learn-deploying-terraform-stacks-e-business-suite-and-cloud-manager1.html#GUID-CAA809AC-2A7F-40F9-96E9-493C2F388494)
 
 ## Acknowledgements
