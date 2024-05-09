@@ -182,9 +182,6 @@ Once logged in, you are on the **Environments page**.
 * [Oracle E-Business Suite and Oracle Cloud Blog](https://blogs.oracle.com/ebsandoraclecloud/)
 
 ## Acknowledgements
-* **Author** 
-  - Santiago Bastidas, Product Management Director
-* **Contributors** 
-  -  Terri Noyes, Product Management Director
-* **Last Updated By/Date** 
-  - Tiffany Romero, May 2024
+* **Author** - Santiago Bastidas, Product Management Director
+* **Contributors** -  Tiffany Romero, Technical Writer; Terri Noyes, Product Management Director
+* **Last Updated By/Date** - Tiffany Romero, EBS Documentation, May 2024

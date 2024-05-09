@@ -251,9 +251,6 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
 * [URL text 2](http://docs.oracle.com)
 
 ## Acknowledgements
-* **Author** 
-  - Santiago Bastidas, Product Management Director
-* **Contributors** 
-  -  Terri Noyes, Product Management Director
-* **Last Updated By/Date** 
-  - Tiffany Romero, May 2024
+* **Author** - Santiago Bastidas, Product Management Director
+* **Contributors** -  Tiffany Romero, Technical Writer; Terri Noyes, Product Management Director
+* **Last Updated By/Date** - Tiffany Romero, EBS Documentation, May 2024

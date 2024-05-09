@@ -29,7 +29,7 @@ This lab assumes you have:
 The following figure outlines the workshop architecture. 
 
 **Figure 1: Workshop Architecture**
-<!-- Insert architecture here -->
+*Architecture diagram goes here*
 
 This workshop uses the following components: 
 * Trial accounts (one per attendee)
@@ -46,10 +46,9 @@ This workshop uses the following components:
     * Cloned from environment 1
     * Application and database tiers on this compute instance
 
-The following figure describes the exercises you will perform in this workshop.
+The following describes the exercises you will perform in this workshop.
 
-**Figure 2: Storyboard**
-<!-- Insert storyboard here -->
+**Table 2: Storyboard**
 
 | What          |      How      |  Notes |
 | ------------- | ------------- | ------------- |
@@ -67,5 +66,5 @@ The following figure describes the exercises you will perform in this workshop.
 
 ## Acknowledgements
 * **Author** - Santiago Bastidas, Product Management Director
-* **Contributors** -  Terri Noyes, Product Management Director
-* **Last Updated By/Date** - Tiffany Romero, May 2024
+* **Contributors** -  Tiffany Romero, Technical Writer; Terri Noyes, Product Management Director
+* **Last Updated By/Date** - Tiffany Romero, EBS Documentation, May 2024
