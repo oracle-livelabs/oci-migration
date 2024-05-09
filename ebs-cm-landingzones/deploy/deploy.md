@@ -58,10 +58,9 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     a. Navigate to **Filter**, then **Type**, and select **Stack**.
 
-    b. In the search bar, enter "E-Business Suite".
+    b. In the search bar, enter ``E-Business Suite``.
 
-    c. Click the application **Oracle E-Business Suite Cloud Manager Stack for Demos**.
-    <!--Add screenshot here-->
+    c. Click the application **Oracle E-Business Suite: Cloud Manager Stack for Landing Zones**.
 
 3. In the **Version** drop-down list, ensure the default is selected.
 
@@ -70,7 +69,7 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 5. Review and accept the Terms of Use.
 
 6. Click **Launch Stack**.
-<!--Add screenshot here-->
+![This is ](images/mktpl-cm-stack-lz.png)
 
 7. On the Stack Information screen, enter the following values:
 
@@ -86,7 +85,7 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     d. Click **Next**.
     
-    <!--Add screenshot here-->
+    ![This is ](images/ebscm-stack-info.png)
 
 ## Task 3: Log in to Oracle E-Business Suite Cloud Manager
 

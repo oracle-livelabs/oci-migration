@@ -16,7 +16,7 @@ In this lab, you will:
 
 ### Prerequisites
 
-* This step is to be performed by the tenancy administrator.
+* The procedure described in this lab is to be performed by the tenancy administrator.
 
 ## Task 1: Sign in to the Oracle Cloud Infrastructure Console
 
@@ -63,10 +63,10 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
     a. Click **Configure this application as a client now**.
     
-    b. Under Allowed Grant Types, select the following options:
-    - Client Credentials
-    - Refresh Token
-    - Authorization Code
+    b. Under Allowed grant types, select the checkboxes for the following options:
+    - **Client credentials**
+    - **Refresh token**
+    - **Authorization code**
 
     c. Now, we are going to set our Cloud Manager URL. For this lab, use the following example URL: ``https://myebscm.ebshol.org:443``
 
@@ -78,7 +78,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
     
     For example: ``https://myebscm.ebshol.org:443/cm/auth/callback``
 
-    e. **Post-Logout Redirect URL**: ``<Cloud Manager Balancer URL>/cm/ui/index.html?root=login``
+    e. **Post-logout redirect URL**: ``<Cloud Manager Balancer URL>/cm/ui/index.html?root=login``
     
     For example: ``https://myebscm.ebshol.org:443/cm/ui/index.html?root=login``
 
@@ -88,15 +88,18 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
     g. Under Client Type, ensure that the **Confidential** radio button is selected.
 
-    h. Select the **Introspect** option for Allowed Operations.
+    h. Select the **Introspect** checkbox for Allowed operations.
 
-    ![This screenshot shows the Configure OAuth section when adding an application. It highlights the Confidential radio button that must be selected as well as the Introspect check box which must be checked.](./images/client-configuration-2.png " ")
+      ![This screenshot shows the Configure OAuth section when adding an application. It highlights the Confidential radio button that must be selected as well as the Introspect check box which must be checked.](./images/client-configuration-2.png " ")
 
-    i. Under Token Issuance Policy, select the **Add app roles** check box.
+    i. Under Token issuance policy, select the **Add app roles** checkbox.
 
      1. Click **Add roles**.
+     
         ![This screenshot shows the Configure OAuth section when adding an application and highlights the Add app roles check box which must be selected and the Add roles button in the user interface.](./images/client-configuration-3.png " ")
+     
      2. Select **Authenticator Client** and **Me**. Then click **Add**.
+     
         ![This screenshot shows the Add app roles section and highlights the Me and Authenticator Client check boxes to be selected. It also points out the Add button on the user interface.](./images/add-app-roles.png " ")
     
     3. Click **Next**.

@@ -61,13 +61,13 @@ The following diagram depicts the compartment distribution based on the CIS OCI 
 
 3. On the Stack Information screen, enter the following values:
 
-    a. **Name**: Default is "Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones-&lt;date&time&gt;".
+    a. **Name**: Default name is "Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones-&lt;date&time&gt;".
 
     b. **Description**: Add a description for the stack.
 
     c. Click **Next**.
 
-    ![Stack Information Screen for Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones](images/tenancy-stack-info.png)
+    ![NEEDED: Stack Information Screen for Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones](images/tenancy-stack-info.png)
 
 4. On the Configure Variables screen, enter the following values:
 
@@ -113,7 +113,7 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
 3. On the Stack Information screen, enter the following values:
 
-    a. **Name**: Default is "Oracle E-Business Suite: Network Admin Stack for Landing Zones-&lt;date&time&gt;".
+    a. **Name**: Default name is "Oracle E-Business Suite: Network Admin Stack for Landing Zones-&lt;date&time&gt;".
 
     b. **Description**: Add a description for the stack.
 
@@ -123,27 +123,27 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
 4. On the Configure variables screen, enter the following values:
 
-    a. **Security compartment**: Select ``ebshol-Security`` from the drop-down list.
+    a. **Security compartment**: Select "ebshol-Security" from the drop-down list.
 
-    b. **Workload identifier**: Select ``identity-ebshol-ebs`` from the drop-down list.
+    b. **Workload identifier**: Select "identity-ebshol-ebs" from the drop-down list.
 
-    c. Ensure **Create VCN** is selected (this is the default).
+    c. Ensure the **Create VCN** checkbox is selected (this is the default).
 
-    d. Ensure **Configure EBS Cloud manager subnets** is selected by default.
+    d. Ensure the **Configure EBS Cloud Manager subnets** checkbox is selected (this is the default).
 
     ![Configure Variables Screen for Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/network-stack-config-var1.png)
 
-    e. Select the **Public EBS Cloud Manager load balancer** checkbox. The EBS Cloud Manager instance subnet CIDR will auto-populate.
+    e. Select the **Public EBS Cloud Manager load balancer** checkbox. The **EBS Cloud Manager instance subnet CIDR** field will auto-populate.
 
-    f. Ensure **Create subnets for an EBS environment** is selected (this is the default).
+    f. Ensure the **Create subnets for an EBS environment** checkbox is selected (this is the default).
 
-    g. In the **Environment category identifier** drop-down list, select "identity-ebshol-ebs-Production". The application tier subnet and database tier subnet CIDRs will auto-populate.
+    g. In the **Environment category identifier** drop-down list, select "identity-ebshol-ebs-Production". The **Application tier subnet CIDR** and **Database tier subnet CIDR** fields will auto-populate.
 
     ![Configure Variables Screen for Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/network-stack-config-var2.png)
 
-    h. Select the **Create default load balancer tier subnet** checkbox. The Loadbalancer subnet CIDR will auto-populate.
+    h. Select the **Create default load balancer tier subnet** checkbox. The **Loadbalancer subnet CIDR** will auto-populate.
 
-    i. Select the **Create external load balancer and application tier subnets** checkbox. The external load balancer and external application tier subnet CIDRs will auto-populate. 
+    i. Select the **Create external load balancer and application tier subnets** checkbox. The **External load balancer subnet CIDR** and **External application tier subnet CIDR** fields will auto-populate. 
 
     ![Configure Variables Screen for Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/network-stack-config-var3.png)
 
@@ -153,7 +153,7 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
     ![Configure Variables Screen for Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/network-stack-config-var4.png)
 
-6. On the Review screen, verify the information, and click **Create**.
+6. On the Review screen, verify the information and click **Create**.
 
 ## Learn More
 
