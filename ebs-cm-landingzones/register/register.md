@@ -2,12 +2,12 @@
 
 ## Introduction
 
-In this lab, you will prepare your Oracle E-Business Suite (EBS) environment by setting up Oracle E-Business Suite Cloud Manager authentication.
+In this lab, you will set up Oracle E-Business Suite Cloud Manager authentication.
 
 Estimated Lab Time: 20 minutes
 
-### About <Product/Technology> (Optional)
-In this lab, we will be showcasing how IAM identity domains can be used to manage single sign-on authentication. Oracle E-Business Suite Cloud Manager uses IAM identity domains to manage user authentication.
+### About Oracle Identity and Access Management (IAM) Identity Domains
+In this lab, we will be showcasing how Oracle Identity and Access Management (IAM) identity domains can be used to manage single sign-on authentication. Oracle E-Business Suite Cloud Manager uses IAM identity domains to manage user authentication.
 
 ### Objectives
 
@@ -41,9 +41,9 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
     ![This screenshot shows the Domains page.](./images/domains-listing.png " ")
 
-4. Click **Applications** in the menu on the left.
+4. Click **Integrated applications** in the menu on the left. 
 
-    ![This screenshot shows the Applications page and highlights the Add application button within the user interface.](./images/applications-menu.png " ")
+    ![TIFFANY UPDATE SCREENSHOT This screenshot shows the Applications page and highlights the Add application button within the user interface.](./images/applications-menu.png " ")
 
 5. Click **Add application**.
 
@@ -108,7 +108,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
     ![This screenshot shows the Finish button within the user interface in the Configure policy section.](./images/configure-policy.png " ")
 
-12. Make a note of the following values under General Information in your ``key-data.txt`` (under ``Client_ID`` and ``Client_Secret``, respectively):
+12. Make a note of the following values under General information in your `key-data.txt` (under **Client_ID** and `Client_Secret`, respectively):
 
     • Client ID
 
@@ -120,16 +120,13 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
     ![This screenshot highlights the Activate button within the user interface and displays the Activate application pop-up window to activate your application.](./images/activate-application.png " ")
 
-14. Record your Oracle Identity Cloud Service Client Tenant value as ``Client_Tenant`` in the ``key-data.txt``. This is found in the Overview of the default domain under the Domain Information section. It is seen as part of the URL found in Domain URL, after the "//" and before ".identity.oraclecloud.com". It begins with the characters "idcs-", followed by a string of numbers and letters in the format ``idcs-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx``
+14. Record your Domain URL in the `key-data.txt` file. Click the "Copy" link next to the Domain URL value. When pasting in to the `key-data.txt`, remove the port portion of the URL (for example, `:443`).
 
-    For Example: ``idcs-6572bfeb183b4becad9e649bfa14a488``.
-    
-    ![This screenshot shows the Domain information tab and highlights the Oracle Identity Cloud Service Client Tenant information you must record in your key-data.txt file.](./images/client-tenant.png " ")
+![SCREENSHOT](images/domainurl.png)
 
 ## Learn More
 
 * [Learn About Deploying Terraform Stacks for E-Business Suite and Cloud Manager](https://docs.oracle.com/en/solutions/deploy-landing-zone-e-business-suite-cm/learn-deploying-terraform-stacks-e-business-suite-and-cloud-manager1.html#GUID-CAA809AC-2A7F-40F9-96E9-493C2F388494)
-* [URL text 2](http://docs.oracle.com)
 
 ## Acknowledgements
 * **Author** - Santiago Bastidas, Product Management Director

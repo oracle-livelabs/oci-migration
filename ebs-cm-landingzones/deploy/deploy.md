@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab, we will deploy Oracle E-Business Suite (EBS) Cloud Manager using the Marketplace Application: Oracle E-Business Suite Cloud Manager Stack for Demos.
+In this lab, we will deploy Oracle E-Business Suite (EBS) Cloud Manager using the Marketplace application *Oracle E-Business Suite: Cloud Manager Deployment Stack for Landing Zones*.
 
 Estimated Lab Time: 30 minutes
 
@@ -58,7 +58,7 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     a. Navigate to **Filter**, then **Type**, and select **Stack**.
 
-    b. In the search bar, enter ``E-Business Suite``.
+    b. In the search bar, enter `E-Business Suite`.
 
     c. Click the application **Oracle E-Business Suite: Cloud Manager Stack for Landing Zones**.
 
@@ -81,7 +81,7 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
       1. **Compartment**: This is the one chosen previously.
 
-      2. **Terraform Version**: Select 0.12.x from the drop-down list.
+      2. **Terraform Version**: Select "0.12.x" from the drop-down list.
 
     d. Click **Next**.
     
@@ -91,7 +91,7 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
 Before logging into the EBS Cloud Manager web application, you need to add the **hostname** in the login URL to your local computer hosts file.
 
-Follow the applicable set of instructions based on your workstation to edit the local ``hosts`` file and add an entry and perform this configuration:
+Follow the applicable set of instructions based on your workstation to edit the local `hosts` file and add an entry and perform this configuration:
 
 <if type="Windows">
 
@@ -101,36 +101,32 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   2. Hover over Notepad, right-click, and select the option **Run as Administrator**.
 
-  3. In Notepad, navigate to ``File > Open``.
+  3. In Notepad, navigate to **File**, then **Open**.
 
-  4. Browse to ``C:\\Windows\System32\drivers\etc``.
+  4. Browse to `C:\\Windows\System32\drivers\etc`.
 
   5. Find the file "hosts".
 
-      ![This screenshot depicts the navigation to the hosts file within Windows Explorer. ](./images/12.png " ")
+      ![This screenshot depicts the navigation to the hosts file within Windows Explorer. ](./images/windows-hostsfile.png " ")
 
   6. In the hosts file, scroll down to the end of the content.
 
-  7. Add the following entry to the very end of the file: ``<lb_public_ip> myebscm.ebshol.org``
+  7. Add the following entry to the very end of the file: `<lb_public_ip> myebscm.ebshol.org`
 
   8. Save the file.
 
-  9. Type the Login URL generated and documented to your ``key-data.txt`` previously into your browser.
+  9. Type the Login URL generated and documented to your `key-data.txt` previously into your browser.
   
   10. Log into the Oracle E-Business Suite Cloud Manager using your IDCS credentials for the EBS Cloud Manager account as documented in your ``key-data.txt`` file.
+    ![This screenshot is of the Oracle Cloud Account Sign In page.](./images/ebscmcloudlogin.png " ")
+    
+  Once you are logged in, you are on the **Environments page**.
+  ![This screenshot is of the Environments page within the Oracle E-Business Suite Cloud Manager user interface.](./images/environmentspage.png " ")
 
-  Note: It may take some additional time for the load balancer to be properly configured. Sometimes it may take up to 30 minutes or an hour to configure. If you would like to check on the status of the load balancer,  in OCI go to **Networking** > **Load Balancers** and then check the **Overall Heatlh** status. If it is OK, the connection can be established. 
-
-  Note: If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
-
-  Note: Your browser may give you an error when attempting to access the EBS Cloud Manager. If you run into an error using the EBS login URL try using a different browser or an incognito session. If this does not solve the problem, try adding ``:443`` after the url (i.e. ``https://myebscm.ebshol.org:443``).
-
-  ![This screenshot is of the Oracle Cloud Account Sign In page.](./images/14.png " ")
-
-Once logged in, you are on the **Environments page**.
-
-  ![This screenshot is of the Environments page within the Oracle E-Business Suite Cloud Manager user interface.](./images/15.png " ")
-
+  **Notes**: 
+  * It may take some additional time for the load balancer to be properly configured. Sometimes it may take up to 30 minutes or an hour to configure. If you would like to check on the status of the load balancer, in OCI go to **Networking**, then **Load Balancers**, and check the **Overall Heatlh** status. If it is OK, the connection can be established. 
+  * If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Manage the EBS Cloud Manager Virtual Machine."
+  * Your browser may give you an error when attempting to access the EBS Cloud Manager. If you run into an error using the EBS login URL try using a different browser or an incognito session. If this does not solve the problem, try adding `:443` after the url (for example, `https://myebscm.ebshol.org:443`).
 </if>
 
 <if type="Mac">
@@ -139,37 +135,32 @@ Once logged in, you are on the **Environments page**.
 
   1. Open a Terminal window.
 
-  2. Enter the following command:
-
-    ```
-    <copy>
-    sudo vi /etc/hosts
-    </copy>
-    ```
+  2. Enter the following command: `sudo vi /etc/hosts`
 
   This will then require your local computer password to edit the file. Enter the password and you should see a screen similar to the one shown below.
 
-  3. Type 'i' to edit the file.
+  3. Type `i` to edit the file.
 
-  4. Go to the last line and add the following entry as follows: ``<lb_public_ip> myebscm.ebshol.org``
+  4. Go to the last line and add the following entry as follows: `<lb_public_ip> myebscm.ebshol.org`
 
-  5. Once you have finished editing the file, hit 'esc' and enter ``:wq`` to save and exit.
+  ![This screenshot shows how to edit the hosts file on a Mac.](./images/mac-editlastline.png " ")
 
-  ![This screenshot shows how to edit the hosts file on a Mac.](./images/13.png " ")
+  5. Once you have finished editing the file, hit 'esc' and enter `:wq` to save and exit.
 
-  6. Type the Login URL generated and documented to your ``key-data.txt`` previously into your browser.
+  6. Type the Login URL generated and documented to your `key-data.txt` previously into your browser.
   
   7. Log into the Oracle E-Business Suite Cloud Manager using your IDCS credentials for the EBS Cloud Manager account as documented in your ``key-data.txt`` file.
 
-  Note: It may take some additional time for the load balancer to be properly configured. Sometimes it may take up to 30 minutes or an hour to configure. If you would like to check on the status of the load balancer,  in OCI go to **Networking** > **Load Balancers** and then check the **Overall Heatlh** status. If it is OK, the connection can be established. 
+      Notes: 
+      * It may take some additional time for the load balancer to be properly configured. Sometimes it may take up to 30 minutes or an hour to configure. If you would like to check on the status of the load balancer,  in OCI navigate to **Networking**, then **Load Balancers**, and check the **Overall Heatlh** status. If the status is OK, the connection can be established. 
 
-  Note: If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
+      * If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
 
-  Note: Your browser may give you an error when attempting to access the EBS Cloud Manager. If you run into an error using the EBS login URL try using a different browser or an incognito session. If this does not solve the problem, try adding ``:443`` after the url (i.e. ``https://myebscm.ebshol.org:443``).
+      * Your browser may give you an error when attempting to access the EBS Cloud Manager. If you run into an error using the EBS login URL try using a different browser or an incognito session. If this does not solve the problem, try adding `:443` after the url (for example, `https://myebscm.ebshol.org:443`).
 
-  ![This screenshot is of the Oracle Cloud Account Sign In page.](./images/14.png " ")
+      ![This screenshot is of the Oracle Cloud Account Sign In page.](./images/14.png " ")
 
-Once logged in, you are on the **Environments page**.
+  Once logged in, you are on the **Environments page**.
 
   ![This screenshot is of the Environments page within the Oracle E-Business Suite Cloud Manager user interface.](./images/15.png " ")
 

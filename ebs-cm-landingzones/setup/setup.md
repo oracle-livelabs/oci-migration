@@ -26,16 +26,18 @@ This lab assumes you have:
 
 Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastructure (OCI) Console.
 
-1. Reference your ``key-data.txt`` file and locate the tenancy administrator credentials.
+1. Reference your `key-data.txt` file and locate the tenancy administrator credentials.
 
 2. Sign in to the Oracle Cloud Infrastructure console using the following:
 
-    * **User name**: ``Tenancy Admin User``
-    * **Password**: ``Tenancy Admin Password``
+    * **User name**: `Tenancy Admin User`
+    * **Password**: `Tenancy Admin Password`
 
 ## Task 2: Create the Foundation
 
-The following diagram depicts the compartment distribution based on the CIS OCI Foundations Benchmark, which includes the application compartment for EBS workloads with subcompartments corresponding to environment categories (such as test or production).
+In this task, we will create the compartments, management groups, and policies that make up the foundation for the CIS OCI Foundations Benchmark.
+
+The following diagram depicts the compartment distribution, which includes the application compartment for EBS workloads with subcompartments corresponding to environment categories (such as test or production).
 
 ![Diagram of the landing zone foundation.](images/tenancy-admin-diagram.png)
 
@@ -45,9 +47,11 @@ The following diagram depicts the compartment distribution based on the CIS OCI 
 
     a. Navigate to **Filter**, then **Type**, and select **Stack**.
 
-    b. In the search bar, enter``E-Business Suite``.
+    b. In the search bar, enter `E-Business Landing Zone`.
 
     c. Click the application **Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones**.
+
+    ![ADD SCREENSHOT OF MARKETPLACE RESULTS - Tiffany circle the correct stack to download](images/mktpl-results.png)
 
     d. In the **Version** drop-down list, ensure the default is selected. 
     
@@ -59,7 +63,7 @@ The following diagram depicts the compartment distribution based on the CIS OCI 
 
     ![Oracle Cloud Infrastructure Marketplace - Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/mktpl-tenancy-admin-stack-lz.png)
 
-3. On the Stack Information screen, enter the following values:
+3. On the Stack information screen, enter the following values:
 
     a. **Name**: Default name is "Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones-&lt;date&time&gt;".
 
@@ -69,11 +73,11 @@ The following diagram depicts the compartment distribution based on the CIS OCI 
 
     ![NEEDED: Stack Information Screen for Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones](images/tenancy-stack-info.png)
 
-4. On the Configure Variables screen, enter the following values:
+4. On the Configure variables screen, enter the following values:
 
-    a. **Landing Zone Prefix**: ``ebshol``
+    a. **Landing Zone Prefix**: `ebshol`
 
-    b. **Parent Compartment**: Select your compartment as the parent compartment for your resources.
+    b. **Parent Compartment**: Select your root compartment as the parent compartment for your resources.
 
     c. **EBS workload environment categories**: Using the drop-down list, add the following categories - **Production**, **QA**
 
@@ -87,6 +91,8 @@ The following diagram depicts the compartment distribution based on the CIS OCI 
 
 ## Task 3: Create the Network
 
+This task guides you through the process of running the network stack, which will allow you to define a VCN, subnets to support EBS Cloud Manager deployment, as well as the subnets for the first environment category. Additionally, you will configure security rules, and deploy gateways required to support a secured EBS workload deployment. 
+
 The following diagram depicts a virtual cloud network with all subnets required for running EBS workloads and EBS Cloud Manager. The network stack can be deployed multiple times, one for each environment category. 
 
 ![Diagram of the landing zone network](images/network-diagram.png)
@@ -97,13 +103,15 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
     a. Navigate to **Filter**, then **Type**, and select **Stack**.
 
-    b. In the search bar, enter ``E-Business Suite``.
+    b. In the search bar, enter `E-Business Landing Zone`.
 
     c. Click the application **Oracle E-Business Suite: Network Admin Stack for Landing Zones**.
 
+    ![ADD SCREENSHOT OF MARKETPLACE RESULTS  - Tiffany circle the correct stack to download](images/mktpl-results.png)
+
     d. In the **Version** drop-down list, ensure the default is selected. 
     
-    e. In the **Compartment** drop-down list, select the ebshold-Network.
+    e. In the **Compartment** drop-down list, select the ebshol-Network.
 
     f. Review and accept the Terms of Use.
 
@@ -155,10 +163,13 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
 6. On the Review screen, verify the information and click **Create**.
 
+![NEEDED REVIEW SCREENSHOT](images/network-stack-review.png)
+
 ## Learn More
 
 * [Deploy a secure landing zone that meets the CIS Foundations Benchmark for Oracle Cloud](https://docs.oracle.com/en/solutions/cis-oci-benchmark/index.html)
 * [Learn About Deploying Terraform Stacks for E-Business Suite and Cloud Manager](https://docs.oracle.com/en/solutions/deploy-landing-zone-e-business-suite-cm/learn-deploying-terraform-stacks-e-business-suite-and-cloud-manager1.html#GUID-CAA809AC-2A7F-40F9-96E9-493C2F388494)
+* [Oracle E-Business Suite Cloud Manager Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f35809/toc.htm)
 
 ## Acknowledgements
 * **Author** - Santiago Bastidas, Product Management Director
