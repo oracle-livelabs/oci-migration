@@ -13,7 +13,7 @@ We will be using resource manager stacks available on the Oracle Cloud Infrastru
 ### Objectives
 
 In this lab, you will:
-* Set up a compartments structure,  administrative groups, and policies that make up the landing zone foundation.
+* Set up a compartments structure, administrative groups, and policies that make up the landing zone foundation.
 * Set up the network required to deploy EBS workloads and EBS Cloud Manager.
 
 ### Prerequisites
@@ -39,7 +39,7 @@ In this task, we will create the compartments, management groups, and policies t
 
 The following diagram depicts the compartment distribution, which includes the application compartment for EBS workloads with subcompartments corresponding to environment categories (such as test or production).
 
-![Diagram of the landing zone foundation.](images/tenancy-admin-diagram.png)
+![This is a diagram of the landing zone foundation.](images/tenancy-admin-diagram.png)
 
 1. In the Oracle Cloud Infrastructre (OCI) Console navigation menu, under **Marketplace**, select **All Applications**.
 
@@ -51,7 +51,7 @@ The following diagram depicts the compartment distribution, which includes the a
 
     c. Click the application **Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones**.
 
-    ![Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones in the Oracle Cloud Infrastructure Marketplace](images/marketplace-lz-stacks-tenancy.png)
+    ![This is Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones in the Oracle Cloud Infrastructure Marketplace.](images/marketplace-lz-stacks-tenancy.png)
 
     d. In the **Version** drop-down list, ensure the default is selected. 
     
@@ -61,7 +61,7 @@ The following diagram depicts the compartment distribution, which includes the a
 
     g. Click **Launch Stack**.
 
-    ![Oracle Cloud Infrastructure Marketplace - Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/mktpl-tenancy-admin-stack-lz.png)
+    ![This is the launch page for the Oracle E-Business Suite: Network Admin Stack for Landing Zones.](images/mktpl-tenancy-admin-stack-lz.png)
 
 3. On the Stack information screen, enter the following values:
 
@@ -71,7 +71,7 @@ The following diagram depicts the compartment distribution, which includes the a
 
     c. Click **Next**.
 
-    ![Stack Information Screen for Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones](images/tenancy-stack-info.png)
+    ![This is the Stack information Screen for the Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones.](images/tenancy-stack-info.png)
 
 4. On the Configure variables screen, enter the following values:
 
@@ -83,11 +83,11 @@ The following diagram depicts the compartment distribution, which includes the a
 
     d. Click **Next**.
 
-    ![Configure Variables Screen for Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones](images/tenancy-stack-config-variables.png)
+    ![This is the Configure variables screen for the Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones.](images/tenancy-stack-config-variables.png)
 
 5. On the Review screen, verify the information and click **Create**.
 
-    ![Review Screen for Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones](images/tenancy-stack-review.png)
+    ![This is the Review screen for the Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones.](images/tenancy-stack-review.png)
 
 ## Task 3: Create the Network
 
@@ -95,7 +95,7 @@ This task guides you through the process of running the network stack, which wil
 
 The following diagram depicts a virtual cloud network with all subnets required for running EBS workloads and EBS Cloud Manager. The network stack can be deployed multiple times, one for each environment category. 
 
-![Diagram of the landing zone network](images/network-diagram.png)
+![This is a diagram of the landing zone network.](images/network-diagram.png)
 
 1. In the Oracle Cloud Infrastructre (OCI) Console navigation menu, under **Marketplace**, select **All Applications**.
 
@@ -107,7 +107,7 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
     c. Click the application **Oracle E-Business Suite: Network Admin Stack for Landing Zones**.
 
-    ![Oracle E-Business Suite: Network Admin Stack for Landing Zones in the Oracle Cloud Infrastructure Marketplace](images/marketplace-lz-stacks-network.png)
+    ![This is the Oracle E-Business Suite: Network Admin Stack for Landing Zones in the Oracle Cloud Infrastructure Marketplace.](images/marketplace-lz-stacks-network.png)
 
     d. In the **Version** drop-down list, ensure the default is selected. 
     
@@ -117,7 +117,7 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
     g. Click **Launch Stack**.
 
-    ![Oracle Cloud Infrastructure Marketplace - Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/mktpl-network-admin-stack-lz.png)
+    ![This is the Oracle E-Business Suite: Network Admin Stack for Landing Zones in the Oracle Cloud Infrastructure Marketplace.](images/mktpl-network-admin-stack-lz.png)
 
 3. On the Stack Information screen, enter the following values:
 
@@ -127,7 +127,7 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
     c. Click **Next**.
 
-    ![Stack Information Screen for Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/network-stack-info.png)
+    ![This is the stack information screen for the Oracle E-Business Suite: Network Admin Stack for Landing Zones.](images/network-stack-info.png)
 
 4. On the Configure variables screen, enter the following values:
 
@@ -139,7 +139,7 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
     d. Ensure the **Configure EBS Cloud Manager subnets** checkbox is selected (this is the default).
 
-    ![Configure Variables Screen for Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/network-stack-config-var1.png)
+    ![This is the Configure variables screen for the Oracle E-Business Suite: Network Admin Stack for Landing Zones.](images/network-stack-config-var1.png)
 
     e. Select the **Public EBS Cloud Manager load balancer** checkbox. The **EBS Cloud Manager instance subnet CIDR** field will auto-populate.
 
@@ -147,23 +147,23 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
     g. In the **Environment category identifier** drop-down list, select "identity-ebshol-ebs-Production". The **Application tier subnet CIDR** and **Database tier subnet CIDR** fields will auto-populate.
 
-    ![Configure Variables Screen for Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/network-stack-config-var2.png)
+    ![This is the Configure variables screen for the Oracle E-Business Suite: Network Admin Stack for Landing Zones.](images/network-stack-config-var2.png)
 
     h. Select the **Create default load balancer tier subnet** checkbox. The **Loadbalancer subnet CIDR** will auto-populate.
 
     i. Select the **Create external load balancer and application tier subnets** checkbox. The **External load balancer subnet CIDR** and **External application tier subnet CIDR** fields will auto-populate. 
 
-    ![Configure Variables Screen for Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/network-stack-config-var3.png)
+    ![This is the Configure variables screen for the Oracle E-Business Suite: Network Admin Stack for Landing Zones.](images/network-stack-config-var3.png)
 
     j. In the Bastion section, ensure the **Create bastion subnet** and **Use bastion service** checkboxes are selected (this is the default). The **Bastion allow list** and **Bastion TTL Limit** will be prepopulated.
 
     k. Click **Next**.
 
-    ![Configure Variables Screen for Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/network-stack-config-var4.png)
+    ![This is the Configure variables screen for the racle E-Business Suite: Network Admin Stack for Landing Zones.](images/network-stack-config-var4.png)
 
 5. On the Review screen, verify the information and click **Create**.
 
-    ![Review Screen for Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/network-stack-review.png)
+    ![This is the Review screen for the Oracle E-Business Suite: Network Admin Stack for Landing Zones.](images/network-stack-review.png)
 
 ## Learn More
 
