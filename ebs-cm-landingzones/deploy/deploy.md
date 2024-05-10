@@ -55,7 +55,7 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     c. Click the application **Oracle E-Business Suite: Cloud Manager Deployment Stack for Landing Zones**.
 
-    <!--Add screenshot from marketplace and circle the correct stack-->
+    ![This is a screenshot of the Oracle Cloud Infrastructure Marketplace, highlighitng the Oracle E-Business Suite: Cloud Manager Deployment Stack for Landing Zones](images/marketplace-lz-stacks-cm.png)
 
 3. In the **Version** drop-down list, ensure the default is selected.
 
@@ -64,22 +64,21 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 5. Review and accept the Terms of Use.
 
 6. Click **Launch Stack**.
-![This is ](images/mktpl-cm-stack-lz.png) 
-<!--Santiago to provide updated screen-->
+![This is ](images/ebscm-dev-stack-lz.png) 
 
 7. On the Stack information screen, enter the following values:
 
-    a. **Name**: Default is "Oracle E-Business Suite: Cloud Manager Deployment Stack for Landing Zones-&lt;date&time&gt;".
+    a. **Name**: Default name is "Oracle E-Business Suite: Cloud Manager Deployment Stack for Landing Zones-&lt;date&time&gt;".
 
     b. **Description**: Add a description for the stack.
 
     c. Click **Next**.
     
-    ![This is ](images/ebscm-stack-info.png)
+    ![This is a screenshot of the Stack information screen for the Oracle E-Business Suite: Cloud Manager Deployment Stack for Landing Zones stack.](images/ebscm-stack-info.png)
 
-8. On the Configure variables screen,
+8. On the Configure variables screen, <!--Tiffany continue from here-->
 
-<!--Use screenshots to fill in the rest of steps-->
+![This is a screenshot of the Configure variables screen](images/)
 
 ## Task 3: Log in to Oracle E-Business Suite Cloud Manager
 

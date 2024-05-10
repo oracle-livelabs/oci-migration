@@ -43,7 +43,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
 4. Click **Integrated applications** in the menu on the left. 
 
-    ![TIFFANY UPDATE SCREENSHOT This screenshot shows the Applications page and highlights the Add application button within the user interface.](./images/applications-menu.png " ")
+    ![This screenshot shows the Integrated applications page and highlights the Add application button within the user interface.](./images/integrated-applications.png " ")
 
 5. Click **Add application**.
 
@@ -54,7 +54,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 7. Click **Launch Workflow**. This takes you to the Add Confidential Application page.
 
 8. Under Add application details, enter the following:
-    - **Name**: ``Oracle E-Business Suite Cloud Manager``
+    - **Name**: `Oracle E-Business Suite Cloud Manager`
     - **Description**: Enter a description.
 
 9. Click **Next**.
@@ -68,19 +68,19 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
     - **Refresh token**
     - **Authorization code**
 
-    c. Now, we are going to set our Cloud Manager URL. For this lab, use the following example URL: ``https://myebscm.ebshol.org:443``
+    c. Now, we are going to set our Cloud Manager URL. For this lab, use the following example URL: `https://myebscm.ebshol.org:443`
 
-    Save your Cloud Manager URL in your ``key-data.txt`` file as ``Cloud_Manager_URL``.
+    Save your Cloud Manager URL in your `key-data.txt` file as `Cloud_Manager_URL`.
 
     Using the Cloud Manager URL you have just saved, append that URL with the following values as shown to enter your Redirect URL.
 
-    d. **Redirect URL**: ``<Cloud Manager URL>/cm/auth/callback``
+    d. **Redirect URL**: `<Cloud Manager URL>/cm/auth/callback`
     
-    For example: ``https://myebscm.ebshol.org:443/cm/auth/callback``
+    For example: `https://myebscm.ebshol.org:443/cm/auth/callback`
 
-    e. **Post-logout redirect URL**: ``<Cloud Manager Balancer URL>/cm/ui/index.html?root=login``
+    e. **Post-logout redirect URL**: `<Cloud Manager Balancer URL>/cm/ui/index.html?root=login`
     
-    For example: ``https://myebscm.ebshol.org:443/cm/ui/index.html?root=login``
+    For example: `https://myebscm.ebshol.org:443/cm/ui/index.html?root=login`
 
     f. **Logout URL**: Leave this field empty.
 
@@ -122,7 +122,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
 14. Record your Domain URL in the `key-data.txt` file. Click the "Copy" link next to the Domain URL value. When pasting in to the `key-data.txt`, remove the port portion of the URL (for example, `:443`).
 
-![SCREENSHOT](images/domainurl.png)
+![This screenshot shows the Domain Information tab within the Overview.](images/default-domain-info.png)
 
 ## Learn More
 
