@@ -51,7 +51,7 @@ The following diagram depicts the compartment distribution, which includes the a
 
     c. Click the application **Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones**.
 
-    ![ADD SCREENSHOT OF MARKETPLACE RESULTS - Tiffany circle the correct stack to download](images/mktpl-results.png)
+    ![Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones in the Oracle Cloud Infrastructure Marketplace](images/marketplace-lz-stacks-tenancy.png)
 
     d. In the **Version** drop-down list, ensure the default is selected. 
     
@@ -71,7 +71,7 @@ The following diagram depicts the compartment distribution, which includes the a
 
     c. Click **Next**.
 
-    ![NEEDED: Stack Information Screen for Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones](images/tenancy-stack-info.png)
+    ![Stack Information Screen for Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones](images/tenancy-stack-info.png)
 
 4. On the Configure variables screen, enter the following values:
 
@@ -107,11 +107,11 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
     c. Click the application **Oracle E-Business Suite: Network Admin Stack for Landing Zones**.
 
-    ![ADD SCREENSHOT OF MARKETPLACE RESULTS  - Tiffany circle the correct stack to download](images/mktpl-results.png)
+    ![Oracle E-Business Suite: Network Admin Stack for Landing Zones in the Oracle Cloud Infrastructure Marketplace](images/marketplace-lz-stacks-network.png)
 
     d. In the **Version** drop-down list, ensure the default is selected. 
     
-    e. In the **Compartment** drop-down list, select the ebshol-Network.
+    e. In the **Compartment** drop-down list, select "ebshol-Network".
 
     f. Review and accept the Terms of Use.
 
@@ -161,9 +161,9 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
     ![Configure Variables Screen for Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/network-stack-config-var4.png)
 
-6. On the Review screen, verify the information and click **Create**.
+5. On the Review screen, verify the information and click **Create**.
 
-![NEEDED REVIEW SCREENSHOT](images/network-stack-review.png)
+    ![Review Screen for Oracle E-Business Suite: Network Admin Stack for Landing Zones](images/network-stack-review.png)
 
 ## Learn More
 
