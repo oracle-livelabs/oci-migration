@@ -8,7 +8,7 @@ Estimated Lab Time: 25 minutes
 
 ### About Oracle Cloud Infrastructure Marketplace Stacks
 
-We will be using resource manager stacks available on the Oracle Cloud Infrastructure (OCI) Marketplace to deliver the templates. 
+We will be using resource manager stacks available on the Oracle Cloud Infrastructure (OCI) Marketplace to deliver the templates. In this lab, we will deploy *Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones* and *Oracle E-Business Suite: Network Admin Stack for Landing Zones*.
 
 ### Objectives
 
