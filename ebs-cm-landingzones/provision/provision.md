@@ -171,8 +171,7 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
     
   d. Click **Add Ingress Rule**.
 
-      ![This screenshot shows the Add Ingress Rules page and highlights the Source CIDR field, Destination Port Range field, and Add Ingress Rules button within the user interface.](./images/11.png " ")
-
+  ![This screenshot shows the Add Ingress Rules page and highlights the Source CIDR field, Destination Port Range field, and Add Ingress Rules button within the user interface.](./images/securitylist-addingressrule.png " ")
 
 ## Task 5: Configure Local Hosts File and Log in to Oracle E-Business Suite
 
@@ -180,9 +179,9 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
 
   ![This screenshot shows the Environments page and highlights the "ebsholenv1" environment to click on.](./images/selectenv.png " ")
 
-2. Then click the arrow next to **Zone: oneclickdemo**.
+2. Then click the arrow next to **Zone: oneclickdemo** to expand the section.
 
-  1. Note the IP address listed at **Web Entry IP:**
+   Note the IP address listed at **Web Entry IP:**
 
   ![This screenshot shows shows the Environment Details page for ebsholenv1 and higlights the Web Entry IP.](./images/envpage.png " ")
 
@@ -206,17 +205,17 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
 
     7. Add the following entry to the very end of the file:
     
-    ```
-    <copy>
-    <ip_address> ebsholenv1.example.com
-    </copy>
-    ```
+      ```
+      <copy>
+      <ip_address> ebsholenv1.example.com
+      </copy>
+      ```
 
     8. Save the file.
 
   **For Mac users**
 
-    1. Open a Terminal Window.
+    1. Open a Terminal window.
 
     2. Enter the following command:
 
@@ -233,19 +232,19 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
     4. Go to the last line and add the following entry as show below:
     `<ip_address> ebsholenv1.example.com`
 
-    5. Once you have finished editing the file hit "esc" and type `:wq` to save and exit.
+    5. Once you have finished editing the file hit "esc" and type `:x` to save and exit.
 
-      ![This screenshot shows how to edit the hosts file on a Mac](./images/3.png " ")
+    ![This screenshot shows how to edit the hosts file on a Mac](./images/3.png " ")
 
 4. Log in to Oracle E-Business Suite:
 
   a. From the Cloud Manager environment page. Click the link following **Login Page:**
 
-    ![This screenshot shows the Environment Details page for ebsholenv1 and highlights the Login Page link within the user interface.](./images/envpage-2.png " ")
+  ![This screenshot shows the Environment Details page for ebsholenv1 and highlights the Login Page link within the user interface.](./images/envpage-2.png " ")
 
   b. When prompted, accept the warning concerning the certificate coming from an unauthorized certificate authority as we are using a self-signed certificate. (You will change the certificate with your own when executing this procedure outside of this hands-on lab.)
 
-  c. On this page, you will log in to Oracle E-Business Suite.
+  c. Now you can log in to Oracle E-Business Suite.
 
   ![This screenshot shows the Oracle E-Business Suite Log In page.](./images/4.png " ")
 
@@ -253,8 +252,10 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
 
 *(optional - include links to docs, white papers, blogs, etc)*
 
-* [URL text 1](http://docs.oracle.com)
-* [URL text 2](http://docs.oracle.com)
+* [Learn About Deploying Terraform Stacks for E-Business Suite and Cloud Manager](http://docs.oracle.com)
+* [Deploy a secure landing zone that meets the CIS Foundations Benchmark for Oracle Cloud](http://docs.oracle.com)
+* [Oracle E-Business Suite Cloud Manager Guide](https://)
+* [My Oracle Support Document 2517025.1, *Oracle E-Business Suite on Oracle Cloud Infrastructure*](https://)
 
 ## Acknowledgements
 * **Author** - Santiago Bastidas, Product Management Director
