@@ -21,10 +21,10 @@ In this lab, you will:
 
 This lab assumes you have:
 * Cloud Manager Admin credentials
-* Cloud Manager Application variables in ``key-data.txt`` file
+* Cloud Manager Application variables in `key-data.txt` file
 
 ## Task 1: Log in to Oracle E-Business Suite Cloud Manager
-1. Navigate to your Oracle E-Business Suite Cloud Manager application using the Login URL recorded in your ``key-data.txt`` file.
+1. Navigate to your Oracle E-Business Suite Cloud Manager application using the Login URL recorded in your `key-data.txt` file.
 
   **Note**: If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
 
