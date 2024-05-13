@@ -76,7 +76,27 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
     
     ![This is a screenshot of the Stack information screen for the Oracle E-Business Suite: Cloud Manager Deployment Stack for Landing Zones stack.](images/ebscm-stack-info.png)
 
-8. On the Configure variables screen, <!--Tiffany continue from here-->
+8. On the Configure variables screen:
+
+    a. Ensure the **Create VCN** checkbox is selected (this is the default).
+
+    b. Ensure the **Configure EBS Cloud Manager subnets** checkbox is selected (this is the default).
+
+    c. Select the **Public EBS Cloud Manager load balancer** checkbox.
+
+    ![This is a screenshot of the Configure variables screen](images/deploy-cm-config-var1.png)
+
+    d. Ensure the **Create subnets for an EBS environment** checkbox is selected (this is the default).
+
+    e. Under **Environment category identifier**, use the drop-down list to select "identity-ebshol-ebs-Production". The **Application tier subnet CIDR** and **Database tier subnet CIDR** fields will auto-populate.
+
+    f. Select the **Create default load balancer tier subnet** checkbox. The **Load balancer subnet CIDR** field will auto-populate.
+
+    ![This is a screenshot of the Configure variables screen](images/deploy-cm-config-var2.png)
+
+    g. Select **Create bastion subnet**. The **Bastion subnet CIDR** field will auto-populate.
+
+    h. Select **Use bastion service**. The **Bastion allow list** and **Bastion TTL Limit** fields will auto-populate. 
 
 ![This is a screenshot of the Configure variables screen](images/)
 

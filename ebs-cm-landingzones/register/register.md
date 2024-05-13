@@ -22,7 +22,7 @@ In this lab, you will:
 
 Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastructure (OCI) Console.
 
-1. Reference your ``key-data.txt`` file and locate the tenancy administrator credentials.
+1. Reference your `key-data.txt` file and locate the tenancy administrator credentials.
 
 2. Sign in to the Oracle Cloud Infrastructure console using the following:
 
