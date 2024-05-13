@@ -137,31 +137,30 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
     ```
   ![This screenshot shows the firewall commands being run on the EBS instance.](./images/6.png " ")
 
+4. Open the firewall on the EBS instance to allow traffic on port 8000.  
+
     ```
     <copy>
     sudo firewall-cmd --zone=public --add-rich-rule='rule family=ipv4 source address=0.0.0.0/0 port port=8000 protocol=tcp accept' --permanent
 
-    sudo firewall-cmd --zone=public --add-rich-rule='rule family=ipv4 source address=0.0.0.0/0 port port=8000 protocol=tcp accept'
+    sudo firewall-cmd --reload
     </copy>
     ```
-  ![This screenshot shows the firewall commands being run on the EBS instance.](./images/6-1.png " ")
+  ![This screenshot shows the firewall commands being run on the EBS instance.](./images/6-1.png " ")<!--Need updated example screenshot - Tiffany to recreate - use bottom half of previous example-->
 
-
-4. Now we will open the Security List in our VCN to allow traffic from the internet on port 4443. Go to OCI and navigate to the **Networking** > **Virtual Cloud Networks** section. 
-
-  **Note**: In the below screenshots, the naming convention is a little different. Where you see **cwCM** as a prefix, you will most likely have **ebshol**. 
+4. Now we will open the Security List in our VCN to allow traffic from the internet on port 4443. Go to OCI and navigate to **Networking** and then **Virtual Cloud Networks** section. 
 
   ![This screenshot shows the navigation to Virtual Cloud Networks within the Oracle Cloud console navigation menu.](./images/7.png " ")
 
-  a. Ensuring you are in the right compartment (**ebshol\_compartment**), click on **ebshol\_vcn**. Then select the **Security Lists** Resource and the **ebshol\_apps\_seclist** from there. 
+  a. Ensuring you are in the right compartment (**ebshol-Network**), click on **ebshol\_vcn**. Then select the **Security Lists** Resource and the **ebshol-ebs-Production-app-SL** from there. 
 
-    ![This screenshot shows the Virtual Cloud Networks page and highlights the Compartment drop-down list.](./images/8.png " ")
+  ![This screenshot shows the Virtual Cloud Networks page and highlights the Compartment drop-down list.](./images/securitylist-vcn.png " ")
 
-    ![This screenshot shows the Security Lists page and highlights the required security list to click on.](./images/9.png " ")
+  ![This screenshot shows the Security Lists page and highlights the required security list to click on.](./images/securitylist-vcn-info.png " ")
 
   b. Here we will add an Ingress rule to allow traffic to access our EBS instance. Click **Add Ingress Rule**. 
 
-    ![This screenshot shows the Security Details page of the selected virtual cloud network and highlights the Add Ingress Rule button in the user interface.](./images/10.png " ")
+  ![This screenshot shows the Security Details page of the selected virtual cloud network and highlights the Add Ingress Rule button in the user interface.](./images/securitylist-ingressrule.png " ")
 
   c. Fill out the following information leaving the rest as default: 
 
