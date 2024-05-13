@@ -4,7 +4,7 @@
 
 In this lab, we will deploy Oracle E-Business Suite (EBS) Cloud Manager using the Marketplace stack *Oracle E-Business Suite: Cloud Manager Deployment Stack for Landing Zones*.
 
-Estimated Lab Time: 30 minutes
+Estimated Lab Time: 25 minutes
 
 ### About Oracle E-Business Suite: Cloud Manager Deployment Stack for Landing Zones
 This Resource Manager stack provisions a new Compute instance based on the Oracle E-Business Suite Cloud Manager Marketplace image and configures the Cloud Manager application to work with your tenancy.
@@ -167,7 +167,13 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   3. At the bottom of the file, type `a` to append a new line.
 
-  4. Add the following entry as follows: `<lb_ip_address> myebscm.ebshol.org`
+  4. Add the following entry as follows: 
+  
+  ```
+  <copy>
+  <lb_ip_address> myebscm.ebshol.org
+  </copy>
+  ```
 
   ![This screenshot shows how to edit the hosts file on a Mac.](./images/mac-editlastline.png " ")
 
