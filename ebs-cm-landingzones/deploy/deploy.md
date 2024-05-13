@@ -132,7 +132,13 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   6. In the hosts file, scroll down to the end of the content.
 
-  7. Add the following entry to the very end of the file: `<lb_ip_address> myebscm.ebshol.org`
+  7. Add the following entry to the very end of the file: 
+  
+  ```
+  <copy>
+  <lb_ip_address> myebscm.ebshol.org
+  </copy>
+  ```
 
   8. Save the file.
 
@@ -141,8 +147,6 @@ Follow the applicable set of instructions based on your workstation to edit the 
   10. Log into the Oracle E-Business Suite Cloud Manager using your IDCS credentials for the EBS Cloud Manager account as documented in your ``key-data.txt`` file.
 
   ![This screenshot is of the Oracle Cloud Account Sign In page.](./images/cloud-sign-in.png " ")
-
-    <!--Tiffany blur out ebscmelz from screenshot -->
     
   Once you are logged in, you are on the **Environments page**.
   ![This screenshot is of the Environments page within the Oracle E-Business Suite Cloud Manager user interface.](./images/environmentspage.png " ")
@@ -161,7 +165,13 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   1. Open a Terminal window.
 
-  2. Enter the following command: `sudo vi /etc/hosts`
+  2. Enter the following command: 
+  
+  ```
+  <copy>
+  sudo vi /etc/hosts
+  </copy>
+  ```
 
   This will then require your local computer password to edit the file. Enter the password and you should see a screen similar to the one shown below.
 
