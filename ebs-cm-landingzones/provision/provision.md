@@ -2,19 +2,20 @@
 
 ## Introduction
 
-In this lab, we will use the One-Click Provisioning feature of Oracle E-Business Suite Cloud Manager to provision an Oracle E-Business Suite environment.
+In this lab, we will use the One-Click Provisioning feature of Oracle E-Business Suite Cloud Manager to provision an Oracle E-Business Suite (EBS) environment in your Oracle Cloud Infrastructure (OCI) tenancy.
 
 Estimated Time: 45 minutes
 
-### About <Product/Technology> (Optional)
-Enter background information here about the technology/feature or product used in this lab - no need to repeat what you covered in the introduction. Keep this section fairly concise. If you find yourself needing more than two sections/paragraphs, please utilize the "Learn More" section.
+### About Oracle E-Business Suite Cloud Manager
+Oracle E-Business Suite Cloud Manager is a web application running on a Compute instance in your own tenancy. It is used to provision and manage the lifecycle of all your EBS environments in your OCI tenancy.
 
 ### Objectives
 
 In this lab, you will: 
-* Enable and Set Oracle E-Business Suite Account Passwords.
+* Provision your first Oracle E-Business Suite environment.
+* Enable and set Oracle E-Business Suite account passwords.
 * Open up security configurations to allow traffic to E-Business Suite.
-* Configure Local Hosts File and Log in to Oracle E-Business Suite.
+* Configure Local hosts file and log in to Oracle E-Business Suite.
 
 ### Prerequisites (Optional)
 
@@ -22,19 +23,20 @@ This lab assumes you have:
 * Cloud Manager Admin credentials
 * Cloud Manager Application variables in ``key-data.txt`` file
 
-
 ## Task 1: Log in to Oracle E-Business Suite Cloud Manager
 1. Navigate to your Oracle E-Business Suite Cloud Manager application using the Login URL recorded in your ``key-data.txt`` file.
 
-Note: If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
+  Note : If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
 
 2. Log in with your Cloud Manager Admin credentials.
 
-  ![This screenshot is of the Oracle Cloud Account Sign In page.](./images/ebscm-login.png " ")
+  ![This screenshot is of the Oracle Cloud Account Sign In page.](./images/cloud-sign-in.png " ")
 
   This will bring you to the home screen.
 
   ![This screenshot is the Oracle E-Business Suite Cloud Manager home screen.](./images/cm_home_screen.png " ")
+
+  <!-- Add screenshot from Santiago -->
 
 ## Task 2: Provision an Environment Using One-Click Provisioning
 1. On the Oracle E-Business Suite Cloud Manager Environments page, click **Provision Environment** and select **One-Click**.
@@ -47,7 +49,7 @@ Note: If your login URL is not working or if your compute instance which contain
 
     b. **Purpose**: Vision Demo Install
 
-    c. **EBS Version**: 12.2.10
+    c. **EBS Version**: 12.2.13
 
     d. **DB Version**: 19.0.0.0
 
