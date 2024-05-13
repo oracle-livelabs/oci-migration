@@ -26,7 +26,7 @@ This lab assumes you have:
 ## Task 1: Log in to Oracle E-Business Suite Cloud Manager
 1. Navigate to your Oracle E-Business Suite Cloud Manager application using the Login URL recorded in your ``key-data.txt`` file.
 
-  Note : If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
+  **Note**: If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
 
 2. Log in with your Cloud Manager Admin credentials.
 
@@ -36,12 +36,10 @@ This lab assumes you have:
 
   ![This screenshot is the Oracle E-Business Suite Cloud Manager home screen.](./images/cm_home_screen.png " ")
 
-  <!-- Add screenshot from Santiago -->
-
 ## Task 2: Provision an Environment Using One-Click Provisioning
 1. On the Oracle E-Business Suite Cloud Manager Environments page, click **Provision Environment** and select **One-Click**.
 
-  ![This screenshot highlights the Provision Environment drop-down list on the Oracle E-Business Suite Cloud Manager Environments page.](./images/oneclick.png " ")
+    ![This screenshot highlights the Provision Environment drop-down list on the Oracle E-Business Suite Cloud Manager Environments page.](./images/provisionenv-dropdown.png " ")
 
 2. Enter and select the following details for your new environment.
 
@@ -63,7 +61,7 @@ You can check the status of the activity to provision the environment in the Act
 
 1. SSH to the newly created environment by using the following steps:
 
-    a. SSH into the EBS Cloud Manager instance from your local machine by using the IP address in the ``key-data.txt`` file and the private key you created during the deployment of EBS Cloud Manager in OCI. 
+    a. SSH into the EBS Cloud Manager instance from your local machine by using the IP address in the `key-data.txt` file and the private key you created during the deployment of EBS Cloud Manager in OCI. 
 
         <copy>
         ssh -i <filepath_to_your_ebshol_folder/artifacts/ebs_hol_key> opc@<cloud_manager_public_ip>
@@ -81,11 +79,11 @@ You can check the status of the activity to provision the environment in the Act
         ssh <ebsholenv1_private_ip>
         </copy>
     
-    The private ip can be found by clicking on your newly created environment, as shown.
+    The private IP address can be found by clicking on your newly created environment, as shown.
 
-      ![This screenshot shows the Environment Details page of the newly created environment. The Public IP details are higlighted.](./images/priv_ip.png " ")
+      ![This screenshot shows the Environment Details page of the newly created environment. Private IP details are higlighted.](./images/priv_ip.png " ")
 
-2. Once logged into your EBS instance as an Oracle user, source your variables for the release you are using via the following commands:
+2. Once logged into your EBS instance as an `Oracle` user, source your variables for the release you are using the following commands:
         
       a. Source variables for **release 12.2**.
     
@@ -95,7 +93,7 @@ You can check the status of the activity to provision the environment in the Act
 
       **Note**: If you are using a different version than 12.2, refer to [Enable and Set Oracle E-Business Account Passwords (Conditionally Required)](https://docs.oracle.com/cd/E26401_01/doc.122/f35809/T679330T679344.htm#cmg_postprov_pwds).
 
-3. To log in through the web interface, you must initially set a password of your choice for the SYSADMIN user. After the SYSADMIN user is active with the new password, you can create new users or activate existing locked users. To enable the SYSADMIN user, run the following commands:
+3. To log in through the web interface, you must initially set a password of your choice for the `SYSADMIN` user. After the `SYSADMIN` user is active with the new password, you can create new users or activate existing locked users. To enable the `SYSADMIN` user, run the following commands:
 
     ```
     <copy>
@@ -167,9 +165,9 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
 
   c. Fill out the following information leaving the rest as default: 
 
-    i. **Source CIDR:** ``0.0.0.0/0``
+    i. **Source CIDR:** `0.0.0.0/0`
 
-    ii. **Destination Port Range:** ``4443``
+    ii. **Destination Port Range:** `4443`
 
     
   d. Click **Add Ingress Rule**.
@@ -199,16 +197,21 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
 
     3. In Notepad, navigate to **File** > **Open**.
 
-    4. Browse to ``C:\\Windows\System32\drivers\etc``.
+    4. Browse to `C:\\Windows\System32\drivers\etc`.
 
-    5. Find the file ``hosts``.
+    5. Find the file `hosts`.
 
         ![This screenshot shows the navigation to the file "hosts" within Windows Explorer.](./images/2.png " ")
 
     6. In the hosts file, scroll down to the end of the content.
 
     7. Add the following entry to the very end of the file:
-    ``<ip_address> ebsholenv1.example.com``
+    
+    ```
+    <copy>
+    <ip_address> ebsholenv1.example.com
+    </copy>
+    ```
 
     8. Save the file.
 
@@ -229,9 +232,9 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
     3. Type 'i' (insert) to edit the file using vi.
 
     4. Go to the last line and add the following entry as show below:
-    ``<ip_address> ebsholenv1.example.com``
+    `<ip_address> ebsholenv1.example.com`
 
-    5. Once you have finished editing the file hit 'esc' and type ':wq' to save and exit.
+    5. Once you have finished editing the file hit "esc" and type `:wq` to save and exit.
 
       ![This screenshot shows how to edit the hosts file on a Mac](./images/3.png " ")
 
