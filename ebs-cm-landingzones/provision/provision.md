@@ -65,13 +65,11 @@ You can check the status of the activity to provision the environment in the Act
 
     a. SSH into the Cloud Manager instance from your local machine by using the IP address in the ``key-data.txt`` file and the private key you created during the deployment of the Cloud Manager in OCI. 
 
-        ```
         <copy>
         ssh -i <filepath_to_your_ebshol_folder/artifacts/ebs_hol_key> opc@<cloud_manager_public_ip>
         </copy>
-        ```
 
-    b. Switch to the Oracle user in the Cloud Manager instance
+    b. Switch to the `Oracle` user in the Cloud Manager instance:
 
         ```
         <copy>
@@ -79,7 +77,7 @@ You can check the status of the activity to provision the environment in the Act
         </copy>
         ```
     
-    c. Connect to the ``ebsholenv1`` by executing the following
+    c. Connect to `ebsholenv1` by running the following command:
 
         ```
         <copy>
