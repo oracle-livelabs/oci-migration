@@ -49,7 +49,7 @@
       "filename": "../../manage-VM/manage.md"
   },
   {
-      "title": "Tear Down Your EBS Environments",
+      "title": "Optional: Tear Down Your EBS Environments",
       "description": "Teardown Your Oracle E-Business Suite Environments",
       "filename": "../../teardown/teardown.md"
   },
