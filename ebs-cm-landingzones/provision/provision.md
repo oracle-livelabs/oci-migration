@@ -164,9 +164,9 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
 
   c. Fill out the following information leaving the rest as default: 
 
-    i. **Source CIDR:** `0.0.0.0/0`
+    * **Source CIDR:** `0.0.0.0/0`
 
-    ii. **Destination Port Range:** `4443`
+    * **Destination Port Range:** `4443`
 
     
   d. Click **Add Ingress Rule**.
