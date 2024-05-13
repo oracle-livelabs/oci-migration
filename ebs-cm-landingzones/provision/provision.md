@@ -63,7 +63,7 @@ You can check the status of the activity to provision the environment in the Act
 
 1. SSH to the newly created environment by using the following steps:
 
-    a. SSH into the Cloud Manager instance from your local machine by using the IP address in the ``key-data.txt`` file and the private key you created during the deployment of the Cloud Manager in OCI. 
+    a. SSH into the EBS Cloud Manager instance from your local machine by using the IP address in the ``key-data.txt`` file and the private key you created during the deployment of EBS Cloud Manager in OCI. 
 
         <copy>
         ssh -i <filepath_to_your_ebshol_folder/artifacts/ebs_hol_key> opc@<cloud_manager_public_ip>
@@ -71,19 +71,15 @@ You can check the status of the activity to provision the environment in the Act
 
     b. Switch to the `Oracle` user in the Cloud Manager instance:
 
-        ```
         <copy>
         sudo su - oracle
         </copy>
-        ```
     
     c. Connect to `ebsholenv1` by running the following command:
 
-        ```
         <copy>
         ssh <ebsholenv1_private_ip>
         </copy>
-        ```
     
     The private ip can be found by clicking on your newly created environment, as shown.
 
@@ -97,7 +93,7 @@ You can check the status of the activity to provision the environment in the Act
         . /u01/install/APPS/EBSapps.env run 
         </copy>  
 
-      Note: If you are using a different version than 12.2, refer to the documentation at the following link: [Enable and Set Oracle E-Business Account Passwords (Conditionally Required)](https://docs.oracle.com/cd/E26401_01/doc.122/f35809/T679330T679344.htm#cmg_postprov_pwds).
+      **Note**: If you are using a different version than 12.2, refer to [Enable and Set Oracle E-Business Account Passwords (Conditionally Required)](https://docs.oracle.com/cd/E26401_01/doc.122/f35809/T679330T679344.htm#cmg_postprov_pwds).
 
 3. To log in through the web interface, you must initially set a password of your choice for the SYSADMIN user. After the SYSADMIN user is active with the new password, you can create new users or activate existing locked users. To enable the SYSADMIN user, run the following commands:
 
@@ -111,8 +107,8 @@ You can check the status of the activity to provision the environment in the Act
     </copy>
     ```
 
-When prompted, enter a new password for the SYSADMIN user. Record this password in your ``key-data.txt`` file.
-The SYSADMIN user can now connect to Oracle E-Business Suite through the web interface and create new users or activate existing locked users.
+When prompted, enter a new password for the `SYSADMIN` user. Record this password in your ``key-data.txt`` file.
+The `SYSADMIN` user can now connect to EBS through the web interface and create new users or activate existing locked users.
 
   ![This screenshot shows the enableSYSADMIN.sh script in use.](./images/sysadmin.png " ")
 
@@ -120,18 +116,19 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
 
 ## Task 4: Open Firewall and Security List to Allow Connections to EBS Environment
 
-1. Exit from the EBS instance and reconnect as the opc user.
+1. Exit from the EBS instance. 
+
+2. Reconnect as the opc user.
 
     ```
     <copy>
-    exit
-
     ssh opc@<ebsholenv1_private_ip>
     </copy>
     ```
+
   ![This screenshot shows the exit from the EBS instance and reconnection as the opc user.](./images/5.png " ")
 
-2. Open the firewall on the EBS instance to allow traffic on port 4443. 
+3. Open the firewall on the EBS instance to allow traffic on port 4443. 
 
     ```
     <copy>
@@ -152,9 +149,9 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
   ![This screenshot shows the firewall commands being run on the EBS instance.](./images/6-1.png " ")
 
 
-3. Now we will open the Security List in our VCN to allow traffic from the internet on port 4443. Go to OCI and navigate to the **Networking** > **Virtual Cloud Networks** section. 
+4. Now we will open the Security List in our VCN to allow traffic from the internet on port 4443. Go to OCI and navigate to the **Networking** > **Virtual Cloud Networks** section. 
 
-  Note: In the below screenshots, the naming convention is a little different. Where you see **cwCM** as a prefix, you will most likely have **ebshol**. 
+  **Note**: In the below screenshots, the naming convention is a little different. Where you see **cwCM** as a prefix, you will most likely have **ebshol**. 
 
   ![This screenshot shows the navigation to Virtual Cloud Networks within the Oracle Cloud console navigation menu.](./images/7.png " ")
 
