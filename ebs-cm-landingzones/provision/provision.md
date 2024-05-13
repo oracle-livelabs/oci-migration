@@ -4,7 +4,7 @@
 
 In this lab, we will use the One-Click Provisioning feature of Oracle E-Business Suite Cloud Manager to provision an Oracle E-Business Suite (EBS) environment in your Oracle Cloud Infrastructure (OCI) tenancy.
 
-Estimated Time: 45 minutes
+Estimated Time: 40 minutes
 
 ### About Oracle E-Business Suite Cloud Manager
 Oracle E-Business Suite Cloud Manager is a web application running on a Compute instance in your own tenancy. It is used to provision and manage the lifecycle of all your EBS environments in your OCI tenancy.
@@ -17,7 +17,7 @@ In this lab, you will:
 * Open up security configurations to allow traffic to E-Business Suite.
 * Configure Local hosts file and log in to Oracle E-Business Suite.
 
-### Prerequisites (Optional)
+### Prerequisites
 
 This lab assumes you have:
 * Cloud Manager Admin credentials
