@@ -78,27 +78,35 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
 8. On the Configure variables screen:
 
-    a. Ensure the **Create VCN** checkbox is selected (this is the default).
+    a. **Security compartment**: Select "ebshol-Security" from the drop-down list.
 
-    b. Ensure the **Configure EBS Cloud Manager subnets** checkbox is selected (this is the default).
+    b. **Environment category identifier**: Select "identity-ebshol-ebs-Production" from the drop-down list.
 
-    c. Select the **Public EBS Cloud Manager load balancer** checkbox.
+    c. **Server host name for EBS Cloud Manager Login URL**: Enter `myebscm.ebshol.org`.
 
-    ![This is a screenshot of the Configure variables screen](images/deploy-cm-config-var1.png)
+    ![This is a screenshot of the Configure variables screen](images/deploy-configvariables1.png)
 
-    d. Ensure the **Create subnets for an EBS environment** checkbox is selected (this is the default).
+    d. In the EBS CM Administrator User section, leave all fields blank. For this hands-on lab, these values are dynamically chosen for you based on the user connected to the OCI Console.
 
-    e. Under **Environment category identifier**, use the drop-down list to select "identity-ebshol-ebs-Production". The **Application tier subnet CIDR** and **Database tier subnet CIDR** fields will auto-populate.
+    ![This is a screenshot of the Configure variables screen](images/deploy-configvariables3.png)
 
-    f. Select the **Create default load balancer tier subnet** checkbox. The **Load balancer subnet CIDR** field will auto-populate.
+    e. **Compute Instance Shape**: Select "VM.Standard.E2.2".
 
-    ![This is a screenshot of the Configure variables screen](images/deploy-cm-config-var2.png)
+    f. Under **SSH Public key**, select the **Choose SSH key file** radio button. 
 
-    g. Select **Create bastion subnet**. The **Bastion subnet CIDR** field will auto-populate.
+    g. Upload the `ebs_hol_key.pub file`, found in `EBS-HOL/artifacts/ssh-keys` (where you unzipped the `ebs-hol.zip` file in Lab 1). 
 
-    h. Select **Use bastion service**. The **Bastion allow list** and **Bastion TTL Limit** fields will auto-populate. 
+    h. **Availability Domain**: Select the first availability domain in the drop-down list.
 
-![This is a screenshot of the Configure variables screen](images/)
+    i. Under **EBS CM services administration password**, leave the password in the **Enter the password** field as-is.
+
+    ![This is a screenshot of the Configure variables screen](images/deploy-configvariables2.png)
+
+    j. Click **Next**.
+
+    ![This is a screenshot of the Configure variables screen](images/configvariables-review.png)
+
+    k. After reviewing your entries, click **Create**.
 
 ## Task 3: Log in to Oracle E-Business Suite Cloud Manager
 
@@ -158,7 +166,7 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   ![This screenshot shows how to edit the hosts file on a Mac.](./images/mac-editlastline.png " ")
 
-  5. Once you have finished editing the file, hit 'esc' and enter `:x` to save and exit.
+  5. Once you have finished editing the file, hit "esc" and enter `:x` to save and exit.
 
   6. Type the Login URL generated and documented to your `key-data.txt` previously into your browser.
   
