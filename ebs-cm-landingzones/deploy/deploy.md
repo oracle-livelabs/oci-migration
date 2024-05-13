@@ -92,9 +92,9 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     e. **Compute Instance Shape**: Select "VM.Standard.E2.2".
 
-    f. Under **SSH Public key**, select the **Choose SSH key file** radio button. 
+    f. Generate a new SSH key. For more information on SSH keys, visit: Generating an SSH Key Pair <!-- Add link -->
 
-    g. Upload the `ebs_hol_key.pub file`, found in `EBS-HOL/artifacts/ssh-keys` (where you unzipped the `ebs-hol.zip` file in Lab 1). 
+    g. Under **SSH Public key**, select the **Choose SSH key file** radio button. 
 
     h. **Availability Domain**: Select the first availability domain in the drop-down list.
 
