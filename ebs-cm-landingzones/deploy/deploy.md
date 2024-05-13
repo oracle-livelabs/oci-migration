@@ -134,11 +134,11 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   7. Add the following entry to the very end of the file: 
   
-  ```
-  <copy>
-  <lb_ip_address> myebscm.ebshol.org
-  </copy>
-  ```
+    ```
+    <copy>
+    <lb_ip_address> myebscm.ebshol.org
+    </copy>
+    ```
 
   8. Save the file.
 
@@ -167,11 +167,11 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   2. Enter the following command: 
   
-  ```
-  <copy>
-  sudo vi /etc/hosts
-  </copy>
-  ```
+    ```
+    <copy>
+    sudo vi /etc/hosts
+    </copy>
+    ```
 
   This will then require your local computer password to edit the file. Enter the password and you should see a screen similar to the one shown below.
 
@@ -179,11 +179,11 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   4. Add the following entry as follows: 
   
-  ```
-  <copy>
-  <lb_ip_address> myebscm.ebshol.org
-  </copy>
-  ```
+    ```
+    <copy>
+    <lb_ip_address> myebscm.ebshol.org
+    </copy>
+    ```
 
   ![This screenshot shows how to edit the hosts file on a Mac.](./images/mac-editlastline.png " ")
 
@@ -205,8 +205,6 @@ Notes:
 * If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
 
 * Your browser may give you an error when attempting to access the EBS Cloud Manager. If you run into an error using the EBS login URL try using a different browser or an incognito session. If this does not solve the problem, try adding `:443` after the URL (for example, `https://myebscm.ebshol.org:443`).
-
-  
 
 </if>
 

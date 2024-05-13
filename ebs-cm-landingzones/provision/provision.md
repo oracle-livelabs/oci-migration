@@ -65,25 +65,32 @@ You can check the status of the activity to provision the environment in the Act
 
     a. SSH into the Cloud Manager instance from your local machine by using the IP address in the ``key-data.txt`` file and the private key you created during the deployment of the Cloud Manager in OCI. 
 
+        ```
         <copy>
         ssh -i <filepath_to_your_ebshol_folder/artifacts/ebs_hol_key> opc@<cloud_manager_public_ip>
         </copy>
+        ```
 
     b. Switch to the Oracle user in the Cloud Manager instance
 
+        ```
         <copy>
         sudo su - oracle
         </copy>
+        ```
     
     c. Connect to the ``ebsholenv1`` by executing the following
 
+        ```
         <copy>
         ssh <ebsholenv1_private_ip>
         </copy>
+        ```
     
     The private ip can be found by clicking on your newly created environment, as shown.
 
       ![This screenshot shows the Environment Details page of the newly created environment. The Public IP details are higlighted.](./images/priv_ip.png " ")
+
 2. Once logged into your EBS instance as an Oracle user, source your variables for the release you are using via the following commands:
         
       a. Source variables for **release 12.2**.
