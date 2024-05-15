@@ -124,7 +124,7 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
     </copy>
     ```
 
-  ![This screenshot shows the exit from the EBS instance and reconnection as the opc user.](./images/5.png " ")
+  ![This screenshot shows the exit from the EBS instance and reconnection as the opc user.](./images/reconnect-opc.png " ")
 
 3. Open the firewall on the EBS instance to allow traffic on port 4443. 
 
@@ -135,7 +135,7 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
     sudo firewall-cmd --reload
     </copy>
     ```
-  ![This screenshot shows the firewall commands being run on the EBS instance.](./images/6.png " ")
+  ![This screenshot shows the firewall commands being run on the EBS instance.](./images/open-firewall-4443.png " ")
 
 4. Open the firewall on the EBS instance to allow traffic on port 8000.  
 
@@ -146,9 +146,9 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
     sudo firewall-cmd --reload
     </copy>
     ```
-  ![This screenshot shows the firewall commands being run on the EBS instance.](./images/6-1.png " ")<!--Need updated example screenshot - Tiffany to recreate - use bottom half of previous example-->
+  ![This screenshot shows the firewall commands being run on the EBS instance.](./images/open-firewall-8000.png " ")
 
-4. Now we will open the Security List in our VCN to allow traffic from the internet on port 4443. Go to OCI and navigate to **Networking** and then **Virtual Cloud Networks** section. 
+5. Now we will open the Security List in our VCN to allow traffic from the internet on port 4443. Go to OCI and navigate to **Networking** and then **Virtual Cloud Networks** section. 
 
   ![This screenshot shows the navigation to Virtual Cloud Networks within the Oracle Cloud console navigation menu.](./images/navigation-to-vcn.png " ")
 
