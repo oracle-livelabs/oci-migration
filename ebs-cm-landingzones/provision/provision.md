@@ -105,7 +105,7 @@ You can check the status of the activity to provision the environment in the Act
     </copy>
     ```
 
-When prompted, enter a new password for the `SYSADMIN` user. Record this password in your ``key-data.txt`` file.
+When prompted, enter a new password for the `SYSADMIN` user. Record this password in your `key-data.txt` file.
 The `SYSADMIN` user can now connect to EBS through the web interface and create new users or activate existing locked users.
 
   ![This screenshot shows the enableSYSADMIN.sh script in use.](./images/sysadmin.png " ")

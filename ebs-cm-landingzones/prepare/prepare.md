@@ -2,18 +2,18 @@
 
 ## Introduction
 
-In this section, you will prepare your workstation by obtaining and unzipping the ``ebshol.zip`` file, which contains the file ``key-data.txt`` to store all information that you will need to reference. We recommend you use this file to store your variables while going through the workshop.
+In this section, you will prepare your workstation by obtaining and unzipping the `ebshol.zip` file, which contains the file `key-data.txt` to store all information that you will need to reference. We recommend you use this file to store your variables while going through the workshop.
 
 Estimated Time: 5 minutes
 
 ### Objectives
 
 In this lab, you will:
-* Prepare your workstation with the ``key-data.txt`` file, which will be used throughout the workshop.
+* Prepare your workstation with the `key-data.txt` file, which will be used throughout the workshop.
 
 ## Task 1: Download and Unzip the Workshop Files
 <if type="Windows">
-1. Download the ``ebs-hol.zip`` file.
+1. Download the `ebs-hol.zip` file.
 <!-- Use new link -->
 2. Open Windows Explorer and navigate to the downloaded zip file.
 3. Move the zip file to your folder Desktop.
@@ -21,7 +21,7 @@ In this lab, you will:
 </if>
 
 <if type="Mac">
-1. Download the ``ebs-hol.zip`` file.
+1. Download the `ebs-hol.zip` file.
 <!-- Use new link -->
 2. Open Finder and navigate to the downloaded zip file.
 3. Move the zip file to your Desktop.

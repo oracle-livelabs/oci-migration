@@ -191,7 +191,7 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   6. Enter the Login URL generated and documented to your `key-data.txt` previously into your browser.
   
-  7. Log into the Oracle E-Business Suite Cloud Manager using your IDCS credentials for the EBS Cloud Manager account as documented in your ``key-data.txt`` file.
+  7. Log into the Oracle E-Business Suite Cloud Manager using your IDCS credentials for the EBS Cloud Manager account as documented in your `key-data.txt` file.
   
   ![This screenshot is of the Oracle Cloud Account Sign In page.](./images/cloud-sign-in.png " ")
   
