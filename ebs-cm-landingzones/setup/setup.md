@@ -41,7 +41,7 @@ The following diagram depicts the compartment distribution, which includes the a
 
 ![This is a diagram of the landing zone foundation.](images/tenancy-admin-diagram.png)
 
-1. In the Oracle Cloud Infrastructre (OCI) Console navigation menu, under **Marketplace**, select **All Applications**.
+1. In the Oracle Cloud Infrastructure (OCI) Console navigation menu, under **Marketplace**, select **All Applications**.
 
 2. From the Marketplace applications page:
 
@@ -97,7 +97,7 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
 ![This is a diagram of the landing zone network.](images/network-diagram.png)
 
-1. In the Oracle Cloud Infrastructre (OCI) Console navigation menu, under **Marketplace**, select **All Applications**.
+1. In the Oracle Cloud Infrastructure (OCI) Console navigation menu, under **Marketplace**, select **All Applications**.
 
 2. From the Marketplace applications page:
 
@@ -149,7 +149,7 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
     ![This is the Configure variables screen for the Oracle E-Business Suite: Network Admin Stack for Landing Zones.](images/network-stack-config-var2.png)
 
-    h. Select the **Create default load balancer tier subnet** checkbox. The **Loadbalancer subnet CIDR** will auto-populate.
+    h. Select the **Create default load balancer tier subnet** checkbox. The **Load balancer subnet CIDR** will auto-populate.
 
     i. Select the **Create external load balancer and application tier subnets** checkbox. The **External load balancer subnet CIDR** and **External application tier subnet CIDR** fields will auto-populate. 
 

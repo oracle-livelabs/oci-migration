@@ -152,7 +152,7 @@ Follow the applicable set of instructions based on your workstation to edit the 
   ![This screenshot is of the Environments page within the Oracle E-Business Suite Cloud Manager user interface.](./images/environmentspage.png " ")
 
   **Notes**: 
-  * It may take some additional time for the load balancer to be properly configured. Sometimes it may take up to 30 minutes or an hour to configure. If you would like to check on the status of the load balancer, in OCI go to **Networking**, then **Load Balancers**, and check the **Overall Heatlh** status. If it is OK, the connection can be established. 
+  * It may take some additional time for the load balancer to be properly configured. Sometimes it may take up to 30 minutes or an hour to configure. If you would like to check on the status of the load balancer, in OCI go to **Networking**, then **Load Balancers**, and check the **Overall Health** status. If it is OK, the connection can be established. 
 
   * If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Manage the EBS Cloud Manager Virtual Machine."
   
@@ -173,7 +173,7 @@ Follow the applicable set of instructions based on your workstation to edit the 
     </copy>
     ```
 
-  This will then require your local computer password to edit the file. Enter the password and you should see a screen similar to the one shown below.
+  This will then require your local computer password to edit the file. Enter the password and you should see a screen similar to the following screenshot.
 
   3. At the bottom of the file, type `a` to append a new line.
 
@@ -187,7 +187,7 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   ![This screenshot shows how to edit the hosts file on a Mac.](./images/mac-editlastline.png " ")
 
-  5. Once you have finished editing the file, hit "esc" and enter `:x` to save and exit.
+  5. Once you have finished editing the file, press "esc" and enter `:x` to save and exit.
 
   6. Type the Login URL generated and documented to your `key-data.txt` previously into your browser.
   
@@ -200,7 +200,7 @@ Follow the applicable set of instructions based on your workstation to edit the 
   ![This screenshot is of the Environments page within the Oracle E-Business Suite Cloud Manager user interface.](./images/environments.png " ")
 
 Notes: 
-* It may take some additional time for the load balancer to be properly configured. Sometimes it may take up to 30 minutes or an hour to configure. If you would like to check on the status of the load balancer,  in OCI navigate to **Networking**, then **Load Balancers**, and check the **Overall Heatlh** status. If the status is OK, the connection can be established. 
+* It may take some additional time for the load balancer to be properly configured. Sometimes it may take up to 30 minutes or an hour to configure. If you would like to check on the status of the load balancer,  in OCI navigate to **Networking**, then **Load Balancers**, and check the **Overall Health** status. If the status is OK, the connection can be established. 
 
 * If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
 

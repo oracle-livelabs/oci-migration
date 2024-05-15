@@ -14,7 +14,7 @@ Oracle E-Business Suite Cloud Manager is a web application running on a Compute 
 In this lab, you will: 
 * Provision your first Oracle E-Business Suite environment.
 * Enable and set Oracle E-Business Suite account passwords.
-* Open up security configurations to allow traffic to E-Business Suite.
+* Open security configurations to allow traffic to E-Business Suite.
 * Configure Local hosts file and log in to Oracle E-Business Suite.
 
 ### Prerequisites
@@ -225,14 +225,14 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
         </copy>
         ```
 
-      This will then require your local computer password to edit the file. Enter and you should see a screen similar to the one shown below.
+      This will then require your local computer password to edit the file. Enter the password and you should see a screen similar to the following screenshot.
 
-    3. Type 'i' (insert) to edit the file using vi.
+    3. Type `i` (insert) to edit the file using vi.
 
-    4. Go to the last line and add the following entry as show below:
+    4. Go to the last line and add the following entry as shown:
     `<ip_address> ebsholenv1.example.com`
 
-    5. Once you have finished editing the file hit "esc" and type `:x` to save and exit.
+    5. Once you have finished editing the file, press "esc" and type `:x` to save and exit.
 
     ![This screenshot shows how to edit the hosts file on a Mac](./images/3.png " ")
 
