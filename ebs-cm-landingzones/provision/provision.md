@@ -12,23 +12,23 @@ Oracle E-Business Suite Cloud Manager is a web application running on a Compute 
 ### Objectives
 
 In this lab, you will: 
-* Provision your first Oracle E-Business Suite environment.
-* Enable and set Oracle E-Business Suite account passwords.
-* Open security configurations to allow traffic to E-Business Suite.
-* Configure the local hosts file and log in to Oracle E-Business Suite.
+* Provision your first EBS environment.
+* Enable and set EBS account passwords.
+* Open security configurations to allow traffic to EBS.
+* Configure the local hosts file and log in to EBS.
 
 ### Prerequisites
 
 This lab assumes you have:
-* Cloud Manager Admin credentials
-* Cloud Manager Application variables in `key-data.txt` file
+* EBS Cloud Manager Admin credentials
+* EBS Cloud Manager application variables in the `key-data.txt` file
 
 ## Task 1: Log in to Oracle E-Business Suite Cloud Manager
 1. Navigate to your Oracle E-Business Suite Cloud Manager application using the Login URL recorded in your `key-data.txt` file.
 
   **Note**: If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
 
-2. Log in with your Cloud Manager Admin credentials.
+2. Log in with your EBS Cloud Manager Admin credentials.
 
   ![This screenshot is of the Oracle Cloud Account Sign In page.](./images/cloud-sign-in.png " ")
 
