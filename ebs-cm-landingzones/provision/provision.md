@@ -15,7 +15,7 @@ In this lab, you will:
 * Provision your first Oracle E-Business Suite environment.
 * Enable and set Oracle E-Business Suite account passwords.
 * Open security configurations to allow traffic to E-Business Suite.
-* Configure Local hosts file and log in to Oracle E-Business Suite.
+* Configure the local hosts file and log in to Oracle E-Business Suite.
 
 ### Prerequisites
 
@@ -150,7 +150,7 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
 
 4. Now we will open the Security List in our VCN to allow traffic from the internet on port 4443. Go to OCI and navigate to **Networking** and then **Virtual Cloud Networks** section. 
 
-  ![This screenshot shows the navigation to Virtual Cloud Networks within the Oracle Cloud console navigation menu.](./images/7.png " ")
+  ![This screenshot shows the navigation to Virtual Cloud Networks within the Oracle Cloud console navigation menu.](./images/navigation-to-vcn.png " ")
 
   a. Ensuring you are in the right compartment (**ebshol-Network**), click on **ebshol\_vcn**. Then select the **Security Lists** Resource and the **ebshol-ebs-Production-app-SL** from there. 
 
@@ -193,15 +193,15 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
 
     2. Hover over Notepad, right-click, and select the option **Run as Administrator**.
 
-    3. In Notepad, navigate to **File** > **Open**.
+    3. From the **File** menu in Notepad, select **Open**.
 
     4. Browse to `C:\\Windows\System32\drivers\etc`.
 
-    5. Find the file `hosts`.
+    5. Find the file named `hosts`.
 
-        ![This screenshot shows the navigation to the file "hosts" within Windows Explorer.](./images/2.png " ")
+        ![This screenshot shows the navigation to the file "hosts" within Windows Explorer.](./images/hosts-explorer.png " ")
 
-    6. In the hosts file, scroll down to the end of the content.
+    6. In the `hosts` file, scroll down to the end of the content.
 
     7. Add the following entry to the very end of the file:
     
@@ -227,14 +227,14 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
 
       This will then require your local computer password to edit the file. Enter the password and you should see a screen similar to the following screenshot.
 
-    3. Type `i` (insert) to edit the file using vi.
+    3. Enter `i` (insert) to edit the file using vi.
 
     4. Go to the last line and add the following entry as shown:
     `<ip_address> ebsholenv1.example.com`
 
-    5. Once you have finished editing the file, press "esc" and type `:x` to save and exit.
+    5. Once you have finished editing the file, press "esc" and enter `:x` to save and exit.
 
-    ![This screenshot shows how to edit the hosts file on a Mac](./images/3.png " ")
+    ![This screenshot shows how to edit the hosts file on a Mac](./images/edit-hosts-mac.png " ")
 
 4. Log in to Oracle E-Business Suite:
 
@@ -246,7 +246,7 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
 
   c. Now you can log in to Oracle E-Business Suite.
 
-  ![This screenshot shows the Oracle E-Business Suite Log In page.](./images/4.png " ")
+  ![This screenshot shows the Oracle E-Business Suite Log In page.](./images/ebs-login.png " ")
 
 ## Learn More
 

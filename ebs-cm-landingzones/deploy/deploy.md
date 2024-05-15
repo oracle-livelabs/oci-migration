@@ -122,15 +122,15 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   2. Hover over Notepad, right-click, and select the option **Run as Administrator**.
 
-  3. In Notepad, navigate to **File**, then **Open**.
+  3. From the **File** menu in Notepad, select **Open**.
 
   4. Browse to `C:\\Windows\System32\drivers\etc`.
 
-  5. Find the file "hosts".
+  5. Find the file named "hosts".
 
       ![This screenshot depicts the navigation to the hosts file within Windows Explorer. ](./images/windows-hostsfile.png " ")
 
-  6. In the hosts file, scroll down to the end of the content.
+  6. In the `hosts` file, scroll down to the end of the content.
 
   7. Add the following entry to the very end of the file: 
   
@@ -142,9 +142,9 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   8. Save the file.
 
-  9. Type the Login URL generated and documented to your `key-data.txt` previously into your browser.
+  9. Enter the Login URL generated and documented to your `key-data.txt` previously into your browser.
   
-  10. Log into the Oracle E-Business Suite Cloud Manager using your IDCS credentials for the EBS Cloud Manager account as documented in your ``key-data.txt`` file.
+  10. Log into the Oracle E-Business Suite Cloud Manager using your IDCS credentials for the EBS Cloud Manager account as documented in your `key-data.txt` file.
 
   ![This screenshot is of the Oracle Cloud Account Sign In page.](./images/cloud-sign-in.png " ")
     
@@ -175,7 +175,7 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   This will then require your local computer password to edit the file. Enter the password and you should see a screen similar to the following screenshot.
 
-  3. At the bottom of the file, type `a` to append a new line.
+  3. At the bottom of the file, enter `a` to append a new line.
 
   4. Add the following entry as follows: 
   
@@ -189,7 +189,7 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   5. Once you have finished editing the file, press "esc" and enter `:x` to save and exit.
 
-  6. Type the Login URL generated and documented to your `key-data.txt` previously into your browser.
+  6. Enter the Login URL generated and documented to your `key-data.txt` previously into your browser.
   
   7. Log into the Oracle E-Business Suite Cloud Manager using your IDCS credentials for the EBS Cloud Manager account as documented in your ``key-data.txt`` file.
   
@@ -200,7 +200,7 @@ Follow the applicable set of instructions based on your workstation to edit the 
   ![This screenshot is of the Environments page within the Oracle E-Business Suite Cloud Manager user interface.](./images/environments.png " ")
 
 Notes: 
-* It may take some additional time for the load balancer to be properly configured. Sometimes it may take up to 30 minutes or an hour to configure. If you would like to check on the status of the load balancer,  in OCI navigate to **Networking**, then **Load Balancers**, and check the **Overall Health** status. If the status is OK, the connection can be established. 
+* It may take some additional time for the load balancer to be properly configured. Sometimes it may take up to 30 minutes or an hour to configure. If you would like to check on the status of the load balancer, in OCI navigate to **Networking**, then **Load Balancers**, and check the **Overall Health** status. If the status is OK, the connection can be established. 
 
 * If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
 
