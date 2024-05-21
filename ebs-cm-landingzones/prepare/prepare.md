@@ -9,7 +9,7 @@ Estimated Time: 5 minutes
 ### Objectives
 
 In this lab, you will:
-* Use [this file.](./files/key-data.txt?download=1)
+* Use [this file](./files/key-data.txt?download=1).
 * Prepare your workstation with the `key-data.txt` file, which will be used throughout the workshop.
 
 ## Task 1: Download and Unzip the Workshop Files
