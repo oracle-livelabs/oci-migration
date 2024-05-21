@@ -93,7 +93,7 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
     ![This is a screenshot of the Configure variables screen](images/deploy-configvariables4.png)    
     <!--Tiffany rename and renumber images-->
 
-    f. In the EBS CM Administrator User section, leave all fields blank. For this hands-on lab, these values are dynamically chosen for you based on the user connected to the OCI Console.
+    f. In the EBS CM Administrator User section, leave all fields blank. For this lab, these values are dynamically chosen for you based on the user connected to the OCI Console.
 
     ![This is a screenshot of the Configure variables screen](images/deploy-configvariables3.png)
 

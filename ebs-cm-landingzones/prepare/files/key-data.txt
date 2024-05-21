@@ -1,0 +1,23 @@
+
+Tenancy Details:
+----------------
+Tenancy Name: 
+Tenancy Admin User: 		
+Tenancy Admin Password: 
+
+
+Cloud Manager Details:
+----------------------
+Cloud Manager URL:
+Cloud Manager Admin Username:
+Cloud Manager Admin Password:
+Private IP: 
+Public IP: 
+LB Public IP:
+
+
+EBS Cloud Manager Confidential Application Details:
+---------------------------------------------------
+Client Tenant: 
+Client ID:
+Client Secret: 
