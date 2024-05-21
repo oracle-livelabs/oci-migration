@@ -3,10 +3,8 @@
 ## About this Workshop
 
 In this workshop, you will first establish a pre-defined landing zone that: 
-
-    a) meets the security guidelines prescribed by the Center for Internet Security (CIS) Oracle Cloud Infrastructure Foundations Benchmark, and 
-
-    b) supports Oracle E-Business Suite (EBS) workloads. 
+* Meets the security guidelines prescribed by the Center for Internet Security (CIS) Oracle Cloud Infrastructure Foundations Benchmark, and 
+* Supports Oracle E-Business Suite (EBS) workloads. 
 
 Note that this landing zone is comprised of compartments, groups to manage those compartments, and a fully configured network. 
 
