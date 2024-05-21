@@ -31,10 +31,6 @@ The following expertise is beneficial:
 * Knowledge of Oracle E-Business Suite (EBS)
 * Familiarity with Oracle Cloud Infrastructure (OCI) and Identity and Access Management (IAM) domains
 
-This lab assumes you have:
-
-* Access to the ebs-hol.zip file
-
 ### Workshop Overview
 The following figure outlines the workshop architecture. 
 

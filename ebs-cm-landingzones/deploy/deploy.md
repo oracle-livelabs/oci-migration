@@ -86,27 +86,34 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     ![This is a screenshot of the Configure variables screen](images/deploy-configvariables1.png)
 
-    d. In the EBS CM Administrator User section, leave all fields blank. For this hands-on lab, these values are dynamically chosen for you based on the user connected to the OCI Console.
+    d. **Cliend ID** and **Client Secret**: Enter the Client ID and Client Secret you recorded in Lab 3, Task 2, Step 12.
+
+    e. **Client tenant ID**: Enter the Domain URL recorded in Lab 3, Task 2, step 14. 
+
+    ![This is a screenshot of the Configure variables screen](images/deploy-configvariables4.png)    
+    <!--Tiffany rename and renumber images-->
+
+    f. In the EBS CM Administrator User section, leave all fields blank. For this hands-on lab, these values are dynamically chosen for you based on the user connected to the OCI Console.
 
     ![This is a screenshot of the Configure variables screen](images/deploy-configvariables3.png)
 
-    e. **Compute Instance Shape**: Select "VM.Standard.E2.2".
+    g. **Compute Instance Shape**: Select "VM.Standard.E2.2".
 
-    f. Generate a new SSH key. For more information on SSH keys, visit: [Generating an SSH Key Pair](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/compute-iaas/generating_ssh_key/generate_ssh_key.html).
+    h. Generate a new SSH key. For more information on SSH keys, visit: [Generating an SSH Key Pair](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/compute-iaas/generating_ssh_key/generate_ssh_key.html).
 
-    g. Under **SSH Public key**, select the **Choose SSH key file** radio button. 
+    i. Under **SSH Public key**, select the **Choose SSH key file** radio button. 
 
-    h. **Availability Domain**: Select the first availability domain in the drop-down list.
+    j. **Availability Domain**: Select the first availability domain in the drop-down list.
 
-    i. Under **EBS CM services administration password**, leave the password in the **Enter the password** field as-is.
+    k. Under **EBS CM services administration password**, leave the password in the **Enter the password** field as-is.
 
     ![This is a screenshot of the Configure variables screen](images/deploy-configvariables2.png)
 
-    j. Click **Next**.
+    l. Click **Next**.
 
     ![This is a screenshot of the Configure variables screen](images/configvariables-review.png)
 
-    k. After reviewing your entries, click **Create**.
+    m. After reviewing your entries, click **Create**.
 
 ## Task 3: Log in to Oracle E-Business Suite Cloud Manager
 
