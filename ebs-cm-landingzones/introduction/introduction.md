@@ -2,7 +2,15 @@
 
 ## About this Workshop
 
-In this workshop, you will establish a pre-defined landing zone that meets the security guidelines prescribed by the Center for Internet Security (CIS) Oracle Cloud Infrastructure Foundations Benchmark and supports Oracle E-Business Suite (EBS) workloads. This landing zone is comprised of multiple compartments, groups to manage those compartments, and a fully configured network to support EBS workloads. Then, you will deploy EBS Cloud Manager which will utilize the resources from the landing zone to manage your EBS environments. Once completed, you will be able to provision your first EBS environment. 
+In this workshop, you will first establish a pre-defined landing zone that: 
+
+    a) meets the security guidelines prescribed by the Center for Internet Security (CIS) Oracle Cloud Infrastructure Foundations Benchmark, and 
+
+    b) supports Oracle E-Business Suite (EBS) workloads. 
+
+Note that this landing zone is comprised of compartments, groups to manage those compartments, and a fully configured network. 
+
+After deploying the landing zone, you will install and configure EBS Cloud Manager, which can utilize the resources from the landing zone to manage your EBS environments. Once this is completed, you will be able to provision your first EBS environment. 
 
 Estimated Workshop Time: 2 hours
 
@@ -16,19 +24,24 @@ Note the following:
 In this workshop, you will learn how to:
 * Set up the landing zone
 * Deploy and configure Oracle E-Business Suite Cloud Manager
-* Provision Your Oracle E-Business Suite Environment
+* Provision an Oracle E-Business Suite environment
 
 ### Prerequisites
 
+The following expertise is beneficial:
+* Knowledge of how to connect to virtual machines from your local machine (such as Putty or SSH)
+* Knowledge of Oracle E-Business Suite (EBS)
+* Familiarity with Oracle Cloud Infrastructure (OCI) and Identity and Access Management (IAM) domains
+
 This lab assumes you have:
-* Knowledge of how to connect to virtual machines from your local machine is helpful (Putty, SSH tooling)
-* Some understanding of Oracle E-Business Suite which is helpful
-* Familiarity with Oracle Cloud Infrastructure (OCI) and Identity and Access Management (IAM) identity domains which is also helpful
+
+* Access to the ebs-hol.zip file
 
 ### Workshop Overview
 The following figure outlines the workshop architecture. 
 
 **Figure 1: Workshop Architecture**
+
 *Architecture diagram goes here*
 
 This workshop uses the following components: 
