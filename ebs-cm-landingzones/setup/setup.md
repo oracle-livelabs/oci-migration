@@ -85,7 +85,7 @@ The following diagram depicts the compartment distribution, which includes the a
 
     ![This is the Configure variables screen for the Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones.](images/tenancy-stack-config-variables.png)
 
-5. On the Review screen, verify the information and click **Create**.
+5. On the Review screen, ensure the **Run apply** checkbox is selected. Verify the information and click **Create**.
 
     ![This is the Review screen for the Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones.](images/tenancy-stack-review.png)
 
@@ -161,7 +161,7 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
     ![This is the Configure variables screen for the racle E-Business Suite: Network Admin Stack for Landing Zones.](images/network-stack-config-var4.png)
 
-5. On the Review screen, verify the information and click **Create**.
+5. On the Review screen, ensure the **Run apply** checkbox is selected. Verify the information and click **Create**.
 
     ![This is the Review screen for the Oracle E-Business Suite: Network Admin Stack for Landing Zones.](images/network-stack-review.png)
 
