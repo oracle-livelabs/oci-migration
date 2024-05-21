@@ -17,7 +17,7 @@
     {
       "title": "Lab 1: Getting Started",
       "description": "Establish Oracle Clound account credentials, download the key-data.txt file, and log in to your Oracle Cloud account.",
-      "filename": "../../prepare/prepare.md"
+      "filename": "../../getting-started/getting-started.md"
     },
     {
       "title": "Lab 2: Set Up the Landing Zone",
