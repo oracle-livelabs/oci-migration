@@ -35,13 +35,15 @@ To establish a Free Tier account:
 
 Note that you will be a tenancy administrator for your new account. 
 
+Record your credentials in the `key-data.txt` file for reference.
+
 *Oracle Cloud Paid Accounts*
 
 If you have an existing Oracle Cloud paid account, verify that you have tenancy administrator credentials before proceeding with this workshop. 
 
 ## Task 3: Log in to Oracle Cloud
 
-1. Go to [cloud.oracle.com](https://cloud.oracle.com) and enter your **Cloud Account Name** and click **Next**. This is the name you chose while creating your account in the previous section. It's NOT your email address. If you've forgotten the name, see the confirmation email.
+1. Go to [cloud.oracle.com](https://cloud.oracle.com) and enter your **Cloud Account Name** and click **Next**. This is the name you chose while creating your account in the previous section. It's NOT your email address. If you've forgotten the name, reference the `key-data.txt` file or see the confirmation email.
 ![Cloud Account Name](./images/cloud-oracle.png " ")
 
 2. Click **Continue** to reveal the login input fields.
