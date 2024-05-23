@@ -59,7 +59,7 @@ The following describes the exercises you will perform in this workshop.
 
 | What          |      How      |  Notes |
 | ------------- | ------------- | ------------- |
-| **Lab 1**: Prepare your workstation  | Download `ebs-hol.zip` and unzip | - |
+| **Lab 1**: Getting Started  | Download `key-data.txt` and unzip | - |
 | **Lab 2**: Set up the landing zone |  Create the foundation; Create the network   | Create the tenancy stack and the network stack |
 | **Lab 3**: Register EBS Suite Cloud Manager as a confidential application | Get a trial tenancy, register EBS Cloud Manager as a confidential application in tenancies using IAM with identity domains | Use a Trial or Production Tenancy, configure SSO with IAM for EBS Cloud Manager |
 | **Lab 4**: Deploy and configure EBS Cloud Manager  | Deploy and configure EBS Cloud Manager and required resources| Use OCI Resource Manager to deploy and configure EBS CM web app |

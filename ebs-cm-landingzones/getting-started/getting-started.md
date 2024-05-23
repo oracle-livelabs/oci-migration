@@ -15,7 +15,7 @@ In this lab, you will:
 * Establish your Cloud account (tenancy) and administrator credentials.
 * Log in to your Oracle Cloud account to verify access.
 
-## Task 1: Download the `key-data.txt` file.
+## Task 1: Download the key-data.txt file
 
 Use [this link](./files/key-data.txt?download=1) to download the `key-data.txt` file. Place the file on your desktop or another memorable location for quick reference.
 
