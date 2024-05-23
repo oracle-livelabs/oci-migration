@@ -89,6 +89,12 @@ The following diagram depicts the compartment distribution, which includes the a
 
     ![This is the Review screen for the Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones.](images/tenancy-stack-review.png)
 
+    Note that if you receive the following error while creating this stack, you must click on the "Stack Details" link at the top of the page. From there, click **Apply** and in the window that appears, click **Apply** again to rerun the stack.
+
+    ```
+    dial tcp: lookup <xxxxxxxxxxxxx>-management.kms.<region>>.oraclecloud.com on XXX.XXX.XXX.XXX:XX: no such host
+    ```
+
 ## Task 3: Create the Network
 
 This task guides you through the process of running the network stack, which will allow you to define a VCN, subnets to support EBS Cloud Manager deployment, as well as the subnets for the first environment category. Additionally, you will configure security rules, and deploy gateways required to support a secured EBS workload deployment. 

@@ -86,9 +86,9 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     ![This is a screenshot of the Configure variables screen](images/deploy-configvariables1.png)
 
-    d. **Cliend ID** and **Client Secret**: Enter the Client ID and Client Secret you recorded in Lab 3, Task 2, Step 12.
+    d. **Client ID** and **Client Secret**: Enter the Client ID and Client Secret you recorded in Lab 3, Task 2, Step 12.
 
-    e. **Client tenant ID**: Enter the Domain URL recorded in Lab 3, Task 2, step 14. 
+    e. **Domain URL**: Enter the Domain URL recorded in Lab 3, Task 2, step 14. 
 
     ![This is a screenshot of the Configure variables screen](images/deploy-configvariables4.png)    
     <!--Tiffany rename and renumber images-->

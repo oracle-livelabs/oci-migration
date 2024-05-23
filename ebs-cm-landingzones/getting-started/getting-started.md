@@ -1,4 +1,4 @@
-# Lab 1: Getting Started
+# Getting Started
 
 ## Introduction
 
