@@ -33,7 +33,9 @@ To establish a Free Tier account:
 
 2. You will then get an email notifying you that you Oracle Cloud account is ready. Click **Sign In** and authenticate.
 
-Note that you will be a tenancy administrator for your new account. This will be your `Tenancy Admin User Name` `and Tenancy Admin Password`.
+Note that you will be a tenancy administrator for your new account. 
+
+Your username and password for your cloud account are your `Tenancy Admin User Name` `and Tenancy Admin Password`.
 
 Record these credentials in the `key-data.txt` file for reference.
 
