@@ -87,11 +87,11 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     g. **Compute Instance Shape**: Select "VM.Standard.E2.1".
 
-    h. Generate a new SSH key. For more information on SSH keys, visit: [Generating an SSH Key Pair](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/compute-iaas/generating_ssh_key/generate_ssh_key.html).
+    h. Generate a new SSH key pair. For more information on SSH keys, visit: [Generating an SSH Key Pair](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/compute-iaas/generating_ssh_key/generate_ssh_key.html).
 
     Record the path to the SSH Key Pair in the `key-data.txt` file for future reference.
 
-    i. Under **SSH Public key**, select the **Choose SSH key file** radio button. 
+    i. Under **SSH Public key**, select the **Choose SSH key file** radio button, and choose the public SSH key generated in the previous step.
 
     j. **Availability Domain**: Select the first availability domain in the drop-down list.
 
