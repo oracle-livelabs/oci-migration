@@ -96,7 +96,7 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     ![This is a screenshot of the Configure variables screen](images/deploy-configvariables3.png)
 
-    g. **Compute Instance Shape**: Select "VM.Standard.E2.2".
+    g. **Compute Instance Shape**: Select "VM.Standard.E2.1".
 
     h. Generate a new SSH key. For more information on SSH keys, visit: [Generating an SSH Key Pair](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/compute-iaas/generating_ssh_key/generate_ssh_key.html).
 
