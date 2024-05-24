@@ -46,18 +46,14 @@ If you have an existing Oracle Cloud paid account, verify that you have tenancy 
 1. Go to [cloud.oracle.com](https://cloud.oracle.com) and enter your **Cloud Account Name** and click **Next**. This is the name you chose while creating your account in the previous section. It's NOT your email address. If you've forgotten the name, reference the `key-data.txt` file or see the confirmation email.
 ![Cloud Account Name](./images/cloud-oracle.png " ")
 
-2. Click **Continue** to reveal the login input fields.
-![Cloud Login Name](./images/cloud-login-tenant-single-sigon.png " ")
-<!--Note: Check with Terri. Said that Click Continue to reveal the login input fields screenshot... don't need the second half of image -->
+2. Enter your Cloud Account credentials and click **Sign In**. Your user name is your email address. The password is what you chose when you signed up for an account.
+![Sign in](./images/oc-account-sign-in.png " ")
 
-3. Enter your Cloud Account credentials and click **Sign In**. Your user name is your email address. The password is what you chose when you signed up for an account.
-![Sign in](./images/oci-signin.png " ")
+3. Based on the multi-factor authentication setup for your account, provide authentication to sign into the account. For example, click **Allow** on the app or enter your **authentication code** and click **Verify** based on the authentication setup. For more details, refer to the [Managing Multifactor Authentication documentation](https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/usingmfa.htm).
 
-4. Based on the multi-factor authentication setup for your account, provide authentication to sign into the account. For example, click **Allow** on the app or enter your **authentication code** and click **Verify** based on the authentication setup. For more details, refer to the [Managing Multifactor Authentication documentation](https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/usingmfa.htm).
-![Click Allow in the app](./images/sso-multi-factor-authentication.png " ")
-![Enter authentication code and click Verify](./images/sso2-multi-factor-authentication.png " ")
+    ![Authenticate](./images/authentication-pg.png " ")
 
-5. After verfication, you will be signed in to Oracle Cloud.
+4. After verfication, you will be signed in to Oracle Cloud.
 ![OCI Console Home Page](https://oracle-livelabs.github.io/common/images/console/home-page.png " ")
 
 ## Learn More
