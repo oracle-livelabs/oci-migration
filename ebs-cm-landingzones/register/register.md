@@ -120,7 +120,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
     ![This screenshot highlights the Activate button within the user interface and displays the Activate application pop-up window to activate your application.](./images/activate-application.png " ")
 
-14. Record your Domain URL in the `key-data.txt` file. Click the "Copy" link next to the Domain URL value. When pasting in to the `key-data.txt`, remove the port portion of the URL (for example "`:443`").
+14. Record your Domain URL in the `key-data.txt` file. Click the "Copy" link next to the Domain URL value. When pasting in to the `key-data.txt` file, remove the port portion of the URL (for example "`:443`").
 
   ![This screenshot shows the Domain Information tab within the Overview.](images/default-domain-info.png)
 
