@@ -75,9 +75,9 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     ![This is a screenshot of the Configure variables screen](images/deploy-configvariables-1.png)
 
-    d. **Client ID** and **Client Secret**: Enter the Client ID and Client Secret you recorded in Lab 3, Task 2, Step 12.
+    d. **Client ID** and **Client Secret**: Enter the Client ID and Client Secret recorded in the `key-data.txt` file.
 
-    e. **Domain URL**: Enter the Domain URL recorded in Lab 3, Task 2, step 14. 
+    e. **Domain URL**: Enter the Domain URL recorded in the `key-data.txt` file. 
 
     ![This is a screenshot of the Configure variables screen](images/deploy-configvariables-2.png)
 
@@ -88,6 +88,8 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
     g. **Compute Instance Shape**: Select "VM.Standard.E2.1".
 
     h. Generate a new SSH key. For more information on SSH keys, visit: [Generating an SSH Key Pair](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/compute-iaas/generating_ssh_key/generate_ssh_key.html).
+
+    Record the path to the SSH Key Pair in the `key-data.txt` file for future reference.
 
     i. Under **SSH Public key**, select the **Choose SSH key file** radio button. 
 

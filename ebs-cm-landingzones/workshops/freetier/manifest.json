@@ -32,10 +32,6 @@
       }
     },
     {
-      "title": "Optional: Provision Your Oracle E-Business Suite Environment",
-      "filename": "../../provision/provision.md"
-    },
-    {
       "title": "Optional: Manage the EBS Cloud Manager Virtual Machine",
       "filename": "../../manage-VM/manage.md"
   },
