@@ -105,6 +105,10 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     ![This is a screenshot of the Configure variables screen](images/configvariables-review.png)
 
+    n. Click the "Outputs" link and record the Load_Balancer_IP_Address in your `key-data.txt` file. 
+
+     ![This is a screenshot of the Configure variables screen](images/load_balancer_ip_address.png)   
+
 ## Task 3: Log in to Oracle E-Business Suite Cloud Manager
 
 Before logging into the EBS Cloud Manager web application, add the Fully Qualified Domain Name (FQDN) from your EBS Cloud Manager URL to your local `hosts` file.
