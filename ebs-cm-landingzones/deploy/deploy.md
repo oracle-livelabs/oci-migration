@@ -107,13 +107,13 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     k. Under **EBS CM services administration password**, leave the password in the **Enter the password** field as-is.
 
-    ![This is a screenshot of the Configure variables screen](images/deploy-configvariables2.png)
-
     l. Click **Next**.
 
-    ![This is a screenshot of the Configure variables screen](images/configvariables-review.png)
+    ![This is a screenshot of the Configure variables screen](images/deploy-configvariables2.png)
 
     m. After reviewing your entries, click **Create**.
+
+    ![This is a screenshot of the Configure variables screen](images/configvariables-review.png)
 
 ## Task 3: Log in to Oracle E-Business Suite Cloud Manager
 
