@@ -15,6 +15,10 @@ In this lab, you will:
 * Establish your Cloud account (tenancy) and administrator credentials.
 * Log in to your Oracle Cloud account to verify access.
 
+### Prerequisites
+
+* None.
+
 ## Task 1: Download the key-data.txt file
 
 Use [this link](./files/key-data.txt?download=1) to download the `key-data.txt` file. Place the file on your desktop or another memorable location for quick reference.
@@ -57,6 +61,8 @@ If you have an existing Oracle Cloud paid account, verify that you have tenancy 
 
 4. After verfication, you will be signed in to Oracle Cloud.
 ![OCI Console Home Page](https://oracle-livelabs.github.io/common/images/console/home-page.png " ")
+
+You may now **proceed to the next lab**.
 
 ## Learn More
 

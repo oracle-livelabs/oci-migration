@@ -52,7 +52,7 @@ This workshop uses the following components:
     * Cloned from environment 1
     * Application and database tiers on this compute instance
 
-The following describes the exercises you will perform in this workshop.
+The following table describes the exercises you will perform in this workshop.
 
 **Table 2: Storyboard**
 

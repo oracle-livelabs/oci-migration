@@ -124,6 +124,8 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
   ![This screenshot shows the Domain Information tab within the Overview.](images/default-domain-info.png)
 
+You may now **proceed to the next lab**.
+
 ## Learn More
 
 * [Learn About Deploying Terraform Stacks for E-Business Suite and Cloud Manager](https://docs.oracle.com/en/solutions/deploy-landing-zone-e-business-suite-cm/learn-deploying-terraform-stacks-e-business-suite-and-cloud-manager1.html#GUID-CAA809AC-2A7F-40F9-96E9-493C2F388494)

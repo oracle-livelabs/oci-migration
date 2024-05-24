@@ -15,6 +15,10 @@ In this lab, you will:
 * Deploy and configure EBS Cloud Manager.
 * Verify and log in to EBS Cloud Manager.
 
+### Prerequisites
+
+* None.
+
 ## Task 1: Sign in to the Oracle Cloud Infrastructure Console
 
 Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastructure (OCI) Console.
@@ -156,6 +160,7 @@ Before logging into the EBS Cloud Manager web application, add the Fully Qualifi
   * If your Cloud Manager URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Manage the EBS Cloud Manager Virtual Machine."
   
   * Your browser may give you an error when attempting to access the EBS Cloud Manager. If you run into an error using the Cloud Manager URL, try using a different browser or an incognito session. If this does not solve the problem, try adding `:443` after the URL (for example, `https://myebscm.ebshol.org:443`).
+
 </if>
 
 <if type="Mac">
@@ -198,12 +203,12 @@ Before logging into the EBS Cloud Manager web application, add the Fully Qualifi
   
   ![This screenshot is of the Environments page within the Oracle E-Business Suite Cloud Manager user interface.](./images/environments.png " ")
 
-Notes: 
-* It may take some additional time for the load balancer to be properly configured. Sometimes it may take up to 30 minutes or an hour to configure. If you would like to check on the status of the load balancer, in OCI navigate to **Networking**, then **Load Balancers**, and check the **Overall Health** status. If the status is OK, the connection can be established. 
+  Notes: 
+  * It may take some additional time for the load balancer to be properly configured. Sometimes it may take up to 30 minutes or an hour to configure. If you would like to check on the status of the load balancer, in OCI navigate to **Networking**, then **Load Balancers**, and check the **Overall Health** status. If the status is OK, the connection can be established. 
 
-* If your Cloud Manager URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
+  * If your Cloud Manager URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
 
-* Your browser may give you an error when attempting to access the EBS Cloud Manager. If you run into an error using the Cloud Manager URL, try using a different browser or an incognito session. If this does not solve the problem, try adding `:443` after the URL (for example, `https://myebscm.ebshol.org:443`).
+  * Your browser may give you an error when attempting to access the EBS Cloud Manager. If you run into an error using the Cloud Manager URL, try using a different browser or an incognito session. If this does not solve the problem, try adding `:443` after the URL (for example, `https://myebscm.ebshol.org:443`).
 
 </if>
 

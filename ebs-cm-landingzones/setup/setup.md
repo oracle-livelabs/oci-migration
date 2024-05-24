@@ -19,8 +19,7 @@ In this lab, you will:
 ### Prerequisites
 
 This lab assumes you have:
-* An Oracle Cloud account
-* All previous labs successfully completed
+* An Oracle Cloud account 
 
 ## Task 1: Sign in to the Oracle Cloud Infrastructure Console
 
@@ -169,6 +168,8 @@ The following diagram depicts a virtual cloud network with all subnets required 
 5. On the Review screen, ensure the **Run apply** checkbox is selected. Verify the information and click **Create**.
 
     ![This is the Review screen for the Oracle E-Business Suite: Network Admin Stack for Landing Zones.](images/network-stack-review.png)
+
+You may now **proceed to the next lab**.
 
 ## Learn More
 
