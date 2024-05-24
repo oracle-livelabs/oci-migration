@@ -107,9 +107,7 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
 ## Task 3: Log in to Oracle E-Business Suite Cloud Manager
 
-Before logging into the EBS Cloud Manager web application, you need to add the **hostname** in the login URL to your local computer hosts file.
-
-Follow the applicable set of instructions based on your workstation to edit the local `hosts` file and add an entry and perform this configuration:
+Before logging into the EBS Cloud Manager web application, add the Fully Qualified Domain Name (FQDN) from your EBS Cloud Manager URL to your local `hosts` file.
 
 <if type="Windows">
 
@@ -139,9 +137,9 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   8. Save the file.
 
-  9. Enter the Login URL generated and documented to your `key-data.txt` previously into your browser.
+  9. Enter the Cloud Manager URL  recorded in your `key-data.txt` file into your browser.
   
-  10. Log into the Oracle E-Business Suite Cloud Manager using your IDCS credentials for the EBS Cloud Manager account as documented in your `key-data.txt` file.
+  10. Log into the Oracle E-Business Suite Cloud Manager using your `Tenancy Admin User Name` and `Tenancy Admin Password` as documented in your `key-data.txt` file.
 
   ![This screenshot is of the Oracle Cloud Account Sign In page.](./images/cloud-sign-in.png " ")
     
@@ -151,9 +149,9 @@ Follow the applicable set of instructions based on your workstation to edit the 
   **Notes**: 
   * It may take some additional time for the load balancer to be properly configured. Sometimes it may take up to 30 minutes or an hour to configure. If you would like to check on the status of the load balancer, in OCI go to **Networking**, then **Load Balancers**, and check the **Overall Health** status. If it is OK, the connection can be established. 
 
-  * If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Manage the EBS Cloud Manager Virtual Machine."
+  * If your Cloud Manager URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Manage the EBS Cloud Manager Virtual Machine."
   
-  * Your browser may give you an error when attempting to access the EBS Cloud Manager. If you run into an error using the EBS login URL try using a different browser or an incognito session. If this does not solve the problem, try adding `:443` after the URL (for example, `https://myebscm.ebshol.org:443`).
+  * Your browser may give you an error when attempting to access the EBS Cloud Manager. If you run into an error using the Cloud Manager URL, try using a different browser or an incognito session. If this does not solve the problem, try adding `:443` after the URL (for example, `https://myebscm.ebshol.org:443`).
 </if>
 
 <if type="Mac">
@@ -186,9 +184,9 @@ Follow the applicable set of instructions based on your workstation to edit the 
 
   5. Once you have finished editing the file, press "esc" and enter `:x` to save and exit.
 
-  6. Enter the Login URL generated and documented to your `key-data.txt` previously into your browser.
+  6. Enter the Cloud Manager URL  recorded in your `key-data.txt` file into your browser.
   
-  7. Log into the Oracle E-Business Suite Cloud Manager using your IDCS credentials for the EBS Cloud Manager account as documented in your `key-data.txt` file.
+  7. Log into the Oracle E-Business Suite Cloud Manager using your `Tenancy Admin User Name` and `Tenancy Admin Password` as documented in your `key-data.txt` file.
   
   ![This screenshot is of the Oracle Cloud Account Sign In page.](./images/cloud-sign-in.png " ")
   
@@ -199,9 +197,9 @@ Follow the applicable set of instructions based on your workstation to edit the 
 Notes: 
 * It may take some additional time for the load balancer to be properly configured. Sometimes it may take up to 30 minutes or an hour to configure. If you would like to check on the status of the load balancer, in OCI navigate to **Networking**, then **Load Balancers**, and check the **Overall Health** status. If the status is OK, the connection can be established. 
 
-* If your login URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
+* If your Cloud Manager URL is not working or if your compute instance which contains the Cloud Manager image was ever stopped/turned off you may need to check and see if the application is running. The command for this can be found in the Lab "Optional: Managing the EBS Cloud Manager Virtual Machine."
 
-* Your browser may give you an error when attempting to access the EBS Cloud Manager. If you run into an error using the EBS login URL try using a different browser or an incognito session. If this does not solve the problem, try adding `:443` after the URL (for example, `https://myebscm.ebshol.org:443`).
+* Your browser may give you an error when attempting to access the EBS Cloud Manager. If you run into an error using the Cloud Manager URL, try using a different browser or an incognito session. If this does not solve the problem, try adding `:443` after the URL (for example, `https://myebscm.ebshol.org:443`).
 
 </if>
 
