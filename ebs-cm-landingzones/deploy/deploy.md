@@ -15,17 +15,6 @@ In this lab, you will:
 * Deploy and configure EBS Cloud Manager.
 * Verify and log in to EBS Cloud Manager.
 
-### Prerequisites
-
-This lab assumes you have:
-* The tenancy admin user name and password
-* The following IAM with Identity Domains information documented in your `key-data.txt` file:
-    * `Tenancy_Admin_Username`
-    * `Tenancy_Admin_Password`
-    * `Client_Tenant`
-    * `Client_ID`
-    * `Client_Secret`
-
 ## Task 1: Sign in to the Oracle Cloud Infrastructure Console
 
 Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastructure (OCI) console.
@@ -34,8 +23,8 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
 2. Sign in to the OCI console using the following:
 
-    * **User name**: `Tenancy_Admin_Username`
-    * **Password**: `Tenancy_Admin_Password`
+    * **User name**: `Tenancy Admin Username`
+    * **Password**: `Tenancy Admin Password`
 
 ## Task 2: Deploy and Configure Oracle E-Business Suite Cloud Manager
 
@@ -142,7 +131,7 @@ Follow the applicable set of instructions based on your workstation to edit the 
   
     ```
     <copy>
-    <lb_ip_address> myebscm.ebshol.org
+    <Load_Balancer_IP_address> myebscm.ebshol.org
     </copy>
     ```
 
@@ -187,7 +176,7 @@ Follow the applicable set of instructions based on your workstation to edit the 
   
     ```
     <copy>
-    <lb_ip_address> myebscm.ebshol.org
+    <Load_Balancer_IP_address> myebscm.ebshol.org
     </copy>
     ```
 

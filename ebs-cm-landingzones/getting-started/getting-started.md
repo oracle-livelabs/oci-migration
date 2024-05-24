@@ -35,7 +35,7 @@ To establish a Free Tier account:
 
 Note that you will be a tenancy administrator for your new account. 
 
-Your username and password for your cloud account are your `Tenancy Admin User Name` `and Tenancy Admin Password`.
+Your username and password for your cloud account are your `Tenancy Admin User Name` and `Tenancy Admin Password`.
 
 Record these credentials in the `key-data.txt` file for reference.
 

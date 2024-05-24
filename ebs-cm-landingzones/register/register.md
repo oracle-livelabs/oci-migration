@@ -26,7 +26,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
 2. Sign in to the Oracle Cloud Infrastructure console using the following:
 
-    * **User name**: `Tenancy Admin User`
+    * **User name**: `Tenancy Admin Username`
     * **Password**: `Tenancy Admin Password`
 
 ## Task 2: Register Cloud Manager as a Confidential Application in Tenancies Using IAM with Identity Domains

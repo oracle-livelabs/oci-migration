@@ -30,8 +30,8 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
 2. Sign in to the Oracle Cloud Infrastructure Console using the following:
 
-    * **User name**: `Tenancy_Admin_Username`
-    * **Password**: `Tenancy_Admin_Password`
+    * **User name**: `Tenancy Admin Username`
+    * **Password**: `Tenancy Admin Password`
 
 ## Task 2: Create the Foundation
 
