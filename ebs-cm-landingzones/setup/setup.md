@@ -91,9 +91,7 @@ The following diagram depicts the compartment distribution, which includes the a
 
     Note that if you receive the following error while creating this stack, you must click on the "Stack Details" link at the top of the page. From there, click **Apply** and in the window that appears, click **Apply** again to rerun the stack.
 
-    ```
-    dial tcp: lookup <xxxxxxxxxxxxx>-management.kms.<region>>.oraclecloud.com on XXX.XXX.XXX.XXX:XX: no such host
-    ```
+    ``dial tcp: lookup <xxxxxxxxxxxxx>-management.kms.<region>>.oraclecloud.com on XXX.XXX.XXX.XXX:XX: no such host``
 
 ## Task 3: Create the Network
 
