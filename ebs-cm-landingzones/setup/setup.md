@@ -28,7 +28,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
 1. Reference your `key-data.txt` file and locate the tenancy administrator credentials.
 
-2. Sign in to the Oracle Cloud Infrastructure console using the following:
+2. Sign in to the Oracle Cloud Infrastructure Console using the following:
 
     * **User name**: `Tenancy_Admin_Username`
     * **Password**: `Tenancy_Admin_Password`
@@ -132,6 +132,7 @@ The following diagram depicts a virtual cloud network with all subnets required 
     c. Click **Next**.
 
     ![This is the stack information screen for the Oracle E-Business Suite: Network Admin Stack for Landing Zones.](images/network-stack-info.png)
+    <!-- Copy image to setup/images-->
 
 4. On the Configure variables screen, enter the following values:
 

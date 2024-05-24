@@ -31,11 +31,11 @@ To establish a Free Tier account:
 
 1. Go to the [Oracle Cloud Free Tier Sign Up Page](https://signup.cloud.oracle.com/) to create your account and establish your credentials. 
 
-2. You will then get an email notifying you that you Oracle Cloud account is ready. Click on **Sign In** and authenticate.
+2. You will then get an email notifying you that you Oracle Cloud account is ready. Click **Sign In** and authenticate.
 
-Note that you will be a tenancy administrator for your new account. 
+Note that you will be a tenancy administrator for your new account. This will be your `Tenancy Admin User Name` `and Tenancy Admin Password`.
 
-Record your credentials in the `key-data.txt` file for reference.
+Record these credentials in the `key-data.txt` file for reference.
 
 *Oracle Cloud Paid Accounts*
 
