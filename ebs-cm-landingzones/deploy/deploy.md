@@ -84,14 +84,13 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     c. **Server host name for EBS Cloud Manager Login URL**: Enter `myebscm.ebshol.org`.
 
-    ![This is a screenshot of the Configure variables screen](images/deploy-configvariables1.png)
+    ![This is a screenshot of the Configure variables screen](images/deploy-configvariables-1.png)
 
     d. **Client ID** and **Client Secret**: Enter the Client ID and Client Secret you recorded in Lab 3, Task 2, Step 12.
 
     e. **Domain URL**: Enter the Domain URL recorded in Lab 3, Task 2, step 14. 
 
-    ![This is a screenshot of the Configure variables screen](images/deploy-configvariables4.png)    
-    <!--Tiffany rename and renumber images-->
+    ![This is a screenshot of the Configure variables screen](images/deploy-configvariables-2.png)
 
     f. In the EBS CM Administrator User section, leave all fields blank. For this lab, these values are dynamically chosen for you based on the user connected to the OCI Console.
 
@@ -109,7 +108,7 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     l. Click **Next**.
 
-    ![This is a screenshot of the Configure variables screen](images/deploy-configvariables2.png)
+    ![This is a screenshot of the Configure variables screen](images/deploy-configvariables-4.png)
 
     m. After reviewing your entries, click **Create**.
 
