@@ -94,7 +94,7 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     f. In the EBS CM Administrator User section, leave all fields blank. For this lab, these values are dynamically chosen for you based on the user connected to the OCI Console.
 
-    ![This is a screenshot of the Configure variables screen](images/deploy-configvariables3.png)
+    ![This is a screenshot of the Configure variables screen](images/deploy-configvariables-3.png)
 
     g. **Compute Instance Shape**: Select "VM.Standard.E2.1".
 
