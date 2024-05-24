@@ -252,8 +252,8 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
 
 * [Learn About Deploying Terraform Stacks for E-Business Suite and Cloud Manager](http://docs.oracle.com)
 * [Deploy a secure landing zone that meets the CIS Foundations Benchmark for Oracle Cloud](http://docs.oracle.com)
-* [Oracle E-Business Suite Cloud Manager Guide, *Manage the Oracle E-Business Suite Cloud Manager Virtual Machine*](https://docs.oracle.com/cd/E26401_01/doc.122/f35809/T679330T679341.htm)
-* [My Oracle Support Document 2517025.1, *Oracle E-Business Suite on Oracle Cloud Infrastructure*](https://)
+* [Oracle E-Business Suite Cloud Manager Guide, Manage the Oracle E-Business Suite Cloud Manager Virtual Machine](https://docs.oracle.com/cd/E26401_01/doc.122/f35809/T679330T679341.htm)
+* [My Oracle Support Document 2517025.1, Oracle E-Business Suite on Oracle Cloud Infrastructure](https://)
 * [Oracle E-Business Suite Cloud Manager Today](https://blogs.oracle.com/ebsandoraclecloud/post/oracle-e-business-suite-cloud-manager-today)
 
 ## Acknowledgements
