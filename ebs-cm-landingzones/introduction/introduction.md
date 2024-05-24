@@ -36,7 +36,7 @@ The following figure outlines the workshop architecture.
 
 **Figure 1: Workshop Architecture**
 
-*Architecture diagram goes here*
+![Diagram of the workshop architecture](./images/architecture.png " ")
 
 This workshop uses the following components: 
 * Trial accounts (one per attendee)
