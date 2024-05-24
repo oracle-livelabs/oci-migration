@@ -150,7 +150,7 @@ You can refer to [Enable and Set Oracle E-Business Account Passwords (Conditiona
 
 5. Now we will open the Security List in our VCN to allow traffic from the internet on port 4443. Go to OCI and navigate to **Networking** and then **Virtual Cloud Networks** section. 
 
-  ![This screenshot shows the navigation to Virtual Cloud Networks within the Oracle Cloud console navigation menu.](./images/navigation-to-vcn.png " ")
+  ![This screenshot shows the navigation to Virtual Cloud Networks within the Oracle Cloud Console navigation menu.](./images/navigation-to-vcn.png " ")
 
   a. Ensuring you are in the right compartment (**ebshol-Network**), click on **ebshol\_vcn**. Then select the **Security Lists** Resource and the **ebshol-ebs-Production-app-SL** from there. 
 

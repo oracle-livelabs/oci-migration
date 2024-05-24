@@ -17,7 +17,7 @@ In this lab, you will:
 
 ## Task 1: Sign in to the Oracle Cloud Infrastructure Console
 
-Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastructure (OCI) console.
+Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastructure (OCI) Console.
 
 1. Reference your `key-data.txt` file and locate the tenancy administrator credentials.
 
@@ -34,7 +34,7 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
 ![This is a diagram of the Oracle E-Business Suite Cloud Manager deployment.](./images/ebscm-diagram.png " ") 
 
-1. In the OCI console navigation menu, under **Marketplace**, select **All Applications**.
+1. In the OCI Console navigation menu, under **Marketplace**, select **All Applications**.
 
 2. From the Marketplace applications, page:
 
@@ -105,7 +105,7 @@ Then, the stack will configure EBS Cloud Manager to work with your OCI tenancy a
 
     ![This is a screenshot of the Configure variables screen](images/configvariables-review.png)
 
-    n. Click the "Outputs" link and record the Load_Balancer_IP_Address in your `key-data.txt` file.
+    n. Click the "Outputs" link and record the Load Balancer IP Address in your `key-data.txt` file.
 
    ![This is a screenshot of the Configure variables screen](images/load_balancer_ip_address.png)   
 
