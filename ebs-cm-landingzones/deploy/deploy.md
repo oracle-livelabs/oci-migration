@@ -21,7 +21,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
 1. Reference your `key-data.txt` file and locate the tenancy administrator credentials.
 
-2. Sign in to the OCI console using the following:
+2. Sign in to the OCI Console using the following:
 
     * **User name**: `Tenancy Admin Username`
     * **Password**: `Tenancy Admin Password`
