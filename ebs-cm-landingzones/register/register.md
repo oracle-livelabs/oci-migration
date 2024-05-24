@@ -70,9 +70,9 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
     c. Now, we are going to set our Cloud Manager URL. For this lab, use the following example URL: `https://myebscm.ebshol.org:443`
 
-    Save your Cloud Manager URL in your `key-data.txt` file as `Cloud_Manager_URL`.
+      Save your Cloud Manager URL in your `key-data.txt` file as `Cloud_Manager_URL`.
 
-    Using the Cloud Manager URL you have just saved, append that URL with the following values as shown to enter your Redirect URL.
+      Using the Cloud Manager URL you have just saved, append that URL with the following values as shown to enter your Redirect URL.
 
     d. **Redirect URL**: `<Cloud Manager URL>/cm/auth/callback`
     
