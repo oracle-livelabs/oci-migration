@@ -44,7 +44,7 @@ The following diagram depicts the compartment distribution, which includes the a
 
 2. From the Marketplace applications page:
 
-    a. Navigate to **Filter**, then **Type**, and select **Stack**.
+    a. Navigate to **Filters**, then **Type**, and select **Stack**.
 
     b. In the search bar, enter `E-Business Landing Zone`.
 
@@ -104,7 +104,7 @@ The following diagram depicts a virtual cloud network with all subnets required 
 
 2. From the Marketplace applications page:
 
-    a. Navigate to **Filter**, then **Type**, and select **Stack**.
+    a. Navigate to **Filters**, then **Type**, and select **Stack**.
 
     b. In the search bar, enter `E-Business Landing Zone`.
 

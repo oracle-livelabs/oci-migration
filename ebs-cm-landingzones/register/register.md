@@ -108,7 +108,7 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
     ![This screenshot shows the Finish button within the user interface in the Configure policy section.](./images/configure-policy.png " ")
 
-12. Under the General Infomration section, make a note of the following values in your `key-data.txt` file:
+12. Under the General Information section, make a note of the following values in your `key-data.txt` file:
 
     • **Client ID**
 
