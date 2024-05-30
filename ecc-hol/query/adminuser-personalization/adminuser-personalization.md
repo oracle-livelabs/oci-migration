@@ -217,7 +217,7 @@ As we are targeting to extend the asset cost dashboard, we first need to copy th
 
 31. Expand "Asset Additions" event
 
-32. Add Indicator(s): Select "In Use"
+32. Add Indicator(s): Select "Asset Addition"
 
     ![Expand Asset Additions](../images/indicatorinuse10.png "Expand Asset Additions")
 
@@ -421,7 +421,7 @@ Before starting extending an application, take a backup from the existing applic
    4. Specify the Language: en
 
    5. Click the Export button.
-    ![Export/Import page](../images/assetsexport.png "Export/Import page")
+    ![Export/Import page](../images/assetsexport10.png "Export/Import page")
 
 
 Shipped data set can be extended by creating additional attributes from source data.

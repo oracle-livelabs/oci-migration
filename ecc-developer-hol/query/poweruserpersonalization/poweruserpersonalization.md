@@ -34,7 +34,8 @@ Oracle Enterprise Command Center Framework UI components are grouped into four m
    * Visualization: 
       * Summarization Bar
       * Chart
-      * Tag Cloud Aggregated Table
+      * Tag Cloud
+      * Aggregated Table
       * Diagram
       * Aggregated Grid
    * Detailed insights:    
@@ -98,19 +99,14 @@ Oracle Enterprise Command Center Framework UI components are grouped into four m
 **Goal**: As a Payables Accountant, I want to track  cash outflow for invoice payments per bank account so that I can analyze payment trends 
 
 
-1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
     ```
   	 Username: eccuser
 Password: welcome1
     ```
 
-2. You will see the below screen:
-   ![EBS home screen](../images/gl100.png "EBS home screen")
-
-3. From "Payables Manager", navigate to "Payables Command Center"
+2. Navigate to Payables Manager responsibility -> Payables Command Center -> Supplier Balance Dashboard
    ![Payables Manager responsibility](../images/pl1.png "Payables Manager responsibility")
-
-
 
 4. From Supplier Balance dashboard, click on the Ledgers flag and select "Vision Operations (USA)" Ledger from the pop up.
 
@@ -118,82 +114,77 @@ Password: welcome1
    ![Supplier Balance dashboard](../images/sup20.png "Supplier Balance dashboard")
 
 
-
-
-
-
 5. Enable Personalization Mode by clicking on the "i" icon (on the top left of the page, beside the share icon) and then click on "Personalize" button.
 
    ![Enable Personalization Mode](../images/sup3.png "Enable Personalization Mode")  
    ![Enable Personalization Mode](../images/sup4.png "Enable Personalization Mode")
-5. The personalization icon changes to blue when the dashboard is in edit mode. All components in the dashboard will now have the configuration and delete icon
 
-
+6. The "Personalize" button is now disabled and the personalization icon changes to blue when the dashboard is in edit mode. All components in the dashboard will now have the configuration and delete icon
 
    ![Enable Personalization Mode](../images/sup5.png "Enable Personalization Mode")
 
 
-
-11. Add a new Tab in the existing Tab component. To do this you need to click on the configuration icon for the existing Tab component and then add a new Tab in it. Name this tab "Bank Balance"
+7. Add a new Tab in the existing Tab component. To do this you need to click on the configuration icon for the existing Tab component and then add a new Tab in it. Name this tab "Bank Balance"
 
    ![Configure Tab layout](../images/sup9.png "Configure Tab layout")
 
-12. Click "Preview" and then click "Save"
+8. Click "Preview" and then click "Save"
+   ![Add Bank Balance Tab](../images/addbankbalancetab.png "Add Bank Balance Tab")
    ![Save Tab component](../images/sup10.png "Save Tab component")
 
-13. Add a chart component inside the new tab "Bank Balance" to highlight paid amount per bank account
+9. Add a chart component inside the new tab "Bank Balance", by dragging and dropping the chart component within the tab layout, to highlight paid amount per bank account
 
     - Data set: Payments 
     - Chart type: Bar
     - Dimension: Bank Account (series dimension)
-    - Metric: Attribute (Paid amount) and Aggregation (Sum) 
+    - Metric: Paid amount (Attribute) and Sum (Aggregation) 
 
-14. Click preview 
-15. This gives cash outflow across all currencies, now add additional dimension to split the chart per currency.
+10. Click preview 
+11. This gives cash outflow across all currencies, now add additional dimension to split the chart per currency.
 
-16. Add "Currency" as Trellis column dimension
-17. Click "Preview" and then click "Save"
+12. Add "Currency" as Trellis column dimension
+13. Click "Preview" and then click "Save"
 
    ![Add Trellis column](../images/sup120.png "Add Trellis column")
    ![Save trellis chart](../images/sup13.png "Save trellis chart")
 
 
-18. In addition of viewing detailed payments add a Pivot view under "Bank Balances" tab.
+14. In addition of viewing detailed payments add a Pivot view under "Bank Balances" tab.
 
-19. Add New Component- Aggregate Table (Pivot view is an alternate visualization of the Aggregate Table component)
+15. Add New Component- Aggregate Table (Pivot view is an alternate visualization of the Aggregate Table component)
     - Data set: Payments
     - Attributes:
           - Supplier name
           - Supplier site
           - Currency name (This will become a column when Pivot visualization is enabled)
     - Metric:
-          - Attribute (Paid amount) and Aggregation (Sum)
-20. Click preview. This gives Per supplier, per supplier site totals of invoice paid amount.
+          - Paid amount (Attribute) and Sum (Aggregation)
+16. Click preview. This gives per supplier, per supplier site totals of invoice paid amount.
 
     ![Aggregate table configuration](../images/sup140.png "Aggregate table configuration")
 
-22. Save the configuration
-
+17. Save the configuration
 
     ![Save Aggregate table configuration](../images/sup160.png "Save Aggregate table configuration")
 
-23. Now, lets convert the Aggregate table to a Pivot view. Click on the configuration, click on "Enable Pivot view" from the "Visualization" accordion, click on "Preview" and then click on "Save".
+18. Now, lets convert the Aggregate table to a Pivot view. Click on the configuration, click on "Enable Pivot view" from the "Visualization" accordion, click on "Preview" and then click on "Save".
     ![Pivot view](../images/switch1.png "Pivot view")
-24. Switch to Pivot view from Aggregate Table view by clicking on the Pivot view icon [The Pivot View allows users to perform comparisons and identify trends across several cross-sections of data. The values in the header rows and columns represent every possible grouping of the selected attributes. Each body cell contains a metric value corresponding to the values in the heading rows and columns.].
+19. Switch to Pivot view from Aggregate Table view by clicking on the Pivot view icon [The Pivot View allows users to perform comparisons and identify trends across several cross-sections of data. The values in the header rows and columns represent every possible grouping of the selected attributes. Each body cell contains a metric value corresponding to the values in the heading rows and columns.].
     ![Pivot view](../images/switch.png "Pivot view")
     ![Pivot view](../images/switch77.png "Pivot view")
 
 
-25. Click on the "i" icon and then the "Personalize" button to disable Personalization mode.
     ![Pivot view](../images/switch2.png "Pivot view")
 
+20. Finally, click on the "i" icon and then the "Exit" button to disable Personalization mode.
+   ![Exit Personalization](../images/exitpersonalizationsuppbalance.png "Exit Personalization")
 
 ## Task 3: Personalize Account Analysis dashboard
 
 **Goal**: Investigate and act to maintain the accuracy of financial records
 
 
-1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
 
     ```
   	 Username: eccuser
@@ -206,7 +197,7 @@ Password: welcome1
    ![EBS home screen](../images/genz100.png "EBS home screen")
 
 
-3. You will see the Account Analysis dashboard. In that dashboard, enable personalization from "i" icon 
+3. You will see the Account Analysis dashboard. If you see any existing filters in the Selected refinements, please remove them and then enable personalization from "i" icon 
    ![Personalize dashboard](../images/genz2000.png "Personalize dashboard")
 
 4. Click on the search bar to find the previously saved search [in Lab 2 - Task 2]
@@ -230,7 +221,7 @@ Password: welcome1
     - Group dimension: Cost Center
     - Series dimension: Parent account 1
     - Trellis column: Period Name
-    - Metric: Attribute (Period Activity) and no Aggregation, since this is a calculated attribute.
+    - Metric: Period Activity (Attribute) and no Aggregation, since this is a calculated attribute.
 
 10. Click "Preview" 
 
@@ -244,7 +235,7 @@ Password: welcome1
 
 ## Learn More
 * [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
-* [Enterprise Command Center- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
+* [Enterprise Command Center- Administration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
 * [Enterprise Command Center- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
 * [Enterprise Command Center- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
 * [Enterprise Command Center- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)

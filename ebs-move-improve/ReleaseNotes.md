@@ -15,6 +15,8 @@
 -
 
 # Improvements
+- v.1.0.4
+- Corrected link to key-data.txt file; corrected minor typographical and formatting issues; cleaned up per quarterly QA guidelines.
 - v.1.0.3
 - Updated for identity domain support; Cleaned up per quarterly QA checklist guidelines.
 - v.1.0.2 

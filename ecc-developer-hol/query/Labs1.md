@@ -200,7 +200,7 @@ Example: If you have set Memory as 8gb instead of 16gb then you should go to the
   
 ## Learn More
 * [Enterprise Command Centres- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
-* [Enterprise Command Centres- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
+* [Enterprise Command Centres- Administration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
 * [Enterprise Command Centres- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
 * [Enterprise Command Centres- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
 

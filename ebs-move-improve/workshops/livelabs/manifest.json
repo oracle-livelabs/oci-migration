@@ -23,15 +23,15 @@
             "filename": "../../clone/clone.md"
         },
         {
-            "title": "Optional: Managing the EBS Cloud Manager Virtual Machine",
+            "title": "Optional: Manage the EBS Cloud Manager Virtual Machine",
             "filename": "../../manage-VM/manage.md"
         },
         {
-            "title": "Optional (Advanced):  Migrating an Oracle E-Business Suite environment to Oracle Cloud Infrastructure",
+            "title": "Optional (Advanced):  Migrate an Oracle E-Business Suite environment to Oracle Cloud Infrastructure",
             "filename": "../../migrate/migrate.md"
         },
         {
-            "title": "Teardown Your Oracle E-Business Suite Environments",
+            "title": "Tear Down Your Oracle E-Business Suite Environments",
             "description": "Teardown Your Oracle E-Business Suite Environments",
             "filename": "../../teardownLL/teardownLL.md"
         },

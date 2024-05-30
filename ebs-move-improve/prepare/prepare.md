@@ -1,7 +1,7 @@
-# Preparing Your Tenancy for Oracle E-Business Suite
+# Prepare Your Tenancy for Oracle E-Business Suite
 
 ## Introduction
-In this exercise, you will prepare your Oracle E-Business Suite environment by setting up Oracle E-Business Suite Cloud Manager authentication.
+In this exercise, you will prepare your Oracle E-Business Suite (EBS) environment by setting up Oracle E-Business Suite Cloud Manager authentication.
 
 Estimated Lab Time: 30 minutes
 <!--
@@ -133,6 +133,6 @@ You may now proceed to the next lab.
   - William Masdon, Cloud Engineering
   - Mitsu Mehta, Cloud Engineering
   - Chris Wegenek, Cloud Engineering
-* **Last Updated By/Date:** Tiffany Romero, EBS Documentation, May 2023
+* **Last Updated By/Date:** Tiffany Romero, EBS Documentation, December 2023
 
 
