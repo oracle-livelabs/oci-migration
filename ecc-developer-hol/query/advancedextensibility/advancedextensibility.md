@@ -17,7 +17,7 @@ In this lab, you will:
 * Assign dataset to the application
 * Execute data load for the new dataset
 * Extend the existing dashboard with required components
-
+* EBS OA personalization
 
 
 ### Prerequisites
@@ -37,7 +37,8 @@ A data set is both a logical and a physical grouping of attributes to support bu
 
 
 At the physical level, the data set stores one or more records with a uniquely identifying key that represents a particular level of detail of the entity stored in the enterprise system. Unique key is used to identify records and data sets.
-* ECC\_SPEC\_ID column identifies each data set, it must have an assignment from exactly one attribute and must be named “ECC\_SPEC\_ID", this attribute must be unique and single assigned. Also, ECC\_SPEC\_ID must be of "spec" profile type.
+* ECC\_SPEC\_ID column is unique and single-assigned. Also, ECC\_SPEC\_ID must be of "spec" profile type.
+
 
 
 Contents of a data set can be exported with attribute keys and attribute display names as headers. Each attribute stored in the data set is controlled by metadata properties that specify its behavior on the user interface. Additional value-add features such as calculations, bucketing, and precedence rules can also be specified.
@@ -45,13 +46,13 @@ Contents of a data set can be exported with attribute keys and attribute display
 
 To create a data set within ECC, follow the below steps:
 
-1. Login to EBS apps (Navigate to http://apps.example.com:8000) with below credentials
+1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
      ```
   	 Username: sysadmin
 Password: welcome1
     ```
 2.	Navigate to ECC Developer page -> ECC Developer
-        ![Procurement Command Center](../images/ext1.png "Procurement Command Center")
+        ![Procurement Command Center](../images/val1.png "Procurement Command Center")
 3.	Go to “Datasets” menu under “Data Designer” section
         ![Procurement Command Center](../images/data1.png "Procurement Command Center")
 4.	Click on “New Dataset” button
@@ -65,7 +66,10 @@ Password: welcome1
                                                                     ```
   	    <copy>XX PCC Local Agreements</copy>
             ```
-    *	Icon: Procurement
+    *	Icon: 
+    ```
+  	    <copy>Procurement</copy>
+            ```
 
 
 6. Now, provide the security handler details using “Security Rules”. There are 2 different security types under security rules, which will provide security to the dataset:
@@ -125,9 +129,10 @@ Attribute metadata section helps you define an attribute's characteristics, incl
         *   Type: Describe
         ![Create Metadata](../images/d6.png "Create Metadata") 
 
-        *   SQL: /u01/live\_labs/11470/lab\_files/lab5/task2/Local\_Agreements\_Query.sql
-
-
+        *   SQL:  ```
+  	         <copy>SELECT ecc_spec_id, agreement, agreement_number, agr_revision, status, supplier, supplier_site, agr_supplier_contact, agr_agreed_amount, agr_amount_limit, agr_amount_released, functional_currency_code, currency, buyer_name, effective_from, effective_to, creation_date, approval_date, submit_date, agr_payment_term, org_id, operating_unit, received_amount, invoiced_amount, shipped_amount, language, group_status, sub_status, next_action_type, reservation_status, creation_year, creation_month, agreements_to_watch, expiring_agreements, agr_style, amount_agreed_func, released_amount_func, authorization_status, document_type, utilization_percentage, doc_authorized_user_ids, security_level_code, type_lookup_code, supplier_id, agreement_line, line_number, line_type, item, item_description, category, uom, unit_price, line_status, lead_time, no_price_breaks, negotiation, order_num, released_quantity, shipped_quantity, received_quantity, rejected_quantity, invoiced_quantity, line_released_amount, line_received_amount, line_invoiced_amount, line_shipped_amount, agreement_status_code, supplier_item_num, cancel_flag, acceptance_required_flag, po_lineloc_id, release_number, po_shipment_num, po_ship_ordered_quantity, po_ship_to_location, shipment_amount, po_ship_received_quantity, po_ship_rejected_quantity, po_ship_invoiced_quantity, po_ship_cancelled_quantity, po_ship_shipped_quantity, po_ship_ordered_amount, po_ship_shipped_amount, po_ship_received_amount, po_ship_rejected_amount, po_ship_invoiced_amount, po_unit_price, po_need_by_date, po_promised_date, overdue_flag, need_by_date_open_shipment 
+FROM ecc_proc_local_agreements</copy>
+            ```
 
 3.	Click on the “Import” button to create metadata attributes
         ![Create Metadata](../images/a112.png "Create Metadata") 
@@ -136,31 +141,22 @@ Attribute metadata section helps you define an attribute's characteristics, incl
 4. Perform the below changes in the metadata attributes section
     *   Review the profile for all the attributes
     *	Change the profile of the below attributes:
-        * DOC\_AUTHORIZED\_USER\_IDS to “strings”
-        * ORDER_NUM to “strings”
-
+        * Doc Authorized User Ids to “strings”
+        * Order Num to “strings”
 
         ![Update profile](../images/a113.png "Update profile") 
 
 
     * Enable “Show in Guided Discovery?” checkbox for below attributes:
-        * AGREEMENT
-        * STATUS
-        * SUPPLIER
-        * SUPPLIER_SITE
-        * BUYER_NAME
-        * EFFECTIVE_FROM
-        * EFFECTIVE_TO
-        * LINE_STATUS
-        * ORDER_NUM
-        * SUB_STATUS
-        * GROUP_STATUS
-        * DOCUMENT_TYPE
-        * RELEASE_NUMBER
+        * Agreement
+        * Status
+        * Buyer Name
+        * Effective From
+        * Effective To
     * Click on "Save" 
 
 **Attribute Groups** </br>
-Attribute Groups are logical groupings of attributes for display purposes based on functional/business meaning. They reduce clutter on Available Refinements and Results Table components.
+Attribute Groups are logical grouping of attributes for display purposes based on functional/business meaning. They reduce clutter on Available Refinements and Results Table components.
 
 Attribute Groups are defined at the data set level, where each data set can have zero or more attribute groups, and each group can have zero or more attributes. Groups can be designed at design time in the Administration UI or during runtime in metadata load phase.
 
@@ -169,41 +165,20 @@ Attribute Groups are defined at the data set level, where each data set can have
     * Click on the “Add” button to create a new group
     * Provide below details:
         * Sequence #: 1
-        * Group Key: PO_RELEASE
-        * Group Name: Releases
+        * Group Key: ```
+          <copy>PO_RELEASE</copy>
+          ```
+        * Group Name: ```
+          <copy>Releases</copy>
+          ```
     * Attributes:
-        * PO\_UNIT\_PRICE
-        * PO\_NEED\_BY\_DATE
-        * PO\_PROMISED\_DATE
-        * PO\_SHIP\_TO\_LOCATION
-        * PO\_SHIP\_ORDERED\_QUANTITY
+        * Po Unit Price
+        * Po Need By Date
+        * Po Promised Date
+        * Po Ship To Location
+        * Po Ship Ordered Quantity
 
         ![Add Group](../images/a1133.png "Add Group")
-
-    * Similarly, add the below groups as well:
-        * “Release Quantity” Group
-            * Sequence #: 2
-            * Group Key: PO\_RELEASE\_QTY
-            * Group Name: Release Quantity
-            * Attributes:
-                * PO_SHIP\_ORDERED\_QUANTITY
-                * PO_SHIP\_RECEIVED\_QUANTITY
-                * PO_SHIP\_REJECTED\_QUANTITY
-                * PO_SHIP\_INVOICED\_QUANTITY
-                * PO_SHIP\_CANCELLED\_QUANTITY
-
-        * “Release Amount” Group
-            * Sequence #: 3
-            * Group Key: PO\_RELEASE\_AMT
-            * Group Name: Release Amount
-            * Attributes:
-                * PO\_SHIP\_ORDERED\_AMOUNT
-                * PO\_SHIP\_SHIPPED\_AMOUNT
-                * PO\_SHIP\_RECEIVED\_AMOUNT
-                * PO\_SHIP\_REJECTED\_AMOUNT
-                * PO\_SHIP\_INVOICED\_AMOUNT
-
-            ![Attribute Groups](../images/a1132.png "Attribute Groups")
 
     * Click on “Save” button
 
@@ -217,16 +192,18 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
     * Click on the “Add” button
     * Provide the below details to add association with “PCC Purchase Orders” dataset
         * Source Dataset: XX PCC Local Agreements
-        * Source Attribute: Agreement
-        * Target Dataset: PCC Purchase Orders
-        * Target Attribute: SOURCE\_HEADER\_ID
+        * Source Attribute: ```
+  	        <copy>Agreement</copy>
+          ```
+        * Target Dataset: ```
+  	        <copy>PCC Purchase Orders</copy>
+          ```
+        * Target Attribute: ```
+  	        <copy>SOURCE_HEADER_ID</copy>
+          ```
         * Click on the “Save” button
 
             ![Associations](../images/a1131.png "Associations")
-
-
-
-
 
 
 ## Task 3:	Assign data set to an application and execute data load
@@ -234,6 +211,7 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
 1. Go to ECC Developer home page
 2. Search for “Procurement” application
 3. Click on the edit icon for the application
+    ![Assign Dataset reference](../images/editapptoadddataset.png "Assign Dataset reference") 
 4. Assign the dataset “XX PCC Local Agreements” to the application
                                                                     ```
   	    <copy>XX PCC Local Agreements</copy>
@@ -243,12 +221,24 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
 
 6. Execute data loads for this new dataset
     * Navigate to “Data Load Submission” menu under “Administration” section
-    * Select the below details to submit “Query load”
-        * Application Name: Procurement
-        * Dataset: XX PCC Local Agreements
-        * Load Type: Query Load
-        * Connection: ebsdb
-        * SQL Query: /u01/live\_labs/11470/lab\_files/lab5/task2/Local\_Agreements\_Query.sql
+    * Select the below details to submit “Query Upload”
+        * Application Name: 
+          ```
+  	        <copy>Procurement</copy>
+          ```
+        * Dataset: ```
+  	        <copy>XX PCC Local Agreements</copy>
+          ```
+        * Load Type: ```
+  	        <copy>Query Upload</copy>
+          ```
+        * Connection: ```
+  	        <copy>ebsdb</copy>
+          ```
+        * SQL Query: ```
+  	         <copy>SELECT ecc_spec_id, agreement, agreement_number, agr_revision, status, supplier, supplier_site, agr_supplier_contact, agr_agreed_amount, agr_amount_limit, agr_amount_released, functional_currency_code, currency, buyer_name, effective_from, effective_to, creation_date, approval_date, submit_date, agr_payment_term, org_id, operating_unit, received_amount, invoiced_amount, shipped_amount, language, group_status, sub_status, next_action_type, reservation_status, creation_year, creation_month, agreements_to_watch, expiring_agreements, agr_style, amount_agreed_func, released_amount_func, authorization_status, document_type, utilization_percentage, doc_authorized_user_ids, security_level_code, type_lookup_code, supplier_id, agreement_line, line_number, line_type, item, item_description, category, uom, unit_price, line_status, lead_time, no_price_breaks, negotiation, order_num, released_quantity, shipped_quantity, received_quantity, rejected_quantity, invoiced_quantity, line_released_amount, line_received_amount, line_invoiced_amount, line_shipped_amount, agreement_status_code, supplier_item_num, cancel_flag, acceptance_required_flag, po_lineloc_id, release_number, po_shipment_num, po_ship_ordered_quantity, po_ship_to_location, shipment_amount, po_ship_received_quantity, po_ship_rejected_quantity, po_ship_invoiced_quantity, po_ship_cancelled_quantity, po_ship_shipped_quantity, po_ship_ordered_amount, po_ship_shipped_amount, po_ship_received_amount, po_ship_rejected_amount, po_ship_invoiced_amount, po_unit_price, po_need_by_date, po_promised_date, overdue_flag, need_by_date_open_shipment 
+FROM ecc_proc_local_agreements</copy>
+               ```         
         * Data Upload: Select “Dataset Reset”
         </br>
         **Note:** Data set reset would wipe away any prior data set with the same name and start fresh whereas an extend existing data set option would use the same existing data set and ingest data on top of it
@@ -319,7 +309,7 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
         ![Create Tab Layout](../images/a1110.png "Create Tab Layout") 
 
 10.	Under “Agreement” tab, add a “Result Table” component and configure as mentioned below:
-    * Title: <Empty>
+    * Title: (leave this empty)
     * Dataset: 
                          ```
   	    <copy>XX PCC Local Agreements</copy>
@@ -343,7 +333,7 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
         ![Add Agreement Table](../images/a1111.png "Add Agreement Table") 
 
 11.	Under “Releases” tab, add a “Result Table” component and configure as mentioned below:
-    * Title: <Empty>
+    * Title: (leave this empty)
     * Dataset: 
                              ```
   	    <copy>XX PCC Local Agreements</copy>
@@ -351,15 +341,15 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
 
     * Attributes:
         * Enable “Display Attribute Groups” checkbox
-        * Add below groups (under Interchangeable Attributes section):
-            * Release Quantity
-            * Releases
-            * Release Amount
+
         * Add below attributes (under Persistent Attributes section):
             * Agreement Number
             * Agreement Line
             * Release Number
             * Po Shipment Num
+
+        * Add below group (under Interchangeable Attributes section):
+            * Releases
 
 12. You will see the below image:
         ![Add Releases Table](../images/a1112.png "Add Releases Table")
@@ -375,8 +365,8 @@ As mentioned earlier, ECC uses PL/SQL packages to run the data load process. Her
 
 1. Create data load package to run Full Load for Local Agreements custom dataset:
 
-    * The user need to create a PL/SQL package (specification and its respective body) with a procedure, which is required to execute FULL LOAD for xx-po-pcc-local-agreements dataset
-    * Sample PL/SQL package files are provided in the Lab Files section
+    * The user needs to create a PL/SQL package (specification and its respective body) with a procedure, which is required to execute FULL LOAD for xx-po-pcc-local-agreements dataset
+    * Sample PL/SQL package files are provided under **/u01/live\_labs/11470/lab\_files/lab5/task5**
         * Specification: XX\_PO\_PCC\_LOC\_AGR\_UTIL\_PVT.pls
                 ![Package Specification](../images/a1118.png "Package Specification")
 
@@ -483,7 +473,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
   	    <copy>sqlplus apps/apps</copy>
             ```
 
-    * The package specification and body files are present under “/u01/live_labs/11470/lab_files/lab5/task5”  directory
+    * The package specification and body files are present under “/u01/live\_labs/11470/lab\_files/lab5/task5”  directory
 
     * Compile the package using below commands:
                                                  ```
@@ -494,7 +484,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
             ```
     ![Compile Package](../images/a1130.png "Compile Package")
 
-4.	Once the package specification and the body are compiled successfully, then the user need to configure the data load rules for the respective dataset
+4.	Once the package specification and the body are compiled successfully, then the user needs to configure the data load rules for the respective dataset
     * Navigate to ECC Developer page
     * Go to “Datasets” menu under “Data Designer” section
     * Search for the local agreements dataset 
@@ -533,7 +523,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
     * Once the data load is successful, click on the “Query Details” link to view more details
             ![Data Load Tracking](../images/a1127.png "Data Load Tracking")
     * The number of successful rows will match the successful row count of Query Upload
-    * Navigate to the Local Agreements dashboard (ECC Developer -> Procurement -> XX Local Agreements)
+    * Navigate to the Local Agreements dashboard (ECC Developer Home Page -> Procurement -> XX Local Agreements)
             ![Local Agreements Dashboard](../images/a1113.png "Local Agreements Dashboard")
 
 
@@ -548,7 +538,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
 * Here, the process to create the security rules for xx-po-pcc-local-agreements dataset is explained below:
 
     * Create a PL/SQL package with a procedure, which is required to add security filters based on the logged in user and organization.
-    * Sample PL/SQL package files are provided in the Lab Files section
+    * Sample PL/SQL package files are provided under **/u01/live\_labs/11470/lab\_files/lab5/task6**
         * Specification: XX\_PO\_PCC\_DATASECURITY\_PKG\_PUB.pls
             ![Package Specification](../images/a1126.png "Package Specification")
 
@@ -660,15 +650,14 @@ style="white-space:pre-wrap; word-wrap:break-word"
 
 * Once the changes are completed, compile the package using following steps:
     * Go back to the Terminal window
-        * Connect to the environment using SSH (Details are mentioned in “Get Started -> Appendix: Connect Remotely Using SSH section”) 
         * Source the EBS edition using below command:
                                                                                      ```
   	    <copy>source /u01/install/APPS/EBSapps.env run</copy>
             ```
         * Connect to EBS Database using below command:
-
+        ```
   	    <copy>sqlplus apps/apps</copy>
-
+        ```
         * The package specification and body files are present under “/u01/live\_labs/11470/lab\_files/lab5/task6”  directory
 
     * Compile the package using below commands:
@@ -681,7 +670,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
 
         ![Compile Package](../images/a1129.png "Compile Package")
 
-* Once the package specification and the body are compiled successfully, then the user need to configure the data load rules for the respective dataset
+* Once the package specification and the body are compiled successfully, then the user needs to configure the data load rules for the respective dataset
     * Navigate to ECC Developer page
     * Go to “Datasets” menu under “Data Designer” section
     * Search for the local agreements dataset 
@@ -690,7 +679,6 @@ style="white-space:pre-wrap; word-wrap:break-word"
             ```
     * Click on the Edit icon
     * Click on the “Security Rule” tab
-    * Provide the security handler name as “XX\_PO\_PCC\_DATASECURITY\_PKG\_PUB.GetFilterAttributeValuesPO”
     * Enable the “Enabled” checkbox. This will ensure that the security rules are applied before accessing the data.
 
         ![Configure Load Rules](../images/a1128.png "Configure Load Rules")
@@ -704,15 +692,113 @@ style="white-space:pre-wrap; word-wrap:break-word"
 * If any user accesses the local agreements dashboard using the allowed responsibility/page, then the user will be able to view only the designated subset of data. Hence ensuring data security.
         ![Operations User](../images/a1136.png "Operations User")
 
+## Task 7:	New Dashboard RBAC Setup
+In the previous task we extended the existing Agreements dashboard to include Local agreements, but this new dashboard is not accessible for end users.
+There are two ways to provide access of Local Agreements dashboard to the users:
+ 
+1. Replace the shipped "Agreements" dashboard with the custom "Local Agreements" dashboard using EBS OA Personalization
+2. Create a new menu under Procurement Command Center to navigate to an OA Page where Local Agreements dashboard is displayed
 
+In this task, we will replace the shipped "Agreements" dashboard with the custom "Local Agreements" dashboard.
 
+1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
+    ```
+  	 Username: sysadmin
+Password: welcome1
+    ```
+2.	Create a new FND Function for Local Agreements Dashboard:
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Functions
+        ![Functional Administrator](../images/functionaladministratorpath.png "Functional Administrator")
+        ![Functions Menu](../images/functions.png "Functions Menu")
+    * Search with Code as: 
+                ```
+  	    <copy>PO_PCC_ECC_AGREEMENTS</copy>
+            ```
+    * Click on the “Duplicate” icon displayed for PO\_PCC\_ECC\_AGREEMENTS
+        ![Duplicate Function](../images/a11s1.png "Duplicate Function")
+
+    * Change the details in the duplicate function page as mentioned below:
+        * Name: 
+                        ```
+  	    <copy>PO PCC ECC Local Agreements Page</copy>
+            ```
+        * Code: 
+                                ```
+  	    <copy>XX_PO_PCC_ECC_LOCAL_AGREEMENTS</copy>
+            ```
+        ![Duplicate Function](../images/a11s2.png "Duplicate Function")
+
+    * Click on the “Continue” button
+    * Change the value for HTML Call to 
+                                    ```
+  	    <copy>GWY.jsp?targetAppType=ECC&targetPage=web/eccapp/po_pcc/xx-pcc-local-agreements</copy>
+            ```
+    * Click on the “Submit” button
+        ![Create Function](../images/a11s3.png "Create Function") 
+
+3.	Add the new FND Function to Procurement Command Center Permission Set:
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Security -> Permission Sets
+        ![Permission Set](../images/permissionset.png "Permission Set")
+    * Search with permission set name as 
+                                        ```
+  	    <copy>PO PCC Permission Set</copy>
+            ```
+    * Click on “Update” button for “PO PCC Permission Set"
+        ![Update Permission Set](../images/updatepermissionset.png "Update Permission Set")
+    * In the permission set manager section, click on “+” icon to add below permission details
+        * Permission: 
+                                                        ```
+  	    <copy>PO PCC ECC Local Agreements Page</copy>
+            ```
+        * Click on “Apply” button to save the permission set
+        ![Add Function to Permission Set](../images/addpagetopermissionset.png "Add Function to Permission Set")
+
+4. Clear Application Cache:
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Caching Framework -> Global Configuration
+        ![Clear Cache](../images/clearcachesteps.png "Clear Cache")
+    * Click on “Clear All Cache” button and then click on "Yes"
+        ![Clear Cache](../images/ss110.png "Clear Cache")
+
+## Task 8:	EBS OA Personalization
+
+1. Login to EBS apps (From the browser URL navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
+
+    ```
+  	 Username: operations
+Password: welcome1
+    ```
+2.	Navigate to Purchasing, Vision Operations (USA) -> Procurement Command Center -> Procurement Operations
+          ![Procurement Operations](../images/arbac2.png "Procurement Operations")
+
+3.	Within "Procurement Operations", navigate to "Agreements" dashboard
+          ![Agreements](../images/arbac3.png "Agreements")
+
+4.  Click on EBS Settings icon
+          ![EBS Settings](../images/arbac5.png "EBS Settings")
+
+5.	Click on “Personalize Page” option
+          ![Personalize Page](../images/arbac4.png "Personalize Page")
+
+5. Personalize the Rich Container:
+          ![Personalize Rich Container](../images/arbac6.png "Personalize Rich Container")
+
+5.	Update the below details and click on the “Apply” button
+     * Destination Function: 
+                                                      ```
+  	    <copy>XX_PO_PCC_ECC_LOCAL_AGREEMENTS</copy>
+            ```
+          ![Update Rich Container Details](../images/arbac7.png "Update Rich Container Details")
+
+6. Click on “Return to Application” to access the dashboard
+          ![Return to Application](../images/arbac8.png "Return to Application")
+          ![Local Agreements Dashboard](../images/arbac9.png "Local Agreements Dashboard")
 
 You may now **proceed to the next lab**
 
 
 ## Learn More
 * [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
-* [Enterprise Command Center- Admistration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
+* [Enterprise Command Center- Administration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
 * [Enterprise Command Center- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
 * [Enterprise Command Center- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
 * [Enterprise Command Center- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)

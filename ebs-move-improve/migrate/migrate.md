@@ -1,6 +1,6 @@
 # Migrate Existing EBS to Cloud Manager
 
-## About this Workshop
+## About This Workshop
 
 This workshop showcases the use of the migration of an existing Oracle E-Business Suite to Oracle Cloud Infrastructure using the Object Storage service to our Cloud Manager instance. 
 
@@ -45,7 +45,7 @@ This workshop uses the following components:
 ### Objectives
 
 In this lab, you will:
-* Create a standalone E-Business Suite Environment that will act as the source for the migration.
+* Create a standalone Oracle E-Business Suite environment that will act as the source for the migration.
 * Prepare the source EBS enviornment for migration.
 * Install the Oracle E-Business Suite Cloud Backup Module on the source environment.
 * Create a backup of the source EBS environment and store it on the Oracle Object Storage service.
@@ -83,5 +83,5 @@ In this lab, you will:
 * **Author:** William Masdon, Cloud Engineering
 * **Contributors:** Santiago Bastidas, Product Management Director
 * **Contributors:** Quintin Hill, Cloud Engineering
-* **Last Updated By/Date:** Tiffany Romero, EBS Documentation, May 2023
+* **Last Updated By/Date:** Tiffany Romero, EBS Documentation, December 2023
 
