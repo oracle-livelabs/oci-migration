@@ -12,7 +12,7 @@ Within the virtual machine that Oracle E-Business Suite (EBS) Cloud Manager runs
 
 * Tenancy Admin User
 * Tenancy Admin Password
-* Lab 2 completed with your Instance Public IP added in your `key-data.txt` file.
+* Your Instance Public IP added in your `key-data.txt` file.
     * `Cloud_Manager_Instance_Public_IP`
     * `SSH_Public_Key`
 
@@ -102,53 +102,33 @@ For Windows, you can also use a tool like PUTTY to set up PuTTY to connect to an
     ```
 ## Task 3: Starting the Cloud Manger Application Within the Virtual Machine
 
-Now that you have connected to the compute instance you can now preform the commands to start the EBS Cloud Manager services by entering the following commands:
+Now that you have connected to the compute instance, you can perform the commands to start the EBS Cloud Manager services by entering the following commands:
 
     ```
     <copy>
     sudo su - oracle
-    </copy>
-    ```
-
-    ```
-    <copy>
     cd /u01/install/APPS/apps-unlimited-ebs/bin
-    </copy>
-    ``` 
-
-    ```
-    <copy>  
     sh ebscloudmgrctl.sh startall
     </copy>
     ```
 
-Then enter the Oracle E-Business Suite Cloud Manager administrator password when prompted.
+Then enter the EBS Cloud Manager administrator password when prompted.
 
 After running these commands, your services should turn on. If they were already on, then nothing will happen.
 
 ## Task 4: Stopping the Cloud Manger Application Within the Virtual Machine
 
-While you are connected to the compute instance you can also preform the commands to stop the EBS Cloud Manager Services by entering these commands.
+While you are connected to the compute instance, you can also perform the commands to stop the EBS Cloud Manager Services by entering these commands.
 
     ```
     <copy>
     sudo su - oracle
-    </copy>
-    ```
-
-    ```
-    <copy>
     cd /u01/install/APPS/apps-unlimited-ebs/bin
-    </copy>
-    ``` 
-
-    ```
-    <copy>  
     sh ebscloudmgrctl.sh stopall
     </copy>
     ```
 
-Then enter the Oracle E-Business Suite Cloud Manager administrator password when prompted.
+Then enter the EBS Cloud Manager administrator password when prompted.
 
 After running these commands, your services should turn off and you will no longer be able to connect to Cloud Manager from the web. If they were already off, then nothing will happen.
 
@@ -160,6 +140,6 @@ For full documentation on Oracle E-Business Suite Cloud Manager, [click here!](h
 
 Acknowledgements
 * Author: Chris Wegenek, Cloud Engineering
-* Last Updated By/Date: Tiffany Romero, EBS Documentation, December 2023
+* Last Updated By/Date: Tiffany Romero, EBS Documentation, June 2024
 
 
