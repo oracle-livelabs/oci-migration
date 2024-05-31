@@ -134,12 +134,9 @@ After running these commands, your services should turn off and you will no long
 
 ## More Information
 
-For full documentation on Oracle E-Business Suite Cloud Manager, [click here!](https://docs.oracle.com/cd/E26401_01/doc.122/f35809/toc.htm)
+If you're interested in the full capabilities of Oracle E-Business Suite Cloud Manager and would like to learn more, see the [Oracle E-Business Suite Cloud Manager Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f35809/toc.htm).
 
 ## Acknowledgements
 
-Acknowledgements
-* Author: Chris Wegenek, Cloud Engineering
-* Last Updated By/Date: Tiffany Romero, EBS Documentation, June 2024
-
-
+* **Author** - Chris Wegenek, Cloud Engineering
+* **Last Updated By/Date** - Tiffany Romero, EBS Documentation, June 2024

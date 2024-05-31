@@ -58,7 +58,7 @@ Estimated Lab Time: 15 minutes
 
 ## More Documentation on Oracle E-Business Suite Cloud Manager
 
-If you're interested in the full capabilities of Oracle E-Business Suite Cloud Manager and would like to learn more, see the [Oracle E-Business Suite Cloud Manager Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f35809/toc.htm)
+If you're interested in the full capabilities of Oracle E-Business Suite Cloud Manager and would like to learn more, see the [Oracle E-Business Suite Cloud Manager Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f35809/toc.htm).
 
 ## Acknowledgements
 
