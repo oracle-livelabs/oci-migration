@@ -78,7 +78,7 @@ The following diagram depicts the compartment distribution, which includes the a
 
     b. **Parent Compartment**: Select your root compartment as the parent compartment for your resources.
 
-    c. **EBS workload environment categories**: Using the drop-down list, add the following categories - **Production**, **QA**
+    c. **EBS workload environment categories**: In this field, enter *Production* and *QA* to add these categories.
 
     d. Click **Next**.
 

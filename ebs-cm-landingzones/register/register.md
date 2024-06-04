@@ -41,25 +41,33 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
     ![This screenshot shows the Domains page.](./images/domains-listing.png " ")
 
-4. Click **Integrated applications** in the menu on the left. 
+4. Under the Domain Information tab, record your Domain URL for future reference. 
+
+    a. Click the "Copy" link next to the Domain URL value. 
+    
+    b. Paste this into the `key-data.txt` file and remove the port portion of the URL (for example ":443").
+
+    ![This screenshot shows the Domain Information tab within the Overview.](images/default-domain-info.png)
+
+5. Click **Integrated applications** in the menu on the left. 
 
     ![This screenshot shows the Integrated applications page and highlights the Add application button within the user interface.](./images/integrated-applications.png " ")
 
-5. Click **Add application**.
+6. Click **Add application**.
 
-6. Select **Confidential Application**. 
+7. Select **Confidential Application**. 
 
     ![This screenshot shows the Add application window and highlights the Confidential Application option.](./images/confidential-application.png " ")
 
-7. Click **Launch Workflow**. This takes you to the Add Confidential Application page.
+8. Click **Launch Workflow**. This takes you to the Add Confidential Application page.
 
-8. Under Add application details, enter the following:
+9. Under Add application details, enter the following:
     - **Name**: `Oracle E-Business Suite Cloud Manager`
     - **Description**: Enter a description.
 
-9. Click **Next**.
+10. Click **Next**.
 
-10. Under Configure OAuth:
+11. Under Configure OAuth:
 
     a. Click **Configure this application as a client now**.
     
@@ -104,11 +112,11 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
     
     3. Click **Next**.
     
-11. Under Configure policy, click **Finish**.
+12. Under Configure policy, click **Finish**.
 
     ![This screenshot shows the Finish button within the user interface in the Configure policy section.](./images/configure-policy.png " ")
 
-12. Under the General Information section, make a note of the following values in your `key-data.txt` file:
+13. Under the General Information section, make a note of the following values in your `key-data.txt` file:
 
     • **Client ID**
 
@@ -116,13 +124,9 @@ Use the tenancy administrator credentials to sign in to Oracle Cloud Infrastruct
 
     ![This screenshot shows the confidential application information page.](./images/client-id-and-secret.png " ")
 
-13. Click **Activate** and confirm to activate the confidential application.
+14. Click **Activate** and confirm to activate the confidential application.
 
     ![This screenshot highlights the Activate button within the user interface and displays the Activate application pop-up window to activate your application.](./images/activate-application.png " ")
-
-14. Record your Domain URL in the `key-data.txt` file. Click the "Copy" link next to the Domain URL value. When pasting in to the `key-data.txt` file, remove the port portion of the URL (for example "`:443`").
-
-  ![This screenshot shows the Domain Information tab within the Overview.](images/default-domain-info.png)
 
 You may now **proceed to the next lab**.
 

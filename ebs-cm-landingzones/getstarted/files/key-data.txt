@@ -15,6 +15,7 @@ Path to SSH Key Pair:
 
 EBS Cloud Manager Confidential Application Details:
 ---------------------------------------------------
+Domain URL: 
 Client ID: 
 Client Secret: 
-Domain URL: 
+
