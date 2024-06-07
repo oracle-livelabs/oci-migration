@@ -1,0 +1,49 @@
+{
+  "workshoptitle": "Prepare a Tenancy for EBS Migration Following CIS Benchmark Security Guidelines",
+  "help": "livelabs-help-oci_us@oracle.com",
+  "variables": ["../../variables/variables.json",
+    "../../variables/variables-in-another-file.json"],
+  "tutorials": [
+    {
+      "title": "Introduction",
+      "description": "The Introduction is always second for LiveLabs. The title and contents menu title match for the Introduction.",
+      "filename": "../../introduction/introduction.md"
+    },
+    {
+      "title": "Lab 1: Get Started",
+      "description": "Establish Oracle Clound account credentials, download the key-data.txt file, and log in to your Oracle Cloud account.",
+      "filename": "../../getstarted/getstarted.md"
+    },
+    {
+      "title": "Lab 2: Set Up the Landing Zone",
+      "description": "Labs that follow the introduction are numbered, starting with Lab 1",
+      "filename": "../../setup/setup.md"
+    },
+    {
+      "title": "Lab 3: Register Oracle E-Business Suite Cloud Manager as a Confidential Application",
+      "filename": "../../register/register.md"
+    },
+    {
+      "title": "Lab 4: Deploy and Configure Oracle E-Business Suite Cloud Manager",
+      "filename": "../../deploy/deploy.md",
+      "type": {
+        "Windows" : "Windows",
+        "Mac" : "Mac"
+      }
+    },
+    {
+      "title": "Optional: Manage the EBS Cloud Manager Virtual Machine",
+      "filename": "../../manage-VM/manage.md"
+  },
+  {
+      "title": "Optional: Tear Down Your EBS Environments",
+      "description": "Teardown Your Oracle E-Business Suite Environments",
+      "filename": "../../teardown/teardown.md"
+  },
+    {
+      "title": "Need Help?",
+      "description": "Solutions to Common Problems and Directions for Receiving Live Help",
+      "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-livelabs.md"
+    }
+  ]
+}
