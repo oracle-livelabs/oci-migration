@@ -3,7 +3,7 @@
 
 ### Introduction
 
-* ECC Personalization Template is an ECC V11 feature
+* ECC Personalization Template is an ECC V12 feature
 * This lab walks you through the ECC Personalization Template feature, what the feature is, the benefits of this feature and hands on demos
 
 Estimated Time: 30 minutes

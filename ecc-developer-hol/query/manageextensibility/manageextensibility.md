@@ -97,6 +97,118 @@ Password: welcome1
 
 * You can also choose to view individual application/page details as well. Click on the Page name filter from the Available refinements section and filter for "XX Local Agreements" page
 
+## Task 3: Share Personalization
+
+**Goal**: As an admin I want to share the "Account analsyis" personalization changes done by "eccuser" user, to all users with the same responsibility
+
+**Note:** In Lab 3: Power User Personalization, as "eccuser" user we made multiple personalization changes to Account analysis dashboard. We now want to share those personalization changes to all users with the same responsibility. 
+
+
+1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
+
+    ```
+  	 Username: sysadmin
+Password: welcome1
+    ```
+
+2. Navigate to ECC Developer -> ECC Developer
+    ![Procurement Command Center](../images/val1.png "ECC Developer")
+
+3. Navigate to "Personalization Tracking" tab. The personalizations made by ECCUSER are visible
+    ![Procurement Command Center](../images/newecc1.png "ECC Developer")
+5. Click on the three dots to expand the row actions for the personalization made on GL Account Analysis page and then click on  "Share Personalization". As soon as share personalization is clicked, the page is copied. A message with the page key is provided upon the successful copying of page. The message disappears only when user explicitly clicks on close button corresponding to the message.
+     ![Procurement Command Center](../images/newecc2.png "Procurement Command Center")
+
+
+6. Click the hyperlink, a drawer opens with page detail of the copied page and the user can make amendments and save the changes. Note that the first copy has the number 1, and the nth copy would have the number n. Change the short name to "xx-gl-aa" and name to "General Ledger Command Center Account Analysis" click Save. 
+    ![Procurement Command Center](../images/newecc3.png "Procurement Command Center")
+7. A message appears inside the drawer indicating that the changes are saved. The drawer is closed automatically. If the user clicks Cancel, the drawer is closed immediately
+
+2.	Create a new FND Function for custom Indirect Procurement Dashboard:
+     * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Functions
+        ![Functional Administrator](../images/functionaladministratorpath.png "Functional Administrator")
+        ![Functions Menu](../images/functions.png "Functions Menu")
+
+     * Search with Code as 
+                                                            ```
+  	    <copy>GL_ECC_ACC_ANALYSIS</copy>
+            ```
+     * Click on the “Duplicate” icon displayed for GL\_ECC\_ACC\_ANALYSIS
+          ![Duplicate Function](../images/gl1001.png "Duplicate Function")
+
+     * Change the details in the duplicate function page as mentioned below:
+          * Name: 
+                                                                      ```
+  	    <copy>XX General Ledger Command Center Account Analysis</copy>
+            ```
+          * Code: 
+                   ```
+  	    <copy>XX_GL_ECC_ACC_ANALYSIS</copy>
+            ```
+          
+     ![Duplicate Function](../images/gl1002.png "Duplicate Function")
+
+     * Click on the “Continue” button
+     * Change the value for HTML Call to 
+                                  ```
+  	    <copy>GWY.jsp?targetAppType=ECC&targetPage=/web/eccapp/gl/xx-gl-aa</copy>
+            ```
+     * Click on the “Submit” button
+
+          ![Create Function](../images/gl1003.png "Create Function") 
+          ![Create Function](../images/gl1004.png "Create Function") 
+
+
+3. Add the new FND Function to Procurement Command Center Permission Set:
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Security -> Permission Sets
+        ![Permission Set](../images/permissionset.png "Permission Set")
+    * Search with permission set name as 
+                                        ```
+  	    <copy>General Ledger</copy>
+            ```
+    * Click on “Update” button for “General Ledger Command Center Access Permission Set"
+        ![Update Permission Set](../images/gl1005.png "Update Permission Set")
+    * In the permission set manager section, click on “+” icon to add below permission details
+        * Permission: 
+                                                        ```
+  	    <copy>XX General Ledger Command Center Account Analysis</copy>
+            ```
+        * Click on the magnifying icon to select the correct permission set
+        * Click on “Apply” button to save the permission set
+        ![Add Function to Permission Set](../images/gl1006.png "Add Function to Permission Set")
+        ![Add Function to Permission Set](../images/gl10061.png "Add Function to Permission Set")
+
+4.  Clear Application Cache:
+    * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Caching Framework -> Global Configuration
+        ![Clear Cache](../images/gl1007.png "Clear Cache")
+    * Click on “Clear All Cache” button and then click on "Yes"
+        ![Clear Cache](../images/gl1008.png "Clear Cache")
+
+1.	From **General Ledger Super User** responsibility navigate to **General Ledger Command Center**
+          ![Indirect Procurement](../images/gl1009.png "Indirect Procurement")
+2.	Click on EBS Settings icon
+3.	Click on “Personalize Page” option
+          ![Personalize Page](../images/gl1010.png "Personalize Page")
+
+4. Personalize the Rich Container:
+
+    * A rich content container is an OA component which is designed to embed/enclose an external content within an OA Framework page. The rich content container component accepts the URL of the rich content, in this case an ECC dashboard.
+    This rich content is then enclosed within an iFrame within an OA Framework page. 
+    In this case, through Oracle EBS and ECC integration, users are allowed to drill down from Oracle EBS to ECC. The rich container requires an FND function of the ECC dashboard page, which will allow the user to access the respective ECC dashboard inside EBS.
+          ![Personalize Rich Container](../images/gl1011.png "Personalize Rich Container")
+
+5.	Update the below details and click on the “Apply” button
+     * Destination Function: 
+                                                      ```
+  	    <copy>XX_GL_ECC_ACC_ANALYSIS</copy>
+            ```
+          ![Update Rich Container Details](../images/gl1012.png "Update Rich Container Details")
+
+6. Click on “Return to Application” to access the dashboard
+          ![Return to Application](../images/gl1013.png "Return to Application")
+          ![combined view of account segment and hierarchy](../images/f2000.png "Combined view of account segment and hierarchy")
+
+
 
 You may now **proceed to the next lab**
 

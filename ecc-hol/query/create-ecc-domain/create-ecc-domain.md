@@ -77,9 +77,9 @@ This lab assumes you have:
 
 2. ECC Administrator UI should be accessible.
 
-   * In **About** page “Enterprise Command Centers:” should be shown as ‘V10’.
+   * In **About** page “Enterprise Command Centers:” should be shown as ‘V12’.
 
-   * “Oracle JavaScript Extension Toolkit (JET) :” should be shown as 13.1.4 
+   * “Oracle JavaScript Extension Toolkit (JET) :” should be shown as 15.1.6
 
    * “SOLR” should be shown as 8.8.2
 
