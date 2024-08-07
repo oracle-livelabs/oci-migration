@@ -101,7 +101,13 @@ Password: welcome1
 2. Navigate to Receivables Manager -> Receivables Command center 
     ![Receivables](../images/r1.png "Receivables")
 
+
+
+
 3. You will be navigated to the "Outstanding receivables" dashboard. Click on the Ledgers flag and select "Vision Operations (USA)" Ledger from the pop up.
+
+**Note:** If the dashboard is already personalized, you need  to reset personalization by clicking on the reset button on the top left 
+    ![Receivables](../images/reset100.png "Receivables")
     ![Receivables](../images/r2.png "Receivables")
 
 

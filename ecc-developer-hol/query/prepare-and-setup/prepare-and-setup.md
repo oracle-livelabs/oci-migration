@@ -111,7 +111,9 @@ For ease of execution of this workshop, your VM instance has been pre-configured
 
   ![URL opens](../images/novnc-login-ssh.png " ")
 
-  This should take you directly to your remote desktop in a single click.
+  This should take you directly to your remote desktop following which you have to click on the top left icon as described in the image below to start your lab.
+
+  ![Remote desktop displayed](../images/reset101.png " ")
 
   ![Remote desktop displayed](../images/novnc-launch-get-started.png " ")
 
