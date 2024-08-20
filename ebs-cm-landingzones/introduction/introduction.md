@@ -50,7 +50,7 @@ The following table describes the exercises you will perform in this workshop.
 
 | What          |      How      |  Notes |
 | ------------- | ------------- | ------------- |
-| **Lab 1**: Getting Started | Download `key-data.txt`, establish Oracle Cloud account | You will use the `key-data.txt` file to record information that you will use throughout the workshop. |
+| **Lab 1**: Get Started | Download `key-data.txt`, establish Oracle Cloud account | You will use the `key-data.txt` file to record information that you will use throughout the workshop. |
 | **Lab 2**: Set Up the Landing Zone | Create the foundation; Create the network | Run the EBS Tenancy Admin Stack for Landing Zones and EBS Network Admin Stack for Landing Zones to create the compartment distribution and network. |
 | **Lab 3**: Register EBS Cloud Manager as a Confidential Application | Register EBS Cloud Manager as a confidential application in tenancies using IAM with identity domains | Configure EBS Cloud Manager authentication using IAM with identity domains. |
 | **Lab 4**: Deploy and Configure EBS Cloud Manager | Deploy and configure EBS Cloud Manager and required resources| Use the EBS Cloud Manager Deployment Stack for Landing Zones to deploy the Cloud Manager Compute instance and configure the web application. |
