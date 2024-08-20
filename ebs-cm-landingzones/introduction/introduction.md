@@ -65,4 +65,4 @@ The following table describes the exercises you will perform in this workshop.
 ## Acknowledgements
 * **Author** - Santiago Bastidas, Product Management Director
 * **Contributors** -  Tiffany Romero, Technical Writer; Terri Noyes, Product Management Director
-* **Last Updated By/Date** - Tiffany Romero, EBS Documentation, May 2024
+* **Last Updated By/Date** - Tiffany Romero, EBS Documentation, August 2024
