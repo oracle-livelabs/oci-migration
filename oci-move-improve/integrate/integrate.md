@@ -28,7 +28,7 @@ Estimated Lab Time: 2 hour
 
 1. Before moving forward, if provided, please keep handy the information with the wallet file (username and password to an ADW or ATP) and continue to the next step. Otherwise, read the step below:
 
-2. If you do not have this information, please follow the lab guide (Part 1) here [link](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/run-workshop?p210_wid=928&p210_wec=&session=1864599423650). Once you complete making an ADW or ATP instance, please download the Wallet file from the console. [More info](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/user/connect-download-wallet.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1)
+2. If you do not have this information, please follow the lab guide (Part 1) here [link](https://livelabs.oracle.com/pls/apex/r/dbpm/livelabs/run-workshop?p210_wid=928&p210_wec=&session=1864599423650). Once you complete making an ADW or ATP instance, please download the Wallet file from the console. [More info](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/user/connect-download-wallet.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1)
 
 3. Here, you will establish a connection between our MySQL Database and Oracle Integration Cloud. An Oracle Integration Cloud instance will be provided to you. If you do not have an Oracle Integration Cloud instance, follow instructions from [here](https://docs.cloud.oracle.com/en-us/iaas/integration/doc/creating-oracle-integration-instance.html) and create one.
 

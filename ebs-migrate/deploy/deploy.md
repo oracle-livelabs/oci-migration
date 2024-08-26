@@ -21,7 +21,7 @@ In this lab, you will:
     - `weblogic_password` (In this Lab: welcome1)
 
 ## Task 1: Provision an EBS Instance on the Cloud Manager from the Backup
-This step will take you through how to provision an E-Business Suite instance from a backup in Object Storage. In order to complete this step, you will need access to the Cloud Manager that was created in the previous workshop: [Lift and Shift On-Premises EBS to OCI](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668). 
+This step will take you through how to provision an E-Business Suite instance from a backup in Object Storage. In order to complete this step, you will need access to the Cloud Manager that was created in the previous workshop: [Lift and Shift On-Premises EBS to OCI](https://livelabs.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668). 
 
 1. Login to the EBS Cloud Manager using the SYSADMIN user and the password you created for the user in Lab 1. 
 

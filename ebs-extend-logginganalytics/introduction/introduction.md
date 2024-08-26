@@ -4,7 +4,7 @@
 
 This workshop is an extension of previous workshop. It showcases the use of enabling OCI Logging Analytics to extend your EBS environment.
 
-In order to complete this lab you will need the resources created in the [Lift and Shift On-Premises EBS to OCI](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668).
+In order to complete this lab you will need the resources created in the [Lift and Shift On-Premises EBS to OCI](https://livelabs.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668).
 
 
 Estimated Workshop Time: 2 hours
@@ -45,7 +45,7 @@ In this lab, you will:
 
 ### **Prerequisites**
 
-* Complete Workshop: [Lift and Shift On-Premises EBS to OCI](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668)
+* Complete Workshop: [Lift and Shift On-Premises EBS to OCI](https://livelabs.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668)
 * Logging analytics requires ssh accessable instances, logging service, service connector, and logging analytics service.
 
 **From the previous labs:**
