@@ -4,7 +4,7 @@
 
 This workshop showcases the use of the migration of an existing Oracle E-Business Suite to Oracle Cloud Infrastructure using the Object Storage service. 
 
-In order to complete this lab, it is required that you complete the **Lift and Shift On-Premises EBS to OCI Workshop** found [here](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668). This workshop uses information that is recorded in the referenced lab. This information is necessary in order to preform this workshop. 
+In order to complete this lab, it is required that you complete the **Lift and Shift On-Premises EBS to OCI Workshop** found [here](https://livelabs.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668). This workshop uses information that is recorded in the referenced lab. This information is necessary in order to preform this workshop. 
 
 Estimated Workshop Time: 1.5 hours
     Note: This does not include downtime for creating the backup, which lasts about 2.5 hours. 
@@ -61,7 +61,7 @@ In this lab, you will:
 
 ### **Prerequisites**
 
-* Complete Workshop: [Lift and Shift On-Premises EBS to OCI](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668).
+* Complete Workshop: [Lift and Shift On-Premises EBS to OCI](https://livelabs.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668).
 * A MyOracleSupport account is needed to download the Cloud Backup tool to the source EBS environment.
 * key-data.txt file documented with following information (from the EBS Cloud Manger lab).
 

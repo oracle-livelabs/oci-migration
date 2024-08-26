@@ -42,7 +42,7 @@ If you would like to use a different API key for the Source EBS instance you can
 
 The key file must be placed in a location where it can be referenced by the Oracle E-Business Suite Cloud Backup Module. For example: `/u01/install/APPS/.oci/`
 
-1. Connect to your Oracle E-Business Suite Cloud Manager Compute instance that was created in the previous workshop: [Lift and Shift On-Premises EBS to OCI](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668).
+1. Connect to your Oracle E-Business Suite Cloud Manager Compute instance that was created in the previous workshop: [Lift and Shift On-Premises EBS to OCI](https://livelabs.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668).
     
     SSH into the Cloud Manager instance from your local machine by using the IP address in the ``key-data.txt`` file and the SSH private key you used during the deployment of the Cloud Manager in OCI or by using Putty on a Windows machine. 
 
