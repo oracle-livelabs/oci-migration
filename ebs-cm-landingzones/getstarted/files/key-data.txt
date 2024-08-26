@@ -1,0 +1,21 @@
+
+Tenancy Details:
+----------------
+Cloud Account Name: 
+Tenancy Admin Username: 		
+Tenancy Admin Password: 
+
+
+Cloud Manager Details:
+----------------------
+Cloud Manager URL: 
+Load_Balancer_IP_Address: 
+Path to SSH Key Pair: 
+
+
+EBS Cloud Manager Confidential Application Details:
+---------------------------------------------------
+Domain URL: 
+Client ID: 
+Client Secret: 
+

@@ -20,7 +20,7 @@ This lab assumes you have:
 - An Oracle Free Tier or Paid Cloud account
 - SSH Keys
 ## Task 1: Download Oracle Resource Manager (ORM) stack zip file
-1.  Click on the link below to download the Resource Manager zip file you need to build your environment: [ebs-eccv10-mkplc.zip](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/labfiles/ebs-eccv10-mkplc.zip)
+1.  Click on the link below to download the Resource Manager zip file you need to build your environment: [ebs-eccv12-hol1.zip](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/labfiles/ebs-eccv12-hol1.zip)
 
 2.  Save in your downloads folder.
 
@@ -68,7 +68,7 @@ Your options are:
         - **Option (B)** - Check *Need Remote Access via SSH?* and keep *Auto Generate SSH Key Pair* unchecked to enable remote access via SSH protocol, then provide the SSH public key(s).
 
             - **SSH Public Key**: Select *Choose SSH Key Files*
-                - *Choose Public Key Files*: Drag-n-drop or browse and select  public key *ecchol.pub* from this directory ecc-hol-keys which can be extratced from after downloading this  [ecc-hol-keys.zip](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/labfiles/ecc-hol-keys.zip) on your computer
+                - *Choose Public Key Files*: Drag-n-drop or browse and select  public key *ecchol.pub* from this directory ecc-hol-keys which can be extratced from after downloading this  [ecc-hol-keys.zip](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/labfiles/SSH_KEYS.zip) on your computer
 
         ![Choose SSH keys](../images/choose-ssh.png " ")
 
@@ -144,7 +144,7 @@ If you just completed Task 1A, please proceed to Task 2.  If you have an existin
         - **Option (B)** - Check *Need Remote Access via SSH?* and keep *Auto Generate SSH Key Pair* unchecked to enable remote access via SSH protocol, then provide the SSH public key(s).
 
             - **SSH Public Key**: Select *Choose SSH Key Files*
-                - *Choose SSH Key Files*: Drag-n-drop or browse and select  public key *ecchol.pub* from this directory ecc-hol-keys which can be extratced from after downloading this  [ecc-hol-keys.zip](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/labfiles/ecc-hol-keys.zip) on your computer
+                - *Choose SSH Key Files*: Drag-n-drop or browse and select  public key *ecchol.pub* from this directory ecc-hol-keys which can be extracted from after downloading this  [ecc-hol-keys.zip](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/labfiles/SSH_KEYS.zip) on your computer
 
         ![select SSH keys](../images/choose-ssh.png " ")
         >**Notes:**
@@ -203,8 +203,9 @@ For ease of execution of this workshop, your VM instance has been pre-configured
 
   ![URL opens](../images/novnc-login-ssh.png " ")
 
-  This should take you directly to your remote desktop in a single click.
+  This should take you directly to your remote desktop following which you have to click on the top left icon as described in the image below to start your lab.
 
+  ![Remote desktop displayed](../images/reset101.png " ")
   ![Remote desktop displayed](../images/novnc-launch-get-started.png " ")
 
     >**Note:** While rare, you may see an error on the browser - “*Deceptive Site Ahead*” or similar depending on your browser type as shown below.

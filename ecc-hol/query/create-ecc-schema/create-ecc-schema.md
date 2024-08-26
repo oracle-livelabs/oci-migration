@@ -145,7 +145,7 @@ Confirm Password for ECC DB user: welcome1
     ```
 5. You will see the below screen
 
-    ![Enter database credentials](../images/eccschema0.png "Enter database credentials")
+    ![Enter database credentials](../images/eccschema110.png "Enter database credentials")
 
 
 6. Database set up  should be completed successfully. You can verify the logs in $ECC_BASE/Oracle/quickInstall/logs/setup.log
