@@ -6,7 +6,7 @@
   "tutorials": [
     {
       "title": "Introduction",
-      "description": "The Introduction is always second for LiveLabs. The title and contents menu title match for the Introduction.",
+      "description": "Introduction to the Prepare a Tenancy for EBS Migration Following CIS Benchmark Security Guidelines LiveLabs workshop.",
       "filename": "../../introduction/introduction.md"
     },
     {
@@ -43,7 +43,7 @@
     {
       "title": "Need Help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",
-      "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-livelabs.md"
+      "filename":"https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"
     }
   ]
 }
