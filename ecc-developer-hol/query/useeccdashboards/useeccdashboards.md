@@ -114,9 +114,9 @@ This lab assumes you have:
   	 Username: SYSADMIN
 Password: welcome1
     ```
+    If you encounter the below error we recommend to wait for 15 minutes 
     ![Validate ECC](../images/ecc.png "EBS ECC ERROR")
-    if you encounter above error we recommend to wait for some time maximum 15 minutes .
-
+    You should ideally see the below screen then
     ![Validate ECC](../images/val1.png "Validate ECC")
 
 2. Navigate to ECC Developer, you should be able to see the applications as shown in the below image, if the integration is successful
@@ -216,10 +216,10 @@ Password: welcome1
 2. Navigate to Logistics Manager -> Command Center and then to "Track and Trace" dashboard
     ![Move Orders](../images/log1.png "Move Orders")
 
-3. In the Track and Trace dashboard, click on the side navigation panel to open Available refinements, by default "Inventory Trace Supplier" is the selected dataset. 
+3. In the Track and Trace dashboard, click on the side navigation panel to open Available refinements
     ![Track and trace](../images/ju2.png "Track and trace")
 
-4. Change the data set to "Inventory Trace Sales Orders", by clicking on the three vertical dots beside the name of the data set. 
+4. Check the data set name. It has to be set to "Inventory Trace Sales Orders", if it is not then change it by clicking on the three vertical dots beside the name of the data set. 
     ![Track and trace](../images/invchangedataset.png "Track and trace")
 
 5. Within this data set, under "Ship-To Location" attribute search for "Atlanta" as we are aware of issues originating from Atlanta [In Available refinements within a multi select list, you can search and select multiple values, and then click on filter to apply them in one go or you can choose to click on any one value and refine for that value immediately. Here we will do the latter].
@@ -248,7 +248,7 @@ Password: welcome1
 11. User "New Hire" packed all 3 ‘problem’ different items
     ![Track and trace](../images/ju10.png "Track and trace")
 
-12. Use "Find Similar" to find other pack transactions by New Hire ["Find similar" feature allows you to investigate further using a particular attribute, in this case all sales orders handled by user "New Hire" will be refined].
+12. Select "New Hire" and then click on "Find Similar" to find other pack transactions by New Hire ["Find similar" feature allows you to investigate further using a particular attribute, in this case all sales orders handled by user "New Hire" will be refined].
     ![Track and trace](../images/ju11.png "Track and trace")
 13. Page 1 has the 3 problem orders we already know about and a new, unrelated order is found on page 2 
     ![Track and trace](../images/ju12.png "Track and trace")

@@ -19,7 +19,7 @@ Notes:
 * For security purposes, some sensitive text (such as IP addresses) may be redacted in the screenshots in this workbook.
 
 ## Task 1: Access this workshop
-Access the workshop at [Extend EBS with Logging Analytics](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/run-workshop?p210_wid=803).
+Access the workshop at [Extend EBS with Logging Analytics](https://livelabs.oracle.com/pls/apex/r/dbpm/livelabs/run-workshop?p210_wid=803).
 
 Estimated Workshop Time: 2.5 hours
 

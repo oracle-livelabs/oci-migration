@@ -5,7 +5,7 @@
 This workshop showcases the use of the migration of an existing Oracle E-Business Suite to Oracle Cloud Infrastructure using the Object Storage service to our Cloud Manager instance. 
 
 ## Task 1: Access this workshop
-You can find the workshop at [Migrate EBS to OCI EBS Cloud Manager](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/run-workshop?p210_wid=753).
+You can find the workshop at [Migrate EBS to OCI EBS Cloud Manager](https://livelabs.oracle.com/pls/apex/r/dbpm/livelabs/run-workshop?p210_wid=753).
 
 Estimated Workshop Time: 1.5 hours
     Note: This does not include downtime for creating the backup, which lasts about 2.5 hours. 

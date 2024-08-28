@@ -21,7 +21,7 @@ In this lab, you will:
 
 ### **Prerequisites**
 
-* Complete Workshop: [Lift and Shift On-Premises EBS to OCI Workshop](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668)
+* Complete Workshop: [Lift and Shift On-Premises EBS to OCI Workshop](https://livelabs.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=672&clear=180&session=5980193088668)
 * An SSH key pair
 * OCI Tenancy admin privileges
 * A Virtual Cloud Network (VCN) which will be associated with the Oracle E-Business Suite Instance (created as a part of the prerequisite workshop)
