@@ -39,18 +39,10 @@ The following figure outlines the workshop architecture.
 
 This workshop uses the following components: 
 * Trial accounts (one per attendee)
-* Virtual Cloud Network and related resources
-    * User-generated, using Resource Manager and the provided Terraform script
-* Oracle E-Business Suite Cloud Manager Compute instance
-    * User-provisioned using Oracle Marketplace image
-    * Oracle E-Business Suite Cloud Manager application
-    * EBS sandbox network deployment script
-* Oracle E-Business Suite environment 1 Compute instance
-    * User provisioned environment
-    * Application and database tiers on this compute instance
-* Oracle E-Business Suite environment 2 Compute instance
-    * Cloned from environment 1
-    * Application and database tiers on this compute instance
+* Marketplace stacks
+    * Oracle E-Business Suite: Tenancy Admin Stack for Landing Zones
+    * Oracle E-Business Suite: Network Admin Stack for Landing Zones
+    * Oracle E-Business Suite: Cloud Manager Deployment Stack for Landing Zones
 
 The following table describes the exercises you will perform in this workshop.
 
@@ -73,4 +65,4 @@ The following table describes the exercises you will perform in this workshop.
 ## Acknowledgements
 * **Author** - Santiago Bastidas, Product Management Director
 * **Contributors** -  Tiffany Romero, Technical Writer; Terri Noyes, Product Management Director
-* **Last Updated By/Date** - Tiffany Romero, EBS Documentation, May 2024
+* **Last Updated By/Date** - Tiffany Romero, EBS Documentation, August 2024
