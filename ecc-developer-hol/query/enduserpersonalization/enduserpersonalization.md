@@ -104,7 +104,7 @@ Password: welcome1
 
 
 
-3. You will be navigated to the "Outstanding receivables" dashboard. Click on the Ledgers flag and select "Vision Operations (USA)" Ledger from the pop up.
+3. You will be navigated to the "Outstanding receivables" dashboard. "Vision Operations (USA)" Ledger is already selected.
 
 **Note:** If the dashboard is already personalized, you need  to reset personalization by clicking on the reset button on the top left 
     ![Receivables](../images/reset100.png "Receivables")
@@ -112,7 +112,6 @@ Password: welcome1
 
 
 4. We want to focus on only Past-due invoices, so from the Summarization bar lets only display metrics/dimensions/flags which are relevant to us. Click on the runtime options (three vertical dots) for Summarization Bar, enable the below mentioned items, and then click outside the runtime options of Summarization Bar for changes to reflect.
-      * Ledger
       * Currency
       * Past-Due Balance
 
@@ -132,9 +131,11 @@ Password: welcome1
     ![Receivables](../images/r09.png "Receivables")
 
 6. You made runtime changes in Summarization bar and Results Table, these changes will remain even if you were to log out and login again.
-7. In the "Transactions List" Results Table, click on the "Preview" row action for transaction number "524952" to review customer claim by opening the customer invoice. This row action leads to source transaction, i.e., row action to invoice overview for seamless integration with EBS. Click on the hamburger icon within the preview, to view the customer claim clearly.
+     ![Receivables](../images/r10.png "Receivables")
+7. From the result table table filter for transaction number "524952".
+8. In the "Transactions List" Results Table, click on the "Preview" row action for transaction number "524952" to review customer claim by opening the customer invoice. This row action leads to source transaction, i.e., row action to invoice overview for seamless integration with EBS. Click on the hamburger icon within the preview, to view the customer claim clearly.
 
-    ![Receivables](../images/r099.png "Receivables")
+    ![Receivables](../images/r101.png "Receivables")
     
     ![Receivables](../images/r012.png "Receivables")
 

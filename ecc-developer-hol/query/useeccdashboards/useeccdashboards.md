@@ -53,6 +53,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
     <td> 
     1. Summarization bar: Flag<br/>
     2. Summarization bar: Metric<br/>
+    3. Summarization bar: Filter Chip<br/>
     3. Chart Cascading<br/>
     4. Diagram: Pagination<br/>
     5. Diagram: Compare<br/>
@@ -144,9 +145,9 @@ Password: welcome1
 2. Navigate to Fixed Assets Manager -> Assets Command center and then to "Asset Location" dashboard
     ![Assets Location](../images/fix1.png "Assets Location")
 
-3. Click on "Books" flag to select a book [The Flags feature, displays the count of the configured dimension. Users can make a selection at runtime from the pop up as demonstrated here]
+3. Click on "Assets Book" Filter Chip to select a book [The Filter Chip feature, displays the count of the configured dimension. Users can make a selection at runtime from the pop up as demonstrated here]
     ![Assets Location](../images/fix21.png "Assets Location")
-4. Click on "OPS CORP" Book Type Code from the "Books" flag pop up
+4. Click on "OPS CORP" Book Type Code from the "Assets Book" Filter Chip.
 5. Click on "Unassigned Assets" metric in the summarization bar component to track the unassigned assets. [Metrics display the value of a specific metric, they can be configured to be either to navigate to a destination dashboard or tab and optionally invoke a refinement action or have no action at all].
     ![Assets Location](../images/fix3.png "Assets Location")
 6. From the Tag cloud named "Unassigned Assets by Category", click on "Computer" to filter for "Computer" category [The tag cloud cascades to the next level defined by the designer. Any value clicked from a tag cloud would result in refinement and the entire page will be refined for that particular value].
@@ -182,7 +183,7 @@ Password: welcome1
 
 1. Navigate to Purchasing, Vision Operations (USA) -> Procurement Command Center and then to "Procurement Operations" dashboard
     ![Procurement Command Center](../images/pro1.png "Procurement Command Center")
-2. Within "Procurement Operations", navigate to "Orders" dashboard. Click on the "i" icon, this displays all the data sets used in the dashboard along with the last or latest dat of the updated time.
+2. Within "Procurement Operations", navigate to "Orders" dashboard.Choose "USD" from the "Currency" Flag in Summarization bar.  Click on the "i" icon, this displays all the data sets used in the dashboard along with the last or latest date of the updated time.
     ![Procurement Command Center](../images/p1000.png "Procurement Command Center")
 
 

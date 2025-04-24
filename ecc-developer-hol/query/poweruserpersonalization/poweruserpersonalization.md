@@ -108,7 +108,7 @@ Password: welcome1
 2. Navigate to Payables Manager responsibility -> Payables Command Center -> Supplier Balance Dashboard
    ![Payables Manager responsibility](../images/pl1.png "Payables Manager responsibility")
 
-4. From Supplier Balance dashboard, click on the Ledgers flag and select "Vision Operations (USA)" Ledger from the pop up.
+4. From Supplier Balance dashboard, click on the Ledgers Search Chip and select "Vision Operations (USA)" Ledger from the pop up.
 
    ![Supplier Balance dashboard](../images/sup1.png "Supplier Balance dashboard")
    ![Supplier Balance dashboard](../images/sup20.png "Supplier Balance dashboard")
