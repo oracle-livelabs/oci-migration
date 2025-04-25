@@ -114,7 +114,9 @@ Password: welcome1
 2. Navigate to ECC Developer -> ECC Developer
     ![Procurement Command Center](../images/val1.png "ECC Developer")
 
-3. Navigate to "Personalization Tracking" tab. The personalizations made by ECCUSER are visible
+3. Navigate to "About" menu -> "Monitoring" tab. Click on "Trigger Incremental Load" link under "Activity Audit Data Load Controls".
+   ![ECC developer](../images/admin66.png "ECC Developer")
+3. Navigate to "Activity Audit" Dashboard -> "Personalization Tracking" tab. The personalizations made by ECCUSER are visible
     ![Procurement Command Center](../images/newecc1.png "ECC Developer")
 5. Click on the three dots to expand the row actions for the personalization made on GL Account Analysis page and then click on  "Share Personalization". As soon as share personalization is clicked, the page is copied. A message with the page key is provided upon the successful copying of page. The message disappears only when user explicitly clicks on close button corresponding to the message.
      ![Procurement Command Center](../images/newecc2.png "Procurement Command Center")

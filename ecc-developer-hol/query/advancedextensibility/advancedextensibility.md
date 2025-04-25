@@ -503,6 +503,8 @@ style="white-space:pre-wrap; word-wrap:break-word"
   	    <copy>get_ecc_data_load_info</copy>
             ```
         * Connection Name: ebsdb
+        * SQL Query Connection Name: ebsdb
+
             ![Configure Load Rules](../images/a1122.png "Configure Load Rules")
     * Click on the “Save” button
     * Navigate to “Data Load Submission” menu
