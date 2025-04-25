@@ -183,7 +183,7 @@ Password: welcome1
 
 1. Navigate to Purchasing, Vision Operations (USA) -> Procurement Command Center and then to "Procurement Operations" dashboard
     ![Procurement Command Center](../images/pro1.png "Procurement Command Center")
-2. Within "Procurement Operations", navigate to "Orders" dashboard.Choose "USD" from the "Currency" Flag in Summarization bar.  Click on the "i" icon, this displays all the data sets used in the dashboard along with the last or latest date of the updated time.
+2. Within "Procurement Operations", navigate to "Orders" dashboard.Click on the "i" icon, this displays all the data sets used in the dashboard along with the last or latest date of the updated time.
     ![Procurement Command Center](../images/p1000.png "Procurement Command Center")
 
 
@@ -275,9 +275,9 @@ You may now **proceed to the next lab**
 
 * **Author**- Muhannad Obeidat, VP
 
-* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Mohammed Khan
+* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Sriram Sumaithangi
 
-* **Last Updated By/Date**- Mohammed Khan, August 2023
+* **Last Updated By/Date**- Sriram Sumaithangi, April 2025
 
 
 

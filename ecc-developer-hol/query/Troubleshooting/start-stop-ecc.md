@@ -128,7 +128,7 @@ You may now  **proceed to the next lab**
 
 * **Author**- Muhannad Obeidat, VP
 
-* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
+* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Sriram Sumaithangi
 
-* **Last Updated By/Date**- Mohammed Khan, December 2023
+* **Last Updated By/Date**- Sriram Sumaithangi, April 2025
 
