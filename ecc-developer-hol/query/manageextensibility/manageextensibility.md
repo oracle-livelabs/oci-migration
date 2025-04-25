@@ -227,5 +227,5 @@ You may now **proceed to the next lab**
 
 * **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Sriram Sumaithangi
 
-* **Last Updated By/Date**- Mohammed Khan, April 2025
+* **Last Updated By/Date**- Sriram Sumaithangi, April 2025
 

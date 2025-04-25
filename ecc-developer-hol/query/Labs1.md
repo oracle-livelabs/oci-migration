@@ -210,6 +210,6 @@ Example: If you have set Memory as 8gb instead of 16gb then you should go to the
 ## Acknowledgements
 
 * **Author** - Muhannad Obeidat, VP
-* **Contributors** -  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Mohammed Khan
-* **Last Updated By/Date** - Mohammed Khan, August 2023
+* **Contributors** -  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Sriram Sumaithangi
+* **Last Updated By/Date** - Sriram Sumaithangi, April 2025
 
