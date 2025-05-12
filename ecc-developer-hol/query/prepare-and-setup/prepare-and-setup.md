@@ -46,7 +46,8 @@ Proceed to deploy your workshop environment using Oracle Resource Manager (ORM) 
 1. Identify the ORM stack zip file downloaded in *Task 1*
 2.  Open up the hamburger menu in the top left corner.  Click **Developer Services**, and choose **Resource Manager > Stacks**. Choose the compartment in which you would like to install the stack. Click **Create Stack**.
 
-  ![Select Stacks](https://oracle-livelabs.github.io/common/images/console/developer-resmgr-stacks.png " ")
+  ![Select Stacks](https://oracle-livelabs.github.io/common/images/console/../images/developer-resmgr-stacks.png " ")
+  
 
   ![Create Stack](../images/create-stack.png " ")
 
