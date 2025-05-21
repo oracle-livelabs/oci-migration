@@ -126,7 +126,7 @@ To analyze performance deeply download HAR file:
   	 <copy>java -	Danalyzer="ecc_analyzer.xml" -jar HA.jar</copy>
     ```
 
-3. ECC Analyzer: Sample Output
+4. ECC Analyzer: Sample Output
 
    * Analyzer generates a zip file containing all the script outputs and the analyzer html report(ATGECCHA_<date>.html). 
 
@@ -173,5 +173,5 @@ You may now **proceed to the next lab**
 
 * **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Sriram Sumaithangi
 
-* **Last Updated By/Date**- Sriram Sumaithangi, April 2025
+* **Last Updated By/Date**- Sriram Sumaithangi, May 2025
 
