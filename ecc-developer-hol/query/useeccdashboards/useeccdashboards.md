@@ -103,10 +103,21 @@ style="white-space:pre-wrap; word-wrap:break-word"
 This lab assumes you have:
 * Completed all previous labs successfully 
 
+## Task 1: Open Your Workshop Guide
+
+1. If the *Web* browser window(s) is(are) not already open side-by-side, double-click the *Get Started with your Workshop* icon from the remote desktop. This will launch one or two windows depending on the workshop.
+
+    ![Get Started with your Workshop](../images/novnc-launch-get-started-1.png " ")
+
+2. On the left window is your workshop guide and depending on your workshop, you may also have one or two browser tabs loaded with web apps. e.g. Weblogic console, Enterprise Manager Cloud Console, or a relevant application to your workshop such as SQL Developer, JDeveloper, etc.
+
+    ![Workshop guide and sample webapp](../images/novnc-launch-get-started-2.png " ")
+
+You may now **proceed to the next task**.
+
+## Task 2: Validate integration of EBS and ECC 
 
 
-
-## Task 1: Validate integration of EBS and ECC 
 
 1. Navigate to http://<VNC\_Public\_IP\>:8000 in the browser with below credentials 
    
@@ -132,7 +143,7 @@ Password: welcome1
 5. The Activity Tracker dashboard is displayed. This validates the integration of EBS and ECC
     ![Activity audit](../images/activityaudit3.png "Activity audit")
 
-## Task 2: Hands on demo of ECC Fixed Assets
+## Task 3: Hands on demo of ECC Fixed Assets
 
 **Goal:** Tune Business Operations and Improve Data Quality. 
 
@@ -170,7 +181,7 @@ Password: welcome1
 
 
 
-## Task 3: Hands on demo of ECC Procurement
+## Task 4: Hands on demo of ECC Procurement
 
 **Goal:** Inspect individual order details. 
 
@@ -203,7 +214,7 @@ Password: welcome1
 14. We can view the individual order line for this particular order and conclude our analysis.
     ![Procurement Command Center](../images/ki.png "Procurement Command Center")
 
-## Task 4: Hands on demo of ECC Inventory Management 
+## Task 5: Hands on demo of ECC Inventory Management 
 
 **Goal:** Investigate picks to find a common cause. 
 
