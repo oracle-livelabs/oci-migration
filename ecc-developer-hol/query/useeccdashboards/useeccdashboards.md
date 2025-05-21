@@ -126,10 +126,11 @@ You may now **proceed to the next task**.
   	 Username: SYSADMIN
 Password: welcome1
     ```
-    If you encounter the below error we recommend to wait for 15 minutes 
-    ![Validate ECC](../images/ecc.png "EBS ECC ERROR")
+  
     You should ideally see the below screen then
     ![Validate ECC](../images/val1.png "Validate ECC")
+    If you encounter the below error we recommend to wait for 15 minutes 
+    ![Validate ECC](../images/ecc.png "EBS ECC ERROR")
 
 2. Navigate to ECC Developer, you should be able to see the applications as shown in the below image, if the integration is successful
     ![Validate integration of EBS and ECC](../images/val2.png "Validate integration")
