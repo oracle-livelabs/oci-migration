@@ -53,6 +53,7 @@ style="white-space:pre-wrap; word-wrap:break-word"
     <td> 
     1. Summarization bar: Flag<br/>
     2. Summarization bar: Metric<br/>
+    3. Summarization bar: Filter Chip<br/>
     3. Chart Cascading<br/>
     4. Diagram: Pagination<br/>
     5. Diagram: Compare<br/>
@@ -102,10 +103,21 @@ style="white-space:pre-wrap; word-wrap:break-word"
 This lab assumes you have:
 * Completed all previous labs successfully 
 
+## Task 1: Open Your Workshop Guide
+
+1. If the *Web* browser window(s) is(are) not already open side-by-side, double-click the *Get Started with your Workshop* icon from the remote desktop. This will launch one or two windows depending on the workshop.
+
+    ![Get Started with your Workshop](../images/novnc-launch-get-started-1.png " ")
+
+2. On the left window is your workshop guide and depending on your workshop, you may also have one or two browser tabs loaded with web apps. e.g. Weblogic console, Enterprise Manager Cloud Console, or a relevant application to your workshop such as SQL Developer, JDeveloper, etc.
+
+    ![Workshop guide and sample webapp](../images/novnc-launch-get-started-2.png " ")
+
+You may now **proceed to the next task**.
+
+## Task 2: Validate integration of EBS and ECC 
 
 
-
-## Task 1: Validate integration of EBS and ECC 
 
 1. Navigate to http://<VNC\_Public\_IP\>:8000 in the browser with below credentials 
    
@@ -114,10 +126,11 @@ This lab assumes you have:
   	 Username: SYSADMIN
 Password: welcome1
     ```
-    If you encounter the below error we recommend to wait for 15 minutes 
-    ![Validate ECC](../images/ecc.png "EBS ECC ERROR")
+  
     You should ideally see the below screen then
     ![Validate ECC](../images/val1.png "Validate ECC")
+    If you encounter the below error we recommend to wait for 15 minutes 
+    ![Validate ECC](../images/ecc.png "EBS ECC ERROR")
 
 2. Navigate to ECC Developer, you should be able to see the applications as shown in the below image, if the integration is successful
     ![Validate integration of EBS and ECC](../images/val2.png "Validate integration")
@@ -131,7 +144,7 @@ Password: welcome1
 5. The Activity Tracker dashboard is displayed. This validates the integration of EBS and ECC
     ![Activity audit](../images/activityaudit3.png "Activity audit")
 
-## Task 2: Hands on demo of ECC Fixed Assets
+## Task 3: Hands on demo of ECC Fixed Assets
 
 **Goal:** Tune Business Operations and Improve Data Quality. 
 
@@ -144,9 +157,9 @@ Password: welcome1
 2. Navigate to Fixed Assets Manager -> Assets Command center and then to "Asset Location" dashboard
     ![Assets Location](../images/fix1.png "Assets Location")
 
-3. Click on "Books" flag to select a book [The Flags feature, displays the count of the configured dimension. Users can make a selection at runtime from the pop up as demonstrated here]
+3. Click on "Assets Book" Filter Chip to select a book [The Filter Chip feature, displays the count of the configured dimension. Users can make a selection at runtime from the pop up as demonstrated here]
     ![Assets Location](../images/fix21.png "Assets Location")
-4. Click on "OPS CORP" Book Type Code from the "Books" flag pop up
+4. Click on "OPS CORP" Book Type Code from the "Assets Book" Filter Chip.
 5. Click on "Unassigned Assets" metric in the summarization bar component to track the unassigned assets. [Metrics display the value of a specific metric, they can be configured to be either to navigate to a destination dashboard or tab and optionally invoke a refinement action or have no action at all].
     ![Assets Location](../images/fix3.png "Assets Location")
 6. From the Tag cloud named "Unassigned Assets by Category", click on "Computer" to filter for "Computer" category [The tag cloud cascades to the next level defined by the designer. Any value clicked from a tag cloud would result in refinement and the entire page will be refined for that particular value].
@@ -169,7 +182,7 @@ Password: welcome1
 
 
 
-## Task 3: Hands on demo of ECC Procurement
+## Task 4: Hands on demo of ECC Procurement
 
 **Goal:** Inspect individual order details. 
 
@@ -182,7 +195,7 @@ Password: welcome1
 
 1. Navigate to Purchasing, Vision Operations (USA) -> Procurement Command Center and then to "Procurement Operations" dashboard
     ![Procurement Command Center](../images/pro1.png "Procurement Command Center")
-2. Within "Procurement Operations", navigate to "Orders" dashboard. Click on the "i" icon, this displays all the data sets used in the dashboard along with the last or latest dat of the updated time.
+2. Within "Procurement Operations", navigate to "Orders" dashboard.Click on the "i" icon, this displays all the data sets used in the dashboard along with the last or latest date of the updated time.
     ![Procurement Command Center](../images/p1000.png "Procurement Command Center")
 
 
@@ -202,7 +215,7 @@ Password: welcome1
 14. We can view the individual order line for this particular order and conclude our analysis.
     ![Procurement Command Center](../images/ki.png "Procurement Command Center")
 
-## Task 4: Hands on demo of ECC Inventory Management 
+## Task 5: Hands on demo of ECC Inventory Management 
 
 **Goal:** Investigate picks to find a common cause. 
 
@@ -274,9 +287,9 @@ You may now **proceed to the next lab**
 
 * **Author**- Muhannad Obeidat, VP
 
-* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Mohammed Khan
+* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Sriram Sumaithangi
 
-* **Last Updated By/Date**- Mohammed Khan, August 2023
+* **Last Updated By/Date**- Sriram Sumaithangi, April 2025
 
 
 

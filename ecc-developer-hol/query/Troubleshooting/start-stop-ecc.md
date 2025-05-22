@@ -20,8 +20,8 @@ This lab assumes you have:
 * Completed all previous labs successfully 
  
 
-##  Task 1: Learn how to run adautoconfig,start & stop EBS apps 
-1. Open EBS terminal and then run AutoConfig. For running Autoconfig you need to first source the EBS running edition using below command
+##  Task 1: Learn how to run autoconfig,start & stop EBS apps 
+1. Open EBS terminal and then run AutoConfig. For running Autoconfig you need to first source the EBS run edition using below command
 
     ```
   	 <copy>source /u01/install/APPS/EBSapps.env run</copy>
@@ -128,7 +128,7 @@ You may now  **proceed to the next lab**
 
 * **Author**- Muhannad Obeidat, VP
 
-* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Mohammed Khan
+* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal and Sriram Sumaithangi
 
-* **Last Updated By/Date**- Mohammed Khan, December 2023
+* **Last Updated By/Date**- Sriram Sumaithangi, May 2025
 

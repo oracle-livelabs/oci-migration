@@ -108,10 +108,9 @@ Password: welcome1
 2. Navigate to Payables Manager responsibility -> Payables Command Center -> Supplier Balance Dashboard
    ![Payables Manager responsibility](../images/pl1.png "Payables Manager responsibility")
 
-4. From Supplier Balance dashboard, click on the Ledgers flag and select "Vision Operations (USA)" Ledger from the pop up.
+4. From Supplier Balance dashboard, click on the Ledgers Filter Chip and select "Vision Operations (USA)" Ledger from the pop up.
 
    ![Supplier Balance dashboard](../images/sup1.png "Supplier Balance dashboard")
-   ![Supplier Balance dashboard](../images/sup20.png "Supplier Balance dashboard")
 
 
 5. Enable Personalization Mode by clicking on the "i" icon (on the top left of the page, beside the share icon) and then click on "Personalize" button.
@@ -119,7 +118,7 @@ Password: welcome1
    ![Enable Personalization Mode](../images/sup3.png "Enable Personalization Mode")  
    ![Enable Personalization Mode](../images/sup4.png "Enable Personalization Mode")
 
-6. The "Personalize" button is now disabled and the personalization icon changes to blue when the dashboard is in edit mode. All components in the dashboard will now have the configuration and delete icon
+6. The "Personalize" button is now disabled when the dashboard is in edit mode. All components in the dashboard will now have the configuration and delete icon
 
    ![Enable Personalization Mode](../images/sup5.png "Enable Personalization Mode")
 
@@ -139,7 +138,7 @@ Password: welcome1
     - Dimension: Bank Account (series dimension)
     - Metric: Paid amount (Attribute) and Sum (Aggregation) 
 
-10. Click preview 
+10. Click "Preview" 
 11. This gives cash outflow across all currencies, now add additional dimension to split the chart per currency.
 
 12. Add "Currency" as Trellis column dimension
@@ -159,7 +158,7 @@ Password: welcome1
           - Currency name (This will become a column when Pivot visualization is enabled)
     - Metric:
           - Paid amount (Attribute) and Sum (Aggregation)
-16. Click preview. This gives per supplier, per supplier site totals of invoice paid amount.
+16. Click "Preview". This gives per supplier, per supplier site totals of invoice paid amount.
 
     ![Aggregate table configuration](../images/sup140.png "Aggregate table configuration")
 
@@ -244,7 +243,7 @@ Password: welcome1
 
 * **Author**- Muhannad Obeidat, VP
 
-* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Mohammed Khan
+* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Sriram Sumaithangi
 
-* **Last Updated By/Date**- Mohammed Khan, August 2023
+* **Last Updated By/Date**- Sriram Sumaithangi, April 2025
 

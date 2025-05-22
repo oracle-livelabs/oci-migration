@@ -100,25 +100,24 @@ To analyze performance deeply download HAR file:
 * Requires Java 1.7+
 * Available on Linux platforms only
 
-4. Verify java version
+1. Verify java version
 
     ```
   	 <copy>java –version</copy>
     ```
-
-
-
-2. Running Analyzer
+2. How to run the ECC Analyzer
    To run Analyzer as a java program follow below instruction. The java program will prompt for the WebLogic and APPS usernames and passwords.
    * Source ECC Environment:
      ```
-<copy>. ./$ECC_BASE/Oracle/quickinstall/env/ecc.env</copy> ```
+       <copy> source /u01/Oracle/quickinstall/env/ecc.env</copy> ```
 
    * Unzip ECC analyzer zip:
-        ```
-<copy>unzip ECC_Analyzer.zip</copy> ```
+     ```
+     <copy> unzip ECC_Analyzer.zip</copy> ```
 
-3. Running analyzer
+---
+
+3. Running Analyzer
 
     ![Running Analyzer](../images/eccanalyzer2.png "Running Analyzer")
 
@@ -126,7 +125,7 @@ To analyze performance deeply download HAR file:
   	 <copy>java -	Danalyzer="ecc_analyzer.xml" -jar HA.jar</copy>
     ```
 
-3. ECC Analyzer: Sample Output
+4. ECC Analyzer: Sample Output
 
    * Analyzer generates a zip file containing all the script outputs and the analyzer html report(ATGECCHA_<date>.html). 
 
@@ -140,8 +139,6 @@ To analyze performance deeply download HAR file:
     ![ECC Analyzer: Sample Output](../images/eccanalyzer4.png "ECC Analyzer: Sample Output")
     ![ECC Analyzer: Sample Output](../images/eccanalyzer5.png "ECC Analyzer: Sample Output")
     ![ECC Analyzer: Sample Output](../images/eccanalyzer6.png "ECC Analyzer: Sample Output")
-
-
 ## Task 3: Identify common issues 
 1. You will see the below screen if you are authenticated but not authorized to view the dashboard. You need to use the right responsibility to access the dashboard 
 
@@ -171,7 +168,7 @@ You may now **proceed to the next lab**
 
 * **Author**- Muhannad Obeidat, VP
 
-* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Mohammed Khan
+* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Sriram Sumaithangi
 
-* **Last Updated By/Date**- Mohammed Khan, August 2023
+* **Last Updated By/Date**- Sriram Sumaithangi, May 2025
 

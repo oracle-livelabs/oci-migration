@@ -503,6 +503,8 @@ style="white-space:pre-wrap; word-wrap:break-word"
   	    <copy>get_ecc_data_load_info</copy>
             ```
         * Connection Name: ebsdb
+        * SQL Query Connection Name: ebsdb
+
             ![Configure Load Rules](../images/a1122.png "Configure Load Rules")
     * Click on the “Save” button
     * Navigate to “Data Load Submission” menu
@@ -808,7 +810,7 @@ You may now **proceed to the next lab**
 
 * **Author**- Muhannad Obeidat, VP
 
-* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Mohammed Khan
+* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Sriram Sumaithangi
 
-* **Last Updated By/Date**- Mohammed Khan, August 2023
+* **Last Updated By/Date**- Sriram Sumaithangi, April 2025
 
