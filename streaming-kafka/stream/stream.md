@@ -46,9 +46,9 @@ When the pool is created. Take note of
 - Take note of your **username** (**4**). 
     - If you use IDCS, it will be in the form of **oracleidentitycloudservice/xxxxxxx**
     - If you use the new Identity Domain, it will be in the form of **xxxxxxx** (And not Default/xxxxxxx)
-- Scroll down
-- Click **Auth Tokens**
-- Then **Generate Token**
+- Go to the tab *Token and Keys*
+- In **Auth Tokens**
+- Click **Generate Token**
 - Give a **name**
 - Click **Generate Token**
 - Take note of the token generated. It will appear only once (**5**)
@@ -73,5 +73,5 @@ More info here (look for Stream): [OCI Common Policies](https://docs.oracle.com/
 ## Acknowledgements
 
 - **Author** - Marc Gueury
-- **History** - Creation - 25 Aug 2022
+- **History** - Update - June 2025
 
