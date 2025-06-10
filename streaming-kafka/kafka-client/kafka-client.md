@@ -45,7 +45,6 @@ class Settings
 {
     // To configure
     static String bootstrapServers = "cell-1.streaming.eu-frankfurt-1.oci.oraclecloud.com:9092";
-    static String authToken = "X9auxxxxxxxxxx";
     static String tenancyName = "tenantname";
     static String username = "oracleidentitycloudservice/name@domain.com";
     static String streamPoolId = "ocid1.streampool.oc1.eu-frankfurt-1.amaaaaaauxxxxxxxxxxxxxxxxxxx";
@@ -242,4 +241,4 @@ Recheck the steps to get your username in the previous chapter:
 ## Acknowledgements
 
 - **Author** - Marc Gueury
-- **History** - Creation - 25 Aug 2022
+- **History** - Creation - June 2025
