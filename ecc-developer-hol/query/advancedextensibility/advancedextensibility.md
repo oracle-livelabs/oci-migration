@@ -1,6 +1,6 @@
 # Extensibility: Advanced Flow
 
-### Introduction
+## Introduction
 
 
 This lab walks you through the steps to extend Procurement Command Center by adding a new dashboard for local agreements.
@@ -57,13 +57,13 @@ To create a data set within ECC, follow the below steps:
   	 Username: sysadmin
 Password: welcome1
     ```
-2.	Navigate to ECC Developer page -> ECC Developer
+2. Navigate to ECC Developer page -> ECC Developer
         ![Procurement Command Center](../images/val1.png "Procurement Command Center")
-3.	Go to “Datasets” menu under “Data Designer” section
+3. Go to “Datasets” menu under “Data Designer” section
         ![Procurement Command Center](../images/data1.png "Procurement Command Center")
-4.	Click on “New Dataset” button
+4. Click on “New Dataset” button
         ![Procurement Command Center](../images/data2.png "Procurement Command Center")
-5.	Provide the below details:
+5. Provide the below details:
     *	Dataset Key: 
                                                                 ```
   	    <copy>xx-po-pcc-local-agreements</copy>
@@ -228,23 +228,27 @@ Additionally, Oracle Enterprise Command Center Framework establishes an implicit
 6. Execute data loads for this new dataset
     * Navigate to “Data Load Submission” menu under “Administration” section
     * Select the below details to submit “Query Upload”
-        * Application Name: 
-          ```
-  	        <copy>Procurement</copy>
-          ```
-        * Dataset: ```
-  	        <copy>XX PCC Local Agreements</copy>
-          ```
-        * Load Type: ```
-  	        <copy>Query Upload</copy>
-          ```
-        * Connection: ```
-  	        <copy>ebsdb</copy>
-          ```
-        * SQL Query: ```
-  	         <copy>SELECT ecc_spec_id, agreement, agreement_number, agr_revision, status, supplier, supplier_site, agr_supplier_contact, agr_agreed_amount, agr_amount_limit, agr_amount_released, functional_currency_code, currency, buyer_name, effective_from, effective_to, creation_date, approval_date, submit_date, agr_payment_term, org_id, operating_unit, received_amount, invoiced_amount, shipped_amount, language, group_status, sub_status, next_action_type, reservation_status, creation_year, creation_month, agreements_to_watch, expiring_agreements, agr_style, amount_agreed_func, released_amount_func, authorization_status, document_type, utilization_percentage, doc_authorized_user_ids, security_level_code, type_lookup_code, supplier_id, agreement_line, line_number, line_type, item, item_description, category, uom, unit_price, line_status, lead_time, no_price_breaks, negotiation, order_num, released_quantity, shipped_quantity, received_quantity, rejected_quantity, invoiced_quantity, line_released_amount, line_received_amount, line_invoiced_amount, line_shipped_amount, agreement_status_code, supplier_item_num, cancel_flag, acceptance_required_flag, po_lineloc_id, release_number, po_shipment_num, po_ship_ordered_quantity, po_ship_to_location, shipment_amount, po_ship_received_quantity, po_ship_rejected_quantity, po_ship_invoiced_quantity, po_ship_cancelled_quantity, po_ship_shipped_quantity, po_ship_ordered_amount, po_ship_shipped_amount, po_ship_received_amount, po_ship_rejected_amount, po_ship_invoiced_amount, po_unit_price, po_need_by_date, po_promised_date, overdue_flag, need_by_date_open_shipment 
-FROM ecc_proc_local_agreements</copy>
-               ```         
+        * Application Name:
+            ```
+            <copy>Procurement</copy>
+            ```
+        * Dataset:
+            ```
+            <copy>XX PCC Local Agreements</copy>
+            ```
+        * Load Type:
+            ```
+            <copy>Query Upload</copy>
+            ```
+        * Connection:
+            ```
+            <copy>ebsdb</copy>
+            ```
+        * SQL Query:
+            ```
+            <copy>SELECT ecc_spec_id, agreement, agreement_number, agr_revision, status, supplier, supplier_site, agr_supplier_contact, agr_agreed_amount, agr_amount_limit, agr_amount_released, functional_currency_code, currency, buyer_name, effective_from, effective_to, creation_date, approval_date, submit_date, agr_payment_term, org_id, operating_unit, received_amount, invoiced_amount, shipped_amount, language, group_status, sub_status, next_action_type, reservation_status, creation_year, creation_month, agreements_to_watch, expiring_agreements, agr_style, amount_agreed_func, released_amount_func, authorization_status, document_type, utilization_percentage, doc_authorized_user_ids, security_level_code, type_lookup_code, supplier_id, agreement_line, line_number, line_type, item, item_description, category, uom, unit_price, line_status, lead_time, no_price_breaks, negotiation, order_num, released_quantity, shipped_quantity, received_quantity, rejected_quantity, invoiced_quantity, line_released_amount, line_received_amount, line_invoiced_amount, line_shipped_amount, agreement_status_code, supplier_item_num, cancel_flag, acceptance_required_flag, po_lineloc_id, release_number, po_shipment_num, po_ship_ordered_quantity, po_ship_to_location, shipment_amount, po_ship_received_quantity, po_ship_rejected_quantity, po_ship_invoiced_quantity, po_ship_cancelled_quantity, po_ship_shipped_quantity, po_ship_ordered_amount, po_ship_shipped_amount, po_ship_received_amount, po_ship_rejected_amount, po_ship_invoiced_amount, po_unit_price, po_need_by_date, po_promised_date, overdue_flag, need_by_date_open_shipment
+            FROM ecc_proc_local_agreements</copy>
+            ```
         * Data Upload: Select “Dataset Reset”
         </br>
         **Note:** Data set reset would wipe away any prior data set with the same name and start fresh whereas an extend existing data set option would use the same existing data set and ingest data on top of it
@@ -254,7 +258,7 @@ FROM ecc_proc_local_agreements</copy>
         ![Request ID](../images/request_id_data_load.png "Request ID")
 
     * Upon clicking on the "Run ID" link displayed in the above image, user will be navigated to the  data load tracking page 
-6.	You can also manually navigate to the data load tracking page from menu under “Administration” section
+6. You can also manually navigate to the data load tracking page from menu under “Administration” section
     * Refine using the request ID which is generated when data load is submitted
     * Click on the “Filter” button
         ![Data Load Tracking](../images/a1114.png "Data Load Tracking")
@@ -304,12 +308,12 @@ Data Set Views allow administrators to:
 
 3. Provide the details below:
 
-- Select Data Set: XX PCC Local Agreements
-- Data Set View Key: xx-po-pcc-local-agreements-view
-- View Display Name: XX PCC Local Agreements View
-- Icon: Procurement
+    - Select Data Set: XX PCC Local Agreements
+    - Data Set View Key: xx-po-pcc-local-agreements-view
+    - View Display Name: XX PCC Local Agreements View
+    - Icon: Procurement
 
-Note: The security is inherited from the parent data set and can be changed, but this task does not require changing it.
+    Note: The security is inherited from the parent data set and can be changed, but this task does not require changing it.
 
 4. Click on the "Save" button.
 
@@ -850,14 +854,14 @@ There are two ways to provide access of Local Agreements dashboard to the users:
 1. Replace the shipped "Agreements" dashboard with the custom "Local Agreements" dashboard using EBS OA Personalization
 2. Create a new menu under Procurement Command Center to navigate to an OA Page where Local Agreements dashboard is displayed
 
-In this task, we will replace the shipped "Agreements" dashboard with the custom "Local Agreements" dashboard.
+    In this task, we will replace the shipped "Agreements" dashboard with the custom "Local Agreements" dashboard.
 
 1. Login to EBS apps (Navigate to http://<VNC\_Public\_IP\>:8000) with below credentials
     ```
   	 Username: sysadmin
 Password: welcome1
     ```
-2.	Create a new FND Function for Local Agreements Dashboard:
+2. Create a new FND Function for Local Agreements Dashboard:
     * Navigate to EBS Home Page -> Functional Administrator responsibility -> Core Services -> Functions
         ![Functional Administrator](../images/functionaladministratorpath.png "Functional Administrator")
         ![Functions Menu](../images/functions.png "Functions Menu")
@@ -887,7 +891,7 @@ Password: welcome1
     * Click on the “Submit” button
         ![Create Function](../images/a11s3.png "Create Function") 
 
-3.	Add the new FND Function to Procurement Command Center Permission Set:
+3. Add the new FND Function to Procurement Command Center Permission Set:
     * Navigate to EBS Home Page -> Functional Administrator responsibility -> Security -> Permission Sets
         ![Permission Set](../images/permissionset.png "Permission Set")
     * Search with permission set name as 
@@ -918,23 +922,23 @@ Password: welcome1
   	 Username: operations
 Password: welcome1
     ```
-2.	Navigate to Purchasing, Vision Operations (USA) -> Procurement Command Center -> Procurement Operations
-          ![Procurement Operations](../images/arbac2.png "Procurement Operations")
+2. Navigate to Purchasing, Vision Operations (USA) -> Procurement Command Center -> Procurement Operations
+    ![Procurement Operations](../images/arbac2.png "Procurement Operations")
 
-3.	Within "Procurement Operations", navigate to "Agreements" dashboard
-          ![Agreements](../images/arbac3.png "Agreements")
+3. Within "Procurement Operations", navigate to "Agreements" dashboard
+    ![Agreements](../images/arbac3.png "Agreements")
 
-4.  Click on EBS Settings icon
-          ![EBS Settings](../images/arbac5.png "EBS Settings")
+4. Click on EBS Settings icon
+    ![EBS Settings](../images/arbac5.png "EBS Settings")
 
-5.	Click on “Personalize Page” option
-          ![Personalize Page](../images/arbac4.png "Personalize Page")
+5. Click on “Personalize Page” option
+    ![Personalize Page](../images/arbac4.png "Personalize Page")
 
 5. Personalize the Rich Container:
-          ![Personalize Rich Container](../images/arbac6.png "Personalize Rich Container")
+    ![Personalize Rich Container](../images/arbac6.png "Personalize Rich Container")
 
-5.	Update the below details and click on the “Apply” button
-     * Destination Function: 
+5. Update the below details and click on the “Apply” button
+    * Destination Function: 
                                                       ```
   	    <copy>XX_PO_PCC_ECC_LOCAL_AGREEMENTS</copy>
             ```
