@@ -20,9 +20,9 @@ This lab assumes you have:
 - An Oracle Free Tier or Paid Cloud account
 - SSH Keys
 ## Task 1: Download Oracle Resource Manager (ORM) stack zip file
-1.  Click on the link below to download the Resource Manager zip file you need to build your environment: [ebs-eccv12-hol1.zip](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/labfiles/ebs-eccv12-hol1.zip)
+1. Click on the link below to download the Resource Manager zip file you need to build your environment: [ebs-eccv12-hol1.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/labfiles/ebs-eccv12-hol1.zip)
 
-2.  Save in your downloads folder.
+2. Save in your downloads folder.
 
 We strongly recommend using this stack to create a self-contained/dedicated VCN with your instance(s).
 
@@ -43,25 +43,25 @@ Proceed to deploy your workshop environment using Oracle Resource Manager (ORM) 
 
 ## Task 4: Create Stack:  Compute + Networking
 1. Identify the ORM stack zip file downloaded in *Task 1*
-2.  Open up the hamburger menu in the top left corner.  Click **Developer Services**, and choose **Resource Manager > Stacks**. Choose the compartment in which you would like to install the stack. Click **Create Stack**.
+2. Open up the hamburger menu in the top left corner.  Click **Developer Services**, and choose **Resource Manager > Stacks**. Choose the compartment in which you would like to install the stack. Click **Create Stack**.
 
-  ![Select Stacks](https://oracle-livelabs.github.io/common/images/console/../images/developer-resmgr-stacks.png " ")
+    ![Select Stacks](https://oracle-livelabs.github.io/common/images/console/../images/developer-resmgr-stacks.png " ")
   
 
-  ![Create Stack](../images/create-stack.png " ")
+    ![Create Stack](../images/create-stack.png " ")
 
-3.  Select **My Configuration** as the origin of the Terraform configuration. Then, select the **.Zip file** radio button under the Terraform configuration source. Click the **Browse** link, and select the zip file (downloaded in *Task 1*) or drag-n-drop from the file explorer.
+3. Select **My Configuration** as the origin of the Terraform configuration. Then, select the **.Zip file** radio button under the Terraform configuration source. Click the **Browse** link, and select the zip file (downloaded in *Task 1*) or drag-n-drop from the file explorer.
 
-  ![Select zip file](../images/hq1.png " ")
+    ![Select zip file](../images/hq1.png " ")
 
-4.  Click **Next**.
+4. Click **Next**.
 
 5. Enter or select the following:
 
-  ![Enter main configurations](../images/hq6.png " ")
+    ![Enter main configurations](../images/hq6.png " ")
 
 
-  ![Enter main configurations](../images/hq6.png " ")
+    ![Enter main configurations](../images/hq6.png " ")
 
     - **Instance Count:** Accept the default, **1**, unless you intend to create more than one (e.g. for a team)
     - **Select Availability Domain:** Select an availability domain from the dropdown list.
@@ -70,7 +70,7 @@ Proceed to deploy your workshop environment using Oracle Resource Manager (ORM) 
         - **Option (B)** - Check *Need Remote Access via SSH?* and keep *Auto Generate SSH Key Pair* unchecked to enable remote access via SSH protocol, then provide the SSH public key(s).
 
             - **SSH Public Key**: Select *Choose SSH Key Files*
-                - *Choose Public Key Files*: Drag-n-drop or browse and select  public key *ecchol.pub* from this directory ecc-hol-keys which can be extracted from after downloading this  [ecc-hol-keys.zip](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/labfiles/SSH_KEYS.zip) on your computer
+                - *Choose Public Key Files*: Drag-n-drop or browse and select  public key *ecchol.pub* from this directory ecc-hol-keys which can be extracted from after downloading this  [ecc-hol-keys.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/labfiles/SSH_KEYS.zip) on your computer
 
         ![Choose SSH keys](../images/hq2.png " ")
 
@@ -89,7 +89,7 @@ Proceed to deploy your workshop environment using Oracle Resource Manager (ORM) 
     - **Use Flexible Instance Shape with Adjustable OCPU Count?:** Unchecked
     - **Instance Shape:** Accept the default shown or select from the dropdown. e.g. VM.Standard2.2
 
-  ![Use fixed shapes](../images/fixed-shape.png " ")
+    ![Use fixed shapes](../images/fixed-shape.png " ")
 
 6. For this section we will provision a new VCN with all the appropriate ingress and egress rules needed to run this workshop.  
     - **Use Existing VCN?:** Accept the default by leaving this unchecked. This will create a **new VCN**.
@@ -97,11 +97,11 @@ Proceed to deploy your workshop environment using Oracle Resource Manager (ORM) 
 7. Click **Next**.
 8. Select **Run Apply** and click **Create**.
 
-  ![Run Apply](../images/run-apply.png " ")
+    ![Run Apply](../images/run-apply.png " ")
 
 9. Your stack has now been created and the *Apply* action triggered is running to deploy your environment!
 
-  ![Apply is successful](../images/hq7.png " ")
+    ![Apply is successful](../images/hq7.png " ")
 
 ## Task 5: Access the Graphical Remote Desktop
 For ease of execution of this workshop, your VM instance has been pre-configured with a remote graphical desktop accessible using any modern browser on your laptop or workstation. Proceed as detailed below to log in.
@@ -225,12 +225,12 @@ If you encountered any issues during the lab, follow the steps below to resolve 
 When creating a stack and using an existing VCN, the availability domain and the subnet must match, otherwise the stack errors.
 
 #### Fix for Issue #1
-1.  Click **Stack**-> **Edit Stack** -> **Configure Variables**.
-2.  Scroll down to the network definition.
-3.  Make sure the Availability Domain number matches the subnet number.  E.g. If you choose AD-1, you must also choose subnet #1.
-4.  Click **Next**
-5.  Click **Save Changes**
-6.  Click **Terraform Actions** -> **Apply**
+1. Click **Stack**-> **Edit Stack** -> **Configure Variables**.
+2. Scroll down to the network definition.
+3. Make sure the Availability Domain number matches the subnet number.  E.g. If you choose AD-1, you must also choose subnet #1.
+4. Click **Next**
+5. Click **Save Changes**
+6. Click **Terraform Actions** -> **Apply**
 
 ### **Issue #2:** Flex Shape Not Found
 ![flex shape not found error](../images/flex-shape-error.png  " ")
