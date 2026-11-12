@@ -20,7 +20,7 @@ This lab assumes you have:
 - An Oracle Free Tier or Paid Cloud account
 - SSH Keys
 ## Task 1: Download Oracle Resource Manager (ORM) stack zip file
-1.  Click on the link below to download the Resource Manager zip file you need to build your environment: [ebs-eccv12-hol1.zip](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/labfiles/ebs-eccv12-hol1.zip)
+1.  Click on the link below to download the Resource Manager zip file you need to build your environment: [ebs-eccv12-hol1.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/labfiles/ebs-eccv12-hol1.zip)
 
 2.  Save in your downloads folder.
 
@@ -70,7 +70,7 @@ Proceed to deploy your workshop environment using Oracle Resource Manager (ORM) 
         - **Option (B)** - Check *Need Remote Access via SSH?* and keep *Auto Generate SSH Key Pair* unchecked to enable remote access via SSH protocol, then provide the SSH public key(s).
 
             - **SSH Public Key**: Select *Choose SSH Key Files*
-                - *Choose Public Key Files*: Drag-n-drop or browse and select  public key *ecchol.pub* from this directory ecc-hol-keys which can be extracted from after downloading this  [ecc-hol-keys.zip](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/labfiles/SSH_KEYS.zip) on your computer
+                - *Choose Public Key Files*: Drag-n-drop or browse and select  public key *ecchol.pub* from this directory ecc-hol-keys which can be extracted from after downloading this  [ecc-hol-keys.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/labfiles/SSH_KEYS.zip) on your computer
 
         ![Choose SSH keys](../images/hq2.png " ")
 
