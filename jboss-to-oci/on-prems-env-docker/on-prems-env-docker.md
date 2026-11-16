@@ -80,7 +80,7 @@ To run this tutorial, you will need:
     ```bash
     <copy>
     cd ~/
-    wget https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip
+    wget https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip
     </copy>
     ```
 
@@ -92,7 +92,7 @@ To run this tutorial, you will need:
     </copy>
     ```
 
-You can also download the code [https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip)
+    You can also download the code [https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip)
 
 ### **On Mac OS X**
 
@@ -101,7 +101,7 @@ You can also download the code [https://c4u04.objectstorage.us-ashburn-1.oci.cus
     ```bash
     <copy>
     cd ~/
-    wget https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip
+    wget https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip
     </copy>
     ```
 
@@ -120,11 +120,11 @@ You can also download the code [https://c4u04.objectstorage.us-ashburn-1.oci.cus
     </copy>
     ```
 
-You can also download the code [https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip)
+    You can also download the code [https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip)
 
 ### **On Windows**
 
-1. Download the code [https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip)
+1. Download the code [https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip](https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/oci-library/wildfly-to-oci.zip)
 
 2. Unzip the file with your preferred tool.
 
@@ -134,12 +134,12 @@ You can also download the code [https://c4u04.objectstorage.us-ashburn-1.oci.cus
 
 This repository makes use of Oracle docker images which are licensed and need to be pulled from Oracle Container Registry after acknowledging the terms of the license.
 
-1. Sign in to Oracle Container Registry and go to the **Oracle Database** page by searching for **Database Enterprise Edition** and accept the license terms at: <a href="https://container-registry.oracle.com" target="_blank">https://container-registry.oracle.com</a>.
+1. Sign in to Oracle Container Registry and go to the **Oracle Database** page by searching for **Database Enterprise Edition** and accept the license terms at: [https://container-registry.oracle.com](https://container-registry.oracle.com).
 
     - Select a Language.
     - Scroll down to Accept the terms of license.
 
-2. Search for the **Instant Client** page and accept the license terms for the SQL Plus client at: <a href="https://container-registry.oracle.com" target="_blank">https://container-registry.oracle.com</a>.
+2. Search for the **Instant Client** page and accept the license terms for the SQL Plus client at: [https://container-registry.oracle.com](https://container-registry.oracle.com).
 
     - Select a Language.
     - Scroll down to Accept the terms of license.

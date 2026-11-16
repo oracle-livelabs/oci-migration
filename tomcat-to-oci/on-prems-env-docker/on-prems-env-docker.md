@@ -81,7 +81,7 @@ Make sure you followed the installation instructions to set up Docker as root an
     ```bash
     <copy>
     cd ~/
-    wget https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/oci-library/tomcat-to-oci.zip
+    wget https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/oci-library/tomcat-to-oci.zip
     </copy>
     ```
 
@@ -93,7 +93,7 @@ Make sure you followed the installation instructions to set up Docker as root an
     </copy>
     ```
 
-You can also [download the code](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/oci-library/tomcat-to-oci.zip).
+    You can also [download the code](https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/oci-library/tomcat-to-oci.zip).
 
 ### **Mac OS X**
 
@@ -102,7 +102,7 @@ You can also [download the code](https://c4u04.objectstorage.us-ashburn-1.oci.cu
     ```bash
     <copy>
     cd ~/
-    wget https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/oci-library/tomcat-to-oci.zip
+    wget https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/oci-library/tomcat-to-oci.zip
     </copy>
     ```
 
@@ -121,11 +121,11 @@ You can also [download the code](https://c4u04.objectstorage.us-ashburn-1.oci.cu
     </copy>
     ```
 
-You can also [download the code](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/oci-library/tomcat-to-oci.zip).
+    You can also [download the code](https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/oci-library/tomcat-to-oci.zip).
 
 ### **Windows**
 
-1. [Download the code](https://c4u04.objectstorage.us-ashburn-1.oci.customer-oci.com/p/EcTjWk2IuZPZeNnD_fYMcgUhdNDIDA6rt9gaFj_WZMiL7VvxPBNMY60837hu5hga/n/c4u04/b/livelabsfiles/o/oci-library/tomcat-to-oci.zip).
+1. [Download the code](https://objectstorage.us-ashburn-1.oraclecloud.com/p/4Au3jJ-t8Wtw3LWyYsDMqQk2FdlXDvXCb1MYRS0J6P4QS-GCrv2YNOolWdtFMLZq/n/c4u04/b/livelabsfiles/o/oci-library/tomcat-to-oci.zip).
 
 2. Unzip the file with your preferred tool.
 
@@ -263,9 +263,9 @@ We'll create an SSH key pair in this folder.
     `id_rsa` is the private key, which should never be shared, and will be required to connect to any OCI resource provisioned with the corresponding public key `id_rsa.pub`.
 
     > **Note:** 
-	> - This key will be the default SSH key from within either docker container used for the on-premises environment. If you wanted to SSH to the OCI resources from outside the container, you would need to supply the private key as the identity file in the ssh command, with the `-i <path-to-id_rsa>/id_rsa`.
-	> - This is only to be done once. If you run it again, a new key will overwrite the previous one and you will lose access to any resource provisioned with that key.
-	> - If you're using a firewall and your instance is not local, make sure the ports for Tomcat (8080) is open to be able to test the environment.
+    > - This key will be the default SSH key from within either docker container used for the on-premises environment. If you wanted to SSH to the OCI resources from outside the container, you would need to supply the private key as the identity file in the ssh command, with the `-i <path-to-id_rsa>/id_rsa`.
+    > - This is only to be done once. If you run it again, a new key will overwrite the previous one and you will lose access to any resource provisioned with that key.
+    > - If you're using a firewall and your instance is not local, make sure the ports for Tomcat (8080) is open to be able to test the environment.
 
 4. Output the content of the public key:
 
